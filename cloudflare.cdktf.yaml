@@ -1,0 +1,11 @@
+name: cloudflare
+
+provider:
+  source: registry.terraform.io/cloudflare/cloudflare
+  version: "4.3.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+
+output: gen
