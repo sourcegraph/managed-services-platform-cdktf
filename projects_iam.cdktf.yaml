@@ -1,0 +1,12 @@
+name: projects_iam
+
+module:
+  source: terraform-google-modules/iam/google//modules/projects_iam
+  version: 7.6.0
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+  packageName: projects_iam
+
+output: gen
