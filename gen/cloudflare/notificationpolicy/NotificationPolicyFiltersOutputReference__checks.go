@@ -98,6 +98,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -219,6 +227,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLimitPar
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetMegabitsPerSecondParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewHealthParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -291,7 +307,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetStatusPa
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostParameters(val *[]*string) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostnameParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

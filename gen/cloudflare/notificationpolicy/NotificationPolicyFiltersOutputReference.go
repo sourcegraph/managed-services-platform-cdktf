@@ -10,6 +10,9 @@ import (
 
 type NotificationPolicyFiltersOutputReference interface {
 	cdktf.ComplexObject
+	AlertTriggerPreferences() *[]*string
+	SetAlertTriggerPreferences(val *[]*string)
+	AlertTriggerPreferencesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,6 +50,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Limit() *[]*string
 	SetLimit(val *[]*string)
 	LimitInput() *[]*string
+	MegabitsPerSecond() *[]*string
+	SetMegabitsPerSecond(val *[]*string)
+	MegabitsPerSecondInput() *[]*string
 	NewHealth() *[]*string
 	SetNewHealth(val *[]*string)
 	NewHealthInput() *[]*string
@@ -74,9 +80,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Status() *[]*string
 	SetStatus(val *[]*string)
 	StatusInput() *[]*string
-	TargetHost() *[]*string
-	SetTargetHost(val *[]*string)
-	TargetHostInput() *[]*string
+	TargetHostname() *[]*string
+	SetTargetHostname(val *[]*string)
+	TargetHostnameInput() *[]*string
 	TargetZoneName() *[]*string
 	SetTargetZoneName(val *[]*string)
 	TargetZoneNameInput() *[]*string
@@ -115,12 +121,14 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlertTriggerPreferences()
 	ResetEnabled()
 	ResetEventSource()
 	ResetEventType()
 	ResetHealthCheckId()
 	ResetInputId()
 	ResetLimit()
+	ResetMegabitsPerSecond()
 	ResetNewHealth()
 	ResetPacketsPerSecond()
 	ResetPoolId()
@@ -130,7 +138,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetServices()
 	ResetSlo()
 	ResetStatus()
-	ResetTargetHost()
+	ResetTargetHostname()
 	ResetTargetZoneName()
 	ResetZones()
 	// Produce the Token's value at resolution time.
@@ -146,6 +154,26 @@ type NotificationPolicyFiltersOutputReference interface {
 // The jsii proxy struct for NotificationPolicyFiltersOutputReference
 type jsiiProxy_NotificationPolicyFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferencesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -313,6 +341,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) LimitInput() *[]*st
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecond() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecond",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecondInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecondInput",
 		&returns,
 	)
 	return returns
@@ -498,21 +546,21 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) StatusInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHost() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostname() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHost",
+		"targetHostname",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostInput() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostnameInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHostInput",
+		"targetHostnameInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +651,17 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAlertTriggerPreferences(val *[]*string) {
+	if err := j.validateSetAlertTriggerPreferencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertTriggerPreferences",
+		val,
 	)
 }
 
@@ -701,6 +760,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetLimit(val *[]*str
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetMegabitsPerSecond(val *[]*string) {
+	if err := j.validateSetMegabitsPerSecondParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"megabitsPerSecond",
 		val,
 	)
 }
@@ -804,13 +874,13 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetStatus(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHost(val *[]*string) {
-	if err := j.validateSetTargetHostParameters(val); err != nil {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHostname(val *[]*string) {
+	if err := j.validateSetTargetHostnameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"targetHost",
+		"targetHostname",
 		val,
 	)
 }
@@ -1045,6 +1115,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAlertTriggerPreferences() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAlertTriggerPreferences",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1089,6 +1167,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetLimit() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetMegabitsPerSecond() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMegabitsPerSecond",
 		nil, // no parameters
 	)
 }
@@ -1165,10 +1251,10 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetStatus() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHost() {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHostname() {
 	_jsii_.InvokeVoid(
 		n,
-		"resetTargetHost",
+		"resetTargetHostname",
 		nil, // no parameters
 	)
 }

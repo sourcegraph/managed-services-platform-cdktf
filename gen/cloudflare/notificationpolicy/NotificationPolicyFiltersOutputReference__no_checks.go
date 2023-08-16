@@ -48,6 +48,10 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInternal
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLimitParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetMegabitsPerSecondParameters(val *[]*string) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetStatusPa
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostParameters(val *[]*string) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostnameParameters(val *[]*string) error {
 	return nil
 }
 

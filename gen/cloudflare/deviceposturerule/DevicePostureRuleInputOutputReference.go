@@ -10,9 +10,18 @@ import (
 
 type DevicePostureRuleInputOutputReference interface {
 	cdktf.ComplexObject
+	ActiveThreats() *float64
+	SetActiveThreats(val *float64)
+	ActiveThreatsInput() *float64
+	CertificateId() *string
+	SetCertificateId(val *string)
+	CertificateIdInput() *string
 	CheckDisks() *[]*string
 	SetCheckDisks(val *[]*string)
 	CheckDisksInput() *[]*string
+	Cn() *string
+	SetCn(val *string)
+	CnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,6 +38,9 @@ type DevicePostureRuleInputOutputReference interface {
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
+	CountOperator() *string
+	SetCountOperator(val *string)
+	CountOperatorInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -48,8 +60,20 @@ type DevicePostureRuleInputOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Infected() interface{}
+	SetInfected(val interface{})
+	InfectedInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsActive() interface{}
+	SetIsActive(val interface{})
+	IsActiveInput() interface{}
+	IssueCount() *string
+	SetIssueCount(val *string)
+	IssueCountInput() *string
+	NetworkStatus() *string
+	SetNetworkStatus(val *string)
+	NetworkStatusInput() *string
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -121,13 +145,21 @@ type DevicePostureRuleInputOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetActiveThreats()
+	ResetCertificateId()
 	ResetCheckDisks()
+	ResetCn()
 	ResetComplianceStatus()
 	ResetConnectionId()
+	ResetCountOperator()
 	ResetDomain()
 	ResetEnabled()
 	ResetExists()
 	ResetId()
+	ResetInfected()
+	ResetIsActive()
+	ResetIssueCount()
+	ResetNetworkStatus()
 	ResetOperator()
 	ResetOs()
 	ResetOsDistroName()
@@ -156,6 +188,46 @@ type jsiiProxy_DevicePostureRuleInputOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ActiveThreats() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"activeThreats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ActiveThreatsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"activeThreatsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisks() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -171,6 +243,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisksInput() *[]*
 	_jsii_.Get(
 		j,
 		"checkDisksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Cn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnInput",
 		&returns,
 	)
 	return returns
@@ -231,6 +323,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ConnectionIdInput() *s
 	_jsii_.Get(
 		j,
 		"connectionIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CountOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CountOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countOperatorInput",
 		&returns,
 	)
 	return returns
@@ -336,11 +448,91 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Infected() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"infected",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) InfectedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"infectedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IsActive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isActive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IsActiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isActiveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issueCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issueCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkStatusInput",
 		&returns,
 	)
 	return returns
@@ -654,6 +846,28 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetActiveThreats(val *float64) {
+	if err := j.validateSetActiveThreatsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activeThreats",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCertificateId(val *string) {
+	if err := j.validateSetCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*string) {
 	if err := j.validateSetCheckDisksParameters(val); err != nil {
 		panic(err)
@@ -661,6 +875,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*s
 	_jsii_.Set(
 		j,
 		"checkDisks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCn(val *string) {
+	if err := j.validateSetCnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cn",
 		val,
 	)
 }
@@ -709,6 +934,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetConnectionId(val *st
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCountOperator(val *string) {
+	if err := j.validateSetCountOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"countOperator",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
@@ -753,6 +989,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInfected(val interface{}) {
+	if err := j.validateSetInfectedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"infected",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -760,6 +1007,39 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val in
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetIsActive(val interface{}) {
+	if err := j.validateSetIsActiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isActive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetIssueCount(val *string) {
+	if err := j.validateSetIssueCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issueCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetNetworkStatus(val *string) {
+	if err := j.validateSetNetworkStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkStatus",
 		val,
 	)
 }
@@ -1115,10 +1395,34 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetActiveThreats() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetActiveThreats",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCertificateId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificateId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCheckDisks() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCheckDisks",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCn",
 		nil, // no parameters
 	)
 }
@@ -1135,6 +1439,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetConnectionId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetConnectionId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCountOperator() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCountOperator",
 		nil, // no parameters
 	)
 }
@@ -1167,6 +1479,38 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetInfected() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInfected",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetIsActive() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsActive",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetIssueCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIssueCount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetNetworkStatus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkStatus",
 		nil, // no parameters
 	)
 }

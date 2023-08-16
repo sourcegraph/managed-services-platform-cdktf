@@ -104,6 +104,10 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomDenyUrlParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_AccessApplication) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetSameSiteCookieAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetSelfHostedDomainsParameters(val *[]*string) error {
 	return nil
 }
 

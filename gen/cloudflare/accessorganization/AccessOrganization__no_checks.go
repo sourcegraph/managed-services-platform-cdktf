@@ -52,6 +52,10 @@ func (a *jsiiProxy_AccessOrganization) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (a *jsiiProxy_AccessOrganization) validatePutCustomPagesParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessOrganization) validatePutLoginDesignParameters(value interface{}) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetAccountIdParameters(val *strin
 }
 
 func (j *jsiiProxy_AccessOrganization) validateSetAuthDomainParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessOrganization) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
 	return nil
 }
 
