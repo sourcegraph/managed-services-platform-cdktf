@@ -1,0 +1,12 @@
+name: google_beta
+
+provider:
+  source: registry.terraform.io/hashicorp/google-beta
+  version: 4.78.0
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+  packageName: google_beta
+
+output: gen
