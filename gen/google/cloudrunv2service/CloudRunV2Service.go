@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/cloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,6 +36,12 @@ type CloudRunV2Service interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
+	Creator() *string
+	CustomAudiences() *[]*string
+	SetCustomAudiences(val *[]*string)
+	CustomAudiencesInput() *[]*string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,7 +49,10 @@ type CloudRunV2Service interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExpireTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,6 +71,7 @@ type CloudRunV2Service interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LastModifier() *string
 	LatestCreatedRevision() *string
 	LatestReadyRevision() *string
 	LaunchStage() *string
@@ -99,6 +109,7 @@ type CloudRunV2Service interface {
 	TerminalCondition() CloudRunV2ServiceTerminalConditionList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -109,6 +120,7 @@ type CloudRunV2Service interface {
 	TrafficInput() interface{}
 	TrafficStatuses() CloudRunV2ServiceTrafficStatusesList
 	Uid() *string
+	UpdateTime() *string
 	Uri() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -143,12 +155,12 @@ type CloudRunV2Service interface {
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
+	ResetCustomAudiences()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
 	ResetLabels()
 	ResetLaunchStage()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -300,6 +312,56 @@ func (j *jsiiProxy_CloudRunV2Service) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) Creator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) CustomAudiences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customAudiences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) CustomAudiencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customAudiencesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -330,11 +392,41 @@ func (j *jsiiProxy_CloudRunV2Service) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) Etag() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
 		&returns,
 	)
 	return returns
@@ -435,6 +527,16 @@ func (j *jsiiProxy_CloudRunV2Service) LabelsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) LastModifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifier",
 		&returns,
 	)
 	return returns
@@ -650,6 +752,16 @@ func (j *jsiiProxy_CloudRunV2Service) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -730,6 +842,16 @@ func (j *jsiiProxy_CloudRunV2Service) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -741,7 +863,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -759,7 +881,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -821,6 +943,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
+	if err := j.validateSetCustomAudiencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customAudiences",
 		val,
 	)
 }
@@ -1301,6 +1434,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetClientVersion() {
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2Service) ResetCustomAudiences() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomAudiences",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1337,14 +1478,6 @@ func (c *jsiiProxy_CloudRunV2Service) ResetLaunchStage() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLaunchStage",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudRunV2Service) ResetLocation() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetLocation",
 		nil, // no parameters
 	)
 }
