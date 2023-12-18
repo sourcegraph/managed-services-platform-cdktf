@@ -2,11 +2,11 @@ package workspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
+	_init_ "github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
-	"github.com/sourcegraph/controller-cdktf/gen/tfe/workspace/internal"
+	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/workspace/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace tfe_workspace}.

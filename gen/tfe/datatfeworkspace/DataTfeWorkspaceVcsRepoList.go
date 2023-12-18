@@ -2,10 +2,10 @@ package datatfeworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
+	_init_ "github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/jsii"
 
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
-	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeworkspace/internal"
+	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeworkspace/internal"
 )
 
 type DataTfeWorkspaceVcsRepoList interface {

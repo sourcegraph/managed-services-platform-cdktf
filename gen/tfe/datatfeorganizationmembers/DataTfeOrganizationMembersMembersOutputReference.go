@@ -2,10 +2,10 @@ package datatfeorganizationmembers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
+	_init_ "github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/jsii"
 
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
-	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfeorganizationmembers/internal"
+	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeorganizationmembers/internal"
 )
 
 type DataTfeOrganizationMembersMembersOutputReference interface {

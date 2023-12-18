@@ -1,4 +1,4 @@
-module github.com/sourcegraph/controller-cdktf/gen/tfe
+module github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe
 
 go 1.18
 
