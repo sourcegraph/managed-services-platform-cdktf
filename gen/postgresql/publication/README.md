@@ -1,3 +1,3 @@
 # `postgresql_publication`
 
-Refer to the Terraform Registory for docs: [`postgresql_publication`](https://registry.terraform.io/providers/sourcegraph/postgresql/1.18.0/docs/resources/publication).
+Refer to the Terraform Registory for docs: [`postgresql_publication`](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/publication).
