@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeleteProtectionStatePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

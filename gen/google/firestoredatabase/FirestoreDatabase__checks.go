@@ -260,6 +260,14 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetDeleteProtectionStateParameters
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FirestoreDatabase) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

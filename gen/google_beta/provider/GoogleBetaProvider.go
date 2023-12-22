@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -328,12 +328,18 @@ type GoogleBetaProvider interface {
 	MemcacheCustomEndpointInput() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
+	MigrationCenterCustomEndpoint() *string
+	SetMigrationCenterCustomEndpoint(val *string)
+	MigrationCenterCustomEndpointInput() *string
 	MlEngineCustomEndpoint() *string
 	SetMlEngineCustomEndpoint(val *string)
 	MlEngineCustomEndpointInput() *string
 	MonitoringCustomEndpoint() *string
 	SetMonitoringCustomEndpoint(val *string)
 	MonitoringCustomEndpointInput() *string
+	NetappCustomEndpoint() *string
+	SetNetappCustomEndpoint(val *string)
+	NetappCustomEndpointInput() *string
 	NetworkConnectivityCustomEndpoint() *string
 	SetNetworkConnectivityCustomEndpoint(val *string)
 	NetworkConnectivityCustomEndpointInput() *string
@@ -410,6 +416,9 @@ type GoogleBetaProvider interface {
 	SecretManagerCustomEndpoint() *string
 	SetSecretManagerCustomEndpoint(val *string)
 	SecretManagerCustomEndpointInput() *string
+	SecureSourceManagerCustomEndpoint() *string
+	SetSecureSourceManagerCustomEndpoint(val *string)
+	SecureSourceManagerCustomEndpointInput() *string
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
@@ -479,6 +488,9 @@ type GoogleBetaProvider interface {
 	VpcAccessCustomEndpoint() *string
 	SetVpcAccessCustomEndpoint(val *string)
 	VpcAccessCustomEndpointInput() *string
+	WorkbenchCustomEndpoint() *string
+	SetWorkbenchCustomEndpoint(val *string)
+	WorkbenchCustomEndpointInput() *string
 	WorkflowsCustomEndpoint() *string
 	SetWorkflowsCustomEndpoint(val *string)
 	WorkflowsCustomEndpointInput() *string
@@ -595,8 +607,10 @@ type GoogleBetaProvider interface {
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
+	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
+	ResetNetappCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
 	ResetNetworkManagementCustomEndpoint()
 	ResetNetworkSecurityCustomEndpoint()
@@ -624,6 +638,7 @@ type GoogleBetaProvider interface {
 	ResetRuntimeConfigCustomEndpoint()
 	ResetScopes()
 	ResetSecretManagerCustomEndpoint()
+	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
 	ResetSecurityScannerCustomEndpoint()
 	ResetServiceDirectoryCustomEndpoint()
@@ -645,6 +660,7 @@ type GoogleBetaProvider interface {
 	ResetVertexAiCustomEndpoint()
 	ResetVmwareengineCustomEndpoint()
 	ResetVpcAccessCustomEndpoint()
+	ResetWorkbenchCustomEndpoint()
 	ResetWorkflowsCustomEndpoint()
 	ResetWorkstationsCustomEndpoint()
 	ResetZone()
@@ -2753,6 +2769,26 @@ func (j *jsiiProxy_GoogleBetaProvider) MetaAttributes() *map[string]interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) MigrationCenterCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationCenterCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) MigrationCenterCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationCenterCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) MlEngineCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2788,6 +2824,26 @@ func (j *jsiiProxy_GoogleBetaProvider) MonitoringCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"monitoringCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) NetappCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netappCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) NetappCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netappCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3293,6 +3349,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SecretManagerCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) SecureSourceManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) SecureSourceManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) SecurityCenterCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3743,6 +3819,26 @@ func (j *jsiiProxy_GoogleBetaProvider) VpcAccessCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) WorkbenchCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) WorkbenchCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) WorkflowsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3804,7 +3900,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3822,7 +3918,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4652,6 +4748,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetMemcacheCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetMigrationCenterCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"migrationCenterCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetMlEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4664,6 +4768,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetMonitoringCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"monitoringCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetNetappCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"netappCustomEndpoint",
 		val,
 	)
 }
@@ -4860,6 +4972,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSecretManagerCustomEndpoint(val *string
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetSecureSourceManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"secureSourceManagerCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetSecurityCenterCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5027,6 +5147,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetVpcAccessCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"vpcAccessCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetWorkbenchCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"workbenchCustomEndpoint",
 		val,
 	)
 }
@@ -5977,6 +6105,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetMemcacheCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetMigrationCenterCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMigrationCenterCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetMlEngineCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5989,6 +6125,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetMonitoringCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMonitoringCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetNetappCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetappCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -6193,6 +6337,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSecretManagerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetSecureSourceManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecureSourceManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetSecurityCenterCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6357,6 +6509,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetVpcAccessCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVpcAccessCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetWorkbenchCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkbenchCustomEndpoint",
 		nil, // no parameters
 	)
 }

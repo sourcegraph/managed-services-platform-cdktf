@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/gkehubfleet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_fleet google_gke_hub_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_fleet google_gke_hub_fleet}.
 type GkeHubFleet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,8 @@ type GkeHubFleet interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DefaultClusterConfig() GkeHubFleetDefaultClusterConfigOutputReference
+	DefaultClusterConfigInput() *GkeHubFleetDefaultClusterConfig
 	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -99,7 +101,9 @@ type GkeHubFleet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultClusterConfig(value *GkeHubFleetDefaultClusterConfig)
 	PutTimeouts(value *GkeHubFleetTimeouts)
+	ResetDefaultClusterConfig()
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -167,6 +171,26 @@ func (j *jsiiProxy_GkeHubFleet) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFleet) DefaultClusterConfig() GkeHubFleetDefaultClusterConfigOutputReference {
+	var returns GkeHubFleetDefaultClusterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"defaultClusterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFleet) DefaultClusterConfigInput() *GkeHubFleetDefaultClusterConfig {
+	var returns *GkeHubFleetDefaultClusterConfig
+	_jsii_.Get(
+		j,
+		"defaultClusterConfigInput",
 		&returns,
 	)
 	return returns
@@ -413,7 +437,7 @@ func (j *jsiiProxy_GkeHubFleet) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource.
 func NewGkeHubFleet(scope constructs.Construct, id *string, config *GkeHubFleetConfig) GkeHubFleet {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewGkeHubFleet(scope constructs.Construct, id *string, config *GkeHubFleetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource.
 func NewGkeHubFleet_Override(g GkeHubFleet, scope constructs.Construct, id *string, config *GkeHubFleetConfig) {
 	_init_.Initialize()
 
@@ -809,6 +833,17 @@ func (g *jsiiProxy_GkeHubFleet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GkeHubFleet) PutDefaultClusterConfig(value *GkeHubFleetDefaultClusterConfig) {
+	if err := g.validatePutDefaultClusterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultClusterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFleet) PutTimeouts(value *GkeHubFleetTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -817,6 +852,14 @@ func (g *jsiiProxy_GkeHubFleet) PutTimeouts(value *GkeHubFleetTimeouts) {
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeHubFleet) ResetDefaultClusterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultClusterConfig",
+		nil, // no parameters
 	)
 }
 

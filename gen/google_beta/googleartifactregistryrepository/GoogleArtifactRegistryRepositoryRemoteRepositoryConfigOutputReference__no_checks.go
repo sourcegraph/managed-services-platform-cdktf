@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutUpstreamCredentialsParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
 	return nil
 }

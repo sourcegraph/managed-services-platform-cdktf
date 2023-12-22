@@ -33,6 +33,8 @@ type GkeHubFeatureFleetDefaultMemberConfigOutputReference interface {
 	SetInternalValue(val *GkeHubFeatureFleetDefaultMemberConfig)
 	Mesh() GkeHubFeatureFleetDefaultMemberConfigMeshOutputReference
 	MeshInput() *GkeHubFeatureFleetDefaultMemberConfigMesh
+	Policycontroller() GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference
+	PolicycontrollerInput() *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type GkeHubFeatureFleetDefaultMemberConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfigmanagement(value *GkeHubFeatureFleetDefaultMemberConfigConfigmanagement)
 	PutMesh(value *GkeHubFeatureFleetDefaultMemberConfigMesh)
+	PutPolicycontroller(value *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller)
 	ResetConfigmanagement()
 	ResetMesh()
+	ResetPolicycontroller()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) MeshInp
 	_jsii_.Get(
 		j,
 		"meshInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) Policycontroller() GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference {
+	var returns GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference
+	_jsii_.Get(
+		j,
+		"policycontroller",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) PolicycontrollerInput() *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller {
+	var returns *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller
+	_jsii_.Get(
+		j,
+		"policycontrollerInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) PutMesh
 	)
 }
 
+func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) PutPolicycontroller(value *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller) {
+	if err := g.validatePutPolicycontrollerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPolicycontroller",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) ResetConfigmanagement() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) ResetMe
 	_jsii_.InvokeVoid(
 		g,
 		"resetMesh",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) ResetPolicycontroller() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicycontroller",
 		nil, // no parameters
 	)
 }

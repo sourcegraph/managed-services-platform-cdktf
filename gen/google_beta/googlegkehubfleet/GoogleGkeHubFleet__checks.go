@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleGkeHubFleet) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFleet) validatePutDefaultClusterConfigParameters(value *GoogleGkeHubFleetDefaultClusterConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFleet) validatePutTimeoutsParameters(value *GoogleGkeHubFleetTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

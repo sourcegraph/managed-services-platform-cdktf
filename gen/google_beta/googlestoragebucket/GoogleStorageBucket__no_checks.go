@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetRequesterPaysParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) validateSetRpoParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

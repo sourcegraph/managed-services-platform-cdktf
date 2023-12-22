@@ -60,7 +60,15 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMaxNodesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMaxProcessingUnitsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMinNodesParameters(val *float64) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputeglobalforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type DataGoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformDataSource
 	BaseForwardingRule() *string
@@ -69,6 +69,7 @@ type DataGoogleComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ServiceDirectoryRegistrations() DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList
 	SourceIpRanges() *[]*string
 	Subnetwork() *string
 	Target() *string
@@ -454,6 +455,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) ServiceDirectoryRegistrations() DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList {
+	var returns DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList
+	_jsii_.Get(
+		j,
+		"serviceDirectoryRegistrations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -525,7 +536,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
 func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *DataGoogleComputeGlobalForwardingRuleConfig) DataGoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -543,7 +554,7 @@ func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
 func NewDataGoogleComputeGlobalForwardingRule_Override(d DataGoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *DataGoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigquerydataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
 type GoogleBigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() GoogleBigqueryDatasetAccessList
@@ -53,6 +53,8 @@ type GoogleBigqueryDataset interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExternalDatasetReference() GoogleBigqueryDatasetExternalDatasetReferenceOutputReference
+	ExternalDatasetReferenceInput() *GoogleBigqueryDatasetExternalDatasetReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -139,6 +141,7 @@ type GoogleBigqueryDataset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccess(value interface{})
 	PutDefaultEncryptionConfiguration(value *GoogleBigqueryDatasetDefaultEncryptionConfiguration)
+	PutExternalDatasetReference(value *GoogleBigqueryDatasetExternalDatasetReference)
 	PutTimeouts(value *GoogleBigqueryDatasetTimeouts)
 	ResetAccess()
 	ResetDefaultCollation()
@@ -147,6 +150,7 @@ type GoogleBigqueryDataset interface {
 	ResetDefaultTableExpirationMs()
 	ResetDeleteContentsOnDestroy()
 	ResetDescription()
+	ResetExternalDatasetReference()
 	ResetFriendlyName()
 	ResetId()
 	ResetIsCaseInsensitive()
@@ -409,6 +413,26 @@ func (j *jsiiProxy_GoogleBigqueryDataset) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ExternalDatasetReference() GoogleBigqueryDatasetExternalDatasetReferenceOutputReference {
+	var returns GoogleBigqueryDatasetExternalDatasetReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ExternalDatasetReferenceInput() *GoogleBigqueryDatasetExternalDatasetReference {
+	var returns *GoogleBigqueryDatasetExternalDatasetReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReferenceInput",
 		&returns,
 	)
 	return returns
@@ -735,7 +759,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) GoogleBigqueryDataset {
 	_init_.Initialize()
 
@@ -753,7 +777,7 @@ func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset_Override(g GoogleBigqueryDataset, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -1274,6 +1298,17 @@ func (g *jsiiProxy_GoogleBigqueryDataset) PutDefaultEncryptionConfiguration(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataset) PutExternalDatasetReference(value *GoogleBigqueryDatasetExternalDatasetReference) {
+	if err := g.validatePutExternalDatasetReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalDatasetReference",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) PutTimeouts(value *GoogleBigqueryDatasetTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1337,6 +1372,14 @@ func (g *jsiiProxy_GoogleBigqueryDataset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetExternalDatasetReference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalDatasetReference",
 		nil, // no parameters
 	)
 }

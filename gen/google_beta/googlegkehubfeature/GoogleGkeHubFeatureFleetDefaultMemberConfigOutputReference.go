@@ -33,6 +33,8 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference interface {
 	SetInternalValue(val *GoogleGkeHubFeatureFleetDefaultMemberConfig)
 	Mesh() GoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference
 	MeshInput() *GoogleGkeHubFeatureFleetDefaultMemberConfigMesh
+	Policycontroller() GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference
+	PolicycontrollerInput() *GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfigmanagement(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement)
 	PutMesh(value *GoogleGkeHubFeatureFleetDefaultMemberConfigMesh)
+	PutPolicycontroller(value *GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller)
 	ResetConfigmanagement()
 	ResetMesh()
+	ResetPolicycontroller()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) M
 	_jsii_.Get(
 		j,
 		"meshInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) Policycontroller() GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference {
+	var returns GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference
+	_jsii_.Get(
+		j,
+		"policycontroller",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) PolicycontrollerInput() *GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller {
+	var returns *GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller
+	_jsii_.Get(
+		j,
+		"policycontrollerInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) P
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) PutPolicycontroller(value *GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller) {
+	if err := g.validatePutPolicycontrollerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPolicycontroller",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) ResetConfigmanagement() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetMesh",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) ResetPolicycontroller() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicycontroller",
 		nil, // no parameters
 	)
 }

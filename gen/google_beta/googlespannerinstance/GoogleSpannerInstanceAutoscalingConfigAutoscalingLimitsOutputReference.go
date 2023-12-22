@@ -29,9 +29,15 @@ type GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference inte
 	Fqn() *string
 	InternalValue() *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits
 	SetInternalValue(val *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits)
+	MaxNodes() *float64
+	SetMaxNodes(val *float64)
+	MaxNodesInput() *float64
 	MaxProcessingUnits() *float64
 	SetMaxProcessingUnits(val *float64)
 	MaxProcessingUnitsInput() *float64
+	MinNodes() *float64
+	SetMinNodes(val *float64)
+	MinNodesInput() *float64
 	MinProcessingUnits() *float64
 	SetMinProcessingUnits(val *float64)
 	MinProcessingUnitsInput() *float64
@@ -67,7 +73,9 @@ type GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMaxNodes()
 	ResetMaxProcessingUnits()
+	ResetMinNodes()
 	ResetMinProcessingUnits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,6 +142,26 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) MaxNodes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) MaxNodesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxNodesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) MaxProcessingUnits() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -149,6 +177,26 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	_jsii_.Get(
 		j,
 		"maxProcessingUnitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) MinNodes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) MinNodesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodesInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +303,17 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	)
 }
 
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference)SetMaxNodes(val *float64) {
+	if err := j.validateSetMaxNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxNodes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference)SetMaxProcessingUnits(val *float64) {
 	if err := j.validateSetMaxProcessingUnitsParameters(val); err != nil {
 		panic(err)
@@ -262,6 +321,17 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	_jsii_.Set(
 		j,
 		"maxProcessingUnits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference)SetMinNodes(val *float64) {
+	if err := j.validateSetMinNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNodes",
 		val,
 	)
 }
@@ -485,10 +555,26 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) ResetMaxNodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxNodes",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) ResetMaxProcessingUnits() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxProcessingUnits",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) ResetMinNodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinNodes",
 		nil, // no parameters
 	)
 }

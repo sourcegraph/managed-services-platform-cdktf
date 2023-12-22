@@ -27,6 +27,7 @@ type DataGoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
 	Env() DataGoogleCloudRunV2ServiceTemplateContainersEnvList
 	// Experimental.
 	Fqn() *string
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
 		&returns,
 	)
 	return returns
