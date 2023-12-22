@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -37,6 +37,10 @@ type GoogleStorageBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
+	EnableObjectRetention() interface{}
+	SetEnableObjectRetention(val interface{})
+	EnableObjectRetentionInput() interface{}
 	Encryption() GoogleStorageBucketEncryptionOutputReference
 	EncryptionInput() *GoogleStorageBucketEncryption
 	ForceDestroy() interface{}
@@ -93,12 +97,16 @@ type GoogleStorageBucket interface {
 	RequesterPaysInput() interface{}
 	RetentionPolicy() GoogleStorageBucketRetentionPolicyOutputReference
 	RetentionPolicyInput() *GoogleStorageBucketRetentionPolicy
+	Rpo() *string
+	SetRpo(val *string)
+	RpoInput() *string
 	SelfLink() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -152,6 +160,7 @@ type GoogleStorageBucket interface {
 	ResetCors()
 	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
+	ResetEnableObjectRetention()
 	ResetEncryption()
 	ResetForceDestroy()
 	ResetId()
@@ -165,6 +174,7 @@ type GoogleStorageBucket interface {
 	ResetPublicAccessPrevention()
 	ResetRequesterPays()
 	ResetRetentionPolicy()
+	ResetRpo()
 	ResetStorageClass()
 	ResetTimeouts()
 	ResetUniformBucketLevelAccess()
@@ -310,6 +320,36 @@ func (j *jsiiProxy_GoogleStorageBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetention() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) EnableObjectRetentionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetentionInput",
 		&returns,
 	)
 	return returns
@@ -635,6 +675,26 @@ func (j *jsiiProxy_GoogleStorageBucket) RetentionPolicyInput() *GoogleStorageBuc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) Rpo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) RpoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -670,6 +730,16 @@ func (j *jsiiProxy_GoogleStorageBucket) TerraformGeneratorMetadata() *cdktf.Terr
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -786,7 +856,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -804,7 +874,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -852,6 +922,17 @@ func (j *jsiiProxy_GoogleStorageBucket)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucket)SetEnableObjectRetention(val interface{}) {
+	if err := j.validateSetEnableObjectRetentionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableObjectRetention",
 		val,
 	)
 }
@@ -978,6 +1059,17 @@ func (j *jsiiProxy_GoogleStorageBucket)SetRequesterPays(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requesterPays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucket)SetRpo(val *string) {
+	if err := j.validateSetRpoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rpo",
 		val,
 	)
 }
@@ -1412,6 +1504,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetDefaultEventBasedHold() {
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) ResetEnableObjectRetention() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableObjectRetention",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) ResetEncryption() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1496,6 +1596,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetRetentionPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetRpo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRpo",
 		nil, // no parameters
 	)
 }

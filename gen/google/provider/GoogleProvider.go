@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -51,6 +51,9 @@ type GoogleProvider interface {
 	BeyondcorpCustomEndpoint() *string
 	SetBeyondcorpCustomEndpoint(val *string)
 	BeyondcorpCustomEndpointInput() *string
+	BiglakeCustomEndpoint() *string
+	SetBiglakeCustomEndpoint(val *string)
+	BiglakeCustomEndpointInput() *string
 	BigqueryAnalyticsHubCustomEndpoint() *string
 	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
 	BigqueryAnalyticsHubCustomEndpointInput() *string
@@ -116,9 +119,6 @@ type GoogleProvider interface {
 	CloudIdsCustomEndpoint() *string
 	SetCloudIdsCustomEndpoint(val *string)
 	CloudIdsCustomEndpointInput() *string
-	CloudIotCustomEndpoint() *string
-	SetCloudIotCustomEndpoint(val *string)
-	CloudIotCustomEndpointInput() *string
 	CloudResourceManagerCustomEndpoint() *string
 	SetCloudResourceManagerCustomEndpoint(val *string)
 	CloudResourceManagerCustomEndpointInput() *string
@@ -178,6 +178,9 @@ type GoogleProvider interface {
 	DataLossPreventionCustomEndpoint() *string
 	SetDataLossPreventionCustomEndpoint(val *string)
 	DataLossPreventionCustomEndpointInput() *string
+	DataPipelineCustomEndpoint() *string
+	SetDataPipelineCustomEndpoint(val *string)
+	DataPipelineCustomEndpointInput() *string
 	DataplexCustomEndpoint() *string
 	SetDataplexCustomEndpoint(val *string)
 	DataplexCustomEndpointInput() *string
@@ -193,6 +196,9 @@ type GoogleProvider interface {
 	DatastreamCustomEndpoint() *string
 	SetDatastreamCustomEndpoint(val *string)
 	DatastreamCustomEndpointInput() *string
+	DefaultLabels() *map[string]*string
+	SetDefaultLabels(val *map[string]*string)
+	DefaultLabelsInput() *map[string]*string
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
@@ -211,6 +217,12 @@ type GoogleProvider interface {
 	DocumentAiWarehouseCustomEndpoint() *string
 	SetDocumentAiWarehouseCustomEndpoint(val *string)
 	DocumentAiWarehouseCustomEndpointInput() *string
+	EdgecontainerCustomEndpoint() *string
+	SetEdgecontainerCustomEndpoint(val *string)
+	EdgecontainerCustomEndpointInput() *string
+	EdgenetworkCustomEndpoint() *string
+	SetEdgenetworkCustomEndpoint(val *string)
+	EdgenetworkCustomEndpointInput() *string
 	EssentialContactsCustomEndpoint() *string
 	SetEssentialContactsCustomEndpoint(val *string)
 	EssentialContactsCustomEndpointInput() *string
@@ -230,9 +242,6 @@ type GoogleProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GameServicesCustomEndpoint() *string
-	SetGameServicesCustomEndpoint(val *string)
-	GameServicesCustomEndpointInput() *string
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
@@ -242,6 +251,12 @@ type GoogleProvider interface {
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
+	GkehubFeatureCustomEndpoint() *string
+	SetGkehubFeatureCustomEndpoint(val *string)
+	GkehubFeatureCustomEndpointInput() *string
+	GkeonpremCustomEndpoint() *string
+	SetGkeonpremCustomEndpoint(val *string)
+	GkeonpremCustomEndpointInput() *string
 	HealthcareCustomEndpoint() *string
 	SetHealthcareCustomEndpoint(val *string)
 	HealthcareCustomEndpointInput() *string
@@ -272,6 +287,9 @@ type GoogleProvider interface {
 	SetImpersonateServiceAccountDelegates(val *[]*string)
 	ImpersonateServiceAccountDelegatesInput() *[]*string
 	ImpersonateServiceAccountInput() *string
+	IntegrationConnectorsCustomEndpoint() *string
+	SetIntegrationConnectorsCustomEndpoint(val *string)
+	IntegrationConnectorsCustomEndpointInput() *string
 	KmsCustomEndpoint() *string
 	SetKmsCustomEndpoint(val *string)
 	KmsCustomEndpointInput() *string
@@ -286,12 +304,18 @@ type GoogleProvider interface {
 	MemcacheCustomEndpointInput() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
+	MigrationCenterCustomEndpoint() *string
+	SetMigrationCenterCustomEndpoint(val *string)
+	MigrationCenterCustomEndpointInput() *string
 	MlEngineCustomEndpoint() *string
 	SetMlEngineCustomEndpoint(val *string)
 	MlEngineCustomEndpointInput() *string
 	MonitoringCustomEndpoint() *string
 	SetMonitoringCustomEndpoint(val *string)
 	MonitoringCustomEndpointInput() *string
+	NetappCustomEndpoint() *string
+	SetNetappCustomEndpoint(val *string)
+	NetappCustomEndpointInput() *string
 	NetworkConnectivityCustomEndpoint() *string
 	SetNetworkConnectivityCustomEndpoint(val *string)
 	NetworkConnectivityCustomEndpointInput() *string
@@ -362,6 +386,9 @@ type GoogleProvider interface {
 	SecretManagerCustomEndpoint() *string
 	SetSecretManagerCustomEndpoint(val *string)
 	SecretManagerCustomEndpointInput() *string
+	SecureSourceManagerCustomEndpoint() *string
+	SetSecureSourceManagerCustomEndpoint(val *string)
+	SecureSourceManagerCustomEndpointInput() *string
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
@@ -386,6 +413,9 @@ type GoogleProvider interface {
 	StorageCustomEndpoint() *string
 	SetStorageCustomEndpoint(val *string)
 	StorageCustomEndpointInput() *string
+	StorageInsightsCustomEndpoint() *string
+	SetStorageInsightsCustomEndpoint(val *string)
+	StorageInsightsCustomEndpointInput() *string
 	StorageTransferCustomEndpoint() *string
 	SetStorageTransferCustomEndpoint(val *string)
 	StorageTransferCustomEndpointInput() *string
@@ -404,15 +434,24 @@ type GoogleProvider interface {
 	TpuCustomEndpoint() *string
 	SetTpuCustomEndpoint(val *string)
 	TpuCustomEndpointInput() *string
+	UniverseDomain() *string
+	SetUniverseDomain(val *string)
+	UniverseDomainInput() *string
 	UserProjectOverride() interface{}
 	SetUserProjectOverride(val interface{})
 	UserProjectOverrideInput() interface{}
 	VertexAiCustomEndpoint() *string
 	SetVertexAiCustomEndpoint(val *string)
 	VertexAiCustomEndpointInput() *string
+	VmwareengineCustomEndpoint() *string
+	SetVmwareengineCustomEndpoint(val *string)
+	VmwareengineCustomEndpointInput() *string
 	VpcAccessCustomEndpoint() *string
 	SetVpcAccessCustomEndpoint(val *string)
 	VpcAccessCustomEndpointInput() *string
+	WorkbenchCustomEndpoint() *string
+	SetWorkbenchCustomEndpoint(val *string)
+	WorkbenchCustomEndpointInput() *string
 	WorkflowsCustomEndpoint() *string
 	SetWorkflowsCustomEndpoint(val *string)
 	WorkflowsCustomEndpointInput() *string
@@ -437,6 +476,7 @@ type GoogleProvider interface {
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
 	ResetBeyondcorpCustomEndpoint()
+	ResetBiglakeCustomEndpoint()
 	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
@@ -458,7 +498,6 @@ type GoogleProvider interface {
 	ResetCloudFunctionsCustomEndpoint()
 	ResetCloudIdentityCustomEndpoint()
 	ResetCloudIdsCustomEndpoint()
-	ResetCloudIotCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
 	ResetCloudRunV2CustomEndpoint()
@@ -478,26 +517,31 @@ type GoogleProvider interface {
 	ResetDataflowCustomEndpoint()
 	ResetDataFusionCustomEndpoint()
 	ResetDataLossPreventionCustomEndpoint()
+	ResetDataPipelineCustomEndpoint()
 	ResetDataplexCustomEndpoint()
 	ResetDataprocCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
 	ResetDatastoreCustomEndpoint()
 	ResetDatastreamCustomEndpoint()
+	ResetDefaultLabels()
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
+	ResetEdgecontainerCustomEndpoint()
+	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
-	ResetGameServicesCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
+	ResetGkehubFeatureCustomEndpoint()
+	ResetGkeonpremCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
 	ResetIamBetaCustomEndpoint()
@@ -508,12 +552,15 @@ type GoogleProvider interface {
 	ResetIdentityPlatformCustomEndpoint()
 	ResetImpersonateServiceAccount()
 	ResetImpersonateServiceAccountDelegates()
+	ResetIntegrationConnectorsCustomEndpoint()
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
+	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
+	ResetNetappCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
 	ResetNetworkManagementCustomEndpoint()
 	ResetNetworkSecurityCustomEndpoint()
@@ -539,6 +586,7 @@ type GoogleProvider interface {
 	ResetResourceManagerV3CustomEndpoint()
 	ResetScopes()
 	ResetSecretManagerCustomEndpoint()
+	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
 	ResetServiceNetworkingCustomEndpoint()
@@ -547,13 +595,17 @@ type GoogleProvider interface {
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
 	ResetStorageCustomEndpoint()
+	ResetStorageInsightsCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
 	ResetTpuCustomEndpoint()
+	ResetUniverseDomain()
 	ResetUserProjectOverride()
 	ResetVertexAiCustomEndpoint()
+	ResetVmwareengineCustomEndpoint()
 	ResetVpcAccessCustomEndpoint()
+	ResetWorkbenchCustomEndpoint()
 	ResetWorkflowsCustomEndpoint()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -826,6 +878,26 @@ func (j *jsiiProxy_GoogleProvider) BeyondcorpCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"beyondcorpCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BiglakeCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"biglakeCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BiglakeCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"biglakeCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1261,26 +1333,6 @@ func (j *jsiiProxy_GoogleProvider) CloudIdsCustomEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) CloudIotCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudIotCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) CloudIotCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudIotCustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleProvider) CloudResourceManagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1671,6 +1723,26 @@ func (j *jsiiProxy_GoogleProvider) DataLossPreventionCustomEndpointInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) DataPipelineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPipelineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DataPipelineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPipelineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) DataplexCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1766,6 +1838,26 @@ func (j *jsiiProxy_GoogleProvider) DatastreamCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"datastreamCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DefaultLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DefaultLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultLabelsInput",
 		&returns,
 	)
 	return returns
@@ -1891,6 +1983,46 @@ func (j *jsiiProxy_GoogleProvider) DocumentAiWarehouseCustomEndpointInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) EdgecontainerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgecontainerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) EdgecontainerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgecontainerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) EdgenetworkCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgenetworkCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) EdgenetworkCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgenetworkCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) EssentialContactsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2011,26 +2143,6 @@ func (j *jsiiProxy_GoogleProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) GameServicesCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gameServicesCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) GameServicesCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gameServicesCustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleProvider) GkeBackupCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2086,6 +2198,46 @@ func (j *jsiiProxy_GoogleProvider) GkeHubCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"gkeHubCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkehubFeatureCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkehubFeatureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkeonpremCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeonpremCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkeonpremCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeonpremCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2291,6 +2443,26 @@ func (j *jsiiProxy_GoogleProvider) ImpersonateServiceAccountInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) IntegrationConnectorsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationConnectorsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) IntegrationConnectorsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationConnectorsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) KmsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2381,6 +2553,26 @@ func (j *jsiiProxy_GoogleProvider) MetaAttributes() *map[string]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) MigrationCenterCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationCenterCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) MigrationCenterCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationCenterCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) MlEngineCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2416,6 +2608,26 @@ func (j *jsiiProxy_GoogleProvider) MonitoringCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"monitoringCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) NetappCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netappCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) NetappCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"netappCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2881,6 +3093,26 @@ func (j *jsiiProxy_GoogleProvider) SecretManagerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) SecureSourceManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecureSourceManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) SecurityCenterCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3041,6 +3273,26 @@ func (j *jsiiProxy_GoogleProvider) StorageCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) StorageInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) StorageInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInsightsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) StorageTransferCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3151,6 +3403,26 @@ func (j *jsiiProxy_GoogleProvider) TpuCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) UniverseDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"universeDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) UniverseDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"universeDomainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) UserProjectOverride() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -3191,6 +3463,26 @@ func (j *jsiiProxy_GoogleProvider) VertexAiCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) VmwareengineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmwareengineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) VmwareengineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmwareengineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) VpcAccessCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3206,6 +3498,26 @@ func (j *jsiiProxy_GoogleProvider) VpcAccessCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"vpcAccessCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) WorkbenchCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) WorkbenchCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3252,7 +3564,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3270,7 +3582,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3384,6 +3696,14 @@ func (j *jsiiProxy_GoogleProvider)SetBeyondcorpCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"beyondcorpCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetBiglakeCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"biglakeCustomEndpoint",
 		val,
 	)
 }
@@ -3556,14 +3876,6 @@ func (j *jsiiProxy_GoogleProvider)SetCloudIdsCustomEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProvider)SetCloudIotCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"cloudIotCustomEndpoint",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleProvider)SetCloudResourceManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3716,6 +4028,14 @@ func (j *jsiiProxy_GoogleProvider)SetDataLossPreventionCustomEndpoint(val *strin
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDataPipelineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"dataPipelineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDataplexCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3752,6 +4072,14 @@ func (j *jsiiProxy_GoogleProvider)SetDatastreamCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"datastreamCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetDefaultLabels(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"defaultLabels",
 		val,
 	)
 }
@@ -3804,6 +4132,22 @@ func (j *jsiiProxy_GoogleProvider)SetDocumentAiWarehouseCustomEndpoint(val *stri
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetEdgecontainerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"edgecontainerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetEdgenetworkCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"edgenetworkCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetEssentialContactsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3844,14 +4188,6 @@ func (j *jsiiProxy_GoogleProvider)SetFirestoreCustomEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProvider)SetGameServicesCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"gameServicesCustomEndpoint",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleProvider)SetGkeBackupCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3872,6 +4208,22 @@ func (j *jsiiProxy_GoogleProvider)SetGkeHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"gkeHubCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetGkehubFeatureCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkehubFeatureCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetGkeonpremCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeonpremCustomEndpoint",
 		val,
 	)
 }
@@ -3956,6 +4308,14 @@ func (j *jsiiProxy_GoogleProvider)SetImpersonateServiceAccountDelegates(val *[]*
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetIntegrationConnectorsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"integrationConnectorsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetKmsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3988,6 +4348,14 @@ func (j *jsiiProxy_GoogleProvider)SetMemcacheCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetMigrationCenterCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"migrationCenterCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetMlEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4000,6 +4368,14 @@ func (j *jsiiProxy_GoogleProvider)SetMonitoringCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"monitoringCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetNetappCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"netappCustomEndpoint",
 		val,
 	)
 }
@@ -4180,6 +4556,14 @@ func (j *jsiiProxy_GoogleProvider)SetSecretManagerCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetSecureSourceManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"secureSourceManagerCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetSecurityCenterCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4244,6 +4628,14 @@ func (j *jsiiProxy_GoogleProvider)SetStorageCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetStorageInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageInsightsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetStorageTransferCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4276,6 +4668,14 @@ func (j *jsiiProxy_GoogleProvider)SetTpuCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetUniverseDomain(val *string) {
+	_jsii_.Set(
+		j,
+		"universeDomain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetUserProjectOverride(val interface{}) {
 	if err := j.validateSetUserProjectOverrideParameters(val); err != nil {
 		panic(err)
@@ -4295,10 +4695,26 @@ func (j *jsiiProxy_GoogleProvider)SetVertexAiCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetVmwareengineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"vmwareengineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetVpcAccessCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"vpcAccessCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetWorkbenchCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"workbenchCustomEndpoint",
 		val,
 	)
 }
@@ -4529,6 +4945,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBeyondcorpCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetBiglakeCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBiglakeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetBigqueryAnalyticsHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4697,14 +5121,6 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudIdsCustomEndpoint() {
 	)
 }
 
-func (g *jsiiProxy_GoogleProvider) ResetCloudIotCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCloudIotCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleProvider) ResetCloudResourceManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4857,6 +5273,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDataLossPreventionCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDataPipelineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataPipelineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDataplexCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4893,6 +5317,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDatastreamCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatastreamCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetDefaultLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultLabels",
 		nil, // no parameters
 	)
 }
@@ -4945,6 +5377,22 @@ func (g *jsiiProxy_GoogleProvider) ResetDocumentAiWarehouseCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetEdgecontainerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEdgecontainerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetEdgenetworkCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEdgenetworkCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetEssentialContactsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4985,14 +5433,6 @@ func (g *jsiiProxy_GoogleProvider) ResetFirestoreCustomEndpoint() {
 	)
 }
 
-func (g *jsiiProxy_GoogleProvider) ResetGameServicesCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGameServicesCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleProvider) ResetGkeBackupCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5013,6 +5453,22 @@ func (g *jsiiProxy_GoogleProvider) ResetGkeHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeHubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetGkehubFeatureCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkehubFeatureCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetGkeonpremCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeonpremCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5097,6 +5553,14 @@ func (g *jsiiProxy_GoogleProvider) ResetImpersonateServiceAccountDelegates() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetIntegrationConnectorsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIntegrationConnectorsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetKmsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5129,6 +5593,14 @@ func (g *jsiiProxy_GoogleProvider) ResetMemcacheCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetMigrationCenterCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMigrationCenterCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetMlEngineCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5141,6 +5613,14 @@ func (g *jsiiProxy_GoogleProvider) ResetMonitoringCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMonitoringCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetNetappCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetappCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5329,6 +5809,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSecretManagerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetSecureSourceManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecureSourceManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5393,6 +5881,14 @@ func (g *jsiiProxy_GoogleProvider) ResetStorageCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetStorageInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageInsightsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetStorageTransferCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5425,6 +5921,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTpuCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetUniverseDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUniverseDomain",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetUserProjectOverride() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5441,10 +5945,26 @@ func (g *jsiiProxy_GoogleProvider) ResetVertexAiCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetVmwareengineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVmwareengineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetVpcAccessCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVpcAccessCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetWorkbenchCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkbenchCustomEndpoint",
 		nil, // no parameters
 	)
 }

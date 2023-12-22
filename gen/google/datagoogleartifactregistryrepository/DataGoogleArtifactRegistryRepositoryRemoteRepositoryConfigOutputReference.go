@@ -10,6 +10,7 @@ import (
 
 type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
+	AptRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,6 +43,8 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpstreamCredentials() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList
+	YumRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,16 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference i
 // The jsii proxy struct for DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 type jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList
+	_jsii_.Get(
+		j,
+		"aptRepository",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -196,6 +209,26 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOut
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentials() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList
+	_jsii_.Get(
+		j,
+		"upstreamCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList
+	_jsii_.Get(
+		j,
+		"yumRepository",
 		&returns,
 	)
 	return returns

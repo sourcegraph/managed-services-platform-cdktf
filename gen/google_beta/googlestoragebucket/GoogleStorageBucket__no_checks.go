@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) validateSetEnableObjectRetentionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }
@@ -153,6 +157,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetPublicAccessPreventionParamet
 }
 
 func (j *jsiiProxy_GoogleStorageBucket) validateSetRequesterPaysParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) validateSetRpoParameters(val *string) error {
 	return nil
 }
 
