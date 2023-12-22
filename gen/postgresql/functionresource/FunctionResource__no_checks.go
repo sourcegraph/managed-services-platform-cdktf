@@ -92,11 +92,19 @@ func (j *jsiiProxy_FunctionResource) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_FunctionResource) validateSetLanguageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_FunctionResource) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FunctionResource) validateSetParallelParameters(val *string) error {
 	return nil
 }
 
@@ -109,6 +117,18 @@ func (j *jsiiProxy_FunctionResource) validateSetReturnsParameters(val *string) e
 }
 
 func (j *jsiiProxy_FunctionResource) validateSetSchemaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FunctionResource) validateSetSecurityDefinerParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FunctionResource) validateSetStrictParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FunctionResource) validateSetVolatilityParameters(val *string) error {
 	return nil
 }
 
