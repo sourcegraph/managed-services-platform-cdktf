@@ -1,0 +1,11 @@
+name: slack
+
+provider:
+  source: registry.terraform.io/pablovarela/slack
+  version: "1.2.2"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+
+output: gen
