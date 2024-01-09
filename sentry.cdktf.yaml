@@ -1,0 +1,11 @@
+name: sentry
+
+provider:
+  source: registry.terraform.io/jianyuan/sentry
+  version: "0.12.1"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+
+output: gen
