@@ -8,3 +8,9 @@ To regenerate the modules under `github.com/sourcegraph/managed-services-platfor
 asdf install
 make
 ```
+
+To regenerate a specific module, run:
+```sh
+asdf install
+make <module name> # e.g. make nobl9
+```
