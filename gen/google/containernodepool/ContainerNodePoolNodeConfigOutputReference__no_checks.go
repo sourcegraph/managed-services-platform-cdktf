@@ -132,6 +132,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskTy
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemp
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

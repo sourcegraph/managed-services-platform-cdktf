@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleorgpolicypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy google_org_policy_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_org_policy_policy google_org_policy_policy}.
 type GoogleOrgPolicyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,7 @@ type GoogleOrgPolicyPolicy interface {
 	SetDependsOn(val *[]*string)
 	DryRunSpec() GoogleOrgPolicyPolicyDryRunSpecOutputReference
 	DryRunSpecInput() *GoogleOrgPolicyPolicyDryRunSpec
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -188,6 +189,16 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) DryRunSpecInput() *GoogleOrgPolicyPoli
 	_jsii_.Get(
 		j,
 		"dryRunSpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -404,7 +415,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
 func NewGoogleOrgPolicyPolicy(scope constructs.Construct, id *string, config *GoogleOrgPolicyPolicyConfig) GoogleOrgPolicyPolicy {
 	_init_.Initialize()
 
@@ -422,7 +433,7 @@ func NewGoogleOrgPolicyPolicy(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
 func NewGoogleOrgPolicyPolicy_Override(g GoogleOrgPolicyPolicy, scope constructs.Construct, id *string, config *GoogleOrgPolicyPolicyConfig) {
 	_init_.Initialize()
 

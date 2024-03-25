@@ -133,6 +133,37 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEncryptionKe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEphemeralDirectoriesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleWorkstationsWorkstationConfigEphemeralDirectories:
+		value := value.(*[]*GoogleWorkstationsWorkstationConfigEphemeralDirectories)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleWorkstationsWorkstationConfigEphemeralDirectories:
+		value_ := value.([]*GoogleWorkstationsWorkstationConfigEphemeralDirectories)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleWorkstationsWorkstationConfigEphemeralDirectories; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutHostParameters(value *GoogleWorkstationsWorkstationConfigHost) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -169,6 +200,37 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDi
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleWorkstationsWorkstationConfigPersistentDirectories; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutReadinessChecksParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleWorkstationsWorkstationConfigReadinessChecks:
+		value := value.(*[]*GoogleWorkstationsWorkstationConfigReadinessChecks)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleWorkstationsWorkstationConfigReadinessChecks:
+		value_ := value.([]*GoogleWorkstationsWorkstationConfigReadinessChecks)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleWorkstationsWorkstationConfigReadinessChecks; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -302,6 +364,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetCountParamet
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisableTcpConnectionsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

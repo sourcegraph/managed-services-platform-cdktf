@@ -56,6 +56,14 @@ func (b *jsiiProxy_BigqueryRoutine) validatePutArgumentsParameters(value interfa
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryRoutine) validatePutRemoteFunctionOptionsParameters(value *BigqueryRoutineRemoteFunctionOptions) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryRoutine) validatePutSparkOptionsParameters(value *BigqueryRoutineSparkOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryRoutine) validatePutTimeoutsParameters(value *BigqueryRoutineTimeouts) error {
 	return nil
 }

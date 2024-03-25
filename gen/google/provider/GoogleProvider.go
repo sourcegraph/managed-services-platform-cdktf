@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -24,6 +24,9 @@ type GoogleProvider interface {
 	ActiveDirectoryCustomEndpoint() *string
 	SetActiveDirectoryCustomEndpoint(val *string)
 	ActiveDirectoryCustomEndpointInput() *string
+	AddTerraformAttributionLabel() interface{}
+	SetAddTerraformAttributionLabel(val interface{})
+	AddTerraformAttributionLabelInput() interface{}
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -39,6 +42,9 @@ type GoogleProvider interface {
 	AppEngineCustomEndpoint() *string
 	SetAppEngineCustomEndpoint(val *string)
 	AppEngineCustomEndpointInput() *string
+	ApphubCustomEndpoint() *string
+	SetApphubCustomEndpoint(val *string)
+	ApphubCustomEndpointInput() *string
 	ArtifactRegistryCustomEndpoint() *string
 	SetArtifactRegistryCustomEndpoint(val *string)
 	ArtifactRegistryCustomEndpointInput() *string
@@ -84,6 +90,9 @@ type GoogleProvider interface {
 	BinaryAuthorizationCustomEndpoint() *string
 	SetBinaryAuthorizationCustomEndpoint(val *string)
 	BinaryAuthorizationCustomEndpointInput() *string
+	BlockchainNodeEngineCustomEndpoint() *string
+	SetBlockchainNodeEngineCustomEndpoint(val *string)
+	BlockchainNodeEngineCustomEndpointInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateManagerCustomEndpoint() *string
@@ -107,6 +116,9 @@ type GoogleProvider interface {
 	ClouddeployCustomEndpoint() *string
 	SetClouddeployCustomEndpoint(val *string)
 	ClouddeployCustomEndpointInput() *string
+	ClouddomainsCustomEndpoint() *string
+	SetClouddomainsCustomEndpoint(val *string)
+	ClouddomainsCustomEndpointInput() *string
 	Cloudfunctions2CustomEndpoint() *string
 	SetCloudfunctions2CustomEndpoint(val *string)
 	Cloudfunctions2CustomEndpointInput() *string
@@ -119,6 +131,9 @@ type GoogleProvider interface {
 	CloudIdsCustomEndpoint() *string
 	SetCloudIdsCustomEndpoint(val *string)
 	CloudIdsCustomEndpointInput() *string
+	CloudQuotasCustomEndpoint() *string
+	SetCloudQuotasCustomEndpoint(val *string)
+	CloudQuotasCustomEndpointInput() *string
 	CloudResourceManagerCustomEndpoint() *string
 	SetCloudResourceManagerCustomEndpoint(val *string)
 	CloudResourceManagerCustomEndpointInput() *string
@@ -208,6 +223,9 @@ type GoogleProvider interface {
 	DialogflowCxCustomEndpoint() *string
 	SetDialogflowCxCustomEndpoint(val *string)
 	DialogflowCxCustomEndpointInput() *string
+	DiscoveryEngineCustomEndpoint() *string
+	SetDiscoveryEngineCustomEndpoint(val *string)
+	DiscoveryEngineCustomEndpointInput() *string
 	DnsCustomEndpoint() *string
 	SetDnsCustomEndpoint(val *string)
 	DnsCustomEndpointInput() *string
@@ -232,6 +250,9 @@ type GoogleProvider interface {
 	FilestoreCustomEndpoint() *string
 	SetFilestoreCustomEndpoint(val *string)
 	FilestoreCustomEndpointInput() *string
+	FirebaseAppCheckCustomEndpoint() *string
+	SetFirebaseAppCheckCustomEndpoint(val *string)
+	FirebaseAppCheckCustomEndpointInput() *string
 	FirebaserulesCustomEndpoint() *string
 	SetFirebaserulesCustomEndpoint(val *string)
 	FirebaserulesCustomEndpointInput() *string
@@ -392,6 +413,9 @@ type GoogleProvider interface {
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
+	SecuritypostureCustomEndpoint() *string
+	SetSecuritypostureCustomEndpoint(val *string)
+	SecuritypostureCustomEndpointInput() *string
 	ServiceManagementCustomEndpoint() *string
 	SetServiceManagementCustomEndpoint(val *string)
 	ServiceManagementCustomEndpointInput() *string
@@ -425,6 +449,9 @@ type GoogleProvider interface {
 	TagsLocationCustomEndpoint() *string
 	SetTagsLocationCustomEndpoint(val *string)
 	TagsLocationCustomEndpointInput() *string
+	TerraformAttributionLabelAdditionStrategy() *string
+	SetTerraformAttributionLabelAdditionStrategy(val *string)
+	TerraformAttributionLabelAdditionStrategyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -467,11 +494,13 @@ type GoogleProvider interface {
 	ResetAccessContextManagerCustomEndpoint()
 	ResetAccessToken()
 	ResetActiveDirectoryCustomEndpoint()
+	ResetAddTerraformAttributionLabel()
 	ResetAlias()
 	ResetAlloydbCustomEndpoint()
 	ResetApigeeCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
+	ResetApphubCustomEndpoint()
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
@@ -487,6 +516,7 @@ type GoogleProvider interface {
 	ResetBillingCustomEndpoint()
 	ResetBillingProject()
 	ResetBinaryAuthorizationCustomEndpoint()
+	ResetBlockchainNodeEngineCustomEndpoint()
 	ResetCertificateManagerCustomEndpoint()
 	ResetCloudAssetCustomEndpoint()
 	ResetCloudBillingCustomEndpoint()
@@ -494,10 +524,12 @@ type GoogleProvider interface {
 	ResetCloudbuildv2CustomEndpoint()
 	ResetCloudBuildWorkerPoolCustomEndpoint()
 	ResetClouddeployCustomEndpoint()
+	ResetClouddomainsCustomEndpoint()
 	ResetCloudfunctions2CustomEndpoint()
 	ResetCloudFunctionsCustomEndpoint()
 	ResetCloudIdentityCustomEndpoint()
 	ResetCloudIdsCustomEndpoint()
+	ResetCloudQuotasCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
 	ResetCloudRunV2CustomEndpoint()
@@ -527,6 +559,7 @@ type GoogleProvider interface {
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
+	ResetDiscoveryEngineCustomEndpoint()
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
@@ -535,6 +568,7 @@ type GoogleProvider interface {
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
+	ResetFirebaseAppCheckCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
@@ -588,6 +622,7 @@ type GoogleProvider interface {
 	ResetSecretManagerCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
+	ResetSecuritypostureCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
 	ResetServiceNetworkingCustomEndpoint()
 	ResetServiceUsageCustomEndpoint()
@@ -599,6 +634,7 @@ type GoogleProvider interface {
 	ResetStorageTransferCustomEndpoint()
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
+	ResetTerraformAttributionLabelAdditionStrategy()
 	ResetTpuCustomEndpoint()
 	ResetUniverseDomain()
 	ResetUserProjectOverride()
@@ -703,6 +739,26 @@ func (j *jsiiProxy_GoogleProvider) ActiveDirectoryCustomEndpointInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) AddTerraformAttributionLabel() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTerraformAttributionLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) AddTerraformAttributionLabelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTerraformAttributionLabelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) Alias() *string {
 	var returns *string
 	_jsii_.Get(
@@ -798,6 +854,26 @@ func (j *jsiiProxy_GoogleProvider) AppEngineCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"appEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ApphubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apphubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ApphubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apphubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1103,6 +1179,26 @@ func (j *jsiiProxy_GoogleProvider) BinaryAuthorizationCustomEndpointInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) BlockchainNodeEngineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blockchainNodeEngineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BlockchainNodeEngineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blockchainNodeEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -1253,6 +1349,26 @@ func (j *jsiiProxy_GoogleProvider) ClouddeployCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ClouddomainsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clouddomainsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ClouddomainsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clouddomainsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) Cloudfunctions2CustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1328,6 +1444,26 @@ func (j *jsiiProxy_GoogleProvider) CloudIdsCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudIdsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) CloudQuotasCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudQuotasCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) CloudQuotasCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudQuotasCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1923,6 +2059,26 @@ func (j *jsiiProxy_GoogleProvider) DialogflowCxCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) DiscoveryEngineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DiscoveryEngineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) DnsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2078,6 +2234,26 @@ func (j *jsiiProxy_GoogleProvider) FilestoreCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"filestoreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) FirebaseAppCheckCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppCheckCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) FirebaseAppCheckCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppCheckCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3133,6 +3309,26 @@ func (j *jsiiProxy_GoogleProvider) SecurityCenterCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) SecuritypostureCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecuritypostureCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) ServiceManagementCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3353,6 +3549,26 @@ func (j *jsiiProxy_GoogleProvider) TagsLocationCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) TerraformAttributionLabelAdditionStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttributionLabelAdditionStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) TerraformAttributionLabelAdditionStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttributionLabelAdditionStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -3564,7 +3780,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3582,7 +3798,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3625,6 +3841,17 @@ func (j *jsiiProxy_GoogleProvider)SetActiveDirectoryCustomEndpoint(val *string) 
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetAddTerraformAttributionLabel(val interface{}) {
+	if err := j.validateSetAddTerraformAttributionLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addTerraformAttributionLabel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
@@ -3661,6 +3888,14 @@ func (j *jsiiProxy_GoogleProvider)SetAppEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"appEngineCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetApphubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"apphubCustomEndpoint",
 		val,
 	)
 }
@@ -3788,6 +4023,14 @@ func (j *jsiiProxy_GoogleProvider)SetBinaryAuthorizationCustomEndpoint(val *stri
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetBlockchainNodeEngineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"blockchainNodeEngineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetCertificateManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3844,6 +4087,14 @@ func (j *jsiiProxy_GoogleProvider)SetClouddeployCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetClouddomainsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"clouddomainsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetCloudfunctions2CustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3872,6 +4123,14 @@ func (j *jsiiProxy_GoogleProvider)SetCloudIdsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudIdsCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetCloudQuotasCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudQuotasCustomEndpoint",
 		val,
 	)
 }
@@ -4108,6 +4367,14 @@ func (j *jsiiProxy_GoogleProvider)SetDialogflowCxCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDiscoveryEngineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"discoveryEngineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDnsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4168,6 +4435,14 @@ func (j *jsiiProxy_GoogleProvider)SetFilestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"filestoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetFirebaseAppCheckCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseAppCheckCustomEndpoint",
 		val,
 	)
 }
@@ -4572,6 +4847,14 @@ func (j *jsiiProxy_GoogleProvider)SetSecurityCenterCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetSecuritypostureCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securitypostureCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetServiceManagementCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4656,6 +4939,14 @@ func (j *jsiiProxy_GoogleProvider)SetTagsLocationCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tagsLocationCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetTerraformAttributionLabelAdditionStrategy(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttributionLabelAdditionStrategy",
 		val,
 	)
 }
@@ -4873,6 +5164,14 @@ func (g *jsiiProxy_GoogleProvider) ResetActiveDirectoryCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetAddTerraformAttributionLabel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAddTerraformAttributionLabel",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4909,6 +5208,14 @@ func (g *jsiiProxy_GoogleProvider) ResetAppEngineCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAppEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetApphubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApphubCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5033,6 +5340,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBinaryAuthorizationCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetBlockchainNodeEngineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBlockchainNodeEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetCertificateManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5089,6 +5404,14 @@ func (g *jsiiProxy_GoogleProvider) ResetClouddeployCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetClouddomainsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClouddomainsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetCloudfunctions2CustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5117,6 +5440,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudIdsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudIdsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetCloudQuotasCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudQuotasCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5353,6 +5684,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDialogflowCxCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDiscoveryEngineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDnsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5413,6 +5752,14 @@ func (g *jsiiProxy_GoogleProvider) ResetFilestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFilestoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetFirebaseAppCheckCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseAppCheckCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -5825,6 +6172,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetSecuritypostureCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecuritypostureCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetServiceManagementCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5909,6 +6264,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTagsLocationCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTagsLocationCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetTerraformAttributionLabelAdditionStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTerraformAttributionLabelAdditionStrategy",
 		nil, // no parameters
 	)
 }

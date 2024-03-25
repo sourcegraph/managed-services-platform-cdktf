@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager}.
 type DataGoogleComputeInstanceGroupManager interface {
 	cdktf.TerraformDataSource
+	AllInstancesConfig() DataGoogleComputeInstanceGroupManagerAllInstancesConfigList
 	AutoHealingPolicies() DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList
 	BaseInstanceName() *string
 	// Experimental.
@@ -22,6 +23,7 @@ type DataGoogleComputeInstanceGroupManager interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,6 +134,16 @@ type jsiiProxy_DataGoogleComputeInstanceGroupManager struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) AllInstancesConfig() DataGoogleComputeInstanceGroupManagerAllInstancesConfigList {
+	var returns DataGoogleComputeInstanceGroupManagerAllInstancesConfigList
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) AutoHealingPolicies() DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList {
 	var returns DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList
 	_jsii_.Get(
@@ -177,6 +189,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -563,7 +585,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
 func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGroupManagerConfig) DataGoogleComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -581,7 +603,7 @@ func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
 func NewDataGoogleComputeInstanceGroupManager_Override(d DataGoogleComputeInstanceGroupManager, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 

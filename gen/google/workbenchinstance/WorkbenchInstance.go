@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/workbenchinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/workbench_instance google_workbench_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/workbench_instance google_workbench_instance}.
 type WorkbenchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type WorkbenchInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredState() *string
+	SetDesiredState(val *string)
+	DesiredStateInput() *string
 	DisableProxyAccess() interface{}
 	SetDisableProxyAccess(val interface{})
 	DisableProxyAccessInput() interface{}
@@ -123,6 +126,7 @@ type WorkbenchInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGceSetup(value *WorkbenchInstanceGceSetup)
 	PutTimeouts(value *WorkbenchInstanceTimeouts)
+	ResetDesiredState()
 	ResetDisableProxyAccess()
 	ResetGceSetup()
 	ResetId()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_WorkbenchInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstance) DesiredState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstance) DesiredStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStateInput",
 		&returns,
 	)
 	return returns
@@ -610,7 +634,7 @@ func (j *jsiiProxy_WorkbenchInstance) UpgradeHistory() WorkbenchInstanceUpgradeH
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance(scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) WorkbenchInstance {
 	_init_.Initialize()
 
@@ -628,7 +652,7 @@ func NewWorkbenchInstance(scope constructs.Construct, id *string, config *Workbe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance_Override(w WorkbenchInstance, scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_WorkbenchInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkbenchInstance)SetDesiredState(val *string) {
+	if err := j.validateSetDesiredStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredState",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (w *jsiiProxy_WorkbenchInstance) PutTimeouts(value *WorkbenchInstanceTimeou
 		w,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstance) ResetDesiredState() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDesiredState",
+		nil, // no parameters
 	)
 }
 

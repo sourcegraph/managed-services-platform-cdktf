@@ -72,6 +72,10 @@ func (c *jsiiProxy_ContainerAwsNodePool) validatePutTimeoutsParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) validatePutUpdateSettingsParameters(value *ContainerAwsNodePoolUpdateSettings) error {
+	return nil
+}
+
 func validateContainerAwsNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }

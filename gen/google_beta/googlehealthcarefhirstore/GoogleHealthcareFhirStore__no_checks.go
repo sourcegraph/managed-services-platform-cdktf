@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryImportPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryModificationsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableUpdateCreateParameters(val interface{}) error {
 	return nil
 }

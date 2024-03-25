@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutMeshParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutPolicycontrollerParameters(value *GoogleGkeHubFeatureMembershipPolicycontroller) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutTimeoutsParameters(value *GoogleGkeHubFeatureMembershipTimeouts) error {
 	return nil
 }

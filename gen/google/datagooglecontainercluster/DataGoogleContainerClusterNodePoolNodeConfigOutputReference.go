@@ -31,6 +31,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	DiskSizeGb() *float64
 	DiskType() *string
 	EffectiveTaints() DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList
+	EnableConfidentialStorage() cdktf.IResolvable
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
 	// Experimental.
@@ -56,6 +57,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	Preemptible() cdktf.IResolvable
 	ReservationAffinity() DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList
 	ResourceLabels() cdktf.StringMap
+	ResourceManagerTags() cdktf.StringMap
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
@@ -195,6 +197,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) EnableConfidentialStorage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorage",
 		&returns,
 	)
 	return returns
@@ -425,6 +437,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"resourceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns

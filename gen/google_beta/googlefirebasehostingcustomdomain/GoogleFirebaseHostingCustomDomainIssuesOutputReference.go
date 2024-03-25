@@ -26,7 +26,7 @@ type GoogleFirebaseHostingCustomDomainIssuesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Details() cdktf.StringMapList
+	Details() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleFirebaseHostingCustomDomainIssues
@@ -119,8 +119,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesOutputReference) Details() cdktf.StringMapList {
-	var returns cdktf.StringMapList
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesOutputReference) Details() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"details",
