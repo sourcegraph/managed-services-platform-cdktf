@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDesiredStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkbenchInstance) validateSetDisableProxyAccessParameters(val interface{}) error {
 	return nil
 }

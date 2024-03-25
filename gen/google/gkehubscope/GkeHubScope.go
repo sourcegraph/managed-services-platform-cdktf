@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/gkehubscope/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
 type GkeHubScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type GkeHubScope interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	NamespaceLabels() *map[string]*string
+	SetNamespaceLabels(val *map[string]*string)
+	NamespaceLabelsInput() *map[string]*string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -108,6 +111,7 @@ type GkeHubScope interface {
 	PutTimeouts(value *GkeHubScopeTimeouts)
 	ResetId()
 	ResetLabels()
+	ResetNamespaceLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -298,6 +302,26 @@ func (j *jsiiProxy_GkeHubScope) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubScope) NamespaceLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"namespaceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScope) NamespaceLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"namespaceLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubScope) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -469,7 +493,7 @@ func (j *jsiiProxy_GkeHubScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeConfig) GkeHubScope {
 	_init_.Initialize()
 
@@ -487,7 +511,7 @@ func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope_Override(g GkeHubScope, scope constructs.Construct, id *string, config *GkeHubScopeConfig) {
 	_init_.Initialize()
 
@@ -565,6 +589,17 @@ func (j *jsiiProxy_GkeHubScope)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubScope)SetNamespaceLabels(val *map[string]*string) {
+	if err := j.validateSetNamespaceLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespaceLabels",
 		val,
 	)
 }
@@ -899,6 +934,14 @@ func (g *jsiiProxy_GkeHubScope) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubScope) ResetNamespaceLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNamespaceLabels",
 		nil, // no parameters
 	)
 }

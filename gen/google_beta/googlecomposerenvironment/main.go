@@ -99,6 +99,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dagGcsPrefix", GoGetter: "DagGcsPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseConfig", GoGetter: "DatabaseConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseConfigInput", GoGetter: "DatabaseConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataRetentionConfig", GoGetter: "DataRetentionConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "dataRetentionConfigInput", GoGetter: "DataRetentionConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateBuildsOnly", GoGetter: "EnablePrivateBuildsOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateBuildsOnlyInput", GoGetter: "EnablePrivateBuildsOnlyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateEnvironment", GoGetter: "EnablePrivateEnvironment"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateEnvironmentInput", GoGetter: "EnablePrivateEnvironmentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionConfig", GoGetter: "EncryptionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionConfigInput", GoGetter: "EncryptionConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentSize", GoGetter: "EnvironmentSize"},
@@ -128,6 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateEnvironmentConfig", GoGetter: "PrivateEnvironmentConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "privateEnvironmentConfigInput", GoGetter: "PrivateEnvironmentConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabaseConfig", GoMethod: "PutDatabaseConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataRetentionConfig", GoMethod: "PutDataRetentionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfig", GoMethod: "PutEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindow", GoMethod: "PutMaintenanceWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "putMasterAuthorizedNetworksConfig", GoMethod: "PutMasterAuthorizedNetworksConfig"},
@@ -141,6 +148,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recoveryConfig", GoGetter: "RecoveryConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryConfigInput", GoGetter: "RecoveryConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseConfig", GoMethod: "ResetDatabaseConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataRetentionConfig", GoMethod: "ResetDataRetentionConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnablePrivateBuildsOnly", GoMethod: "ResetEnablePrivateBuildsOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnablePrivateEnvironment", GoMethod: "ResetEnablePrivateEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfig", GoMethod: "ResetEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentSize", GoMethod: "ResetEnvironmentSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},
@@ -171,6 +181,105 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigDataRetentionConfig",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigDataRetentionConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putTaskLogsRetentionConfig", GoMethod: "PutTaskLogsRetentionConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "taskLogsRetentionConfig", GoGetter: "TaskLogsRetentionConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "taskLogsRetentionConfigInput", GoGetter: "TaskLogsRetentionConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStorageMode", GoMethod: "ResetStorageMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "storageMode", GoGetter: "StorageMode"},
+			_jsii_.MemberProperty{JsiiProperty: "storageModeInput", GoGetter: "StorageModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -483,6 +592,10 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "composerInternalIpv4CidrBlock", GoGetter: "ComposerInternalIpv4CidrBlock"},
+			_jsii_.MemberProperty{JsiiProperty: "composerInternalIpv4CidrBlockInput", GoGetter: "ComposerInternalIpv4CidrBlockInput"},
+			_jsii_.MemberProperty{JsiiProperty: "composerNetworkAttachment", GoGetter: "ComposerNetworkAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "composerNetworkAttachmentInput", GoGetter: "ComposerNetworkAttachmentInput"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "diskSizeGb", GoGetter: "DiskSizeGb"},
@@ -513,6 +626,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "oauthScopes", GoGetter: "OauthScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthScopesInput", GoGetter: "OauthScopesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpAllocationPolicy", GoMethod: "PutIpAllocationPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComposerInternalIpv4CidrBlock", GoMethod: "ResetComposerInternalIpv4CidrBlock"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComposerNetworkAttachment", GoMethod: "ResetComposerNetworkAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskSizeGb", GoMethod: "ResetDiskSizeGb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableIpMasqAgent", GoMethod: "ResetEnableIpMasqAgent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpAllocationPolicy", GoMethod: "ResetIpAllocationPolicy"},
@@ -773,12 +888,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPypiPackages", GoMethod: "ResetPypiPackages"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPythonVersion", GoMethod: "ResetPythonVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedulerCount", GoMethod: "ResetSchedulerCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebServerPluginsMode", GoMethod: "ResetWebServerPluginsMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulerCount", GoGetter: "SchedulerCount"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulerCountInput", GoGetter: "SchedulerCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "webServerPluginsMode", GoGetter: "WebServerPluginsMode"},
+			_jsii_.MemberProperty{JsiiProperty: "webServerPluginsModeInput", GoGetter: "WebServerPluginsModeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference{}
@@ -930,13 +1048,19 @@ func init() {
 		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfig",
 		reflect.TypeOf((*GoogleComposerEnvironmentConfigWorkloadsConfig)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
-		reflect.TypeOf((*GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference)(nil)).Elem(),
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "cpu", GoGetter: "Cpu"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuInput", GoGetter: "CpuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -951,10 +1075,53 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "memoryGb", GoGetter: "MemoryGb"},
+			_jsii_.MemberProperty{JsiiProperty: "memoryGbInput", GoGetter: "MemoryGbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpu", GoMethod: "ResetCpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMemoryGb", GoMethod: "ResetMemoryGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStorageGb", GoMethod: "ResetStorageGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "storageGb", GoGetter: "StorageGb"},
+			_jsii_.MemberProperty{JsiiProperty: "storageGbInput", GoGetter: "StorageGbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
+		reflect.TypeOf((*GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dagProcessor", GoGetter: "DagProcessor"},
+			_jsii_.MemberProperty{JsiiProperty: "dagProcessorInput", GoGetter: "DagProcessorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDagProcessor", GoMethod: "PutDagProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putScheduler", GoMethod: "PutScheduler"},
 			_jsii_.MemberMethod{JsiiMethod: "putTriggerer", GoMethod: "PutTriggerer"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebServer", GoMethod: "PutWebServer"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorker", GoMethod: "PutWorker"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDagProcessor", GoMethod: "ResetDagProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScheduler", GoMethod: "ResetScheduler"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTriggerer", GoMethod: "ResetTriggerer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebServer", GoMethod: "ResetWebServer"},

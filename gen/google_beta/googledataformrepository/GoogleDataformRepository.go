@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledataformrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_dataform_repository google_dataform_repository}.
 type GoogleDataformRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverridesInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) GoogleDataformRepository {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) {
 	_init_.Initialize()
 

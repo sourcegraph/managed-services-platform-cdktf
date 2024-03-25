@@ -60,11 +60,19 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEncryptionKe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEphemeralDirectoriesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutHostParameters(value *GoogleWorkstationsWorkstationConfigHost) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDirectoriesParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutReadinessChecksParameters(value interface{}) error {
 	return nil
 }
 
@@ -93,6 +101,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetConnectionPa
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisableTcpConnectionsParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
 type GoogleComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -72,6 +72,8 @@ type GoogleComputeRouterPeer interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ManagementType() *string
+	Md5AuthenticationKey() GoogleComputeRouterPeerMd5AuthenticationKeyOutputReference
+	Md5AuthenticationKeyInput() *GoogleComputeRouterPeerMd5AuthenticationKey
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -143,6 +145,7 @@ type GoogleComputeRouterPeer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvertisedIpRanges(value interface{})
 	PutBfd(value *GoogleComputeRouterPeerBfd)
+	PutMd5AuthenticationKey(value *GoogleComputeRouterPeerMd5AuthenticationKey)
 	PutTimeouts(value *GoogleComputeRouterPeerTimeouts)
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
@@ -154,6 +157,7 @@ type GoogleComputeRouterPeer interface {
 	ResetId()
 	ResetIpAddress()
 	ResetIpv6NexthopAddress()
+	ResetMd5AuthenticationKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -498,6 +502,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) ManagementType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) Md5AuthenticationKey() GoogleComputeRouterPeerMd5AuthenticationKeyOutputReference {
+	var returns GoogleComputeRouterPeerMd5AuthenticationKeyOutputReference
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) Md5AuthenticationKeyInput() *GoogleComputeRouterPeerMd5AuthenticationKey {
+	var returns *GoogleComputeRouterPeerMd5AuthenticationKey
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -749,7 +773,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer {
 	_init_.Initialize()
 
@@ -767,7 +791,7 @@ func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer_Override(g GoogleComputeRouterPeer, scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1321,6 +1345,17 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) PutBfd(value *GoogleComputeRouterPee
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) PutMd5AuthenticationKey(value *GoogleComputeRouterPeerMd5AuthenticationKey) {
+	if err := g.validatePutMd5AuthenticationKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMd5AuthenticationKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) PutTimeouts(value *GoogleComputeRouterPeerTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1408,6 +1443,14 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetIpv6NexthopAddress() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpv6NexthopAddress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetMd5AuthenticationKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMd5AuthenticationKey",
 		nil, // no parameters
 	)
 }

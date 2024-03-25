@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglekmscryptokey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/kms_crypto_key google_kms_crypto_key}.
 type DataGoogleKmsCryptoKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,7 @@ type DataGoogleKmsCryptoKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Primary() DataGoogleKmsCryptoKeyPrimaryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -302,6 +303,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsCryptoKey) Primary() DataGoogleKmsCryptoKeyPrimaryList {
+	var returns DataGoogleKmsCryptoKeyPrimaryList
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsCryptoKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -403,7 +414,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) VersionTemplate() DataGoogleKmsCrypto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
 func NewDataGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyConfig) DataGoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -421,7 +432,7 @@ func NewDataGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
 func NewDataGoogleKmsCryptoKey_Override(d DataGoogleKmsCryptoKey, scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 

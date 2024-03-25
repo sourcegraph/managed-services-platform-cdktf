@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/healthcarehl7v2store/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
 type HealthcareHl7V2Store interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type HealthcareHl7V2Store interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RejectDuplicateMessage() interface{}
+	SetRejectDuplicateMessage(val interface{})
+	RejectDuplicateMessageInput() interface{}
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -118,6 +121,7 @@ type HealthcareHl7V2Store interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParserConfig()
+	ResetRejectDuplicateMessage()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -414,6 +418,26 @@ func (j *jsiiProxy_HealthcareHl7V2Store) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareHl7V2Store) RejectDuplicateMessage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectDuplicateMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareHl7V2Store) RejectDuplicateMessageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rejectDuplicateMessageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareHl7V2Store) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_HealthcareHl7V2Store) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) HealthcareHl7V2Store {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *Hea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store_Override(h HealthcareHl7V2Store, scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_HealthcareHl7V2Store)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HealthcareHl7V2Store)SetRejectDuplicateMessage(val interface{}) {
+	if err := j.validateSetRejectDuplicateMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rejectDuplicateMessage",
 		val,
 	)
 }
@@ -980,6 +1015,14 @@ func (h *jsiiProxy_HealthcareHl7V2Store) ResetParserConfig() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetParserConfig",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareHl7V2Store) ResetRejectDuplicateMessage() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetRejectDuplicateMessage",
 		nil, // no parameters
 	)
 }

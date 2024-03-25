@@ -200,6 +200,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutVerticalPodAutoscalingPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadAltsConfigParameters(value *GoogleContainerClusterWorkloadAltsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadIdentityConfigParameters(value *GoogleContainerClusterWorkloadIdentityConfig) error {
 	return nil
 }

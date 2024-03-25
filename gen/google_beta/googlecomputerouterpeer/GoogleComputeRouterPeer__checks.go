@@ -153,6 +153,17 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutBfdParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *GoogleComputeRouterPeerMd5AuthenticationKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutTimeoutsParameters(value *GoogleComputeRouterPeerTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

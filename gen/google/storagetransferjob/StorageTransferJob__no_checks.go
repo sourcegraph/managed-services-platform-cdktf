@@ -100,6 +100,10 @@ func (j *jsiiProxy_StorageTransferJob) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJob) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJob) validateSetProjectParameters(val *string) error {
 	return nil
 }

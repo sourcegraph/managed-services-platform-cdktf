@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
+	AllInstancesConfig() ComputeInstanceGroupManagerAllInstancesConfigOutputReference
+	AllInstancesConfigInput() *ComputeInstanceGroupManagerAllInstancesConfig
 	AutoHealingPolicies() ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	AutoHealingPoliciesInput() *ComputeInstanceGroupManagerAutoHealingPolicies
 	BaseInstanceName() *string
@@ -29,6 +31,7 @@ type ComputeInstanceGroupManager interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -139,6 +142,7 @@ type ComputeInstanceGroupManager interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllInstancesConfig(value *ComputeInstanceGroupManagerAllInstancesConfig)
 	PutAutoHealingPolicies(value *ComputeInstanceGroupManagerAutoHealingPolicies)
 	PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
@@ -148,6 +152,7 @@ type ComputeInstanceGroupManager interface {
 	PutTimeouts(value *ComputeInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *ComputeInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
+	ResetAllInstancesConfig()
 	ResetAutoHealingPolicies()
 	ResetDescription()
 	ResetId()
@@ -181,6 +186,26 @@ type ComputeInstanceGroupManager interface {
 // The jsii proxy struct for ComputeInstanceGroupManager
 type jsiiProxy_ComputeInstanceGroupManager struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) AllInstancesConfig() ComputeInstanceGroupManagerAllInstancesConfigOutputReference {
+	var returns ComputeInstanceGroupManagerAllInstancesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) AllInstancesConfigInput() *ComputeInstanceGroupManagerAllInstancesConfig {
+	var returns *ComputeInstanceGroupManagerAllInstancesConfig
+	_jsii_.Get(
+		j,
+		"allInstancesConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeInstanceGroupManager) AutoHealingPolicies() ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference {
@@ -258,6 +283,16 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -794,7 +829,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -812,7 +847,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1278,6 +1313,17 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutAllInstancesConfig(value *ComputeInstanceGroupManagerAllInstancesConfig) {
+	if err := c.validatePutAllInstancesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAllInstancesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) PutAutoHealingPolicies(value *ComputeInstanceGroupManagerAutoHealingPolicies) {
 	if err := c.validatePutAutoHealingPoliciesParameters(value); err != nil {
 		panic(err)
@@ -1374,6 +1420,14 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) PutVersion(value interface{}) {
 		c,
 		"putVersion",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetAllInstancesConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllInstancesConfig",
+		nil, // no parameters
 	)
 }
 

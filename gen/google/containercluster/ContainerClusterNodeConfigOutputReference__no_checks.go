@@ -132,6 +132,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetDiskTyp
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetPreempt
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

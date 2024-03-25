@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglevmwareenginensxcredentials/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials}.
 type DataGoogleVmwareengineNsxCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNsxCredentials) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials} Data Source.
 func NewDataGoogleVmwareengineNsxCredentials(scope constructs.Construct, id *string, config *DataGoogleVmwareengineNsxCredentialsConfig) DataGoogleVmwareengineNsxCredentials {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGoogleVmwareengineNsxCredentials(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials} Data Source.
 func NewDataGoogleVmwareengineNsxCredentials_Override(d DataGoogleVmwareengineNsxCredentials, scope constructs.Construct, id *string, config *DataGoogleVmwareengineNsxCredentialsConfig) {
 	_init_.Initialize()
 

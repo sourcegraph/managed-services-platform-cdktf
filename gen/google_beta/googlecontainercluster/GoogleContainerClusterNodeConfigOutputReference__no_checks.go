@@ -192,6 +192,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }

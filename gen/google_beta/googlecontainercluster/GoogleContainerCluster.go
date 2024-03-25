@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -232,6 +232,8 @@ type GoogleContainerCluster interface {
 	TpuIpv4CidrBlock() *string
 	VerticalPodAutoscaling() GoogleContainerClusterVerticalPodAutoscalingOutputReference
 	VerticalPodAutoscalingInput() *GoogleContainerClusterVerticalPodAutoscaling
+	WorkloadAltsConfig() GoogleContainerClusterWorkloadAltsConfigOutputReference
+	WorkloadAltsConfigInput() *GoogleContainerClusterWorkloadAltsConfig
 	WorkloadIdentityConfig() GoogleContainerClusterWorkloadIdentityConfigOutputReference
 	WorkloadIdentityConfigInput() *GoogleContainerClusterWorkloadIdentityConfig
 	// Experimental.
@@ -296,6 +298,7 @@ type GoogleContainerCluster interface {
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
 	PutTpuConfig(value *GoogleContainerClusterTpuConfig)
 	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
+	PutWorkloadAltsConfig(value *GoogleContainerClusterWorkloadAltsConfig)
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
 	ResetAllowNetAdmin()
@@ -367,6 +370,7 @@ type GoogleContainerCluster interface {
 	ResetTimeouts()
 	ResetTpuConfig()
 	ResetVerticalPodAutoscaling()
+	ResetWorkloadAltsConfig()
 	ResetWorkloadIdentityConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1973,6 +1977,26 @@ func (j *jsiiProxy_GoogleContainerCluster) VerticalPodAutoscalingInput() *Google
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadAltsConfig() GoogleContainerClusterWorkloadAltsConfigOutputReference {
+	var returns GoogleContainerClusterWorkloadAltsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"workloadAltsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadAltsConfigInput() *GoogleContainerClusterWorkloadAltsConfig {
+	var returns *GoogleContainerClusterWorkloadAltsConfig
+	_jsii_.Get(
+		j,
+		"workloadAltsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfig() GoogleContainerClusterWorkloadIdentityConfigOutputReference {
 	var returns GoogleContainerClusterWorkloadIdentityConfigOutputReference
 	_jsii_.Get(
@@ -1994,7 +2018,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2012,7 +2036,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3105,6 +3129,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutVerticalPodAutoscaling(value *Goog
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadAltsConfig(value *GoogleContainerClusterWorkloadAltsConfig) {
+	if err := g.validatePutWorkloadAltsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadAltsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig) {
 	if err := g.validatePutWorkloadIdentityConfigParameters(value); err != nil {
 		panic(err)
@@ -3656,6 +3691,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetVerticalPodAutoscaling() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVerticalPodAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetWorkloadAltsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadAltsConfig",
 		nil, // no parameters
 	)
 }

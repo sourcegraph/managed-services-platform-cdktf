@@ -11,6 +11,8 @@ import (
 type GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference interface {
 	cdktf.ComplexObject
 	Category() *string
+	SetCategory(val *string)
+	CategoryInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,9 +30,11 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *GkeonpremVmwareNodePoolConfigVsphereConfigTags
-	SetInternalValue(val *GkeonpremVmwareNodePoolConfigVsphereConfigTags)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Tag() *string
+	SetTag(val *string)
+	TagInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,6 +67,8 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCategory()
+	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +89,16 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	_jsii_.Get(
 		j,
 		"category",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) CategoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"categoryInput",
 		&returns,
 	)
 	return returns
@@ -128,8 +144,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) InternalValue() *GkeonpremVmwareNodePoolConfigVsphereConfigTags {
-	var returns *GkeonpremVmwareNodePoolConfigVsphereConfigTags
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -143,6 +159,16 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	_jsii_.Get(
 		j,
 		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) TagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +222,17 @@ func NewGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference_Override(g
 	)
 }
 
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference)SetCategory(val *string) {
+	if err := j.validateSetCategoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"category",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -218,13 +255,24 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference)SetInternalValue(val *GkeonpremVmwareNodePoolConfigVsphereConfigTags) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference)SetTag(val *string) {
+	if err := j.validateSetTagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tag",
 		val,
 	)
 }
@@ -435,6 +483,22 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) ResetCategory() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCategory",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) ResetTag() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTag",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

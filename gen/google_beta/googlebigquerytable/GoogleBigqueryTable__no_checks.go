@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableConstraintsParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableReplicationInfoParameters(value *GoogleBigqueryTableTableReplicationInfo) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutTimePartitioningParameters(value *GoogleBigqueryTableTimePartitioning) error {
 	return nil
 }

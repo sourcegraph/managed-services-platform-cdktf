@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computevpntunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
 type ComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,7 @@ type ComputeVpnTunnel interface {
 	IkeVersion() *float64
 	SetIkeVersion(val *float64)
 	IkeVersionInput() *float64
+	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -347,6 +348,16 @@ func (j *jsiiProxy_ComputeVpnTunnel) IkeVersionInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ikeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
 		&returns,
 	)
 	return returns
@@ -793,7 +804,7 @@ func (j *jsiiProxy_ComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) ComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -811,7 +822,7 @@ func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel_Override(c ComputeVpnTunnel, scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) {
 	_init_.Initialize()
 

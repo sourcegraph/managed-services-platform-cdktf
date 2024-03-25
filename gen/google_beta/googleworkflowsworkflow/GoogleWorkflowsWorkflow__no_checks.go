@@ -68,6 +68,10 @@ func validateGoogleWorkflowsWorkflow_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCallLogLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

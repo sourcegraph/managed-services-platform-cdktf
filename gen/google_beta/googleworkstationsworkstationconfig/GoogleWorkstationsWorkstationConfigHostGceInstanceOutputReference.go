@@ -35,6 +35,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	DisablePublicIpAddresses() interface{}
 	SetDisablePublicIpAddresses(val interface{})
 	DisablePublicIpAddressesInput() interface{}
+	DisableSsh() interface{}
+	SetDisableSsh(val interface{})
+	DisableSshInput() interface{}
 	EnableNestedVirtualization() interface{}
 	SetEnableNestedVirtualization(val interface{})
 	EnableNestedVirtualizationInput() interface{}
@@ -98,6 +101,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ResetBootDiskSizeGb()
 	ResetConfidentialInstanceConfig()
 	ResetDisablePublicIpAddresses()
+	ResetDisableSsh()
 	ResetEnableNestedVirtualization()
 	ResetMachineType()
 	ResetPoolSize()
@@ -225,6 +229,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Get(
 		j,
 		"disablePublicIpAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) DisableSsh() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSsh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) DisableSshInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSshInput",
 		&returns,
 	)
 	return returns
@@ -478,6 +502,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Set(
 		j,
 		"disablePublicIpAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetDisableSsh(val interface{}) {
+	if err := j.validateSetDisableSshParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableSsh",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisablePublicIpAddresses",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetDisableSsh() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableSsh",
 		nil, // no parameters
 	)
 }

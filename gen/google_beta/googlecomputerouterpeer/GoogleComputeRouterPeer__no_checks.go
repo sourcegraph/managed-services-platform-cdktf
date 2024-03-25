@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutBfdParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *GoogleComputeRouterPeerMd5AuthenticationKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutTimeoutsParameters(value *GoogleComputeRouterPeerTimeouts) error {
 	return nil
 }

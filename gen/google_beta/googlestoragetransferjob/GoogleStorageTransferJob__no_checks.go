@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleStorageTransferJob) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJob) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJob) validateSetProjectParameters(val *string) error {
 	return nil
 }

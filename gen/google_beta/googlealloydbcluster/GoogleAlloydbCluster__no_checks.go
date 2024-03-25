@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDatabaseVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

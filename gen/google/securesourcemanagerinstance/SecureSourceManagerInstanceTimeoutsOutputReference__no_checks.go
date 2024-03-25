@@ -76,6 +76,10 @@ func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecureSourceManagerInstanceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

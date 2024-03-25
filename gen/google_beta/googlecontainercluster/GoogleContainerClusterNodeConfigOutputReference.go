@@ -101,6 +101,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResourceLabels() *map[string]*string
 	SetResourceLabels(val *map[string]*string)
 	ResourceLabelsInput() *map[string]*string
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	SandboxConfig() GoogleContainerClusterNodeConfigSandboxConfigOutputReference
 	SandboxConfigInput() *GoogleContainerClusterNodeConfigSandboxConfig
 	ServiceAccount() *string
@@ -198,6 +201,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetPreemptible()
 	ResetReservationAffinity()
 	ResetResourceLabels()
+	ResetResourceManagerTags()
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -841,6 +845,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResourceLabe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SandboxConfig() GoogleContainerClusterNodeConfigSandboxConfigOutputReference {
 	var returns GoogleContainerClusterNodeConfigSandboxConfigOutputReference
 	_jsii_.Get(
@@ -1243,6 +1267,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetResourceLa
 	_jsii_.Set(
 		j,
 		"resourceLabels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -1906,6 +1941,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetResourc
 	_jsii_.InvokeVoid(
 		g,
 		"resetResourceLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

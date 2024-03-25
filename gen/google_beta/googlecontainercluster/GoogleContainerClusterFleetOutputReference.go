@@ -30,6 +30,8 @@ type GoogleContainerClusterFleetOutputReference interface {
 	InternalValue() *GoogleContainerClusterFleet
 	SetInternalValue(val *GoogleContainerClusterFleet)
 	Membership() *string
+	MembershipId() *string
+	MembershipLocation() *string
 	PreRegistered() cdktf.IResolvable
 	Project() *string
 	SetProject(val *string)
@@ -137,6 +139,26 @@ func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) Membership() *str
 	_jsii_.Get(
 		j,
 		"membership",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) MembershipId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterFleetOutputReference) MembershipLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipLocation",
 		&returns,
 	)
 	return returns

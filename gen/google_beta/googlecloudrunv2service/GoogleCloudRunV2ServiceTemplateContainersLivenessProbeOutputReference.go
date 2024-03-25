@@ -42,6 +42,8 @@ type GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference inter
 	PeriodSeconds() *float64
 	SetPeriodSeconds(val *float64)
 	PeriodSecondsInput() *float64
+	TcpSocket() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference
+	TcpSocketInput() *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,11 +81,13 @@ type GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference inter
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGrpc(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc)
 	PutHttpGet(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet)
+	PutTcpSocket(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket)
 	ResetFailureThreshold()
 	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
+	ResetTcpSocket()
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -245,6 +249,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputR
 	_jsii_.Get(
 		j,
 		"periodSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) TcpSocket() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference
+	_jsii_.Get(
+		j,
+		"tcpSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) TcpSocketInput() *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket {
+	var returns *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket
+	_jsii_.Get(
+		j,
+		"tcpSocketInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +649,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputR
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) PutTcpSocket(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket) {
+	if err := g.validatePutTcpSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTcpSocket",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) ResetFailureThreshold() {
 	_jsii_.InvokeVoid(
 		g,
@@ -661,6 +696,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetPeriodSeconds",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) ResetTcpSocket() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTcpSocket",
 		nil, // no parameters
 	)
 }

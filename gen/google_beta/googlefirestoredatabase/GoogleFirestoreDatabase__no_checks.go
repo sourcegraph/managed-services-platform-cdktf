@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutCmekConfigParameters(value *GoogleFirestoreDatabaseCmekConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutTimeoutsParameters(value *GoogleFirestoreDatabaseTimeouts) error {
 	return nil
 }

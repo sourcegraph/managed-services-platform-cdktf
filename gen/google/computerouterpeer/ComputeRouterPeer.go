@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -72,6 +72,8 @@ type ComputeRouterPeer interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ManagementType() *string
+	Md5AuthenticationKey() ComputeRouterPeerMd5AuthenticationKeyOutputReference
+	Md5AuthenticationKeyInput() *ComputeRouterPeerMd5AuthenticationKey
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -143,6 +145,7 @@ type ComputeRouterPeer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvertisedIpRanges(value interface{})
 	PutBfd(value *ComputeRouterPeerBfd)
+	PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey)
 	PutTimeouts(value *ComputeRouterPeerTimeouts)
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
@@ -154,6 +157,7 @@ type ComputeRouterPeer interface {
 	ResetId()
 	ResetIpAddress()
 	ResetIpv6NexthopAddress()
+	ResetMd5AuthenticationKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -498,6 +502,26 @@ func (j *jsiiProxy_ComputeRouterPeer) ManagementType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) Md5AuthenticationKey() ComputeRouterPeerMd5AuthenticationKeyOutputReference {
+	var returns ComputeRouterPeerMd5AuthenticationKeyOutputReference
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) Md5AuthenticationKeyInput() *ComputeRouterPeerMd5AuthenticationKey {
+	var returns *ComputeRouterPeerMd5AuthenticationKey
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -749,7 +773,7 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -767,7 +791,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1321,6 +1345,17 @@ func (c *jsiiProxy_ComputeRouterPeer) PutBfd(value *ComputeRouterPeerBfd) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) PutMd5AuthenticationKey(value *ComputeRouterPeerMd5AuthenticationKey) {
+	if err := c.validatePutMd5AuthenticationKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMd5AuthenticationKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) PutTimeouts(value *ComputeRouterPeerTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1408,6 +1443,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetIpv6NexthopAddress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpv6NexthopAddress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetMd5AuthenticationKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMd5AuthenticationKey",
 		nil, // no parameters
 	)
 }

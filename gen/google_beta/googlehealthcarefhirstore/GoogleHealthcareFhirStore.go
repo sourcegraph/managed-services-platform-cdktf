@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
 type GoogleHealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,9 @@ type GoogleHealthcareFhirStore interface {
 	EnableHistoryImport() interface{}
 	SetEnableHistoryImport(val interface{})
 	EnableHistoryImportInput() interface{}
+	EnableHistoryModifications() interface{}
+	SetEnableHistoryModifications(val interface{})
+	EnableHistoryModificationsInput() interface{}
 	EnableUpdateCreate() interface{}
 	SetEnableUpdateCreate(val interface{})
 	EnableUpdateCreateInput() interface{}
@@ -136,6 +139,7 @@ type GoogleHealthcareFhirStore interface {
 	ResetDisableReferentialIntegrity()
 	ResetDisableResourceVersioning()
 	ResetEnableHistoryImport()
+	ResetEnableHistoryModifications()
 	ResetEnableUpdateCreate()
 	ResetId()
 	ResetLabels()
@@ -337,6 +341,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) EnableHistoryImportInput() interfa
 	_jsii_.Get(
 		j,
 		"enableHistoryImportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) EnableHistoryModifications() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHistoryModifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) EnableHistoryModificationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHistoryModificationsInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +677,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) GoogleHealthcareFhirStore {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore)SetEnableHistoryImport(val interfac
 	_jsii_.Set(
 		j,
 		"enableHistoryImport",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore)SetEnableHistoryModifications(val interface{}) {
+	if err := j.validateSetEnableHistoryModificationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableHistoryModifications",
 		val,
 	)
 }
@@ -1217,6 +1252,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetEnableHistoryImport() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableHistoryImport",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetEnableHistoryModifications() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableHistoryModifications",
 		nil, // no parameters
 	)
 }
