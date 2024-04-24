@@ -30,8 +30,8 @@ type DataGoogleDnsManagedZonesManagedZonesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataGoogleDnsManagedZonesManagedZones
+	SetInternalValue(val *DataGoogleDnsManagedZonesManagedZones)
 	ManagedZoneId() *float64
 	Name() *string
 	NameServers() *[]*string
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) Id() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) InternalValue() *DataGoogleDnsManagedZonesManagedZones {
+	var returns *DataGoogleDnsManagedZonesManagedZones
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference)SetInternalValue(val *DataGoogleDnsManagedZonesManagedZones) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

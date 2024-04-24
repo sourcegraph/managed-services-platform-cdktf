@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleapphubworkload/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_apphub_workload google_apphub_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_apphub_workload google_apphub_workload}.
 type GoogleApphubWorkload interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -575,7 +575,7 @@ func (j *jsiiProxy_GoogleApphubWorkload) WorkloadReference() GoogleApphubWorkloa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
 func NewGoogleApphubWorkload(scope constructs.Construct, id *string, config *GoogleApphubWorkloadConfig) GoogleApphubWorkload {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewGoogleApphubWorkload(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
 func NewGoogleApphubWorkload_Override(g GoogleApphubWorkload, scope constructs.Construct, id *string, config *GoogleApphubWorkloadConfig) {
 	_init_.Initialize()
 

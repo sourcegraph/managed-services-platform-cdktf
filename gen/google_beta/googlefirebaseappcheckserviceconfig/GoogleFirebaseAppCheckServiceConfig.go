@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseappcheckserviceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config}.
 type GoogleFirebaseAppCheckServiceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckServiceConfig) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewGoogleFirebaseAppCheckServiceConfig(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckServiceConfigConfig) GoogleFirebaseAppCheckServiceConfig {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewGoogleFirebaseAppCheckServiceConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewGoogleFirebaseAppCheckServiceConfig_Override(g GoogleFirebaseAppCheckServiceConfig, scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckServiceConfigConfig) {
 	_init_.Initialize()
 

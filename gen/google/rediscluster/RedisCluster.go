@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/rediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -53,6 +53,10 @@ type RedisCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeType() *string
+	SetNodeType(val *string)
+	NodeTypeInput() *string
+	PreciseSizeGb() *float64
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -123,6 +127,7 @@ type RedisCluster interface {
 	ResetAuthorizationMode()
 	ResetId()
 	ResetName()
+	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -321,6 +326,36 @@ func (j *jsiiProxy_RedisCluster) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) NodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) NodeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PreciseSizeGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"preciseSizeGb",
 		&returns,
 	)
 	return returns
@@ -577,7 +612,7 @@ func (j *jsiiProxy_RedisCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -595,7 +630,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -684,6 +719,17 @@ func (j *jsiiProxy_RedisCluster)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetNodeType(val *string) {
+	if err := j.validateSetNodeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeType",
 		val,
 	)
 }
@@ -1070,6 +1116,14 @@ func (r *jsiiProxy_RedisCluster) ResetName() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetNodeType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNodeType",
 		nil, // no parameters
 	)
 }

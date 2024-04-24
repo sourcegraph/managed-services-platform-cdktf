@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/securesourcemanagerinstanceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy}.
 type SecureSourceManagerInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Resource.
 func NewSecureSourceManagerInstanceIamPolicy(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceIamPolicyConfig) SecureSourceManagerInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewSecureSourceManagerInstanceIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Resource.
 func NewSecureSourceManagerInstanceIamPolicy_Override(s SecureSourceManagerInstanceIamPolicy, scope constructs.Construct, id *string, config *SecureSourceManagerInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

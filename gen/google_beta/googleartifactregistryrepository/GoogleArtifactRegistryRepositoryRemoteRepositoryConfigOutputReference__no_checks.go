@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetDisableUpstreamValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetInternalValueParameters(val *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig) error {
 	return nil
 }

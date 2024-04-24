@@ -163,6 +163,14 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOut
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) validateSetCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) validateSetCpuParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

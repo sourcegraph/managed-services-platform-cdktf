@@ -20,6 +20,7 @@ type DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReferen
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Count() *float64
 	Cpu() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -94,6 +95,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcesso
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
 		&returns,
 	)
 	return returns

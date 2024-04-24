@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
 type GoogleComputeRouterNat interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type GoogleComputeRouterNat interface {
 	EnableEndpointIndependentMapping() interface{}
 	SetEnableEndpointIndependentMapping(val interface{})
 	EnableEndpointIndependentMappingInput() interface{}
+	EndpointTypes() *[]*string
+	SetEndpointTypes(val *[]*string)
+	EndpointTypesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -155,6 +158,7 @@ type GoogleComputeRouterNat interface {
 	ResetDrainNatIps()
 	ResetEnableDynamicPortAllocation()
 	ResetEnableEndpointIndependentMapping()
+	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
 	ResetLogConfig()
@@ -295,6 +299,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMappingInput
 	_jsii_.Get(
 		j,
 		"enableEndpointIndependentMappingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) EndpointTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) EndpointTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypesInput",
 		&returns,
 	)
 	return returns
@@ -811,7 +835,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) GoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -829,7 +853,7 @@ func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -899,6 +923,17 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableEndpointIndependentMapping(va
 	_jsii_.Set(
 		j,
 		"enableEndpointIndependentMapping",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetEndpointTypes(val *[]*string) {
+	if err := j.validateSetEndpointTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointTypes",
 		val,
 	)
 }
@@ -1447,6 +1482,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetEnableEndpointIndependentMapping
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableEndpointIndependentMapping",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetEndpointTypes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEndpointTypes",
 		nil, // no parameters
 	)
 }

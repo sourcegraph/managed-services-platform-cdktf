@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/vertexaifeaturegroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group}.
 type VertexAiFeatureGroup interface {
 	cdktf.TerraformResource
 	BigQuery() VertexAiFeatureGroupBigQueryOutputReference
@@ -509,7 +509,7 @@ func (j *jsiiProxy_VertexAiFeatureGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group} Resource.
 func NewVertexAiFeatureGroup(scope constructs.Construct, id *string, config *VertexAiFeatureGroupConfig) VertexAiFeatureGroup {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewVertexAiFeatureGroup(scope constructs.Construct, id *string, config *Ver
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vertex_ai_feature_group google_vertex_ai_feature_group} Resource.
 func NewVertexAiFeatureGroup_Override(v VertexAiFeatureGroup, scope constructs.Construct, id *string, config *VertexAiFeatureGroupConfig) {
 	_init_.Initialize()
 

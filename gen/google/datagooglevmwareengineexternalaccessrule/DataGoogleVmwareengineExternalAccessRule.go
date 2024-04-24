@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglevmwareengineexternalaccessrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
 type DataGoogleVmwareengineExternalAccessRule interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineExternalAccessRule) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Data Source.
 func NewDataGoogleVmwareengineExternalAccessRule(scope constructs.Construct, id *string, config *DataGoogleVmwareengineExternalAccessRuleConfig) DataGoogleVmwareengineExternalAccessRule {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataGoogleVmwareengineExternalAccessRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Data Source.
 func NewDataGoogleVmwareengineExternalAccessRule_Override(d DataGoogleVmwareengineExternalAccessRule, scope constructs.Construct, id *string, config *DataGoogleVmwareengineExternalAccessRuleConfig) {
 	_init_.Initialize()
 

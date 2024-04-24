@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetInternalValueParameters(val *DataGoogleDnsManagedZonesManagedZones) error {
 	return nil
 }
 

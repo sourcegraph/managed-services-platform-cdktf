@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/containercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -67,6 +67,9 @@ type ContainerCluster interface {
 	EnableAutopilot() interface{}
 	SetEnableAutopilot(val interface{})
 	EnableAutopilotInput() interface{}
+	EnableCiliumClusterwideNetworkPolicy() interface{}
+	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
+	EnableCiliumClusterwideNetworkPolicyInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -295,6 +298,7 @@ type ContainerCluster interface {
 	ResetDescription()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
+	ResetEnableCiliumClusterwideNetworkPolicy()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -724,6 +728,26 @@ func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableAutopilotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCiliumClusterwideNetworkPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1850,7 +1874,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1868,7 +1892,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1982,6 +2006,17 @@ func (j *jsiiProxy_ContainerCluster)SetEnableAutopilot(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableAutopilot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableCiliumClusterwideNetworkPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
 		val,
 	)
 }
@@ -3030,6 +3065,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableAutopilot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableAutopilot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetEnableCiliumClusterwideNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableCiliumClusterwideNetworkPolicy",
 		nil, // no parameters
 	)
 }

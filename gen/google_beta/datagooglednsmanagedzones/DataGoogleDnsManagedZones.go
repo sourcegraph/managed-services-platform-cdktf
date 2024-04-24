@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglednsmanagedzones/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones}.
 type DataGoogleDnsManagedZones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -38,7 +38,6 @@ type DataGoogleDnsManagedZones interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ManagedZones() DataGoogleDnsManagedZonesManagedZonesList
-	ManagedZonesInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -81,8 +80,6 @@ type DataGoogleDnsManagedZones interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutManagedZones(value interface{})
-	ResetManagedZones()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -202,16 +199,6 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) ManagedZones() DataGoogleDnsManage
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones) ManagedZonesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"managedZonesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGoogleDnsManagedZones) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -293,7 +280,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones} Data Source.
 func NewDataGoogleDnsManagedZones(scope constructs.Construct, id *string, config *DataGoogleDnsManagedZonesConfig) DataGoogleDnsManagedZones {
 	_init_.Initialize()
 
@@ -311,7 +298,7 @@ func NewDataGoogleDnsManagedZones(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_dns_managed_zones google_dns_managed_zones} Data Source.
 func NewDataGoogleDnsManagedZones_Override(d DataGoogleDnsManagedZones, scope constructs.Construct, id *string, config *DataGoogleDnsManagedZonesConfig) {
 	_init_.Initialize()
 
@@ -642,25 +629,6 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleDnsManagedZones) PutManagedZones(value interface{}) {
-	if err := d.validatePutManagedZonesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putManagedZones",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleDnsManagedZones) ResetManagedZones() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetManagedZones",
-		nil, // no parameters
 	)
 }
 

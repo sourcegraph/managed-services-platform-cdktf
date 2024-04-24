@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglepubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
 type DataGooglePubsubTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataGooglePubsubTopic interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngestionDataSourceSettings() DataGooglePubsubTopicIngestionDataSourceSettingsList
 	KmsKeyName() *string
 	Labels() cdktf.StringMap
 	// Experimental.
@@ -206,6 +207,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopic) IngestionDataSourceSettings() DataGooglePubsubTopicIngestionDataSourceSettingsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsList
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettings",
 		&returns,
 	)
 	return returns
@@ -382,7 +393,7 @@ func (j *jsiiProxy_DataGooglePubsubTopic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) DataGooglePubsubTopic {
 	_init_.Initialize()
 
@@ -400,7 +411,7 @@ func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic_Override(d DataGooglePubsubTopic, scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) {
 	_init_.Initialize()
 

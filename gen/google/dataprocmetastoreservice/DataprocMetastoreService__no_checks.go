@@ -76,6 +76,10 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutScalingConfigParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validatePutScheduledBackupParameters(value *DataprocMetastoreServiceScheduledBackup) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validatePutTelemetryConfigParameters(value *DataprocMetastoreServiceTelemetryConfig) error {
 	return nil
 }

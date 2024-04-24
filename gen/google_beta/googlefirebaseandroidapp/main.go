@@ -56,7 +56,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPackageName", GoMethod: "ResetPackageName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSha1Hashes", GoMethod: "ResetSha1Hashes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSha256Hashes", GoMethod: "ResetSha256Hashes"},

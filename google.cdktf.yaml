@@ -2,7 +2,7 @@ name: google
 
 provider:
   source: registry.terraform.io/hashicorp/google
-  version: 5.21.0
+  version: 5.26.0
 
 target:
   language: go
