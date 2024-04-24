@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) validateSetDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) validateSetFirewallEndpointParameters(val *string) error {
 	return nil
 }

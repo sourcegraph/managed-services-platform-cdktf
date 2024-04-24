@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseappcheckplayintegrityconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config}.
 type GoogleFirebaseAppCheckPlayIntegrityConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) TokenTtlInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
 func NewGoogleFirebaseAppCheckPlayIntegrityConfig(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckPlayIntegrityConfigConfig) GoogleFirebaseAppCheckPlayIntegrityConfig {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewGoogleFirebaseAppCheckPlayIntegrityConfig(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
 func NewGoogleFirebaseAppCheckPlayIntegrityConfig_Override(g GoogleFirebaseAppCheckPlayIntegrityConfig, scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckPlayIntegrityConfigConfig) {
 	_init_.Initialize()
 

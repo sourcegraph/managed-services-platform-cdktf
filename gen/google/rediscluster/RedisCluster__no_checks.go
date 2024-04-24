@@ -96,6 +96,10 @@ func (j *jsiiProxy_RedisCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_RedisCluster) validateSetNodeTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCluster) validateSetProjectParameters(val *string) error {
 	return nil
 }

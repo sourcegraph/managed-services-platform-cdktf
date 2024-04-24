@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutRetentionPolicyParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutSoftDeletePolicyParameters(value *GoogleStorageBucketSoftDeletePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutTimeoutsParameters(value *GoogleStorageBucketTimeouts) error {
 	return nil
 }

@@ -256,6 +256,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
 	return nil
 }

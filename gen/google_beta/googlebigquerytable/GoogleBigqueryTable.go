@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,6 +101,9 @@ type GoogleBigqueryTable interface {
 	RequirePartitionFilter() interface{}
 	SetRequirePartitionFilter(val interface{})
 	RequirePartitionFilterInput() interface{}
+	ResourceTags() *map[string]*string
+	SetResourceTags(val *map[string]*string)
+	ResourceTagsInput() *map[string]*string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -174,6 +177,7 @@ type GoogleBigqueryTable interface {
 	ResetProject()
 	ResetRangePartitioning()
 	ResetRequirePartitionFilter()
+	ResetResourceTags()
 	ResetSchema()
 	ResetTableConstraints()
 	ResetTableReplicationInfo()
@@ -704,6 +708,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) RequirePartitionFilterInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) ResourceTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) ResourceTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,7 +909,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -903,7 +927,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1123,17 @@ func (j *jsiiProxy_GoogleBigqueryTable)SetRequirePartitionFilter(val interface{}
 	_jsii_.Set(
 		j,
 		"requirePartitionFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable)SetResourceTags(val *map[string]*string) {
+	if err := j.validateSetResourceTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceTags",
 		val,
 	)
 }
@@ -1595,6 +1630,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetRequirePartitionFilter() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequirePartitionFilter",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetResourceTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceTags",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetDataGovernanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetDatasetIdParameters(val *string) error {
 	return nil
 }

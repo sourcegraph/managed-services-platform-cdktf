@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglevmwareenginevcentercredentials/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials}.
 type DataGoogleVmwareengineVcenterCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineVcenterCredentials) Username() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials} Data Source.
 func NewDataGoogleVmwareengineVcenterCredentials(scope constructs.Construct, id *string, config *DataGoogleVmwareengineVcenterCredentialsConfig) DataGoogleVmwareengineVcenterCredentials {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGoogleVmwareengineVcenterCredentials(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials} Data Source.
 func NewDataGoogleVmwareengineVcenterCredentials_Override(d DataGoogleVmwareengineVcenterCredentials, scope constructs.Construct, id *string, config *DataGoogleVmwareengineVcenterCredentialsConfig) {
 	_init_.Initialize()
 

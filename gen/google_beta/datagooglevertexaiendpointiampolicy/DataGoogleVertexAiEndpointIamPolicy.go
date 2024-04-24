@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglevertexaiendpointiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy}.
 type DataGoogleVertexAiEndpointIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleVertexAiEndpointIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Data Source.
 func NewDataGoogleVertexAiEndpointIamPolicy(scope constructs.Construct, id *string, config *DataGoogleVertexAiEndpointIamPolicyConfig) DataGoogleVertexAiEndpointIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleVertexAiEndpointIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/data-sources/google_vertex_ai_endpoint_iam_policy google_vertex_ai_endpoint_iam_policy} Data Source.
 func NewDataGoogleVertexAiEndpointIamPolicy_Override(d DataGoogleVertexAiEndpointIamPolicy, scope constructs.Construct, id *string, config *DataGoogleVertexAiEndpointIamPolicyConfig) {
 	_init_.Initialize()
 

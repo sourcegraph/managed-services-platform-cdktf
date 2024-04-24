@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) validatePutManagedZonesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataGoogleDnsManagedZones_IsConstructParameters(x interface{}) error {
 	return nil
 }

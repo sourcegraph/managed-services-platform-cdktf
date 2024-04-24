@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleservicenetworkingconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_service_networking_connection google_service_networking_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_service_networking_connection google_service_networking_connection}.
 type GoogleServiceNetworkingConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleServiceNetworkingConnection) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_service_networking_connection google_service_networking_connection} Resource.
 func NewGoogleServiceNetworkingConnection(scope constructs.Construct, id *string, config *GoogleServiceNetworkingConnectionConfig) GoogleServiceNetworkingConnection {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleServiceNetworkingConnection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_service_networking_connection google_service_networking_connection} Resource.
 func NewGoogleServiceNetworkingConnection_Override(g GoogleServiceNetworkingConnection, scope constructs.Construct, id *string, config *GoogleServiceNetworkingConnectionConfig) {
 	_init_.Initialize()
 

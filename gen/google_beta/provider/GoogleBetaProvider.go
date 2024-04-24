@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -335,6 +335,9 @@ type GoogleBetaProvider interface {
 	IntegrationConnectorsCustomEndpoint() *string
 	SetIntegrationConnectorsCustomEndpoint(val *string)
 	IntegrationConnectorsCustomEndpointInput() *string
+	IntegrationsCustomEndpoint() *string
+	SetIntegrationsCustomEndpoint(val *string)
+	IntegrationsCustomEndpointInput() *string
 	KmsCustomEndpoint() *string
 	SetKmsCustomEndpoint(val *string)
 	KmsCustomEndpointInput() *string
@@ -387,6 +390,9 @@ type GoogleBetaProvider interface {
 	OsLoginCustomEndpoint() *string
 	SetOsLoginCustomEndpoint(val *string)
 	OsLoginCustomEndpointInput() *string
+	ParallelstoreCustomEndpoint() *string
+	SetParallelstoreCustomEndpoint(val *string)
+	ParallelstoreCustomEndpointInput() *string
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
@@ -637,6 +643,7 @@ type GoogleBetaProvider interface {
 	ResetImpersonateServiceAccount()
 	ResetImpersonateServiceAccountDelegates()
 	ResetIntegrationConnectorsCustomEndpoint()
+	ResetIntegrationsCustomEndpoint()
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
@@ -656,6 +663,7 @@ type GoogleBetaProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParallelstoreCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
 	ResetProject()
 	ResetPublicCaCustomEndpoint()
@@ -2855,6 +2863,26 @@ func (j *jsiiProxy_GoogleBetaProvider) IntegrationConnectorsCustomEndpointInput(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) IntegrationsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) IntegrationsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) KmsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3190,6 +3218,26 @@ func (j *jsiiProxy_GoogleBetaProvider) OsLoginCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"osLoginCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParallelstoreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelstoreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParallelstoreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelstoreCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4116,7 +4164,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4134,7 +4182,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4991,6 +5039,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetIntegrationConnectorsCustomEndpoint(val
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetIntegrationsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"integrationsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetKmsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5115,6 +5171,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetOsLoginCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"osLoginCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetParallelstoreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parallelstoreCustomEndpoint",
 		val,
 	)
 }
@@ -6420,6 +6484,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetIntegrationConnectorsCustomEndpoint(
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetIntegrationsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIntegrationsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetKmsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6552,6 +6624,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetParallelstoreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParallelstoreCustomEndpoint",
 		nil, // no parameters
 	)
 }

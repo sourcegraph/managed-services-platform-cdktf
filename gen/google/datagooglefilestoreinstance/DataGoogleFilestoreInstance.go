@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglefilestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/filestore_instance google_filestore_instance}.
 type DataGoogleFilestoreInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) DataGoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance_Override(d DataGoogleFilestoreInstance, scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 

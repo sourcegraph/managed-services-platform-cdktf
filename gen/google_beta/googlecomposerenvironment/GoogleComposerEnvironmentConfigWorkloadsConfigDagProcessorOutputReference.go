@@ -20,6 +20,9 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference i
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Count() *float64
+	SetCount(val *float64)
+	CountInput() *float64
 	Cpu() *float64
 	SetCpu(val *float64)
 	CpuInput() *float64
@@ -70,6 +73,7 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCount()
 	ResetCpu()
 	ResetMemoryGb()
 	ResetStorageGb()
@@ -103,6 +107,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOut
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) CountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"countInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference)SetCount(val *float64) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOut
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) ResetCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCount",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference) ResetCpu() {
