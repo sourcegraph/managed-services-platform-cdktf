@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentrydashboard/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/dashboard sentry_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/dashboard sentry_dashboard}.
 type DataSentryDashboard interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataSentryDashboard) Widget() DataSentryDashboardWidgetList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/dashboard sentry_dashboard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/dashboard sentry_dashboard} Data Source.
 func NewDataSentryDashboard(scope constructs.Construct, id *string, config *DataSentryDashboardConfig) DataSentryDashboard {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataSentryDashboard(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/dashboard sentry_dashboard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/dashboard sentry_dashboard} Data Source.
 func NewDataSentryDashboard_Override(d DataSentryDashboard, scope constructs.Construct, id *string, config *DataSentryDashboardConfig) {
 	_init_.Initialize()
 

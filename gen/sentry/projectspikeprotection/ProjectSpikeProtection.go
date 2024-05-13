@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/projectspikeprotection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_spike_protection sentry_project_spike_protection}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection sentry_project_spike_protection}.
 type ProjectSpikeProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ProjectSpikeProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_spike_protection sentry_project_spike_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection sentry_project_spike_protection} Resource.
 func NewProjectSpikeProtection(scope constructs.Construct, id *string, config *ProjectSpikeProtectionConfig) ProjectSpikeProtection {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewProjectSpikeProtection(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_spike_protection sentry_project_spike_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection sentry_project_spike_protection} Resource.
 func NewProjectSpikeProtection_Override(p ProjectSpikeProtection, scope constructs.Construct, id *string, config *ProjectSpikeProtectionConfig) {
 	_init_.Initialize()
 

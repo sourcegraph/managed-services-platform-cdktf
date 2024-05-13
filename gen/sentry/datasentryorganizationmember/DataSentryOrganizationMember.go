@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryorganizationmember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/organization_member sentry_organization_member}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization_member sentry_organization_member}.
 type DataSentryOrganizationMember interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -302,7 +302,7 @@ func (j *jsiiProxy_DataSentryOrganizationMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/organization_member sentry_organization_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization_member sentry_organization_member} Data Source.
 func NewDataSentryOrganizationMember(scope constructs.Construct, id *string, config *DataSentryOrganizationMemberConfig) DataSentryOrganizationMember {
 	_init_.Initialize()
 
@@ -320,7 +320,7 @@ func NewDataSentryOrganizationMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/organization_member sentry_organization_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization_member sentry_organization_member} Data Source.
 func NewDataSentryOrganizationMember_Override(d DataSentryOrganizationMember, scope constructs.Construct, id *string, config *DataSentryOrganizationMemberConfig) {
 	_init_.Initialize()
 

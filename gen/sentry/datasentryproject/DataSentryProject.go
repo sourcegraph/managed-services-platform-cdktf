@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/project sentry_project}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project}.
 type DataSentryProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataSentryProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSentryProjectConfig) DataSentryProject {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject_Override(d DataSentryProject, scope constructs.Construct, id *string, config *DataSentryProjectConfig) {
 	_init_.Initialize()
 

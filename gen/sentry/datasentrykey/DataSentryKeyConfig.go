@@ -21,24 +21,24 @@ type DataSentryKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The slug of the organization the key should be created for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key#organization DataSentryKey#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key#organization DataSentryKey#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The slug of the project the key should be created for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key#project DataSentryKey#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key#project DataSentryKey#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Boolean flag indicating that we want the first key of the returned keys.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key#first DataSentryKey#first}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key#first DataSentryKey#first}
 	First interface{} `field:"optional" json:"first" yaml:"first"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key#id DataSentryKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key#id DataSentryKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the key to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key#name DataSentryKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key#name DataSentryKey#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

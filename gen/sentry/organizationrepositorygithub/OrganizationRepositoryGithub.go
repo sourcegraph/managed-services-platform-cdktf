@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/organizationrepositorygithub/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/organization_repository_github sentry_organization_repository_github}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github sentry_organization_repository_github}.
 type OrganizationRepositoryGithub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_OrganizationRepositoryGithub) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/organization_repository_github sentry_organization_repository_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github sentry_organization_repository_github} Resource.
 func NewOrganizationRepositoryGithub(scope constructs.Construct, id *string, config *OrganizationRepositoryGithubConfig) OrganizationRepositoryGithub {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewOrganizationRepositoryGithub(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/organization_repository_github sentry_organization_repository_github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github sentry_organization_repository_github} Resource.
 func NewOrganizationRepositoryGithub_Override(o OrganizationRepositoryGithub, scope constructs.Construct, id *string, config *OrganizationRepositoryGithubConfig) {
 	_init_.Initialize()
 

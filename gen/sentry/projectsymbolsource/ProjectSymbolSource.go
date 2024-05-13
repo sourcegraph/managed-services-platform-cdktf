@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/projectsymbolsource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_symbol_source sentry_project_symbol_source}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_symbol_source sentry_project_symbol_source}.
 type ProjectSymbolSource interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -701,7 +701,7 @@ func (j *jsiiProxy_ProjectSymbolSource) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_symbol_source sentry_project_symbol_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_symbol_source sentry_project_symbol_source} Resource.
 func NewProjectSymbolSource(scope constructs.Construct, id *string, config *ProjectSymbolSourceConfig) ProjectSymbolSource {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewProjectSymbolSource(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/project_symbol_source sentry_project_symbol_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_symbol_source sentry_project_symbol_source} Resource.
 func NewProjectSymbolSource_Override(p ProjectSymbolSource, scope constructs.Construct, id *string, config *ProjectSymbolSourceConfig) {
 	_init_.Initialize()
 
