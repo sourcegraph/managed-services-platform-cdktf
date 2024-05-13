@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleRedisCluster) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) validateSetRedisConfigsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) validateSetRegionParameters(val *string) error {
 	return nil
 }

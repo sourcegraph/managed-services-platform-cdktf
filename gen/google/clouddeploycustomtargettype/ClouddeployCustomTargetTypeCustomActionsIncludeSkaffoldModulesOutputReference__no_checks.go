@@ -48,6 +48,10 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) validatePutGoogleCloudBuildRepoParameters(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) validatePutGoogleCloudStorageParameters(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage) error {
 	return nil
 }

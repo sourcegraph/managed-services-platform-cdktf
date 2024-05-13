@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/clouddeploytarget/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 type ClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -30,6 +30,8 @@ type ClouddeployTarget interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomTarget() ClouddeployTargetCustomTargetOutputReference
+	CustomTargetInput() *ClouddeployTargetCustomTarget
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,6 +133,7 @@ type ClouddeployTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnthosCluster(value *ClouddeployTargetAnthosCluster)
+	PutCustomTarget(value *ClouddeployTargetCustomTarget)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *ClouddeployTargetGke)
 	PutMultiTarget(value *ClouddeployTargetMultiTarget)
@@ -138,6 +141,7 @@ type ClouddeployTarget interface {
 	PutTimeouts(value *ClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
+	ResetCustomTarget()
 	ResetDeployParameters()
 	ResetDescription()
 	ResetExecutionConfigs()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_ClouddeployTarget) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) CustomTarget() ClouddeployTargetCustomTargetOutputReference {
+	var returns ClouddeployTargetCustomTargetOutputReference
+	_jsii_.Get(
+		j,
+		"customTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) CustomTargetInput() *ClouddeployTargetCustomTarget {
+	var returns *ClouddeployTargetCustomTarget
+	_jsii_.Get(
+		j,
+		"customTargetInput",
 		&returns,
 	)
 	return returns
@@ -708,7 +732,7 @@ func (j *jsiiProxy_ClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget(scope constructs.Construct, id *string, config *ClouddeployTargetConfig) ClouddeployTarget {
 	_init_.Initialize()
 
@@ -726,7 +750,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Construct, id *string, config *ClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -1181,6 +1205,17 @@ func (c *jsiiProxy_ClouddeployTarget) PutAnthosCluster(value *ClouddeployTargetA
 	)
 }
 
+func (c *jsiiProxy_ClouddeployTarget) PutCustomTarget(value *ClouddeployTargetCustomTarget) {
+	if err := c.validatePutCustomTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomTarget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTarget) PutExecutionConfigs(value interface{}) {
 	if err := c.validatePutExecutionConfigsParameters(value); err != nil {
 		panic(err)
@@ -1248,6 +1283,14 @@ func (c *jsiiProxy_ClouddeployTarget) ResetAnthosCluster() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnthosCluster",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTarget) ResetCustomTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomTarget",
 		nil, // no parameters
 	)
 }

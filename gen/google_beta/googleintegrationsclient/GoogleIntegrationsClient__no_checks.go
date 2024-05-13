@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleIntegrationsClient) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIntegrationsClient) validateSetCreateSampleIntegrationsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIntegrationsClient) validateSetCreateSampleWorkflowsParameters(val interface{}) error {
 	return nil
 }

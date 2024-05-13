@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlerediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -73,6 +73,9 @@ type GoogleRedisCluster interface {
 	PscConnections() GoogleRedisClusterPscConnectionsList
 	// Experimental.
 	RawOverrides() interface{}
+	RedisConfigs() *map[string]*string
+	SetRedisConfigs(val *map[string]*string)
+	RedisConfigsInput() *map[string]*string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -132,6 +135,7 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRedisConfigs()
 	ResetRegion()
 	ResetReplicaCount()
 	ResetTimeouts()
@@ -441,6 +445,26 @@ func (j *jsiiProxy_GoogleRedisCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) RedisConfigs() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"redisConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) RedisConfigsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"redisConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -612,7 +636,7 @@ func (j *jsiiProxy_GoogleRedisCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -630,7 +654,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -760,6 +784,17 @@ func (j *jsiiProxy_GoogleRedisCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisCluster)SetRedisConfigs(val *map[string]*string) {
+	if err := j.validateSetRedisConfigsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redisConfigs",
 		val,
 	)
 }
@@ -1140,6 +1175,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetRedisConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedisConfigs",
 		nil, // no parameters
 	)
 }

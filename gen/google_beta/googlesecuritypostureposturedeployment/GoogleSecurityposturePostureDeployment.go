@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlesecuritypostureposturedeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment}.
 type GoogleSecurityposturePostureDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -571,7 +571,7 @@ func (j *jsiiProxy_GoogleSecurityposturePostureDeployment) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
 func NewGoogleSecurityposturePostureDeployment(scope constructs.Construct, id *string, config *GoogleSecurityposturePostureDeploymentConfig) GoogleSecurityposturePostureDeployment {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewGoogleSecurityposturePostureDeployment(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
 func NewGoogleSecurityposturePostureDeployment_Override(g GoogleSecurityposturePostureDeployment, scope constructs.Construct, id *string, config *GoogleSecurityposturePostureDeploymentConfig) {
 	_init_.Initialize()
 

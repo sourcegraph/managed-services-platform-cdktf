@@ -96,6 +96,10 @@ func (j *jsiiProxy_ApigeeEnvironment) validateSetDisplayNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeEnvironment) validateSetForwardProxyUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

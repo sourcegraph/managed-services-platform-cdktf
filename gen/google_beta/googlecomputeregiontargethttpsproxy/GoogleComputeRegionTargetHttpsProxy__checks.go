@@ -338,6 +338,14 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetRegionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetSslCertificatesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/alloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -83,6 +83,8 @@ type AlloydbCluster interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenanceUpdatePolicy() AlloydbClusterMaintenanceUpdatePolicyOutputReference
+	MaintenanceUpdatePolicyInput() *AlloydbClusterMaintenanceUpdatePolicy
 	MigrationSource() AlloydbClusterMigrationSourceList
 	Name() *string
 	Network() *string
@@ -152,6 +154,7 @@ type AlloydbCluster interface {
 	PutContinuousBackupConfig(value *AlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *AlloydbClusterEncryptionConfig)
 	PutInitialUser(value *AlloydbClusterInitialUser)
+	PutMaintenanceUpdatePolicy(value *AlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *AlloydbClusterNetworkConfig)
 	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
@@ -169,6 +172,7 @@ type AlloydbCluster interface {
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
+	ResetMaintenanceUpdatePolicy()
 	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -614,6 +618,26 @@ func (j *jsiiProxy_AlloydbCluster) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) MaintenanceUpdatePolicy() AlloydbClusterMaintenanceUpdatePolicyOutputReference {
+	var returns AlloydbClusterMaintenanceUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) MaintenanceUpdatePolicyInput() *AlloydbClusterMaintenanceUpdatePolicy {
+	var returns *AlloydbClusterMaintenanceUpdatePolicy
+	_jsii_.Get(
+		j,
+		"maintenanceUpdatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) MigrationSource() AlloydbClusterMigrationSourceList {
 	var returns AlloydbClusterMigrationSourceList
 	_jsii_.Get(
@@ -885,7 +909,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -903,7 +927,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1424,6 +1448,17 @@ func (a *jsiiProxy_AlloydbCluster) PutInitialUser(value *AlloydbClusterInitialUs
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutMaintenanceUpdatePolicy(value *AlloydbClusterMaintenanceUpdatePolicy) {
+	if err := a.validatePutMaintenanceUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMaintenanceUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutNetworkConfig(value *AlloydbClusterNetworkConfig) {
 	if err := a.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1571,6 +1606,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetLabels() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetMaintenanceUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaintenanceUpdatePolicy",
 		nil, // no parameters
 	)
 }

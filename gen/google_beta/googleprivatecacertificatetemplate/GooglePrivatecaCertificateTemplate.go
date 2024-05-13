@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleprivatecacertificatetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template}.
 type GooglePrivatecaCertificateTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type GooglePrivatecaCertificateTemplate interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaximumLifetime() *string
+	SetMaximumLifetime(val *string)
+	MaximumLifetimeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -121,6 +124,7 @@ type GooglePrivatecaCertificateTemplate interface {
 	ResetId()
 	ResetIdentityConstraints()
 	ResetLabels()
+	ResetMaximumLifetime()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -353,6 +357,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) MaximumLifetime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maximumLifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) MaximumLifetimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maximumLifetimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -544,7 +568,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
 func NewGooglePrivatecaCertificateTemplate(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateConfig) GooglePrivatecaCertificateTemplate {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewGooglePrivatecaCertificateTemplate(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
 func NewGooglePrivatecaCertificateTemplate_Override(g GooglePrivatecaCertificateTemplate, scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateConfig) {
 	_init_.Initialize()
 
@@ -662,6 +686,17 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate)SetMaximumLifetime(val *string) {
+	if err := j.validateSetMaximumLifetimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumLifetime",
 		val,
 	)
 }
@@ -1045,6 +1080,14 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) ResetMaximumLifetime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaximumLifetime",
 		nil, // no parameters
 	)
 }

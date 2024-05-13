@@ -60,6 +60,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutNetworkMatc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutPreconfiguredWafConfigParameters(value *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutRateLimitOptionsParameters(value *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutTimeoutsParameters(value *GoogleComputeRegionSecurityPolicyRuleTimeouts) error {
 	return nil
 }

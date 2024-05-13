@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlesecuresourcemanagerinstanceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member}.
 type GoogleSecureSourceManagerInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstanceIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member} Resource.
 func NewGoogleSecureSourceManagerInstanceIamMember(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceIamMemberConfig) GoogleSecureSourceManagerInstanceIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleSecureSourceManagerInstanceIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secure_source_manager_instance_iam_member google_secure_source_manager_instance_iam_member} Resource.
 func NewGoogleSecureSourceManagerInstanceIamMember_Override(g GoogleSecureSourceManagerInstanceIamMember, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceIamMemberConfig) {
 	_init_.Initialize()
 

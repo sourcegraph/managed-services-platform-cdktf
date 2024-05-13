@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetRegionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetSslCertificatesParameters(val *[]*string) error {
 	return nil
 }

@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validatePutMachineConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutNetworkConfigParameters(value *GoogleAlloydbInstanceNetworkConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) validatePutQueryInsightsConfigParameters(value *GoogleAlloydbInstanceQueryInsightsConfig) error {
 	return nil
 }

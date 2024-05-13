@@ -1,8 +1,9 @@
 name: google_beta
 
 provider:
+  # https://registry.terraform.io/providers/hashicorp/google-beta/latest
   source: registry.terraform.io/hashicorp/google-beta
-  version: 5.26.0
+  version: 5.29.0
 
 target:
   language: go

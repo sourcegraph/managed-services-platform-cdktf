@@ -1,6 +1,7 @@
 name: nobl9
 
 provider:
+  # https://registry.terraform.io/providers/nobl9/nobl9/latest
   source: registry.terraform.io/nobl9/nobl9
   version: "0.22.0"
 

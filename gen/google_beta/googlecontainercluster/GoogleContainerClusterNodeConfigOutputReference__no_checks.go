@@ -100,6 +100,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *GoogleContainerClusterNodeConfigShieldedInstanceConfig) error {
 	return nil
 }

@@ -35,6 +35,9 @@ type ComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	RangeName() *string
 	SetRangeName(val *string)
 	RangeNameInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type ComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpCidrRange()
 	ResetRangeName()
+	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) RangeNameIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference)SetRangeName
 	_jsii_.Set(
 		j,
 		"rangeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetRangeN
 	_jsii_.InvokeVoid(
 		c,
 		"resetRangeName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetReservedInternalRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReservedInternalRange",
 		nil, // no parameters
 	)
 }

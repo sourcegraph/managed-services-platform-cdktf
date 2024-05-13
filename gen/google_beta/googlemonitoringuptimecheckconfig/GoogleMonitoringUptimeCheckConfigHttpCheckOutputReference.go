@@ -59,6 +59,8 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	RequestMethod() *string
 	SetRequestMethod(val *string)
 	RequestMethodInput() *string
+	ServiceAgentAuthentication() GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	ServiceAgentAuthenticationInput() *GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -100,6 +102,7 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	PutAcceptedResponseStatusCodes(value interface{})
 	PutAuthInfo(value *GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo)
 	PutPingConfig(value *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig)
+	PutServiceAgentAuthentication(value *GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication)
 	ResetAcceptedResponseStatusCodes()
 	ResetAuthInfo()
 	ResetBody()
@@ -111,6 +114,7 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	ResetPingConfig()
 	ResetPort()
 	ResetRequestMethod()
+	ResetServiceAgentAuthentication()
 	ResetUseSsl()
 	ResetValidateSsl()
 	// Produce the Token's value at resolution time.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Re
 	_jsii_.Get(
 		j,
 		"requestMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthentication() GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference {
+	var returns GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthenticationInput() *GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication {
+	var returns *GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -870,6 +894,17 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) PutServiceAgentAuthentication(value *GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication) {
+	if err := g.validatePutServiceAgentAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceAgentAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetAcceptedResponseStatusCodes() {
 	_jsii_.InvokeVoid(
 		g,
@@ -954,6 +989,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequestMethod",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetServiceAgentAuthentication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAgentAuthentication",
 		nil, // no parameters
 	)
 }
