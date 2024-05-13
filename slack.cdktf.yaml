@@ -1,6 +1,7 @@
 name: slack
 
 provider:
+  # https://registry.terraform.io/providers/pablovarela/slack/latest
   source: registry.terraform.io/pablovarela/slack
   version: "1.2.2"
 

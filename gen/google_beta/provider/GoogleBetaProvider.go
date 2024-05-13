@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -396,6 +396,9 @@ type GoogleBetaProvider interface {
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
+	PrivilegedAccessManagerCustomEndpoint() *string
+	SetPrivilegedAccessManagerCustomEndpoint(val *string)
+	PrivilegedAccessManagerCustomEndpointInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -665,6 +668,7 @@ type GoogleBetaProvider interface {
 	ResetOverrideLogicalId()
 	ResetParallelstoreCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
+	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
 	ResetPublicCaCustomEndpoint()
 	ResetPubsubCustomEndpoint()
@@ -3263,6 +3267,26 @@ func (j *jsiiProxy_GoogleBetaProvider) PrivatecaCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) PrivilegedAccessManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) PrivilegedAccessManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4164,7 +4188,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4182,7 +4206,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5187,6 +5211,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetPrivatecaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"privatecaCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetPrivilegedAccessManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
 		val,
 	)
 }
@@ -6640,6 +6672,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetPrivatecaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPrivatecaCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetPrivilegedAccessManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivilegedAccessManagerCustomEndpoint",
 		nil, // no parameters
 	)
 }

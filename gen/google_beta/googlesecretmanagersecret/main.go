@@ -67,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTopics", GoMethod: "ResetTopics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionAliases", GoMethod: "ResetVersionAliases"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersionDestroyTtl", GoMethod: "ResetVersionDestroyTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "rotation", GoGetter: "Rotation"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationInput", GoGetter: "RotationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
@@ -87,6 +88,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "versionAliases", GoGetter: "VersionAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "versionAliasesInput", GoGetter: "VersionAliasesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "versionDestroyTtl", GoGetter: "VersionDestroyTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "versionDestroyTtlInput", GoGetter: "VersionDestroyTtlInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleSecretManagerSecret{}

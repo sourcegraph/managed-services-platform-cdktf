@@ -59,6 +59,8 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	RequestMethod() *string
 	SetRequestMethod(val *string)
 	RequestMethodInput() *string
+	ServiceAgentAuthentication() MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	ServiceAgentAuthenticationInput() *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -100,6 +102,7 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	PutAcceptedResponseStatusCodes(value interface{})
 	PutAuthInfo(value *MonitoringUptimeCheckConfigHttpCheckAuthInfo)
 	PutPingConfig(value *MonitoringUptimeCheckConfigHttpCheckPingConfig)
+	PutServiceAgentAuthentication(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication)
 	ResetAcceptedResponseStatusCodes()
 	ResetAuthInfo()
 	ResetBody()
@@ -111,6 +114,7 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	ResetPingConfig()
 	ResetPort()
 	ResetRequestMethod()
+	ResetServiceAgentAuthentication()
 	ResetUseSsl()
 	ResetValidateSsl()
 	// Produce the Token's value at resolution time.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) RequestM
 	_jsii_.Get(
 		j,
 		"requestMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthentication() MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference {
+	var returns MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthenticationInput() *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication {
+	var returns *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -870,6 +894,17 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutPingC
 	)
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutServiceAgentAuthentication(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication) {
+	if err := m.validatePutServiceAgentAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putServiceAgentAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetAcceptedResponseStatusCodes() {
 	_jsii_.InvokeVoid(
 		m,
@@ -954,6 +989,14 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetReq
 	_jsii_.InvokeVoid(
 		m,
 		"resetRequestMethod",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetServiceAgentAuthentication() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServiceAgentAuthentication",
 		nil, // no parameters
 	)
 }

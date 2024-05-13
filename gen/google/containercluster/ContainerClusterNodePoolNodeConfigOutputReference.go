@@ -102,6 +102,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	SecondaryBootDisks() ContainerClusterNodePoolNodeConfigSecondaryBootDisksList
+	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -163,6 +165,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutLinuxNodeConfig(value *ContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity)
+	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
@@ -195,6 +198,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetReservationAffinity()
 	ResetResourceLabels()
 	ResetResourceManagerTags()
+	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
@@ -832,6 +836,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResourceMa
 	_jsii_.Get(
 		j,
 		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SecondaryBootDisks() ContainerClusterNodePoolNodeConfigSecondaryBootDisksList {
+	var returns ContainerClusterNodePoolNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SecondaryBootDisksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secondaryBootDisksInput",
 		&returns,
 	)
 	return returns
@@ -1607,6 +1631,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutReserva
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
+	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecondaryBootDisks",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig) {
 	if err := c.validatePutShieldedInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -1871,6 +1906,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetResou
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetSecondaryBootDisks() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecondaryBootDisks",
 		nil, // no parameters
 	)
 }

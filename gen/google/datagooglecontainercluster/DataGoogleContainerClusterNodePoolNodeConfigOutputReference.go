@@ -58,6 +58,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ReservationAffinity() DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList
 	ResourceLabels() cdktf.StringMap
 	ResourceManagerTags() cdktf.StringMap
+	SecondaryBootDisks() DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
@@ -447,6 +448,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) SecondaryBootDisks() DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
 		&returns,
 	)
 	return returns

@@ -52,6 +52,7 @@ type DataGoogleSecretManagerSecretsSecretsOutputReference interface {
 	Topics() DataGoogleSecretManagerSecretsSecretsTopicsList
 	Ttl() *string
 	VersionAliases() cdktf.StringMap
+	VersionDestroyTtl() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -306,6 +307,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) Version
 	_jsii_.Get(
 		j,
 		"versionAliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) VersionDestroyTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionDestroyTtl",
 		&returns,
 	)
 	return returns

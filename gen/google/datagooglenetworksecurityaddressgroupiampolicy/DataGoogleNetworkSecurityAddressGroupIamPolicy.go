@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglenetworksecurityaddressgroupiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
 type DataGoogleNetworkSecurityAddressGroupIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroupIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Data Source.
 func NewDataGoogleNetworkSecurityAddressGroupIamPolicy(scope constructs.Construct, id *string, config *DataGoogleNetworkSecurityAddressGroupIamPolicyConfig) DataGoogleNetworkSecurityAddressGroupIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleNetworkSecurityAddressGroupIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Data Source.
 func NewDataGoogleNetworkSecurityAddressGroupIamPolicy_Override(d DataGoogleNetworkSecurityAddressGroupIamPolicy, scope constructs.Construct, id *string, config *DataGoogleNetworkSecurityAddressGroupIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputeforwardingrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules}.
 type DataGoogleComputeForwardingRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRules) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source.
 func NewDataGoogleComputeForwardingRules(scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRulesConfig) DataGoogleComputeForwardingRules {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataGoogleComputeForwardingRules(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/compute_forwarding_rules google_compute_forwarding_rules} Data Source.
 func NewDataGoogleComputeForwardingRules_Override(d DataGoogleComputeForwardingRules, scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRulesConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/vmwareenginesubnet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet}.
 type VmwareengineSubnet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -489,7 +489,7 @@ func (j *jsiiProxy_VmwareengineSubnet) VlanId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet} Resource.
 func NewVmwareengineSubnet(scope constructs.Construct, id *string, config *VmwareengineSubnetConfig) VmwareengineSubnet {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewVmwareengineSubnet(scope constructs.Construct, id *string, config *Vmwar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/vmwareengine_subnet google_vmwareengine_subnet} Resource.
 func NewVmwareengineSubnet_Override(v VmwareengineSubnet, scope constructs.Construct, id *string, config *VmwareengineSubnetConfig) {
 	_init_.Initialize()
 

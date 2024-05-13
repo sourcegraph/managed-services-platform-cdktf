@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlevmwareengineexternalaccessrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
 type GoogleVmwareengineExternalAccessRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -585,7 +585,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource.
 func NewGoogleVmwareengineExternalAccessRule(scope constructs.Construct, id *string, config *GoogleVmwareengineExternalAccessRuleConfig) GoogleVmwareengineExternalAccessRule {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewGoogleVmwareengineExternalAccessRule(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource.
 func NewGoogleVmwareengineExternalAccessRule_Override(g GoogleVmwareengineExternalAccessRule, scope constructs.Construct, id *string, config *GoogleVmwareengineExternalAccessRuleConfig) {
 	_init_.Initialize()
 

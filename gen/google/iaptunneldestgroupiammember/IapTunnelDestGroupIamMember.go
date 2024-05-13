@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/iaptunneldestgroupiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member}.
 type IapTunnelDestGroupIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IapTunnelDestGroupIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member} Resource.
 func NewIapTunnelDestGroupIamMember(scope constructs.Construct, id *string, config *IapTunnelDestGroupIamMemberConfig) IapTunnelDestGroupIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIapTunnelDestGroupIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group_iam_member google_iap_tunnel_dest_group_iam_member} Resource.
 func NewIapTunnelDestGroupIamMember_Override(i IapTunnelDestGroupIamMember, scope constructs.Construct, id *string, config *IapTunnelDestGroupIamMemberConfig) {
 	_init_.Initialize()
 

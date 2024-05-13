@@ -1,6 +1,7 @@
 name: postgresql
 
 provider:
+  # https://registry.terraform.io/providers/cyrilgdn/postgresql/latest
   source: registry.terraform.io/cyrilgdn/postgresql
   version: "1.21.0"
 

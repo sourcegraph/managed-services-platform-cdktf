@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleaccesscontextmanagerserviceperimeterdryrunresource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
 type GoogleAccessContextManagerServicePerimeterDryRunResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) Tim
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
 func NewGoogleAccessContextManagerServicePerimeterDryRunResource(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterDryRunResourceConfig) GoogleAccessContextManagerServicePerimeterDryRunResource {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGoogleAccessContextManagerServicePerimeterDryRunResource(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
 func NewGoogleAccessContextManagerServicePerimeterDryRunResource_Override(g GoogleAccessContextManagerServicePerimeterDryRunResource, scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterDryRunResourceConfig) {
 	_init_.Initialize()
 

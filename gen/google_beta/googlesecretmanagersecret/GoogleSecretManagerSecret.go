@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlesecretmanagersecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
 type GoogleSecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -95,6 +95,9 @@ type GoogleSecretManagerSecret interface {
 	VersionAliases() *map[string]*string
 	SetVersionAliases(val *map[string]*string)
 	VersionAliasesInput() *map[string]*string
+	VersionDestroyTtl() *string
+	SetVersionDestroyTtl(val *string)
+	VersionDestroyTtlInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -137,6 +140,7 @@ type GoogleSecretManagerSecret interface {
 	ResetTopics()
 	ResetTtl()
 	ResetVersionAliases()
+	ResetVersionDestroyTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -602,8 +606,28 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) VersionAliasesInput() *map[string]
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) VersionDestroyTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionDestroyTtl",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+func (j *jsiiProxy_GoogleSecretManagerSecret) VersionDestroyTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionDestroyTtlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) GoogleSecretManagerSecret {
 	_init_.Initialize()
 
@@ -621,7 +645,7 @@ func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret_Override(g GoogleSecretManagerSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) {
 	_init_.Initialize()
 
@@ -784,6 +808,17 @@ func (j *jsiiProxy_GoogleSecretManagerSecret)SetVersionAliases(val *map[string]*
 	_jsii_.Set(
 		j,
 		"versionAliases",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecret)SetVersionDestroyTtl(val *string) {
+	if err := j.validateSetVersionDestroyTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionDestroyTtl",
 		val,
 	)
 }
@@ -1182,6 +1217,14 @@ func (g *jsiiProxy_GoogleSecretManagerSecret) ResetVersionAliases() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVersionAliases",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecret) ResetVersionDestroyTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVersionDestroyTtl",
 		nil, // no parameters
 	)
 }

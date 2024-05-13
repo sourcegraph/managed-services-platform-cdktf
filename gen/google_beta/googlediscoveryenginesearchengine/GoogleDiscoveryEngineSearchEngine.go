@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlediscoveryenginesearchengine/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine}.
 type GoogleDiscoveryEngineSearchEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -553,7 +553,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngine) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine} Resource.
 func NewGoogleDiscoveryEngineSearchEngine(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineSearchEngineConfig) GoogleDiscoveryEngineSearchEngine {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewGoogleDiscoveryEngineSearchEngine(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_discovery_engine_search_engine google_discovery_engine_search_engine} Resource.
 func NewGoogleDiscoveryEngineSearchEngine_Override(g GoogleDiscoveryEngineSearchEngine, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineSearchEngineConfig) {
 	_init_.Initialize()
 

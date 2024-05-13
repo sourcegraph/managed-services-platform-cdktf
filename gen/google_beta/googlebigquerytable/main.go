@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*GoogleBigqueryTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowResourceTagsOnDeletion", GoGetter: "AllowResourceTagsOnDeletion"},
+			_jsii_.MemberProperty{JsiiProperty: "allowResourceTagsOnDeletionInput", GoGetter: "AllowResourceTagsOnDeletionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clustering", GoGetter: "Clustering"},
 			_jsii_.MemberProperty{JsiiProperty: "clusteringInput", GoGetter: "ClusteringInput"},
@@ -82,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilter", GoGetter: "RequirePartitionFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "requirePartitionFilterInput", GoGetter: "RequirePartitionFilterInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowResourceTagsOnDeletion", GoMethod: "ResetAllowResourceTagsOnDeletion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClustering", GoMethod: "ResetClustering"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},

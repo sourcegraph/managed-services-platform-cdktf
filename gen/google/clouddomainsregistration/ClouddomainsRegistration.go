@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/clouddomainsregistration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddomains_registration google_clouddomains_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddomains_registration google_clouddomains_registration}.
 type ClouddomainsRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -645,7 +645,7 @@ func (j *jsiiProxy_ClouddomainsRegistration) YearlyPriceInput() *ClouddomainsReg
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddomains_registration google_clouddomains_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddomains_registration google_clouddomains_registration} Resource.
 func NewClouddomainsRegistration(scope constructs.Construct, id *string, config *ClouddomainsRegistrationConfig) ClouddomainsRegistration {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewClouddomainsRegistration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddomains_registration google_clouddomains_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddomains_registration google_clouddomains_registration} Resource.
 func NewClouddomainsRegistration_Override(c ClouddomainsRegistration, scope constructs.Construct, id *string, config *ClouddomainsRegistrationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/securesourcemanagerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
 type SecureSourceManagerInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -540,7 +540,7 @@ func (j *jsiiProxy_SecureSourceManagerInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) SecureSourceManagerInstance {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance_Override(s SecureSourceManagerInstance, scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) {
 	_init_.Initialize()
 

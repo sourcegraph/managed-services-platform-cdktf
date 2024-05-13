@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlealloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -83,6 +83,8 @@ type GoogleAlloydbCluster interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenanceUpdatePolicy() GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference
+	MaintenanceUpdatePolicyInput() *GoogleAlloydbClusterMaintenanceUpdatePolicy
 	MigrationSource() GoogleAlloydbClusterMigrationSourceList
 	Name() *string
 	Network() *string
@@ -152,6 +154,7 @@ type GoogleAlloydbCluster interface {
 	PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
+	PutMaintenanceUpdatePolicy(value *GoogleAlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig)
 	PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource)
@@ -169,6 +172,7 @@ type GoogleAlloydbCluster interface {
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
+	ResetMaintenanceUpdatePolicy()
 	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -614,6 +618,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) MaintenanceUpdatePolicy() GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference {
+	var returns GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) MaintenanceUpdatePolicyInput() *GoogleAlloydbClusterMaintenanceUpdatePolicy {
+	var returns *GoogleAlloydbClusterMaintenanceUpdatePolicy
+	_jsii_.Get(
+		j,
+		"maintenanceUpdatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) MigrationSource() GoogleAlloydbClusterMigrationSourceList {
 	var returns GoogleAlloydbClusterMigrationSourceList
 	_jsii_.Get(
@@ -885,7 +909,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -903,7 +927,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1424,6 +1448,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutInitialUser(value *GoogleAlloydbClus
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutMaintenanceUpdatePolicy(value *GoogleAlloydbClusterMaintenanceUpdatePolicy) {
+	if err := g.validatePutMaintenanceUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaintenanceUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig) {
 	if err := g.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1571,6 +1606,14 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetMaintenanceUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceUpdatePolicy",
 		nil, // no parameters
 	)
 }

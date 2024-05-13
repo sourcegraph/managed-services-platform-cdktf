@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeregionsecuritypolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule}.
 type GoogleComputeRegionSecurityPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -55,6 +55,8 @@ type GoogleComputeRegionSecurityPolicyRule interface {
 	NetworkMatchInput() *GoogleComputeRegionSecurityPolicyRuleNetworkMatch
 	// The tree node.
 	Node() constructs.Node
+	PreconfiguredWafConfig() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	PreconfiguredWafConfigInput() *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -72,6 +74,8 @@ type GoogleComputeRegionSecurityPolicyRule interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitOptions() GoogleComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference
+	RateLimitOptionsInput() *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -115,6 +119,8 @@ type GoogleComputeRegionSecurityPolicyRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMatch(value *GoogleComputeRegionSecurityPolicyRuleMatch)
 	PutNetworkMatch(value *GoogleComputeRegionSecurityPolicyRuleNetworkMatch)
+	PutPreconfiguredWafConfig(value *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig)
+	PutRateLimitOptions(value *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions)
 	PutTimeouts(value *GoogleComputeRegionSecurityPolicyRuleTimeouts)
 	ResetDescription()
 	ResetId()
@@ -123,8 +129,10 @@ type GoogleComputeRegionSecurityPolicyRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetProject()
+	ResetRateLimitOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -341,6 +349,26 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) Node() constructs.Node
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PreconfiguredWafConfig() GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference {
+	var returns GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PreconfiguredWafConfigInput() *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig {
+	var returns *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) Preview() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -416,6 +444,26 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) Provisioners() *[]inte
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) RateLimitOptions() GoogleComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference {
+	var returns GoogleComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"rateLimitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) RateLimitOptionsInput() *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions {
+	var returns *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions
+	_jsii_.Get(
+		j,
+		"rateLimitOptionsInput",
 		&returns,
 	)
 	return returns
@@ -522,7 +570,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
 func NewGoogleComputeRegionSecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyRuleConfig) GoogleComputeRegionSecurityPolicyRule {
 	_init_.Initialize()
 
@@ -540,7 +588,7 @@ func NewGoogleComputeRegionSecurityPolicyRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
 func NewGoogleComputeRegionSecurityPolicyRule_Override(g GoogleComputeRegionSecurityPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -995,6 +1043,28 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PutNetworkMatch(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PutPreconfiguredWafConfig(value *GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfig) {
+	if err := g.validatePutPreconfiguredWafConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPreconfiguredWafConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PutRateLimitOptions(value *GoogleComputeRegionSecurityPolicyRuleRateLimitOptions) {
+	if err := g.validatePutRateLimitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRateLimitOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) PutTimeouts(value *GoogleComputeRegionSecurityPolicyRuleTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1046,6 +1116,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) ResetOverrideLogicalId
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) ResetPreconfiguredWafConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreconfiguredWafConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) ResetPreview() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1058,6 +1136,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) ResetRateLimitOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRateLimitOptions",
 		nil, // no parameters
 	)
 }

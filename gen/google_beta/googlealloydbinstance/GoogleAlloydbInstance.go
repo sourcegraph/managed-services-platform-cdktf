@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlealloydbinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
 type GoogleAlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -79,6 +79,8 @@ type GoogleAlloydbInstance interface {
 	MachineConfig() GoogleAlloydbInstanceMachineConfigOutputReference
 	MachineConfigInput() *GoogleAlloydbInstanceMachineConfig
 	Name() *string
+	NetworkConfig() GoogleAlloydbInstanceNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleAlloydbInstanceNetworkConfig
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -89,6 +91,7 @@ type GoogleAlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicIpAddress() *string
 	QueryInsightsConfig() GoogleAlloydbInstanceQueryInsightsConfigOutputReference
 	QueryInsightsConfigInput() *GoogleAlloydbInstanceQueryInsightsConfig
 	// Experimental.
@@ -135,6 +138,7 @@ type GoogleAlloydbInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClientConnectionConfig(value *GoogleAlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig)
+	PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig)
 	PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *GoogleAlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *GoogleAlloydbInstanceTimeouts)
@@ -147,6 +151,7 @@ type GoogleAlloydbInstance interface {
 	ResetId()
 	ResetLabels()
 	ResetMachineConfig()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -548,6 +553,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) NetworkConfig() GoogleAlloydbInstanceNetworkConfigOutputReference {
+	var returns GoogleAlloydbInstanceNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) NetworkConfigInput() *GoogleAlloydbInstanceNetworkConfig {
+	var returns *GoogleAlloydbInstanceNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -573,6 +598,16 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) PublicIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpAddress",
 		&returns,
 	)
 	return returns
@@ -729,7 +764,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) GoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -747,7 +782,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1224,6 +1259,17 @@ func (g *jsiiProxy_GoogleAlloydbInstance) PutMachineConfig(value *GoogleAlloydbI
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig) {
 	if err := g.validatePutQueryInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1325,6 +1371,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) ResetMachineConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachineConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

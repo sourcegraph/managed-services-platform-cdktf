@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/clouddeploycustomtargettypeiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy}.
 type ClouddeployCustomTargetTypeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
 func NewClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, id *string, config *ClouddeployCustomTargetTypeIamPolicyConfig) ClouddeployCustomTargetTypeIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
 func NewClouddeployCustomTargetTypeIamPolicy_Override(c ClouddeployCustomTargetTypeIamPolicy, scope constructs.Construct, id *string, config *ClouddeployCustomTargetTypeIamPolicyConfig) {
 	_init_.Initialize()
 

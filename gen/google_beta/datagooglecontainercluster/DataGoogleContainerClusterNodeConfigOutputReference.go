@@ -60,6 +60,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ResourceLabels() cdktf.StringMap
 	ResourceManagerTags() cdktf.StringMap
 	SandboxConfig() DataGoogleContainerClusterNodeConfigSandboxConfigList
+	SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
@@ -469,6 +470,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SandboxC
 	_jsii_.Get(
 		j,
 		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList {
+	var returns DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
 		&returns,
 	)
 	return returns

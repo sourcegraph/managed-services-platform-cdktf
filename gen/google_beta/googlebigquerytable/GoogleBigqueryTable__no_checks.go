@@ -96,6 +96,10 @@ func validateGoogleBigqueryTable_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetClusteringParameters(val *[]*string) error {
 	return nil
 }

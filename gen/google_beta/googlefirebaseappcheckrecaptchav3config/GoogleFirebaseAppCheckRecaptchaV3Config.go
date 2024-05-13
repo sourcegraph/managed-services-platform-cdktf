@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseappcheckrecaptchav3config/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config}.
 type GoogleFirebaseAppCheckRecaptchaV3Config interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) TokenTtlInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config} Resource.
 func NewGoogleFirebaseAppCheckRecaptchaV3Config(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckRecaptchaV3ConfigConfig) GoogleFirebaseAppCheckRecaptchaV3Config {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGoogleFirebaseAppCheckRecaptchaV3Config(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_firebase_app_check_recaptcha_v3_config google_firebase_app_check_recaptcha_v3_config} Resource.
 func NewGoogleFirebaseAppCheckRecaptchaV3Config_Override(g GoogleFirebaseAppCheckRecaptchaV3Config, scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckRecaptchaV3ConfigConfig) {
 	_init_.Initialize()
 
