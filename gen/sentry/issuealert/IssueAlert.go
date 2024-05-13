@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/issuealert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/issue_alert sentry_issue_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert}.
 type IssueAlert interface {
 	cdktf.TerraformResource
 	ActionMatch() *string
@@ -530,7 +530,7 @@ func (j *jsiiProxy_IssueAlert) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/issue_alert sentry_issue_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert} Resource.
 func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertConfig) IssueAlert {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/issue_alert sentry_issue_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert} Resource.
 func NewIssueAlert_Override(i IssueAlert, scope constructs.Construct, id *string, config *IssueAlertConfig) {
 	_init_.Initialize()
 

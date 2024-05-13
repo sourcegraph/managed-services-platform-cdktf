@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentrykey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key sentry_key}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key}.
 type DataSentryKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataSentryKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key sentry_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key} Data Source.
 func NewDataSentryKey(scope constructs.Construct, id *string, config *DataSentryKeyConfig) DataSentryKey {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataSentryKey(scope constructs.Construct, id *string, config *DataSentry
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/key sentry_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key} Data Source.
 func NewDataSentryKey_Override(d DataSentryKey, scope constructs.Construct, id *string, config *DataSentryKeyConfig) {
 	_init_.Initialize()
 

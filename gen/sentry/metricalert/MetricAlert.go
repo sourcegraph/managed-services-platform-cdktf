@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/metricalert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/metric_alert sentry_metric_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert}.
 type MetricAlert interface {
 	cdktf.TerraformResource
 	Aggregate() *string
@@ -601,7 +601,7 @@ func (j *jsiiProxy_MetricAlert) TriggerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/metric_alert sentry_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert} Resource.
 func NewMetricAlert(scope constructs.Construct, id *string, config *MetricAlertConfig) MetricAlert {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewMetricAlert(scope constructs.Construct, id *string, config *MetricAlertC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/metric_alert sentry_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert} Resource.
 func NewMetricAlert_Override(m MetricAlert, scope constructs.Construct, id *string, config *MetricAlertConfig) {
 	_init_.Initialize()
 

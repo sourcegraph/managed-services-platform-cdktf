@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryteam/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/team sentry_team}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/team sentry_team}.
 type DataSentryTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataSentryTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/team sentry_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/team sentry_team} Data Source.
 func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentryTeamConfig) DataSentryTeam {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/data-sources/team sentry_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/team sentry_team} Data Source.
 func NewDataSentryTeam_Override(d DataSentryTeam, scope constructs.Construct, id *string, config *DataSentryTeamConfig) {
 	_init_.Initialize()
 

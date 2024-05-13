@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/team/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/team sentry_team}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/team sentry_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_Team) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/team sentry_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/team sentry_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/team sentry_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/team sentry_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 

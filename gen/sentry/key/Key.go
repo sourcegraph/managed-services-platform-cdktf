@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/key/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/key sentry_key}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key}.
 type Key interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -480,7 +480,7 @@ func (j *jsiiProxy_Key) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/key sentry_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key} Resource.
 func NewKey(scope constructs.Construct, id *string, config *KeyConfig) Key {
 	_init_.Initialize()
 
@@ -498,7 +498,7 @@ func NewKey(scope constructs.Construct, id *string, config *KeyConfig) Key {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.1/docs/resources/key sentry_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key} Resource.
 func NewKey_Override(k Key, scope constructs.Construct, id *string, config *KeyConfig) {
 	_init_.Initialize()
 
