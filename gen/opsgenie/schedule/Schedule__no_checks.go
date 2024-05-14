@@ -4,6 +4,10 @@ package schedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Schedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Schedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_Schedule) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_Schedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Schedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_Schedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Schedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Schedule) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Schedule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

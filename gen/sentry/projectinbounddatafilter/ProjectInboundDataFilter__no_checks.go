@@ -4,6 +4,10 @@ package projectinbounddatafilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectInboundDataFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInboundDataFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_ProjectInboundDataFilter) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_ProjectInboundDataFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInboundDataFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectInboundDataFilter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectInboundDataFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectInboundDataFilter) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInboundDataFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectInboundDataFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

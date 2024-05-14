@@ -4,6 +4,10 @@ package regionalhostname
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RegionalHostname) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalHostname) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RegionalHostname) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RegionalHostname) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalHostname) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegionalHostname) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegionalHostname) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegionalHostname) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_RegionalHostname) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (r *jsiiProxy_RegionalHostname) validatePutTimeoutsParameters(value *RegionalHostnameTimeouts) error {
+	return nil
+}
+
+func validateRegionalHostname_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

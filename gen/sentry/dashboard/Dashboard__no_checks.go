@@ -4,6 +4,10 @@ package dashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Dashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Dashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_Dashboard) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_Dashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Dashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Dashboard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Dashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Dashboard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_Dashboard) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_Dashboard) validatePutWidgetParameters(value interface{}) error {
+	return nil
+}
+
+func validateDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

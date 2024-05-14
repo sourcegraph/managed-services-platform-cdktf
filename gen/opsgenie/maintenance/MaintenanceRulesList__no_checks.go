@@ -4,6 +4,10 @@ package maintenance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MaintenanceRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

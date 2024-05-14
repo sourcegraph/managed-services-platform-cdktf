@@ -4,6 +4,10 @@ package teamroutingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamRoutingRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoutingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TeamRoutingRule) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (t *jsiiProxy_TeamRoutingRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoutingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamRoutingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamRoutingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamRoutingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (t *jsiiProxy_TeamRoutingRule) validatePutNotifyParameters(value interface{
 }
 
 func (t *jsiiProxy_TeamRoutingRule) validatePutTimeRestrictionParameters(value *TeamRoutingRuleTimeRestriction) error {
+	return nil
+}
+
+func validateTeamRoutingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

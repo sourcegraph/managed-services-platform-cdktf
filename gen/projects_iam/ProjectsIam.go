@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/projects_iam/internal"
 )
 
+// Defines an ProjectsIam based on a Terraform module.
+//
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/iam/google/7.6.0/submodules/projects_iam terraform-google-modules/iam/google//modules/projects_iam}
 type ProjectsIam interface {
 	cdktf.TerraformModule
 	Bindings() *map[string]*[]*string
@@ -65,6 +68,9 @@ type ProjectsIam interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -480,6 +486,32 @@ func (p *jsiiProxy_ProjectsIam) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		p,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectsIam) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_ProjectsIam) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -4,6 +4,10 @@ package emailintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailIntegration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EmailIntegration) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EmailIntegration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailIntegration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailIntegration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailIntegration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EmailIntegration) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_EmailIntegration) validatePutRespondersParameters(value interface{}) error {
+	return nil
+}
+
+func validateEmailIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

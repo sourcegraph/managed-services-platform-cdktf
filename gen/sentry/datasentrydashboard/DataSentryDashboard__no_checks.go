@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataSentryDashboard) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func validateDataSentryDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataSentryDashboard_IsConstructParameters(x interface{}) error {
 	return nil
 }

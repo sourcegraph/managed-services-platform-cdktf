@@ -4,6 +4,10 @@ package projectsymbolsource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectSymbolSource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectSymbolSource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_ProjectSymbolSource) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_ProjectSymbolSource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectSymbolSource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectSymbolSource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectSymbolSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectSymbolSource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_ProjectSymbolSource) validateOverrideLogicalIdParameters(newL
 }
 
 func (p *jsiiProxy_ProjectSymbolSource) validatePutLayoutParameters(value *ProjectSymbolSourceLayout) error {
+	return nil
+}
+
+func validateProjectSymbolSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

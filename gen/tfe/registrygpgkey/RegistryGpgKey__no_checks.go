@@ -4,6 +4,10 @@ package registrygpgkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RegistryGpgKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegistryGpgKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RegistryGpgKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RegistryGpgKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegistryGpgKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RegistryGpgKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegistryGpgKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegistryGpgKey) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegistryGpgKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRegistryGpgKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

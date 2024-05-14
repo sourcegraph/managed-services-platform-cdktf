@@ -12,6 +12,10 @@ func (o *jsiiProxy_OpsgenieProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateOpsgenieProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateOpsgenieProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

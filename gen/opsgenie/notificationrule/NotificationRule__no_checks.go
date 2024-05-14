@@ -4,6 +4,10 @@ package notificationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NotificationRule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (n *jsiiProxy_NotificationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (n *jsiiProxy_NotificationRule) validatePutStepsParameters(value interface{
 }
 
 func (n *jsiiProxy_NotificationRule) validatePutTimeRestrictionParameters(value *NotificationRuleTimeRestriction) error {
+	return nil
+}
+
+func validateNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

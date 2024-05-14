@@ -4,6 +4,10 @@ package schedulerotation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ScheduleRotation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ScheduleRotation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_ScheduleRotation) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_ScheduleRotation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ScheduleRotation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ScheduleRotation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ScheduleRotation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ScheduleRotation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_ScheduleRotation) validatePutParticipantParameters(value inte
 }
 
 func (s *jsiiProxy_ScheduleRotation) validatePutTimeRestrictionParameters(value *ScheduleRotationTimeRestriction) error {
+	return nil
+}
+
+func validateScheduleRotation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

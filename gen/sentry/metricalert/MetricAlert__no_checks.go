@@ -4,6 +4,10 @@ package metricalert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MetricAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MetricAlert) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MetricAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetricAlert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetricAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetricAlert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_MetricAlert) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (m *jsiiProxy_MetricAlert) validatePutTriggerParameters(value interface{}) error {
+	return nil
+}
+
+func validateMetricAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

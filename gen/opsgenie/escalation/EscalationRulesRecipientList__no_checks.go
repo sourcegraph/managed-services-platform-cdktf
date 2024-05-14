@@ -4,6 +4,10 @@ package escalation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EscalationRulesRecipientList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EscalationRulesRecipientList) validateGetParameters(index *float64) error {
 	return nil
 }

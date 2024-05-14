@@ -12,6 +12,10 @@ func (s *jsiiProxy_SentryProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateSentryProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateSentryProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

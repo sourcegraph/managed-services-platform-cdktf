@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeRegistryGpgKeys) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataTfeRegistryGpgKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTfeRegistryGpgKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

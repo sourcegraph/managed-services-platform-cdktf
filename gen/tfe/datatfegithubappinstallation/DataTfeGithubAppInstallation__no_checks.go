@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataTfeGithubAppInstallation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTfeGithubAppInstallation_IsConstructParameters(x interface{}) error {
 	return nil
 }
