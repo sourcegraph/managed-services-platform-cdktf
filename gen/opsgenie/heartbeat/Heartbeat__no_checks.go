@@ -4,6 +4,10 @@ package heartbeat
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_Heartbeat) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Heartbeat) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (h *jsiiProxy_Heartbeat) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (h *jsiiProxy_Heartbeat) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Heartbeat) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_Heartbeat) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_Heartbeat) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_Heartbeat) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Heartbeat) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHeartbeat_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

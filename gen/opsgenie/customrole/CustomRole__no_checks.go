@@ -4,6 +4,10 @@ package customrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CustomRole) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (c *jsiiProxy_CustomRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CustomRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomRole) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCustomRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataSentryOrganizationIntegration) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataSentryOrganizationIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataSentryOrganizationIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }

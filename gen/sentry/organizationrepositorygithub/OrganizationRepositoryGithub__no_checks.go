@@ -4,6 +4,10 @@ package organizationrepositorygithub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationRepositoryGithub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRepositoryGithub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OrganizationRepositoryGithub) validateGetStringMapAttributePa
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationRepositoryGithub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRepositoryGithub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationRepositoryGithub) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRepositoryGithub) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRepositoryGithub) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRepositoryGithub) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrganizationRepositoryGithub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataOpsgenieTeam) validatePutMemberParameters(value interface
 	return nil
 }
 
+func validateDataOpsgenieTeam_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpsgenieTeam_IsConstructParameters(x interface{}) error {
 	return nil
 }

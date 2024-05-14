@@ -4,6 +4,10 @@ package issuealert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IssueAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IssueAlert) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (i *jsiiProxy_IssueAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IssueAlert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueAlert) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIssueAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

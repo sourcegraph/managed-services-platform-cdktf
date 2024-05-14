@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataPostgresqlSchemas) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataPostgresqlSchemas_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataPostgresqlSchemas_IsConstructParameters(x interface{}) error {
 	return nil
 }

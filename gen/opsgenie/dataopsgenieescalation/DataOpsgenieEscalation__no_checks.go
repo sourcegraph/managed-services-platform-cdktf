@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataOpsgenieEscalation) validatePutRulesParameters(value inte
 	return nil
 }
 
+func validateDataOpsgenieEscalation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpsgenieEscalation_IsConstructParameters(x interface{}) error {
 	return nil
 }

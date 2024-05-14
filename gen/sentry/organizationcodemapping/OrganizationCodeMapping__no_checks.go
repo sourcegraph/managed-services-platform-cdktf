@@ -4,6 +4,10 @@ package organizationcodemapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationCodeMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationCodeMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OrganizationCodeMapping) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationCodeMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationCodeMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationCodeMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationCodeMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationCodeMapping) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationCodeMapping) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrganizationCodeMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

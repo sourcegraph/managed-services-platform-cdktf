@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataSlackConversation) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataSlackConversation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataSlackConversation_IsConstructParameters(x interface{}) error {
 	return nil
 }

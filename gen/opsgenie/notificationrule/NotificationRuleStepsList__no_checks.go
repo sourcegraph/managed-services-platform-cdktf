@@ -4,6 +4,10 @@ package notificationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationRuleStepsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationRuleStepsList) validateGetParameters(index *float64) error {
 	return nil
 }

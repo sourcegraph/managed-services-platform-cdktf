@@ -111,6 +111,22 @@ func (d *jsiiProxy_DataSlackUser) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateDataSlackUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if importToId == nil {
+		return fmt.Errorf("parameter importToId is required, but nil was provided")
+	}
+
+	if importFromId == nil {
+		return fmt.Errorf("parameter importFromId is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataSlackUser_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

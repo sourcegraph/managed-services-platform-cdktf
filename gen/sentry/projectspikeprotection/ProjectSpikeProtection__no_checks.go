@@ -4,6 +4,10 @@ package projectspikeprotection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectSpikeProtection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectSpikeProtection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_ProjectSpikeProtection) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_ProjectSpikeProtection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectSpikeProtection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectSpikeProtection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectSpikeProtection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectSpikeProtection) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectSpikeProtection) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectSpikeProtection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

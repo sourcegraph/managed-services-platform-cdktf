@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOpsgenieHeartbeat) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataOpsgenieHeartbeat_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOpsgenieHeartbeat_IsConstructParameters(x interface{}) error {
 	return nil
 }

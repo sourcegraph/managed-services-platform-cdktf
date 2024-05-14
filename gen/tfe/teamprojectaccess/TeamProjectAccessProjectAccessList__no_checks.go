@@ -4,6 +4,10 @@ package teamprojectaccess
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamProjectAccessProjectAccessList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamProjectAccessProjectAccessList) validateGetParameters(index *float64) error {
 	return nil
 }

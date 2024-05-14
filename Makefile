@@ -13,4 +13,4 @@ targets:
 	@echo $(CDKTF_PACKAGES)
 
 %: ./%.cdktf.yaml
-	$(CDKTF_GENERATOR) --config $@.cdktf.yaml
+	$(CDKTF_GENERATOR) --config $@.cdktf.yaml --cdktf-version=0.20.7

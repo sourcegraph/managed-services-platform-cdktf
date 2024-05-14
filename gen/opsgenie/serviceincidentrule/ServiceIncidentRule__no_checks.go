@@ -4,6 +4,10 @@ package serviceincidentrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceIncidentRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceIncidentRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_ServiceIncidentRule) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_ServiceIncidentRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceIncidentRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceIncidentRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceIncidentRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceIncidentRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_ServiceIncidentRule) validateOverrideLogicalIdParameters(newL
 }
 
 func (s *jsiiProxy_ServiceIncidentRule) validatePutIncidentRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateServiceIncidentRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

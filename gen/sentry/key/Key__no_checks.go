@@ -4,6 +4,10 @@ package key
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_Key) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Key) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (k *jsiiProxy_Key) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (k *jsiiProxy_Key) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Key) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_Key) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_Key) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_Key) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Key) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

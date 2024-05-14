@@ -4,6 +4,10 @@ package organizationmember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OrganizationMember) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationMember) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationMember) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrganizationMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

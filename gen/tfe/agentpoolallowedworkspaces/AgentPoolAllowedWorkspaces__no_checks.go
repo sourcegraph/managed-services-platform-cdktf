@@ -4,6 +4,10 @@ package agentpoolallowedworkspaces
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPoolAllowedWorkspaces) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAgentPoolAllowedWorkspaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

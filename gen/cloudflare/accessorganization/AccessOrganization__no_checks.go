@@ -4,6 +4,10 @@ package accessorganization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessOrganization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessOrganization) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AccessOrganization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessOrganization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessOrganization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessOrganization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AccessOrganization) validatePutCustomPagesParameters(value in
 }
 
 func (a *jsiiProxy_AccessOrganization) validatePutLoginDesignParameters(value interface{}) error {
+	return nil
+}
+
+func validateAccessOrganization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

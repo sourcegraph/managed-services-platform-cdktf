@@ -4,6 +4,10 @@ package notificationaction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationAction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationAction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (n *jsiiProxy_NotificationAction) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NotificationAction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationAction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NotificationAction) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationAction) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationAction) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNotificationAction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

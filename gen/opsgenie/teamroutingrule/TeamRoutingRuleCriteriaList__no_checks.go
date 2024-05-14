@@ -4,6 +4,10 @@ package teamroutingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamRoutingRuleCriteriaList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoutingRuleCriteriaList) validateGetParameters(index *float64) error {
 	return nil
 }

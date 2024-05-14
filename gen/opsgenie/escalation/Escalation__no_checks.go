@@ -4,6 +4,10 @@ package escalation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Escalation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Escalation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Escalation) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (e *jsiiProxy_Escalation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Escalation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Escalation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Escalation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Escalation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_Escalation) validatePutRepeatParameters(value interface{}) er
 }
 
 func (e *jsiiProxy_Escalation) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateEscalation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

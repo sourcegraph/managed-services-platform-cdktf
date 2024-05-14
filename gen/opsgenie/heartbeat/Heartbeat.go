@@ -88,6 +88,9 @@ type Heartbeat interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,7 +112,22 @@ type Heartbeat interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -123,6 +141,9 @@ type Heartbeat interface {
 	ResetOverrideLogicalId()
 	ResetOwnerTeamId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -705,6 +726,25 @@ func (j *jsiiProxy_Heartbeat)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a Heartbeat resource upon running "cdktf plan <stack-name>".
+func Heartbeat_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateHeartbeat_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -787,6 +827,17 @@ func Heartbeat_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (h *jsiiProxy_Heartbeat) AddMoveTarget(moveTarget *string) {
+	if err := h.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (h *jsiiProxy_Heartbeat) AddOverride(path *string, value interface{}) {
@@ -944,6 +995,30 @@ func (h *jsiiProxy_Heartbeat) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (h *jsiiProxy_Heartbeat) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Heartbeat) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := h.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (h *jsiiProxy_Heartbeat) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -958,6 +1033,39 @@ func (h *jsiiProxy_Heartbeat) InterpolationForAttribute(terraformAttribute *stri
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_Heartbeat) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (h *jsiiProxy_Heartbeat) MoveTo(moveTarget *string, index interface{}) {
+	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_Heartbeat) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (h *jsiiProxy_Heartbeat) OverrideLogicalId(newLogicalId *string) {
@@ -1033,6 +1141,32 @@ func (h *jsiiProxy_Heartbeat) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		h,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Heartbeat) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Heartbeat) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)
