@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/functionresource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/function postgresql_function}.
 type FunctionResource interface {
 	cdktf.TerraformResource
 	Arg() FunctionResourceArgList
@@ -593,7 +593,7 @@ func (j *jsiiProxy_FunctionResource) VolatilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource(scope constructs.Construct, id *string, config *FunctionResourceConfig) FunctionResource {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewFunctionResource(scope constructs.Construct, id *string, config *Functio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.21.0/docs/resources/function postgresql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/function postgresql_function} Resource.
 func NewFunctionResource_Override(f FunctionResource, scope constructs.Construct, id *string, config *FunctionResourceConfig) {
 	_init_.Initialize()
 
