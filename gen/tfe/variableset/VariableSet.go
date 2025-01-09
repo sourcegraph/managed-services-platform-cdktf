@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/variableset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/variable_set tfe_variable_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set tfe_variable_set}.
 type VariableSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type VariableSet interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	ParentProjectId() *string
+	SetParentProjectId(val *string)
+	ParentProjectIdInput() *string
 	Priority() interface{}
 	SetPriority(val interface{})
 	PriorityInput() interface{}
@@ -129,6 +132,7 @@ type VariableSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParentProjectId()
 	ResetPriority()
 	ResetWorkspaceIds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -349,6 +353,26 @@ func (j *jsiiProxy_VariableSet) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VariableSet) ParentProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VariableSet) ParentProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VariableSet) Priority() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_VariableSet) WorkspaceIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/variable_set tfe_variable_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set tfe_variable_set} Resource.
 func NewVariableSet(scope constructs.Construct, id *string, config *VariableSetConfig) VariableSet {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewVariableSet(scope constructs.Construct, id *string, config *VariableSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/variable_set tfe_variable_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/variable_set tfe_variable_set} Resource.
 func NewVariableSet_Override(v VariableSet, scope constructs.Construct, id *string, config *VariableSetConfig) {
 	_init_.Initialize()
 
@@ -579,6 +603,17 @@ func (j *jsiiProxy_VariableSet)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VariableSet)SetParentProjectId(val *string) {
+	if err := j.validateSetParentProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentProjectId",
 		val,
 	)
 }
@@ -1013,6 +1048,14 @@ func (v *jsiiProxy_VariableSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VariableSet) ResetParentProjectId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetParentProjectId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/workspace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace tfe_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace tfe_workspace}.
 type Workspace interface {
 	cdktf.TerraformResource
 	AgentPoolId() *string
@@ -27,6 +27,12 @@ type Workspace interface {
 	AutoApplyRunTrigger() interface{}
 	SetAutoApplyRunTrigger(val interface{})
 	AutoApplyRunTriggerInput() interface{}
+	AutoDestroyActivityDuration() *string
+	SetAutoDestroyActivityDuration(val *string)
+	AutoDestroyActivityDurationInput() *string
+	AutoDestroyAt() *string
+	SetAutoDestroyAt(val *string)
+	AutoDestroyAtInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -70,6 +76,9 @@ type Workspace interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreAdditionalTagNames() interface{}
+	SetIgnoreAdditionalTagNames(val interface{})
+	IgnoreAdditionalTagNamesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -192,12 +201,15 @@ type Workspace interface {
 	ResetAssessmentsEnabled()
 	ResetAutoApply()
 	ResetAutoApplyRunTrigger()
+	ResetAutoDestroyActivityDuration()
+	ResetAutoDestroyAt()
 	ResetDescription()
 	ResetExecutionMode()
 	ResetFileTriggersEnabled()
 	ResetForceDelete()
 	ResetGlobalRemoteState()
 	ResetId()
+	ResetIgnoreAdditionalTagNames()
 	ResetOperations()
 	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -330,6 +342,46 @@ func (j *jsiiProxy_Workspace) AutoApplyRunTriggerInput() interface{} {
 	_jsii_.Get(
 		j,
 		"autoApplyRunTriggerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) AutoDestroyActivityDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoDestroyActivityDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) AutoDestroyActivityDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoDestroyActivityDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) AutoDestroyAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoDestroyAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) AutoDestroyAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoDestroyAtInput",
 		&returns,
 	)
 	return returns
@@ -540,6 +592,26 @@ func (j *jsiiProxy_Workspace) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNames() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreAdditionalTagNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNamesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreAdditionalTagNamesInput",
 		&returns,
 	)
 	return returns
@@ -976,7 +1048,7 @@ func (j *jsiiProxy_Workspace) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace tfe_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace tfe_workspace} Resource.
 func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfig) Workspace {
 	_init_.Initialize()
 
@@ -994,7 +1066,7 @@ func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace tfe_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace tfe_workspace} Resource.
 func NewWorkspace_Override(w Workspace, scope constructs.Construct, id *string, config *WorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1056,6 +1128,28 @@ func (j *jsiiProxy_Workspace)SetAutoApplyRunTrigger(val interface{}) {
 	_jsii_.Set(
 		j,
 		"autoApplyRunTrigger",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetAutoDestroyActivityDuration(val *string) {
+	if err := j.validateSetAutoDestroyActivityDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoDestroyActivityDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetAutoDestroyAt(val *string) {
+	if err := j.validateSetAutoDestroyAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoDestroyAt",
 		val,
 	)
 }
@@ -1160,6 +1254,17 @@ func (j *jsiiProxy_Workspace)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workspace)SetIgnoreAdditionalTagNames(val interface{}) {
+	if err := j.validateSetIgnoreAdditionalTagNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreAdditionalTagNames",
 		val,
 	)
 }
@@ -1774,6 +1879,22 @@ func (w *jsiiProxy_Workspace) ResetAutoApplyRunTrigger() {
 	)
 }
 
+func (w *jsiiProxy_Workspace) ResetAutoDestroyActivityDuration() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAutoDestroyActivityDuration",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workspace) ResetAutoDestroyAt() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAutoDestroyAt",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_Workspace) ResetDescription() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1818,6 +1939,14 @@ func (w *jsiiProxy_Workspace) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workspace) ResetIgnoreAdditionalTagNames() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIgnoreAdditionalTagNames",
 		nil, // no parameters
 	)
 }

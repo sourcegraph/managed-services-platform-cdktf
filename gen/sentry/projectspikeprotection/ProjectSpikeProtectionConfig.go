@@ -21,15 +21,15 @@ type ProjectSpikeProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Toggle the browser-extensions, localhost, filtered-transaction, or web-crawlers filter on or off.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection#enabled ProjectSpikeProtection#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_spike_protection#enabled ProjectSpikeProtection#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// The slug of the organization the project belongs to.
+	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection#organization ProjectSpikeProtection#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_spike_protection#organization ProjectSpikeProtection#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
-	// The slug of the project to create the filter for.
+	// The project of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_spike_protection#project ProjectSpikeProtection#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_spike_protection#project ProjectSpikeProtection#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

@@ -112,6 +112,10 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetIpRangeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterInterface) validateSetIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

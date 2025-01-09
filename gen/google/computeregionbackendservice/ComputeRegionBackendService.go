@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
 type ComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -69,6 +69,9 @@ type ComputeRegionBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -117,6 +120,8 @@ type ComputeRegionBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *ComputeRegionBackendServiceStrongSessionAffinityCookie
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -179,6 +184,7 @@ type ComputeRegionBackendService interface {
 	PutIap(value *ComputeRegionBackendServiceIap)
 	PutLogConfig(value *ComputeRegionBackendServiceLogConfig)
 	PutOutlierDetection(value *ComputeRegionBackendServiceOutlierDetection)
+	PutStrongSessionAffinityCookie(value *ComputeRegionBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeRegionBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
@@ -192,6 +198,7 @@ type ComputeRegionBackendService interface {
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
@@ -205,6 +212,7 @@ type ComputeRegionBackendService interface {
 	ResetProtocol()
 	ResetRegion()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -575,6 +583,26 @@ func (j *jsiiProxy_ComputeRegionBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -855,6 +883,26 @@ func (j *jsiiProxy_ComputeRegionBackendService) SessionAffinityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionBackendService) StrongSessionAffinityCookie() ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) StrongSessionAffinityCookieInput() *ComputeRegionBackendServiceStrongSessionAffinityCookie {
+	var returns *ComputeRegionBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionBackendService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -926,7 +974,7 @@ func (j *jsiiProxy_ComputeRegionBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService(scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) ComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -944,7 +992,7 @@ func NewComputeRegionBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService_Override(c ComputeRegionBackendService, scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1055,6 +1103,17 @@ func (j *jsiiProxy_ComputeRegionBackendService)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
 		val,
 	)
 }
@@ -1640,6 +1699,17 @@ func (c *jsiiProxy_ComputeRegionBackendService) PutOutlierDetection(value *Compu
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) PutStrongSessionAffinityCookie(value *ComputeRegionBackendServiceStrongSessionAffinityCookie) {
+	if err := c.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStrongSessionAffinityCookie",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) PutTimeouts(value *ComputeRegionBackendServiceTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1747,6 +1817,14 @@ func (c *jsiiProxy_ComputeRegionBackendService) ResetId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpAddressSelectionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) ResetLoadBalancingScheme() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1831,6 +1909,14 @@ func (c *jsiiProxy_ComputeRegionBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

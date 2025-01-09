@@ -104,7 +104,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSchedulingP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromMachineImageServiceAccount) error {
 	return nil
 }
 
@@ -172,6 +172,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -197,6 +201,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetMinCpuPlatf
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetPartnerMetadataParameters(val *map[string]*string) error {
 	return nil
 }
 

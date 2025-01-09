@@ -235,6 +235,17 @@ func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value interf
 	return nil
 }
 
+func (a *jsiiProxy_AccessPolicy) validatePutConnectionRulesParameters(value *AccessPolicyConnectionRules) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -623,6 +634,14 @@ func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationRequiredParamete
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessPolicy) validateSetSessionDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

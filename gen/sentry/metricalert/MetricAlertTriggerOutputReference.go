@@ -77,7 +77,6 @@ type MetricAlertTriggerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value interface{})
-	ResetAction()
 	ResetResolveThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -595,14 +594,6 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) PutAction(value interface{
 		m,
 		"putAction",
 		[]interface{}{value},
-	)
-}
-
-func (m *jsiiProxy_MetricAlertTriggerOutputReference) ResetAction() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAction",
-		nil, // no parameters
 	)
 }
 

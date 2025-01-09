@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/dashboard/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/dashboard sentry_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard}.
 type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,8 +37,6 @@ type Dashboard interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -114,7 +112,6 @@ type Dashboard interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutWidget(value interface{})
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -222,16 +219,6 @@ func (j *jsiiProxy_Dashboard) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Dashboard) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -388,7 +375,7 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/dashboard sentry_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -406,7 +393,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/dashboard sentry_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 
@@ -451,17 +438,6 @@ func (j *jsiiProxy_Dashboard)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Dashboard)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -879,14 +855,6 @@ func (d *jsiiProxy_Dashboard) PutWidget(value interface{}) {
 		d,
 		"putWidget",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_Dashboard) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

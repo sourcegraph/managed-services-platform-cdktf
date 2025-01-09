@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentrymetricalert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/metric_alert sentry_metric_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert sentry_metric_alert}.
 type DataSentryMetricAlert interface {
 	cdktf.TerraformDataSource
 	Aggregate() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataSentryMetricAlert) Trigger() DataSentryMetricAlertTrigger
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/metric_alert sentry_metric_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert sentry_metric_alert} Data Source.
 func NewDataSentryMetricAlert(scope constructs.Construct, id *string, config *DataSentryMetricAlertConfig) DataSentryMetricAlert {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDataSentryMetricAlert(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/metric_alert sentry_metric_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert sentry_metric_alert} Data Source.
 func NewDataSentryMetricAlert_Override(d DataSentryMetricAlert, scope constructs.Construct, id *string, config *DataSentryMetricAlertConfig) {
 	_init_.Initialize()
 

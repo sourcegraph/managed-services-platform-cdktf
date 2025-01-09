@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accessorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowAuthenticateViaWarp() interface{}
+	SetAllowAuthenticateViaWarp(val interface{})
+	AllowAuthenticateViaWarpInput() interface{}
 	AuthDomain() *string
 	SetAuthDomain(val *string)
 	AuthDomainInput() *string
@@ -74,6 +77,9 @@ type AccessOrganization interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SessionDuration() *string
+	SetSessionDuration(val *string)
+	SessionDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,6 +92,9 @@ type AccessOrganization interface {
 	UserSeatExpirationInactiveTime() *string
 	SetUserSeatExpirationInactiveTime(val *string)
 	UserSeatExpirationInactiveTimeInput() *string
+	WarpAuthSessionDuration() *string
+	SetWarpAuthSessionDuration(val *string)
+	WarpAuthSessionDurationInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -135,17 +144,19 @@ type AccessOrganization interface {
 	PutCustomPages(value interface{})
 	PutLoginDesign(value interface{})
 	ResetAccountId()
+	ResetAllowAuthenticateViaWarp()
 	ResetAutoRedirectToIdentity()
 	ResetCustomPages()
 	ResetId()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSessionDuration()
 	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
+	ResetWarpAuthSessionDuration()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -180,6 +191,26 @@ func (j *jsiiProxy_AccessOrganization) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) AllowAuthenticateViaWarp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) AllowAuthenticateViaWarpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarpInput",
 		&returns,
 	)
 	return returns
@@ -455,6 +486,26 @@ func (j *jsiiProxy_AccessOrganization) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) SessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) SessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -525,6 +576,26 @@ func (j *jsiiProxy_AccessOrganization) UserSeatExpirationInactiveTimeInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) WarpAuthSessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warpAuthSessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) WarpAuthSessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warpAuthSessionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,7 +617,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -564,7 +635,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 
@@ -582,6 +653,17 @@ func (j *jsiiProxy_AccessOrganization)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetAllowAuthenticateViaWarp(val interface{}) {
+	if err := j.validateSetAllowAuthenticateViaWarpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAuthenticateViaWarp",
 		val,
 	)
 }
@@ -709,6 +791,17 @@ func (j *jsiiProxy_AccessOrganization)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_AccessOrganization)SetSessionDuration(val *string) {
+	if err := j.validateSetSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionDuration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessOrganization)SetUiReadOnlyToggleReason(val *string) {
 	if err := j.validateSetUiReadOnlyToggleReasonParameters(val); err != nil {
 		panic(err)
@@ -727,6 +820,17 @@ func (j *jsiiProxy_AccessOrganization)SetUserSeatExpirationInactiveTime(val *str
 	_jsii_.Set(
 		j,
 		"userSeatExpirationInactiveTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetWarpAuthSessionDuration(val *string) {
+	if err := j.validateSetWarpAuthSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warpAuthSessionDuration",
 		val,
 	)
 }
@@ -1125,6 +1229,14 @@ func (a *jsiiProxy_AccessOrganization) ResetAccountId() {
 	)
 }
 
+func (a *jsiiProxy_AccessOrganization) ResetAllowAuthenticateViaWarp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowAuthenticateViaWarp",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessOrganization) ResetAutoRedirectToIdentity() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1165,18 +1277,18 @@ func (a *jsiiProxy_AccessOrganization) ResetLoginDesign() {
 	)
 }
 
-func (a *jsiiProxy_AccessOrganization) ResetName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AccessOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetSessionDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionDuration",
 		nil, // no parameters
 	)
 }
@@ -1193,6 +1305,14 @@ func (a *jsiiProxy_AccessOrganization) ResetUserSeatExpirationInactiveTime() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserSeatExpirationInactiveTime",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetWarpAuthSessionDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWarpAuthSessionDuration",
 		nil, // no parameters
 	)
 }

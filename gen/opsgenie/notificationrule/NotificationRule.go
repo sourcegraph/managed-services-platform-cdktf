@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/notificationrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_rule opsgenie_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule opsgenie_notification_rule}.
 type NotificationRule interface {
 	cdktf.TerraformResource
 	ActionType() *string
@@ -568,7 +568,7 @@ func (j *jsiiProxy_NotificationRule) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_rule opsgenie_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule opsgenie_notification_rule} Resource.
 func NewNotificationRule(scope constructs.Construct, id *string, config *NotificationRuleConfig) NotificationRule {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewNotificationRule(scope constructs.Construct, id *string, config *Notific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_rule opsgenie_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule opsgenie_notification_rule} Resource.
 func NewNotificationRule_Override(n NotificationRule, scope constructs.Construct, id *string, config *NotificationRuleConfig) {
 	_init_.Initialize()
 

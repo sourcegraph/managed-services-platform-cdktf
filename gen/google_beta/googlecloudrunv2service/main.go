@@ -30,7 +30,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creator", GoGetter: "Creator"},
 			_jsii_.MemberProperty{JsiiProperty: "customAudiences", GoGetter: "CustomAudiences"},
 			_jsii_.MemberProperty{JsiiProperty: "customAudiencesInput", GoGetter: "CustomAudiencesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultUriDisabled", GoGetter: "DefaultUriDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultUriDisabledInput", GoGetter: "DefaultUriDisabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteTime", GoGetter: "DeleteTime"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
@@ -58,6 +62,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ingress", GoGetter: "Ingress"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressInput", GoGetter: "IngressInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "invokerIamDisabled", GoGetter: "InvokerIamDisabled"},
+			_jsii_.MemberProperty{JsiiProperty: "invokerIamDisabledInput", GoGetter: "InvokerIamDisabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModifier", GoGetter: "LastModifier"},
@@ -92,9 +98,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientVersion", GoMethod: "ResetClientVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomAudiences", GoMethod: "ResetCustomAudiences"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultUriDisabled", GoMethod: "ResetDefaultUriDisabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInvokerIamDisabled", GoMethod: "ResetInvokerIamDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLaunchStage", GoMethod: "ResetLaunchStage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -125,6 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
+			_jsii_.MemberProperty{JsiiProperty: "urls", GoGetter: "Urls"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCloudRunV2Service{}
@@ -159,7 +169,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "policy", GoGetter: "Policy"},
+			_jsii_.MemberProperty{JsiiProperty: "policyInput", GoGetter: "PolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBreakglassJustification", GoMethod: "ResetBreakglassJustification"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPolicy", GoMethod: "ResetPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseDefault", GoMethod: "ResetUseDefault"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1181,6 +1194,44 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateNodeSelector",
+		reflect.TypeOf((*GoogleCloudRunV2ServiceTemplateNodeSelector)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference",
+		reflect.TypeOf((*GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accelerator", GoGetter: "Accelerator"},
+			_jsii_.MemberProperty{JsiiProperty: "acceleratorInput", GoGetter: "AcceleratorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateOutputReference",
 		reflect.TypeOf((*GoogleCloudRunV2ServiceTemplateOutputReference)(nil)).Elem(),
@@ -1214,8 +1265,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxInstanceRequestConcurrency", GoGetter: "MaxInstanceRequestConcurrency"},
 			_jsii_.MemberProperty{JsiiProperty: "maxInstanceRequestConcurrencyInput", GoGetter: "MaxInstanceRequestConcurrencyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeSelector", GoGetter: "NodeSelector"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeSelectorInput", GoGetter: "NodeSelectorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainers", GoMethod: "PutContainers"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeSelector", GoMethod: "PutNodeSelector"},
 			_jsii_.MemberMethod{JsiiMethod: "putScaling", GoMethod: "PutScaling"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceMesh", GoMethod: "PutServiceMesh"},
 			_jsii_.MemberMethod{JsiiMethod: "putVolumes", GoMethod: "PutVolumes"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcAccess", GoMethod: "PutVpcAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
@@ -1224,9 +1279,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExecutionEnvironment", GoMethod: "ResetExecutionEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxInstanceRequestConcurrency", GoMethod: "ResetMaxInstanceRequestConcurrency"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeSelector", GoMethod: "ResetNodeSelector"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevision", GoMethod: "ResetRevision"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScaling", GoMethod: "ResetScaling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccount", GoMethod: "ResetServiceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceMesh", GoMethod: "ResetServiceMesh"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionAffinity", GoMethod: "ResetSessionAffinity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVolumes", GoMethod: "ResetVolumes"},
@@ -1238,6 +1295,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "scalingInput", GoGetter: "ScalingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccount", GoGetter: "ServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountInput", GoGetter: "ServiceAccountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceMesh", GoGetter: "ServiceMesh"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceMeshInput", GoGetter: "ServiceMeshInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityInput", GoGetter: "SessionAffinityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1294,6 +1353,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCloudRunV2ServiceTemplateScalingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMesh",
+		reflect.TypeOf((*GoogleCloudRunV2ServiceTemplateServiceMesh)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference",
+		reflect.TypeOf((*GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mesh", GoGetter: "Mesh"},
+			_jsii_.MemberProperty{JsiiProperty: "meshInput", GoGetter: "MeshInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMesh", GoMethod: "ResetMesh"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1410,8 +1508,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mountOptions", GoGetter: "MountOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "mountOptionsInput", GoGetter: "MountOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnlyInput", GoGetter: "ReadOnlyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMountOptions", GoMethod: "ResetMountOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadOnly", GoMethod: "ResetReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

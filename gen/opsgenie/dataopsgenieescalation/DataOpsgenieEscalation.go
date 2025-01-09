@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/dataopsgenieescalation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/escalation opsgenie_escalation}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/escalation opsgenie_escalation}.
 type DataOpsgenieEscalation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/escalation opsgenie_escalation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/escalation opsgenie_escalation} Data Source.
 func NewDataOpsgenieEscalation(scope constructs.Construct, id *string, config *DataOpsgenieEscalationConfig) DataOpsgenieEscalation {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataOpsgenieEscalation(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/escalation opsgenie_escalation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/escalation opsgenie_escalation} Data Source.
 func NewDataOpsgenieEscalation_Override(d DataOpsgenieEscalation, scope constructs.Construct, id *string, config *DataOpsgenieEscalationConfig) {
 	_init_.Initialize()
 

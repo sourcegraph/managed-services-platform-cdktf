@@ -342,14 +342,6 @@ func (j *jsiiProxy_WorkspaceRunTask) validateSetEnforcementLevelParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceRunTask) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_WorkspaceRunTask) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -405,6 +397,14 @@ func (j *jsiiProxy_WorkspaceRunTask) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_WorkspaceRunTask) validateSetStageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkspaceRunTask) validateSetStagesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

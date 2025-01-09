@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/listitem/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/list_item cloudflare_list_item}.
 type ListItemA interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,11 +45,9 @@ type ListItemA interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Hostname() ListItemHostnameOutputReference
-	HostnameInput() *ListItemHostname
+	Hostname() ListItemHostnameList
+	HostnameInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -72,8 +70,8 @@ type ListItemA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Redirect() ListItemRedirectOutputReference
-	RedirectInput() *ListItemRedirect
+	Redirect() ListItemRedirectList
+	RedirectInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,12 +121,11 @@ type ListItemA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutHostname(value *ListItemHostname)
-	PutRedirect(value *ListItemRedirect)
+	PutHostname(value interface{})
+	PutRedirect(value interface{})
 	ResetAsn()
 	ResetComment()
 	ResetHostname()
-	ResetId()
 	ResetIp()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -292,8 +289,8 @@ func (j *jsiiProxy_ListItemA) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) Hostname() ListItemHostnameOutputReference {
-	var returns ListItemHostnameOutputReference
+func (j *jsiiProxy_ListItemA) Hostname() ListItemHostnameList {
+	var returns ListItemHostnameList
 	_jsii_.Get(
 		j,
 		"hostname",
@@ -302,8 +299,8 @@ func (j *jsiiProxy_ListItemA) Hostname() ListItemHostnameOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) HostnameInput() *ListItemHostname {
-	var returns *ListItemHostname
+func (j *jsiiProxy_ListItemA) HostnameInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"hostnameInput",
@@ -317,16 +314,6 @@ func (j *jsiiProxy_ListItemA) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ListItemA) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -422,8 +409,8 @@ func (j *jsiiProxy_ListItemA) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) Redirect() ListItemRedirectOutputReference {
-	var returns ListItemRedirectOutputReference
+func (j *jsiiProxy_ListItemA) Redirect() ListItemRedirectList {
+	var returns ListItemRedirectList
 	_jsii_.Get(
 		j,
 		"redirect",
@@ -432,8 +419,8 @@ func (j *jsiiProxy_ListItemA) Redirect() ListItemRedirectOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemA) RedirectInput() *ListItemRedirect {
-	var returns *ListItemRedirect
+func (j *jsiiProxy_ListItemA) RedirectInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"redirectInput",
@@ -473,7 +460,7 @@ func (j *jsiiProxy_ListItemA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfig) ListItemA {
 	_init_.Initialize()
 
@@ -491,7 +478,7 @@ func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItemA_Override(l ListItemA, scope constructs.Construct, id *string, config *ListItemAConfig) {
 	_init_.Initialize()
 
@@ -569,17 +556,6 @@ func (j *jsiiProxy_ListItemA)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ListItemA)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -989,7 +965,7 @@ func (l *jsiiProxy_ListItemA) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_ListItemA) PutHostname(value *ListItemHostname) {
+func (l *jsiiProxy_ListItemA) PutHostname(value interface{}) {
 	if err := l.validatePutHostnameParameters(value); err != nil {
 		panic(err)
 	}
@@ -1000,7 +976,7 @@ func (l *jsiiProxy_ListItemA) PutHostname(value *ListItemHostname) {
 	)
 }
 
-func (l *jsiiProxy_ListItemA) PutRedirect(value *ListItemRedirect) {
+func (l *jsiiProxy_ListItemA) PutRedirect(value interface{}) {
 	if err := l.validatePutRedirectParameters(value); err != nil {
 		panic(err)
 	}
@@ -1031,14 +1007,6 @@ func (l *jsiiProxy_ListItemA) ResetHostname() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetHostname",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_ListItemA) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

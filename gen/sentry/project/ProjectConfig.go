@@ -21,56 +21,69 @@ type ProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name for the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#name Project#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#name Project#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The slug of the organization the project belongs to.
+	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#organization Project#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#organization Project#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
+	// The slugs of the teams to create the project for.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#teams Project#teams}
+	Teams *[]*string `field:"required" json:"teams" yaml:"teams"`
+	// Configure origin URLs which Sentry should accept events from. This is used for communication with clients like [sentry-javascript](https://github.com/getsentry/sentry-javascript).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#client_security Project#client_security}
+	ClientSecurity *ProjectClientSecurity `field:"optional" json:"clientSecurity" yaml:"clientSecurity"`
 	// Whether to create a default key.
 	//
 	// By default, Sentry will create a key for you. If you wish to manage keys manually, set this to false and create keys using the `sentry_key` resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#default_key Project#default_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#default_key Project#default_key}
 	DefaultKey interface{} `field:"optional" json:"defaultKey" yaml:"defaultKey"`
 	// Whether to create a default issue alert.
 	//
 	// Defaults to true where the behavior is to alert the user on every new issue.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#default_rules Project#default_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#default_rules Project#default_rules}
 	DefaultRules interface{} `field:"optional" json:"defaultRules" yaml:"defaultRules"`
 	// The maximum amount of time (in seconds) to wait between scheduling digests for delivery.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#digests_max_delay Project#digests_max_delay}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#digests_max_delay Project#digests_max_delay}
 	DigestsMaxDelay *float64 `field:"optional" json:"digestsMaxDelay" yaml:"digestsMaxDelay"`
 	// The minimum amount of time (in seconds) to wait between scheduling digests for delivery after the initial scheduling.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#digests_min_delay Project#digests_min_delay}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#digests_min_delay Project#digests_min_delay}
 	DigestsMinDelay *float64 `field:"optional" json:"digestsMinDelay" yaml:"digestsMinDelay"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#id Project#id}.
+	// Custom filters for this project.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The optional platform for this project.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#filters Project#filters}
+	Filters *ProjectFilters `field:"optional" json:"filters" yaml:"filters"`
+	// This can be used to modify the fingerprint rules on the server with custom rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#platform Project#platform}
+	// Rules follow the pattern `matcher:glob -> fingerprint, values`. To learn more about fingerprint rules, [read the docs](https://docs.sentry.io/concepts/data-management/event-grouping/fingerprint-rules/).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#fingerprinting_rules Project#fingerprinting_rules}
+	FingerprintingRules *string `field:"optional" json:"fingerprintingRules" yaml:"fingerprintingRules"`
+	// This can be used to enhance the grouping algorithm with custom rules.
+	//
+	// Rules follow the pattern `matcher:glob [v^]?[+-]flag`. To learn more about stack trace rules, [read the docs](https://docs.sentry.io/concepts/data-management/event-grouping/stack-trace-rules/).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#grouping_enhancements Project#grouping_enhancements}
+	GroupingEnhancements *string `field:"optional" json:"groupingEnhancements" yaml:"groupingEnhancements"`
+	// The platform for this project.
+	//
+	// For a list of valid values, [see this page](https://github.com/jianyuan/terraform-provider-sentry/blob/main/internal/sentryplatforms/platforms.txt). Use `other` for platforms not listed.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#platform Project#platform}
 	Platform *string `field:"optional" json:"platform" yaml:"platform"`
 	// Hours in which an issue is automatically resolve if not seen after this amount of time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#resolve_age Project#resolve_age}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#resolve_age Project#resolve_age}
 	ResolveAge *float64 `field:"optional" json:"resolveAge" yaml:"resolveAge"`
 	// The optional slug for this project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#slug Project#slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project#slug Project#slug}
 	Slug *string `field:"optional" json:"slug" yaml:"slug"`
-	// The slug of the team to create the project for. **Deprecated** Use `teams` instead.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#team Project#team}
-	Team *string `field:"optional" json:"team" yaml:"team"`
-	// The slugs of the teams to create the project for.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project#teams Project#teams}
-	Teams *[]*string `field:"optional" json:"teams" yaml:"teams"`
 }
 

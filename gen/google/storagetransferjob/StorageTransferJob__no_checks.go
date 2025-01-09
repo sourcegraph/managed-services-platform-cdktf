@@ -80,6 +80,10 @@ func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutReplicationSpecParameters(value *StorageTransferJobReplicationSpec) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutScheduleParameters(value *StorageTransferJobSchedule) error {
 	return nil
 }

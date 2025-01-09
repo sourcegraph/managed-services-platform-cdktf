@@ -47,9 +47,15 @@ type GoogleComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	ResourcePolicies() *[]*string
+	SetResourcePolicies(val *[]*string)
+	ResourcePoliciesInput() *[]*string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
+	StoragePool() *string
+	SetStoragePool(val *string)
+	StoragePoolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,7 +97,9 @@ type GoogleComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	ResetProvisionedIops()
 	ResetProvisionedThroughput()
 	ResetResourceManagerTags()
+	ResetResourcePolicies()
 	ResetSize()
+	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -278,6 +286,26 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) ResourcePoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) Size() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -293,6 +321,26 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	_jsii_.Get(
 		j,
 		"sizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) StoragePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePoolInput",
 		&returns,
 	)
 	return returns
@@ -465,6 +513,17 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)SetResourcePolicies(val *[]*string) {
+	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcePolicies",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
@@ -472,6 +531,17 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	_jsii_.Set(
 		j,
 		"size",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)SetStoragePool(val *string) {
+	if err := j.validateSetStoragePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePool",
 		val,
 	)
 }
@@ -743,10 +813,26 @@ func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourcePolicies",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) ResetSize() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) ResetStoragePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePool",
 		nil, // no parameters
 	)
 }

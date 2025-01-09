@@ -226,6 +226,17 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutAutoHeali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -269,6 +280,17 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutNamedPort
 }
 
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutParamsParameters(value *GoogleComputeRegionInstanceGroupManagerParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -690,6 +712,22 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetPoo
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

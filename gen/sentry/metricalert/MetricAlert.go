@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/metricalert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert sentry_metric_alert}.
 type MetricAlert interface {
 	cdktf.TerraformResource
 	Aggregate() *string
@@ -17,6 +17,9 @@ type MetricAlert interface {
 	AggregateInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComparisonDelta() *float64
+	SetComparisonDelta(val *float64)
+	ComparisonDeltaInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -49,8 +52,6 @@ type MetricAlert interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -144,10 +145,10 @@ type MetricAlert interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTrigger(value interface{})
+	ResetComparisonDelta()
 	ResetDataset()
 	ResetEnvironment()
 	ResetEventTypes()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -196,6 +197,26 @@ func (j *jsiiProxy_MetricAlert) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlert) ComparisonDelta() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"comparisonDelta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlert) ComparisonDeltaInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"comparisonDeltaInput",
 		&returns,
 	)
 	return returns
@@ -336,16 +357,6 @@ func (j *jsiiProxy_MetricAlert) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MetricAlert) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -622,7 +633,7 @@ func (j *jsiiProxy_MetricAlert) TriggerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert sentry_metric_alert} Resource.
 func NewMetricAlert(scope constructs.Construct, id *string, config *MetricAlertConfig) MetricAlert {
 	_init_.Initialize()
 
@@ -640,7 +651,7 @@ func NewMetricAlert(scope constructs.Construct, id *string, config *MetricAlertC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/metric_alert sentry_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert sentry_metric_alert} Resource.
 func NewMetricAlert_Override(m MetricAlert, scope constructs.Construct, id *string, config *MetricAlertConfig) {
 	_init_.Initialize()
 
@@ -658,6 +669,17 @@ func (j *jsiiProxy_MetricAlert)SetAggregate(val *string) {
 	_jsii_.Set(
 		j,
 		"aggregate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetricAlert)SetComparisonDelta(val *float64) {
+	if err := j.validateSetComparisonDeltaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comparisonDelta",
 		val,
 	)
 }
@@ -729,17 +751,6 @@ func (j *jsiiProxy_MetricAlert)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MetricAlert)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1226,6 +1237,14 @@ func (m *jsiiProxy_MetricAlert) PutTrigger(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_MetricAlert) ResetComparisonDelta() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetComparisonDelta",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MetricAlert) ResetDataset() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1246,14 +1265,6 @@ func (m *jsiiProxy_MetricAlert) ResetEventTypes() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetEventTypes",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MetricAlert) ResetId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetId",
 		nil, // no parameters
 	)
 }

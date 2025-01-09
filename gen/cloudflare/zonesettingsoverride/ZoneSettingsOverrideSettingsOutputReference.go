@@ -10,6 +10,8 @@ import (
 
 type ZoneSettingsOverrideSettingsOutputReference interface {
 	cdktf.ComplexObject
+	Aegis() ZoneSettingsOverrideSettingsAegisOutputReference
+	AegisInput() *ZoneSettingsOverrideSettingsAegis
 	AlwaysOnline() *string
 	SetAlwaysOnline(val *string)
 	AlwaysOnlineInput() *string
@@ -70,6 +72,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	FilterLogsToCloudflare() *string
 	SetFilterLogsToCloudflare(val *string)
 	FilterLogsToCloudflareInput() *string
+	Fonts() *string
+	SetFonts(val *string)
+	FontsInput() *string
 	// Experimental.
 	Fqn() *string
 	H2Prioritization() *string
@@ -111,6 +116,8 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	MirageInput() *string
 	MobileRedirect() ZoneSettingsOverrideSettingsMobileRedirectOutputReference
 	MobileRedirectInput() *ZoneSettingsOverrideSettingsMobileRedirect
+	Nel() ZoneSettingsOverrideSettingsNelOutputReference
+	NelInput() *ZoneSettingsOverrideSettingsNel
 	OpportunisticEncryption() *string
 	SetOpportunisticEncryption(val *string)
 	OpportunisticEncryptionInput() *string
@@ -141,6 +148,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	PseudoIpv4() *string
 	SetPseudoIpv4(val *string)
 	PseudoIpv4Input() *string
+	ReplaceInsecureJs() *string
+	SetReplaceInsecureJs(val *string)
+	ReplaceInsecureJsInput() *string
 	ResponseBuffering() *string
 	SetResponseBuffering(val *string)
 	ResponseBufferingInput() *string
@@ -158,8 +168,14 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	SortQueryStringForCache() *string
 	SetSortQueryStringForCache(val *string)
 	SortQueryStringForCacheInput() *string
+	SpeedBrain() *string
+	SetSpeedBrain(val *string)
+	SpeedBrainInput() *string
 	Ssl() *string
 	SetSsl(val *string)
+	SslAutomaticMode() *string
+	SetSslAutomaticMode(val *string)
+	SslAutomaticModeInput() *string
 	SslInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -223,9 +239,12 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAegis(value *ZoneSettingsOverrideSettingsAegis)
 	PutMinify(value *ZoneSettingsOverrideSettingsMinify)
 	PutMobileRedirect(value *ZoneSettingsOverrideSettingsMobileRedirect)
+	PutNel(value *ZoneSettingsOverrideSettingsNel)
 	PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader)
+	ResetAegis()
 	ResetAlwaysOnline()
 	ResetAlwaysUseHttps()
 	ResetAutomaticHttpsRewrites()
@@ -241,6 +260,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetEarlyHints()
 	ResetEmailObfuscation()
 	ResetFilterLogsToCloudflare()
+	ResetFonts()
 	ResetH2Prioritization()
 	ResetHotlinkProtection()
 	ResetHttp2()
@@ -254,6 +274,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetMinTlsVersion()
 	ResetMirage()
 	ResetMobileRedirect()
+	ResetNel()
 	ResetOpportunisticEncryption()
 	ResetOpportunisticOnion()
 	ResetOrangeToOrange()
@@ -264,13 +285,16 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetPrivacyPass()
 	ResetProxyReadTimeout()
 	ResetPseudoIpv4()
+	ResetReplaceInsecureJs()
 	ResetResponseBuffering()
 	ResetRocketLoader()
 	ResetSecurityHeader()
 	ResetSecurityLevel()
 	ResetServerSideExclude()
 	ResetSortQueryStringForCache()
+	ResetSpeedBrain()
 	ResetSsl()
+	ResetSslAutomaticMode()
 	ResetTls12Only()
 	ResetTls13()
 	ResetTlsClientAuth()
@@ -294,6 +318,26 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 // The jsii proxy struct for ZoneSettingsOverrideSettingsOutputReference
 type jsiiProxy_ZoneSettingsOverrideSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Aegis() ZoneSettingsOverrideSettingsAegisOutputReference {
+	var returns ZoneSettingsOverrideSettingsAegisOutputReference
+	_jsii_.Get(
+		j,
+		"aegis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) AegisInput() *ZoneSettingsOverrideSettingsAegis {
+	var returns *ZoneSettingsOverrideSettingsAegis
+	_jsii_.Get(
+		j,
+		"aegisInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) AlwaysOnline() *string {
@@ -626,6 +670,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) FilterLogsToClou
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Fonts() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fonts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) FontsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fontsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -906,6 +970,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) MobileRedirectIn
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Nel() ZoneSettingsOverrideSettingsNelOutputReference {
+	var returns ZoneSettingsOverrideSettingsNelOutputReference
+	_jsii_.Get(
+		j,
+		"nel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) NelInput() *ZoneSettingsOverrideSettingsNel {
+	var returns *ZoneSettingsOverrideSettingsNel
+	_jsii_.Get(
+		j,
+		"nelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) OpportunisticEncryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1106,6 +1190,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PseudoIpv4Input(
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ReplaceInsecureJs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ReplaceInsecureJsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResponseBuffering() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1226,11 +1330,51 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SortQueryStringF
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SpeedBrain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SpeedBrainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Ssl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ssl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SslAutomaticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SslAutomaticModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticModeInput",
 		&returns,
 	)
 	return returns
@@ -1681,6 +1825,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetFilterLogsToCl
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetFonts(val *string) {
+	if err := j.validateSetFontsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fonts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetH2Prioritization(val *string) {
 	if err := j.validateSetH2PrioritizationParameters(val); err != nil {
 		panic(err)
@@ -1923,6 +2078,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPseudoIpv4(val
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetReplaceInsecureJs(val *string) {
+	if err := j.validateSetReplaceInsecureJsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceInsecureJs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetResponseBuffering(val *string) {
 	if err := j.validateSetResponseBufferingParameters(val); err != nil {
 		panic(err)
@@ -1978,6 +2144,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSortQueryStrin
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSpeedBrain(val *string) {
+	if err := j.validateSetSpeedBrainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"speedBrain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSsl(val *string) {
 	if err := j.validateSetSslParameters(val); err != nil {
 		panic(err)
@@ -1985,6 +2162,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSsl(val *strin
 	_jsii_.Set(
 		j,
 		"ssl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSslAutomaticMode(val *string) {
+	if err := j.validateSetSslAutomaticModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslAutomaticMode",
 		val,
 	)
 }
@@ -2307,6 +2495,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) InterpolationFor
 	return returns
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutAegis(value *ZoneSettingsOverrideSettingsAegis) {
+	if err := z.validatePutAegisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putAegis",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMinify(value *ZoneSettingsOverrideSettingsMinify) {
 	if err := z.validatePutMinifyParameters(value); err != nil {
 		panic(err)
@@ -2329,6 +2528,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMobileRedirec
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutNel(value *ZoneSettingsOverrideSettingsNel) {
+	if err := z.validatePutNelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putNel",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader) {
 	if err := z.validatePutSecurityHeaderParameters(value); err != nil {
 		panic(err)
@@ -2337,6 +2547,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutSecurityHeade
 		z,
 		"putSecurityHeader",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetAegis() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAegis",
+		nil, // no parameters
 	)
 }
 
@@ -2460,6 +2678,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetFilterLogsT
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetFonts() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetFonts",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetH2Prioritization() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2564,6 +2790,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetMobileRedir
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetNel() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetNel",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetOpportunisticEncryption() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2644,6 +2878,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetPseudoIpv4(
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetReplaceInsecureJs() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetReplaceInsecureJs",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetResponseBuffering() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2692,10 +2934,26 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSortQuerySt
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSpeedBrain() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSpeedBrain",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSslAutomaticMode() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSslAutomaticMode",
 		nil, // no parameters
 	)
 }

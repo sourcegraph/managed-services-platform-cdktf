@@ -204,6 +204,99 @@ func (i *jsiiProxy_IssueAlert) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (i *jsiiProxy_IssueAlert) validatePutActionsV2Parameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*IssueAlertActionsV2:
+		value := value.(*[]*IssueAlertActionsV2)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*IssueAlertActionsV2:
+		value_ := value.([]*IssueAlertActionsV2)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*IssueAlertActionsV2; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validatePutConditionsV2Parameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*IssueAlertConditionsV2:
+		value := value.(*[]*IssueAlertConditionsV2)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*IssueAlertConditionsV2:
+		value_ := value.([]*IssueAlertConditionsV2)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*IssueAlertConditionsV2; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validatePutFiltersV2Parameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*IssueAlertFiltersV2:
+		value := value.(*[]*IssueAlertFiltersV2)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*IssueAlertFiltersV2:
+		value_ := value.([]*IssueAlertFiltersV2)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*IssueAlertFiltersV2; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateIssueAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

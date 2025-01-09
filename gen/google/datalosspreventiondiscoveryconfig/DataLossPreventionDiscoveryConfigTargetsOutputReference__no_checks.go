@@ -48,6 +48,18 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutCloudSqlTargetParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutCloudStorageTargetParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudStorageTarget) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validatePutSecretsTargetParameters(value *DataLossPreventionDiscoveryConfigTargetsSecretsTarget) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

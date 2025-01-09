@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,11 +68,19 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetHostErrorTimeoutSecondsParameters(val *float64) error {
 	return nil
 }
 

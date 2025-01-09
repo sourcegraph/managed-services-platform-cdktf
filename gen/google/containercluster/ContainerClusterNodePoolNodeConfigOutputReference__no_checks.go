@@ -52,6 +52,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutContainerdConfigParameters(value *ContainerClusterNodePoolNodeConfigContainerdConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }
@@ -197,6 +205,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
 	return nil
 }
 

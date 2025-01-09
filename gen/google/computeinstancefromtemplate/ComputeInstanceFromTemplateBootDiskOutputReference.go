@@ -39,6 +39,9 @@ type ComputeInstanceFromTemplateBootDiskOutputReference interface {
 	Fqn() *string
 	InitializeParams() ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *ComputeInstanceFromTemplateBootDiskInitializeParams
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	InternalValue() *ComputeInstanceFromTemplateBootDisk
 	SetInternalValue(val *ComputeInstanceFromTemplateBootDisk)
 	KmsKeySelfLink() *string
@@ -87,6 +90,7 @@ type ComputeInstanceFromTemplateBootDiskOutputReference interface {
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
 	ResetInitializeParams()
+	ResetInterface()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	ResetSource()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) Initializ
 	_jsii_.Get(
 		j,
 		"initializeParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
 		&returns,
 	)
 	return returns
@@ -404,6 +428,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference)SetDiskEnc
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -699,6 +734,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) ResetInit
 	_jsii_.InvokeVoid(
 		c,
 		"resetInitializeParams",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) ResetInterface() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

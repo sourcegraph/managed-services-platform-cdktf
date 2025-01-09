@@ -56,19 +56,19 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetIncludeSubdomainsParameters(val *string) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetIncludeSubdomainsParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetInternalValueParameters(val *ListItemRedirect) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreservePathSuffixParameters(val *string) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreservePathSuffixParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreserveQueryStringParameters(val *string) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetPreserveQueryStringParameters(val interface{}) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetStatusCodeParamet
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetSubpathMatchingParameters(val *string) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetSubpathMatchingParameters(val interface{}) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetTerraformResource
 	return nil
 }
 
-func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentrykey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/key sentry_key}.
 type DataSentryKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataSentryKey interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Dsn() cdktf.StringMap
 	DsnCsp() *string
 	DsnPublic() *string
 	DsnSecret() *string
@@ -41,7 +42,7 @@ type DataSentryKey interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsActive() cdktf.IResolvable
+	JavascriptLoaderScript() DataSentryKeyJavascriptLoaderScriptOutputReference
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -164,6 +165,16 @@ func (j *jsiiProxy_DataSentryKey) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryKey) Dsn() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"dsn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryKey) DsnCsp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -264,11 +275,11 @@ func (j *jsiiProxy_DataSentryKey) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryKey) IsActive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataSentryKey) JavascriptLoaderScript() DataSentryKeyJavascriptLoaderScriptOutputReference {
+	var returns DataSentryKeyJavascriptLoaderScriptOutputReference
 	_jsii_.Get(
 		j,
-		"isActive",
+		"javascriptLoaderScript",
 		&returns,
 	)
 	return returns
@@ -455,7 +466,7 @@ func (j *jsiiProxy_DataSentryKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/key sentry_key} Data Source.
 func NewDataSentryKey(scope constructs.Construct, id *string, config *DataSentryKeyConfig) DataSentryKey {
 	_init_.Initialize()
 
@@ -473,7 +484,7 @@ func NewDataSentryKey(scope constructs.Construct, id *string, config *DataSentry
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/key sentry_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/key sentry_key} Data Source.
 func NewDataSentryKey_Override(d DataSentryKey, scope constructs.Construct, id *string, config *DataSentryKeyConfig) {
 	_init_.Initialize()
 

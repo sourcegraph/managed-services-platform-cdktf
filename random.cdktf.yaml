@@ -3,7 +3,7 @@ name: random
 provider:
   # https://registry.terraform.io/providers/hashicorp/random/latest
   source: registry.terraform.io/hashicorp/random
-  version: 3.5.1
+  version: 3.6.3
 
 target:
   language: go

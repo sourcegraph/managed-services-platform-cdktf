@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`opsgenie`](https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs).
+Refer to the Terraform Registry for docs: [`opsgenie`](https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs).

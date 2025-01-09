@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGrou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetLocalSsdInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetNumLocalSsdsParameters(val *float64) error {
 	return nil
 }

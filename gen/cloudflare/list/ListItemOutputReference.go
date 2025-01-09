@@ -40,8 +40,8 @@ type ListItemOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Value() ListItemValueOutputReference
-	ValueInput() *ListItemValue
+	Value() ListItemValueList
+	ValueInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -66,8 +66,9 @@ type ListItemOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutValue(value *ListItemValue)
+	PutValue(value interface{})
 	ResetComment()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,8 +174,8 @@ func (j *jsiiProxy_ListItemOutputReference) TerraformResource() cdktf.IInterpola
 	return returns
 }
 
-func (j *jsiiProxy_ListItemOutputReference) Value() ListItemValueOutputReference {
-	var returns ListItemValueOutputReference
+func (j *jsiiProxy_ListItemOutputReference) Value() ListItemValueList {
+	var returns ListItemValueList
 	_jsii_.Get(
 		j,
 		"value",
@@ -183,8 +184,8 @@ func (j *jsiiProxy_ListItemOutputReference) Value() ListItemValueOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ListItemOutputReference) ValueInput() *ListItemValue {
-	var returns *ListItemValue
+func (j *jsiiProxy_ListItemOutputReference) ValueInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -473,7 +474,7 @@ func (l *jsiiProxy_ListItemOutputReference) InterpolationForAttribute(property *
 	return returns
 }
 
-func (l *jsiiProxy_ListItemOutputReference) PutValue(value *ListItemValue) {
+func (l *jsiiProxy_ListItemOutputReference) PutValue(value interface{}) {
 	if err := l.validatePutValueParameters(value); err != nil {
 		panic(err)
 	}
@@ -488,6 +489,14 @@ func (l *jsiiProxy_ListItemOutputReference) ResetComment() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_ListItemOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetValue",
 		nil, // no parameters
 	)
 }

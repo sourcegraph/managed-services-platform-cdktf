@@ -9,13 +9,16 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarerecord/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/record cloudflare_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/record cloudflare_record}.
 type DataCloudflareRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Content() *string
+	SetContent(val *string)
+	ContentInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -42,7 +45,6 @@ type DataCloudflareRecord interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Locked() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
 	Priority() *float64
@@ -70,7 +72,6 @@ type DataCloudflareRecord interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
-	ZoneName() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,6 +97,7 @@ type DataCloudflareRecord interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetContent()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -136,6 +138,26 @@ func (j *jsiiProxy_DataCloudflareRecord) ConstructNodeMetadata() *map[string]int
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRecord) Content() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRecord) ContentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentInput",
 		&returns,
 	)
 	return returns
@@ -236,16 +258,6 @@ func (j *jsiiProxy_DataCloudflareRecord) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRecord) Locked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"locked",
 		&returns,
 	)
 	return returns
@@ -411,18 +423,8 @@ func (j *jsiiProxy_DataCloudflareRecord) ZoneIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRecord) ZoneName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneName",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) DataCloudflareRecord {
 	_init_.Initialize()
 
@@ -440,7 +442,7 @@ func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord_Override(d DataCloudflareRecord, scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) {
 	_init_.Initialize()
 
@@ -448,6 +450,17 @@ func NewDataCloudflareRecord_Override(d DataCloudflareRecord, scope constructs.C
 		"@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareRecord)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"content",
+		val,
 	)
 }
 
@@ -834,6 +847,14 @@ func (d *jsiiProxy_DataCloudflareRecord) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareRecord) ResetContent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContent",
+		nil, // no parameters
 	)
 }
 

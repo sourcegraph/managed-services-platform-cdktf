@@ -100,6 +100,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPrivateConnectivityPa
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validatePutSqlServerProfileParameters(value *DatastreamConnectionProfileSqlServerProfile) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(value *DatastreamConnectionProfileTimeouts) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_DatastreamConnectionProfile) validateSetConnectionProfileIdPa
 }
 
 func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCreateWithoutValidationParameters(val interface{}) error {
 	return nil
 }
 

@@ -19,30 +19,29 @@ type KeyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The name of the key.
+	// The name of the client key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#name Key#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#name Key#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The slug of the organization the key should be created for.
+	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#organization Key#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#organization Key#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
-	// The slug of the project the key should be created for.
+	// The project of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#project Key#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#project Key#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#id Key#id}.
+	// The JavaScript loader script configuration.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#javascript_loader_script Key#javascript_loader_script}
+	JavascriptLoaderScript *KeyJavascriptLoaderScript `field:"optional" json:"javascriptLoaderScript" yaml:"javascriptLoaderScript"`
 	// Number of events that can be reported within the rate limit window.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#rate_limit_count Key#rate_limit_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#rate_limit_count Key#rate_limit_count}
 	RateLimitCount *float64 `field:"optional" json:"rateLimitCount" yaml:"rateLimitCount"`
-	// Length of time that will be considered when checking the rate limit.
+	// Length of time in seconds that will be considered when checking the rate limit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key#rate_limit_window Key#rate_limit_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#rate_limit_window Key#rate_limit_window}
 	RateLimitWindow *float64 `field:"optional" json:"rateLimitWindow" yaml:"rateLimitWindow"`
 }
 

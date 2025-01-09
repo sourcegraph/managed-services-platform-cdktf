@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataTfeProject) validateSetWorkspaceIdsParameters(val *[]*str
 	return nil
 }
 
+func (j *jsiiProxy_DataTfeProject) validateSetWorkspaceNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewDataTfeProjectParameters(scope constructs.Construct, id *string, config *DataTfeProjectConfig) error {
 	return nil
 }

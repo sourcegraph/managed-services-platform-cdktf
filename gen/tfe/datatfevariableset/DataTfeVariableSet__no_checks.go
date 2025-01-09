@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataTfeVariableSet) validateSetOrganizationParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataTfeVariableSet) validateSetParentProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataTfeVariableSet) validateSetProjectIdsParameters(val *[]*string) error {
 	return nil
 }

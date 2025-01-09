@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/incidenttemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/incident_template opsgenie_incident_template}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template opsgenie_incident_template}.
 type IncidentTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_IncidentTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/incident_template opsgenie_incident_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template opsgenie_incident_template} Resource.
 func NewIncidentTemplate(scope constructs.Construct, id *string, config *IncidentTemplateConfig) IncidentTemplate {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewIncidentTemplate(scope constructs.Construct, id *string, config *Inciden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/incident_template opsgenie_incident_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template opsgenie_incident_template} Resource.
 func NewIncidentTemplate_Override(i IncidentTemplate, scope constructs.Construct, id *string, config *IncidentTemplateConfig) {
 	_init_.Initialize()
 

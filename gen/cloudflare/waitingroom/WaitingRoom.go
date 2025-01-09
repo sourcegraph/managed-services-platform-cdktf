@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/waitingroom/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -45,6 +45,9 @@ type WaitingRoom interface {
 	DisableSessionRenewal() interface{}
 	SetDisableSessionRenewal(val interface{})
 	DisableSessionRenewalInput() interface{}
+	EnabledOriginCommands() *[]*string
+	SetEnabledOriginCommands(val *[]*string)
+	EnabledOriginCommandsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -91,6 +94,9 @@ type WaitingRoom interface {
 	QueueingMethod() *string
 	SetQueueingMethod(val *string)
 	QueueingMethodInput() *string
+	QueueingStatusCode() *float64
+	SetQueueingStatusCode(val *float64)
+	QueueingStatusCodeInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	SessionDuration() *float64
@@ -164,6 +170,7 @@ type WaitingRoom interface {
 	ResetDefaultTemplateLanguage()
 	ResetDescription()
 	ResetDisableSessionRenewal()
+	ResetEnabledOriginCommands()
 	ResetId()
 	ResetJsonResponseEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -172,6 +179,7 @@ type WaitingRoom interface {
 	ResetPath()
 	ResetQueueAll()
 	ResetQueueingMethod()
+	ResetQueueingStatusCode()
 	ResetSessionDuration()
 	ResetSuspended()
 	ResetTimeouts()
@@ -358,6 +366,26 @@ func (j *jsiiProxy_WaitingRoom) DisableSessionRenewalInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableSessionRenewalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) EnabledOriginCommands() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledOriginCommands",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) EnabledOriginCommandsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledOriginCommandsInput",
 		&returns,
 	)
 	return returns
@@ -593,6 +621,26 @@ func (j *jsiiProxy_WaitingRoom) QueueingMethodInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoom) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -734,7 +782,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -752,7 +800,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -844,6 +892,17 @@ func (j *jsiiProxy_WaitingRoom)SetDisableSessionRenewal(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableSessionRenewal",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetEnabledOriginCommands(val *[]*string) {
+	if err := j.validateSetEnabledOriginCommandsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledOriginCommands",
 		val,
 	)
 }
@@ -970,6 +1029,17 @@ func (j *jsiiProxy_WaitingRoom)SetQueueingMethod(val *string) {
 	_jsii_.Set(
 		j,
 		"queueingMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetQueueingStatusCode(val *float64) {
+	if err := j.validateSetQueueingStatusCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueingStatusCode",
 		val,
 	)
 }
@@ -1441,6 +1511,14 @@ func (w *jsiiProxy_WaitingRoom) ResetDisableSessionRenewal() {
 	)
 }
 
+func (w *jsiiProxy_WaitingRoom) ResetEnabledOriginCommands() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnabledOriginCommands",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WaitingRoom) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1485,6 +1563,14 @@ func (w *jsiiProxy_WaitingRoom) ResetQueueingMethod() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetQueueingMethod",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetQueueingStatusCode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetQueueingStatusCode",
 		nil, // no parameters
 	)
 }

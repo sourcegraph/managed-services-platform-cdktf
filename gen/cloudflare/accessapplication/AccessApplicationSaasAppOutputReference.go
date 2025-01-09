@@ -10,6 +10,20 @@ import (
 
 type AccessApplicationSaasAppOutputReference interface {
 	cdktf.ComplexObject
+	AccessTokenLifetime() *string
+	SetAccessTokenLifetime(val *string)
+	AccessTokenLifetimeInput() *string
+	AllowPkceWithoutClientSecret() interface{}
+	SetAllowPkceWithoutClientSecret(val interface{})
+	AllowPkceWithoutClientSecretInput() interface{}
+	AppLauncherUrl() *string
+	SetAppLauncherUrl(val *string)
+	AppLauncherUrlInput() *string
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
+	ClientId() *string
+	ClientSecret() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,16 +42,48 @@ type AccessApplicationSaasAppOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomAttribute() AccessApplicationSaasAppCustomAttributeList
+	CustomAttributeInput() interface{}
+	CustomClaim() AccessApplicationSaasAppCustomClaimList
+	CustomClaimInput() interface{}
+	DefaultRelayState() *string
+	SetDefaultRelayState(val *string)
+	DefaultRelayStateInput() *string
 	// Experimental.
 	Fqn() *string
+	GrantTypes() *[]*string
+	SetGrantTypes(val *[]*string)
+	GrantTypesInput() *[]*string
+	GroupFilterRegex() *string
+	SetGroupFilterRegex(val *string)
+	GroupFilterRegexInput() *string
+	HybridAndImplicitOptions() AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+	HybridAndImplicitOptionsInput() *AccessApplicationSaasAppHybridAndImplicitOptions
+	IdpEntityId() *string
 	InternalValue() *AccessApplicationSaasApp
 	SetInternalValue(val *AccessApplicationSaasApp)
 	NameIdFormat() *string
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
+	NameIdTransformJsonata() *string
+	SetNameIdTransformJsonata(val *string)
+	NameIdTransformJsonataInput() *string
+	PublicKey() *string
+	RedirectUris() *[]*string
+	SetRedirectUris(val *[]*string)
+	RedirectUrisInput() *[]*string
+	RefreshTokenOptions() AccessApplicationSaasAppRefreshTokenOptionsList
+	RefreshTokenOptionsInput() interface{}
+	SamlAttributeTransformJsonata() *string
+	SetSamlAttributeTransformJsonata(val *string)
+	SamlAttributeTransformJsonataInput() *string
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	SpEntityId() *string
 	SetSpEntityId(val *string)
 	SpEntityIdInput() *string
+	SsoEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +116,28 @@ type AccessApplicationSaasAppOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomAttribute(value interface{})
+	PutCustomClaim(value interface{})
+	PutHybridAndImplicitOptions(value *AccessApplicationSaasAppHybridAndImplicitOptions)
+	PutRefreshTokenOptions(value interface{})
+	ResetAccessTokenLifetime()
+	ResetAllowPkceWithoutClientSecret()
+	ResetAppLauncherUrl()
+	ResetAuthType()
+	ResetConsumerServiceUrl()
+	ResetCustomAttribute()
+	ResetCustomClaim()
+	ResetDefaultRelayState()
+	ResetGrantTypes()
+	ResetGroupFilterRegex()
+	ResetHybridAndImplicitOptions()
 	ResetNameIdFormat()
+	ResetNameIdTransformJsonata()
+	ResetRedirectUris()
+	ResetRefreshTokenOptions()
+	ResetSamlAttributeTransformJsonata()
+	ResetScopes()
+	ResetSpEntityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -84,6 +151,106 @@ type AccessApplicationSaasAppOutputReference interface {
 // The jsii proxy struct for AccessApplicationSaasAppOutputReference
 type jsiiProxy_AccessApplicationSaasAppOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AccessTokenLifetime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenLifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AccessTokenLifetimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenLifetimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecret() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPkceWithoutClientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecretInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPkceWithoutClientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AppLauncherUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AppLauncherUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ComplexObjectIndex() interface{} {
@@ -136,11 +303,141 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CreationStack() *[]*
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttribute() AccessApplicationSaasAppCustomAttributeList {
+	var returns AccessApplicationSaasAppCustomAttributeList
+	_jsii_.Get(
+		j,
+		"customAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomClaim() AccessApplicationSaasAppCustomClaimList {
+	var returns AccessApplicationSaasAppCustomClaimList
+	_jsii_.Get(
+		j,
+		"customClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomClaimInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customClaimInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) DefaultRelayState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRelayState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) DefaultRelayStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRelayStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GrantTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GrantTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GroupFilterRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupFilterRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GroupFilterRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupFilterRegexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) HybridAndImplicitOptions() AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference {
+	var returns AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"hybridAndImplicitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) HybridAndImplicitOptionsInput() *AccessApplicationSaasAppHybridAndImplicitOptions {
+	var returns *AccessApplicationSaasAppHybridAndImplicitOptions
+	_jsii_.Get(
+		j,
+		"hybridAndImplicitOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) IdpEntityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpEntityId",
 		&returns,
 	)
 	return returns
@@ -176,6 +473,116 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdFormatInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdTransformJsonata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameIdTransformJsonata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdTransformJsonataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameIdTransformJsonataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) PublicKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUris() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"redirectUris",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUrisInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"redirectUrisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RefreshTokenOptions() AccessApplicationSaasAppRefreshTokenOptionsList {
+	var returns AccessApplicationSaasAppRefreshTokenOptionsList
+	_jsii_.Get(
+		j,
+		"refreshTokenOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RefreshTokenOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"refreshTokenOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SamlAttributeTransformJsonata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlAttributeTransformJsonata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SamlAttributeTransformJsonataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlAttributeTransformJsonataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -191,6 +598,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityIdInput() *s
 	_jsii_.Get(
 		j,
 		"spEntityIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SsoEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssoEndpoint",
 		&returns,
 	)
 	return returns
@@ -244,6 +661,50 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAccessTokenLifetime(val *string) {
+	if err := j.validateSetAccessTokenLifetimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessTokenLifetime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAllowPkceWithoutClientSecret(val interface{}) {
+	if err := j.validateSetAllowPkceWithoutClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowPkceWithoutClientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAppLauncherUrl(val *string) {
+	if err := j.validateSetAppLauncherUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appLauncherUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -277,6 +738,39 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetConsumerServiceUrl
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetDefaultRelayState(val *string) {
+	if err := j.validateSetDefaultRelayStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultRelayState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetGrantTypes(val *[]*string) {
+	if err := j.validateSetGrantTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grantTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetGroupFilterRegex(val *string) {
+	if err := j.validateSetGroupFilterRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupFilterRegex",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetInternalValue(val *AccessApplicationSaasApp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -295,6 +789,50 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdFormat(val *
 	_jsii_.Set(
 		j,
 		"nameIdFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdTransformJsonata(val *string) {
+	if err := j.validateSetNameIdTransformJsonataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameIdTransformJsonata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetRedirectUris(val *[]*string) {
+	if err := j.validateSetRedirectUrisParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectUris",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetSamlAttributeTransformJsonata(val *string) {
+	if err := j.validateSetSamlAttributeTransformJsonataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"samlAttributeTransformJsonata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -518,10 +1056,190 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomAttribute(value interface{}) {
+	if err := a.validatePutCustomAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomAttribute",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomClaim(value interface{}) {
+	if err := a.validatePutCustomClaimParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomClaim",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutHybridAndImplicitOptions(value *AccessApplicationSaasAppHybridAndImplicitOptions) {
+	if err := a.validatePutHybridAndImplicitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHybridAndImplicitOptions",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutRefreshTokenOptions(value interface{}) {
+	if err := a.validatePutRefreshTokenOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRefreshTokenOptions",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAccessTokenLifetime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessTokenLifetime",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAllowPkceWithoutClientSecret() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowPkceWithoutClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAppLauncherUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppLauncherUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetConsumerServiceUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConsumerServiceUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomClaim() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomClaim",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetDefaultRelayState() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultRelayState",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetGrantTypes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGrantTypes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetGroupFilterRegex() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGroupFilterRegex",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetHybridAndImplicitOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHybridAndImplicitOptions",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetNameIdFormat",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdTransformJsonata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNameIdTransformJsonata",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRedirectUris() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRedirectUris",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRefreshTokenOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRefreshTokenOptions",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetSamlAttributeTransformJsonata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSamlAttributeTransformJsonata",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScopes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetSpEntityId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSpEntityId",
 		nil, // no parameters
 	)
 }

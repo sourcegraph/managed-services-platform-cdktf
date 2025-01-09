@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutAutoHeali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutNamedPort
 }
 
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutParamsParameters(value *GoogleComputeRegionInstanceGroupManagerParams) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }
 
@@ -189,6 +197,14 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetPoo
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	return nil
 }
 

@@ -123,6 +123,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutCheckSession
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutDnsResolversParameters(value *TeamsRuleRuleSettingsDnsResolvers) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParameters(value *TeamsRuleRuleSettingsEgress) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -135,6 +146,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParame
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverrideParameters(value *TeamsRuleRuleSettingsL4Override) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutNotificationSettingsParameters(value *TeamsRuleRuleSettingsNotificationSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -316,6 +338,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetIgnoreCnameCategoryMatchesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -375,6 +417,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetOverrideHost
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetOverrideIpsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetResolveDnsThroughCloudflareParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

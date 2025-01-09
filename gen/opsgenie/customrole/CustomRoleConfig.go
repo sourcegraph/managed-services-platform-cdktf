@@ -19,15 +19,15 @@ type CustomRoleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role#role_name CustomRole#role_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#role_name CustomRole#role_name}.
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role#disallowed_rights CustomRole#disallowed_rights}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#disallowed_rights CustomRole#disallowed_rights}.
 	DisallowedRights *[]*string `field:"optional" json:"disallowedRights" yaml:"disallowedRights"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role#extended_role CustomRole#extended_role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#extended_role CustomRole#extended_role}.
 	ExtendedRole *string `field:"optional" json:"extendedRole" yaml:"extendedRole"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role#granted_rights CustomRole#granted_rights}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#granted_rights CustomRole#granted_rights}.
 	GrantedRights *[]*string `field:"optional" json:"grantedRights" yaml:"grantedRights"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role#id CustomRole#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#id CustomRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

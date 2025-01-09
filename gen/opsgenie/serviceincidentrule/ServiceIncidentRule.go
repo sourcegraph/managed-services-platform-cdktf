@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/serviceincidentrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service_incident_rule opsgenie_service_incident_rule}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule opsgenie_service_incident_rule}.
 type ServiceIncidentRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ServiceIncidentRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service_incident_rule opsgenie_service_incident_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule opsgenie_service_incident_rule} Resource.
 func NewServiceIncidentRule(scope constructs.Construct, id *string, config *ServiceIncidentRuleConfig) ServiceIncidentRule {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewServiceIncidentRule(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service_incident_rule opsgenie_service_incident_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule opsgenie_service_incident_rule} Resource.
 func NewServiceIncidentRule_Override(s ServiceIncidentRule, scope constructs.Construct, id *string, config *ServiceIncidentRuleConfig) {
 	_init_.Initialize()
 

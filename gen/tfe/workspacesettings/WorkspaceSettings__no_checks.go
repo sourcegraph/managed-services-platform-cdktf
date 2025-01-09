@@ -104,11 +104,19 @@ func (j *jsiiProxy_WorkspaceSettings) validateSetExecutionModeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_WorkspaceSettings) validateSetGlobalRemoteStateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspaceSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_WorkspaceSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkspaceSettings) validateSetRemoteStateConsumerIdsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -112,6 +112,10 @@ func validateComputeDisk_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -181,6 +185,10 @@ func (j *jsiiProxy_ComputeDisk) validateSetSnapshotParameters(val *string) error
 }
 
 func (j *jsiiProxy_ComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetStoragePoolParameters(val *string) error {
 	return nil
 }
 

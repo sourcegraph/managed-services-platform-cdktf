@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/teamroutingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule opsgenie_team_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule opsgenie_team_routing_rule}.
 type TeamRoutingRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_TeamRoutingRule) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule opsgenie_team_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule opsgenie_team_routing_rule} Resource.
 func NewTeamRoutingRule(scope constructs.Construct, id *string, config *TeamRoutingRuleConfig) TeamRoutingRule {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewTeamRoutingRule(scope constructs.Construct, id *string, config *TeamRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule opsgenie_team_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule opsgenie_team_routing_rule} Resource.
 func NewTeamRoutingRule_Override(t TeamRoutingRule, scope constructs.Construct, id *string, config *TeamRoutingRuleConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/maintenance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/maintenance opsgenie_maintenance}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/maintenance opsgenie_maintenance}.
 type Maintenance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_Maintenance) TimeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/maintenance opsgenie_maintenance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/maintenance opsgenie_maintenance} Resource.
 func NewMaintenance(scope constructs.Construct, id *string, config *MaintenanceConfig) Maintenance {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewMaintenance(scope constructs.Construct, id *string, config *MaintenanceC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/maintenance opsgenie_maintenance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/maintenance opsgenie_maintenance} Resource.
 func NewMaintenance_Override(m Maintenance, scope constructs.Construct, id *string, config *MaintenanceConfig) {
 	_init_.Initialize()
 

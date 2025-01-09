@@ -44,11 +44,19 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateInterpol
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutAegisParameters(value *ZoneSettingsOverrideSettingsAegis) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMinifyParameters(value *ZoneSettingsOverrideSettingsMinify) error {
 	return nil
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMobileRedirectParameters(value *ZoneSettingsOverrideSettingsMobileRedirect) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutNelParameters(value *ZoneSettingsOverrideSettingsNel) error {
 	return nil
 }
 
@@ -125,6 +133,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetEmail
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFilterLogsToCloudflareParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFontsParameters(val *string) error {
 	return nil
 }
 
@@ -216,6 +228,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetPseud
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetReplaceInsecureJsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetResponseBufferingParameters(val *string) error {
 	return nil
 }
@@ -236,7 +252,15 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSortQ
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSpeedBrainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslAutomaticModeParameters(val *string) error {
 	return nil
 }
 

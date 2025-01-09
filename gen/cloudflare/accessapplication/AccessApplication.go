@@ -9,15 +9,21 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accessapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowAuthenticateViaWarp() interface{}
+	SetAllowAuthenticateViaWarp(val interface{})
+	AllowAuthenticateViaWarpInput() interface{}
 	AllowedIdps() *[]*string
 	SetAllowedIdps(val *[]*string)
 	AllowedIdpsInput() *[]*string
+	AppLauncherLogoUrl() *string
+	SetAppLauncherLogoUrl(val *string)
+	AppLauncherLogoUrlInput() *string
 	AppLauncherVisible() interface{}
 	SetAppLauncherVisible(val interface{})
 	AppLauncherVisibleInput() interface{}
@@ -25,6 +31,9 @@ type AccessApplication interface {
 	AutoRedirectToIdentity() interface{}
 	SetAutoRedirectToIdentity(val interface{})
 	AutoRedirectToIdentityInput() interface{}
+	BgColor() *string
+	SetBgColor(val *string)
+	BgColorInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,6 +54,9 @@ type AccessApplication interface {
 	CustomDenyUrl() *string
 	SetCustomDenyUrl(val *string)
 	CustomDenyUrlInput() *string
+	CustomNonIdentityDenyUrl() *string
+	SetCustomNonIdentityDenyUrl(val *string)
+	CustomNonIdentityDenyUrlInput() *string
 	CustomPages() *[]*string
 	SetCustomPages(val *[]*string)
 	CustomPagesInput() *[]*string
@@ -52,12 +64,19 @@ type AccessApplication interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destinations() AccessApplicationDestinationsList
+	DestinationsInput() interface{}
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	DomainType() *string
+	SetDomainType(val *string)
+	DomainTypeInput() *string
 	EnableBindingCookie() interface{}
 	SetEnableBindingCookie(val interface{})
 	EnableBindingCookieInput() interface{}
+	FooterLinks() AccessApplicationFooterLinksList
+	FooterLinksInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,12 +85,17 @@ type AccessApplication interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderBgColor() *string
+	SetHeaderBgColor(val *string)
+	HeaderBgColorInput() *string
 	HttpOnlyCookieAttribute() interface{}
 	SetHttpOnlyCookieAttribute(val interface{})
 	HttpOnlyCookieAttributeInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LandingPageDesign() AccessApplicationLandingPageDesignOutputReference
+	LandingPageDesignInput() *AccessApplicationLandingPageDesign
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -84,6 +108,12 @@ type AccessApplication interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OptionsPreflightBypass() interface{}
+	SetOptionsPreflightBypass(val interface{})
+	OptionsPreflightBypassInput() interface{}
+	Policies() *[]*string
+	SetPolicies(val *[]*string)
+	PoliciesInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,6 +129,8 @@ type AccessApplication interface {
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
+	ScimConfig() AccessApplicationScimConfigOutputReference
+	ScimConfigInput() *AccessApplicationScimConfig
 	SelfHostedDomains() *[]*string
 	SetSelfHostedDomains(val *[]*string)
 	SelfHostedDomainsInput() *[]*string
@@ -108,9 +140,17 @@ type AccessApplication interface {
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
+	SkipAppLauncherLoginPage() interface{}
+	SetSkipAppLauncherLoginPage(val interface{})
+	SkipAppLauncherLoginPageInput() interface{}
 	SkipInterstitial() interface{}
 	SetSkipInterstitial(val interface{})
 	SkipInterstitialInput() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
+	TargetCriteria() AccessApplicationTargetCriteriaList
+	TargetCriteriaInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -167,29 +207,50 @@ type AccessApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsHeaders(value interface{})
+	PutDestinations(value interface{})
+	PutFooterLinks(value interface{})
+	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
+	PutScimConfig(value *AccessApplicationScimConfig)
+	PutTargetCriteria(value interface{})
 	ResetAccountId()
+	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
+	ResetAppLauncherLogoUrl()
 	ResetAppLauncherVisible()
 	ResetAutoRedirectToIdentity()
+	ResetBgColor()
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
+	ResetCustomNonIdentityDenyUrl()
 	ResetCustomPages()
+	ResetDestinations()
 	ResetDomain()
+	ResetDomainType()
 	ResetEnableBindingCookie()
+	ResetFooterLinks()
+	ResetHeaderBgColor()
 	ResetHttpOnlyCookieAttribute()
 	ResetId()
+	ResetLandingPageDesign()
 	ResetLogoUrl()
+	ResetName()
+	ResetOptionsPreflightBypass()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicies()
 	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
+	ResetScimConfig()
 	ResetSelfHostedDomains()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
+	ResetSkipAppLauncherLoginPage()
 	ResetSkipInterstitial()
+	ResetTags()
+	ResetTargetCriteria()
 	ResetType()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -230,6 +291,26 @@ func (j *jsiiProxy_AccessApplication) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) AllowAuthenticateViaWarp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AllowAuthenticateViaWarpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) AllowedIdps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -245,6 +326,26 @@ func (j *jsiiProxy_AccessApplication) AllowedIdpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedIdpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AppLauncherLogoUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherLogoUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AppLauncherLogoUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherLogoUrlInput",
 		&returns,
 	)
 	return returns
@@ -295,6 +396,26 @@ func (j *jsiiProxy_AccessApplication) AutoRedirectToIdentityInput() interface{} 
 	_jsii_.Get(
 		j,
 		"autoRedirectToIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) BgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgColor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) BgColorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgColorInput",
 		&returns,
 	)
 	return returns
@@ -400,6 +521,26 @@ func (j *jsiiProxy_AccessApplication) CustomDenyUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) CustomPages() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -430,6 +571,26 @@ func (j *jsiiProxy_AccessApplication) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) Destinations() AccessApplicationDestinationsList {
+	var returns AccessApplicationDestinationsList
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) DestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) Domain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,6 +611,26 @@ func (j *jsiiProxy_AccessApplication) DomainInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) DomainType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) DomainTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) EnableBindingCookie() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -465,6 +646,26 @@ func (j *jsiiProxy_AccessApplication) EnableBindingCookieInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableBindingCookieInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) FooterLinks() AccessApplicationFooterLinksList {
+	var returns AccessApplicationFooterLinksList
+	_jsii_.Get(
+		j,
+		"footerLinks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) FooterLinksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"footerLinksInput",
 		&returns,
 	)
 	return returns
@@ -495,6 +696,26 @@ func (j *jsiiProxy_AccessApplication) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) HeaderBgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerBgColor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) HeaderBgColorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerBgColorInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +756,26 @@ func (j *jsiiProxy_AccessApplication) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) LandingPageDesign() AccessApplicationLandingPageDesignOutputReference {
+	var returns AccessApplicationLandingPageDesignOutputReference
+	_jsii_.Get(
+		j,
+		"landingPageDesign",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) LandingPageDesignInput() *AccessApplicationLandingPageDesign {
+	var returns *AccessApplicationLandingPageDesign
+	_jsii_.Get(
+		j,
+		"landingPageDesignInput",
 		&returns,
 	)
 	return returns
@@ -595,6 +836,46 @@ func (j *jsiiProxy_AccessApplication) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) OptionsPreflightBypass() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionsPreflightBypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) OptionsPreflightBypassInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionsPreflightBypassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) Policies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) PoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policiesInput",
 		&returns,
 	)
 	return returns
@@ -670,6 +951,26 @@ func (j *jsiiProxy_AccessApplication) SameSiteCookieAttributeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) ScimConfig() AccessApplicationScimConfigOutputReference {
+	var returns AccessApplicationScimConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scimConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) ScimConfigInput() *AccessApplicationScimConfig {
+	var returns *AccessApplicationScimConfig
+	_jsii_.Get(
+		j,
+		"scimConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) SelfHostedDomains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -730,6 +1031,26 @@ func (j *jsiiProxy_AccessApplication) SessionDurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) SkipAppLauncherLoginPage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAppLauncherLoginPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SkipAppLauncherLoginPageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAppLauncherLoginPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) SkipInterstitial() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -745,6 +1066,46 @@ func (j *jsiiProxy_AccessApplication) SkipInterstitialInput() interface{} {
 	_jsii_.Get(
 		j,
 		"skipInterstitialInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) TargetCriteria() AccessApplicationTargetCriteriaList {
+	var returns AccessApplicationTargetCriteriaList
+	_jsii_.Get(
+		j,
+		"targetCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) TargetCriteriaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetCriteriaInput",
 		&returns,
 	)
 	return returns
@@ -821,7 +1182,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -839,7 +1200,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -861,6 +1222,17 @@ func (j *jsiiProxy_AccessApplication)SetAccountId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetAllowAuthenticateViaWarp(val interface{}) {
+	if err := j.validateSetAllowAuthenticateViaWarpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAuthenticateViaWarp",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetAllowedIdps(val *[]*string) {
 	if err := j.validateSetAllowedIdpsParameters(val); err != nil {
 		panic(err)
@@ -868,6 +1240,17 @@ func (j *jsiiProxy_AccessApplication)SetAllowedIdps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedIdps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetAppLauncherLogoUrl(val *string) {
+	if err := j.validateSetAppLauncherLogoUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appLauncherLogoUrl",
 		val,
 	)
 }
@@ -890,6 +1273,17 @@ func (j *jsiiProxy_AccessApplication)SetAutoRedirectToIdentity(val interface{}) 
 	_jsii_.Set(
 		j,
 		"autoRedirectToIdentity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetBgColor(val *string) {
+	if err := j.validateSetBgColorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgColor",
 		val,
 	)
 }
@@ -938,6 +1332,17 @@ func (j *jsiiProxy_AccessApplication)SetCustomDenyUrl(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetCustomNonIdentityDenyUrl(val *string) {
+	if err := j.validateSetCustomNonIdentityDenyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customNonIdentityDenyUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetCustomPages(val *[]*string) {
 	if err := j.validateSetCustomPagesParameters(val); err != nil {
 		panic(err)
@@ -968,6 +1373,17 @@ func (j *jsiiProxy_AccessApplication)SetDomain(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetDomainType(val *string) {
+	if err := j.validateSetDomainTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetEnableBindingCookie(val interface{}) {
 	if err := j.validateSetEnableBindingCookieParameters(val); err != nil {
 		panic(err)
@@ -983,6 +1399,17 @@ func (j *jsiiProxy_AccessApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetHeaderBgColor(val *string) {
+	if err := j.validateSetHeaderBgColorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headerBgColor",
 		val,
 	)
 }
@@ -1038,6 +1465,28 @@ func (j *jsiiProxy_AccessApplication)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetOptionsPreflightBypass(val interface{}) {
+	if err := j.validateSetOptionsPreflightBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionsPreflightBypass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetPolicies(val *[]*string) {
+	if err := j.validateSetPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policies",
 		val,
 	)
 }
@@ -1105,6 +1554,17 @@ func (j *jsiiProxy_AccessApplication)SetSessionDuration(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetSkipAppLauncherLoginPage(val interface{}) {
+	if err := j.validateSetSkipAppLauncherLoginPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipAppLauncherLoginPage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetSkipInterstitial(val interface{}) {
 	if err := j.validateSetSkipInterstitialParameters(val); err != nil {
 		panic(err)
@@ -1112,6 +1572,17 @@ func (j *jsiiProxy_AccessApplication)SetSkipInterstitial(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipInterstitial",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1502,6 +1973,39 @@ func (a *jsiiProxy_AccessApplication) PutCorsHeaders(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) PutDestinations(value interface{}) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutFooterLinks(value interface{}) {
+	if err := a.validatePutFooterLinksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFooterLinks",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutLandingPageDesign(value *AccessApplicationLandingPageDesign) {
+	if err := a.validatePutLandingPageDesignParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putLandingPageDesign",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) PutSaasApp(value *AccessApplicationSaasApp) {
 	if err := a.validatePutSaasAppParameters(value); err != nil {
 		panic(err)
@@ -1509,6 +2013,28 @@ func (a *jsiiProxy_AccessApplication) PutSaasApp(value *AccessApplicationSaasApp
 	_jsii_.InvokeVoid(
 		a,
 		"putSaasApp",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutScimConfig(value *AccessApplicationScimConfig) {
+	if err := a.validatePutScimConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putScimConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutTargetCriteria(value interface{}) {
+	if err := a.validatePutTargetCriteriaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTargetCriteria",
 		[]interface{}{value},
 	)
 }
@@ -1521,10 +2047,26 @@ func (a *jsiiProxy_AccessApplication) ResetAccountId() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetAllowAuthenticateViaWarp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowAuthenticateViaWarp",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetAllowedIdps() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAllowedIdps",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetAppLauncherLogoUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppLauncherLogoUrl",
 		nil, // no parameters
 	)
 }
@@ -1541,6 +2083,14 @@ func (a *jsiiProxy_AccessApplication) ResetAutoRedirectToIdentity() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutoRedirectToIdentity",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetBgColor() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBgColor",
 		nil, // no parameters
 	)
 }
@@ -1569,10 +2119,26 @@ func (a *jsiiProxy_AccessApplication) ResetCustomDenyUrl() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetCustomNonIdentityDenyUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomNonIdentityDenyUrl",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetCustomPages() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomPages",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
 		nil, // no parameters
 	)
 }
@@ -1585,10 +2151,34 @@ func (a *jsiiProxy_AccessApplication) ResetDomain() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetDomainType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDomainType",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetEnableBindingCookie() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnableBindingCookie",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetFooterLinks() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFooterLinks",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetHeaderBgColor() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHeaderBgColor",
 		nil, // no parameters
 	)
 }
@@ -1609,6 +2199,14 @@ func (a *jsiiProxy_AccessApplication) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetLandingPageDesign() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLandingPageDesign",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetLogoUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1617,10 +2215,34 @@ func (a *jsiiProxy_AccessApplication) ResetLogoUrl() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetOptionsPreflightBypass() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOptionsPreflightBypass",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetPolicies() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPolicies",
 		nil, // no parameters
 	)
 }
@@ -1637,6 +2259,14 @@ func (a *jsiiProxy_AccessApplication) ResetSameSiteCookieAttribute() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSameSiteCookieAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetScimConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScimConfig",
 		nil, // no parameters
 	)
 }
@@ -1665,10 +2295,34 @@ func (a *jsiiProxy_AccessApplication) ResetSessionDuration() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetSkipAppLauncherLoginPage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSkipAppLauncherLoginPage",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetSkipInterstitial() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSkipInterstitial",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetTargetCriteria() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetCriteria",
 		nil, // no parameters
 	)
 }

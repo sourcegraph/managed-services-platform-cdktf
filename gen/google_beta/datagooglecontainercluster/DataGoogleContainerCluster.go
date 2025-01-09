@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/data-sources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
@@ -24,6 +24,7 @@ type DataGoogleContainerCluster interface {
 	ConfidentialNodes() DataGoogleContainerClusterConfidentialNodesList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneEndpointsConfig() DataGoogleContainerClusterControlPlaneEndpointsConfigList
 	CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList
 	// Experimental.
 	Count() interface{}
@@ -40,6 +41,7 @@ type DataGoogleContainerCluster interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DnsConfig() DataGoogleContainerClusterDnsConfigList
+	EffectiveLabels() cdktf.StringMap
 	EnableAutopilot() cdktf.IResolvable
 	EnableCiliumClusterwideNetworkPolicy() cdktf.IResolvable
 	EnableFqdnNetworkPolicy() cdktf.IResolvable
@@ -52,6 +54,7 @@ type DataGoogleContainerCluster interface {
 	EnableShieldedNodes() cdktf.IResolvable
 	EnableTpu() cdktf.IResolvable
 	Endpoint() *string
+	EnterpriseConfig() DataGoogleContainerClusterEnterpriseConfigList
 	Fleet() DataGoogleContainerClusterFleetList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -119,6 +122,7 @@ type DataGoogleContainerCluster interface {
 	RemoveDefaultNodePool() cdktf.IResolvable
 	ResourceLabels() cdktf.StringMap
 	ResourceUsageExportConfig() DataGoogleContainerClusterResourceUsageExportConfigList
+	SecretManagerConfig() DataGoogleContainerClusterSecretManagerConfigList
 	SecurityPostureConfig() DataGoogleContainerClusterSecurityPostureConfigList
 	SelfLink() *string
 	ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList
@@ -126,12 +130,14 @@ type DataGoogleContainerCluster interface {
 	Subnetwork() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
 	TpuConfig() DataGoogleContainerClusterTpuConfigList
 	TpuIpv4CidrBlock() *string
+	UserManagedKeysConfig() DataGoogleContainerClusterUserManagedKeysConfigList
 	VerticalPodAutoscaling() DataGoogleContainerClusterVerticalPodAutoscalingList
 	WorkloadAltsConfig() DataGoogleContainerClusterWorkloadAltsConfigList
 	WorkloadIdentityConfig() DataGoogleContainerClusterWorkloadIdentityConfigList
@@ -285,6 +291,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) ControlPlaneEndpointsConfig() DataGoogleContainerClusterControlPlaneEndpointsConfigList {
+	var returns DataGoogleContainerClusterControlPlaneEndpointsConfigList
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList {
 	var returns DataGoogleContainerClusterCostManagementConfigList
 	_jsii_.Get(
@@ -380,6 +396,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) DnsConfig() DataGoogleContainerCl
 	_jsii_.Get(
 		j,
 		"dnsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -500,6 +526,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EnterpriseConfig() DataGoogleContainerClusterEnterpriseConfigList {
+	var returns DataGoogleContainerClusterEnterpriseConfigList
+	_jsii_.Get(
+		j,
+		"enterpriseConfig",
 		&returns,
 	)
 	return returns
@@ -1005,6 +1041,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ResourceUsageExportConfig() DataG
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) SecretManagerConfig() DataGoogleContainerClusterSecretManagerConfigList {
+	var returns DataGoogleContainerClusterSecretManagerConfigList
+	_jsii_.Get(
+		j,
+		"secretManagerConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) SecurityPostureConfig() DataGoogleContainerClusterSecurityPostureConfigList {
 	var returns DataGoogleContainerClusterSecurityPostureConfigList
 	_jsii_.Get(
@@ -1065,6 +1111,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -1105,6 +1161,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) TpuIpv4CidrBlock() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) UserManagedKeysConfig() DataGoogleContainerClusterUserManagedKeysConfigList {
+	var returns DataGoogleContainerClusterUserManagedKeysConfigList
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) VerticalPodAutoscaling() DataGoogleContainerClusterVerticalPodAutoscalingList {
 	var returns DataGoogleContainerClusterVerticalPodAutoscalingList
 	_jsii_.Get(
@@ -1136,7 +1202,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1154,7 +1220,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

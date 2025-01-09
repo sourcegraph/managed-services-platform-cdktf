@@ -27,6 +27,8 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference
 	ConfidentialNodesInput() *GoogleContainerClusterNodePoolNodeConfigConfidentialNodes
+	ContainerdConfig() GoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
+	ContainerdConfigInput() *GoogleContainerClusterNodePoolNodeConfigContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -75,6 +77,9 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LocalSsdEncryptionMode() *string
+	SetLocalSsdEncryptionMode(val *string)
+	LocalSsdEncryptionModeInput() *string
 	LoggingVariant() *string
 	SetLoggingVariant(val *string)
 	LoggingVariantInput() *string
@@ -118,6 +123,9 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
+	StoragePools() *[]*string
+	SetStoragePools(val *[]*string)
+	StoragePoolsInput() *[]*string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -159,6 +167,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures)
 	PutConfidentialNodes(value *GoogleContainerClusterNodePoolNodeConfigConfidentialNodes)
+	PutContainerdConfig(value *GoogleContainerClusterNodePoolNodeConfigContainerdConfig)
 	PutEphemeralStorageConfig(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig)
 	PutEphemeralStorageLocalSsdConfig(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
 	PutFastSocket(value *GoogleContainerClusterNodePoolNodeConfigFastSocket)
@@ -179,6 +188,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
+	ResetContainerdConfig()
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEnableConfidentialStorage()
@@ -195,6 +205,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetLinuxNodeConfig()
 	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
+	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
@@ -211,6 +222,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
 	ResetSpot()
+	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
 	ResetWorkloadMetadataConfig()
@@ -304,6 +316,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Conf
 	_jsii_.Get(
 		j,
 		"confidentialNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ContainerdConfig() GoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ContainerdConfigInput() *GoogleContainerClusterNodePoolNodeConfigContainerdConfig {
+	var returns *GoogleContainerClusterNodePoolNodeConfigContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -669,6 +701,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Loca
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) LoggingVariant() *string {
 	var returns *string
 	_jsii_.Get(
@@ -989,6 +1041,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Spot
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) StoragePoolsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePoolsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1207,6 +1279,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetLo
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetLocalSsdEncryptionMode(val *string) {
+	if err := j.validateSetLocalSsdEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdEncryptionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetLoggingVariant(val *string) {
 	if err := j.validateSetLoggingVariantParameters(val); err != nil {
 		panic(err)
@@ -1324,6 +1407,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetSp
 	_jsii_.Set(
 		j,
 		"spot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetStoragePools(val *[]*string) {
+	if err := j.validateSetStoragePoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePools",
 		val,
 	)
 }
@@ -1569,6 +1663,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutC
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutContainerdConfig(value *GoogleContainerClusterNodePoolNodeConfigContainerdConfig) {
+	if err := g.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutEphemeralStorageConfig(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig) {
 	if err := g.validatePutEphemeralStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -1780,6 +1885,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerdConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetDiskSizeGb() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1908,6 +2021,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetLocalSsdEncryptionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalSsdEncryptionMode",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetLoggingVariant() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2032,6 +2153,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetSpot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetStoragePools() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePools",
 		nil, // no parameters
 	)
 }

@@ -120,7 +120,15 @@ func (j *jsiiProxy_IpsecTunnel) validateSetFqdnIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetHealthCheckRateParameters(val *string) error {
 	return nil
 }
 
@@ -161,6 +169,10 @@ func (j *jsiiProxy_IpsecTunnel) validateSetPskParameters(val *string) error {
 }
 
 func (j *jsiiProxy_IpsecTunnel) validateSetRemoteIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IpsecTunnel) validateSetReplayProtectionParameters(val interface{}) error {
 	return nil
 }
 

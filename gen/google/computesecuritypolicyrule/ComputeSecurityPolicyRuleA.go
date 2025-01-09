@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computesecuritypolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule}.
 type ComputeSecurityPolicyRuleA interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -42,6 +42,8 @@ type ComputeSecurityPolicyRuleA interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderAction() ComputeSecurityPolicyRuleHeaderActionAOutputReference
+	HeaderActionInput() *ComputeSecurityPolicyRuleHeaderActionA
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -53,8 +55,8 @@ type ComputeSecurityPolicyRuleA interface {
 	MatchInput() *ComputeSecurityPolicyRuleMatchA
 	// The tree node.
 	Node() constructs.Node
-	PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
-	PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig
+	PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference
+	PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfigA
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -72,8 +74,12 @@ type ComputeSecurityPolicyRuleA interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitOptions() ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	RateLimitOptionsInput() *ComputeSecurityPolicyRuleRateLimitOptionsA
 	// Experimental.
 	RawOverrides() interface{}
+	RedirectOptions() ComputeSecurityPolicyRuleRedirectOptionsAOutputReference
+	RedirectOptionsInput() *ComputeSecurityPolicyRuleRedirectOptionsA
 	SecurityPolicy() *string
 	SetSecurityPolicy(val *string)
 	SecurityPolicyInput() *string
@@ -128,10 +134,14 @@ type ComputeSecurityPolicyRuleA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderActionA)
 	PutMatch(value *ComputeSecurityPolicyRuleMatchA)
-	PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig)
+	PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA)
+	PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsA)
+	PutRedirectOptions(value *ComputeSecurityPolicyRuleRedirectOptionsA)
 	PutTimeouts(value *ComputeSecurityPolicyRuleTimeouts)
 	ResetDescription()
+	ResetHeaderAction()
 	ResetId()
 	ResetMatch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -140,6 +150,8 @@ type ComputeSecurityPolicyRuleA interface {
 	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetProject()
+	ResetRateLimitOptions()
+	ResetRedirectOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -279,6 +291,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) HeaderAction() ComputeSecurityPolicyRuleHeaderActionAOutputReference {
+	var returns ComputeSecurityPolicyRuleHeaderActionAOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) HeaderActionInput() *ComputeSecurityPolicyRuleHeaderActionA {
+	var returns *ComputeSecurityPolicyRuleHeaderActionA
+	_jsii_.Get(
+		j,
+		"headerActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSecurityPolicyRuleA) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -339,8 +371,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference {
-	var returns ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference {
+	var returns ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference
 	_jsii_.Get(
 		j,
 		"preconfiguredWafConfig",
@@ -349,8 +381,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig {
-	var returns *ComputeSecurityPolicyRulePreconfiguredWafConfig
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfigA {
+	var returns *ComputeSecurityPolicyRulePreconfiguredWafConfigA
 	_jsii_.Get(
 		j,
 		"preconfiguredWafConfigInput",
@@ -439,11 +471,51 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) RateLimitOptions() ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference {
+	var returns ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"rateLimitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) RateLimitOptionsInput() *ComputeSecurityPolicyRuleRateLimitOptionsA {
+	var returns *ComputeSecurityPolicyRuleRateLimitOptionsA
+	_jsii_.Get(
+		j,
+		"rateLimitOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSecurityPolicyRuleA) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) RedirectOptions() ComputeSecurityPolicyRuleRedirectOptionsAOutputReference {
+	var returns ComputeSecurityPolicyRuleRedirectOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"redirectOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) RedirectOptionsInput() *ComputeSecurityPolicyRuleRedirectOptionsA {
+	var returns *ComputeSecurityPolicyRuleRedirectOptionsA
+	_jsii_.Get(
+		j,
+		"redirectOptionsInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +592,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, config *ComputeSecurityPolicyRuleAConfig) ComputeSecurityPolicyRuleA {
 	_init_.Initialize()
 
@@ -538,7 +610,7 @@ func NewComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewComputeSecurityPolicyRuleA_Override(c ComputeSecurityPolicyRuleA, scope constructs.Construct, id *string, config *ComputeSecurityPolicyRuleAConfig) {
 	_init_.Initialize()
 
@@ -1047,6 +1119,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderActionA) {
+	if err := c.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutMatch(value *ComputeSecurityPolicyRuleMatchA) {
 	if err := c.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -1058,13 +1141,35 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutMatch(value *ComputeSecurityPo
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA) {
 	if err := c.validatePutPreconfiguredWafConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPreconfiguredWafConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsA) {
+	if err := c.validatePutRateLimitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRateLimitOptions",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutRedirectOptions(value *ComputeSecurityPolicyRuleRedirectOptionsA) {
+	if err := c.validatePutRedirectOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRedirectOptions",
 		[]interface{}{value},
 	)
 }
@@ -1084,6 +1189,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }
@@ -1132,6 +1245,22 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) ResetRateLimitOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRateLimitOptions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) ResetRedirectOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRedirectOptions",
 		nil, // no parameters
 	)
 }

@@ -98,6 +98,26 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetAccessSecretTeamsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,6 +191,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetInternalVal
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageAgentPoolsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembershipParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -192,6 +232,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembe
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageModulesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageOrganizationAccessParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,6 +352,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvi
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageRunTasksParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageTeamsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

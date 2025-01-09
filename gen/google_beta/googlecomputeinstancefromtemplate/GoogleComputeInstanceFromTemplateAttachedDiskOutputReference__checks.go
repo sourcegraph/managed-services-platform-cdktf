@@ -179,14 +179,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionKeySha256Parameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

@@ -235,7 +235,23 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNoAgeParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNoncurrentTimeBeforeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNumNewerVersionsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,17 +271,61 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNoncurrentTimeBeforeParameters(val *string) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceCustomTimeIfZeroParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetNumNewerVersionsParameters(val *float64) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendNumNewerVersionsIfZeroParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

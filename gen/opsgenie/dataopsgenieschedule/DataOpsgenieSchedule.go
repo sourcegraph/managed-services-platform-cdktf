@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/dataopsgenieschedule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/schedule opsgenie_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/schedule opsgenie_schedule}.
 type DataOpsgenieSchedule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/schedule opsgenie_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/schedule opsgenie_schedule} Data Source.
 func NewDataOpsgenieSchedule(scope constructs.Construct, id *string, config *DataOpsgenieScheduleConfig) DataOpsgenieSchedule {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataOpsgenieSchedule(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/schedule opsgenie_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/schedule opsgenie_schedule} Data Source.
 func NewDataOpsgenieSchedule_Override(d DataOpsgenieSchedule, scope constructs.Construct, id *string, config *DataOpsgenieScheduleConfig) {
 	_init_.Initialize()
 

@@ -23,6 +23,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList
+	ContainerdConfig() DataGoogleContainerClusterNodeConfigContainerdConfigList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -49,6 +50,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
 	LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList
 	LocalSsdCount() *float64
+	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
 	Metadata() cdktf.StringMap
@@ -65,6 +67,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
+	StoragePools() *[]*string
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodeConfigTaintList
 	// Experimental.
@@ -160,6 +163,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Confiden
 	_jsii_.Get(
 		j,
 		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ContainerdConfig() DataGoogleContainerClusterNodeConfigContainerdConfigList {
+	var returns DataGoogleContainerClusterNodeConfigContainerdConfigList
+	_jsii_.Get(
+		j,
+		"containerdConfig",
 		&returns,
 	)
 	return returns
@@ -365,6 +378,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalSsd
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LoggingVariant() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,6 +543,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Spot() c
 	_jsii_.Get(
 		j,
 		"spot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
 		&returns,
 	)
 	return returns

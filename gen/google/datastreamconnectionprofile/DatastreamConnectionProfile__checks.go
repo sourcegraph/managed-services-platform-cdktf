@@ -281,6 +281,17 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPrivateConnectivityPa
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validatePutSqlServerProfileParameters(value *DatastreamConnectionProfileSqlServerProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(value *DatastreamConnectionProfileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -424,6 +435,26 @@ func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCountParameters(val i
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/escalation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/escalation opsgenie_escalation}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/escalation opsgenie_escalation}.
 type Escalation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_Escalation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/escalation opsgenie_escalation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/escalation opsgenie_escalation} Resource.
 func NewEscalation(scope constructs.Construct, id *string, config *EscalationConfig) Escalation {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewEscalation(scope constructs.Construct, id *string, config *EscalationCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/escalation opsgenie_escalation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/escalation opsgenie_escalation} Resource.
 func NewEscalation_Override(e Escalation, scope constructs.Construct, id *string, config *EscalationConfig) {
 	_init_.Initialize()
 

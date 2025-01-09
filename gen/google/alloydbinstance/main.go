@@ -69,13 +69,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkConfig", GoGetter: "NetworkConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "networkConfigInput", GoGetter: "NetworkConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "outboundPublicIpAddresses", GoGetter: "OutboundPublicIpAddresses"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "pscInstanceConfig", GoGetter: "PscInstanceConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "pscInstanceConfigInput", GoGetter: "PscInstanceConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "putClientConnectionConfig", GoMethod: "PutClientConnectionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMachineConfig", GoMethod: "PutMachineConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfig", GoMethod: "PutNetworkConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putPscInstanceConfig", GoMethod: "PutPscInstanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putQueryInsightsConfig", GoMethod: "PutQueryInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putReadPoolConfig", GoMethod: "PutReadPoolConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -96,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMachineConfig", GoMethod: "ResetMachineConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkConfig", GoMethod: "ResetNetworkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscInstanceConfig", GoMethod: "ResetPscInstanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryInsightsConfig", GoMethod: "ResetQueryInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadPoolConfig", GoMethod: "ResetReadPoolConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -321,6 +326,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableOutboundPublicIp", GoGetter: "EnableOutboundPublicIp"},
+			_jsii_.MemberProperty{JsiiProperty: "enableOutboundPublicIpInput", GoGetter: "EnableOutboundPublicIpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enablePublicIp", GoGetter: "EnablePublicIp"},
 			_jsii_.MemberProperty{JsiiProperty: "enablePublicIpInput", GoGetter: "EnablePublicIpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -338,6 +345,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthorizedExternalNetworks", GoMethod: "PutAuthorizedExternalNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedExternalNetworks", GoMethod: "ResetAuthorizedExternalNetworks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableOutboundPublicIp", GoMethod: "ResetEnableOutboundPublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePublicIp", GoMethod: "ResetEnablePublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -346,6 +354,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig",
+		reflect.TypeOf((*AlloydbInstancePscInstanceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference",
+		reflect.TypeOf((*AlloydbInstancePscInstanceConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjects", GoGetter: "AllowedConsumerProjects"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjectsInput", GoGetter: "AllowedConsumerProjectsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pscDnsName", GoGetter: "PscDnsName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedConsumerProjects", GoMethod: "ResetAllowedConsumerProjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAttachmentLink", GoGetter: "ServiceAttachmentLink"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

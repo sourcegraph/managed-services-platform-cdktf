@@ -13,6 +13,8 @@ type AccessPolicyRequireOutputReference interface {
 	AnyValidServiceToken() interface{}
 	SetAnyValidServiceToken(val interface{})
 	AnyValidServiceTokenInput() interface{}
+	AuthContext() AccessPolicyRequireAuthContextList
+	AuthContextInput() interface{}
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
@@ -24,6 +26,9 @@ type AccessPolicyRequireOutputReference interface {
 	CommonName() *string
 	SetCommonName(val *string)
 	CommonNameInput() *string
+	CommonNames() *[]*string
+	SetCommonNames(val *[]*string)
+	CommonNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,11 +53,14 @@ type AccessPolicyRequireOutputReference interface {
 	SetEmailDomain(val *[]*string)
 	EmailDomainInput() *[]*string
 	EmailInput() *[]*string
+	EmailList() *[]*string
+	SetEmailList(val *[]*string)
+	EmailListInput() *[]*string
 	Everyone() interface{}
 	SetEveryone(val interface{})
 	EveryoneInput() interface{}
-	ExternalEvaluation() AccessPolicyRequireExternalEvaluationOutputReference
-	ExternalEvaluationInput() *AccessPolicyRequireExternalEvaluation
+	ExternalEvaluation() AccessPolicyRequireExternalEvaluationList
+	ExternalEvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() *[]*string
@@ -115,20 +123,24 @@ type AccessPolicyRequireOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthContext(value interface{})
 	PutAzure(value interface{})
-	PutExternalEvaluation(value *AccessPolicyRequireExternalEvaluation)
+	PutExternalEvaluation(value interface{})
 	PutGithub(value interface{})
 	PutGsuite(value interface{})
 	PutOkta(value interface{})
 	PutSaml(value interface{})
 	ResetAnyValidServiceToken()
+	ResetAuthContext()
 	ResetAuthMethod()
 	ResetAzure()
 	ResetCertificate()
 	ResetCommonName()
+	ResetCommonNames()
 	ResetDevicePosture()
 	ResetEmail()
 	ResetEmailDomain()
+	ResetEmailList()
 	ResetEveryone()
 	ResetExternalEvaluation()
 	ResetGeo()
@@ -171,6 +183,26 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) AnyValidServiceTokenInput
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) AuthContext() AccessPolicyRequireAuthContextList {
+	var returns AccessPolicyRequireAuthContextList
+	_jsii_.Get(
+		j,
+		"authContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) AuthContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authContextInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +283,26 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) CommonNameInput() *string
 	_jsii_.Get(
 		j,
 		"commonNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) CommonNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) CommonNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNamesInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +398,26 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) EmailInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) EmailList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) EmailListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailListInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessPolicyRequireOutputReference) Everyone() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -366,8 +438,8 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) EveryoneInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() AccessPolicyRequireExternalEvaluationOutputReference {
-	var returns AccessPolicyRequireExternalEvaluationOutputReference
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() AccessPolicyRequireExternalEvaluationList {
+	var returns AccessPolicyRequireExternalEvaluationList
 	_jsii_.Get(
 		j,
 		"externalEvaluation",
@@ -376,8 +448,8 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() Acce
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluationInput() *AccessPolicyRequireExternalEvaluation {
-	var returns *AccessPolicyRequireExternalEvaluation
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"externalEvaluationInput",
@@ -698,6 +770,17 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference)SetCommonName(val *string)
 	)
 }
 
+func (j *jsiiProxy_AccessPolicyRequireOutputReference)SetCommonNames(val *[]*string) {
+	if err := j.validateSetCommonNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"commonNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessPolicyRequireOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -749,6 +832,17 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference)SetEmailDomain(val *[]*str
 	_jsii_.Set(
 		j,
 		"emailDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessPolicyRequireOutputReference)SetEmailList(val *[]*string) {
+	if err := j.validateSetEmailListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailList",
 		val,
 	)
 }
@@ -1049,6 +1143,17 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutAuthContext(value interface{}) {
+	if err := a.validatePutAuthContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAuthContext",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutAzure(value interface{}) {
 	if err := a.validatePutAzureParameters(value); err != nil {
 		panic(err)
@@ -1060,7 +1165,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutAzure(value interface{
 	)
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutExternalEvaluation(value *AccessPolicyRequireExternalEvaluation) {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutExternalEvaluation(value interface{}) {
 	if err := a.validatePutExternalEvaluationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1123,6 +1228,14 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetAnyValidServiceToken
 	)
 }
 
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetAuthContext() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthContext",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetAuthMethod() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1155,6 +1268,14 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetCommonName() {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetCommonNames() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCommonNames",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetDevicePosture() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1175,6 +1296,14 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetEmailDomain() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailDomain",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) ResetEmailList() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmailList",
 		nil, // no parameters
 	)
 }

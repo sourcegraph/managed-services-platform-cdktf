@@ -84,7 +84,15 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetStoragePoolParameters(val *string) error {
 	return nil
 }
 

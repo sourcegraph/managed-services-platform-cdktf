@@ -3,7 +3,7 @@ name: opsgenie
 provider:
   # https://registry.terraform.io/providers/opsgenie/opsgenie/latest
   source: registry.terraform.io/opsgenie/opsgenie
-  version: "0.6.35"
+  version: "0.6.37"
 
 target:
   language: go

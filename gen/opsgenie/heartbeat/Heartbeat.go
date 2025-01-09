@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/heartbeat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/heartbeat opsgenie_heartbeat}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/heartbeat opsgenie_heartbeat}.
 type Heartbeat interface {
 	cdktf.TerraformResource
 	AlertMessage() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_Heartbeat) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/heartbeat opsgenie_heartbeat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/heartbeat opsgenie_heartbeat} Resource.
 func NewHeartbeat(scope constructs.Construct, id *string, config *HeartbeatConfig) Heartbeat {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewHeartbeat(scope constructs.Construct, id *string, config *HeartbeatConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/heartbeat opsgenie_heartbeat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/heartbeat opsgenie_heartbeat} Resource.
 func NewHeartbeat_Override(h Heartbeat, scope constructs.Construct, id *string, config *HeartbeatConfig) {
 	_init_.Initialize()
 

@@ -32,8 +32,6 @@ type GoogleComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
 	DiskEncryptionKeySha256() *string
-	SetDiskEncryptionKeySha256(val *string)
-	DiskEncryptionKeySha256Input() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -81,10 +79,8 @@ type GoogleComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
-	ResetDiskEncryptionKeySha256()
 	ResetKmsKeySelfLink()
 	ResetMode()
-	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,16 +171,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeySha256",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeySha256Input() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"diskEncryptionKeySha256Input",
 		&returns,
 	)
 	return returns
@@ -358,17 +344,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)SetDiskEncryptionKeySha256(val *string) {
-	if err := j.validateSetDiskEncryptionKeySha256Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"diskEncryptionKeySha256",
 		val,
 	)
 }
@@ -641,14 +616,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) ResetDiskEncryptionKeySha256() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetDiskEncryptionKeySha256",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) ResetKmsKeySelfLink() {
 	_jsii_.InvokeVoid(
 		g,
@@ -661,14 +628,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetMode",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSource",
 		nil, // no parameters
 	)
 }

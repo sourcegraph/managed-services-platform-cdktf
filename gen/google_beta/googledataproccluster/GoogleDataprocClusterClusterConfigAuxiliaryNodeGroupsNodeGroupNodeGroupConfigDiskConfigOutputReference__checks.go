@@ -187,6 +187,14 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGrou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetLocalSsdInterfaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference) validateSetNumLocalSsdsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

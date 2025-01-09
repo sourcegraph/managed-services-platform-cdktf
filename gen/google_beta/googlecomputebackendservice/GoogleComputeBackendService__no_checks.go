@@ -108,6 +108,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutSecuritySettingsParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *GoogleComputeBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutTimeoutsParameters(value *GoogleComputeBackendServiceTimeouts) error {
 	return nil
 }
@@ -176,6 +180,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -209,6 +217,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetSecurityPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetServiceLbPolicyParameters(val *string) error {
 	return nil
 }
 

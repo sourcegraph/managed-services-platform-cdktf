@@ -92,6 +92,10 @@ func validatePolicySet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_PolicySet) validateSetAgentEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicySet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_PolicySet) validateSetPoliciesPathParameters(val *string) err
 }
 
 func (j *jsiiProxy_PolicySet) validateSetPolicyIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PolicySet) validateSetPolicyToolVersionParameters(val *string) error {
 	return nil
 }
 

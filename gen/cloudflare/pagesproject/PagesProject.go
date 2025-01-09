@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/pagesproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 

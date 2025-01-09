@@ -71,7 +71,6 @@ type ComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpCidrRange()
-	ResetRangeName()
 	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -524,14 +523,6 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetIpCidr
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpCidrRange",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetRangeName() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRangeName",
 		nil, // no parameters
 	)
 }

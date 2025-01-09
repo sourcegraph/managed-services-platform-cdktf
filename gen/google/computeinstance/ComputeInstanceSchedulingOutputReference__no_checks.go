@@ -48,7 +48,15 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutLocalSsd
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutMaxRunDurationParameters(value *ComputeInstanceSchedulingMaxRunDuration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *ComputeInstanceSchedulingOnInstanceStopAction) error {
 	return nil
 }
 
@@ -57,6 +65,10 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateResolvePara
 }
 
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAutomaticRestartParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
 	return nil
 }
 

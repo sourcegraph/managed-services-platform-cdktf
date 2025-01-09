@@ -72,6 +72,10 @@ func (k *jsiiProxy_Key) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
+func (k *jsiiProxy_Key) validatePutJavascriptLoaderScriptParameters(value *KeyJavascriptLoaderScript) error {
+	return nil
+}
+
 func validateKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -93,10 +97,6 @@ func (j *jsiiProxy_Key) validateSetConnectionParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_Key) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Key) validateSetIdParameters(val *string) error {
 	return nil
 }
 

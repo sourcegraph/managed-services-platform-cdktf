@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinstancefromtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
 type ComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -39,6 +39,7 @@ type ComputeInstanceFromTemplate interface {
 	// Experimental.
 	SetCount(val interface{})
 	CpuPlatform() *string
+	CreationTimestamp() *string
 	CurrentStatus() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
@@ -74,6 +75,9 @@ type ComputeInstanceFromTemplate interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
+	KeyRevocationActionType() *string
+	SetKeyRevocationActionType(val *string)
+	KeyRevocationActionTypeInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -129,8 +133,8 @@ type ComputeInstanceFromTemplate interface {
 	ScratchDisk() ComputeInstanceFromTemplateScratchDiskList
 	ScratchDiskInput() interface{}
 	SelfLink() *string
-	ServiceAccount() ComputeInstanceFromTemplateServiceAccountList
-	ServiceAccountInput() interface{}
+	ServiceAccount() ComputeInstanceFromTemplateServiceAccountOutputReference
+	ServiceAccountInput() *ComputeInstanceFromTemplateServiceAccount
 	ShieldedInstanceConfig() ComputeInstanceFromTemplateShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *ComputeInstanceFromTemplateShieldedInstanceConfig
 	SourceInstanceTemplate() *string
@@ -206,7 +210,7 @@ type ComputeInstanceFromTemplate interface {
 	PutReservationAffinity(value *ComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *ComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
-	PutServiceAccount(value interface{})
+	PutServiceAccount(value *ComputeInstanceFromTemplateServiceAccount)
 	PutShieldedInstanceConfig(value *ComputeInstanceFromTemplateShieldedInstanceConfig)
 	PutTimeouts(value *ComputeInstanceFromTemplateTimeouts)
 	ResetAdvancedMachineFeatures()
@@ -222,6 +226,7 @@ type ComputeInstanceFromTemplate interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMachineType()
 	ResetMetadata()
@@ -426,6 +431,16 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) CpuPlatform() *string {
 	_jsii_.Get(
 		j,
 		"cpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -636,6 +651,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) InstanceId() *string {
 	_jsii_.Get(
 		j,
 		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) KeyRevocationActionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionTypeInput",
 		&returns,
 	)
 	return returns
@@ -1001,8 +1036,8 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) ServiceAccount() ComputeInstanceFromTemplateServiceAccountList {
-	var returns ComputeInstanceFromTemplateServiceAccountList
+func (j *jsiiProxy_ComputeInstanceFromTemplate) ServiceAccount() ComputeInstanceFromTemplateServiceAccountOutputReference {
+	var returns ComputeInstanceFromTemplateServiceAccountOutputReference
 	_jsii_.Get(
 		j,
 		"serviceAccount",
@@ -1011,8 +1046,8 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) ServiceAccount() ComputeInstance
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) ServiceAccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceFromTemplate) ServiceAccountInput() *ComputeInstanceFromTemplateServiceAccount {
+	var returns *ComputeInstanceFromTemplateServiceAccount
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
@@ -1172,7 +1207,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) ComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1190,7 +1225,7 @@ func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate_Override(c ComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1323,6 +1358,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate)SetKeyRevocationActionType(val *string) {
+	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRevocationActionType",
 		val,
 	)
 }
@@ -1952,7 +1998,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) PutScratchDisk(value interface{}
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) PutServiceAccount(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) PutServiceAccount(value *ComputeInstanceFromTemplateServiceAccount) {
 	if err := c.validatePutServiceAccountParameters(value); err != nil {
 		panic(err)
 	}
@@ -2085,6 +2131,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetKeyRevocationActionType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKeyRevocationActionType",
 		nil, // no parameters
 	)
 }

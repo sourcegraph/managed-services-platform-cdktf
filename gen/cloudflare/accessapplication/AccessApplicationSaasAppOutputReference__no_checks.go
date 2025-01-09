@@ -44,7 +44,39 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateInterpolatio
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomAttributeParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomClaimParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutHybridAndImplicitOptionsParameters(value *AccessApplicationSaasAppHybridAndImplicitOptions) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAccessTokenLifetimeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAllowPkceWithoutClientSecretParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAppLauncherUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAuthTypeParameters(val *string) error {
 	return nil
 }
 
@@ -60,11 +92,39 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetConsumerS
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetDefaultRelayStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGrantTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGroupFilterRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *AccessApplicationSaasApp) error {
 	return nil
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdFormatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdTransformJsonataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectUrisParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetSamlAttributeTransformJsonataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
 

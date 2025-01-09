@@ -116,7 +116,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutScratchDiskParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *ComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 
@@ -181,6 +181,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetHostnameParameters(va
 }
 
 func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
 	return nil
 }
 

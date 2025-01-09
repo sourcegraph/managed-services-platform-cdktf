@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization tfe_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization tfe_organization}.
 type DataTfeOrganization interface {
 	cdktf.TerraformDataSource
+	AggregatedCommitStatusEnabled() cdktf.IResolvable
 	AssessmentsEnforced() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -58,6 +59,7 @@ type DataTfeOrganization interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SendPassingStatusesForUntriggeredSpeculativePlans() cdktf.IResolvable
+	SpeculativePlanManagementEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -112,6 +114,16 @@ type DataTfeOrganization interface {
 // The jsii proxy struct for DataTfeOrganization
 type jsiiProxy_DataTfeOrganization struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataTfeOrganization) AggregatedCommitStatusEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"aggregatedCommitStatusEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataTfeOrganization) AssessmentsEnforced() cdktf.IResolvable {
@@ -344,6 +356,16 @@ func (j *jsiiProxy_DataTfeOrganization) SendPassingStatusesForUntriggeredSpecula
 	return returns
 }
 
+func (j *jsiiProxy_DataTfeOrganization) SpeculativePlanManagementEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"speculativePlanManagementEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataTfeOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -385,7 +407,7 @@ func (j *jsiiProxy_DataTfeOrganization) TwoFactorConformant() cdktf.IResolvable 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization tfe_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization tfe_organization} Data Source.
 func NewDataTfeOrganization(scope constructs.Construct, id *string, config *DataTfeOrganizationConfig) DataTfeOrganization {
 	_init_.Initialize()
 
@@ -403,7 +425,7 @@ func NewDataTfeOrganization(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization tfe_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization tfe_organization} Data Source.
 func NewDataTfeOrganization_Override(d DataTfeOrganization, scope constructs.Construct, id *string, config *DataTfeOrganizationConfig) {
 	_init_.Initialize()
 

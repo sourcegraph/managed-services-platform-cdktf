@@ -104,6 +104,10 @@ func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetIcmpIdleTimeoutSecParameters(val
 }
 
 func (j *jsiiProxy_ComputeRouterNat) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNat) validateSetInitialNatIpsParameters(val *[]*string) error {
 	return nil
 }
 

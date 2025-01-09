@@ -67,8 +67,6 @@ type AccessGroupRequireGsuiteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEmail()
-	ResetIdentityProviderId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (a *jsiiProxy_AccessGroupRequireGsuiteOutputReference) InterpolationForAttr
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AccessGroupRequireGsuiteOutputReference) ResetEmail() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEmail",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccessGroupRequireGsuiteOutputReference) ResetIdentityProviderId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetIdentityProviderId",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AccessGroupRequireGsuiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

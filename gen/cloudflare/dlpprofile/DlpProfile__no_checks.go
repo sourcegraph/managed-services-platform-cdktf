@@ -72,6 +72,10 @@ func (d *jsiiProxy_DlpProfile) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (d *jsiiProxy_DlpProfile) validatePutContextAwarenessParameters(value *DlpProfileContextAwareness) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlpProfile) validatePutEntryParameters(value interface{}) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (j *jsiiProxy_DlpProfile) validateSetLifecycleParameters(val *cdktf.Terrafo
 }
 
 func (j *jsiiProxy_DlpProfile) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DlpProfile) validateSetOcrEnabledParameters(val interface{}) error {
 	return nil
 }
 

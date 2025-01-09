@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql}.
 type PostgresqlProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -21,6 +21,9 @@ type PostgresqlProvider interface {
 	AwsRdsIamProfile() *string
 	SetAwsRdsIamProfile(val *string)
 	AwsRdsIamProfileInput() *string
+	AwsRdsIamProviderRoleArn() *string
+	SetAwsRdsIamProviderRoleArn(val *string)
+	AwsRdsIamProviderRoleArnInput() *string
 	AwsRdsIamRegion() *string
 	SetAwsRdsIamRegion(val *string)
 	AwsRdsIamRegionInput() *string
@@ -106,6 +109,7 @@ type PostgresqlProvider interface {
 	ResetAlias()
 	ResetAwsRdsIamAuth()
 	ResetAwsRdsIamProfile()
+	ResetAwsRdsIamProviderRoleArn()
 	ResetAwsRdsIamRegion()
 	ResetAzureIdentityAuth()
 	ResetAzureTenantId()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProfileInput() *string {
 	_jsii_.Get(
 		j,
 		"awsRdsIamProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProviderRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamProviderRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlProvider) AwsRdsIamProviderRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRdsIamProviderRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -687,7 +711,7 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
@@ -705,7 +729,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql} Resource.
 func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Construct, id *string, config *PostgresqlProviderConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,14 @@ func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"awsRdsIamProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlProvider)SetAwsRdsIamProviderRoleArn(val *string) {
+	_jsii_.Set(
+		j,
+		"awsRdsIamProviderRoleArn",
 		val,
 	)
 }
@@ -1049,6 +1081,14 @@ func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamProfile() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAwsRdsIamProfile",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) ResetAwsRdsIamProviderRoleArn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAwsRdsIamProviderRoleArn",
 		nil, // no parameters
 	)
 }

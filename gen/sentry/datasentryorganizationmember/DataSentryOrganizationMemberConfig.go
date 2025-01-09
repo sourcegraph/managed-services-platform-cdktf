@@ -21,11 +21,11 @@ type DataSentryOrganizationMemberConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The email of the organization member.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization_member#email DataSentryOrganizationMember#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization_member#email DataSentryOrganizationMember#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
-	// The slug of the organization.
+	// The organization the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization_member#organization DataSentryOrganizationMember#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization_member#organization DataSentryOrganizationMember#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 }
 

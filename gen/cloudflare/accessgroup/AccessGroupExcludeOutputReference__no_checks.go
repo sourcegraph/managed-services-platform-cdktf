@@ -44,11 +44,15 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutAzureParameters(value interface{}) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value *AccessGroupExcludeExternalEvaluation) error {
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
 	return nil
 }
 
@@ -88,6 +92,10 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetCommonNameParam
 	return nil
 }
 
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetCommonNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -105,6 +113,10 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetEmailParameters
 }
 
 func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetEmailDomainParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetEmailListParameters(val *[]*string) error {
 	return nil
 }
 

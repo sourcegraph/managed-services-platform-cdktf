@@ -88,6 +88,10 @@ func validateOauthClient_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_OauthClient) validateSetAgentPoolIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthClient) validateSetApiUrlParameters(val *string) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_OauthClient) validateSetOauthTokenParameters(val *string) err
 }
 
 func (j *jsiiProxy_OauthClient) validateSetOrganizationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OauthClient) validateSetOrganizationScopedParameters(val interface{}) error {
 	return nil
 }
 

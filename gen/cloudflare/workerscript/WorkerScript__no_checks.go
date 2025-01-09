@@ -76,7 +76,19 @@ func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(val
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutD1DatabaseBindingParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerScript) validatePutHyperdriveConfigBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerScript) validatePutPlacementParameters(value interface{}) error {
 	return nil
 }
 
@@ -144,6 +156,10 @@ func (j *jsiiProxy_WorkerScript) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_WorkerScript) validateSetDispatchNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerScript) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -165,6 +181,10 @@ func (j *jsiiProxy_WorkerScript) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_WorkerScript) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerScript) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

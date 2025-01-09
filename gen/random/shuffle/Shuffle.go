@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/random/shuffle/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle random_shuffle}.
 type Shuffle interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_Shuffle) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle random_shuffle} Resource.
 func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) Shuffle {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle random_shuffle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/shuffle random_shuffle} Resource.
 func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, config *ShuffleConfig) {
 	_init_.Initialize()
 

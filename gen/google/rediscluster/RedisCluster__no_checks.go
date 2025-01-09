@@ -72,11 +72,27 @@ func (r *jsiiProxy_RedisCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutCrossClusterReplicationConfigParameters(value *RedisClusterCrossClusterReplicationConfig) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *RedisClusterMaintenancePolicy) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutPersistenceConfigParameters(value *RedisClusterPersistenceConfig) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	return nil
 }
 
 func (r *jsiiProxy_RedisCluster) validatePutTimeoutsParameters(value *RedisClusterTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutZoneDistributionConfigParameters(value *RedisClusterZoneDistributionConfig) error {
 	return nil
 }
 
@@ -105,6 +121,10 @@ func (j *jsiiProxy_RedisCluster) validateSetConnectionParameters(val interface{}
 }
 
 func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

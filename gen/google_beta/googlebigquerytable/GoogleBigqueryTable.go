@@ -9,12 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
-	AllowResourceTagsOnDeletion() interface{}
-	SetAllowResourceTagsOnDeletion(val interface{})
-	AllowResourceTagsOnDeletionInput() interface{}
+	BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference
+	BiglakeConfigurationInput() *GoogleBigqueryTableBiglakeConfiguration
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clustering() *[]*string
@@ -51,6 +50,8 @@ type GoogleBigqueryTable interface {
 	ExpirationTime() *float64
 	SetExpirationTime(val *float64)
 	ExpirationTimeInput() *float64
+	ExternalCatalogTableOptions() GoogleBigqueryTableExternalCatalogTableOptionsOutputReference
+	ExternalCatalogTableOptionsInput() *GoogleBigqueryTableExternalCatalogTableOptions
 	ExternalDataConfiguration() GoogleBigqueryTableExternalDataConfigurationOutputReference
 	ExternalDataConfigurationInput() *GoogleBigqueryTableExternalDataConfiguration
 	// Experimental.
@@ -173,7 +174,9 @@ type GoogleBigqueryTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBiglakeConfiguration(value *GoogleBigqueryTableBiglakeConfiguration)
 	PutEncryptionConfiguration(value *GoogleBigqueryTableEncryptionConfiguration)
+	PutExternalCatalogTableOptions(value *GoogleBigqueryTableExternalCatalogTableOptions)
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
 	PutRangePartitioning(value *GoogleBigqueryTableRangePartitioning)
@@ -181,12 +184,13 @@ type GoogleBigqueryTable interface {
 	PutTableReplicationInfo(value *GoogleBigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning)
 	PutView(value *GoogleBigqueryTableView)
-	ResetAllowResourceTagsOnDeletion()
+	ResetBiglakeConfiguration()
 	ResetClustering()
 	ResetDeletionProtection()
 	ResetDescription()
 	ResetEncryptionConfiguration()
 	ResetExpirationTime()
+	ResetExternalCatalogTableOptions()
 	ResetExternalDataConfiguration()
 	ResetFriendlyName()
 	ResetId()
@@ -223,21 +227,21 @@ type jsiiProxy_GoogleBigqueryTable struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GoogleBigqueryTable) AllowResourceTagsOnDeletion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTable) BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference {
+	var returns GoogleBigqueryTableBiglakeConfigurationOutputReference
 	_jsii_.Get(
 		j,
-		"allowResourceTagsOnDeletion",
+		"biglakeConfiguration",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTable) AllowResourceTagsOnDeletionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTable) BiglakeConfigurationInput() *GoogleBigqueryTableBiglakeConfiguration {
+	var returns *GoogleBigqueryTableBiglakeConfiguration
 	_jsii_.Get(
 		j,
-		"allowResourceTagsOnDeletionInput",
+		"biglakeConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +442,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) ExpirationTimeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"expirationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) ExternalCatalogTableOptions() GoogleBigqueryTableExternalCatalogTableOptionsOutputReference {
+	var returns GoogleBigqueryTableExternalCatalogTableOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) ExternalCatalogTableOptionsInput() *GoogleBigqueryTableExternalCatalogTableOptions {
+	var returns *GoogleBigqueryTableExternalCatalogTableOptions
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptionsInput",
 		&returns,
 	)
 	return returns
@@ -954,7 +978,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -972,7 +996,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -980,17 +1004,6 @@ func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Con
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTable",
 		[]interface{}{scope, id, config},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GoogleBigqueryTable)SetAllowResourceTagsOnDeletion(val interface{}) {
-	if err := j.validateSetAllowResourceTagsOnDeletionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowResourceTagsOnDeletion",
-		val,
 	)
 }
 
@@ -1569,6 +1582,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutBiglakeConfiguration(value *GoogleBigqueryTableBiglakeConfiguration) {
+	if err := g.validatePutBiglakeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBiglakeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutEncryptionConfiguration(value *GoogleBigqueryTableEncryptionConfiguration) {
 	if err := g.validatePutEncryptionConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1576,6 +1600,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutEncryptionConfiguration(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) PutExternalCatalogTableOptions(value *GoogleBigqueryTableExternalCatalogTableOptions) {
+	if err := g.validatePutExternalCatalogTableOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalCatalogTableOptions",
 		[]interface{}{value},
 	)
 }
@@ -1657,10 +1692,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutView(value *GoogleBigqueryTableView) 
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryTable) ResetAllowResourceTagsOnDeletion() {
+func (g *jsiiProxy_GoogleBigqueryTable) ResetBiglakeConfiguration() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetAllowResourceTagsOnDeletion",
+		"resetBiglakeConfiguration",
 		nil, // no parameters
 	)
 }
@@ -1701,6 +1736,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetExpirationTime() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExpirationTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetExternalCatalogTableOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCatalogTableOptions",
 		nil, // no parameters
 	)
 }

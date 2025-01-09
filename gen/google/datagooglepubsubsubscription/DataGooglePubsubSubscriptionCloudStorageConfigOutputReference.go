@@ -27,6 +27,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilenameDatetimeFormat() *string
 	FilenamePrefix() *string
 	FilenameSuffix() *string
 	// Experimental.
@@ -35,6 +36,8 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	SetInternalValue(val *DataGooglePubsubSubscriptionCloudStorageConfig)
 	MaxBytes() *float64
 	MaxDuration() *string
+	MaxMessages() *float64
+	ServiceAccountEmail() *string
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +136,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormat",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) FilenamePrefix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -188,6 +201,26 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	_jsii_.Get(
 		j,
 		"maxDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) MaxMessages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/teamsproxyendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
 type TeamsProxyEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -387,7 +387,7 @@ func (j *jsiiProxy_TeamsProxyEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) TeamsProxyEndpoint {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *Teams
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint_Override(t TeamsProxyEndpoint, scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) {
 	_init_.Initialize()
 

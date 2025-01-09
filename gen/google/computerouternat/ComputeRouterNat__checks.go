@@ -328,6 +328,14 @@ func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -483,6 +491,14 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetIcmpIdleTimeoutSecParameters(val
 }
 
 func (j *jsiiProxy_ComputeRouterNat) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNat) validateSetInitialNatIpsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

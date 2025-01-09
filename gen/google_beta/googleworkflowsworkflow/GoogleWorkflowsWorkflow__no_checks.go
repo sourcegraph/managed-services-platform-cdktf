@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCryptoKeyNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

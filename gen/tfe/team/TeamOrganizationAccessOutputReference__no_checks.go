@@ -48,6 +48,10 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetAccessSecretTeamsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,11 +64,19 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetInternalVal
 	return nil
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageAgentPoolsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembershipParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageModulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageOrganizationAccessParameters(val interface{}) error {
 	return nil
 }
 
@@ -85,6 +97,10 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvi
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageRunTasksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageTeamsParameters(val interface{}) error {
 	return nil
 }
 

@@ -37,8 +37,11 @@ type DataGoogleComputeRouterStatusBestRoutesOutputReference interface {
 	NextHopIlb() *string
 	NextHopInstance() *string
 	NextHopInstanceZone() *string
+	NextHopInterRegionCost() *string
 	NextHopIp() *string
+	NextHopMed() *string
 	NextHopNetwork() *string
+	NextHopOrigin() *string
 	NextHopVpnTunnel() *string
 	Priority() *float64
 	Project() *string
@@ -221,6 +224,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextH
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextHopInterRegionCost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopInterRegionCost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextHopIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -231,11 +244,31 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextH
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextHopMed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopMed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextHopNetwork() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"nextHopNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesOutputReference) NextHopOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopOrigin",
 		&returns,
 	)
 	return returns

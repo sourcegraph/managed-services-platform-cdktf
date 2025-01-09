@@ -11,6 +11,7 @@ import (
 type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	AutomaticRestart() cdktf.IResolvable
+	AvailabilityDomain() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +29,7 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateScheduling)
@@ -37,6 +39,7 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeRegionInstanceTemplateSchedulingNodeAffinitiesList
 	OnHostMaintenance() *string
+	OnInstanceStopAction() DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
 	// Experimental.
@@ -96,6 +99,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -131,6 +144,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
 		&returns,
 	)
 	return returns
@@ -211,6 +234,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"onHostMaintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) OnInstanceStopAction() DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList {
+	var returns DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
 		&returns,
 	)
 	return returns

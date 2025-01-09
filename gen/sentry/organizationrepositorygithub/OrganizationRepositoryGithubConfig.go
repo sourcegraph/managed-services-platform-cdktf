@@ -21,17 +21,17 @@ type OrganizationRepositoryGithubConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The repo identifier. For Github it is {github_org}/{github_repo}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github#identifier OrganizationRepositoryGithub#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository_github#identifier OrganizationRepositoryGithub#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// The organization integration ID for Github.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github#integration_id OrganizationRepositoryGithub#integration_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository_github#integration_id OrganizationRepositoryGithub#integration_id}
 	IntegrationId *string `field:"required" json:"integrationId" yaml:"integrationId"`
 	// The slug of the Sentry organization this resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github#organization OrganizationRepositoryGithub#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository_github#organization OrganizationRepositoryGithub#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_repository_github#id OrganizationRepositoryGithub#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository_github#id OrganizationRepositoryGithub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

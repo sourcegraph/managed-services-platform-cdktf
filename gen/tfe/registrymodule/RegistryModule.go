@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/registrymodule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module tfe_registry_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_module tfe_registry_module}.
 type RegistryModule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,9 @@ type RegistryModule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialVersion() *string
+	SetInitialVersion(val *string)
+	InitialVersionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -130,6 +133,7 @@ type RegistryModule interface {
 	PutTestConfig(value interface{})
 	PutVcsRepo(value *RegistryModuleVcsRepo)
 	ResetId()
+	ResetInitialVersion()
 	ResetModuleProvider()
 	ResetName()
 	ResetNamespace()
@@ -254,6 +258,26 @@ func (j *jsiiProxy_RegistryModule) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModule) InitialVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"initialVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegistryModule) InitialVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"initialVersionInput",
 		&returns,
 	)
 	return returns
@@ -510,7 +534,7 @@ func (j *jsiiProxy_RegistryModule) VcsRepoInput() *RegistryModuleVcsRepo {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module tfe_registry_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_module tfe_registry_module} Resource.
 func NewRegistryModule(scope constructs.Construct, id *string, config *RegistryModuleConfig) RegistryModule {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewRegistryModule(scope constructs.Construct, id *string, config *RegistryM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_module tfe_registry_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_module tfe_registry_module} Resource.
 func NewRegistryModule_Override(r RegistryModule, scope constructs.Construct, id *string, config *RegistryModuleConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func (j *jsiiProxy_RegistryModule)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegistryModule)SetInitialVersion(val *string) {
+	if err := j.validateSetInitialVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialVersion",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (r *jsiiProxy_RegistryModule) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegistryModule) ResetInitialVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetInitialVersion",
 		nil, // no parameters
 	)
 }

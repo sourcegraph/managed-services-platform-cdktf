@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutContainerdConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutGcfsConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
 	return nil
 }
 

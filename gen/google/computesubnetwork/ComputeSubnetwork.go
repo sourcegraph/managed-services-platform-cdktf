@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,9 +104,13 @@ type ComputeSubnetwork interface {
 	SecondaryIpRange() ComputeSubnetworkSecondaryIpRangeList
 	SecondaryIpRangeInput() interface{}
 	SelfLink() *string
+	SendSecondaryIpRangeIfEmpty() interface{}
+	SetSendSecondaryIpRangeIfEmpty(val interface{})
+	SendSecondaryIpRangeIfEmptyInput() interface{}
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -178,6 +182,7 @@ type ComputeSubnetwork interface {
 	ResetReservedInternalRange()
 	ResetRole()
 	ResetSecondaryIpRange()
+	ResetSendSecondaryIpRangeIfEmpty()
 	ResetStackType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -708,6 +713,26 @@ func (j *jsiiProxy_ComputeSubnetwork) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmpty() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) SendSecondaryIpRangeIfEmptyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendSecondaryIpRangeIfEmptyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) StackType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -723,6 +748,16 @@ func (j *jsiiProxy_ComputeSubnetwork) StackTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) SubnetworkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subnetworkId",
 		&returns,
 	)
 	return returns
@@ -779,7 +814,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -797,7 +832,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1026,6 +1061,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetSendSecondaryIpRangeIfEmpty(val interface{}) {
+	if err := j.validateSetSendSecondaryIpRangeIfEmptyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendSecondaryIpRangeIfEmpty",
 		val,
 	)
 }
@@ -1543,6 +1589,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetSecondaryIpRange() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecondaryIpRange",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetSendSecondaryIpRangeIfEmpty() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSendSecondaryIpRangeIfEmpty",
 		nil, // no parameters
 	)
 }

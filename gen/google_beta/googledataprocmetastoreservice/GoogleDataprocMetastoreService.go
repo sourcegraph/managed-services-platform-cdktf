@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledataprocmetastoreservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type GoogleDataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -28,6 +28,9 @@ type GoogleDataprocMetastoreService interface {
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,6 +170,7 @@ type GoogleDataprocMetastoreService interface {
 	PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
+	ResetDeletionProtection()
 	ResetEncryptionConfig()
 	ResetHiveMetastoreConfig()
 	ResetId()
@@ -270,6 +274,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) DatabaseTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"databaseTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -826,7 +850,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -844,7 +868,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -884,6 +908,17 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService)SetDatabaseType(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1489,6 +1524,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetDatabaseType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatabaseType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

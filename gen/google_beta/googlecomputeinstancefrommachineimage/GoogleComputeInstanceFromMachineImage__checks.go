@@ -332,32 +332,12 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSchedulingP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromMachineImageServiceAccount) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*GoogleComputeInstanceFromMachineImageServiceAccount:
-		value := value.(*[]*GoogleComputeInstanceFromMachineImageServiceAccount)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*GoogleComputeInstanceFromMachineImageServiceAccount:
-		value_ := value.([]*GoogleComputeInstanceFromMachineImageServiceAccount)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeInstanceFromMachineImageServiceAccount; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -627,6 +607,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -676,6 +664,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetMinCpuPlatf
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetPartnerMetadataParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

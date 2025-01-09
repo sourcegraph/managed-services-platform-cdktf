@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetInstanceDescr
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -189,6 +193,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetNameParameter
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetPartnerMetadataParameters(val *map[string]*string) error {
 	return nil
 }
 

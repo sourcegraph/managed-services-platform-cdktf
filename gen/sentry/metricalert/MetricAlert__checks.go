@@ -283,6 +283,14 @@ func (j *jsiiProxy_MetricAlert) validateSetAggregateParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_MetricAlert) validateSetComparisonDeltaParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MetricAlert) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -390,14 +398,6 @@ func (j *jsiiProxy_MetricAlert) validateSetEnvironmentParameters(val *string) er
 }
 
 func (j *jsiiProxy_MetricAlert) validateSetEventTypesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MetricAlert) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

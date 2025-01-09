@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeoauthclient/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/oauth_client tfe_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/oauth_client tfe_oauth_client}.
 type DataTfeOauthClient interface {
 	cdktf.TerraformDataSource
 	ApiUrl() *string
@@ -55,6 +55,8 @@ type DataTfeOauthClient interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	OrganizationScoped() cdktf.IResolvable
+	ProjectIds() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -343,6 +345,26 @@ func (j *jsiiProxy_DataTfeOauthClient) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataTfeOauthClient) OrganizationScoped() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"organizationScoped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfeOauthClient) ProjectIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataTfeOauthClient) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -424,7 +446,7 @@ func (j *jsiiProxy_DataTfeOauthClient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/oauth_client tfe_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/oauth_client tfe_oauth_client} Data Source.
 func NewDataTfeOauthClient(scope constructs.Construct, id *string, config *DataTfeOauthClientConfig) DataTfeOauthClient {
 	_init_.Initialize()
 
@@ -442,7 +464,7 @@ func NewDataTfeOauthClient(scope constructs.Construct, id *string, config *DataT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/oauth_client tfe_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/oauth_client tfe_oauth_client} Data Source.
 func NewDataTfeOauthClient_Override(d DataTfeOauthClient, scope constructs.Construct, id *string, config *DataTfeOauthClientConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workerscript/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -38,10 +38,15 @@ type WorkerScript interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	D1DatabaseBinding() WorkerScriptD1DatabaseBindingList
+	D1DatabaseBindingInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DispatchNamespace() *string
+	SetDispatchNamespace(val *string)
+	DispatchNamespaceInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +55,8 @@ type WorkerScript interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HyperdriveConfigBinding() WorkerScriptHyperdriveConfigBindingList
+	HyperdriveConfigBindingInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -70,6 +77,8 @@ type WorkerScript interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Placement() WorkerScriptPlacementList
+	PlacementInput() interface{}
 	PlainTextBinding() WorkerScriptPlainTextBindingList
 	PlainTextBindingInput() interface{}
 	// Experimental.
@@ -90,6 +99,9 @@ type WorkerScript interface {
 	SecretTextBindingInput() interface{}
 	ServiceBinding() WorkerScriptServiceBindingList
 	ServiceBindingInput() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -142,7 +154,10 @@ type WorkerScript interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnalyticsEngineBinding(value interface{})
+	PutD1DatabaseBinding(value interface{})
+	PutHyperdriveConfigBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
+	PutPlacement(value interface{})
 	PutPlainTextBinding(value interface{})
 	PutQueueBinding(value interface{})
 	PutR2BucketBinding(value interface{})
@@ -152,6 +167,9 @@ type WorkerScript interface {
 	ResetAnalyticsEngineBinding()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
+	ResetD1DatabaseBinding()
+	ResetDispatchNamespace()
+	ResetHyperdriveConfigBinding()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetLogpush()
@@ -159,11 +177,13 @@ type WorkerScript interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacement()
 	ResetPlainTextBinding()
 	ResetQueueBinding()
 	ResetR2BucketBinding()
 	ResetSecretTextBinding()
 	ResetServiceBinding()
+	ResetTags()
 	ResetWebassemblyBinding()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -323,11 +343,51 @@ func (j *jsiiProxy_WorkerScript) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerScript) D1DatabaseBinding() WorkerScriptD1DatabaseBindingList {
+	var returns WorkerScriptD1DatabaseBindingList
+	_jsii_.Get(
+		j,
+		"d1DatabaseBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) D1DatabaseBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"d1DatabaseBindingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerScript) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) DispatchNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) DispatchNamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespaceInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +418,26 @@ func (j *jsiiProxy_WorkerScript) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) HyperdriveConfigBinding() WorkerScriptHyperdriveConfigBindingList {
+	var returns WorkerScriptHyperdriveConfigBindingList
+	_jsii_.Get(
+		j,
+		"hyperdriveConfigBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) HyperdriveConfigBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hyperdriveConfigBindingInput",
 		&returns,
 	)
 	return returns
@@ -478,6 +558,26 @@ func (j *jsiiProxy_WorkerScript) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) Placement() WorkerScriptPlacementList {
+	var returns WorkerScriptPlacementList
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) PlacementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"placementInput",
 		&returns,
 	)
 	return returns
@@ -613,6 +713,26 @@ func (j *jsiiProxy_WorkerScript) ServiceBindingInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerScript) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerScript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -664,7 +784,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -682,7 +802,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 
@@ -767,6 +887,17 @@ func (j *jsiiProxy_WorkerScript)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_WorkerScript)SetDispatchNamespace(val *string) {
+	if err := j.validateSetDispatchNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dispatchNamespace",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -845,6 +976,17 @@ func (j *jsiiProxy_WorkerScript)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1213,6 +1355,28 @@ func (w *jsiiProxy_WorkerScript) PutAnalyticsEngineBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutD1DatabaseBinding(value interface{}) {
+	if err := w.validatePutD1DatabaseBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putD1DatabaseBinding",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) PutHyperdriveConfigBinding(value interface{}) {
+	if err := w.validatePutHyperdriveConfigBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putHyperdriveConfigBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
 		panic(err)
@@ -1220,6 +1384,17 @@ func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 	_jsii_.InvokeVoid(
 		w,
 		"putKvNamespaceBinding",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) PutPlacement(value interface{}) {
+	if err := w.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putPlacement",
 		[]interface{}{value},
 	)
 }
@@ -1314,6 +1489,30 @@ func (w *jsiiProxy_WorkerScript) ResetCompatibilityFlags() {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) ResetD1DatabaseBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetD1DatabaseBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetDispatchNamespace() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDispatchNamespace",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetHyperdriveConfigBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHyperdriveConfigBinding",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1354,6 +1553,14 @@ func (w *jsiiProxy_WorkerScript) ResetOverrideLogicalId() {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) ResetPlacement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPlacement",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) ResetPlainTextBinding() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1390,6 +1597,14 @@ func (w *jsiiProxy_WorkerScript) ResetServiceBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetServiceBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetTags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTags",
 		nil, // no parameters
 	)
 }

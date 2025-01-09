@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/key/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key sentry_key}.
 type Key interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type Key interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Dsn() cdktf.StringMap
 	DsnCsp() *string
 	DsnPublic() *string
 	DsnSecret() *string
@@ -40,9 +41,8 @@ type Key interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	IsActive() cdktf.IResolvable
+	JavascriptLoaderScript() KeyJavascriptLoaderScriptOutputReference
+	JavascriptLoaderScriptInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -57,7 +57,7 @@ type Key interface {
 	OrganizationInput() *string
 	Project() *string
 	SetProject(val *string)
-	ProjectId() *float64
+	ProjectId() *string
 	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -126,7 +126,8 @@ type Key interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutJavascriptLoaderScript(value *KeyJavascriptLoaderScript)
+	ResetJavascriptLoaderScript()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -195,6 +196,16 @@ func (j *jsiiProxy_Key) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Key) Dsn() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"dsn",
 		&returns,
 	)
 	return returns
@@ -270,21 +281,21 @@ func (j *jsiiProxy_Key) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Key) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_Key) JavascriptLoaderScript() KeyJavascriptLoaderScriptOutputReference {
+	var returns KeyJavascriptLoaderScriptOutputReference
 	_jsii_.Get(
 		j,
-		"idInput",
+		"javascriptLoaderScript",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Key) IsActive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Key) JavascriptLoaderScriptInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"isActive",
+		"javascriptLoaderScriptInput",
 		&returns,
 	)
 	return returns
@@ -360,8 +371,8 @@ func (j *jsiiProxy_Key) Project() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Key) ProjectId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Key) ProjectId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"projectId",
@@ -501,7 +512,7 @@ func (j *jsiiProxy_Key) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key sentry_key} Resource.
 func NewKey(scope constructs.Construct, id *string, config *KeyConfig) Key {
 	_init_.Initialize()
 
@@ -519,7 +530,7 @@ func NewKey(scope constructs.Construct, id *string, config *KeyConfig) Key {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/key sentry_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key sentry_key} Resource.
 func NewKey_Override(k Key, scope constructs.Construct, id *string, config *KeyConfig) {
 	_init_.Initialize()
 
@@ -564,17 +575,6 @@ func (j *jsiiProxy_Key)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Key)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1017,10 +1017,21 @@ func (k *jsiiProxy_Key) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (k *jsiiProxy_Key) ResetId() {
+func (k *jsiiProxy_Key) PutJavascriptLoaderScript(value *KeyJavascriptLoaderScript) {
+	if err := k.validatePutJavascriptLoaderScriptParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
-		"resetId",
+		"putJavascriptLoaderScript",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_Key) ResetJavascriptLoaderScript() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetJavascriptLoaderScript",
 		nil, // no parameters
 	)
 }

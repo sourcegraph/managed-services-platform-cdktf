@@ -90,6 +90,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateInterpol
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutAegisParameters(value *ZoneSettingsOverrideSettingsAegis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMinifyParameters(value *ZoneSettingsOverrideSettingsMinify) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -102,6 +113,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMinif
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMobileRedirectParameters(value *ZoneSettingsOverrideSettingsMobileRedirect) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutNelParameters(value *ZoneSettingsOverrideSettingsNel) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -316,6 +338,14 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFilte
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFontsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetH2PrioritizationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -492,6 +522,14 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetPseud
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetReplaceInsecureJsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetResponseBufferingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -532,7 +570,23 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSortQ
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSpeedBrainParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslAutomaticModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

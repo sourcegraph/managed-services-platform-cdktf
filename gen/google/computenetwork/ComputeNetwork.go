@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_network google_compute_network}.
 type ComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
@@ -68,6 +68,7 @@ type ComputeNetwork interface {
 	NetworkFirewallPolicyEnforcementOrder() *string
 	SetNetworkFirewallPolicyEnforcementOrder(val *string)
 	NetworkFirewallPolicyEnforcementOrderInput() *string
+	NetworkId() *string
 	// The tree node.
 	Node() constructs.Node
 	NumericId() *string
@@ -452,6 +453,16 @@ func (j *jsiiProxy_ComputeNetwork) NetworkFirewallPolicyEnforcementOrderInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeNetwork) NetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeNetwork) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -603,7 +614,7 @@ func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNetworkConfig) ComputeNetwork {
 	_init_.Initialize()
 
@@ -621,7 +632,7 @@ func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork_Override(c ComputeNetwork, scope constructs.Construct, id *string, config *ComputeNetworkConfig) {
 	_init_.Initialize()
 

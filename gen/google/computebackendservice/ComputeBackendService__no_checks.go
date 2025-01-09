@@ -108,6 +108,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutSecuritySettingsParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *ComputeBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutTimeoutsParameters(value *ComputeBackendServiceTimeouts) error {
 	return nil
 }
@@ -176,6 +180,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -209,6 +217,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetProvisionersParameters(val 
 }
 
 func (j *jsiiProxy_ComputeBackendService) validateSetSecurityPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetServiceLbPolicyParameters(val *string) error {
 	return nil
 }
 

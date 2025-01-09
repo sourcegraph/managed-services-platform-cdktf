@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/schedulerotation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/schedule_rotation opsgenie_schedule_rotation}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation opsgenie_schedule_rotation}.
 type ScheduleRotation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_ScheduleRotation) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/schedule_rotation opsgenie_schedule_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation opsgenie_schedule_rotation} Resource.
 func NewScheduleRotation(scope constructs.Construct, id *string, config *ScheduleRotationConfig) ScheduleRotation {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewScheduleRotation(scope constructs.Construct, id *string, config *Schedul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/schedule_rotation opsgenie_schedule_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation opsgenie_schedule_rotation} Resource.
 func NewScheduleRotation_Override(s ScheduleRotation, scope constructs.Construct, id *string, config *ScheduleRotationConfig) {
 	_init_.Initialize()
 

@@ -25,6 +25,9 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableClipboardRedirection() interface{}
+	SetDisableClipboardRedirection(val interface{})
+	DisableClipboardRedirectionInput() interface{}
 	DisableCopyPaste() interface{}
 	SetDisableCopyPaste(val interface{})
 	DisableCopyPasteInput() interface{}
@@ -76,6 +79,7 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisableClipboardRedirection()
 	ResetDisableCopyPaste()
 	ResetDisableDownload()
 	ResetDisableKeyboard()
@@ -121,6 +125,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableClipboardRedirection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableClipboardRedirection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DisableClipboardRedirectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableClipboardRedirectionInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +336,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableClipboardRedirection(val interface{}) {
+	if err := j.validateSetDisableClipboardRedirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableClipboardRedirection",
 		val,
 	)
 }
@@ -588,6 +623,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetDisableClipboardRedirection() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDisableClipboardRedirection",
+		nil, // no parameters
+	)
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetDisableCopyPaste() {

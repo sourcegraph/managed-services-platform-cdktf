@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/projectinbounddatafilter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter}.
 type ProjectInboundDataFilter interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -411,7 +411,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter} Resource.
 func NewProjectInboundDataFilter(scope constructs.Construct, id *string, config *ProjectInboundDataFilterConfig) ProjectInboundDataFilter {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewProjectInboundDataFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter} Resource.
 func NewProjectInboundDataFilter_Override(p ProjectInboundDataFilter, scope constructs.Construct, id *string, config *ProjectInboundDataFilterConfig) {
 	_init_.Initialize()
 

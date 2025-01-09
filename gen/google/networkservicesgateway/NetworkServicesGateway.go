@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/networkservicesgateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/network_services_gateway google_network_services_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_services_gateway google_network_services_gateway}.
 type NetworkServicesGateway interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -90,6 +90,9 @@ type NetworkServicesGateway interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoutingMode() *string
+	SetRoutingMode(val *string)
+	RoutingModeInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -170,6 +173,7 @@ type NetworkServicesGateway interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRoutingMode()
 	ResetScope()
 	ResetServerTlsPolicy()
 	ResetSubnetwork()
@@ -582,6 +586,26 @@ func (j *jsiiProxy_NetworkServicesGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) RoutingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) RoutingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -743,7 +767,7 @@ func (j *jsiiProxy_NetworkServicesGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
 func NewNetworkServicesGateway(scope constructs.Construct, id *string, config *NetworkServicesGatewayConfig) NetworkServicesGateway {
 	_init_.Initialize()
 
@@ -761,7 +785,7 @@ func NewNetworkServicesGateway(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_services_gateway google_network_services_gateway} Resource.
 func NewNetworkServicesGateway_Override(n NetworkServicesGateway, scope constructs.Construct, id *string, config *NetworkServicesGatewayConfig) {
 	_init_.Initialize()
 
@@ -968,6 +992,17 @@ func (j *jsiiProxy_NetworkServicesGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesGateway)SetRoutingMode(val *string) {
+	if err := j.validateSetRoutingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingMode",
 		val,
 	)
 }
@@ -1464,6 +1499,14 @@ func (n *jsiiProxy_NetworkServicesGateway) ResetProject() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) ResetRoutingMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRoutingMode",
 		nil, // no parameters
 	)
 }

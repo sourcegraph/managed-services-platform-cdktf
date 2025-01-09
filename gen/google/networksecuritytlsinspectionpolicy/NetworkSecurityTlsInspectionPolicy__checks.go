@@ -353,6 +353,14 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetCustomTlsFeaturesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -398,6 +406,14 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetMinTlsVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -462,6 +478,22 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetProvisionersPa
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetTlsFeatureProfileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetTrustConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

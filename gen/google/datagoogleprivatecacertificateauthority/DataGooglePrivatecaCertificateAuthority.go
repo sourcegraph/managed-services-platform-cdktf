@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagoogleprivatecacertificateauthority/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}.
 type DataGooglePrivatecaCertificateAuthority interface {
 	cdktf.TerraformDataSource
 	AccessUrls() DataGooglePrivatecaCertificateAuthorityAccessUrlsList
@@ -589,7 +589,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
 func NewDataGooglePrivatecaCertificateAuthority(scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateAuthorityConfig) DataGooglePrivatecaCertificateAuthority {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewDataGooglePrivatecaCertificateAuthority(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
 func NewDataGooglePrivatecaCertificateAuthority_Override(d DataGooglePrivatecaCertificateAuthority, scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateAuthorityConfig) {
 	_init_.Initialize()
 

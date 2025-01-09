@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/usermapping/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/user_mapping postgresql_user_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/user_mapping postgresql_user_mapping}.
 type UserMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_UserMapping) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingConfig) UserMapping {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewUserMapping(scope constructs.Construct, id *string, config *UserMappingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/user_mapping postgresql_user_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/user_mapping postgresql_user_mapping} Resource.
 func NewUserMapping_Override(u UserMapping, scope constructs.Construct, id *string, config *UserMappingConfig) {
 	_init_.Initialize()
 

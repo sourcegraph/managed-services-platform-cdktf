@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
+	AutoNetworkTier() *string
+	SetAutoNetworkTier(val *string)
+	AutoNetworkTierInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -54,6 +57,9 @@ type ComputeRouterNat interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialNatIps() *[]*string
+	SetInitialNatIps(val *[]*string)
+	InitialNatIpsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -170,12 +176,14 @@ type ComputeRouterNat interface {
 	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *ComputeRouterNatTimeouts)
+	ResetAutoNetworkTier()
 	ResetDrainNatIps()
 	ResetEnableDynamicPortAllocation()
 	ResetEnableEndpointIndependentMapping()
 	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
+	ResetInitialNatIps()
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
@@ -209,6 +217,26 @@ type ComputeRouterNat interface {
 // The jsii proxy struct for ComputeRouterNat
 type jsiiProxy_ComputeRouterNat struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRouterNat) AutoNetworkTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) AutoNetworkTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTierInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRouterNat) CdktfStack() cdktf.TerraformStack {
@@ -406,6 +434,26 @@ func (j *jsiiProxy_ComputeRouterNat) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) InitialNatIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) InitialNatIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"initialNatIpsInput",
 		&returns,
 	)
 	return returns
@@ -832,7 +880,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -850,7 +898,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -858,6 +906,17 @@ func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetAutoNetworkTier(val *string) {
+	if err := j.validateSetAutoNetworkTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoNetworkTier",
+		val,
 	)
 }
 
@@ -961,6 +1020,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetInitialNatIps(val *[]*string) {
+	if err := j.validateSetInitialNatIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialNatIps",
 		val,
 	)
 }
@@ -1535,6 +1605,14 @@ func (c *jsiiProxy_ComputeRouterNat) PutTimeouts(value *ComputeRouterNatTimeouts
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterNat) ResetAutoNetworkTier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoNetworkTier",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterNat) ResetDrainNatIps() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1579,6 +1657,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetInitialNatIps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInitialNatIps",
 		nil, // no parameters
 	)
 }

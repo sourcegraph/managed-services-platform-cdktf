@@ -204,6 +204,28 @@ func (p *jsiiProxy_Project) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (p *jsiiProxy_Project) validatePutClientSecurityParameters(value *ProjectClientSecurity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_Project) validatePutFiltersParameters(value *ProjectFilters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -390,7 +412,15 @@ func (j *jsiiProxy_Project) validateSetDigestsMinDelayParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_Project) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_Project) validateSetFingerprintingRulesParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetGroupingEnhancementsParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,14 +515,6 @@ func (j *jsiiProxy_Project) validateSetResolveAgeParameters(val *float64) error 
 }
 
 func (j *jsiiProxy_Project) validateSetSlugParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Project) validateSetTeamParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

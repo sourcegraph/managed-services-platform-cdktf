@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/dataopsgenieuser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/user opsgenie_user}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/user opsgenie_user}.
 type DataOpsgenieUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataOpsgenieUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/user opsgenie_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/user opsgenie_user} Data Source.
 func NewDataOpsgenieUser(scope constructs.Construct, id *string, config *DataOpsgenieUserConfig) DataOpsgenieUser {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataOpsgenieUser(scope constructs.Construct, id *string, config *DataOps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/user opsgenie_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/user opsgenie_user} Data Source.
 func NewDataOpsgenieUser_Override(d DataOpsgenieUser, scope constructs.Construct, id *string, config *DataOpsgenieUserConfig) {
 	_init_.Initialize()
 
