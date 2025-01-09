@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service opsgenie_service}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service opsgenie_service}.
 type Service interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_Service) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service opsgenie_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service opsgenie_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/service opsgenie_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service opsgenie_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 

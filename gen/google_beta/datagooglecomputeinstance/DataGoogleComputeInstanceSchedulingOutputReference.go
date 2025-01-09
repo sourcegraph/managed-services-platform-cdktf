@@ -11,6 +11,7 @@ import (
 type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	AutomaticRestart() cdktf.IResolvable
+	AvailabilityDomain() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +29,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeInstanceScheduling
 	SetInternalValue(val *DataGoogleComputeInstanceScheduling)
@@ -37,6 +39,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeInstanceSchedulingNodeAffinitiesList
 	OnHostMaintenance() *string
+	OnInstanceStopAction() DataGoogleComputeInstanceSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
 	// Experimental.
@@ -96,6 +99,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Automatic
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -131,6 +144,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
 		&returns,
 	)
 	return returns
@@ -211,6 +234,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) OnHostMai
 	_jsii_.Get(
 		j,
 		"onHostMaintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) OnInstanceStopAction() DataGoogleComputeInstanceSchedulingOnInstanceStopActionList {
+	var returns DataGoogleComputeInstanceSchedulingOnInstanceStopActionList
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accessmutualtlscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate}.
 type AccessMutualTlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate} Resource.
 func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, config *AccessMutualTlsCertificateConfig) AccessMutualTlsCertificate {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate} Resource.
 func NewAccessMutualTlsCertificate_Override(a AccessMutualTlsCertificate, scope constructs.Construct, id *string, config *AccessMutualTlsCertificateConfig) {
 	_init_.Initialize()
 

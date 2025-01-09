@@ -72,10 +72,6 @@ func (j *jsiiProxy_DataSentryProject) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryProject) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataSentryProject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

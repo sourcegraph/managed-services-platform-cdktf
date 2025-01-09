@@ -72,11 +72,27 @@ func (g *jsiiProxy_GoogleRedisCluster) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutCrossClusterReplicationConfigParameters(value *GoogleRedisClusterCrossClusterReplicationConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validatePutMaintenancePolicyParameters(value *GoogleRedisClusterMaintenancePolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validatePutPersistenceConfigParameters(value *GoogleRedisClusterPersistenceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleRedisCluster) validatePutTimeoutsParameters(value *GoogleRedisClusterTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validatePutZoneDistributionConfigParameters(value *GoogleRedisClusterZoneDistributionConfig) error {
 	return nil
 }
 
@@ -105,6 +121,10 @@ func (j *jsiiProxy_GoogleRedisCluster) validateSetConnectionParameters(val inter
 }
 
 func (j *jsiiProxy_GoogleRedisCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
 	return nil
 }
 

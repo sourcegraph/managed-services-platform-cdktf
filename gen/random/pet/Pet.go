@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/random/pet/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet random_pet}.
 type Pet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_Pet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet random_pet} Resource.
 func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.6.3/docs/resources/pet random_pet} Resource.
 func NewPet_Override(p Pet, scope constructs.Construct, id *string, config *PetConfig) {
 	_init_.Initialize()
 

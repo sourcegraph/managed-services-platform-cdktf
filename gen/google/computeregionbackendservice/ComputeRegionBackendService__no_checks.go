@@ -104,6 +104,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutOutlierDetectionParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutStrongSessionAffinityCookieParameters(value *ComputeRegionBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutTimeoutsParameters(value *ComputeRegionBackendServiceTimeouts) error {
 	return nil
 }
@@ -153,6 +157,10 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetHealthChecksParameter
 }
 
 func (j *jsiiProxy_ComputeRegionBackendService) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
 	return nil
 }
 

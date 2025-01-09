@@ -214,6 +214,37 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCache
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCacheReserveParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*RulesetRulesActionParametersCacheReserve:
+		value := value.(*[]*RulesetRulesActionParametersCacheReserve)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*RulesetRulesActionParametersCacheReserve:
+		value_ := value.([]*RulesetRulesActionParametersCacheReserve)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersCacheReserve; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutEdgeTtlParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -563,6 +594,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAdditionalCacheablePortsParameters(val *[]*float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAutomaticHttpsRewritesParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -752,6 +791,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisableRumParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisableZarazParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -773,6 +832,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetEmailObfuscationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetFontsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -900,6 +979,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOppor
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginCacheControlParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginErrorPagePassthruParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -937,6 +1036,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPolis
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetProductsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetReadTimeoutParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1097,14 +1204,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

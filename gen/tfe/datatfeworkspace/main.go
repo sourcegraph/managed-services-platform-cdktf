@@ -16,6 +16,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "assessmentsEnabled", GoGetter: "AssessmentsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoApply", GoGetter: "AutoApply"},
 			_jsii_.MemberProperty{JsiiProperty: "autoApplyRunTrigger", GoGetter: "AutoApplyRunTrigger"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDestroyActivityDuration", GoGetter: "AutoDestroyActivityDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDestroyAt", GoGetter: "AutoDestroyAt"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

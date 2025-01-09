@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() ComputeInstanceGroupManagerAllInstancesConfigOutputReference
@@ -52,6 +52,7 @@ type ComputeInstanceGroupManager interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceGroup() *string
+	InstanceGroupManagerId() *float64
 	InstanceLifecyclePolicy() ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 	InstanceLifecyclePolicyInput() *ComputeInstanceGroupManagerInstanceLifecyclePolicy
 	// Experimental.
@@ -414,6 +415,16 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) InstanceGroup() *string {
 	_jsii_.Get(
 		j,
 		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) InstanceGroupManagerId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"instanceGroupManagerId",
 		&returns,
 	)
 	return returns
@@ -850,7 +861,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -868,7 +879,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 

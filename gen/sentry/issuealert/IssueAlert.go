@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/issuealert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/issue_alert sentry_issue_alert}.
 type IssueAlert interface {
 	cdktf.TerraformResource
 	ActionMatch() *string
@@ -18,11 +18,15 @@ type IssueAlert interface {
 	Actions() *string
 	SetActions(val *string)
 	ActionsInput() *string
+	ActionsV2() IssueAlertActionsV2List
+	ActionsV2Input() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Conditions() *string
 	SetConditions(val *string)
 	ConditionsInput() *string
+	ConditionsV2() IssueAlertConditionsV2List
+	ConditionsV2Input() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -46,6 +50,8 @@ type IssueAlert interface {
 	Filters() *string
 	SetFilters(val *string)
 	FiltersInput() *string
+	FiltersV2() IssueAlertFiltersV2List
+	FiltersV2Input() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,9 +141,17 @@ type IssueAlert interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutActionsV2(value interface{})
+	PutConditionsV2(value interface{})
+	PutFiltersV2(value interface{})
+	ResetActions()
+	ResetActionsV2()
+	ResetConditions()
+	ResetConditionsV2()
 	ResetEnvironment()
 	ResetFilterMatch()
 	ResetFilters()
+	ResetFiltersV2()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -200,6 +214,26 @@ func (j *jsiiProxy_IssueAlert) ActionsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IssueAlert) ActionsV2() IssueAlertActionsV2List {
+	var returns IssueAlertActionsV2List
+	_jsii_.Get(
+		j,
+		"actionsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlert) ActionsV2Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"actionsV2Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IssueAlert) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -225,6 +259,26 @@ func (j *jsiiProxy_IssueAlert) ConditionsInput() *string {
 	_jsii_.Get(
 		j,
 		"conditionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlert) ConditionsV2() IssueAlertConditionsV2List {
+	var returns IssueAlertConditionsV2List
+	_jsii_.Get(
+		j,
+		"conditionsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlert) ConditionsV2Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionsV2Input",
 		&returns,
 	)
 	return returns
@@ -325,6 +379,26 @@ func (j *jsiiProxy_IssueAlert) FiltersInput() *string {
 	_jsii_.Get(
 		j,
 		"filtersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlert) FiltersV2() IssueAlertFiltersV2List {
+	var returns IssueAlertFiltersV2List
+	_jsii_.Get(
+		j,
+		"filtersV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlert) FiltersV2Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filtersV2Input",
 		&returns,
 	)
 	return returns
@@ -551,7 +625,7 @@ func (j *jsiiProxy_IssueAlert) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/issue_alert sentry_issue_alert} Resource.
 func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertConfig) IssueAlert {
 	_init_.Initialize()
 
@@ -569,7 +643,7 @@ func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/issue_alert sentry_issue_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/issue_alert sentry_issue_alert} Resource.
 func NewIssueAlert_Override(i IssueAlert, scope constructs.Construct, id *string, config *IssueAlertConfig) {
 	_init_.Initialize()
 
@@ -1122,6 +1196,71 @@ func (i *jsiiProxy_IssueAlert) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IssueAlert) PutActionsV2(value interface{}) {
+	if err := i.validatePutActionsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putActionsV2",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) PutConditionsV2(value interface{}) {
+	if err := i.validatePutConditionsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putConditionsV2",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) PutFiltersV2(value interface{}) {
+	if err := i.validatePutFiltersV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putFiltersV2",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) ResetActions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetActions",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) ResetActionsV2() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetActionsV2",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) ResetConditions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetConditions",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) ResetConditionsV2() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetConditionsV2",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IssueAlert) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1142,6 +1281,14 @@ func (i *jsiiProxy_IssueAlert) ResetFilters() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetFilters",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueAlert) ResetFiltersV2() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetFiltersV2",
 		nil, // no parameters
 	)
 }

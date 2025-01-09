@@ -19,18 +19,13 @@ type DataSentryProjectConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The slug of the organization the project belongs to.
+	// The organization the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project#organization DataSentryProject#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/project#organization DataSentryProject#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
-	// The unique URL slug for this project.
+	// The project the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project#slug DataSentryProject#slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/project#slug DataSentryProject#slug}
 	Slug *string `field:"required" json:"slug" yaml:"slug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project#id DataSentryProject#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 }
 

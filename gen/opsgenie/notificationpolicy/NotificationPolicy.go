@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/notificationpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_policy opsgenie_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy opsgenie_notification_policy}.
 type NotificationPolicy interface {
 	cdktf.TerraformResource
 	AutoCloseAction() NotificationPolicyAutoCloseActionOutputReference
@@ -568,7 +568,7 @@ func (j *jsiiProxy_NotificationPolicy) TimeRestrictionInput() *NotificationPolic
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_policy opsgenie_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy opsgenie_notification_policy} Resource.
 func NewNotificationPolicy(scope constructs.Construct, id *string, config *NotificationPolicyConfig) NotificationPolicy {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewNotificationPolicy(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/notification_policy opsgenie_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy opsgenie_notification_policy} Resource.
 func NewNotificationPolicy_Override(n NotificationPolicy, scope constructs.Construct, id *string, config *NotificationPolicyConfig) {
 	_init_.Initialize()
 

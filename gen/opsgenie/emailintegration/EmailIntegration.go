@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/emailintegration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/email_integration opsgenie_email_integration}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/email_integration opsgenie_email_integration}.
 type EmailIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_EmailIntegration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/email_integration opsgenie_email_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/email_integration opsgenie_email_integration} Resource.
 func NewEmailIntegration(scope constructs.Construct, id *string, config *EmailIntegrationConfig) EmailIntegration {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewEmailIntegration(scope constructs.Construct, id *string, config *EmailIn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/email_integration opsgenie_email_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/email_integration opsgenie_email_integration} Resource.
 func NewEmailIntegration_Override(e EmailIntegration, scope constructs.Construct, id *string, config *EmailIntegrationConfig) {
 	_init_.Initialize()
 

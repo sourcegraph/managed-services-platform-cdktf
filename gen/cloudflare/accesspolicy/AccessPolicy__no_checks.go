@@ -76,6 +76,10 @@ func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value interf
 	return nil
 }
 
+func (a *jsiiProxy_AccessPolicy) validatePutConnectionRulesParameters(value *AccessPolicyConnectionRules) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value interface{}) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationPromptParameters
 }
 
 func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationRequiredParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessPolicy) validateSetSessionDurationParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computefirewallpolicyassociation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association}.
 type ComputeFirewallPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentTarget() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyAssociation) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association} Resource.
 func NewComputeFirewallPolicyAssociation(scope constructs.Construct, id *string, config *ComputeFirewallPolicyAssociationConfig) ComputeFirewallPolicyAssociation {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewComputeFirewallPolicyAssociation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association} Resource.
 func NewComputeFirewallPolicyAssociation_Override(c ComputeFirewallPolicyAssociation, scope constructs.Construct, id *string, config *ComputeFirewallPolicyAssociationConfig) {
 	_init_.Initialize()
 

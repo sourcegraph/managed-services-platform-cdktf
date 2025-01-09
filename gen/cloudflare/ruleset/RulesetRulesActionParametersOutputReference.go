@@ -10,6 +10,9 @@ import (
 
 type RulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalCacheablePorts() *[]*float64
+	SetAdditionalCacheablePorts(val *[]*float64)
+	AdditionalCacheablePortsInput() *[]*float64
 	Algorithms() RulesetRulesActionParametersAlgorithmsList
 	AlgorithmsInput() interface{}
 	AutomaticHttpsRewrites() interface{}
@@ -27,6 +30,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	CacheInput() interface{}
 	CacheKey() RulesetRulesActionParametersCacheKeyList
 	CacheKeyInput() interface{}
+	CacheReserve() RulesetRulesActionParametersCacheReserveList
+	CacheReserveInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -57,6 +62,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	DisableRailgun() interface{}
 	SetDisableRailgun(val interface{})
 	DisableRailgunInput() interface{}
+	DisableRum() interface{}
+	SetDisableRum(val interface{})
+	DisableRumInput() interface{}
 	DisableZaraz() interface{}
 	SetDisableZaraz(val interface{})
 	DisableZarazInput() interface{}
@@ -65,6 +73,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	EmailObfuscation() interface{}
 	SetEmailObfuscation(val interface{})
 	EmailObfuscationInput() interface{}
+	Fonts() interface{}
+	SetFonts(val interface{})
+	FontsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	FromList() RulesetRulesActionParametersFromListStructList
@@ -96,6 +107,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetOpportunisticEncryption(val interface{})
 	OpportunisticEncryptionInput() interface{}
 	Origin() RulesetRulesActionParametersOriginList
+	OriginCacheControl() interface{}
+	SetOriginCacheControl(val interface{})
+	OriginCacheControlInput() interface{}
 	OriginErrorPagePassthru() interface{}
 	SetOriginErrorPagePassthru(val interface{})
 	OriginErrorPagePassthruInput() interface{}
@@ -111,6 +125,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	Products() *[]*string
 	SetProducts(val *[]*string)
 	ProductsInput() *[]*string
+	ReadTimeout() *float64
+	SetReadTimeout(val *float64)
+	ReadTimeoutInput() *float64
 	RequestFields() *[]*string
 	SetRequestFields(val *[]*string)
 	RequestFieldsInput() *[]*string
@@ -163,9 +180,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Uri() RulesetRulesActionParametersUriList
 	UriInput() interface{}
-	Version() *string
-	SetVersion(val *string)
-	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -194,6 +208,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutAutominify(value interface{})
 	PutBrowserTtl(value interface{})
 	PutCacheKey(value interface{})
+	PutCacheReserve(value interface{})
 	PutEdgeTtl(value interface{})
 	PutFromList(value interface{})
 	PutFromValue(value interface{})
@@ -205,6 +220,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutServeStale(value interface{})
 	PutSni(value interface{})
 	PutUri(value interface{})
+	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
@@ -212,14 +228,17 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetBrowserTtl()
 	ResetCache()
 	ResetCacheKey()
+	ResetCacheReserve()
 	ResetContent()
 	ResetContentType()
 	ResetCookieFields()
 	ResetDisableApps()
 	ResetDisableRailgun()
+	ResetDisableRum()
 	ResetDisableZaraz()
 	ResetEdgeTtl()
 	ResetEmailObfuscation()
+	ResetFonts()
 	ResetFromList()
 	ResetFromValue()
 	ResetHeaders()
@@ -231,11 +250,13 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetMirage()
 	ResetOpportunisticEncryption()
 	ResetOrigin()
+	ResetOriginCacheControl()
 	ResetOriginErrorPagePassthru()
 	ResetOverrides()
 	ResetPhases()
 	ResetPolish()
 	ResetProducts()
+	ResetReadTimeout()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
 	ResetResponse()
@@ -252,7 +273,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetStatusCode()
 	ResetSxg()
 	ResetUri()
-	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -266,6 +286,26 @@ type RulesetRulesActionParametersOutputReference interface {
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePortsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePortsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Algorithms() RulesetRulesActionParametersAlgorithmsList {
@@ -408,6 +448,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheKeyInput() 
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheReserve() RulesetRulesActionParametersCacheReserveList {
+	var returns RulesetRulesActionParametersCacheReserveList
+	_jsii_.Get(
+		j,
+		"cacheReserve",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheReserveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheReserveInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -538,6 +598,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRailgunIn
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRum() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRumInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRumInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableZaraz() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -593,6 +673,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EmailObfuscation
 	_jsii_.Get(
 		j,
 		"emailObfuscationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Fonts() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fonts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) FontsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fontsInput",
 		&returns,
 	)
 	return returns
@@ -828,6 +928,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Origin() Ruleset
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginCacheControl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"originCacheControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginCacheControlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"originCacheControlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginErrorPagePassthru() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -933,6 +1053,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProductsInput() 
 	_jsii_.Get(
 		j,
 		"productsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -1278,26 +1418,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) UriInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Version() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"version",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) VersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"versionInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
@@ -1323,6 +1443,17 @@ func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActio
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAdditionalCacheablePorts(val *[]*float64) {
+	if err := j.validateSetAdditionalCacheablePortsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalCacheablePorts",
+		val,
 	)
 }
 
@@ -1436,6 +1567,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableRailgun
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableRum(val interface{}) {
+	if err := j.validateSetDisableRumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRum",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableZaraz(val interface{}) {
 	if err := j.validateSetDisableZarazParameters(val); err != nil {
 		panic(err)
@@ -1454,6 +1596,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetEmailObfuscati
 	_jsii_.Set(
 		j,
 		"emailObfuscation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetFonts(val interface{}) {
+	if err := j.validateSetFontsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fonts",
 		val,
 	)
 }
@@ -1535,6 +1688,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOpportunisticE
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginCacheControl(val interface{}) {
+	if err := j.validateSetOriginCacheControlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originCacheControl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginErrorPagePassthru(val interface{}) {
 	if err := j.validateSetOriginErrorPagePassthruParameters(val); err != nil {
 		panic(err)
@@ -1575,6 +1739,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetProducts(val *
 	_jsii_.Set(
 		j,
 		"products",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(val *float64) {
+	if err := j.validateSetReadTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readTimeout",
 		val,
 	)
 }
@@ -1729,17 +1904,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetVersion(val *string) {
-	if err := j.validateSetVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"version",
 		val,
 	)
 }
@@ -1974,6 +2138,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutCacheKey(valu
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutCacheReserve(value interface{}) {
+	if err := r.validatePutCacheReserveParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putCacheReserve",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutEdgeTtl(value interface{}) {
 	if err := r.validatePutEdgeTtlParameters(value); err != nil {
 		panic(err)
@@ -2095,6 +2270,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value int
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAdditionalCacheablePorts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdditionalCacheablePorts",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAlgorithms() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2151,6 +2334,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetCacheKey() 
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetCacheReserve() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCacheReserve",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContent() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2191,6 +2382,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableRail
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableRum() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableRum",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableZaraz() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2211,6 +2410,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetEmailObfusc
 	_jsii_.InvokeVoid(
 		r,
 		"resetEmailObfuscation",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetFonts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFonts",
 		nil, // no parameters
 	)
 }
@@ -2303,6 +2510,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOrigin() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginCacheControl() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOriginCacheControl",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginErrorPagePassthru() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2339,6 +2554,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetProducts() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetProducts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetReadTimeout",
 		nil, // no parameters
 	)
 }
@@ -2467,14 +2690,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetUri() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetUri",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetVersion() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetVersion",
 		nil, // no parameters
 	)
 }

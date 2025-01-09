@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/customrole/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role opsgenie_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role opsgenie_custom_role}.
 type CustomRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_CustomRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role opsgenie_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role opsgenie_custom_role} Resource.
 func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleConfig) CustomRole {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/custom_role opsgenie_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role opsgenie_custom_role} Resource.
 func NewCustomRole_Override(c CustomRole, scope constructs.Construct, id *string, config *CustomRoleConfig) {
 	_init_.Initialize()
 

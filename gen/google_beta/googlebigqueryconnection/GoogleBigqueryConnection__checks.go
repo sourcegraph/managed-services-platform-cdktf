@@ -443,6 +443,14 @@ func (j *jsiiProxy_GoogleBigqueryConnection) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnection) validateSetKmsKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

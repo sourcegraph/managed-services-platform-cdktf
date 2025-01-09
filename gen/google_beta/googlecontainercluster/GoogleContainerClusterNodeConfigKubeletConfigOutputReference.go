@@ -36,6 +36,9 @@ type GoogleContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *GoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *GoogleContainerClusterNodeConfigKubeletConfig)
 	PodPidsLimit() *float64
@@ -75,6 +78,8 @@ type GoogleContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
+	ResetCpuManagerPolicy()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetPodPidsLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -186,6 +191,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -320,6 +345,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	_jsii_.Set(
 		j,
 		"cpuManagerPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -566,6 +602,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetCpuCfsQuotaPeriod",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) ResetCpuManagerPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCpuManagerPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

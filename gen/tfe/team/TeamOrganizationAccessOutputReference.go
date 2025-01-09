@@ -10,6 +10,9 @@ import (
 
 type TeamOrganizationAccessOutputReference interface {
 	cdktf.ComplexObject
+	AccessSecretTeams() interface{}
+	SetAccessSecretTeams(val interface{})
+	AccessSecretTeamsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,12 +32,18 @@ type TeamOrganizationAccessOutputReference interface {
 	Fqn() *string
 	InternalValue() *TeamOrganizationAccess
 	SetInternalValue(val *TeamOrganizationAccess)
+	ManageAgentPools() interface{}
+	SetManageAgentPools(val interface{})
+	ManageAgentPoolsInput() interface{}
 	ManageMembership() interface{}
 	SetManageMembership(val interface{})
 	ManageMembershipInput() interface{}
 	ManageModules() interface{}
 	SetManageModules(val interface{})
 	ManageModulesInput() interface{}
+	ManageOrganizationAccess() interface{}
+	SetManageOrganizationAccess(val interface{})
+	ManageOrganizationAccessInput() interface{}
 	ManagePolicies() interface{}
 	SetManagePolicies(val interface{})
 	ManagePoliciesInput() interface{}
@@ -50,6 +59,9 @@ type TeamOrganizationAccessOutputReference interface {
 	ManageRunTasks() interface{}
 	SetManageRunTasks(val interface{})
 	ManageRunTasksInput() interface{}
+	ManageTeams() interface{}
+	SetManageTeams(val interface{})
+	ManageTeamsInput() interface{}
 	ManageVcsSettings() interface{}
 	SetManageVcsSettings(val interface{})
 	ManageVcsSettingsInput() interface{}
@@ -94,13 +106,17 @@ type TeamOrganizationAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccessSecretTeams()
+	ResetManageAgentPools()
 	ResetManageMembership()
 	ResetManageModules()
+	ResetManageOrganizationAccess()
 	ResetManagePolicies()
 	ResetManagePolicyOverrides()
 	ResetManageProjects()
 	ResetManageProviders()
 	ResetManageRunTasks()
+	ResetManageTeams()
 	ResetManageVcsSettings()
 	ResetManageWorkspaces()
 	ResetReadProjects()
@@ -118,6 +134,26 @@ type TeamOrganizationAccessOutputReference interface {
 // The jsii proxy struct for TeamOrganizationAccessOutputReference
 type jsiiProxy_TeamOrganizationAccessOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) AccessSecretTeams() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessSecretTeams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) AccessSecretTeamsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessSecretTeamsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ComplexObjectIndex() interface{} {
@@ -170,6 +206,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) InternalValue() *TeamO
 	return returns
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageAgentPools() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageAgentPools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageAgentPoolsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageAgentPoolsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageMembership() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -205,6 +261,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageModulesInput() i
 	_jsii_.Get(
 		j,
 		"manageModulesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageOrganizationAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageOrganizationAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageOrganizationAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageOrganizationAccessInput",
 		&returns,
 	)
 	return returns
@@ -305,6 +381,26 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageRunTasksInput() 
 	_jsii_.Get(
 		j,
 		"manageRunTasksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageTeams() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageTeams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ManageTeamsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageTeamsInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +534,17 @@ func NewTeamOrganizationAccessOutputReference_Override(t TeamOrganizationAccessO
 	)
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetAccessSecretTeams(val interface{}) {
+	if err := j.validateSetAccessSecretTeamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessSecretTeams",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -471,6 +578,17 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetInternalValue(val *T
 	)
 }
 
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageAgentPools(val interface{}) {
+	if err := j.validateSetManageAgentPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageAgentPools",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageMembership(val interface{}) {
 	if err := j.validateSetManageMembershipParameters(val); err != nil {
 		panic(err)
@@ -489,6 +607,17 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageModules(val in
 	_jsii_.Set(
 		j,
 		"manageModules",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageOrganizationAccess(val interface{}) {
+	if err := j.validateSetManageOrganizationAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageOrganizationAccess",
 		val,
 	)
 }
@@ -544,6 +673,17 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageRunTasks(val i
 	_jsii_.Set(
 		j,
 		"manageRunTasks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetManageTeams(val interface{}) {
+	if err := j.validateSetManageTeamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageTeams",
 		val,
 	)
 }
@@ -800,6 +940,22 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetAccessSecretTeams() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccessSecretTeams",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageAgentPools() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManageAgentPools",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageMembership() {
 	_jsii_.InvokeVoid(
 		t,
@@ -812,6 +968,14 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageModules() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetManageModules",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageOrganizationAccess() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManageOrganizationAccess",
 		nil, // no parameters
 	)
 }
@@ -852,6 +1016,14 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageRunTasks() 
 	_jsii_.InvokeVoid(
 		t,
 		"resetManageRunTasks",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetManageTeams() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetManageTeams",
 		nil, // no parameters
 	)
 }

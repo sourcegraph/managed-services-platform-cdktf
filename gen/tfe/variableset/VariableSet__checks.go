@@ -394,6 +394,14 @@ func (j *jsiiProxy_VariableSet) validateSetOrganizationParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_VariableSet) validateSetParentProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VariableSet) validateSetPriorityParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

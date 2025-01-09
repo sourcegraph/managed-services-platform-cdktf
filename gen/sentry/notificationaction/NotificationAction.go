@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/notificationaction/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/notification_action sentry_notification_action}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/notification_action sentry_notification_action}.
 type NotificationAction interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -458,7 +458,7 @@ func (j *jsiiProxy_NotificationAction) TriggerTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/notification_action sentry_notification_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/notification_action sentry_notification_action} Resource.
 func NewNotificationAction(scope constructs.Construct, id *string, config *NotificationActionConfig) NotificationAction {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewNotificationAction(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/notification_action sentry_notification_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/notification_action sentry_notification_action} Resource.
 func NewNotificationAction_Override(n NotificationAction, scope constructs.Construct, id *string, config *NotificationActionConfig) {
 	_init_.Initialize()
 

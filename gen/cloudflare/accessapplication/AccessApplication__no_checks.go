@@ -76,7 +76,27 @@ func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value int
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validatePutDestinationsParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutFooterLinksParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutLandingPageDesignParameters(value *AccessApplicationLandingPageDesign) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplication) validatePutSaasAppParameters(value *AccessApplicationSaasApp) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutScimConfigParameters(value *AccessApplicationScimConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutTargetCriteriaParameters(value interface{}) error {
 	return nil
 }
 
@@ -100,7 +120,15 @@ func (j *jsiiProxy_AccessApplication) validateSetAccountIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetAllowAuthenticateViaWarpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetAllowedIdpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetAppLauncherLogoUrlParameters(val *string) error {
 	return nil
 }
 
@@ -109,6 +137,10 @@ func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(va
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetBgColorParameters(val *string) error {
 	return nil
 }
 
@@ -128,6 +160,10 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomDenyUrlParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCustomNonIdentityDenyUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*string) error {
 	return nil
 }
@@ -136,7 +172,15 @@ func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetDomainTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetHeaderBgColorParameters(val *string) error {
 	return nil
 }
 
@@ -160,6 +204,14 @@ func (j *jsiiProxy_AccessApplication) validateSetNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetOptionsPreflightBypassParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -180,7 +232,15 @@ func (j *jsiiProxy_AccessApplication) validateSetSessionDurationParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetSkipAppLauncherLoginPageParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

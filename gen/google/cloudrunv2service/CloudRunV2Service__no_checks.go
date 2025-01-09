@@ -76,6 +76,10 @@ func (c *jsiiProxy_CloudRunV2Service) validatePutBinaryAuthorizationParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2Service) validatePutScalingParameters(value *CloudRunV2ServiceScaling) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2Service) validatePutTemplateParameters(value *CloudRunV2ServiceTemplate) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_CloudRunV2Service) validateSetCustomAudiencesParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2Service) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2Service) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -137,6 +145,10 @@ func (j *jsiiProxy_CloudRunV2Service) validateSetIdParameters(val *string) error
 }
 
 func (j *jsiiProxy_CloudRunV2Service) validateSetIngressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2Service) validateSetInvokerIamDisabledParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,21 +9,24 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/project sentry_project}.
 type DataSentryProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Color() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DateCreated() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Features() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -33,19 +36,19 @@ type DataSentryProject interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
 	IsPublic() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	Platform() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -86,7 +89,6 @@ type DataSentryProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -119,6 +121,16 @@ func (j *jsiiProxy_DataSentryProject) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryProject) Color() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"color",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryProject) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -139,11 +151,31 @@ func (j *jsiiProxy_DataSentryProject) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryProject) DateCreated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dateCreated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryProject) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryProject) Features() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"features",
 		&returns,
 	)
 	return returns
@@ -189,16 +221,6 @@ func (j *jsiiProxy_DataSentryProject) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryProject) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataSentryProject) InternalId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -229,6 +251,16 @@ func (j *jsiiProxy_DataSentryProject) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryProject) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryProject) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -254,6 +286,16 @@ func (j *jsiiProxy_DataSentryProject) OrganizationInput() *string {
 	_jsii_.Get(
 		j,
 		"organizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryProject) Platform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platform",
 		&returns,
 	)
 	return returns
@@ -330,7 +372,7 @@ func (j *jsiiProxy_DataSentryProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSentryProjectConfig) DataSentryProject {
 	_init_.Initialize()
 
@@ -348,7 +390,7 @@ func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject_Override(d DataSentryProject, scope constructs.Construct, id *string, config *DataSentryProjectConfig) {
 	_init_.Initialize()
 
@@ -382,17 +424,6 @@ func (j *jsiiProxy_DataSentryProject)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataSentryProject)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -720,14 +751,6 @@ func (d *jsiiProxy_DataSentryProject) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataSentryProject) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

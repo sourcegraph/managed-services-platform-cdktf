@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutPerformanceConfigParameters(value *GoogleFilestoreInstancePerformanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutTimeoutsParameters(value *GoogleFilestoreInstanceTimeouts) error {
 	return nil
 }
@@ -105,6 +109,14 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val 
 }
 
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDeletionProtectionReasonParameters(val *string) error {
 	return nil
 }
 

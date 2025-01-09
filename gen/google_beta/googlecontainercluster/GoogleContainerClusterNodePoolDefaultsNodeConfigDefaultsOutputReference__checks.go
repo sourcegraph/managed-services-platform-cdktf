@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutContainerdConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validatePutGcfsConfigParameters(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -167,6 +178,14 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

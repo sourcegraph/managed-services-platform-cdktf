@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeinstancefromtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
 type GoogleComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -39,6 +39,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	// Experimental.
 	SetCount(val interface{})
 	CpuPlatform() *string
+	CreationTimestamp() *string
 	CurrentStatus() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
@@ -74,6 +75,9 @@ type GoogleComputeInstanceFromTemplate interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
+	KeyRevocationActionType() *string
+	SetKeyRevocationActionType(val *string)
+	KeyRevocationActionTypeInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -106,6 +110,9 @@ type GoogleComputeInstanceFromTemplate interface {
 	Node() constructs.Node
 	Params() GoogleComputeInstanceFromTemplateParamsOutputReference
 	ParamsInput() *GoogleComputeInstanceFromTemplateParams
+	PartnerMetadata() *map[string]*string
+	SetPartnerMetadata(val *map[string]*string)
+	PartnerMetadataInput() *map[string]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -129,8 +136,8 @@ type GoogleComputeInstanceFromTemplate interface {
 	ScratchDisk() GoogleComputeInstanceFromTemplateScratchDiskList
 	ScratchDiskInput() interface{}
 	SelfLink() *string
-	ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountList
-	ServiceAccountInput() interface{}
+	ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountOutputReference
+	ServiceAccountInput() *GoogleComputeInstanceFromTemplateServiceAccount
 	ShieldedInstanceConfig() GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleComputeInstanceFromTemplateShieldedInstanceConfig
 	SourceInstanceTemplate() *string
@@ -206,7 +213,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	PutReservationAffinity(value *GoogleComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *GoogleComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
-	PutServiceAccount(value interface{})
+	PutServiceAccount(value *GoogleComputeInstanceFromTemplateServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleComputeInstanceFromTemplateShieldedInstanceConfig)
 	PutTimeouts(value *GoogleComputeInstanceFromTemplateTimeouts)
 	ResetAdvancedMachineFeatures()
@@ -222,6 +229,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMachineType()
 	ResetMetadata()
@@ -233,6 +241,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParams()
+	ResetPartnerMetadata()
 	ResetProject()
 	ResetReservationAffinity()
 	ResetResourcePolicies()
@@ -426,6 +435,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) CpuPlatform() *string {
 	_jsii_.Get(
 		j,
 		"cpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -636,6 +655,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) InstanceId() *string {
 	_jsii_.Get(
 		j,
 		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) KeyRevocationActionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionTypeInput",
 		&returns,
 	)
 	return returns
@@ -861,6 +900,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ParamsInput() *GoogleCompu
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) PartnerMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) PartnerMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"partnerMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1001,8 +1060,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountList {
-	var returns GoogleComputeInstanceFromTemplateServiceAccountList
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountOutputReference {
+	var returns GoogleComputeInstanceFromTemplateServiceAccountOutputReference
 	_jsii_.Get(
 		j,
 		"serviceAccount",
@@ -1011,8 +1070,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleCom
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccountInput() *GoogleComputeInstanceFromTemplateServiceAccount {
+	var returns *GoogleComputeInstanceFromTemplateServiceAccount
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
@@ -1172,7 +1231,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1190,7 +1249,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1327,6 +1386,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetKeyRevocationActionType(val *string) {
+	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRevocationActionType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -1400,6 +1470,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetPartnerMetadata(val *map[string]*string) {
+	if err := j.validateSetPartnerMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerMetadata",
 		val,
 	)
 }
@@ -1952,7 +2033,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutScratchDisk(value inter
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutServiceAccount(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutServiceAccount(value *GoogleComputeInstanceFromTemplateServiceAccount) {
 	if err := g.validatePutServiceAccountParameters(value); err != nil {
 		panic(err)
 	}
@@ -2089,6 +2170,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetKeyRevocationActionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyRevocationActionType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2157,6 +2246,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetParams() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParams",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetPartnerMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerMetadata",
 		nil, // no parameters
 	)
 }

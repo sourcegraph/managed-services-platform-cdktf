@@ -124,6 +124,10 @@ func (j *jsiiProxy_WaitingRoom) validateSetDisableSessionRenewalParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoom) validateSetEnabledOriginCommandsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoom) validateSetHostParameters(val *string) error {
 	return nil
 }
@@ -161,6 +165,10 @@ func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_WaitingRoom) validateSetQueueingMethodParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetQueueingStatusCodeParameters(val *float64) error {
 	return nil
 }
 

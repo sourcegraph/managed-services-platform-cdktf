@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/team/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team tfe_team}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team tfe_team}.
 type Team interface {
 	cdktf.TerraformResource
+	AllowMemberTokenManagement() interface{}
+	SetAllowMemberTokenManagement(val interface{})
+	AllowMemberTokenManagementInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -119,6 +122,7 @@ type Team interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOrganizationAccess(value *TeamOrganizationAccess)
+	ResetAllowMemberTokenManagement()
 	ResetId()
 	ResetOrganization()
 	ResetOrganizationAccess()
@@ -143,6 +147,26 @@ type Team interface {
 // The jsii proxy struct for Team
 type jsiiProxy_Team struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Team) AllowMemberTokenManagement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowMemberTokenManagement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) AllowMemberTokenManagementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowMemberTokenManagementInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Team) CdktfStack() cdktf.TerraformStack {
@@ -426,7 +450,7 @@ func (j *jsiiProxy_Team) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team tfe_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team tfe_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/team tfe_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team tfe_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,17 @@ func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *Te
 		"@cdktf/provider-tfe.team.Team",
 		[]interface{}{scope, id, config},
 		t,
+	)
+}
+
+func (j *jsiiProxy_Team)SetAllowMemberTokenManagement(val interface{}) {
+	if err := j.validateSetAllowMemberTokenManagementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowMemberTokenManagement",
+		val,
 	)
 }
 
@@ -939,6 +974,14 @@ func (t *jsiiProxy_Team) PutOrganizationAccess(value *TeamOrganizationAccess) {
 		t,
 		"putOrganizationAccess",
 		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_Team) ResetAllowMemberTokenManagement() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowMemberTokenManagement",
+		nil, // no parameters
 	)
 }
 

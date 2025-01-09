@@ -104,6 +104,10 @@ func validateGoogleComputeRouterNat_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetIcmpIdleTimeoutSecParamete
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetInitialNatIpsParameters(val *[]*string) error {
 	return nil
 }
 

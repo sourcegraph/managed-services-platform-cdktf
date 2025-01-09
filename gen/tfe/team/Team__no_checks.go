@@ -92,6 +92,10 @@ func validateTeam_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Team) validateSetAllowMemberTokenManagementParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Team) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

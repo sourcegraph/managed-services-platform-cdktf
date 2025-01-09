@@ -27,6 +27,8 @@ type GoogleComputeRegionSecurityPolicyRuleMatchOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Expr() GoogleComputeRegionSecurityPolicyRuleMatchExprOutputReference
+	ExprInput() *GoogleComputeRegionSecurityPolicyRuleMatchExpr
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionSecurityPolicyRuleMatch
@@ -67,7 +69,9 @@ type GoogleComputeRegionSecurityPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *GoogleComputeRegionSecurityPolicyRuleMatchConfig)
+	PutExpr(value *GoogleComputeRegionSecurityPolicyRuleMatchExpr)
 	ResetConfig()
+	ResetExpr()
 	ResetVersionedExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) Expr() GoogleComputeRegionSecurityPolicyRuleMatchExprOutputReference {
+	var returns GoogleComputeRegionSecurityPolicyRuleMatchExprOutputReference
+	_jsii_.Get(
+		j,
+		"expr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) ExprInput() *GoogleComputeRegionSecurityPolicyRuleMatchExpr {
+	var returns *GoogleComputeRegionSecurityPolicyRuleMatchExpr
+	_jsii_.Get(
+		j,
+		"exprInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) PutExpr(value *GoogleComputeRegionSecurityPolicyRuleMatchExpr) {
+	if err := g.validatePutExprParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExpr",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) ResetConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleMatchOutputReference) ResetExpr() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExpr",
 		nil, // no parameters
 	)
 }

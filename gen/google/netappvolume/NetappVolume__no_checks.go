@@ -72,6 +72,10 @@ func (n *jsiiProxy_NetappVolume) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutBackupConfigParameters(value *NetappVolumeBackupConfig) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutExportPolicyParameters(value *NetappVolumeExportPolicy) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (n *jsiiProxy_NetappVolume) validatePutRestoreParametersParameters(value *N
 }
 
 func (n *jsiiProxy_NetappVolume) validatePutSnapshotPolicyParameters(value *NetappVolumeSnapshotPolicy) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolume) validatePutTieringPolicyParameters(value *NetappVolumeTieringPolicy) error {
 	return nil
 }
 
@@ -136,11 +144,19 @@ func (j *jsiiProxy_NetappVolume) validateSetLabelsParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetLargeCapacityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetappVolume) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetMultipleEndpointsParameters(val interface{}) error {
 	return nil
 }
 

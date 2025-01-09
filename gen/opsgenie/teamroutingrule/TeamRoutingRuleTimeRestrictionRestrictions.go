@@ -2,17 +2,17 @@ package teamroutingrule
 
 
 type TeamRoutingRuleTimeRestrictionRestrictions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#end_day TeamRoutingRule#end_day}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#end_day TeamRoutingRule#end_day}.
 	EndDay *string `field:"required" json:"endDay" yaml:"endDay"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#end_hour TeamRoutingRule#end_hour}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#end_hour TeamRoutingRule#end_hour}.
 	EndHour *float64 `field:"required" json:"endHour" yaml:"endHour"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#end_min TeamRoutingRule#end_min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#end_min TeamRoutingRule#end_min}.
 	EndMin *float64 `field:"required" json:"endMin" yaml:"endMin"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#start_day TeamRoutingRule#start_day}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#start_day TeamRoutingRule#start_day}.
 	StartDay *string `field:"required" json:"startDay" yaml:"startDay"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#start_hour TeamRoutingRule#start_hour}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#start_hour TeamRoutingRule#start_hour}.
 	StartHour *float64 `field:"required" json:"startHour" yaml:"startHour"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/team_routing_rule#start_min TeamRoutingRule#start_min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule#start_min TeamRoutingRule#start_min}.
 	StartMin *float64 `field:"required" json:"startMin" yaml:"startMin"`
 }
 

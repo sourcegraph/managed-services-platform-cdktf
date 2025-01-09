@@ -579,6 +579,14 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetInstanceDescription
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -636,6 +644,14 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetNameParameters(val 
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetNamePrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetPartnerMetadataParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

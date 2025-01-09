@@ -56,6 +56,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableClipboardRedirectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableCopyPasteParameters(val interface{}) error {
 	return nil
 }

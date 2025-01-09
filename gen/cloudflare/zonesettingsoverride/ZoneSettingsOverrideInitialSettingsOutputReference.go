@@ -10,6 +10,7 @@ import (
 
 type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	cdktf.ComplexObject
+	Aegis() ZoneSettingsOverrideInitialSettingsAegisList
 	AlwaysOnline() *string
 	AlwaysUseHttps() *string
 	AutomaticHttpsRewrites() *string
@@ -40,6 +41,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	EarlyHints() *string
 	EmailObfuscation() *string
 	FilterLogsToCloudflare() *string
+	Fonts() *string
 	// Experimental.
 	Fqn() *string
 	H2Prioritization() *string
@@ -57,6 +59,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	MinTlsVersion() *string
 	Mirage() *string
 	MobileRedirect() ZoneSettingsOverrideInitialSettingsMobileRedirectList
+	Nel() ZoneSettingsOverrideInitialSettingsNelList
 	OpportunisticEncryption() *string
 	OpportunisticOnion() *string
 	OrangeToOrange() *string
@@ -67,13 +70,16 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	PrivacyPass() *string
 	ProxyReadTimeout() *string
 	PseudoIpv4() *string
+	ReplaceInsecureJs() *string
 	ResponseBuffering() *string
 	RocketLoader() *string
 	SecurityHeader() ZoneSettingsOverrideInitialSettingsSecurityHeaderList
 	SecurityLevel() *string
 	ServerSideExclude() *string
 	SortQueryStringForCache() *string
+	SpeedBrain() *string
 	Ssl() *string
+	SslAutomaticMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -129,6 +135,16 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 // The jsii proxy struct for ZoneSettingsOverrideInitialSettingsOutputReference
 type jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Aegis() ZoneSettingsOverrideInitialSettingsAegisList {
+	var returns ZoneSettingsOverrideInitialSettingsAegisList
+	_jsii_.Get(
+		j,
+		"aegis",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) AlwaysOnline() *string {
@@ -311,6 +327,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) FilterLog
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Fonts() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fonts",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -461,6 +487,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) MobileRed
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Nel() ZoneSettingsOverrideInitialSettingsNelList {
+	var returns ZoneSettingsOverrideInitialSettingsNelList
+	_jsii_.Get(
+		j,
+		"nel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) OpportunisticEncryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -561,6 +597,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) PseudoIpv
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) ReplaceInsecureJs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) ResponseBuffering() *string {
 	var returns *string
 	_jsii_.Get(
@@ -621,11 +667,31 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SortQuery
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SpeedBrain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Ssl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ssl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SslAutomaticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticMode",
 		&returns,
 	)
 	return returns

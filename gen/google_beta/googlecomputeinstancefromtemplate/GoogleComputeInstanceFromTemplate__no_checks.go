@@ -116,7 +116,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutScratchDiskPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 
@@ -184,6 +184,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
@@ -209,6 +213,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetMinCpuPlatformP
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetPartnerMetadataParameters(val *map[string]*string) error {
 	return nil
 }
 

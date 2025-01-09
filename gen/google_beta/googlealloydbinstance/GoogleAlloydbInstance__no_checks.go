@@ -84,6 +84,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validatePutNetworkConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutObservabilityConfigParameters(value *GoogleAlloydbInstanceObservabilityConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutPscInstanceConfigParameters(value *GoogleAlloydbInstancePscInstanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) validatePutQueryInsightsConfigParameters(value *GoogleAlloydbInstanceQueryInsightsConfig) error {
 	return nil
 }

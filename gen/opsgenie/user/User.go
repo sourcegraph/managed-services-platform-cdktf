@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/user/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user opsgenie_user}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user opsgenie_user}.
 type User interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_User) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user opsgenie_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user opsgenie_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user opsgenie_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user opsgenie_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 

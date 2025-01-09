@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeregioninstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type GoogleComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
@@ -57,7 +57,10 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceFlexibilityPolicy() GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference
+	InstanceFlexibilityPolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy
 	InstanceGroup() *string
+	InstanceGroupManagerId() *float64
 	InstanceLifecyclePolicy() GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 	InstanceLifecyclePolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
 	// Experimental.
@@ -93,6 +96,8 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
+	StandbyPolicy() GoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference
+	StandbyPolicyInput() *GoogleComputeRegionInstanceGroupManagerStandbyPolicy
 	StatefulDisk() GoogleComputeRegionInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
 	StatefulExternalIp() GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
@@ -106,6 +111,12 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	TargetSize() *float64
 	SetTargetSize(val *float64)
 	TargetSizeInput() *float64
+	TargetStoppedSize() *float64
+	SetTargetStoppedSize(val *float64)
+	TargetStoppedSizeInput() *float64
+	TargetSuspendedSize() *float64
+	SetTargetSuspendedSize(val *float64)
+	TargetSuspendedSizeInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -169,9 +180,11 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAllInstancesConfig(value *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig)
 	PutAutoHealingPolicies(value *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies)
+	PutInstanceFlexibilityPolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy)
 	PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutParams(value *GoogleComputeRegionInstanceGroupManagerParams)
+	PutStandbyPolicy(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
 	PutStatefulInternalIp(value interface{})
@@ -184,6 +197,7 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	ResetDistributionPolicyTargetShape()
 	ResetDistributionPolicyZones()
 	ResetId()
+	ResetInstanceFlexibilityPolicy()
 	ResetInstanceLifecyclePolicy()
 	ResetListManagedInstancesResults()
 	ResetNamedPort()
@@ -193,11 +207,14 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	ResetParams()
 	ResetProject()
 	ResetRegion()
+	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
 	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
+	ResetTargetStoppedSize()
+	ResetTargetSuspendedSize()
 	ResetTimeouts()
 	ResetUpdatePolicy()
 	ResetWaitForInstances()
@@ -460,11 +477,41 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceFlexibilityPolicy() GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceFlexibilityPolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy {
+	var returns *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceGroup() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceGroupManagerId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"instanceGroupManagerId",
 		&returns,
 	)
 	return returns
@@ -670,6 +717,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StandbyPolicy() GoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"standbyPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StandbyPolicyInput() *GoogleComputeRegionInstanceGroupManagerStandbyPolicy {
+	var returns *GoogleComputeRegionInstanceGroupManagerStandbyPolicy
+	_jsii_.Get(
+		j,
+		"standbyPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulDisk() GoogleComputeRegionInstanceGroupManagerStatefulDiskList {
 	var returns GoogleComputeRegionInstanceGroupManagerStatefulDiskList
 	_jsii_.Get(
@@ -775,6 +842,46 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetSizeInput() *f
 	_jsii_.Get(
 		j,
 		"targetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetStoppedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetStoppedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetSuspendedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) TargetSuspendedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSizeInput",
 		&returns,
 	)
 	return returns
@@ -911,7 +1018,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstancesStat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) GoogleComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -929,7 +1036,7 @@ func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewGoogleComputeRegionInstanceGroupManager_Override(g GoogleComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1125,6 +1232,28 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetTargetSize(val *fl
 	_jsii_.Set(
 		j,
 		"targetSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetTargetStoppedSize(val *float64) {
+	if err := j.validateSetTargetStoppedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetStoppedSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetTargetSuspendedSize(val *float64) {
+	if err := j.validateSetTargetSuspendedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetSuspendedSize",
 		val,
 	)
 }
@@ -1526,6 +1655,17 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutAutoHealingPolici
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutInstanceFlexibilityPolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) {
+	if err := g.validatePutInstanceFlexibilityPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInstanceFlexibilityPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) {
 	if err := g.validatePutInstanceLifecyclePolicyParameters(value); err != nil {
 		panic(err)
@@ -1555,6 +1695,17 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutParams(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putParams",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStandbyPolicy(value *GoogleComputeRegionInstanceGroupManagerStandbyPolicy) {
+	if err := g.validatePutStandbyPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStandbyPolicy",
 		[]interface{}{value},
 	)
 }
@@ -1673,6 +1824,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetInstanceFlexibilityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceFlexibilityPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetInstanceLifecyclePolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1729,6 +1888,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetRegion() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStandbyPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStandbyPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1765,6 +1932,22 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTargetSize() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTargetSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTargetStoppedSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetStoppedSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetTargetSuspendedSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetSuspendedSize",
 		nil, // no parameters
 	)
 }

@@ -60,7 +60,7 @@ func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) validateSetInternalValueParameters(val *AccessPolicyExcludeExternalEvaluation) error {
+func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) validat
 	return nil
 }
 
-func validateNewAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -41,7 +41,13 @@ type GoogleCloudRunV2Service interface {
 	CustomAudiences() *[]*string
 	SetCustomAudiences(val *[]*string)
 	CustomAudiencesInput() *[]*string
+	DefaultUriDisabled() interface{}
+	SetDefaultUriDisabled(val interface{})
+	DefaultUriDisabledInput() interface{}
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,6 +74,9 @@ type GoogleCloudRunV2Service interface {
 	Ingress() *string
 	SetIngress(val *string)
 	IngressInput() *string
+	InvokerIamDisabled() interface{}
+	SetInvokerIamDisabled(val interface{})
+	InvokerIamDisabledInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -124,6 +133,7 @@ type GoogleCloudRunV2Service interface {
 	Uid() *string
 	UpdateTime() *string
 	Uri() *string
+	Urls() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -177,9 +187,12 @@ type GoogleCloudRunV2Service interface {
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
+	ResetDefaultUriDisabled()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
+	ResetInvokerIamDisabled()
 	ResetLabels()
 	ResetLaunchStage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -377,11 +390,51 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) CustomAudiencesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) DefaultUriDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUriDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DefaultUriDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUriDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) DeleteTime() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +585,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) IngressInput() *string {
 	_jsii_.Get(
 		j,
 		"ingressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) InvokerIamDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) InvokerIamDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabledInput",
 		&returns,
 	)
 	return returns
@@ -907,8 +980,18 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Uri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -926,7 +1009,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1003,6 +1086,28 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetCustomAudiences(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetDefaultUriDisabled(val interface{}) {
+	if err := j.validateSetDefaultUriDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultUriDisabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1048,6 +1153,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetIngress(val *string) {
 	_jsii_.Set(
 		j,
 		"ingress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
+	if err := j.validateSetInvokerIamDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invokerIamDisabled",
 		val,
 	)
 }
@@ -1585,6 +1701,22 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetCustomAudiences() {
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDefaultUriDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultUriDisabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1605,6 +1737,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetIngress() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetInvokerIamDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInvokerIamDisabled",
 		nil, // no parameters
 	)
 }

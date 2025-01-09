@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization sentry_organization}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization sentry_organization}.
 type DataSentryOrganization interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,8 +33,6 @@ type DataSentryOrganization interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -83,7 +81,6 @@ type DataSentryOrganization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -181,16 +178,6 @@ func (j *jsiiProxy_DataSentryOrganization) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSentryOrganization) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -307,7 +294,7 @@ func (j *jsiiProxy_DataSentryOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization sentry_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization sentry_organization} Data Source.
 func NewDataSentryOrganization(scope constructs.Construct, id *string, config *DataSentryOrganizationConfig) DataSentryOrganization {
 	_init_.Initialize()
 
@@ -325,7 +312,7 @@ func NewDataSentryOrganization(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/organization sentry_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization sentry_organization} Data Source.
 func NewDataSentryOrganization_Override(d DataSentryOrganization, scope constructs.Construct, id *string, config *DataSentryOrganizationConfig) {
 	_init_.Initialize()
 
@@ -359,17 +346,6 @@ func (j *jsiiProxy_DataSentryOrganization)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataSentryOrganization)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -686,14 +662,6 @@ func (d *jsiiProxy_DataSentryOrganization) OverrideLogicalId(newLogicalId *strin
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataSentryOrganization) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

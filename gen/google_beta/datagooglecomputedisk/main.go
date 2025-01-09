@@ -11,6 +11,7 @@ func init() {
 		"@cdktf/provider-google_beta.dataGoogleComputeDisk.DataGoogleComputeDisk",
 		reflect.TypeOf((*DataGoogleComputeDisk)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asyncPrimaryDisk", GoGetter: "AsyncPrimaryDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageId", GoGetter: "SourceImageId"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKey", GoGetter: "SourceSnapshotEncryptionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotId", GoGetter: "SourceSnapshotId"},
+			_jsii_.MemberProperty{JsiiProperty: "storagePool", GoGetter: "StoragePool"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},

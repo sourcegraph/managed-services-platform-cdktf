@@ -43,6 +43,7 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	OsDistroName() *string
 	OsDistroRevision() *string
 	OsVersion() *string
+	OsVersionExtra() *string
 	RevokedAt() *string
 	SerialNumber() *string
 	// Experimental.
@@ -282,6 +283,16 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsVersion() *str
 	_jsii_.Get(
 		j,
 		"osVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsVersionExtra() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionExtra",
 		&returns,
 	)
 	return returns

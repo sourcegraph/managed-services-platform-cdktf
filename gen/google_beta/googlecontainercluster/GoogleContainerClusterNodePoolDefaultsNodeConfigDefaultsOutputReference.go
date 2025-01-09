@@ -20,6 +20,8 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerdConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	ContainerdConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,6 +31,9 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	Fqn() *string
 	GcfsConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
 	GcfsConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
+	InsecureKubeletReadonlyPortEnabled() *string
+	SetInsecureKubeletReadonlyPortEnabled(val *string)
+	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -66,8 +71,11 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutContainerdConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
+	ResetContainerdConfig()
 	ResetGcfsConfig()
+	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -99,6 +107,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfig() GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig {
+	var returns *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -139,6 +167,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Get(
 		j,
 		"gcfsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		val,
 	)
 }
@@ -474,6 +533,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutContainerdConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) {
+	if err := g.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) {
 	if err := g.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -485,10 +555,26 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerdConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetGcfsConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGcfsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetInsecureKubeletReadonlyPortEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInsecureKubeletReadonlyPortEnabled",
 		nil, // no parameters
 	)
 }

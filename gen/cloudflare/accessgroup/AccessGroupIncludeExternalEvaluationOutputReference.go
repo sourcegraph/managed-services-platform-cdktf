@@ -30,8 +30,8 @@ type AccessGroupIncludeExternalEvaluationOutputReference interface {
 	EvaluateUrlInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AccessGroupIncludeExternalEvaluation
-	SetInternalValue(val *AccessGroupIncludeExternalEvaluation)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeysUrl() *string
 	SetKeysUrl(val *string)
 	KeysUrlInput() *string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference) InternalValue() *AccessGroupIncludeExternalEvaluation {
-	var returns *AccessGroupIncludeExternalEvaluation
+func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference) Terrafor
 }
 
 
-func NewAccessGroupIncludeExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessGroupIncludeExternalEvaluationOutputReference {
+func NewAccessGroupIncludeExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupIncludeExternalEvaluationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAccessGroupIncludeExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAccessGroupIncludeExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAccessGroupIncludeExternalEvaluationOutputReference_Override(a AccessGroupIncludeExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAccessGroupIncludeExternalEvaluationOutputReference_Override(a AccessGroupIncludeExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -255,7 +255,7 @@ func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference)SetEvalua
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference)SetInternalValue(val *AccessGroupIncludeExternalEvaluation) {
+func (j *jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

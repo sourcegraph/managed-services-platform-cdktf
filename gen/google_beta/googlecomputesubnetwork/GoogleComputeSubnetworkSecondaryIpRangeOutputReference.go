@@ -71,7 +71,6 @@ type GoogleComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpCidrRange()
-	ResetRangeName()
 	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -524,14 +523,6 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpCidrRange",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) ResetRangeName() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetRangeName",
 		nil, // no parameters
 	)
 }

@@ -9,14 +9,16 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryissuealert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/issue_alert sentry_issue_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert}.
 type DataSentryIssueAlert interface {
 	cdktf.TerraformDataSource
 	ActionMatch() *string
 	Actions() *string
+	ActionsV2() DataSentryIssueAlertActionsV2List
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Conditions() *string
+	ConditionsV2() DataSentryIssueAlertConditionsV2List
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,6 +32,7 @@ type DataSentryIssueAlert interface {
 	Environment() *string
 	FilterMatch() *string
 	Filters() *string
+	FiltersV2() DataSentryIssueAlertFiltersV2List
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,16 @@ func (j *jsiiProxy_DataSentryIssueAlert) Actions() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryIssueAlert) ActionsV2() DataSentryIssueAlertActionsV2List {
+	var returns DataSentryIssueAlertActionsV2List
+	_jsii_.Get(
+		j,
+		"actionsV2",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryIssueAlert) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -150,6 +163,16 @@ func (j *jsiiProxy_DataSentryIssueAlert) Conditions() *string {
 	_jsii_.Get(
 		j,
 		"conditions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryIssueAlert) ConditionsV2() DataSentryIssueAlertConditionsV2List {
+	var returns DataSentryIssueAlertConditionsV2List
+	_jsii_.Get(
+		j,
+		"conditionsV2",
 		&returns,
 	)
 	return returns
@@ -210,6 +233,16 @@ func (j *jsiiProxy_DataSentryIssueAlert) Filters() *string {
 	_jsii_.Get(
 		j,
 		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryIssueAlert) FiltersV2() DataSentryIssueAlertFiltersV2List {
+	var returns DataSentryIssueAlertFiltersV2List
+	_jsii_.Get(
+		j,
+		"filtersV2",
 		&returns,
 	)
 	return returns
@@ -406,7 +439,7 @@ func (j *jsiiProxy_DataSentryIssueAlert) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
 func NewDataSentryIssueAlert(scope constructs.Construct, id *string, config *DataSentryIssueAlertConfig) DataSentryIssueAlert {
 	_init_.Initialize()
 
@@ -424,7 +457,7 @@ func NewDataSentryIssueAlert(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
 func NewDataSentryIssueAlert_Override(d DataSentryIssueAlert, scope constructs.Construct, id *string, config *DataSentryIssueAlertConfig) {
 	_init_.Initialize()
 

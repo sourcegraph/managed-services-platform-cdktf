@@ -21,11 +21,11 @@ type RegistryGpgKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ASCII-armored representation of the GPG key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key#ascii_armor RegistryGpgKey#ascii_armor}
 	AsciiArmor *string `field:"required" json:"asciiArmor" yaml:"asciiArmor"`
 	// Name of the organization. If omitted, organization must be defined in the provider config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/registry_gpg_key#organization RegistryGpgKey#organization}
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 }
 

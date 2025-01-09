@@ -33,6 +33,9 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	GroupMemberDeprovision() interface{}
 	SetGroupMemberDeprovision(val interface{})
 	GroupMemberDeprovisionInput() interface{}
+	IdentityUpdateBehavior() *string
+	SetIdentityUpdateBehavior(val *string)
+	IdentityUpdateBehaviorInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	SeatDeprovision() interface{}
@@ -78,6 +81,7 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
 	ResetGroupMemberDeprovision()
+	ResetIdentityUpdateBehavior()
 	ResetSeatDeprovision()
 	ResetSecret()
 	ResetUserDeprovision()
@@ -171,6 +175,26 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) GroupMemberD
 	_jsii_.Get(
 		j,
 		"groupMemberDeprovisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) IdentityUpdateBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityUpdateBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) IdentityUpdateBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityUpdateBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference)SetGroupMembe
 	_jsii_.Set(
 		j,
 		"groupMemberDeprovision",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference)SetIdentityUpdateBehavior(val *string) {
+	if err := j.validateSetIdentityUpdateBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityUpdateBehavior",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) ResetGroupMe
 	_jsii_.InvokeVoid(
 		a,
 		"resetGroupMemberDeprovision",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) ResetIdentityUpdateBehavior() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityUpdateBehavior",
 		nil, // no parameters
 	)
 }

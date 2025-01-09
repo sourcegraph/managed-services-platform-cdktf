@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/project/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project sentry_project}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project sentry_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Color() *string
+	ClientSecurity() ProjectClientSecurityOutputReference
+	ClientSecurityInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -42,6 +43,11 @@ type Project interface {
 	SetDigestsMinDelay(val *float64)
 	DigestsMinDelayInput() *float64
 	Features() *[]*string
+	Filters() ProjectFiltersOutputReference
+	FiltersInput() interface{}
+	FingerprintingRules() *string
+	SetFingerprintingRules(val *string)
+	FingerprintingRulesInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,12 +56,11 @@ type Project interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupingEnhancements() *string
+	SetGroupingEnhancements(val *string)
+	GroupingEnhancementsInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
-	IsBookmarked() cdktf.IResolvable
-	IsPublic() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,7 +76,6 @@ type Project interface {
 	Platform() *string
 	SetPlatform(val *string)
 	PlatformInput() *string
-	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -88,10 +92,6 @@ type Project interface {
 	Slug() *string
 	SetSlug(val *string)
 	SlugInput() *string
-	Status() *string
-	Team() *string
-	SetTeam(val *string)
-	TeamInput() *string
 	Teams() *[]*string
 	SetTeams(val *[]*string)
 	TeamsInput() *[]*string
@@ -144,19 +144,22 @@ type Project interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientSecurity(value *ProjectClientSecurity)
+	PutFilters(value *ProjectFilters)
+	ResetClientSecurity()
 	ResetDefaultKey()
 	ResetDefaultRules()
 	ResetDigestsMaxDelay()
 	ResetDigestsMinDelay()
-	ResetId()
+	ResetFilters()
+	ResetFingerprintingRules()
+	ResetGroupingEnhancements()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatform()
 	ResetResolveAge()
 	ResetSlug()
-	ResetTeam()
-	ResetTeams()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -185,11 +188,21 @@ func (j *jsiiProxy_Project) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Project) Color() *string {
-	var returns *string
+func (j *jsiiProxy_Project) ClientSecurity() ProjectClientSecurityOutputReference {
+	var returns ProjectClientSecurityOutputReference
 	_jsii_.Get(
 		j,
-		"color",
+		"clientSecurity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) ClientSecurityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clientSecurityInput",
 		&returns,
 	)
 	return returns
@@ -325,6 +338,46 @@ func (j *jsiiProxy_Project) Features() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) Filters() ProjectFiltersOutputReference {
+	var returns ProjectFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) FiltersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filtersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) FingerprintingRules() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fingerprintingRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) FingerprintingRulesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fingerprintingRulesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -355,6 +408,26 @@ func (j *jsiiProxy_Project) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) GroupingEnhancements() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupingEnhancements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) GroupingEnhancementsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupingEnhancementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,41 +438,11 @@ func (j *jsiiProxy_Project) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Project) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Project) InternalId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"internalId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) IsBookmarked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"isBookmarked",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) IsPublic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"isPublic",
 		&returns,
 	)
 	return returns
@@ -485,16 +528,6 @@ func (j *jsiiProxy_Project) PlatformInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Project) ProjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Project) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -565,36 +598,6 @@ func (j *jsiiProxy_Project) SlugInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Project) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) Team() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"team",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) TeamInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"teamInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Project) Teams() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -646,7 +649,7 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project sentry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project sentry_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -664,7 +667,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/project sentry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/project sentry_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -749,6 +752,17 @@ func (j *jsiiProxy_Project)SetDigestsMinDelay(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Project)SetFingerprintingRules(val *string) {
+	if err := j.validateSetFingerprintingRulesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fingerprintingRules",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -757,13 +771,13 @@ func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_Project)SetGroupingEnhancements(val *string) {
+	if err := j.validateSetGroupingEnhancementsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"groupingEnhancements",
 		val,
 	)
 }
@@ -849,17 +863,6 @@ func (j *jsiiProxy_Project)SetSlug(val *string) {
 	_jsii_.Set(
 		j,
 		"slug",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Project)SetTeam(val *string) {
-	if err := j.validateSetTeamParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"team",
 		val,
 	)
 }
@@ -1228,6 +1231,36 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_Project) PutClientSecurity(value *ProjectClientSecurity) {
+	if err := p.validatePutClientSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putClientSecurity",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_Project) PutFilters(value *ProjectFilters) {
+	if err := p.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_Project) ResetClientSecurity() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetClientSecurity",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_Project) ResetDefaultKey() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1260,10 +1293,26 @@ func (p *jsiiProxy_Project) ResetDigestsMinDelay() {
 	)
 }
 
-func (p *jsiiProxy_Project) ResetId() {
+func (p *jsiiProxy_Project) ResetFilters() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetId",
+		"resetFilters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetFingerprintingRules() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFingerprintingRules",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetGroupingEnhancements() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupingEnhancements",
 		nil, // no parameters
 	)
 }
@@ -1296,22 +1345,6 @@ func (p *jsiiProxy_Project) ResetSlug() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSlug",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Project) ResetTeam() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetTeam",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Project) ResetTeams() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetTeams",
 		nil, // no parameters
 	)
 }

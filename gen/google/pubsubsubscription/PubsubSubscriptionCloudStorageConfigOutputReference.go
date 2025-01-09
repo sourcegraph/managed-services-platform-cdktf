@@ -30,6 +30,9 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilenameDatetimeFormat() *string
+	SetFilenameDatetimeFormat(val *string)
+	FilenameDatetimeFormatInput() *string
 	FilenamePrefix() *string
 	SetFilenamePrefix(val *string)
 	FilenamePrefixInput() *string
@@ -46,6 +49,12 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	MaxDuration() *string
 	SetMaxDuration(val *string)
 	MaxDurationInput() *string
+	MaxMessages() *float64
+	SetMaxMessages(val *float64)
+	MaxMessagesInput() *float64
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -81,10 +90,13 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAvroConfig(value *PubsubSubscriptionCloudStorageConfigAvroConfig)
 	ResetAvroConfig()
+	ResetFilenameDatetimeFormat()
 	ResetFilenamePrefix()
 	ResetFilenameSuffix()
 	ResetMaxBytes()
 	ResetMaxDuration()
+	ResetMaxMessages()
+	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +177,26 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormatInput",
 		&returns,
 	)
 	return returns
@@ -270,6 +302,46 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxDurat
 	return returns
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxMessages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxMessagesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessagesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -361,6 +433,17 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenameDatetimeFormat(val *string) {
+	if err := j.validateSetFilenameDatetimeFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filenameDatetimeFormat",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenamePrefix(val *string) {
 	if err := j.validateSetFilenamePrefixParameters(val); err != nil {
 		panic(err)
@@ -412,6 +495,28 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxDur
 	_jsii_.Set(
 		j,
 		"maxDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxMessages(val *float64) {
+	if err := j.validateSetMaxMessagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxMessages",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -643,6 +748,14 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetAvr
 	)
 }
 
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetFilenameDatetimeFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFilenameDatetimeFormat",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetFilenamePrefix() {
 	_jsii_.InvokeVoid(
 		p,
@@ -671,6 +784,22 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetMax
 	_jsii_.InvokeVoid(
 		p,
 		"resetMaxDuration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetMaxMessages() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMaxMessages",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

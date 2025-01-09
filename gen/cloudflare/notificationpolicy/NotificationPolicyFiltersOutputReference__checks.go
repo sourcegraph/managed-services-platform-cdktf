@@ -98,6 +98,30 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetActionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffectedComponentsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAirportCodeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -179,6 +203,22 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEnabledP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEnvironmentParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventSourceParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -195,7 +235,23 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventTyp
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetGroupByParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetHealthCheckIdParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetIncidentImpactParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,6 +299,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewHealt
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewStatusParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPacketsPerSecondParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -267,6 +331,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProductP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProjectIdParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProtocolParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -276,6 +348,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProtocol
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetRequestsPerSecondParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetSelectorsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,6 +395,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHo
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetIpParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetZoneNameParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -332,6 +420,30 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTunnelIdParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTunnelNameParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetWhereParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

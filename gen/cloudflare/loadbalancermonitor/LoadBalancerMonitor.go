@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/loadbalancermonitor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,6 +24,12 @@ type LoadBalancerMonitor interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConsecutiveDown() *float64
+	SetConsecutiveDown(val *float64)
+	ConsecutiveDownInput() *float64
+	ConsecutiveUp() *float64
+	SetConsecutiveUp(val *float64)
+	ConsecutiveUpInput() *float64
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -152,6 +158,8 @@ type LoadBalancerMonitor interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHeader(value interface{})
 	ResetAllowInsecure()
+	ResetConsecutiveDown()
+	ResetConsecutiveUp()
 	ResetDescription()
 	ResetExpectedBody()
 	ResetExpectedCodes()
@@ -242,6 +250,46 @@ func (j *jsiiProxy_LoadBalancerMonitor) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) ConsecutiveDown() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveDown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) ConsecutiveDownInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveDownInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) ConsecutiveUp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveUp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) ConsecutiveUpInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consecutiveUpInput",
 		&returns,
 	)
 	return returns
@@ -688,7 +736,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) LoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -706,7 +754,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) {
 	_init_.Initialize()
 
@@ -746,6 +794,28 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor)SetConsecutiveDown(val *float64) {
+	if err := j.validateSetConsecutiveDownParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consecutiveDown",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor)SetConsecutiveUp(val *float64) {
+	if err := j.validateSetConsecutiveUpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consecutiveUp",
 		val,
 	)
 }
@@ -1318,6 +1388,22 @@ func (l *jsiiProxy_LoadBalancerMonitor) ResetAllowInsecure() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAllowInsecure",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerMonitor) ResetConsecutiveDown() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConsecutiveDown",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerMonitor) ResetConsecutiveUp() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConsecutiveUp",
 		nil, // no parameters
 	)
 }

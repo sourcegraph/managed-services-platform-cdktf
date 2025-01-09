@@ -72,6 +72,10 @@ func (t *jsiiProxy_TeamsList) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (t *jsiiProxy_TeamsList) validatePutItemsWithDescriptionParameters(value interface{}) error {
+	return nil
+}
+
 func validateTeamsList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

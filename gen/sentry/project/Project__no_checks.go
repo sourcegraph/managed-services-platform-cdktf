@@ -72,6 +72,14 @@ func (p *jsiiProxy_Project) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (p *jsiiProxy_Project) validatePutClientSecurityParameters(value *ProjectClientSecurity) error {
+	return nil
+}
+
+func (p *jsiiProxy_Project) validatePutFiltersParameters(value *ProjectFilters) error {
+	return nil
+}
+
 func validateProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,7 +120,11 @@ func (j *jsiiProxy_Project) validateSetDigestsMinDelayParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_Project) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_Project) validateSetFingerprintingRulesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Project) validateSetGroupingEnhancementsParameters(val *string) error {
 	return nil
 }
 
@@ -141,10 +153,6 @@ func (j *jsiiProxy_Project) validateSetResolveAgeParameters(val *float64) error 
 }
 
 func (j *jsiiProxy_Project) validateSetSlugParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Project) validateSetTeamParameters(val *string) error {
 	return nil
 }
 

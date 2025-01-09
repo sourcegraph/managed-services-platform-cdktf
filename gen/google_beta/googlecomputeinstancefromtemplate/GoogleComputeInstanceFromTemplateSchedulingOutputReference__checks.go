@@ -143,6 +143,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -166,6 +177,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) v
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -229,6 +248,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) v
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) validateSetHostErrorTimeoutSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

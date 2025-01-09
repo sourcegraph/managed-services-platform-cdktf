@@ -112,6 +112,14 @@ func (j *jsiiProxy_Workspace) validateSetAutoApplyRunTriggerParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_Workspace) validateSetAutoDestroyActivityDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetAutoDestroyAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Workspace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -141,6 +149,10 @@ func (j *jsiiProxy_Workspace) validateSetGlobalRemoteStateParameters(val interfa
 }
 
 func (j *jsiiProxy_Workspace) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetIgnoreAdditionalTagNamesParameters(val interface{}) error {
 	return nil
 }
 

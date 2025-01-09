@@ -11,7 +11,7 @@ import (
 
 // Defines an ProjectsIam based on a Terraform module.
 //
-// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/iam/google/7.6.0/submodules/projects_iam terraform-google-modules/iam/google//modules/projects_iam}
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/iam/google/8.0.0/submodules/projects_iam terraform-google-modules/iam/google//modules/projects_iam}
 type ProjectsIam interface {
 	cdktf.TerraformModule
 	Bindings() *map[string]*[]*string

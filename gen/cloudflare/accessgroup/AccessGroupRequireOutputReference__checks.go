@@ -90,6 +90,37 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_AccessGroupRequireOutputReference) validatePutAuthContextParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccessGroupRequireAuthContext:
+		value := value.(*[]*AccessGroupRequireAuthContext)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccessGroupRequireAuthContext:
+		value_ := value.([]*AccessGroupRequireAuthContext)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupRequireAuthContext; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccessGroupRequireOutputReference) validatePutAzureParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -121,12 +152,32 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) validatePutAzureParameters
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) validatePutExternalEvaluationParameters(value *AccessGroupRequireExternalEvaluation) error {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccessGroupRequireExternalEvaluation:
+		value := value.(*[]*AccessGroupRequireExternalEvaluation)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccessGroupRequireExternalEvaluation:
+		value_ := value.([]*AccessGroupRequireExternalEvaluation)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupRequireExternalEvaluation; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -320,6 +371,14 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetCommonNameParam
 	return nil
 }
 
+func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetCommonNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -402,6 +461,14 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetEmailParameters
 }
 
 func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetEmailDomainParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessGroupRequireOutputReference) validateSetEmailListParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

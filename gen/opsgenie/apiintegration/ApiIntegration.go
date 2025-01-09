@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/apiintegration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/api_integration opsgenie_api_integration}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration opsgenie_api_integration}.
 type ApiIntegration interface {
 	cdktf.TerraformResource
+	AllowConfigurationAccess() interface{}
+	SetAllowConfigurationAccess(val interface{})
+	AllowConfigurationAccessInput() interface{}
 	AllowWriteAccess() interface{}
 	SetAllowWriteAccess(val interface{})
 	AllowWriteAccessInput() interface{}
@@ -135,6 +138,7 @@ type ApiIntegration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutResponders(value interface{})
+	ResetAllowConfigurationAccess()
 	ResetAllowWriteAccess()
 	ResetEnabled()
 	ResetHeaders()
@@ -164,6 +168,26 @@ type ApiIntegration interface {
 // The jsii proxy struct for ApiIntegration
 type jsiiProxy_ApiIntegration struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowConfigurationAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowConfigurationAccessInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApiIntegration) AllowWriteAccess() interface{} {
@@ -557,7 +581,7 @@ func (j *jsiiProxy_ApiIntegration) WebhookUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/api_integration opsgenie_api_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration opsgenie_api_integration} Resource.
 func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegrationConfig) ApiIntegration {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/api_integration opsgenie_api_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration opsgenie_api_integration} Resource.
 func NewApiIntegration_Override(a ApiIntegration, scope constructs.Construct, id *string, config *ApiIntegrationConfig) {
 	_init_.Initialize()
 
@@ -583,6 +607,17 @@ func NewApiIntegration_Override(a ApiIntegration, scope constructs.Construct, id
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ApiIntegration)SetAllowConfigurationAccess(val interface{}) {
+	if err := j.validateSetAllowConfigurationAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowConfigurationAccess",
+		val,
 	)
 }
 
@@ -1125,6 +1160,14 @@ func (a *jsiiProxy_ApiIntegration) PutResponders(value interface{}) {
 		a,
 		"putResponders",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiIntegration) ResetAllowConfigurationAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowConfigurationAccess",
+		nil, // no parameters
 	)
 }
 

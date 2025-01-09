@@ -204,6 +204,39 @@ func (r *jsiiProxy_RedisCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutCrossClusterReplicationConfigParameters(value *RedisClusterCrossClusterReplicationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *RedisClusterMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutPersistenceConfigParameters(value *RedisClusterPersistenceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -236,6 +269,17 @@ func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface
 }
 
 func (r *jsiiProxy_RedisCluster) validatePutTimeoutsParameters(value *RedisClusterTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutZoneDistributionConfigParameters(value *RedisClusterZoneDistributionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -378,6 +422,26 @@ func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val interface{}) err
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/cloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,9 @@ type CloudRunV2Service interface {
 	SetCustomAudiences(val *[]*string)
 	CustomAudiencesInput() *[]*string
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,6 +71,9 @@ type CloudRunV2Service interface {
 	Ingress() *string
 	SetIngress(val *string)
 	IngressInput() *string
+	InvokerIamDisabled() interface{}
+	SetInvokerIamDisabled(val interface{})
+	InvokerIamDisabledInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -104,6 +110,8 @@ type CloudRunV2Service interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	Scaling() CloudRunV2ServiceScalingOutputReference
+	ScalingInput() *CloudRunV2ServiceScaling
 	Template() CloudRunV2ServiceTemplateOutputReference
 	TemplateInput() *CloudRunV2ServiceTemplate
 	TerminalCondition() CloudRunV2ServiceTerminalConditionList
@@ -122,6 +130,7 @@ type CloudRunV2Service interface {
 	Uid() *string
 	UpdateTime() *string
 	Uri() *string
+	Urls() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -166,6 +175,7 @@ type CloudRunV2Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBinaryAuthorization(value *CloudRunV2ServiceBinaryAuthorization)
+	PutScaling(value *CloudRunV2ServiceScaling)
 	PutTemplate(value *CloudRunV2ServiceTemplate)
 	PutTimeouts(value *CloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
@@ -174,15 +184,18 @@ type CloudRunV2Service interface {
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
+	ResetInvokerIamDisabled()
 	ResetLabels()
 	ResetLaunchStage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetScaling()
 	ResetTimeouts()
 	ResetTraffic()
 	SynthesizeAttributes() *map[string]interface{}
@@ -383,6 +396,26 @@ func (j *jsiiProxy_CloudRunV2Service) DeleteTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -528,6 +561,26 @@ func (j *jsiiProxy_CloudRunV2Service) IngressInput() *string {
 	_jsii_.Get(
 		j,
 		"ingressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabledInput",
 		&returns,
 	)
 	return returns
@@ -733,6 +786,26 @@ func (j *jsiiProxy_CloudRunV2Service) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) Scaling() CloudRunV2ServiceScalingOutputReference {
+	var returns CloudRunV2ServiceScalingOutputReference
+	_jsii_.Get(
+		j,
+		"scaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) ScalingInput() *CloudRunV2ServiceScaling {
+	var returns *CloudRunV2ServiceScaling
+	_jsii_.Get(
+		j,
+		"scalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) Template() CloudRunV2ServiceTemplateOutputReference {
 	var returns CloudRunV2ServiceTemplateOutputReference
 	_jsii_.Get(
@@ -883,8 +956,18 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -902,7 +985,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -979,6 +1062,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_CloudRunV2Service)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudRunV2Service)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1024,6 +1118,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetIngress(val *string) {
 	_jsii_.Set(
 		j,
 		"ingress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
+	if err := j.validateSetInvokerIamDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invokerIamDisabled",
 		val,
 	)
 }
@@ -1477,6 +1582,17 @@ func (c *jsiiProxy_CloudRunV2Service) PutBinaryAuthorization(value *CloudRunV2Se
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2Service) PutScaling(value *CloudRunV2ServiceScaling) {
+	if err := c.validatePutScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putScaling",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2Service) PutTemplate(value *CloudRunV2ServiceTemplate) {
 	if err := c.validatePutTemplateParameters(value); err != nil {
 		panic(err)
@@ -1550,6 +1666,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetCustomAudiences() {
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2Service) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1570,6 +1694,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetIngress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetInvokerIamDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInvokerIamDisabled",
 		nil, // no parameters
 	)
 }
@@ -1602,6 +1734,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetScaling() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetScaling",
 		nil, // no parameters
 	)
 }

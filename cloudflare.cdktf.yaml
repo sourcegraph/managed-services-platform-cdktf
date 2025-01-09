@@ -3,7 +3,7 @@ name: cloudflare
 provider:
   # https://registry.terraform.io/providers/cloudflare/cloudflare/latest
   source: registry.terraform.io/cloudflare/cloudflare
-  version: "4.12.0"
+  version: "4.50.0"
 
 target:
   language: go

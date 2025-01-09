@@ -52,6 +52,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutConfid
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutContainerdConfigParameters(value *ContainerNodePoolNodeConfigContainerdConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLocalS
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }
@@ -197,6 +205,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetServic
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
 	return nil
 }
 

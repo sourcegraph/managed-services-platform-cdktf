@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/project/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project tfe_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project tfe_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type Project interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -110,6 +113,7 @@ type Project interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetId()
 	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_Project) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -354,7 +378,7 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project tfe_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project tfe_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -372,7 +396,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/project tfe_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project tfe_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -409,6 +433,17 @@ func (j *jsiiProxy_Project)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -834,6 +869,14 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_Project) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

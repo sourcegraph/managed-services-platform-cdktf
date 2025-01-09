@@ -72,7 +72,15 @@ func (g *jsiiProxy_GoogleBigqueryTable) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutBiglakeConfigurationParameters(value *GoogleBigqueryTableBiglakeConfiguration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutEncryptionConfigurationParameters(value *GoogleBigqueryTableEncryptionConfiguration) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *GoogleBigqueryTableExternalCatalogTableOptions) error {
 	return nil
 }
 
@@ -117,10 +125,6 @@ func validateGoogleBigqueryTable_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateGoogleBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_GoogleBigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
 	return nil
 }
 

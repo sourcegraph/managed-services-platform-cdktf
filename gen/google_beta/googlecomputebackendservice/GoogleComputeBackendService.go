@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -79,6 +79,9 @@ type GoogleComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,9 +128,14 @@ type GoogleComputeBackendService interface {
 	SecuritySettings() GoogleComputeBackendServiceSecuritySettingsOutputReference
 	SecuritySettingsInput() *GoogleComputeBackendServiceSecuritySettings
 	SelfLink() *string
+	ServiceLbPolicy() *string
+	SetServiceLbPolicy(val *string)
+	ServiceLbPolicyInput() *string
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *GoogleComputeBackendServiceStrongSessionAffinityCookie
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -191,6 +199,7 @@ type GoogleComputeBackendService interface {
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
+	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
@@ -207,6 +216,7 @@ type GoogleComputeBackendService interface {
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
@@ -220,7 +230,9 @@ type GoogleComputeBackendService interface {
 	ResetProtocol()
 	ResetSecurityPolicy()
 	ResetSecuritySettings()
+	ResetServiceLbPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -651,6 +663,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -931,6 +963,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) ServiceLbPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceLbPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ServiceLbPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceLbPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) SessionAffinity() *string {
 	var returns *string
 	_jsii_.Get(
@@ -946,6 +998,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) SessionAffinityInput() *string {
 	_jsii_.Get(
 		j,
 		"sessionAffinityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) StrongSessionAffinityCookie() GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) StrongSessionAffinityCookieInput() *GoogleComputeBackendServiceStrongSessionAffinityCookie {
+	var returns *GoogleComputeBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
 		&returns,
 	)
 	return returns
@@ -1022,7 +1094,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1040,7 +1112,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1199,6 +1271,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1302,6 +1385,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetSecurityPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"securityPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetServiceLbPolicy(val *string) {
+	if err := j.validateSetServiceLbPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceLbPolicy",
 		val,
 	)
 }
@@ -1780,6 +1874,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutSecuritySettings(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie) {
+	if err := g.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStrongSessionAffinityCookie",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutTimeouts(value *GoogleComputeBackendServiceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1911,6 +2016,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAddressSelectionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetLoadBalancingScheme() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1999,10 +2112,26 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetSecuritySettings() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetServiceLbPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceLbPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

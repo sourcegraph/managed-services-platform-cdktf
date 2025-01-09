@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/organization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/organization tfe_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization tfe_organization}.
 type Organization interface {
 	cdktf.TerraformResource
+	AggregatedCommitStatusEnabled() interface{}
+	SetAggregatedCommitStatusEnabled(val interface{})
+	AggregatedCommitStatusEnabledInput() interface{}
 	AllowForceDeleteWorkspaces() interface{}
 	SetAllowForceDeleteWorkspaces(val interface{})
 	AllowForceDeleteWorkspacesInput() interface{}
@@ -86,6 +89,9 @@ type Organization interface {
 	SessionTimeoutMinutes() *float64
 	SetSessionTimeoutMinutes(val *float64)
 	SessionTimeoutMinutesInput() *float64
+	SpeculativePlanManagementEnabled() interface{}
+	SetSpeculativePlanManagementEnabled(val interface{})
+	SpeculativePlanManagementEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +141,7 @@ type Organization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAggregatedCommitStatusEnabled()
 	ResetAllowForceDeleteWorkspaces()
 	ResetAssessmentsEnforced()
 	ResetCollaboratorAuthPolicy()
@@ -147,6 +154,7 @@ type Organization interface {
 	ResetSendPassingStatusesForUntriggeredSpeculativePlans()
 	ResetSessionRememberMinutes()
 	ResetSessionTimeoutMinutes()
+	ResetSpeculativePlanManagementEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -163,6 +171,26 @@ type Organization interface {
 // The jsii proxy struct for Organization
 type jsiiProxy_Organization struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Organization) AggregatedCommitStatusEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregatedCommitStatusEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) AggregatedCommitStatusEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregatedCommitStatusEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Organization) AllowForceDeleteWorkspaces() interface{} {
@@ -525,6 +553,26 @@ func (j *jsiiProxy_Organization) SessionTimeoutMinutesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) SpeculativePlanManagementEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"speculativePlanManagementEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) SpeculativePlanManagementEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"speculativePlanManagementEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -556,7 +604,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/organization tfe_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization tfe_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -574,7 +622,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/organization tfe_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/organization tfe_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -582,6 +630,17 @@ func NewOrganization_Override(o Organization, scope constructs.Construct, id *st
 		"@cdktf/provider-tfe.organization.Organization",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetAggregatedCommitStatusEnabled(val interface{}) {
+	if err := j.validateSetAggregatedCommitStatusEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aggregatedCommitStatusEnabled",
+		val,
 	)
 }
 
@@ -770,6 +829,17 @@ func (j *jsiiProxy_Organization)SetSessionTimeoutMinutes(val *float64) {
 	_jsii_.Set(
 		j,
 		"sessionTimeoutMinutes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetSpeculativePlanManagementEnabled(val interface{}) {
+	if err := j.validateSetSpeculativePlanManagementEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"speculativePlanManagementEnabled",
 		val,
 	)
 }
@@ -1127,6 +1197,14 @@ func (o *jsiiProxy_Organization) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_Organization) ResetAggregatedCommitStatusEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAggregatedCommitStatusEnabled",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_Organization) ResetAllowForceDeleteWorkspaces() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1203,6 +1281,14 @@ func (o *jsiiProxy_Organization) ResetSessionTimeoutMinutes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSessionTimeoutMinutes",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetSpeculativePlanManagementEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSpeculativePlanManagementEnabled",
 		nil, // no parameters
 	)
 }

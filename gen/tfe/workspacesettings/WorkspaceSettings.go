@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/workspacesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_settings tfe_workspace_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings}.
 type WorkspaceSettings interface {
 	cdktf.TerraformResource
 	AgentPoolId() *string
@@ -42,6 +42,9 @@ type WorkspaceSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlobalRemoteState() interface{}
+	SetGlobalRemoteState(val interface{})
+	GlobalRemoteStateInput() interface{}
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -60,6 +63,9 @@ type WorkspaceSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteStateConsumerIds() *[]*string
+	SetRemoteStateConsumerIds(val *[]*string)
+	RemoteStateConsumerIdsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,9 +120,11 @@ type WorkspaceSettings interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAgentPoolId()
 	ResetExecutionMode()
+	ResetGlobalRemoteState()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRemoteStateConsumerIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -255,6 +263,26 @@ func (j *jsiiProxy_WorkspaceSettings) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceSettings) GlobalRemoteState() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"globalRemoteState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceSettings) GlobalRemoteStateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"globalRemoteStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceSettings) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -325,6 +353,26 @@ func (j *jsiiProxy_WorkspaceSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceSettings) RemoteStateConsumerIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"remoteStateConsumerIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceSettings) RemoteStateConsumerIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"remoteStateConsumerIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -376,7 +424,7 @@ func (j *jsiiProxy_WorkspaceSettings) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
 func NewWorkspaceSettings(scope constructs.Construct, id *string, config *WorkspaceSettingsConfig) WorkspaceSettings {
 	_init_.Initialize()
 
@@ -394,7 +442,7 @@ func NewWorkspaceSettings(scope constructs.Construct, id *string, config *Worksp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
 func NewWorkspaceSettings_Override(w WorkspaceSettings, scope constructs.Construct, id *string, config *WorkspaceSettingsConfig) {
 	_init_.Initialize()
 
@@ -465,6 +513,17 @@ func (j *jsiiProxy_WorkspaceSettings)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_WorkspaceSettings)SetGlobalRemoteState(val interface{}) {
+	if err := j.validateSetGlobalRemoteStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"globalRemoteState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkspaceSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -491,6 +550,17 @@ func (j *jsiiProxy_WorkspaceSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceSettings)SetRemoteStateConsumerIds(val *[]*string) {
+	if err := j.validateSetRemoteStateConsumerIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteStateConsumerIds",
 		val,
 	)
 }
@@ -875,10 +945,26 @@ func (w *jsiiProxy_WorkspaceSettings) ResetExecutionMode() {
 	)
 }
 
+func (w *jsiiProxy_WorkspaceSettings) ResetGlobalRemoteState() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetGlobalRemoteState",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkspaceSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceSettings) ResetRemoteStateConsumerIds() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRemoteStateConsumerIds",
 		nil, // no parameters
 	)
 }

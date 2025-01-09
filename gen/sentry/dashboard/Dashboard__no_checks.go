@@ -100,10 +100,6 @@ func (j *jsiiProxy_Dashboard) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Dashboard) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Dashboard) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

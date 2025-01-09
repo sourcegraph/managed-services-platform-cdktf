@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleStorageTransferJob) validatePutNotificationConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) validatePutReplicationSpecParameters(value *GoogleStorageTransferJobReplicationSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) validatePutScheduleParameters(value *GoogleStorageTransferJobSchedule) error {
 	return nil
 }

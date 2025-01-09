@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs opsgenie}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs opsgenie}.
 type OpsgenieProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -18,6 +18,15 @@ type OpsgenieProvider interface {
 	ApiKey() *string
 	SetApiKey(val *string)
 	ApiKeyInput() *string
+	ApiRetryCount() *float64
+	SetApiRetryCount(val *float64)
+	ApiRetryCountInput() *float64
+	ApiRetryWaitMax() *float64
+	SetApiRetryWaitMax(val *float64)
+	ApiRetryWaitMaxInput() *float64
+	ApiRetryWaitMin() *float64
+	SetApiRetryWaitMin(val *float64)
+	ApiRetryWaitMinInput() *float64
 	ApiUrl() *string
 	SetApiUrl(val *string)
 	ApiUrlInput() *string
@@ -47,6 +56,9 @@ type OpsgenieProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
+	ResetApiRetryCount()
+	ResetApiRetryWaitMax()
+	ResetApiRetryWaitMin()
 	ResetApiUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -104,6 +116,66 @@ func (j *jsiiProxy_OpsgenieProvider) ApiKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"apiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryWaitMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryWaitMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryWaitMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryWaitMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryWaitMin() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryWaitMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsgenieProvider) ApiRetryWaitMinInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"apiRetryWaitMinInput",
 		&returns,
 	)
 	return returns
@@ -230,7 +302,7 @@ func (j *jsiiProxy_OpsgenieProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs opsgenie} Resource.
 func NewOpsgenieProvider(scope constructs.Construct, id *string, config *OpsgenieProviderConfig) OpsgenieProvider {
 	_init_.Initialize()
 
@@ -248,7 +320,7 @@ func NewOpsgenieProvider(scope constructs.Construct, id *string, config *Opsgeni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs opsgenie} Resource.
 func NewOpsgenieProvider_Override(o OpsgenieProvider, scope constructs.Construct, id *string, config *OpsgenieProviderConfig) {
 	_init_.Initialize()
 
@@ -271,6 +343,30 @@ func (j *jsiiProxy_OpsgenieProvider)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsgenieProvider)SetApiRetryCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"apiRetryCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMax(val *float64) {
+	_jsii_.Set(
+		j,
+		"apiRetryWaitMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsgenieProvider)SetApiRetryWaitMin(val *float64) {
+	_jsii_.Set(
+		j,
+		"apiRetryWaitMin",
 		val,
 	)
 }
@@ -412,6 +508,30 @@ func (o *jsiiProxy_OpsgenieProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsgenieProvider) ResetApiRetryCount() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiRetryCount",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsgenieProvider) ResetApiRetryWaitMax() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiRetryWaitMax",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsgenieProvider) ResetApiRetryWaitMin() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiRetryWaitMin",
 		nil, // no parameters
 	)
 }

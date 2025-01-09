@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/tunnelconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/tunnel_config cloudflare_tunnel_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/tunnel_config cloudflare_tunnel_config}.
 type TunnelConfigA interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_TunnelConfigA) TunnelIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource.
 func NewTunnelConfigA(scope constructs.Construct, id *string, config *TunnelConfigAConfig) TunnelConfigA {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewTunnelConfigA(scope constructs.Construct, id *string, config *TunnelConf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/tunnel_config cloudflare_tunnel_config} Resource.
 func NewTunnelConfigA_Override(t TunnelConfigA, scope constructs.Construct, id *string, config *TunnelConfigAConfig) {
 	_init_.Initialize()
 

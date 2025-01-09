@@ -72,6 +72,10 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStore) validatePutDocumentProcessingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStore) validatePutTimeoutsParameters(value *DiscoveryEngineDataStoreTimeouts) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProjectParameters(val *s
 }
 
 func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetSkipDefaultSchemaCreationParameters(val interface{}) error {
 	return nil
 }
 

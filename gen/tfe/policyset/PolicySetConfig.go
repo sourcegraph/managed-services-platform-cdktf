@@ -19,34 +19,42 @@ type PolicySetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#name PolicySet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#name PolicySet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#description PolicySet#description}.
+	// Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#agent_enabled PolicySet#agent_enabled}
+	AgentEnabled interface{} `field:"optional" json:"agentEnabled" yaml:"agentEnabled"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#description PolicySet#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#global PolicySet#global}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#global PolicySet#global}.
 	Global interface{} `field:"optional" json:"global" yaml:"global"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#id PolicySet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#id PolicySet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#kind PolicySet#kind}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#kind PolicySet#kind}.
 	Kind *string `field:"optional" json:"kind" yaml:"kind"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#organization PolicySet#organization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#organization PolicySet#organization}.
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#overridable PolicySet#overridable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#overridable PolicySet#overridable}.
 	Overridable interface{} `field:"optional" json:"overridable" yaml:"overridable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#policies_path PolicySet#policies_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#policies_path PolicySet#policies_path}.
 	PoliciesPath *string `field:"optional" json:"policiesPath" yaml:"policiesPath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
 	PolicyIds *[]*string `field:"optional" json:"policyIds" yaml:"policyIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#slug PolicySet#slug}.
+	// The policy tool version to run the policy evaluation against.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#policy_tool_version PolicySet#policy_tool_version}
+	PolicyToolVersion *string `field:"optional" json:"policyToolVersion" yaml:"policyToolVersion"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#slug PolicySet#slug}.
 	Slug *map[string]*string `field:"optional" json:"slug" yaml:"slug"`
 	// vcs_repo block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#vcs_repo PolicySet#vcs_repo}
 	VcsRepo *PolicySetVcsRepo `field:"optional" json:"vcsRepo" yaml:"vcsRepo"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
 	WorkspaceIds *[]*string `field:"optional" json:"workspaceIds" yaml:"workspaceIds"`
 }
 

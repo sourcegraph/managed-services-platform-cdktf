@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutContainerdConfigParameters(value *GoogleContainerNodePoolNodeConfigContainerdConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }
@@ -205,6 +213,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
 	return nil
 }
 

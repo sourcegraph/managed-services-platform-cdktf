@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/filestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance}.
 type FilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,12 @@ type FilestoreInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionReason() *string
+	SetDeletionProtectionReason(val *string)
+	DeletionProtectionReasonInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -67,9 +73,14 @@ type FilestoreInstance interface {
 	NetworksInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	PerformanceConfig() FilestoreInstancePerformanceConfigOutputReference
+	PerformanceConfigInput() *FilestoreInstancePerformanceConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -140,7 +151,10 @@ type FilestoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFileShares(value *FilestoreInstanceFileShares)
 	PutNetworks(value interface{})
+	PutPerformanceConfig(value *FilestoreInstancePerformanceConfig)
 	PutTimeouts(value *FilestoreInstanceTimeouts)
+	ResetDeletionProtectionEnabled()
+	ResetDeletionProtectionReason()
 	ResetDescription()
 	ResetId()
 	ResetKmsKeyName()
@@ -149,7 +163,9 @@ type FilestoreInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformanceConfig()
 	ResetProject()
+	ResetProtocol()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -215,6 +231,46 @@ func (j *jsiiProxy_FilestoreInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionReasonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionReasonInput",
 		&returns,
 	)
 	return returns
@@ -460,6 +516,26 @@ func (j *jsiiProxy_FilestoreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreInstance) PerformanceConfig() FilestoreInstancePerformanceConfigOutputReference {
+	var returns FilestoreInstancePerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"performanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) PerformanceConfigInput() *FilestoreInstancePerformanceConfig {
+	var returns *FilestoreInstancePerformanceConfig
+	_jsii_.Get(
+		j,
+		"performanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +551,26 @@ func (j *jsiiProxy_FilestoreInstance) ProjectInput() *string {
 	_jsii_.Get(
 		j,
 		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
 		&returns,
 	)
 	return returns
@@ -611,7 +707,7 @@ func (j *jsiiProxy_FilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance(scope constructs.Construct, id *string, config *FilestoreInstanceConfig) FilestoreInstance {
 	_init_.Initialize()
 
@@ -629,7 +725,7 @@ func NewFilestoreInstance(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance_Override(f FilestoreInstance, scope constructs.Construct, id *string, config *FilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -658,6 +754,28 @@ func (j *jsiiProxy_FilestoreInstance)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetDeletionProtectionReason(val *string) {
+	if err := j.validateSetDeletionProtectionReasonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionReason",
 		val,
 	)
 }
@@ -762,6 +880,17 @@ func (j *jsiiProxy_FilestoreInstance)SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
 		val,
 	)
 }
@@ -1182,6 +1311,17 @@ func (f *jsiiProxy_FilestoreInstance) PutNetworks(value interface{}) {
 	)
 }
 
+func (f *jsiiProxy_FilestoreInstance) PutPerformanceConfig(value *FilestoreInstancePerformanceConfig) {
+	if err := f.validatePutPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FilestoreInstance) PutTimeouts(value *FilestoreInstanceTimeouts) {
 	if err := f.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1190,6 +1330,22 @@ func (f *jsiiProxy_FilestoreInstance) PutTimeouts(value *FilestoreInstanceTimeou
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetDeletionProtectionReason() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionProtectionReason",
+		nil, // no parameters
 	)
 }
 
@@ -1241,10 +1397,26 @@ func (f *jsiiProxy_FilestoreInstance) ResetOverrideLogicalId() {
 	)
 }
 
+func (f *jsiiProxy_FilestoreInstance) ResetPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPerformanceConfig",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FilestoreInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetProtocol",
 		nil, // no parameters
 	)
 }

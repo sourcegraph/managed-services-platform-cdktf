@@ -64,6 +64,10 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenameDatetimeFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenamePrefixParameters(val *string) error {
 	return nil
 }
@@ -81,6 +85,14 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 }
 
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetMaxDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetMaxMessagesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
 	return nil
 }
 

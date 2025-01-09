@@ -132,6 +132,14 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCustomAudiencesParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDefaultUriDisabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -141,6 +149,10 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIdParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIngressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetInvokerIamDisabledParameters(val interface{}) error {
 	return nil
 }
 

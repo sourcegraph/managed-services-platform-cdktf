@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/oauthclient/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/oauth_client tfe_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/oauth_client tfe_oauth_client}.
 type OauthClient interface {
 	cdktf.TerraformResource
+	AgentPoolId() *string
+	SetAgentPoolId(val *string)
+	AgentPoolIdInput() *string
 	ApiUrl() *string
 	SetApiUrl(val *string)
 	ApiUrlInput() *string
@@ -64,6 +67,9 @@ type OauthClient interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	OrganizationScoped() interface{}
+	SetOrganizationScoped(val interface{})
+	OrganizationScopedInput() interface{}
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -135,11 +141,13 @@ type OauthClient interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAgentPoolId()
 	ResetId()
 	ResetKey()
 	ResetName()
 	ResetOauthToken()
 	ResetOrganization()
+	ResetOrganizationScoped()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -162,6 +170,26 @@ type OauthClient interface {
 // The jsii proxy struct for OauthClient
 type jsiiProxy_OauthClient struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OauthClient) AgentPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentPoolId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthClient) AgentPoolIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentPoolIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OauthClient) ApiUrl() *string {
@@ -414,6 +442,26 @@ func (j *jsiiProxy_OauthClient) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OauthClient) OrganizationScoped() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"organizationScoped",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthClient) OrganizationScopedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"organizationScopedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OauthClient) PrivateKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -555,7 +603,7 @@ func (j *jsiiProxy_OauthClient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/oauth_client tfe_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/oauth_client tfe_oauth_client} Resource.
 func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientConfig) OauthClient {
 	_init_.Initialize()
 
@@ -573,7 +621,7 @@ func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/oauth_client tfe_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/oauth_client tfe_oauth_client} Resource.
 func NewOauthClient_Override(o OauthClient, scope constructs.Construct, id *string, config *OauthClientConfig) {
 	_init_.Initialize()
 
@@ -581,6 +629,17 @@ func NewOauthClient_Override(o OauthClient, scope constructs.Construct, id *stri
 		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OauthClient)SetAgentPoolId(val *string) {
+	if err := j.validateSetAgentPoolIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"agentPoolId",
+		val,
 	)
 }
 
@@ -706,6 +765,17 @@ func (j *jsiiProxy_OauthClient)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OauthClient)SetOrganizationScoped(val interface{}) {
+	if err := j.validateSetOrganizationScopedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"organizationScoped",
 		val,
 	)
 }
@@ -1126,6 +1196,14 @@ func (o *jsiiProxy_OauthClient) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OauthClient) ResetAgentPoolId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAgentPoolId",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OauthClient) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1162,6 +1240,14 @@ func (o *jsiiProxy_OauthClient) ResetOrganization() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthClient) ResetOrganizationScoped() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrganizationScoped",
 		nil, // no parameters
 	)
 }

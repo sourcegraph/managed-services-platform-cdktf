@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetActiveDirectoryParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetAllowAutoTieringParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetCapacityGibParameters(val *string) error {
 	return nil
 }
@@ -152,7 +156,15 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetServiceLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

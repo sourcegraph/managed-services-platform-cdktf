@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/grant/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/grant postgresql_grant}.
+// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant postgresql_grant}.
 type Grant interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_Grant) WithGrantOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/grant postgresql_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant postgresql_grant} Resource.
 func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.23.0-sg.2/docs/resources/grant postgresql_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/grant postgresql_grant} Resource.
 func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *GrantConfig) {
 	_init_.Initialize()
 

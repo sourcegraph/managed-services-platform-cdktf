@@ -72,6 +72,10 @@ func (b *jsiiProxy_BigqueryTable) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutBiglakeConfigurationParameters(value *BigqueryTableBiglakeConfiguration) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutEncryptionConfigurationParameters(value *BigqueryTableEncryptionConfiguration) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_BigqueryTable) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_BigqueryTable) validateSetRequirePartitionFilterParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryTable) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

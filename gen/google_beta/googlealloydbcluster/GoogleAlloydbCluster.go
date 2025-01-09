@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlealloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -87,11 +87,8 @@ type GoogleAlloydbCluster interface {
 	MaintenanceUpdatePolicyInput() *GoogleAlloydbClusterMaintenanceUpdatePolicy
 	MigrationSource() GoogleAlloydbClusterMigrationSourceList
 	Name() *string
-	Network() *string
-	SetNetwork(val *string)
 	NetworkConfig() GoogleAlloydbClusterNetworkConfigOutputReference
 	NetworkConfigInput() *GoogleAlloydbClusterNetworkConfig
-	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -105,6 +102,8 @@ type GoogleAlloydbCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscConfig() GoogleAlloydbClusterPscConfigOutputReference
+	PscConfigInput() *GoogleAlloydbClusterPscConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
@@ -115,6 +114,9 @@ type GoogleAlloydbCluster interface {
 	SecondaryConfig() GoogleAlloydbClusterSecondaryConfigOutputReference
 	SecondaryConfigInput() *GoogleAlloydbClusterSecondaryConfig
 	State() *string
+	SubscriptionType() *string
+	SetSubscriptionType(val *string)
+	SubscriptionTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -124,6 +126,7 @@ type GoogleAlloydbCluster interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleAlloydbClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrialMetadata() GoogleAlloydbClusterTrialMetadataList
 	Uid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -174,6 +177,7 @@ type GoogleAlloydbCluster interface {
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
 	PutMaintenanceUpdatePolicy(value *GoogleAlloydbClusterMaintenanceUpdatePolicy)
 	PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig)
+	PutPscConfig(value *GoogleAlloydbClusterPscConfig)
 	PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource)
 	PutSecondaryConfig(value *GoogleAlloydbClusterSecondaryConfig)
@@ -191,15 +195,16 @@ type GoogleAlloydbCluster interface {
 	ResetInitialUser()
 	ResetLabels()
 	ResetMaintenanceUpdatePolicy()
-	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscConfig()
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
+	ResetSubscriptionType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -679,16 +684,6 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbCluster) Network() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"network",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleAlloydbCluster) NetworkConfig() GoogleAlloydbClusterNetworkConfigOutputReference {
 	var returns GoogleAlloydbClusterNetworkConfigOutputReference
 	_jsii_.Get(
@@ -704,16 +699,6 @@ func (j *jsiiProxy_GoogleAlloydbCluster) NetworkConfigInput() *GoogleAlloydbClus
 	_jsii_.Get(
 		j,
 		"networkConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleAlloydbCluster) NetworkInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"networkInput",
 		&returns,
 	)
 	return returns
@@ -764,6 +749,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) PscConfig() GoogleAlloydbClusterPscConfigOutputReference {
+	var returns GoogleAlloydbClusterPscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) PscConfigInput() *GoogleAlloydbClusterPscConfig {
+	var returns *GoogleAlloydbClusterPscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
 		&returns,
 	)
 	return returns
@@ -859,6 +864,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) SubscriptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) SubscriptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -919,6 +944,16 @@ func (j *jsiiProxy_GoogleAlloydbCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) TrialMetadata() GoogleAlloydbClusterTrialMetadataList {
+	var returns GoogleAlloydbClusterTrialMetadataList
+	_jsii_.Get(
+		j,
+		"trialMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -930,7 +965,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -948,7 +983,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1118,17 +1153,6 @@ func (j *jsiiProxy_GoogleAlloydbCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbCluster)SetNetwork(val *string) {
-	if err := j.validateSetNetworkParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"network",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleAlloydbCluster)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -1155,6 +1179,17 @@ func (j *jsiiProxy_GoogleAlloydbCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster)SetSubscriptionType(val *string) {
+	if err := j.validateSetSubscriptionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionType",
 		val,
 	)
 }
@@ -1578,6 +1613,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutNetworkConfig(value *GoogleAlloydbCl
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutPscConfig(value *GoogleAlloydbClusterPscConfig) {
+	if err := g.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource) {
 	if err := g.validatePutRestoreBackupSourceParameters(value); err != nil {
 		panic(err)
@@ -1726,14 +1772,6 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetMaintenanceUpdatePolicy() {
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbCluster) ResetNetwork() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetNetwork",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleAlloydbCluster) ResetNetworkConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1758,6 +1796,14 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) ResetRestoreBackupSource() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1778,6 +1824,14 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetSecondaryConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecondaryConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetSubscriptionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubscriptionType",
 		nil, // no parameters
 	)
 }

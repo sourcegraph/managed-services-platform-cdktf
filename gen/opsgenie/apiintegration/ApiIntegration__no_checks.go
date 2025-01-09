@@ -92,6 +92,10 @@ func validateApiIntegration_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ApiIntegration) validateSetAllowConfigurationAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiIntegration) validateSetAllowWriteAccessParameters(val interface{}) error {
 	return nil
 }

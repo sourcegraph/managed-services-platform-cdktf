@@ -120,6 +120,10 @@ func (j *jsiiProxy_VariableSet) validateSetOrganizationParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_VariableSet) validateSetParentProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VariableSet) validateSetPriorityParameters(val interface{}) error {
 	return nil
 }

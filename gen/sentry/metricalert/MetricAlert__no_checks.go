@@ -96,6 +96,10 @@ func (j *jsiiProxy_MetricAlert) validateSetAggregateParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_MetricAlert) validateSetComparisonDeltaParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetricAlert) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -113,10 +117,6 @@ func (j *jsiiProxy_MetricAlert) validateSetEnvironmentParameters(val *string) er
 }
 
 func (j *jsiiProxy_MetricAlert) validateSetEventTypesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MetricAlert) validateSetIdParameters(val *string) error {
 	return nil
 }
 

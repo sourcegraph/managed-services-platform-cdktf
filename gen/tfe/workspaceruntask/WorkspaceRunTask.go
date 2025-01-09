@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/workspaceruntask/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_run_task tfe_workspace_run_task}.
 type WorkspaceRunTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type WorkspaceRunTask interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,6 +59,9 @@ type WorkspaceRunTask interface {
 	Stage() *string
 	SetStage(val *string)
 	StageInput() *string
+	Stages() *[]*string
+	SetStages(val *[]*string)
+	StagesInput() *[]*string
 	TaskId() *string
 	SetTaskId(val *string)
 	TaskIdInput() *string
@@ -116,11 +117,11 @@ type WorkspaceRunTask interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStage()
+	ResetStages()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -249,16 +250,6 @@ func (j *jsiiProxy_WorkspaceRunTask) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunTask) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkspaceRunTask) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -324,6 +315,26 @@ func (j *jsiiProxy_WorkspaceRunTask) StageInput() *string {
 	_jsii_.Get(
 		j,
 		"stageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceRunTask) Stages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceRunTask) StagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stagesInput",
 		&returns,
 	)
 	return returns
@@ -400,7 +411,7 @@ func (j *jsiiProxy_WorkspaceRunTask) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource.
 func NewWorkspaceRunTask(scope constructs.Construct, id *string, config *WorkspaceRunTaskConfig) WorkspaceRunTask {
 	_init_.Initialize()
 
@@ -418,7 +429,7 @@ func NewWorkspaceRunTask(scope constructs.Construct, id *string, config *Workspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_run_task tfe_workspace_run_task} Resource.
 func NewWorkspaceRunTask_Override(w WorkspaceRunTask, scope constructs.Construct, id *string, config *WorkspaceRunTaskConfig) {
 	_init_.Initialize()
 
@@ -478,17 +489,6 @@ func (j *jsiiProxy_WorkspaceRunTask)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunTask)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WorkspaceRunTask)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -526,6 +526,17 @@ func (j *jsiiProxy_WorkspaceRunTask)SetStage(val *string) {
 	_jsii_.Set(
 		j,
 		"stage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceRunTask)SetStages(val *[]*string) {
+	if err := j.validateSetStagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stages",
 		val,
 	)
 }
@@ -905,14 +916,6 @@ func (w *jsiiProxy_WorkspaceRunTask) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkspaceRunTask) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WorkspaceRunTask) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -925,6 +928,14 @@ func (w *jsiiProxy_WorkspaceRunTask) ResetStage() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetStage",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceRunTask) ResetStages() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStages",
 		nil, // no parameters
 	)
 }

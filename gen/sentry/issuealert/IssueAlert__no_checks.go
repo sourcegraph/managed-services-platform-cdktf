@@ -72,6 +72,18 @@ func (i *jsiiProxy_IssueAlert) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (i *jsiiProxy_IssueAlert) validatePutActionsV2Parameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validatePutConditionsV2Parameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IssueAlert) validatePutFiltersV2Parameters(value interface{}) error {
+	return nil
+}
+
 func validateIssueAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

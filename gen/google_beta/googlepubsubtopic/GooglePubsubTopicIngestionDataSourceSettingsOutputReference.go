@@ -12,6 +12,8 @@ type GooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 	AwsKinesisInput() *GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis
+	CloudStorage() GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
+	CloudStorageInput() *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +33,8 @@ type GooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GooglePubsubTopicIngestionDataSourceSettings
 	SetInternalValue(val *GooglePubsubTopicIngestionDataSourceSettings)
+	PlatformLogsSettings() GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference
+	PlatformLogsSettingsInput() *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +68,11 @@ type GooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsKinesis(value *GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis)
+	PutCloudStorage(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage)
+	PutPlatformLogsSettings(value *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)
 	ResetAwsKinesis()
+	ResetCloudStorage()
+	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -95,6 +103,26 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	_jsii_.Get(
 		j,
 		"awsKinesisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorage() GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference {
+	var returns GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
+	_jsii_.Get(
+		j,
+		"cloudStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorageInput() *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage {
+	var returns *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage
+	_jsii_.Get(
+		j,
+		"cloudStorageInput",
 		&returns,
 	)
 	return returns
@@ -145,6 +173,26 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettings() GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference {
+	var returns GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"platformLogsSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettingsInput() *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings {
+	var returns *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings
+	_jsii_.Get(
+		j,
+		"platformLogsSettingsInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +498,48 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PutCloudStorage(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage) {
+	if err := g.validatePutCloudStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCloudStorage",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PutPlatformLogsSettings(value *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings) {
+	if err := g.validatePutPlatformLogsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPlatformLogsSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) ResetAwsKinesis() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAwsKinesis",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) ResetCloudStorage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudStorage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) ResetPlatformLogsSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPlatformLogsSettings",
 		nil, // no parameters
 	)
 }

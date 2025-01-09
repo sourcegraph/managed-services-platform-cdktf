@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/project tfe_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/project tfe_project}.
 type DataTfeProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataTfeProject interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,6 +63,9 @@ type DataTfeProject interface {
 	WorkspaceIds() *[]*string
 	SetWorkspaceIds(val *[]*string)
 	WorkspaceIdsInput() *[]*string
+	WorkspaceNames() *[]*string
+	SetWorkspaceNames(val *[]*string)
+	WorkspaceNamesInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,6 +97,7 @@ type DataTfeProject interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWorkspaceIds()
+	ResetWorkspaceNames()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -147,6 +152,16 @@ func (j *jsiiProxy_DataTfeProject) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfeProject) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -332,8 +347,28 @@ func (j *jsiiProxy_DataTfeProject) WorkspaceIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataTfeProject) WorkspaceNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"workspaceNames",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/project tfe_project} Data Source.
+func (j *jsiiProxy_DataTfeProject) WorkspaceNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"workspaceNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/project tfe_project} Data Source.
 func NewDataTfeProject(scope constructs.Construct, id *string, config *DataTfeProjectConfig) DataTfeProject {
 	_init_.Initialize()
 
@@ -351,7 +386,7 @@ func NewDataTfeProject(scope constructs.Construct, id *string, config *DataTfePr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/project tfe_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/project tfe_project} Data Source.
 func NewDataTfeProject_Override(d DataTfeProject, scope constructs.Construct, id *string, config *DataTfeProjectConfig) {
 	_init_.Initialize()
 
@@ -448,6 +483,17 @@ func (j *jsiiProxy_DataTfeProject)SetWorkspaceIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"workspaceIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataTfeProject)SetWorkspaceNames(val *[]*string) {
+	if err := j.validateSetWorkspaceNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceNames",
 		val,
 	)
 }
@@ -765,6 +811,14 @@ func (d *jsiiProxy_DataTfeProject) ResetWorkspaceIds() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetWorkspaceIds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataTfeProject) ResetWorkspaceNames() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkspaceNames",
 		nil, // no parameters
 	)
 }

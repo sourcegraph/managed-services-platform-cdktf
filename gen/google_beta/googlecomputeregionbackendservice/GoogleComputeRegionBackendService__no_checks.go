@@ -108,6 +108,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutOutlierDetectio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutStrongSessionAffinityCookieParameters(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutSubsettingParameters(value *GoogleComputeRegionBackendServiceSubsetting) error {
 	return nil
 }
@@ -161,6 +165,10 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) validateSetHealthChecksPar
 }
 
 func (j *jsiiProxy_GoogleComputeRegionBackendService) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
 	return nil
 }
 

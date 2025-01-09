@@ -80,6 +80,10 @@ func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interf
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validatePutPerformanceConfigParameters(value *FilestoreInstancePerformanceConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validatePutTimeoutsParameters(value *FilestoreInstanceTimeouts) error {
 	return nil
 }
@@ -105,6 +109,14 @@ func (j *jsiiProxy_FilestoreInstance) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_FilestoreInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionReasonParameters(val *string) error {
 	return nil
 }
 
@@ -137,6 +149,10 @@ func (j *jsiiProxy_FilestoreInstance) validateSetNameParameters(val *string) err
 }
 
 func (j *jsiiProxy_FilestoreInstance) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetProtocolParameters(val *string) error {
 	return nil
 }
 

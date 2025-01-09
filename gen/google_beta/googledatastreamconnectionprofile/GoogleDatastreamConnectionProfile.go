@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledatastreamconnectionprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}.
 type GoogleDatastreamConnectionProfile interface {
 	cdktf.TerraformResource
 	BigqueryProfile() GoogleDatastreamConnectionProfileBigqueryProfileOutputReference
@@ -29,6 +29,9 @@ type GoogleDatastreamConnectionProfile interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateWithoutValidation() interface{}
+	SetCreateWithoutValidation(val interface{})
+	CreateWithoutValidationInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,6 +89,8 @@ type GoogleDatastreamConnectionProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SqlServerProfile() GoogleDatastreamConnectionProfileSqlServerProfileOutputReference
+	SqlServerProfileInput() *GoogleDatastreamConnectionProfileSqlServerProfile
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -145,8 +150,10 @@ type GoogleDatastreamConnectionProfile interface {
 	PutOracleProfile(value *GoogleDatastreamConnectionProfileOracleProfile)
 	PutPostgresqlProfile(value *GoogleDatastreamConnectionProfilePostgresqlProfile)
 	PutPrivateConnectivity(value *GoogleDatastreamConnectionProfilePrivateConnectivity)
+	PutSqlServerProfile(value *GoogleDatastreamConnectionProfileSqlServerProfile)
 	PutTimeouts(value *GoogleDatastreamConnectionProfileTimeouts)
 	ResetBigqueryProfile()
+	ResetCreateWithoutValidation()
 	ResetForwardSshConnectivity()
 	ResetGcsProfile()
 	ResetId()
@@ -159,6 +166,7 @@ type GoogleDatastreamConnectionProfile interface {
 	ResetPostgresqlProfile()
 	ResetPrivateConnectivity()
 	ResetProject()
+	ResetSqlServerProfile()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -253,6 +261,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) CreateWithoutValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) CreateWithoutValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidationInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +616,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) SqlServerProfile() GoogleDatastreamConnectionProfileSqlServerProfileOutputReference {
+	var returns GoogleDatastreamConnectionProfileSqlServerProfileOutputReference
+	_jsii_.Get(
+		j,
+		"sqlServerProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) SqlServerProfileInput() *GoogleDatastreamConnectionProfileSqlServerProfile {
+	var returns *GoogleDatastreamConnectionProfileSqlServerProfile
+	_jsii_.Get(
+		j,
+		"sqlServerProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -649,7 +697,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewGoogleDatastreamConnectionProfile(scope constructs.Construct, id *string, config *GoogleDatastreamConnectionProfileConfig) GoogleDatastreamConnectionProfile {
 	_init_.Initialize()
 
@@ -667,7 +715,7 @@ func NewGoogleDatastreamConnectionProfile(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewGoogleDatastreamConnectionProfile_Override(g GoogleDatastreamConnectionProfile, scope constructs.Construct, id *string, config *GoogleDatastreamConnectionProfileConfig) {
 	_init_.Initialize()
 
@@ -707,6 +755,17 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile)SetCreateWithoutValidation(val interface{}) {
+	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createWithoutValidation",
 		val,
 	)
 }
@@ -1242,6 +1301,17 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutPrivateConnectivity(val
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutSqlServerProfile(value *GoogleDatastreamConnectionProfileSqlServerProfile) {
+	if err := g.validatePutSqlServerProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSqlServerProfile",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutTimeouts(value *GoogleDatastreamConnectionProfileTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1257,6 +1327,14 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetBigqueryProfile() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigqueryProfile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetCreateWithoutValidation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateWithoutValidation",
 		nil, // no parameters
 	)
 }
@@ -1337,6 +1415,14 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetSqlServerProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSqlServerProfile",
 		nil, // no parameters
 	)
 }

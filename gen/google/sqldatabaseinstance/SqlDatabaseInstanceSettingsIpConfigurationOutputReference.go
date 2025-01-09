@@ -45,9 +45,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetworkInput() *string
 	PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	PscConfigInput() interface{}
-	RequireSsl() interface{}
-	SetRequireSsl(val interface{})
-	RequireSslInput() interface{}
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -91,7 +91,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
-	ResetRequireSsl()
+	ResetServerCaMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -278,21 +278,21 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ps
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSsl",
+		"serverCaMode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaModeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSslInput",
+		"serverCaModeInput",
 		&returns,
 	)
 	return returns
@@ -443,13 +443,13 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetRequireSsl(val interface{}) {
-	if err := j.validateSetRequireSslParameters(val); err != nil {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requireSsl",
+		"serverCaMode",
 		val,
 	)
 }
@@ -743,10 +743,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaMode() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetRequireSsl",
+		"resetServerCaMode",
 		nil, // no parameters
 	)
 }

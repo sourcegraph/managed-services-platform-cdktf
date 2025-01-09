@@ -9,15 +9,18 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetappvolume/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_netapp_volume google_netapp_volume}.
 type GoogleNetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
+	BackupConfig() GoogleNetappVolumeBackupConfigOutputReference
+	BackupConfigInput() *GoogleNetappVolumeBackupConfig
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ColdTierSizeGib() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -62,6 +65,9 @@ type GoogleNetappVolume interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LargeCapacity() interface{}
+	SetLargeCapacity(val interface{})
+	LargeCapacityInput() interface{}
 	LdapEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -71,6 +77,9 @@ type GoogleNetappVolume interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MountOptions() GoogleNetappVolumeMountOptionsList
+	MultipleEndpoints() interface{}
+	SetMultipleEndpoints(val interface{})
+	MultipleEndpointsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -94,6 +103,7 @@ type GoogleNetappVolume interface {
 	PsaRange() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaZone() *string
 	RestoreParameters() GoogleNetappVolumeRestoreParametersOutputReference
 	RestoreParametersInput() *GoogleNetappVolumeRestoreParameters
 	RestrictedActions() *[]*string
@@ -126,12 +136,15 @@ type GoogleNetappVolume interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TieringPolicy() GoogleNetappVolumeTieringPolicyOutputReference
+	TieringPolicyInput() *GoogleNetappVolumeTieringPolicy
 	Timeouts() GoogleNetappVolumeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UnixPermissions() *string
 	SetUnixPermissions(val *string)
 	UnixPermissionsInput() *string
 	UsedGib() *string
+	Zone() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -175,16 +188,21 @@ type GoogleNetappVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupConfig(value *GoogleNetappVolumeBackupConfig)
 	PutExportPolicy(value *GoogleNetappVolumeExportPolicy)
 	PutRestoreParameters(value *GoogleNetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *GoogleNetappVolumeSnapshotPolicy)
+	PutTieringPolicy(value *GoogleNetappVolumeTieringPolicy)
 	PutTimeouts(value *GoogleNetappVolumeTimeouts)
+	ResetBackupConfig()
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetExportPolicy()
 	ResetId()
 	ResetKerberosEnabled()
 	ResetLabels()
+	ResetLargeCapacity()
+	ResetMultipleEndpoints()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -195,6 +213,7 @@ type GoogleNetappVolume interface {
 	ResetSmbSettings()
 	ResetSnapshotDirectory()
 	ResetSnapshotPolicy()
+	ResetTieringPolicy()
 	ResetTimeouts()
 	ResetUnixPermissions()
 	SynthesizeAttributes() *map[string]interface{}
@@ -225,6 +244,26 @@ func (j *jsiiProxy_GoogleNetappVolume) ActiveDirectory() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) BackupConfig() GoogleNetappVolumeBackupConfigOutputReference {
+	var returns GoogleNetappVolumeBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"backupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) BackupConfigInput() *GoogleNetappVolumeBackupConfig {
+	var returns *GoogleNetappVolumeBackupConfig
+	_jsii_.Get(
+		j,
+		"backupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappVolume) CapacityGib() *string {
 	var returns *string
 	_jsii_.Get(
@@ -250,6 +289,16 @@ func (j *jsiiProxy_GoogleNetappVolume) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) ColdTierSizeGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coldTierSizeGib",
 		&returns,
 	)
 	return returns
@@ -495,6 +544,26 @@ func (j *jsiiProxy_GoogleNetappVolume) LabelsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) LargeCapacity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) LargeCapacityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappVolume) LdapEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -540,6 +609,26 @@ func (j *jsiiProxy_GoogleNetappVolume) MountOptions() GoogleNetappVolumeMountOpt
 	_jsii_.Get(
 		j,
 		"mountOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpoints() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpointsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -660,6 +749,16 @@ func (j *jsiiProxy_GoogleNetappVolume) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) ReplicaZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZone",
 		&returns,
 	)
 	return returns
@@ -895,6 +994,26 @@ func (j *jsiiProxy_GoogleNetappVolume) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) TieringPolicy() GoogleNetappVolumeTieringPolicyOutputReference {
+	var returns GoogleNetappVolumeTieringPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"tieringPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) TieringPolicyInput() *GoogleNetappVolumeTieringPolicy {
+	var returns *GoogleNetappVolumeTieringPolicy
+	_jsii_.Get(
+		j,
+		"tieringPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappVolume) Timeouts() GoogleNetappVolumeTimeoutsOutputReference {
 	var returns GoogleNetappVolumeTimeoutsOutputReference
 	_jsii_.Get(
@@ -945,8 +1064,18 @@ func (j *jsiiProxy_GoogleNetappVolume) UsedGib() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) GoogleNetappVolume {
 	_init_.Initialize()
 
@@ -964,7 +1093,7 @@ func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume_Override(g GoogleNetappVolume, scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1079,6 +1208,17 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLabels(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappVolume)SetLargeCapacity(val interface{}) {
+	if err := j.validateSetLargeCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"largeCapacity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1097,6 +1237,17 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappVolume)SetMultipleEndpoints(val interface{}) {
+	if err := j.validateSetMultipleEndpointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multipleEndpoints",
 		val,
 	)
 }
@@ -1583,6 +1734,17 @@ func (g *jsiiProxy_GoogleNetappVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) PutBackupConfig(value *GoogleNetappVolumeBackupConfig) {
+	if err := g.validatePutBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) PutExportPolicy(value *GoogleNetappVolumeExportPolicy) {
 	if err := g.validatePutExportPolicyParameters(value); err != nil {
 		panic(err)
@@ -1616,6 +1778,17 @@ func (g *jsiiProxy_GoogleNetappVolume) PutSnapshotPolicy(value *GoogleNetappVolu
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) PutTieringPolicy(value *GoogleNetappVolumeTieringPolicy) {
+	if err := g.validatePutTieringPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTieringPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) PutTimeouts(value *GoogleNetappVolumeTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1624,6 +1797,14 @@ func (g *jsiiProxy_GoogleNetappVolume) PutTimeouts(value *GoogleNetappVolumeTime
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupConfig",
+		nil, // no parameters
 	)
 }
 
@@ -1671,6 +1852,22 @@ func (g *jsiiProxy_GoogleNetappVolume) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetLargeCapacity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLargeCapacity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetMultipleEndpoints() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMultipleEndpoints",
 		nil, // no parameters
 	)
 }
@@ -1735,6 +1932,14 @@ func (g *jsiiProxy_GoogleNetappVolume) ResetSnapshotPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSnapshotPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetTieringPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTieringPolicy",
 		nil, // no parameters
 	)
 }

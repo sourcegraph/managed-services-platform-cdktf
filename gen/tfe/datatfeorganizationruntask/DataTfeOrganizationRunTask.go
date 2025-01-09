@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeorganizationruntask/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization_run_task tfe_organization_run_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task tfe_organization_run_task}.
 type DataTfeOrganizationRunTask interface {
 	cdktf.TerraformDataSource
 	Category() *string
@@ -42,8 +42,6 @@ type DataTfeOrganizationRunTask interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -99,7 +97,6 @@ type DataTfeOrganizationRunTask interface {
 	ResetCategory()
 	ResetDescription()
 	ResetEnabled()
-	ResetId()
 	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -264,16 +261,6 @@ func (j *jsiiProxy_DataTfeOrganizationRunTask) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeOrganizationRunTask) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataTfeOrganizationRunTask) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -405,7 +392,7 @@ func (j *jsiiProxy_DataTfeOrganizationRunTask) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization_run_task tfe_organization_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task tfe_organization_run_task} Data Source.
 func NewDataTfeOrganizationRunTask(scope constructs.Construct, id *string, config *DataTfeOrganizationRunTaskConfig) DataTfeOrganizationRunTask {
 	_init_.Initialize()
 
@@ -423,7 +410,7 @@ func NewDataTfeOrganizationRunTask(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/organization_run_task tfe_organization_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task tfe_organization_run_task} Data Source.
 func NewDataTfeOrganizationRunTask_Override(d DataTfeOrganizationRunTask, scope constructs.Construct, id *string, config *DataTfeOrganizationRunTaskConfig) {
 	_init_.Initialize()
 
@@ -490,17 +477,6 @@ func (j *jsiiProxy_DataTfeOrganizationRunTask)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataTfeOrganizationRunTask)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -862,14 +838,6 @@ func (d *jsiiProxy_DataTfeOrganizationRunTask) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataTfeOrganizationRunTask) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

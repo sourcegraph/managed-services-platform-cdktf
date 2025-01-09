@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/usercontact/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user_contact opsgenie_user_contact}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user_contact opsgenie_user_contact}.
 type UserContact interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_UserContact) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user_contact opsgenie_user_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user_contact opsgenie_user_contact} Resource.
 func NewUserContact(scope constructs.Construct, id *string, config *UserContactConfig) UserContact {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewUserContact(scope constructs.Construct, id *string, config *UserContactC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/user_contact opsgenie_user_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user_contact opsgenie_user_contact} Resource.
 func NewUserContact_Override(u UserContact, scope constructs.Construct, id *string, config *UserContactConfig) {
 	_init_.Initialize()
 

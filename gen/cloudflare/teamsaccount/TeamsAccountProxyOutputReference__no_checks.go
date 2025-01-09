@@ -56,6 +56,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetDisableForTimeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetInternalValueParameters(val *TeamsAccountProxy) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTerraformResourc
 }
 
 func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetUdpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetVirtualIpParameters(val interface{}) error {
 	return nil
 }
 

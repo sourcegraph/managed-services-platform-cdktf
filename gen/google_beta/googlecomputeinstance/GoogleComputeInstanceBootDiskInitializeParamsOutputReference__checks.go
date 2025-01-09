@@ -231,7 +231,23 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetStoragePoolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

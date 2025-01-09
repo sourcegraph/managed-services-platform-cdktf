@@ -128,6 +128,10 @@ func (j *jsiiProxy_Zone) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Zone) validateSetVanityNameServersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Zone) validateSetZoneParameters(val *string) error {
 	return nil
 }

@@ -13,6 +13,8 @@ type AccessGroupIncludeOutputReference interface {
 	AnyValidServiceToken() interface{}
 	SetAnyValidServiceToken(val interface{})
 	AnyValidServiceTokenInput() interface{}
+	AuthContext() AccessGroupIncludeAuthContextList
+	AuthContextInput() interface{}
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
@@ -24,6 +26,9 @@ type AccessGroupIncludeOutputReference interface {
 	CommonName() *string
 	SetCommonName(val *string)
 	CommonNameInput() *string
+	CommonNames() *[]*string
+	SetCommonNames(val *[]*string)
+	CommonNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,11 +53,14 @@ type AccessGroupIncludeOutputReference interface {
 	SetEmailDomain(val *[]*string)
 	EmailDomainInput() *[]*string
 	EmailInput() *[]*string
+	EmailList() *[]*string
+	SetEmailList(val *[]*string)
+	EmailListInput() *[]*string
 	Everyone() interface{}
 	SetEveryone(val interface{})
 	EveryoneInput() interface{}
-	ExternalEvaluation() AccessGroupIncludeExternalEvaluationOutputReference
-	ExternalEvaluationInput() *AccessGroupIncludeExternalEvaluation
+	ExternalEvaluation() AccessGroupIncludeExternalEvaluationList
+	ExternalEvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() *[]*string
@@ -115,20 +123,24 @@ type AccessGroupIncludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthContext(value interface{})
 	PutAzure(value interface{})
-	PutExternalEvaluation(value *AccessGroupIncludeExternalEvaluation)
+	PutExternalEvaluation(value interface{})
 	PutGithub(value interface{})
 	PutGsuite(value interface{})
 	PutOkta(value interface{})
 	PutSaml(value interface{})
 	ResetAnyValidServiceToken()
+	ResetAuthContext()
 	ResetAuthMethod()
 	ResetAzure()
 	ResetCertificate()
 	ResetCommonName()
+	ResetCommonNames()
 	ResetDevicePosture()
 	ResetEmail()
 	ResetEmailDomain()
+	ResetEmailList()
 	ResetEveryone()
 	ResetExternalEvaluation()
 	ResetGeo()
@@ -171,6 +183,26 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) AnyValidServiceTokenInput(
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) AuthContext() AccessGroupIncludeAuthContextList {
+	var returns AccessGroupIncludeAuthContextList
+	_jsii_.Get(
+		j,
+		"authContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) AuthContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authContextInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +283,26 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNameInput() *string 
 	_jsii_.Get(
 		j,
 		"commonNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNamesInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +398,26 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) EmailInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) EmailList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) EmailListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailListInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessGroupIncludeOutputReference) Everyone() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -366,8 +438,8 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) EveryoneInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() AccessGroupIncludeExternalEvaluationOutputReference {
-	var returns AccessGroupIncludeExternalEvaluationOutputReference
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() AccessGroupIncludeExternalEvaluationList {
+	var returns AccessGroupIncludeExternalEvaluationList
 	_jsii_.Get(
 		j,
 		"externalEvaluation",
@@ -376,8 +448,8 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() Acces
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluationInput() *AccessGroupIncludeExternalEvaluation {
-	var returns *AccessGroupIncludeExternalEvaluation
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"externalEvaluationInput",
@@ -698,6 +770,17 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCommonName(val *string) 
 	)
 }
 
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCommonNames(val *[]*string) {
+	if err := j.validateSetCommonNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"commonNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -749,6 +832,17 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetEmailDomain(val *[]*stri
 	_jsii_.Set(
 		j,
 		"emailDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetEmailList(val *[]*string) {
+	if err := j.validateSetEmailListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailList",
 		val,
 	)
 }
@@ -1049,6 +1143,17 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) InterpolationForAttribute(
 	return returns
 }
 
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAuthContext(value interface{}) {
+	if err := a.validatePutAuthContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAuthContext",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAzure(value interface{}) {
 	if err := a.validatePutAzureParameters(value); err != nil {
 		panic(err)
@@ -1060,7 +1165,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAzure(value interface{}
 	)
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(value *AccessGroupIncludeExternalEvaluation) {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(value interface{}) {
 	if err := a.validatePutExternalEvaluationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1123,6 +1228,14 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetAnyValidServiceToken(
 	)
 }
 
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetAuthContext() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthContext",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetAuthMethod() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1155,6 +1268,14 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetCommonName() {
 	)
 }
 
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetCommonNames() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCommonNames",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetDevicePosture() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1175,6 +1296,14 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetEmailDomain() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailDomain",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetEmailList() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmailList",
 		nil, // no parameters
 	)
 }

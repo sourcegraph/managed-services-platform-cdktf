@@ -48,6 +48,14 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutCloudStorageParameters(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutPlatformLogsSettingsParameters(value *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

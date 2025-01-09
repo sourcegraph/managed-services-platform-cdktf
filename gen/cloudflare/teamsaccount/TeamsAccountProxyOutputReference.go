@@ -25,6 +25,9 @@ type TeamsAccountProxyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableForTime() *float64
+	SetDisableForTime(val *float64)
+	DisableForTimeInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *TeamsAccountProxy
@@ -46,6 +49,9 @@ type TeamsAccountProxyOutputReference interface {
 	Udp() interface{}
 	SetUdp(val interface{})
 	UdpInput() interface{}
+	VirtualIp() interface{}
+	SetVirtualIp(val interface{})
+	VirtualIpInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -110,6 +116,26 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) CreationStack() *[]*string 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) DisableForTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"disableForTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) DisableForTimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"disableForTimeInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +241,26 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) UdpInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) VirtualIp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) VirtualIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualIpInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference {
 	_init_.Initialize()
@@ -261,6 +307,17 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetComplexObjectIsFromSet(va
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetDisableForTime(val *float64) {
+	if err := j.validateSetDisableForTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableForTime",
 		val,
 	)
 }
@@ -327,6 +384,17 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetUdp(val interface{}) {
 	_jsii_.Set(
 		j,
 		"udp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetVirtualIp(val interface{}) {
+	if err := j.validateSetVirtualIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualIp",
 		val,
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/organizationmember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_member sentry_organization_member}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_member sentry_organization_member}.
 type OrganizationMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_OrganizationMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_member sentry_organization_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_member sentry_organization_member} Resource.
 func NewOrganizationMember(scope constructs.Construct, id *string, config *OrganizationMemberConfig) OrganizationMember {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewOrganizationMember(scope constructs.Construct, id *string, config *Organ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.12.3/docs/resources/organization_member sentry_organization_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_member sentry_organization_member} Resource.
 func NewOrganizationMember_Override(o OrganizationMember, scope constructs.Construct, id *string, config *OrganizationMemberConfig) {
 	_init_.Initialize()
 

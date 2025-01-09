@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/ipsectunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
 type IpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -54,9 +54,15 @@ type IpsecTunnel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthCheckDirection() *string
+	SetHealthCheckDirection(val *string)
+	HealthCheckDirectionInput() *string
 	HealthCheckEnabled() interface{}
 	SetHealthCheckEnabled(val interface{})
 	HealthCheckEnabledInput() interface{}
+	HealthCheckRate() *string
+	SetHealthCheckRate(val *string)
+	HealthCheckRateInput() *string
 	HealthCheckTarget() *string
 	SetHealthCheckTarget(val *string)
 	HealthCheckTargetInput() *string
@@ -97,6 +103,9 @@ type IpsecTunnel interface {
 	RemoteId() *string
 	SetRemoteId(val *string)
 	RemoteIdInput() *string
+	ReplayProtection() interface{}
+	SetReplayProtection(val interface{})
+	ReplayProtectionInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -153,7 +162,9 @@ type IpsecTunnel interface {
 	ResetAllowNullCipher()
 	ResetDescription()
 	ResetFqdnId()
+	ResetHealthCheckDirection()
 	ResetHealthCheckEnabled()
+	ResetHealthCheckRate()
 	ResetHealthCheckTarget()
 	ResetHealthCheckType()
 	ResetHexId()
@@ -163,6 +174,7 @@ type IpsecTunnel interface {
 	ResetOverrideLogicalId()
 	ResetPsk()
 	ResetRemoteId()
+	ResetReplayProtection()
 	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -382,6 +394,26 @@ func (j *jsiiProxy_IpsecTunnel) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IpsecTunnel) HealthCheckDirection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckDirection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckDirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckDirectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -397,6 +429,26 @@ func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"healthCheckEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) HealthCheckRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckRateInput",
 		&returns,
 	)
 	return returns
@@ -612,6 +664,26 @@ func (j *jsiiProxy_IpsecTunnel) RemoteIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IpsecTunnel) ReplayProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replayProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) ReplayProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replayProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IpsecTunnel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -663,7 +735,7 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
 
@@ -681,7 +753,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *string, config *IpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -796,6 +868,17 @@ func (j *jsiiProxy_IpsecTunnel)SetFqdnId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckDirection(val *string) {
+	if err := j.validateSetHealthCheckDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckDirection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
 	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
 		panic(err)
@@ -803,6 +886,17 @@ func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"healthCheckEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckRate(val *string) {
+	if err := j.validateSetHealthCheckRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckRate",
 		val,
 	)
 }
@@ -921,6 +1015,17 @@ func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
 	_jsii_.Set(
 		j,
 		"remoteId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetReplayProtection(val interface{}) {
+	if err := j.validateSetReplayProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replayProtection",
 		val,
 	)
 }
@@ -1321,10 +1426,26 @@ func (i *jsiiProxy_IpsecTunnel) ResetFqdnId() {
 	)
 }
 
+func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckDirection() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthCheckDirection",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetHealthCheckEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetHealthCheckRate() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthCheckRate",
 		nil, // no parameters
 	)
 }
@@ -1381,6 +1502,14 @@ func (i *jsiiProxy_IpsecTunnel) ResetRemoteId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRemoteId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetReplayProtection() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetReplayProtection",
 		nil, // no parameters
 	)
 }

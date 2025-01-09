@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/dataopsgenieteam/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/team opsgenie_team}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/team opsgenie_team}.
 type DataOpsgenieTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataOpsgenieTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/team opsgenie_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/team opsgenie_team} Data Source.
 func NewDataOpsgenieTeam(scope constructs.Construct, id *string, config *DataOpsgenieTeamConfig) DataOpsgenieTeam {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataOpsgenieTeam(scope constructs.Construct, id *string, config *DataOps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/data-sources/team opsgenie_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/team opsgenie_team} Data Source.
 func NewDataOpsgenieTeam_Override(d DataOpsgenieTeam, scope constructs.Construct, id *string, config *DataOpsgenieTeamConfig) {
 	_init_.Initialize()
 

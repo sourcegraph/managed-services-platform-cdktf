@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowConfigurationAccess", GoGetter: "AllowConfigurationAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "allowConfigurationAccessInput", GoGetter: "AllowConfigurationAccessInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowWriteAccess", GoGetter: "AllowWriteAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "allowWriteAccessInput", GoGetter: "AllowWriteAccessInput"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putResponders", GoMethod: "PutResponders"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowConfigurationAccess", GoMethod: "ResetAllowConfigurationAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowWriteAccess", GoMethod: "ResetAllowWriteAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHeaders", GoMethod: "ResetHeaders"},

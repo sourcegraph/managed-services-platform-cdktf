@@ -88,6 +88,10 @@ func validateOrganization_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetAggregatedCommitStatusEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetAllowForceDeleteWorkspacesParameters(val interface{}) error {
 	return nil
 }
@@ -145,6 +149,10 @@ func (j *jsiiProxy_Organization) validateSetSessionRememberMinutesParameters(val
 }
 
 func (j *jsiiProxy_Organization) validateSetSessionTimeoutMinutesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Organization) validateSetSpeculativePlanManagementEnabledParameters(val interface{}) error {
 	return nil
 }
 

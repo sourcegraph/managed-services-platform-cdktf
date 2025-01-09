@@ -20,6 +20,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerdConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -28,6 +29,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList
+	InsecureKubeletReadonlyPortEnabled() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
 	LoggingVariant() *string
@@ -98,6 +100,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsO
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -123,6 +135,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsO
 	_jsii_.Get(
 		j,
 		"gcfsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) InsecureKubeletReadonlyPortEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"insecureKubeletReadonlyPortEnabled",
 		&returns,
 	)
 	return returns

@@ -45,9 +45,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetworkInput() *string
 	PscConfig() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	PscConfigInput() interface{}
-	RequireSsl() interface{}
-	SetRequireSsl(val interface{})
-	RequireSslInput() interface{}
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -91,7 +91,7 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
-	ResetRequireSsl()
+	ResetServerCaMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -278,21 +278,21 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSsl",
+		"serverCaMode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaModeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"requireSslInput",
+		"serverCaModeInput",
 		&returns,
 	)
 	return returns
@@ -443,13 +443,13 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetRequireSsl(val interface{}) {
-	if err := j.validateSetRequireSslParameters(val); err != nil {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requireSsl",
+		"serverCaMode",
 		val,
 	)
 }
@@ -743,10 +743,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaMode() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetRequireSsl",
+		"resetServerCaMode",
 		nil, // no parameters
 	)
 }

@@ -100,6 +100,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetAllowAuthenticateViaWarpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetAuthDomainParameters(val *string) error {
 	return nil
 }
@@ -136,11 +140,19 @@ func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetSessionDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetUiReadOnlyToggleReasonParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AccessOrganization) validateSetUserSeatExpirationInactiveTimeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessOrganization) validateSetWarpAuthSessionDurationParameters(val *string) error {
 	return nil
 }
 

@@ -19,6 +19,9 @@ type DevicePostureRuleInputOutputReference interface {
 	CheckDisks() *[]*string
 	SetCheckDisks(val *[]*string)
 	CheckDisksInput() *[]*string
+	CheckPrivateKey() interface{}
+	SetCheckPrivateKey(val interface{})
+	CheckPrivateKeyInput() interface{}
 	Cn() *string
 	SetCn(val *string)
 	CnInput() *string
@@ -49,12 +52,18 @@ type DevicePostureRuleInputOutputReference interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	EidLastSeen() *string
+	SetEidLastSeen(val *string)
+	EidLastSeenInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	Exists() interface{}
 	SetExists(val interface{})
 	ExistsInput() interface{}
+	ExtendedKeyUsage() *[]*string
+	SetExtendedKeyUsage(val *[]*string)
+	ExtendedKeyUsageInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -71,9 +80,17 @@ type DevicePostureRuleInputOutputReference interface {
 	IssueCount() *string
 	SetIssueCount(val *string)
 	IssueCountInput() *string
+	LastSeen() *string
+	SetLastSeen(val *string)
+	LastSeenInput() *string
+	Locations() DevicePostureRuleInputLocationsList
+	LocationsInput() interface{}
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
+	OperationalState() *string
+	SetOperationalState(val *string)
+	OperationalStateInput() *string
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -86,6 +103,9 @@ type DevicePostureRuleInputOutputReference interface {
 	SetOsDistroRevision(val *string)
 	OsDistroRevisionInput() *string
 	OsInput() *string
+	OsVersionExtra() *string
+	SetOsVersionExtra(val *string)
+	OsVersionExtraInput() *string
 	Overall() *string
 	SetOverall(val *string)
 	OverallInput() *string
@@ -95,15 +115,24 @@ type DevicePostureRuleInputOutputReference interface {
 	RequireAll() interface{}
 	SetRequireAll(val interface{})
 	RequireAllInput() interface{}
+	RiskLevel() *string
+	SetRiskLevel(val *string)
+	RiskLevelInput() *string
 	Running() interface{}
 	SetRunning(val interface{})
 	RunningInput() interface{}
+	Score() *float64
+	SetScore(val *float64)
+	ScoreInput() *float64
 	SensorConfig() *string
 	SetSensorConfig(val *string)
 	SensorConfigInput() *string
 	Sha256() *string
 	SetSha256(val *string)
 	Sha256Input() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -115,6 +144,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Thumbprint() *string
 	SetThumbprint(val *string)
 	ThumbprintInput() *string
+	TotalScore() *float64
+	SetTotalScore(val *float64)
+	TotalScoreInput() *float64
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -145,32 +177,44 @@ type DevicePostureRuleInputOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLocations(value interface{})
 	ResetActiveThreats()
 	ResetCertificateId()
 	ResetCheckDisks()
+	ResetCheckPrivateKey()
 	ResetCn()
 	ResetComplianceStatus()
 	ResetConnectionId()
 	ResetCountOperator()
 	ResetDomain()
+	ResetEidLastSeen()
 	ResetEnabled()
 	ResetExists()
+	ResetExtendedKeyUsage()
 	ResetId()
 	ResetInfected()
 	ResetIsActive()
 	ResetIssueCount()
+	ResetLastSeen()
+	ResetLocations()
 	ResetNetworkStatus()
+	ResetOperationalState()
 	ResetOperator()
 	ResetOs()
 	ResetOsDistroName()
 	ResetOsDistroRevision()
+	ResetOsVersionExtra()
 	ResetOverall()
 	ResetPath()
 	ResetRequireAll()
+	ResetRiskLevel()
 	ResetRunning()
+	ResetScore()
 	ResetSensorConfig()
 	ResetSha256()
+	ResetState()
 	ResetThumbprint()
+	ResetTotalScore()
 	ResetVersion()
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
@@ -243,6 +287,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisksInput() *[]*
 	_jsii_.Get(
 		j,
 		"checkDisksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckPrivateKey() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkPrivateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckPrivateKeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"checkPrivateKeyInput",
 		&returns,
 	)
 	return returns
@@ -378,6 +442,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) DomainInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EidLastSeen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eidLastSeen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EidLastSeenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eidLastSeenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -413,6 +497,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ExistsInput() interfac
 	_jsii_.Get(
 		j,
 		"existsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ExtendedKeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extendedKeyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ExtendedKeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extendedKeyUsageInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +622,46 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCountInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) LastSeen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSeen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) LastSeenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSeenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Locations() DevicePostureRuleInputLocationsList {
+	var returns DevicePostureRuleInputLocationsList
+	_jsii_.Get(
+		j,
+		"locations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) LocationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,6 +677,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatusInput() *
 	_jsii_.Get(
 		j,
 		"networkStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperationalState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperationalStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalStateInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +782,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsVersionExtra() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionExtra",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsVersionExtraInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionExtraInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Overall() *string {
 	var returns *string
 	_jsii_.Get(
@@ -678,6 +862,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAllInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RiskLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RiskLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Running() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -693,6 +897,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RunningInput() interfa
 	_jsii_.Get(
 		j,
 		"runningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Score() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"score",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ScoreInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scoreInput",
 		&returns,
 	)
 	return returns
@@ -738,6 +962,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Sha256Input() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -773,6 +1017,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ThumbprintInput() *str
 	_jsii_.Get(
 		j,
 		"thumbprintInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TotalScore() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TotalScoreInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalScoreInput",
 		&returns,
 	)
 	return returns
@@ -879,6 +1143,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*s
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckPrivateKey(val interface{}) {
+	if err := j.validateSetCheckPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkPrivateKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCn(val *string) {
 	if err := j.validateSetCnParameters(val); err != nil {
 		panic(err)
@@ -956,6 +1231,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) 
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEidLastSeen(val *string) {
+	if err := j.validateSetEidLastSeenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eidLastSeen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEnabled(val interface{}) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
@@ -974,6 +1260,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetExists(val interface
 	_jsii_.Set(
 		j,
 		"exists",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetExtendedKeyUsage(val *[]*string) {
+	if err := j.validateSetExtendedKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extendedKeyUsage",
 		val,
 	)
 }
@@ -1033,6 +1330,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetIssueCount(val *stri
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetLastSeen(val *string) {
+	if err := j.validateSetLastSeenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastSeen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetNetworkStatus(val *string) {
 	if err := j.validateSetNetworkStatusParameters(val); err != nil {
 		panic(err)
@@ -1040,6 +1348,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetNetworkStatus(val *s
 	_jsii_.Set(
 		j,
 		"networkStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperationalState(val *string) {
+	if err := j.validateSetOperationalStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationalState",
 		val,
 	)
 }
@@ -1088,6 +1407,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsVersionExtra(val *string) {
+	if err := j.validateSetOsVersionExtraParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osVersionExtra",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOverall(val *string) {
 	if err := j.validateSetOverallParameters(val); err != nil {
 		panic(err)
@@ -1121,6 +1451,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRequireAll(val inter
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRiskLevel(val *string) {
+	if err := j.validateSetRiskLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"riskLevel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interface{}) {
 	if err := j.validateSetRunningParameters(val); err != nil {
 		panic(err)
@@ -1128,6 +1469,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interfac
 	_jsii_.Set(
 		j,
 		"running",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetScore(val *float64) {
+	if err := j.validateSetScoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"score",
 		val,
 	)
 }
@@ -1150,6 +1502,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSha256(val *string) 
 	_jsii_.Set(
 		j,
 		"sha256",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"state",
 		val,
 	)
 }
@@ -1183,6 +1546,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetThumbprint(val *stri
 	_jsii_.Set(
 		j,
 		"thumbprint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTotalScore(val *float64) {
+	if err := j.validateSetTotalScoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalScore",
 		val,
 	)
 }
@@ -1395,6 +1769,17 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) PutLocations(value interface{}) {
+	if err := d.validatePutLocationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLocations",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetActiveThreats() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1415,6 +1800,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCheckDisks() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCheckDisks",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCheckPrivateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCheckPrivateKey",
 		nil, // no parameters
 	)
 }
@@ -1459,6 +1852,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetDomain() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetEidLastSeen() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEidLastSeen",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1471,6 +1872,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetExists() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExists",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetExtendedKeyUsage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtendedKeyUsage",
 		nil, // no parameters
 	)
 }
@@ -1507,10 +1916,34 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetIssueCount() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetLastSeen() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLastSeen",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetLocations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocations",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetNetworkStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNetworkStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOperationalState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOperationalState",
 		nil, // no parameters
 	)
 }
@@ -1547,6 +1980,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroRevision(
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsVersionExtra() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsVersionExtra",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOverall() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1571,10 +2012,26 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRequireAll() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRiskLevel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRiskLevel",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRunning() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRunning",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScore",
 		nil, // no parameters
 	)
 }
@@ -1595,10 +2052,26 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetSha256() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetState",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetThumbprint() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetThumbprint",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetTotalScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTotalScore",
 		nil, // no parameters
 	)
 }

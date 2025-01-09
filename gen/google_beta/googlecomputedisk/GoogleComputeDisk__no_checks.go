@@ -112,6 +112,10 @@ func validateGoogleComputeDisk_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -193,6 +197,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetSnapshotParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) validateSetStoragePoolParameters(val *string) error {
 	return nil
 }
 

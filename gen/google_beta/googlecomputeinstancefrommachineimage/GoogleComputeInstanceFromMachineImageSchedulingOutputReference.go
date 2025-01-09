@@ -13,6 +13,9 @@ type GoogleComputeInstanceFromMachineImageSchedulingOutputReference interface {
 	AutomaticRestart() interface{}
 	SetAutomaticRestart(val interface{})
 	AutomaticRestartInput() interface{}
+	AvailabilityDomain() *float64
+	SetAvailabilityDomain(val *float64)
+	AvailabilityDomainInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +33,9 @@ type GoogleComputeInstanceFromMachineImageSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HostErrorTimeoutSeconds() *float64
+	SetHostErrorTimeoutSeconds(val *float64)
+	HostErrorTimeoutSecondsInput() *float64
 	InstanceTerminationAction() *string
 	SetInstanceTerminationAction(val *string)
 	InstanceTerminationActionInput() *string
@@ -50,6 +56,8 @@ type GoogleComputeInstanceFromMachineImageSchedulingOutputReference interface {
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
+	OnInstanceStopAction() GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference
+	OnInstanceStopActionInput() *GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction
 	Preemptible() interface{}
 	SetPreemptible(val interface{})
 	PreemptibleInput() interface{}
@@ -91,7 +99,10 @@ type GoogleComputeInstanceFromMachineImageSchedulingOutputReference interface {
 	PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecoveryTimeout)
 	PutMaxRunDuration(value *GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
+	PutOnInstanceStopAction(value *GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
+	ResetAvailabilityDomain()
+	ResetHostErrorTimeoutSeconds()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
 	ResetMaintenanceInterval()
@@ -99,6 +110,7 @@ type GoogleComputeInstanceFromMachineImageSchedulingOutputReference interface {
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
 	ResetOnHostMaintenance()
+	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
 	// Produce the Token's value at resolution time.
@@ -131,6 +143,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	_jsii_.Get(
 		j,
 		"automaticRestartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) AvailabilityDomainInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomainInput",
 		&returns,
 	)
 	return returns
@@ -171,6 +203,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) HostErrorTimeoutSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSecondsInput",
 		&returns,
 	)
 	return returns
@@ -326,6 +378,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) OnInstanceStopAction() GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference {
+	var returns GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) OnInstanceStopActionInput() *GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction {
+	var returns *GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction
+	_jsii_.Get(
+		j,
+		"onInstanceStopActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) Preemptible() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -425,6 +497,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference)SetAvailabilityDomain(val *float64) {
+	if err := j.validateSetAvailabilityDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityDomain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -443,6 +526,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference)SetHostErrorTimeoutSeconds(val *float64) {
+	if err := j.validateSetHostErrorTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostErrorTimeoutSeconds",
 		val,
 	)
 }
@@ -765,10 +859,37 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) PutOnInstanceStopAction(value *GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction) {
+	if err := g.validatePutOnInstanceStopActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnInstanceStopAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) ResetAutomaticRestart() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutomaticRestart",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) ResetAvailabilityDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAvailabilityDomain",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) ResetHostErrorTimeoutSeconds() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostErrorTimeoutSeconds",
 		nil, // no parameters
 	)
 }
@@ -825,6 +946,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetOnHostMaintenance",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) ResetOnInstanceStopAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnInstanceStopAction",
 		nil, // no parameters
 	)
 }

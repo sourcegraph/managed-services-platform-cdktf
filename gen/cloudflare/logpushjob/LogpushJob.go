@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/logpushjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -81,6 +81,8 @@ type LogpushJob interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OutputOptions() LogpushJobOutputOptionsOutputReference
+	OutputOptionsInput() *LogpushJobOutputOptions
 	OwnershipChallenge() *string
 	SetOwnershipChallenge(val *string)
 	OwnershipChallengeInput() *string
@@ -146,6 +148,7 @@ type LogpushJob interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOutputOptions(value *LogpushJobOutputOptions)
 	ResetAccountId()
 	ResetEnabled()
 	ResetFilter()
@@ -157,6 +160,7 @@ type LogpushJob interface {
 	ResetMaxUploadIntervalSeconds()
 	ResetMaxUploadRecords()
 	ResetName()
+	ResetOutputOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -540,6 +544,26 @@ func (j *jsiiProxy_LogpushJob) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LogpushJob) OutputOptions() LogpushJobOutputOptionsOutputReference {
+	var returns LogpushJobOutputOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"outputOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) OutputOptionsInput() *LogpushJobOutputOptions {
+	var returns *LogpushJobOutputOptions
+	_jsii_.Get(
+		j,
+		"outputOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogpushJob) OwnershipChallenge() *string {
 	var returns *string
 	_jsii_.Get(
@@ -641,7 +665,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -659,7 +683,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 
@@ -1256,6 +1280,17 @@ func (l *jsiiProxy_LogpushJob) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LogpushJob) PutOutputOptions(value *LogpushJobOutputOptions) {
+	if err := l.validatePutOutputOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putOutputOptions",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogpushJob) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1340,6 +1375,14 @@ func (l *jsiiProxy_LogpushJob) ResetName() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetOutputOptions() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetOutputOptions",
 		nil, // no parameters
 	)
 }

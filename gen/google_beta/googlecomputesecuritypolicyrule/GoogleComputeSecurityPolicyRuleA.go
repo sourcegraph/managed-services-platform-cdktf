@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputesecuritypolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule}.
 type GoogleComputeSecurityPolicyRuleA interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -42,6 +42,8 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderAction() GoogleComputeSecurityPolicyRuleHeaderActionAOutputReference
+	HeaderActionInput() *GoogleComputeSecurityPolicyRuleHeaderActionA
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -72,8 +74,12 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitOptions() GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	RateLimitOptionsInput() *GoogleComputeSecurityPolicyRuleRateLimitOptionsA
 	// Experimental.
 	RawOverrides() interface{}
+	RedirectOptions() GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReference
+	RedirectOptionsInput() *GoogleComputeSecurityPolicyRuleRedirectOptionsA
 	SecurityPolicy() *string
 	SetSecurityPolicy(val *string)
 	SecurityPolicyInput() *string
@@ -128,10 +134,14 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHeaderAction(value *GoogleComputeSecurityPolicyRuleHeaderActionA)
 	PutMatch(value *GoogleComputeSecurityPolicyRuleMatchA)
 	PutPreconfiguredWafConfig(value *GoogleComputeSecurityPolicyRulePreconfiguredWafConfigA)
+	PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA)
+	PutRedirectOptions(value *GoogleComputeSecurityPolicyRuleRedirectOptionsA)
 	PutTimeouts(value *GoogleComputeSecurityPolicyRuleTimeouts)
 	ResetDescription()
+	ResetHeaderAction()
 	ResetId()
 	ResetMatch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -140,6 +150,8 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetProject()
+	ResetRateLimitOptions()
+	ResetRedirectOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -274,6 +286,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) FriendlyUniqueId() *string 
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) HeaderAction() GoogleComputeSecurityPolicyRuleHeaderActionAOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleHeaderActionAOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) HeaderActionInput() *GoogleComputeSecurityPolicyRuleHeaderActionA {
+	var returns *GoogleComputeSecurityPolicyRuleHeaderActionA
+	_jsii_.Get(
+		j,
+		"headerActionInput",
 		&returns,
 	)
 	return returns
@@ -439,11 +471,51 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) Provisioners() *[]interface
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RateLimitOptions() GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"rateLimitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RateLimitOptionsInput() *GoogleComputeSecurityPolicyRuleRateLimitOptionsA {
+	var returns *GoogleComputeSecurityPolicyRuleRateLimitOptionsA
+	_jsii_.Get(
+		j,
+		"rateLimitOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RedirectOptions() GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"redirectOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RedirectOptionsInput() *GoogleComputeSecurityPolicyRuleRedirectOptionsA {
+	var returns *GoogleComputeSecurityPolicyRuleRedirectOptionsA
+	_jsii_.Get(
+		j,
+		"redirectOptionsInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +592,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewGoogleComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyRuleAConfig) GoogleComputeSecurityPolicyRuleA {
 	_init_.Initialize()
 
@@ -538,7 +610,7 @@ func NewGoogleComputeSecurityPolicyRuleA(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewGoogleComputeSecurityPolicyRuleA_Override(g GoogleComputeSecurityPolicyRuleA, scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyRuleAConfig) {
 	_init_.Initialize()
 
@@ -1047,6 +1119,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) OverrideLogicalId(newLogica
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutHeaderAction(value *GoogleComputeSecurityPolicyRuleHeaderActionA) {
+	if err := g.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutMatch(value *GoogleComputeSecurityPolicyRuleMatchA) {
 	if err := g.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -1069,6 +1152,28 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(v
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA) {
+	if err := g.validatePutRateLimitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRateLimitOptions",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutRedirectOptions(value *GoogleComputeSecurityPolicyRuleRedirectOptionsA) {
+	if err := g.validatePutRedirectOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRedirectOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutTimeouts(value *GoogleComputeSecurityPolicyRuleTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1084,6 +1189,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }
@@ -1132,6 +1245,22 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetRateLimitOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRateLimitOptions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetRedirectOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedirectOptions",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfesamlsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/saml_settings tfe_saml_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/saml_settings tfe_saml_settings}.
 type DataTfeSamlSettings interface {
 	cdktf.TerraformDataSource
 	AcsConsumerUrl() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_DataTfeSamlSettings) WantAssertionsSigned() cdktf.IResolvable
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source.
 func NewDataTfeSamlSettings(scope constructs.Construct, id *string, config *DataTfeSamlSettingsConfig) DataTfeSamlSettings {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewDataTfeSamlSettings(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.51.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/saml_settings tfe_saml_settings} Data Source.
 func NewDataTfeSamlSettings_Override(d DataTfeSamlSettings, scope constructs.Construct, id *string, config *DataTfeSamlSettingsConfig) {
 	_init_.Initialize()
 

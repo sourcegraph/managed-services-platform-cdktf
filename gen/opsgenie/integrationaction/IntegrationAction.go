@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/opsgenie/integrationaction/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/integration_action opsgenie_integration_action}.
+// Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action opsgenie_integration_action}.
 type IntegrationAction interface {
 	cdktf.TerraformResource
 	Acknowledge() IntegrationActionAcknowledgeList
@@ -450,7 +450,7 @@ func (j *jsiiProxy_IntegrationAction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/integration_action opsgenie_integration_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action opsgenie_integration_action} Resource.
 func NewIntegrationAction(scope constructs.Construct, id *string, config *IntegrationActionConfig) IntegrationAction {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewIntegrationAction(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.35/docs/resources/integration_action opsgenie_integration_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action opsgenie_integration_action} Resource.
 func NewIntegrationAction_Override(i IntegrationAction, scope constructs.Construct, id *string, config *IntegrationActionConfig) {
 	_init_.Initialize()
 

@@ -16,6 +16,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOrganization", GoMethod: "ResetOrganization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceIds", GoMethod: "ResetWorkspaceIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceNames", GoMethod: "ResetWorkspaceNames"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -55,6 +57,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdsInput", GoGetter: "WorkspaceIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceNames", GoGetter: "WorkspaceNames"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceNamesInput", GoGetter: "WorkspaceNamesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeProject{}

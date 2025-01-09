@@ -230,12 +230,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationChannelStrategy", GoGetter: "NotificationChannelStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationChannelStrategyInput", GoGetter: "NotificationChannelStrategyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationPrompts", GoGetter: "NotificationPrompts"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationPromptsInput", GoGetter: "NotificationPromptsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimit", GoGetter: "NotificationRateLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimitInput", GoGetter: "NotificationRateLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationChannelStrategy", GoMethod: "PutNotificationChannelStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationRateLimit", GoMethod: "PutNotificationRateLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoClose", GoMethod: "ResetAutoClose"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationChannelStrategy", GoMethod: "ResetNotificationChannelStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotificationPrompts", GoMethod: "ResetNotificationPrompts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationRateLimit", GoMethod: "ResetNotificationRateLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -557,6 +560,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disableMetricValidation", GoGetter: "DisableMetricValidation"},
+			_jsii_.MemberProperty{JsiiProperty: "disableMetricValidationInput", GoGetter: "DisableMetricValidationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
 			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "evaluationInterval", GoGetter: "EvaluationInterval"},
@@ -579,6 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertRule", GoMethod: "ResetAlertRule"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisableMetricValidation", GoMethod: "ResetDisableMetricValidation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationInterval", GoMethod: "ResetEvaluationInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -1028,6 +1034,70 @@ func init() {
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation",
 		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentation)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinks",
+		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinks)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksList",
+		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinksList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksOutputReference",
+		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinksOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "displayName", GoGetter: "DisplayName"},
+			_jsii_.MemberProperty{JsiiProperty: "displayNameInput", GoGetter: "DisplayNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationOutputReference",
 		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationOutputReference)(nil)).Elem(),
@@ -1051,9 +1121,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "links", GoGetter: "Links"},
+			_jsii_.MemberProperty{JsiiProperty: "linksInput", GoGetter: "LinksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mimeType", GoGetter: "MimeType"},
 			_jsii_.MemberProperty{JsiiProperty: "mimeTypeInput", GoGetter: "MimeTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putLinks", GoMethod: "PutLinks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLinks", GoMethod: "ResetLinks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMimeType", GoMethod: "ResetMimeType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubject", GoMethod: "ResetSubject"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

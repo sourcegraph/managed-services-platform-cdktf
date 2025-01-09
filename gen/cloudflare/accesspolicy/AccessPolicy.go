@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accesspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_policy cloudflare_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_policy cloudflare_access_policy}.
 type AccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -29,6 +29,8 @@ type AccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionRules() AccessPolicyConnectionRulesOutputReference
+	ConnectionRulesInput() *AccessPolicyConnectionRules
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -90,6 +92,9 @@ type AccessPolicy interface {
 	RawOverrides() interface{}
 	Require() AccessPolicyRequireList
 	RequireInput() interface{}
+	SessionDuration() *string
+	SetSessionDuration(val *string)
+	SessionDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -143,21 +148,26 @@ type AccessPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalGroup(value interface{})
+	PutConnectionRules(value *AccessPolicyConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
 	PutRequire(value interface{})
 	ResetAccountId()
+	ResetApplicationId()
 	ResetApprovalGroup()
 	ResetApprovalRequired()
+	ResetConnectionRules()
 	ResetExclude()
 	ResetId()
 	ResetIsolationRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrecedence()
 	ResetPurposeJustificationPrompt()
 	ResetPurposeJustificationRequired()
 	ResetRequire()
+	ResetSessionDuration()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -272,6 +282,26 @@ func (j *jsiiProxy_AccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) ConnectionRules() AccessPolicyConnectionRulesOutputReference {
+	var returns AccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) ConnectionRulesInput() *AccessPolicyConnectionRules {
+	var returns *AccessPolicyConnectionRules
+	_jsii_.Get(
+		j,
+		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +617,26 @@ func (j *jsiiProxy_AccessPolicy) RequireInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessPolicy) SessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) SessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -638,7 +688,7 @@ func (j *jsiiProxy_AccessPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolicyConfig) AccessPolicy {
 	_init_.Initialize()
 
@@ -656,7 +706,7 @@ func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy_Override(a AccessPolicy, scope constructs.Construct, id *string, config *AccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -841,6 +891,17 @@ func (j *jsiiProxy_AccessPolicy)SetPurposeJustificationRequired(val interface{})
 	_jsii_.Set(
 		j,
 		"purposeJustificationRequired",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessPolicy)SetSessionDuration(val *string) {
+	if err := j.validateSetSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionDuration",
 		val,
 	)
 }
@@ -1220,6 +1281,17 @@ func (a *jsiiProxy_AccessPolicy) PutApprovalGroup(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicy) PutConnectionRules(value *AccessPolicyConnectionRules) {
+	if err := a.validatePutConnectionRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConnectionRules",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessPolicy) PutExclude(value interface{}) {
 	if err := a.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1261,6 +1333,14 @@ func (a *jsiiProxy_AccessPolicy) ResetAccountId() {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicy) ResetApplicationId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApplicationId",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessPolicy) ResetApprovalGroup() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1273,6 +1353,14 @@ func (a *jsiiProxy_AccessPolicy) ResetApprovalRequired() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetApprovalRequired",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicy) ResetConnectionRules() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionRules",
 		nil, // no parameters
 	)
 }
@@ -1309,6 +1397,14 @@ func (a *jsiiProxy_AccessPolicy) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicy) ResetPrecedence() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrecedence",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessPolicy) ResetPurposeJustificationPrompt() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1329,6 +1425,14 @@ func (a *jsiiProxy_AccessPolicy) ResetRequire() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequire",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicy) ResetSessionDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionDuration",
 		nil, // no parameters
 	)
 }
