@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +38,9 @@ type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface 
 	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Size() *float64
+	Snapshot() *string
+	SourceImageEncryptionKey() DataGoogleComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyList
+	SourceSnapshotEncryptionKey() DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
 	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -84,6 +88,16 @@ type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface 
 // The jsii proxy struct for DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference
 type jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -211,6 +225,36 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputRefere
 	_jsii_.Get(
 		j,
 		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) SourceImageEncryptionKey() DataGoogleComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyList {
+	var returns DataGoogleComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKey() DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyList {
+	var returns DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
 		&returns,
 	)
 	return returns

@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) validateSetCou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

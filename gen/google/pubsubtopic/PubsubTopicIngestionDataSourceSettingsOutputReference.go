@@ -12,6 +12,10 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 	AwsKinesisInput() *PubsubTopicIngestionDataSourceSettingsAwsKinesis
+	AwsMsk() PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference
+	AwsMskInput() *PubsubTopicIngestionDataSourceSettingsAwsMsk
+	AzureEventHubs() PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	AzureEventHubsInput() *PubsubTopicIngestionDataSourceSettingsAzureEventHubs
 	CloudStorage() PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
 	CloudStorageInput() *PubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
@@ -24,6 +28,8 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfluentCloud() PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference
+	ConfluentCloudInput() *PubsubTopicIngestionDataSourceSettingsConfluentCloud
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -68,10 +74,16 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsKinesis(value *PubsubTopicIngestionDataSourceSettingsAwsKinesis)
+	PutAwsMsk(value *PubsubTopicIngestionDataSourceSettingsAwsMsk)
+	PutAzureEventHubs(value *PubsubTopicIngestionDataSourceSettingsAzureEventHubs)
 	PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage)
+	PutConfluentCloud(value *PubsubTopicIngestionDataSourceSettingsConfluentCloud)
 	PutPlatformLogsSettings(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)
 	ResetAwsKinesis()
+	ResetAwsMsk()
+	ResetAzureEventHubs()
 	ResetCloudStorage()
+	ResetConfluentCloud()
 	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -103,6 +115,46 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AwsKin
 	_jsii_.Get(
 		j,
 		"awsKinesisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AwsMsk() PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference
+	_jsii_.Get(
+		j,
+		"awsMsk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AwsMskInput() *PubsubTopicIngestionDataSourceSettingsAwsMsk {
+	var returns *PubsubTopicIngestionDataSourceSettingsAwsMsk
+	_jsii_.Get(
+		j,
+		"awsMskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubs() PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	_jsii_.Get(
+		j,
+		"azureEventHubs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubsInput() *PubsubTopicIngestionDataSourceSettingsAzureEventHubs {
+	var returns *PubsubTopicIngestionDataSourceSettingsAzureEventHubs
+	_jsii_.Get(
+		j,
+		"azureEventHubsInput",
 		&returns,
 	)
 	return returns
@@ -143,6 +195,26 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Comple
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ConfluentCloud() PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference
+	_jsii_.Get(
+		j,
+		"confluentCloud",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ConfluentCloudInput() *PubsubTopicIngestionDataSourceSettingsConfluentCloud {
+	var returns *PubsubTopicIngestionDataSourceSettingsConfluentCloud
+	_jsii_.Get(
+		j,
+		"confluentCloudInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +570,28 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAws
 	)
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAwsMsk(value *PubsubTopicIngestionDataSourceSettingsAwsMsk) {
+	if err := p.validatePutAwsMskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAwsMsk",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAzureEventHubs(value *PubsubTopicIngestionDataSourceSettingsAzureEventHubs) {
+	if err := p.validatePutAzureEventHubsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAzureEventHubs",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage) {
 	if err := p.validatePutCloudStorageParameters(value); err != nil {
 		panic(err)
@@ -505,6 +599,17 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutClo
 	_jsii_.InvokeVoid(
 		p,
 		"putCloudStorage",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutConfluentCloud(value *PubsubTopicIngestionDataSourceSettingsConfluentCloud) {
+	if err := p.validatePutConfluentCloudParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putConfluentCloud",
 		[]interface{}{value},
 	)
 }
@@ -528,10 +633,34 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetA
 	)
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetAwsMsk() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAwsMsk",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetAzureEventHubs() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAzureEventHubs",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetCloudStorage() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCloudStorage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetConfluentCloud() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConfluentCloud",
 		nil, // no parameters
 	)
 }

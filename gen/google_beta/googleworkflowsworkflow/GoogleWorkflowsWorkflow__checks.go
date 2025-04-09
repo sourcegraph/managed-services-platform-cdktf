@@ -389,6 +389,14 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetExecutionHistoryLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -500,6 +508,14 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetServiceAccountParameters(
 }
 
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetSourceContentsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

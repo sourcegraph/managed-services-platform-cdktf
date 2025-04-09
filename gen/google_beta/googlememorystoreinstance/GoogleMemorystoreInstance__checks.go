@@ -204,6 +204,28 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutAutomatedBackupConfigParameters(value *GoogleMemorystoreInstanceAutomatedBackupConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -230,6 +252,17 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectio
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleMemorystoreInstanceDesiredPscAutoConnections; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutMaintenancePolicyParameters(value *GoogleMemorystoreInstanceMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

@@ -31,6 +31,8 @@ type ContainerClusterControlPlaneEndpointsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterControlPlaneEndpointsConfig
 	SetInternalValue(val *ContainerClusterControlPlaneEndpointsConfig)
+	IpEndpointsConfig() ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference
+	IpEndpointsConfigInput() *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type ContainerClusterControlPlaneEndpointsConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDnsEndpointConfig(value *ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig)
+	PutIpEndpointsConfig(value *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig)
 	ResetDnsEndpointConfig()
+	ResetIpEndpointsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) IpEndpointsConfig() ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference {
+	var returns ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ipEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) IpEndpointsConfigInput() *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig {
+	var returns *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig
+	_jsii_.Get(
+		j,
+		"ipEndpointsConfigInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) P
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) PutIpEndpointsConfig(value *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig) {
+	if err := c.validatePutIpEndpointsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIpEndpointsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) ResetDnsEndpointConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDnsEndpointConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) ResetIpEndpointsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpEndpointsConfig",
 		nil, // no parameters
 	)
 }

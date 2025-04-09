@@ -76,6 +76,10 @@ func (f *jsiiProxy_FilestoreInstance) validatePutFileSharesParameters(value *Fil
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validatePutInitialReplicationParameters(value *FilestoreInstanceInitialReplication) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_FilestoreInstance) validateSetProtocolParameters(val *string)
 }
 
 func (j *jsiiProxy_FilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

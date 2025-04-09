@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *GoogleComputeBackendServiceIap) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutStrongSessionAffinity
 }
 
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutTimeoutsParameters(value *GoogleComputeBackendServiceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutTlsSettingsParameters(value *GoogleComputeBackendServiceTlsSettings) error {
 	return nil
 }
 

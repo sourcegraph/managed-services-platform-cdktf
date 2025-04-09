@@ -345,6 +345,14 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetCou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

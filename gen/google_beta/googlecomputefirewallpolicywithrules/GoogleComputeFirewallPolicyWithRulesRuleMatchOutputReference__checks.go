@@ -218,6 +218,14 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference) validateSetDestNetworkScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference) validateSetDestRegionCodesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -259,6 +267,22 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference)
 }
 
 func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference) validateSetSrcNetworksParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference) validateSetSrcNetworkScopeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

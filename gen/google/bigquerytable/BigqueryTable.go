@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/bigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() BigqueryTableBiglakeConfigurationOutputReference
@@ -115,6 +115,9 @@ type BigqueryTable interface {
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
+	TableMetadataView() *string
+	SetTableMetadataView(val *string)
+	TableMetadataViewInput() *string
 	TableReplicationInfo() BigqueryTableTableReplicationInfoOutputReference
 	TableReplicationInfoInput() *BigqueryTableTableReplicationInfo
 	// Experimental.
@@ -202,6 +205,7 @@ type BigqueryTable interface {
 	ResetResourceTags()
 	ResetSchema()
 	ResetTableConstraints()
+	ResetTableMetadataView()
 	ResetTableReplicationInfo()
 	ResetTimePartitioning()
 	ResetView()
@@ -843,6 +847,26 @@ func (j *jsiiProxy_BigqueryTable) TableIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) TableMetadataView() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataView",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TableMetadataViewInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataViewInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) TableReplicationInfo() BigqueryTableTableReplicationInfoOutputReference {
 	var returns BigqueryTableTableReplicationInfoOutputReference
 	_jsii_.Get(
@@ -954,7 +978,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -972,7 +996,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1201,6 +1225,17 @@ func (j *jsiiProxy_BigqueryTable)SetTableId(val *string) {
 	_jsii_.Set(
 		j,
 		"tableId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetTableMetadataView(val *string) {
+	if err := j.validateSetTableMetadataViewParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableMetadataView",
 		val,
 	)
 }
@@ -1805,6 +1840,14 @@ func (b *jsiiProxy_BigqueryTable) ResetTableConstraints() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetTableConstraints",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetTableMetadataView() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTableMetadataView",
 		nil, // no parameters
 	)
 }

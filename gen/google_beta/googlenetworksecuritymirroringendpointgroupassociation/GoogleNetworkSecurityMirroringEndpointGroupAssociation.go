@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworksecuritymirroringendpointgroupassociation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association}.
 type GoogleNetworkSecurityMirroringEndpointGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,7 @@ type GoogleNetworkSecurityMirroringEndpointGroupAssociation interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Locations() GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsList
 	LocationsDetails() GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList
 	MirroringEndpointGroup() *string
 	SetMirroringEndpointGroup(val *string)
@@ -329,6 +330,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociation) Locat
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociation) Locations() GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsList {
+	var returns GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsList
+	_jsii_.Get(
+		j,
+		"locations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociation) LocationsDetails() GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList {
 	var returns GoogleNetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList
 	_jsii_.Get(
@@ -560,7 +571,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociation) Updat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
 func NewGoogleNetworkSecurityMirroringEndpointGroupAssociation(scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringEndpointGroupAssociationConfig) GoogleNetworkSecurityMirroringEndpointGroupAssociation {
 	_init_.Initialize()
 
@@ -578,7 +589,7 @@ func NewGoogleNetworkSecurityMirroringEndpointGroupAssociation(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
 func NewGoogleNetworkSecurityMirroringEndpointGroupAssociation_Override(g GoogleNetworkSecurityMirroringEndpointGroupAssociation, scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringEndpointGroupAssociationConfig) {
 	_init_.Initialize()
 

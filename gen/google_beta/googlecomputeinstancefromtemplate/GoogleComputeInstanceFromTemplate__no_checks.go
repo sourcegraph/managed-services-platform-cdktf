@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutGuestAccelerato
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutInstanceEncryptionKeyParameters(value *GoogleComputeInstanceFromTemplateInstanceEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }

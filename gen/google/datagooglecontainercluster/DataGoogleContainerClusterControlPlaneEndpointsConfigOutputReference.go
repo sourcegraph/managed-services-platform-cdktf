@@ -30,6 +30,7 @@ type DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference interf
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterControlPlaneEndpointsConfig
 	SetInternalValue(val *DataGoogleContainerClusterControlPlaneEndpointsConfig)
+	IpEndpointsConfig() DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference) IpEndpointsConfig() DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList {
+	var returns DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList
+	_jsii_.Get(
+		j,
+		"ipEndpointsConfig",
 		&returns,
 	)
 	return returns

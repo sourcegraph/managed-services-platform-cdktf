@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googletranscoderjobtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_transcoder_job_template google_transcoder_job_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_transcoder_job_template google_transcoder_job_template}.
 type GoogleTranscoderJobTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_transcoder_job_template google_transcoder_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_transcoder_job_template google_transcoder_job_template} Resource.
 func NewGoogleTranscoderJobTemplate(scope constructs.Construct, id *string, config *GoogleTranscoderJobTemplateConfig) GoogleTranscoderJobTemplate {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewGoogleTranscoderJobTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_transcoder_job_template google_transcoder_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_transcoder_job_template google_transcoder_job_template} Resource.
 func NewGoogleTranscoderJobTemplate_Override(g GoogleTranscoderJobTemplate, scope constructs.Construct, id *string, config *GoogleTranscoderJobTemplateConfig) {
 	_init_.Initialize()
 

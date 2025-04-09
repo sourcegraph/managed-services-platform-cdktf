@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExternalDataConfiguration", GoMethod: "PutExternalDataConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaterializedView", GoMethod: "PutMaterializedView"},
 			_jsii_.MemberMethod{JsiiMethod: "putRangePartitioning", GoMethod: "PutRangePartitioning"},
+			_jsii_.MemberMethod{JsiiMethod: "putSchemaForeignTypeInfo", GoMethod: "PutSchemaForeignTypeInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConstraints", GoMethod: "PutTableConstraints"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableReplicationInfo", GoMethod: "PutTableReplicationInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimePartitioning", GoMethod: "PutTimePartitioning"},
@@ -113,13 +114,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRequirePartitionFilter", GoMethod: "ResetRequirePartitionFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceTags", GoMethod: "ResetResourceTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaForeignTypeInfo", GoMethod: "ResetSchemaForeignTypeInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConstraints", GoMethod: "ResetTableConstraints"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTableMetadataView", GoMethod: "ResetTableMetadataView"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableReplicationInfo", GoMethod: "ResetTableReplicationInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimePartitioning", GoMethod: "ResetTimePartitioning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetView", GoMethod: "ResetView"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTags", GoGetter: "ResourceTags"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTagsInput", GoGetter: "ResourceTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaForeignTypeInfo", GoGetter: "SchemaForeignTypeInfo"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaForeignTypeInfoInput", GoGetter: "SchemaForeignTypeInfoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "schemaInput", GoGetter: "SchemaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -128,6 +133,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tableConstraintsInput", GoGetter: "TableConstraintsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
 			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tableMetadataView", GoGetter: "TableMetadataView"},
+			_jsii_.MemberProperty{JsiiProperty: "tableMetadataViewInput", GoGetter: "TableMetadataViewInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableReplicationInfo", GoGetter: "TableReplicationInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "tableReplicationInfoInput", GoGetter: "TableReplicationInfoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -1061,6 +1068,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigqueryTableRangePartitioningRangeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableSchemaForeignTypeInfo",
+		reflect.TypeOf((*GoogleBigqueryTableSchemaForeignTypeInfo)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableSchemaForeignTypeInfoOutputReference",
+		reflect.TypeOf((*GoogleBigqueryTableSchemaForeignTypeInfoOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "typeSystem", GoGetter: "TypeSystem"},
+			_jsii_.MemberProperty{JsiiProperty: "typeSystemInput", GoGetter: "TypeSystemInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleBigqueryTableSchemaForeignTypeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

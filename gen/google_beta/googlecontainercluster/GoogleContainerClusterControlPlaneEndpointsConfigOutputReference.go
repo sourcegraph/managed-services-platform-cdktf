@@ -31,6 +31,8 @@ type GoogleContainerClusterControlPlaneEndpointsConfigOutputReference interface 
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterControlPlaneEndpointsConfig
 	SetInternalValue(val *GoogleContainerClusterControlPlaneEndpointsConfig)
+	IpEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference
+	IpEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type GoogleContainerClusterControlPlaneEndpointsConfigOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDnsEndpointConfig(value *GoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig)
+	PutIpEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig)
 	ResetDnsEndpointConfig()
+	ResetIpEndpointsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputReference) IpEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference {
+	var returns GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ipEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputReference) IpEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig {
+	var returns *GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig
+	_jsii_.Get(
+		j,
+		"ipEndpointsConfigInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (g *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputReference) PutIpEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig) {
+	if err := g.validatePutIpEndpointsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIpEndpointsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputReference) ResetDnsEndpointConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDnsEndpointConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterControlPlaneEndpointsConfigOutputReference) ResetIpEndpointsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpEndpointsConfig",
 		nil, // no parameters
 	)
 }

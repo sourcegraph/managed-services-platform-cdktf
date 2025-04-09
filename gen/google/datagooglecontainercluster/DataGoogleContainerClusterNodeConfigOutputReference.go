@@ -52,6 +52,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
+	MaxRunDuration() *string
 	Metadata() cdktf.StringMap
 	MinCpuPlatform() *string
 	NodeGroup() *string
@@ -76,6 +77,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() DataGoogleContainerClusterNodeConfigWindowsNodeConfigList
 	WorkloadMetadataConfig() DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList
 	// Experimental.
 	ComputeFqn() *string
@@ -396,6 +398,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) MachineT
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Metadata() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -571,6 +583,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) WindowsNodeConfig() DataGoogleContainerClusterNodeConfigWindowsNodeConfigList {
+	var returns DataGoogleContainerClusterNodeConfigWindowsNodeConfigList
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
 		&returns,
 	)
 	return returns

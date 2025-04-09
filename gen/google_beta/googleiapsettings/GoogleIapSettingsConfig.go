@@ -24,34 +24,34 @@ type GoogleIapSettingsConfig struct {
 	// Name can have below resources:
 	// * organizations/{organization_id}
 	// * folders/{folder_id}
-	// * projects/{projects_id}
-	// * projects/{projects_id}/iap_web
-	// * projects/{projects_id}/iap_web/compute
-	// * projects/{projects_id}/iap_web/compute-{region}
-	// * projects/{projects_id}/iap_web/compute/service/{service_id}
-	// * projects/{projects_id}/iap_web/compute-{region}/service/{service_id}
-	// * projects/{projects_id}/iap_web/appengine-{app_id}
-	// * projects/{projects_id}/iap_web/appengine-{app_id}/service/{service_id}
-	// * projects/{projects_id}/iap_web/appengine-{app_id}/service/{service_id}/version/{version_id}
+	// * projects/{project_id}
+	// * projects/{project_id}/iap_web
+	// * projects/{project_id}/iap_web/compute
+	// * projects/{project_id}/iap_web/compute-{region}
+	// * projects/{project_id}/iap_web/compute/services/{service_id}
+	// * projects/{project_id}/iap_web/compute-{region}/services/{service_id}
+	// * projects/{project_id}/iap_web/appengine-{app_id}
+	// * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}
+	// * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}/version/{version_id}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iap_settings#name GoogleIapSettings#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_iap_settings#name GoogleIapSettings#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// access_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iap_settings#access_settings GoogleIapSettings#access_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_iap_settings#access_settings GoogleIapSettings#access_settings}
 	AccessSettings *GoogleIapSettingsAccessSettings `field:"optional" json:"accessSettings" yaml:"accessSettings"`
 	// application_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iap_settings#application_settings GoogleIapSettings#application_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_iap_settings#application_settings GoogleIapSettings#application_settings}
 	ApplicationSettings *GoogleIapSettingsApplicationSettings `field:"optional" json:"applicationSettings" yaml:"applicationSettings"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iap_settings#id GoogleIapSettings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_iap_settings#id GoogleIapSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iap_settings#timeouts GoogleIapSettings#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_iap_settings#timeouts GoogleIapSettings#timeouts}
 	Timeouts *GoogleIapSettingsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

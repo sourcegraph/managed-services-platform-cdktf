@@ -9,11 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworksecurityinterceptendpointgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group}.
 type GoogleNetworkSecurityInterceptEndpointGroup interface {
 	cdktf.TerraformResource
+	Associations() GoogleNetworkSecurityInterceptEndpointGroupAssociationsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConnectedDeploymentGroup() GoogleNetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupList
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -29,6 +31,9 @@ type GoogleNetworkSecurityInterceptEndpointGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -129,6 +134,7 @@ type GoogleNetworkSecurityInterceptEndpointGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecurityInterceptEndpointGroupTimeouts)
+	ResetDescription()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -154,11 +160,31 @@ type jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) Associations() GoogleNetworkSecurityInterceptEndpointGroupAssociationsList {
+	var returns GoogleNetworkSecurityInterceptEndpointGroupAssociationsList
+	_jsii_.Get(
+		j,
+		"associations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) ConnectedDeploymentGroup() GoogleNetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupList {
+	var returns GoogleNetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupList
+	_jsii_.Get(
+		j,
+		"connectedDeploymentGroup",
 		&returns,
 	)
 	return returns
@@ -209,6 +235,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) DependsOn() *[]*
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -525,7 +571,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupConfig) GoogleNetworkSecurityInterceptEndpointGroup {
 	_init_.Initialize()
 
@@ -543,7 +589,7 @@ func NewGoogleNetworkSecurityInterceptEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroup_Override(g GoogleNetworkSecurityInterceptEndpointGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -580,6 +626,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup)SetDependsOn(val 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1049,6 +1106,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) PutTimeouts(valu
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

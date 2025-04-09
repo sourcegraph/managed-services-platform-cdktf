@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,8 @@ type GoogleCloudRunV2Service interface {
 	AnnotationsInput() *map[string]*string
 	BinaryAuthorization() GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *GoogleCloudRunV2ServiceBinaryAuthorization
+	BuildConfig() GoogleCloudRunV2ServiceBuildConfigOutputReference
+	BuildConfigInput() *GoogleCloudRunV2ServiceBuildConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -178,12 +180,14 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBinaryAuthorization(value *GoogleCloudRunV2ServiceBinaryAuthorization)
+	PutBuildConfig(value *GoogleCloudRunV2ServiceBuildConfig)
 	PutScaling(value *GoogleCloudRunV2ServiceScaling)
 	PutTemplate(value *GoogleCloudRunV2ServiceTemplate)
 	PutTimeouts(value *GoogleCloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
 	ResetAnnotations()
 	ResetBinaryAuthorization()
+	ResetBuildConfig()
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) BinaryAuthorizationInput() *GoogleCl
 	_jsii_.Get(
 		j,
 		"binaryAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) BuildConfig() GoogleCloudRunV2ServiceBuildConfigOutputReference {
+	var returns GoogleCloudRunV2ServiceBuildConfigOutputReference
+	_jsii_.Get(
+		j,
+		"buildConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) BuildConfigInput() *GoogleCloudRunV2ServiceBuildConfig {
+	var returns *GoogleCloudRunV2ServiceBuildConfig
+	_jsii_.Get(
+		j,
+		"buildConfigInput",
 		&returns,
 	)
 	return returns
@@ -991,7 +1015,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Urls() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -1009,7 +1033,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1617,6 +1641,17 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) PutBinaryAuthorization(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) PutBuildConfig(value *GoogleCloudRunV2ServiceBuildConfig) {
+	if err := g.validatePutBuildConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBuildConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) PutScaling(value *GoogleCloudRunV2ServiceScaling) {
 	if err := g.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -1673,6 +1708,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetBinaryAuthorization() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBinaryAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetBuildConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBuildConfig",
 		nil, // no parameters
 	)
 }

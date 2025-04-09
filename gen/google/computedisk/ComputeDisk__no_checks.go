@@ -84,6 +84,10 @@ func (c *jsiiProxy_ComputeDisk) validatePutGuestOsFeaturesParameters(value inter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDisk) validatePutParamsParameters(value *ComputeDiskParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDisk) validatePutSourceImageEncryptionKeyParameters(value *ComputeDiskSourceImageEncryptionKey) error {
 	return nil
 }
@@ -116,11 +120,23 @@ func (j *jsiiProxy_ComputeDisk) validateSetAccessModeParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyPrefixParameters(val *string) error {
 	return nil
 }
 
@@ -185,6 +201,14 @@ func (j *jsiiProxy_ComputeDisk) validateSetSnapshotParameters(val *string) error
 }
 
 func (j *jsiiProxy_ComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetSourceInstantSnapshotParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetSourceStorageObjectParameters(val *string) error {
 	return nil
 }
 
