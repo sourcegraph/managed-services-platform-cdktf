@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlespannerbackupschedule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}.
 type GoogleSpannerBackupSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,8 @@ type GoogleSpannerBackupSchedule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionConfig() GoogleSpannerBackupScheduleEncryptionConfigOutputReference
+	EncryptionConfigInput() *GoogleSpannerBackupScheduleEncryptionConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,10 +129,12 @@ type GoogleSpannerBackupSchedule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *GoogleSpannerBackupScheduleEncryptionConfig)
 	PutFullBackupSpec(value *GoogleSpannerBackupScheduleFullBackupSpec)
 	PutIncrementalBackupSpec(value *GoogleSpannerBackupScheduleIncrementalBackupSpec)
 	PutSpec(value *GoogleSpannerBackupScheduleSpec)
 	PutTimeouts(value *GoogleSpannerBackupScheduleTimeouts)
+	ResetEncryptionConfig()
 	ResetFullBackupSpec()
 	ResetId()
 	ResetIncrementalBackupSpec()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_GoogleSpannerBackupSchedule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerBackupSchedule) EncryptionConfig() GoogleSpannerBackupScheduleEncryptionConfigOutputReference {
+	var returns GoogleSpannerBackupScheduleEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerBackupSchedule) EncryptionConfigInput() *GoogleSpannerBackupScheduleEncryptionConfig {
+	var returns *GoogleSpannerBackupScheduleEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +544,7 @@ func (j *jsiiProxy_GoogleSpannerBackupSchedule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewGoogleSpannerBackupSchedule(scope constructs.Construct, id *string, config *GoogleSpannerBackupScheduleConfig) GoogleSpannerBackupSchedule {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewGoogleSpannerBackupSchedule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewGoogleSpannerBackupSchedule_Override(g GoogleSpannerBackupSchedule, scope constructs.Construct, id *string, config *GoogleSpannerBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -1036,6 +1060,17 @@ func (g *jsiiProxy_GoogleSpannerBackupSchedule) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (g *jsiiProxy_GoogleSpannerBackupSchedule) PutEncryptionConfig(value *GoogleSpannerBackupScheduleEncryptionConfig) {
+	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSpannerBackupSchedule) PutFullBackupSpec(value *GoogleSpannerBackupScheduleFullBackupSpec) {
 	if err := g.validatePutFullBackupSpecParameters(value); err != nil {
 		panic(err)
@@ -1077,6 +1112,14 @@ func (g *jsiiProxy_GoogleSpannerBackupSchedule) PutTimeouts(value *GoogleSpanner
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerBackupSchedule) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionConfig",
+		nil, // no parameters
 	)
 }
 

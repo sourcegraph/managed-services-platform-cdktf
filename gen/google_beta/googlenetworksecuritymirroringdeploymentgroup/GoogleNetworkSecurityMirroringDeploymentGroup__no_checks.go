@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetCou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,18 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

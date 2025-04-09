@@ -44,7 +44,19 @@ func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetArchitectureParameters(val *string) error {
 	return nil
 }
 
@@ -89,6 +101,10 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSnapshotParameters(val *string) error {
 	return nil
 }
 

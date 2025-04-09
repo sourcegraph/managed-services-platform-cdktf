@@ -10,6 +10,7 @@ import (
 
 type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +38,9 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Size() *float64
+	Snapshot() *string
+	SourceImageEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList
+	SourceSnapshotEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
 	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -84,6 +88,16 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 // The jsii proxy struct for GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference
 type jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -211,6 +225,36 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) SourceImageEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList {
+	var returns GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList {
+	var returns GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -35,6 +35,9 @@ type GoogleComputeSubnetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableFlowLogs() interface{}
+	SetEnableFlowLogs(val interface{})
+	EnableFlowLogsInput() interface{}
 	ExternalIpv6Prefix() *string
 	SetExternalIpv6Prefix(val *string)
 	ExternalIpv6PrefixInput() *string
@@ -55,10 +58,14 @@ type GoogleComputeSubnetwork interface {
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	Ipv6AccessType() *string
 	SetIpv6AccessType(val *string)
 	Ipv6AccessTypeInput() *string
 	Ipv6CidrRange() *string
+	Ipv6GceEndpoint() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -113,6 +120,7 @@ type GoogleComputeSubnetwork interface {
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	State() *string
 	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -170,9 +178,11 @@ type GoogleComputeSubnetwork interface {
 	PutTimeouts(value *GoogleComputeSubnetworkTimeouts)
 	ResetAllowSubnetCidrRoutesOverlap()
 	ResetDescription()
+	ResetEnableFlowLogs()
 	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpCidrRange()
+	ResetIpCollection()
 	ResetIpv6AccessType()
 	ResetLogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -307,6 +317,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) EnableFlowLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) EnableFlowLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) ExternalIpv6Prefix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -427,6 +457,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) IpCidrRangeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) Ipv6AccessType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -452,6 +502,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) Ipv6CidrRange() *string {
 	_jsii_.Get(
 		j,
 		"ipv6CidrRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) Ipv6GceEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6GceEndpoint",
 		&returns,
 	)
 	return returns
@@ -777,6 +837,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) StackTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) SubnetworkId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -838,7 +908,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -856,7 +926,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -919,6 +989,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
+	if err := j.validateSetEnableFlowLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFlowLogs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
 	if err := j.validateSetExternalIpv6PrefixParameters(val); err != nil {
 		panic(err)
@@ -956,6 +1037,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetIpCidrRange(val *string) {
 	_jsii_.Set(
 		j,
 		"ipCidrRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -1524,6 +1616,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetEnableFlowLogs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableFlowLogs",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetwork) ResetExternalIpv6Prefix() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1544,6 +1644,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetIpCidrRange() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpCidrRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }

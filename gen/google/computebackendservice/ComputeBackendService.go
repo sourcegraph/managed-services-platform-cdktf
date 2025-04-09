@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -42,6 +42,8 @@ type ComputeBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() ComputeBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	CustomRequestHeaders() *[]*string
 	SetCustomRequestHeaders(val *[]*string)
 	CustomRequestHeadersInput() *[]*string
@@ -194,6 +196,7 @@ type ComputeBackendService interface {
 	PutCdnPolicy(value *ComputeBackendServiceCdnPolicy)
 	PutCircuitBreakers(value *ComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *ComputeBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutIap(value *ComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
@@ -208,6 +211,7 @@ type ComputeBackendService interface {
 	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
@@ -438,6 +442,26 @@ func (j *jsiiProxy_ComputeBackendService) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CustomMetrics() ComputeBackendServiceCustomMetricsList {
+	var returns ComputeBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -1094,7 +1118,7 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1112,7 +1136,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1819,6 +1843,17 @@ func (c *jsiiProxy_ComputeBackendService) PutConsistentHash(value *ComputeBacken
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutCustomMetrics(value interface{}) {
+	if err := c.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutIap(value *ComputeBackendServiceIap) {
 	if err := c.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1948,6 +1983,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetConsistentHash() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConsistentHash",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }

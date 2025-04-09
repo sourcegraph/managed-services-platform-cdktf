@@ -29,6 +29,8 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleNetworkSecurityAuthzPolicyHttpRulesTo
 	SetInternalValue(val *GoogleNetworkSecurityAuthzPolicyHttpRulesTo)
+	NotOperations() GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsList
+	NotOperationsInput() interface{}
 	Operations() GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsList
 	OperationsInput() interface{}
 	// Experimental.
@@ -63,7 +65,9 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNotOperations(value interface{})
 	PutOperations(value interface{})
+	ResetNotOperations()
 	ResetOperations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) NotOperations() GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsList {
+	var returns GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsList
+	_jsii_.Get(
+		j,
+		"notOperations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) NotOperationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notOperationsInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) I
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) PutNotOperations(value interface{}) {
+	if err := g.validatePutNotOperationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotOperations",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) PutOperations(value interface{}) {
 	if err := g.validatePutOperationsParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) P
 		g,
 		"putOperations",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOutputReference) ResetNotOperations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotOperations",
+		nil, // no parameters
 	)
 }
 

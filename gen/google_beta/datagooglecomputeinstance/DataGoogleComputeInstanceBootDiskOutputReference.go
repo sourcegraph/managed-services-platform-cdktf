@@ -28,9 +28,12 @@ type DataGoogleComputeInstanceBootDiskOutputReference interface {
 	CreationStack() *[]*string
 	DeviceName() *string
 	DiskEncryptionKeyRaw() *string
+	DiskEncryptionKeyRsa() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
 	InitializeParams() DataGoogleComputeInstanceBootDiskInitializeParamsList
 	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceBootDisk
@@ -145,6 +148,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncrypt
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -155,11 +168,31 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncrypt
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
 		&returns,
 	)
 	return returns

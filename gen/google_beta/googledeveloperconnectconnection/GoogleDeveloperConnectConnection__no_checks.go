@@ -72,7 +72,31 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketCloudConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketCloudConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketDataCenterConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutCryptoKeyConfigParameters(value *GoogleDeveloperConnectConnectionCryptoKeyConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutGithubConfigParameters(value *GoogleDeveloperConnectConnectionGithubConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutGithubEnterpriseConfigParameters(value *GoogleDeveloperConnectConnectionGithubEnterpriseConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutGitlabConfigParameters(value *GoogleDeveloperConnectConnectionGitlabConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutGitlabEnterpriseConfigParameters(value *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig) error {
 	return nil
 }
 

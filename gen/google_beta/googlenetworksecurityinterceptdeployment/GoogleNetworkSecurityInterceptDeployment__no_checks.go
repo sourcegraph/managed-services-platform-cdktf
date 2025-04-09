@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) validateSetCountPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) validateSetForwardingRuleParameters(val *string) error {
 	return nil
 }

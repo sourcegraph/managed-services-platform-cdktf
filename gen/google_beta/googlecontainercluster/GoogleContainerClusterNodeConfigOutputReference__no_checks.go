@@ -120,6 +120,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutT
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *GoogleContainerClusterNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetL
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	return nil
 }
 

@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutFileSharesParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutInitialReplicationParameters(value *GoogleFilestoreInstanceInitialReplication) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProtocolParameters(val *s
 }
 
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlechroniclewatchlist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist}.
 type GoogleChronicleWatchlist interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -146,6 +146,7 @@ type GoogleChronicleWatchlist interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetWatchlistId()
 	ResetWatchlistUserPreferences()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -586,7 +587,7 @@ func (j *jsiiProxy_GoogleChronicleWatchlist) WatchlistUserPreferencesInput() *Go
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource.
 func NewGoogleChronicleWatchlist(scope constructs.Construct, id *string, config *GoogleChronicleWatchlistConfig) GoogleChronicleWatchlist {
 	_init_.Initialize()
 
@@ -604,7 +605,7 @@ func NewGoogleChronicleWatchlist(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource.
 func NewGoogleChronicleWatchlist_Override(g GoogleChronicleWatchlist, scope constructs.Construct, id *string, config *GoogleChronicleWatchlistConfig) {
 	_init_.Initialize()
 
@@ -1201,6 +1202,14 @@ func (g *jsiiProxy_GoogleChronicleWatchlist) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleChronicleWatchlist) ResetWatchlistId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWatchlistId",
 		nil, // no parameters
 	)
 }

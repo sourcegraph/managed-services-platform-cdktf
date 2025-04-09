@@ -32,6 +32,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "creationTimestamp", GoGetter: "CreationTimestamp"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetrics", GoGetter: "CustomMetrics"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetricsInput", GoGetter: "CustomMetricsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
@@ -95,6 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCircuitBreakers", GoMethod: "PutCircuitBreakers"},
 			_jsii_.MemberMethod{JsiiMethod: "putConnectionTrackingPolicy", GoMethod: "PutConnectionTrackingPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putConsistentHash", GoMethod: "PutConsistentHash"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomMetrics", GoMethod: "PutCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putFailoverPolicy", GoMethod: "PutFailoverPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putIap", GoMethod: "PutIap"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
@@ -112,6 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionDrainingTimeoutSec", GoMethod: "ResetConnectionDrainingTimeoutSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTrackingPolicy", GoMethod: "ResetConnectionTrackingPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConsistentHash", GoMethod: "ResetConsistentHash"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetrics", GoMethod: "ResetCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableCdn", GoMethod: "ResetEnableCdn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFailoverPolicy", GoMethod: "ResetFailoverPolicy"},
@@ -168,6 +172,71 @@ func init() {
 		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackend",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceBackend)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendCustomMetrics",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceBackendCustomMetrics)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendCustomMetricsList",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceBackendCustomMetricsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionBackendServiceBackendCustomMetricsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendCustomMetricsOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceBackendCustomMetricsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dryRun", GoGetter: "DryRun"},
+			_jsii_.MemberProperty{JsiiProperty: "dryRunInput", GoGetter: "DryRunInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxUtilization", GoGetter: "MaxUtilization"},
+			_jsii_.MemberProperty{JsiiProperty: "maxUtilizationInput", GoGetter: "MaxUtilizationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxUtilization", GoMethod: "ResetMaxUtilization"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionBackendServiceBackendCustomMetricsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendList",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceBackendList)(nil)).Elem(),
@@ -202,6 +271,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetrics", GoGetter: "CustomMetrics"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetricsInput", GoGetter: "CustomMetricsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "failover", GoGetter: "Failover"},
@@ -235,8 +306,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxRatePerInstanceInput", GoGetter: "MaxRatePerInstanceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxUtilization", GoGetter: "MaxUtilization"},
 			_jsii_.MemberProperty{JsiiProperty: "maxUtilizationInput", GoGetter: "MaxUtilizationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomMetrics", GoMethod: "PutCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBalancingMode", GoMethod: "ResetBalancingMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityScaler", GoMethod: "ResetCapacityScaler"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetrics", GoMethod: "ResetCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFailover", GoMethod: "ResetFailover"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxConnections", GoMethod: "ResetMaxConnections"},
@@ -722,6 +795,68 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetrics",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceCustomMetrics)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsList",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceCustomMetricsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsOutputReference",
+		reflect.TypeOf((*GoogleComputeRegionBackendServiceCustomMetricsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dryRun", GoGetter: "DryRun"},
+			_jsii_.MemberProperty{JsiiProperty: "dryRunInput", GoGetter: "DryRunInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceFailoverPolicy",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceFailoverPolicy)(nil)).Elem(),
 	)
@@ -838,7 +973,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalFields", GoGetter: "OptionalFields"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalFieldsInput", GoGetter: "OptionalFieldsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalMode", GoGetter: "OptionalMode"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalModeInput", GoGetter: "OptionalModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnable", GoMethod: "ResetEnable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOptionalFields", GoMethod: "ResetOptionalFields"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOptionalMode", GoMethod: "ResetOptionalMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSampleRate", GoMethod: "ResetSampleRate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sampleRate", GoGetter: "SampleRate"},

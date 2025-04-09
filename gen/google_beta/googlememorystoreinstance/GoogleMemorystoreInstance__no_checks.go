@@ -72,7 +72,19 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutAutomatedBackupConfigParameters(value *GoogleMemorystoreInstanceAutomatedBackupConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutMaintenancePolicyParameters(value *GoogleMemorystoreInstanceMaintenancePolicy) error {
 	return nil
 }
 

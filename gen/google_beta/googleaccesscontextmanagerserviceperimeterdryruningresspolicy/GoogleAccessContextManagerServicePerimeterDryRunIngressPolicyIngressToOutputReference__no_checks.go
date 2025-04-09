@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunIngressPolicy
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunIngressPolicyIngressToOutputReference) validateSetRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunIngressPolicyIngressToOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

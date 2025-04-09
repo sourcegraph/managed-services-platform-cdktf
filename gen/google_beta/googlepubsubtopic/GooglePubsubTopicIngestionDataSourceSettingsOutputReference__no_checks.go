@@ -48,7 +48,19 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAwsMskParameters(value *GooglePubsubTopicIngestionDataSourceSettingsAwsMsk) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAzureEventHubsParameters(value *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutCloudStorageParameters(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutConfluentCloudParameters(value *GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_image google_compute_image}.
 type ComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -87,6 +87,8 @@ type ComputeImage interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ShieldedInstanceInitialState() ComputeImageShieldedInstanceInitialStateOutputReference
+	ShieldedInstanceInitialStateInput() *ComputeImageShieldedInstanceInitialState
 	SourceDisk() *string
 	SetSourceDisk(val *string)
 	SourceDiskInput() *string
@@ -154,6 +156,7 @@ type ComputeImage interface {
 	PutGuestOsFeatures(value interface{})
 	PutImageEncryptionKey(value *ComputeImageImageEncryptionKey)
 	PutRawDisk(value *ComputeImageRawDisk)
+	PutShieldedInstanceInitialState(value *ComputeImageShieldedInstanceInitialState)
 	PutTimeouts(value *ComputeImageTimeouts)
 	ResetDescription()
 	ResetDiskSizeGb()
@@ -168,6 +171,7 @@ type ComputeImage interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRawDisk()
+	ResetShieldedInstanceInitialState()
 	ResetSourceDisk()
 	ResetSourceImage()
 	ResetSourceSnapshot()
@@ -591,6 +595,26 @@ func (j *jsiiProxy_ComputeImage) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeImage) ShieldedInstanceInitialState() ComputeImageShieldedInstanceInitialStateOutputReference {
+	var returns ComputeImageShieldedInstanceInitialStateOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) ShieldedInstanceInitialStateInput() *ComputeImageShieldedInstanceInitialState {
+	var returns *ComputeImageShieldedInstanceInitialState
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeImage) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
@@ -732,7 +756,7 @@ func (j *jsiiProxy_ComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImageConfig) ComputeImage {
 	_init_.Initialize()
 
@@ -750,7 +774,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *string, config *ComputeImageConfig) {
 	_init_.Initialize()
 
@@ -1347,6 +1371,17 @@ func (c *jsiiProxy_ComputeImage) PutRawDisk(value *ComputeImageRawDisk) {
 	)
 }
 
+func (c *jsiiProxy_ComputeImage) PutShieldedInstanceInitialState(value *ComputeImageShieldedInstanceInitialState) {
+	if err := c.validatePutShieldedInstanceInitialStateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putShieldedInstanceInitialState",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeImage) PutTimeouts(value *ComputeImageTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1442,6 +1477,14 @@ func (c *jsiiProxy_ComputeImage) ResetRawDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRawDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) ResetShieldedInstanceInitialState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetShieldedInstanceInitialState",
 		nil, // no parameters
 	)
 }

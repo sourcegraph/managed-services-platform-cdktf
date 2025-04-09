@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagoogleartifactregistryrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository}.
 type DataGoogleArtifactRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VulnerabilityScanningCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/data-sources/google_artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository_Override(d DataGoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 

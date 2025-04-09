@@ -29,6 +29,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GracefulShutdown() DataGoogleComputeInstanceSchedulingGracefulShutdownList
 	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeInstanceScheduling
@@ -42,6 +43,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	OnInstanceStopAction() DataGoogleComputeInstanceSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
+	TerminationTime() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,6 +146,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) GracefulShutdown() DataGoogleComputeInstanceSchedulingGracefulShutdownList {
+	var returns DataGoogleComputeInstanceSchedulingGracefulShutdownList
+	_jsii_.Get(
+		j,
+		"gracefulShutdown",
 		&returns,
 	)
 	return returns
@@ -264,6 +276,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Provision
 	_jsii_.Get(
 		j,
 		"provisioningModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
 		&returns,
 	)
 	return returns

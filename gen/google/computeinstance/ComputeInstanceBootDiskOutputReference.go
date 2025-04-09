@@ -34,9 +34,18 @@ type ComputeInstanceBootDiskOutputReference interface {
 	DiskEncryptionKeyRaw() *string
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
+	DiskEncryptionKeyRsa() *string
+	SetDiskEncryptionKeyRsa(val *string)
+	DiskEncryptionKeyRsaInput() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
+	SetDiskEncryptionServiceAccount(val *string)
+	DiskEncryptionServiceAccountInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	InitializeParams() ComputeInstanceBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *ComputeInstanceBootDiskInitializeParams
 	Interface() *string
@@ -89,6 +98,9 @@ type ComputeInstanceBootDiskOutputReference interface {
 	ResetAutoDelete()
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
+	ResetDiskEncryptionKeyRsa()
+	ResetDiskEncryptionServiceAccount()
+	ResetGuestOsFeatures()
 	ResetInitializeParams()
 	ResetInterface()
 	ResetKmsKeySelfLink()
@@ -199,6 +211,26 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionKeyRawI
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionKeyRsaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -209,11 +241,51 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionKeySha2
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) DiskEncryptionServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -428,6 +500,39 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetDiskEncryptionKeyRa
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetDiskEncryptionKeyRsa(val *string) {
+	if err := j.validateSetDiskEncryptionKeyRsaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionKeyRsa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetDiskEncryptionServiceAccount(val *string) {
+	if err := j.validateSetDiskEncryptionServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -726,6 +831,30 @@ func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetDiskEncryptionKe
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskEncryptionKeyRaw",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetDiskEncryptionKeyRsa() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskEncryptionKeyRsa",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetDiskEncryptionServiceAccount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }

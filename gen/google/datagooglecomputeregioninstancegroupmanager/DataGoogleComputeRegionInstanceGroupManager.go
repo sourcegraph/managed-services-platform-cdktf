@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputeregioninstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type DataGoogleComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformDataSource
 	AllInstancesConfig() DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigList
@@ -73,12 +73,15 @@ type DataGoogleComputeRegionInstanceGroupManager interface {
 	SelfLink() *string
 	SetSelfLink(val *string)
 	SelfLinkInput() *string
+	StandbyPolicy() DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList
 	StatefulDisk() DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList
 	StatefulExternalIp() DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
 	StatefulInternalIp() DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
 	Status() DataGoogleComputeRegionInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	TargetSize() *float64
+	TargetStoppedSize() *float64
+	TargetSuspendedSize() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -491,6 +494,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) SelfLinkInput() 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) StandbyPolicy() DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList {
+	var returns DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList
+	_jsii_.Get(
+		j,
+		"standbyPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) StatefulDisk() DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList {
 	var returns DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList
 	_jsii_.Get(
@@ -546,6 +559,26 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) TargetSize() *fl
 	_jsii_.Get(
 		j,
 		"targetSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) TargetStoppedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) TargetSuspendedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSize",
 		&returns,
 	)
 	return returns
@@ -622,7 +655,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) WaitForInstances
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
 func NewDataGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupManagerConfig) DataGoogleComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -640,7 +673,7 @@ func NewDataGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
 func NewDataGoogleComputeRegionInstanceGroupManager_Override(d DataGoogleComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 

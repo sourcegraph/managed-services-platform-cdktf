@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputerouterpeer/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
 type GoogleComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -84,6 +84,8 @@ type GoogleComputeRouterPeer interface {
 	Ipv6NexthopAddress() *string
 	SetIpv6NexthopAddress(val *string)
 	Ipv6NexthopAddressInput() *string
+	IsAdvertisedRoutePrioritySet() cdktf.IResolvable
+	IsCustomLearnedPrioritySet() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -138,6 +140,12 @@ type GoogleComputeRouterPeer interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRouterPeerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZeroAdvertisedRoutePriority() interface{}
+	SetZeroAdvertisedRoutePriority(val interface{})
+	ZeroAdvertisedRoutePriorityInput() interface{}
+	ZeroCustomLearnedRoutePriority() interface{}
+	SetZeroCustomLearnedRoutePriority(val interface{})
+	ZeroCustomLearnedRoutePriorityInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -213,6 +221,8 @@ type GoogleComputeRouterPeer interface {
 	ResetRegion()
 	ResetRouterApplianceInstance()
 	ResetTimeouts()
+	ResetZeroAdvertisedRoutePriority()
+	ResetZeroCustomLearnedRoutePriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -651,6 +661,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) Ipv6NexthopAddressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) IsAdvertisedRoutePrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isAdvertisedRoutePrioritySet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) IsCustomLearnedPrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isCustomLearnedPrioritySet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -961,8 +991,48 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) ZeroAdvertisedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriority",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+func (j *jsiiProxy_GoogleComputeRouterPeer) ZeroAdvertisedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) ZeroCustomLearnedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) ZeroCustomLearnedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer {
 	_init_.Initialize()
 
@@ -980,7 +1050,7 @@ func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer_Override(g GoogleComputeRouterPeer, scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1308,6 +1378,28 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetRouterApplianceInstance(val *strin
 	_jsii_.Set(
 		j,
 		"routerApplianceInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetZeroAdvertisedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroAdvertisedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroAdvertisedRoutePriority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetZeroCustomLearnedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroCustomLearnedRoutePriority",
 		val,
 	)
 }
@@ -1916,6 +2008,22 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetZeroAdvertisedRoutePriority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZeroAdvertisedRoutePriority",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetZeroCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZeroCustomLearnedRoutePriority",
 		nil, // no parameters
 	)
 }
