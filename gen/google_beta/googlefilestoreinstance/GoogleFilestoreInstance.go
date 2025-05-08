@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefilestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_filestore_instance google_filestore_instance}.
 type GoogleFilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,6 +38,8 @@ type GoogleFilestoreInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DirectoryServices() GoogleFilestoreInstanceDirectoryServicesOutputReference
+	DirectoryServicesInput() *GoogleFilestoreInstanceDirectoryServices
 	EffectiveLabels() cdktf.StringMap
 	EffectiveReplication() GoogleFilestoreInstanceEffectiveReplicationList
 	Etag() *string
@@ -155,6 +157,7 @@ type GoogleFilestoreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDirectoryServices(value *GoogleFilestoreInstanceDirectoryServices)
 	PutFileShares(value *GoogleFilestoreInstanceFileShares)
 	PutInitialReplication(value *GoogleFilestoreInstanceInitialReplication)
 	PutNetworks(value interface{})
@@ -163,6 +166,7 @@ type GoogleFilestoreInstance interface {
 	ResetDeletionProtectionEnabled()
 	ResetDeletionProtectionReason()
 	ResetDescription()
+	ResetDirectoryServices()
 	ResetId()
 	ResetInitialReplication()
 	ResetKmsKeyName()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_GoogleFilestoreInstance) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) DirectoryServices() GoogleFilestoreInstanceDirectoryServicesOutputReference {
+	var returns GoogleFilestoreInstanceDirectoryServicesOutputReference
+	_jsii_.Get(
+		j,
+		"directoryServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) DirectoryServicesInput() *GoogleFilestoreInstanceDirectoryServices {
+	var returns *GoogleFilestoreInstanceDirectoryServices
+	_jsii_.Get(
+		j,
+		"directoryServicesInput",
 		&returns,
 	)
 	return returns
@@ -766,7 +790,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) GoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -784,7 +808,7 @@ func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance_Override(g GoogleFilestoreInstance, scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1359,6 +1383,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) PutDirectoryServices(value *GoogleFilestoreInstanceDirectoryServices) {
+	if err := g.validatePutDirectoryServicesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDirectoryServices",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) PutFileShares(value *GoogleFilestoreInstanceFileShares) {
 	if err := g.validatePutFileSharesParameters(value); err != nil {
 		panic(err)
@@ -1434,6 +1469,14 @@ func (g *jsiiProxy_GoogleFilestoreInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) ResetDirectoryServices() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDirectoryServices",
 		nil, // no parameters
 	)
 }

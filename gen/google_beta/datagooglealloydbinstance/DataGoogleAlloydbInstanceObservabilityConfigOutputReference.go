@@ -10,6 +10,7 @@ import (
 
 type DataGoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	cdktf.ComplexObject
+	AssistiveExperiencesEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,6 +83,16 @@ type DataGoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleAlloydbInstanceObservabilityConfigOutputReference
 type jsiiProxy_DataGoogleAlloydbInstanceObservabilityConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"assistiveExperiencesEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleAlloydbInstanceObservabilityConfigOutputReference) ComplexObjectIndex() interface{} {

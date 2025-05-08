@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworkservicesauthzextension/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}.
 type GoogleNetworkServicesAuthzExtension interface {
 	cdktf.TerraformResource
 	Authority() *string
@@ -681,7 +681,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAuthzExtension) WireFormatInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
 func NewGoogleNetworkServicesAuthzExtension(scope constructs.Construct, id *string, config *GoogleNetworkServicesAuthzExtensionConfig) GoogleNetworkServicesAuthzExtension {
 	_init_.Initialize()
 
@@ -699,7 +699,7 @@ func NewGoogleNetworkServicesAuthzExtension(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource.
 func NewGoogleNetworkServicesAuthzExtension_Override(g GoogleNetworkServicesAuthzExtension, scope constructs.Construct, id *string, config *GoogleNetworkServicesAuthzExtensionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/bigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() BigqueryTableBiglakeConfigurationOutputReference
@@ -50,6 +50,8 @@ type BigqueryTable interface {
 	ExpirationTime() *float64
 	SetExpirationTime(val *float64)
 	ExpirationTimeInput() *float64
+	ExternalCatalogTableOptions() BigqueryTableExternalCatalogTableOptionsOutputReference
+	ExternalCatalogTableOptionsInput() *BigqueryTableExternalCatalogTableOptions
 	ExternalDataConfiguration() BigqueryTableExternalDataConfigurationOutputReference
 	ExternalDataConfigurationInput() *BigqueryTableExternalDataConfiguration
 	// Experimental.
@@ -108,6 +110,8 @@ type BigqueryTable interface {
 	ResourceTagsInput() *map[string]*string
 	Schema() *string
 	SetSchema(val *string)
+	SchemaForeignTypeInfo() BigqueryTableSchemaForeignTypeInfoOutputReference
+	SchemaForeignTypeInfoInput() *BigqueryTableSchemaForeignTypeInfo
 	SchemaInput() *string
 	SelfLink() *string
 	TableConstraints() BigqueryTableTableConstraintsOutputReference
@@ -177,9 +181,11 @@ type BigqueryTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBiglakeConfiguration(value *BigqueryTableBiglakeConfiguration)
 	PutEncryptionConfiguration(value *BigqueryTableEncryptionConfiguration)
+	PutExternalCatalogTableOptions(value *BigqueryTableExternalCatalogTableOptions)
 	PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *BigqueryTableMaterializedView)
 	PutRangePartitioning(value *BigqueryTableRangePartitioning)
+	PutSchemaForeignTypeInfo(value *BigqueryTableSchemaForeignTypeInfo)
 	PutTableConstraints(value *BigqueryTableTableConstraints)
 	PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *BigqueryTableTimePartitioning)
@@ -190,6 +196,7 @@ type BigqueryTable interface {
 	ResetDescription()
 	ResetEncryptionConfiguration()
 	ResetExpirationTime()
+	ResetExternalCatalogTableOptions()
 	ResetExternalDataConfiguration()
 	ResetFriendlyName()
 	ResetId()
@@ -204,6 +211,7 @@ type BigqueryTable interface {
 	ResetRequirePartitionFilter()
 	ResetResourceTags()
 	ResetSchema()
+	ResetSchemaForeignTypeInfo()
 	ResetTableConstraints()
 	ResetTableMetadataView()
 	ResetTableReplicationInfo()
@@ -442,6 +450,26 @@ func (j *jsiiProxy_BigqueryTable) ExpirationTimeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"expirationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExternalCatalogTableOptions() BigqueryTableExternalCatalogTableOptionsOutputReference {
+	var returns BigqueryTableExternalCatalogTableOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) ExternalCatalogTableOptionsInput() *BigqueryTableExternalCatalogTableOptions {
+	var returns *BigqueryTableExternalCatalogTableOptions
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptionsInput",
 		&returns,
 	)
 	return returns
@@ -787,6 +815,26 @@ func (j *jsiiProxy_BigqueryTable) Schema() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) SchemaForeignTypeInfo() BigqueryTableSchemaForeignTypeInfoOutputReference {
+	var returns BigqueryTableSchemaForeignTypeInfoOutputReference
+	_jsii_.Get(
+		j,
+		"schemaForeignTypeInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) SchemaForeignTypeInfoInput() *BigqueryTableSchemaForeignTypeInfo {
+	var returns *BigqueryTableSchemaForeignTypeInfo
+	_jsii_.Get(
+		j,
+		"schemaForeignTypeInfoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) SchemaInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -978,7 +1026,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -996,7 +1044,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1615,6 +1663,17 @@ func (b *jsiiProxy_BigqueryTable) PutEncryptionConfiguration(value *BigqueryTabl
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) PutExternalCatalogTableOptions(value *BigqueryTableExternalCatalogTableOptions) {
+	if err := b.validatePutExternalCatalogTableOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putExternalCatalogTableOptions",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration) {
 	if err := b.validatePutExternalDataConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1644,6 +1703,17 @@ func (b *jsiiProxy_BigqueryTable) PutRangePartitioning(value *BigqueryTableRange
 	_jsii_.InvokeVoid(
 		b,
 		"putRangePartitioning",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutSchemaForeignTypeInfo(value *BigqueryTableSchemaForeignTypeInfo) {
+	if err := b.validatePutSchemaForeignTypeInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSchemaForeignTypeInfo",
 		[]interface{}{value},
 	)
 }
@@ -1740,6 +1810,14 @@ func (b *jsiiProxy_BigqueryTable) ResetExpirationTime() {
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) ResetExternalCatalogTableOptions() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetExternalCatalogTableOptions",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) ResetExternalDataConfiguration() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1832,6 +1910,14 @@ func (b *jsiiProxy_BigqueryTable) ResetSchema() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetSchemaForeignTypeInfo() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSchemaForeignTypeInfo",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,18 @@ func (c *jsiiProxy_ComputeImage) validatePutShieldedInstanceInitialStateParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validatePutSourceDiskEncryptionKeyParameters(value *ComputeImageSourceDiskEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validatePutSourceImageEncryptionKeyParameters(value *ComputeImageSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeImageSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validatePutTimeoutsParameters(value *ComputeImageTimeouts) error {
 	return nil
 }

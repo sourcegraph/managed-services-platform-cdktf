@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleBeyondcorpApplication) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpApplication) validatePutUpstreamsParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleBeyondcorpApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

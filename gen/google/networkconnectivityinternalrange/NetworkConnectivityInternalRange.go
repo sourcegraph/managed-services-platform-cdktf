@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/networkconnectivityinternalrange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
 type NetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type NetworkConnectivityInternalRange interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExcludeCidrRanges() *[]*string
+	SetExcludeCidrRanges(val *[]*string)
+	ExcludeCidrRangesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -147,6 +150,7 @@ type NetworkConnectivityInternalRange interface {
 	PutMigration(value *NetworkConnectivityInternalRangeMigration)
 	PutTimeouts(value *NetworkConnectivityInternalRangeTimeouts)
 	ResetDescription()
+	ResetExcludeCidrRanges()
 	ResetId()
 	ResetIpCidrRange()
 	ResetLabels()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) EffectiveLabels() cdktf.Str
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ExcludeCidrRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ExcludeCidrRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeCidrRangesInput",
 		&returns,
 	)
 	return returns
@@ -648,7 +672,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -666,7 +690,7 @@ func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange_Override(n NetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDescription(val *string) 
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange)SetExcludeCidrRanges(val *[]*string) {
+	if err := j.validateSetExcludeCidrRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeCidrRanges",
 		val,
 	)
 }
@@ -1256,6 +1291,14 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetExcludeCidrRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetExcludeCidrRanges",
 		nil, // no parameters
 	)
 }

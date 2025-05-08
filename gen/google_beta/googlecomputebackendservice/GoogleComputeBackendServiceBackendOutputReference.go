@@ -64,6 +64,9 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	MaxUtilization() *float64
 	SetMaxUtilization(val *float64)
 	MaxUtilizationInput() *float64
+	Preference() *string
+	SetPreference(val *string)
+	PreferenceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +111,7 @@ type GoogleComputeBackendServiceBackendOutputReference interface {
 	ResetMaxRatePerEndpoint()
 	ResetMaxRatePerInstance()
 	ResetMaxUtilization()
+	ResetPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -413,6 +417,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) MaxUtiliza
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) Preference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) PreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferenceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -611,6 +635,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetMaxUtili
 	_jsii_.Set(
 		j,
 		"maxUtilization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference)SetPreference(val *string) {
+	if err := j.validateSetPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preference",
 		val,
 	)
 }
@@ -918,6 +953,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetMaxUt
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxUtilization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) ResetPreference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreference",
 		nil, // no parameters
 	)
 }

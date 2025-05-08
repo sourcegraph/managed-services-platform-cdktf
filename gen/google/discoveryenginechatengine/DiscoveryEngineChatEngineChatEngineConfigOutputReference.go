@@ -12,6 +12,9 @@ type DiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	cdktf.ComplexObject
 	AgentCreationConfig() DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference
 	AgentCreationConfigInput() *DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig
+	AllowCrossRegion() interface{}
+	SetAllowCrossRegion(val interface{})
+	AllowCrossRegionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,6 +71,7 @@ type DiscoveryEngineChatEngineChatEngineConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAgentCreationConfig(value *DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig)
 	ResetAgentCreationConfig()
+	ResetAllowCrossRegion()
 	ResetDialogflowAgentToLink()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -99,6 +103,26 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) Age
 	_jsii_.Get(
 		j,
 		"agentCreationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) AllowCrossRegion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) AllowCrossRegionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossRegionInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func NewDiscoveryEngineChatEngineChatEngineConfigOutputReference_Override(d Disc
 		"@cdktf/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference)SetAllowCrossRegion(val interface{}) {
+	if err := j.validateSetAllowCrossRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowCrossRegion",
+		val,
 	)
 }
 
@@ -489,6 +524,14 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		d,
 		"resetAgentCreationConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) ResetAllowCrossRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowCrossRegion",
 		nil, // no parameters
 	)
 }

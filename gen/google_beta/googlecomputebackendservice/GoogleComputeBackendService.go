@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -98,6 +98,8 @@ type GoogleComputeBackendService interface {
 	LocalityLbPolicyInput() *string
 	LogConfig() GoogleComputeBackendServiceLogConfigOutputReference
 	LogConfigInput() *GoogleComputeBackendServiceLogConfig
+	MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -202,6 +204,7 @@ type GoogleComputeBackendService interface {
 	PutIap(value *GoogleComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
+	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
@@ -228,6 +231,7 @@ type GoogleComputeBackendService interface {
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
+	ResetMaxStreamDuration()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -801,6 +805,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) LogConfigInput() *GoogleComputeB
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference {
+	var returns GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration {
+	var returns *GoogleComputeBackendServiceMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1142,7 +1166,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1160,7 +1184,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1911,6 +1935,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutLogConfig(value *GoogleComput
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration) {
+	if err := g.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection) {
 	if err := g.validatePutOutlierDetectionParameters(value); err != nil {
 		panic(err)
@@ -2130,6 +2165,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }

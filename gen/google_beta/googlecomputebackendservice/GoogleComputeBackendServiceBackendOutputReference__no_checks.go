@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetPreferenceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

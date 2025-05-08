@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragecontrolorganizationintelligenceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
 type GoogleStorageControlOrganizationIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,7 @@ type GoogleStorageControlOrganizationIntelligenceConfig interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrialConfig() GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -413,6 +414,16 @@ func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfig) TimeoutsI
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfig) TrialConfig() GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList {
+	var returns GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList
+	_jsii_.Get(
+		j,
+		"trialConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfig) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,7 +435,7 @@ func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfig) UpdateTim
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
 func NewGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.Construct, id *string, config *GoogleStorageControlOrganizationIntelligenceConfigConfig) GoogleStorageControlOrganizationIntelligenceConfig {
 	_init_.Initialize()
 
@@ -442,7 +453,7 @@ func NewGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
 func NewGoogleStorageControlOrganizationIntelligenceConfig_Override(g GoogleStorageControlOrganizationIntelligenceConfig, scope constructs.Construct, id *string, config *GoogleStorageControlOrganizationIntelligenceConfigConfig) {
 	_init_.Initialize()
 

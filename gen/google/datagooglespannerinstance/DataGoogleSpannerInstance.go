@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglespannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/spanner_instance google_spanner_instance}.
 type DataGoogleSpannerInstance interface {
 	cdktf.TerraformDataSource
 	AutoscalingConfig() DataGoogleSpannerInstanceAutoscalingConfigList
@@ -467,7 +467,7 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
 func NewDataGoogleSpannerInstance(scope constructs.Construct, id *string, config *DataGoogleSpannerInstanceConfig) DataGoogleSpannerInstance {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewDataGoogleSpannerInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/spanner_instance google_spanner_instance} Data Source.
 func NewDataGoogleSpannerInstance_Override(d DataGoogleSpannerInstance, scope constructs.Construct, id *string, config *DataGoogleSpannerInstanceConfig) {
 	_init_.Initialize()
 

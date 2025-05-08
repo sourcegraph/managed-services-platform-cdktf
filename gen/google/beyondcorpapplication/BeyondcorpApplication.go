@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/beyondcorpapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/beyondcorp_application google_beyondcorp_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/beyondcorp_application google_beyondcorp_application}.
 type BeyondcorpApplication interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -80,6 +80,8 @@ type BeyondcorpApplication interface {
 	Timeouts() BeyondcorpApplicationTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	Upstreams() BeyondcorpApplicationUpstreamsList
+	UpstreamsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,6 +127,7 @@ type BeyondcorpApplication interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpointMatchers(value interface{})
 	PutTimeouts(value *BeyondcorpApplicationTimeouts)
+	PutUpstreams(value interface{})
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -132,6 +135,7 @@ type BeyondcorpApplication interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetUpstreams()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -480,8 +484,28 @@ func (j *jsiiProxy_BeyondcorpApplication) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BeyondcorpApplication) Upstreams() BeyondcorpApplicationUpstreamsList {
+	var returns BeyondcorpApplicationUpstreamsList
+	_jsii_.Get(
+		j,
+		"upstreams",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
+func (j *jsiiProxy_BeyondcorpApplication) UpstreamsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"upstreamsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
 func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *BeyondcorpApplicationConfig) BeyondcorpApplication {
 	_init_.Initialize()
 
@@ -499,7 +523,7 @@ func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *Be
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
 func NewBeyondcorpApplication_Override(b BeyondcorpApplication, scope constructs.Construct, id *string, config *BeyondcorpApplicationConfig) {
 	_init_.Initialize()
 
@@ -1008,6 +1032,17 @@ func (b *jsiiProxy_BeyondcorpApplication) PutTimeouts(value *BeyondcorpApplicati
 	)
 }
 
+func (b *jsiiProxy_BeyondcorpApplication) PutUpstreams(value interface{}) {
+	if err := b.validatePutUpstreamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putUpstreams",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BeyondcorpApplication) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1044,6 +1079,14 @@ func (b *jsiiProxy_BeyondcorpApplication) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BeyondcorpApplication) ResetUpstreams() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUpstreams",
 		nil, // no parameters
 	)
 }

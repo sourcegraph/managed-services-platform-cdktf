@@ -80,7 +80,15 @@ func (g *jsiiProxy_GoogleRedisCluster) validatePutCrossClusterReplicationConfigP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutGcsSourceParameters(value *GoogleRedisClusterGcsSource) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validatePutMaintenancePolicyParameters(value *GoogleRedisClusterMaintenancePolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validatePutManagedBackupSourceParameters(value *GoogleRedisClusterManagedBackupSource) error {
 	return nil
 }
 

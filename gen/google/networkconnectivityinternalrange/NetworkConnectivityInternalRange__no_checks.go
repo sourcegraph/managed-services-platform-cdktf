@@ -108,6 +108,10 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetDescriptionParam
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetExcludeCidrRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetIdParameters(val *string) error {
 	return nil
 }

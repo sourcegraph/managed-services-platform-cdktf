@@ -9,11 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglememorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/memorystore_instance google_memorystore_instance}.
 type DataGoogleMemorystoreInstance interface {
 	cdktf.TerraformDataSource
 	AuthorizationMode() *string
 	AutomatedBackupConfig() DataGoogleMemorystoreInstanceAutomatedBackupConfigList
+	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -43,6 +44,7 @@ type DataGoogleMemorystoreInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcsSource() DataGoogleMemorystoreInstanceGcsSourceList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -59,6 +61,7 @@ type DataGoogleMemorystoreInstance interface {
 	LocationInput() *string
 	MaintenancePolicy() DataGoogleMemorystoreInstanceMaintenancePolicyList
 	MaintenanceSchedule() DataGoogleMemorystoreInstanceMaintenanceScheduleList
+	ManagedBackupSource() DataGoogleMemorystoreInstanceManagedBackupSourceList
 	Mode() *string
 	Name() *string
 	// The tree node.
@@ -157,6 +160,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) AutomatedBackupConfig() DataGo
 	_jsii_.Get(
 		j,
 		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) BackupCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupCollection",
 		&returns,
 	)
 	return returns
@@ -322,6 +335,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) GcsSource() DataGoogleMemorystoreInstanceGcsSourceList {
+	var returns DataGoogleMemorystoreInstanceGcsSourceList
+	_jsii_.Get(
+		j,
+		"gcsSource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleMemorystoreInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -417,6 +440,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) MaintenanceSchedule() DataGoog
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) ManagedBackupSource() DataGoogleMemorystoreInstanceManagedBackupSourceList {
+	var returns DataGoogleMemorystoreInstanceManagedBackupSourceList
+	_jsii_.Get(
+		j,
+		"managedBackupSource",
 		&returns,
 	)
 	return returns
@@ -663,7 +696,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) ZoneDistributionConfig() DataG
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) DataGoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -681,7 +714,7 @@ func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance_Override(d DataGoogleMemorystoreInstance, scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 

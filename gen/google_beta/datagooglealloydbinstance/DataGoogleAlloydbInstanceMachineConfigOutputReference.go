@@ -30,6 +30,7 @@ type DataGoogleAlloydbInstanceMachineConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleAlloydbInstanceMachineConfig
 	SetInternalValue(val *DataGoogleAlloydbInstanceMachineConfig)
+	MachineType() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceMachineConfigOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstanceMachineConfigOutputReference) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
 		&returns,
 	)
 	return returns
