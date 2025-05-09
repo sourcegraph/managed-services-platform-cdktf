@@ -108,6 +108,10 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetMaxUt
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetPreferenceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

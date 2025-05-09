@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value interface{}) error {
 	return nil
 }
@@ -120,6 +124,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDataDiskProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDataDiskProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -157,6 +169,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetPricingPlanParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val interface{}) error {
 	return nil
 }
 

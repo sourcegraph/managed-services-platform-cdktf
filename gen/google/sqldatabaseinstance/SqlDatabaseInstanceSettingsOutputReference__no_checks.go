@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutBackup
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value interface{}) error {
 	return nil
 }
@@ -157,6 +161,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetIntern
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetPricingPlanParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val interface{}) error {
 	return nil
 }
 

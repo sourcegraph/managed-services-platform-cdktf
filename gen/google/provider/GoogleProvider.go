@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -506,6 +506,9 @@ type GoogleProvider interface {
 	SqlCustomEndpoint() *string
 	SetSqlCustomEndpoint(val *string)
 	SqlCustomEndpointInput() *string
+	StorageBatchOperationsCustomEndpoint() *string
+	SetStorageBatchOperationsCustomEndpoint(val *string)
+	StorageBatchOperationsCustomEndpointInput() *string
 	StorageControlCustomEndpoint() *string
 	SetStorageControlCustomEndpoint(val *string)
 	StorageControlCustomEndpointInput() *string
@@ -731,6 +734,7 @@ type GoogleProvider interface {
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
+	ResetStorageBatchOperationsCustomEndpoint()
 	ResetStorageControlCustomEndpoint()
 	ResetStorageCustomEndpoint()
 	ResetStorageInsightsCustomEndpoint()
@@ -4036,6 +4040,26 @@ func (j *jsiiProxy_GoogleProvider) SqlCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) StorageBatchOperationsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) StorageBatchOperationsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) StorageControlCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4407,7 +4431,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4425,7 +4449,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -5721,6 +5745,14 @@ func (j *jsiiProxy_GoogleProvider)SetSqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetStorageBatchOperationsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageBatchOperationsCustomEndpoint",
 		val,
 	)
 }
@@ -7273,6 +7305,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetStorageBatchOperationsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageBatchOperationsCustomEndpoint",
 		nil, // no parameters
 	)
 }

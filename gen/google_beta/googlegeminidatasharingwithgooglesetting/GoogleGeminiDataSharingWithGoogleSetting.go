@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlegeminidatasharingwithgooglesetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting}.
 type GoogleGeminiDataSharingWithGoogleSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSetting) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSetting(scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingConfig) GoogleGeminiDataSharingWithGoogleSetting {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGoogleGeminiDataSharingWithGoogleSetting(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_gemini_data_sharing_with_google_setting google_gemini_data_sharing_with_google_setting} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSetting_Override(g GoogleGeminiDataSharingWithGoogleSetting, scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingConfig) {
 	_init_.Initialize()
 

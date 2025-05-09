@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseandroidapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
 type GoogleFirebaseAndroidApp interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) GoogleFirebaseAndroidApp {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp_Override(g GoogleFirebaseAndroidApp, scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) {
 	_init_.Initialize()
 

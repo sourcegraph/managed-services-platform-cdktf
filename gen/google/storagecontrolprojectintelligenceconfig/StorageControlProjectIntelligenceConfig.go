@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/storagecontrolprojectintelligenceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
 type StorageControlProjectIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,7 @@ type StorageControlProjectIntelligenceConfig interface {
 	TerraformResourceType() *string
 	Timeouts() StorageControlProjectIntelligenceConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrialConfig() StorageControlProjectIntelligenceConfigTrialConfigList
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -413,6 +414,16 @@ func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) TimeoutsInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) TrialConfig() StorageControlProjectIntelligenceConfigTrialConfigList {
+	var returns StorageControlProjectIntelligenceConfigTrialConfigList
+	_jsii_.Get(
+		j,
+		"trialConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,7 +435,7 @@ func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Resource.
 func NewStorageControlProjectIntelligenceConfig(scope constructs.Construct, id *string, config *StorageControlProjectIntelligenceConfigConfig) StorageControlProjectIntelligenceConfig {
 	_init_.Initialize()
 
@@ -442,7 +453,7 @@ func NewStorageControlProjectIntelligenceConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Resource.
 func NewStorageControlProjectIntelligenceConfig_Override(s StorageControlProjectIntelligenceConfig, scope constructs.Construct, id *string, config *StorageControlProjectIntelligenceConfigConfig) {
 	_init_.Initialize()
 

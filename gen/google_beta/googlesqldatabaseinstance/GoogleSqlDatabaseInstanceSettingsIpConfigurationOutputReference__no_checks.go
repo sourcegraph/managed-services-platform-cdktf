@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetCustomSubjectAlternativeNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetEnablePrivatePathForGoogleCloudServicesParameters(val interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebeyondcorpapplicationiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy}.
 type GoogleBeyondcorpApplicationIamPolicy interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_GoogleBeyondcorpApplicationIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Resource.
 func NewGoogleBeyondcorpApplicationIamPolicy(scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamPolicyConfig) GoogleBeyondcorpApplicationIamPolicy {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewGoogleBeyondcorpApplicationIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Resource.
 func NewGoogleBeyondcorpApplicationIamPolicy_Override(g GoogleBeyondcorpApplicationIamPolicy, scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamPolicyConfig) {
 	_init_.Initialize()
 

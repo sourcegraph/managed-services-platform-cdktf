@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetAllowCrossRegionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

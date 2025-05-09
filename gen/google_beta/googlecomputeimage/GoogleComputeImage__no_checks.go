@@ -88,6 +88,18 @@ func (g *jsiiProxy_GoogleComputeImage) validatePutShieldedInstanceInitialStatePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceDiskEncryptionKeyParameters(value *GoogleComputeImageSourceDiskEncryptionKey) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeImageSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeImage) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeImageSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeImage) validatePutTimeoutsParameters(value *GoogleComputeImageTimeouts) error {
 	return nil
 }

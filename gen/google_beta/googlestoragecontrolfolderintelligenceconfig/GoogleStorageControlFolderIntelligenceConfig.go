@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragecontrolfolderintelligenceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
 type GoogleStorageControlFolderIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,7 @@ type GoogleStorageControlFolderIntelligenceConfig interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleStorageControlFolderIntelligenceConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrialConfig() GoogleStorageControlFolderIntelligenceConfigTrialConfigList
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -413,6 +414,16 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) TimeoutsInput()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) TrialConfig() GoogleStorageControlFolderIntelligenceConfigTrialConfigList {
+	var returns GoogleStorageControlFolderIntelligenceConfigTrialConfigList
+	_jsii_.Get(
+		j,
+		"trialConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,7 +435,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) UpdateTime() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewGoogleStorageControlFolderIntelligenceConfig(scope constructs.Construct, id *string, config *GoogleStorageControlFolderIntelligenceConfigConfig) GoogleStorageControlFolderIntelligenceConfig {
 	_init_.Initialize()
 
@@ -442,7 +453,7 @@ func NewGoogleStorageControlFolderIntelligenceConfig(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewGoogleStorageControlFolderIntelligenceConfig_Override(g GoogleStorageControlFolderIntelligenceConfig, scope constructs.Construct, id *string, config *GoogleStorageControlFolderIntelligenceConfigConfig) {
 	_init_.Initialize()
 

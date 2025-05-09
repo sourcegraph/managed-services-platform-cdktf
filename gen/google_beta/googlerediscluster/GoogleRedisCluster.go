@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlerediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -17,6 +17,7 @@ type GoogleRedisCluster interface {
 	AuthorizationModeInput() *string
 	AutomatedBackupConfig() GoogleRedisClusterAutomatedBackupConfigOutputReference
 	AutomatedBackupConfigInput() *GoogleRedisClusterAutomatedBackupConfig
+	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -48,6 +49,8 @@ type GoogleRedisCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcsSource() GoogleRedisClusterGcsSourceOutputReference
+	GcsSourceInput() *GoogleRedisClusterGcsSource
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -61,6 +64,8 @@ type GoogleRedisCluster interface {
 	MaintenancePolicy() GoogleRedisClusterMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *GoogleRedisClusterMaintenancePolicy
 	MaintenanceSchedule() GoogleRedisClusterMaintenanceScheduleList
+	ManagedBackupSource() GoogleRedisClusterManagedBackupSourceOutputReference
+	ManagedBackupSourceInput() *GoogleRedisClusterManagedBackupSource
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -163,7 +168,9 @@ type GoogleRedisCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupConfig(value *GoogleRedisClusterAutomatedBackupConfig)
 	PutCrossClusterReplicationConfig(value *GoogleRedisClusterCrossClusterReplicationConfig)
+	PutGcsSource(value *GoogleRedisClusterGcsSource)
 	PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy)
+	PutManagedBackupSource(value *GoogleRedisClusterManagedBackupSource)
 	PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
@@ -172,9 +179,11 @@ type GoogleRedisCluster interface {
 	ResetAutomatedBackupConfig()
 	ResetCrossClusterReplicationConfig()
 	ResetDeletionProtectionEnabled()
+	ResetGcsSource()
 	ResetId()
 	ResetKmsKey()
 	ResetMaintenancePolicy()
+	ResetManagedBackupSource()
 	ResetName()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -242,6 +251,16 @@ func (j *jsiiProxy_GoogleRedisCluster) AutomatedBackupConfigInput() *GoogleRedis
 	_jsii_.Get(
 		j,
 		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) BackupCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupCollection",
 		&returns,
 	)
 	return returns
@@ -387,6 +406,26 @@ func (j *jsiiProxy_GoogleRedisCluster) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) GcsSource() GoogleRedisClusterGcsSourceOutputReference {
+	var returns GoogleRedisClusterGcsSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gcsSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) GcsSourceInput() *GoogleRedisClusterGcsSource {
+	var returns *GoogleRedisClusterGcsSource
+	_jsii_.Get(
+		j,
+		"gcsSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,6 +501,26 @@ func (j *jsiiProxy_GoogleRedisCluster) MaintenanceSchedule() GoogleRedisClusterM
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) ManagedBackupSource() GoogleRedisClusterManagedBackupSourceOutputReference {
+	var returns GoogleRedisClusterManagedBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"managedBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) ManagedBackupSourceInput() *GoogleRedisClusterManagedBackupSource {
+	var returns *GoogleRedisClusterManagedBackupSource
+	_jsii_.Get(
+		j,
+		"managedBackupSourceInput",
 		&returns,
 	)
 	return returns
@@ -848,7 +907,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -866,7 +925,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1452,6 +1511,17 @@ func (g *jsiiProxy_GoogleRedisCluster) PutCrossClusterReplicationConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) PutGcsSource(value *GoogleRedisClusterGcsSource) {
+	if err := g.validatePutGcsSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGcsSource",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy) {
 	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
 		panic(err)
@@ -1459,6 +1529,17 @@ func (g *jsiiProxy_GoogleRedisCluster) PutMaintenancePolicy(value *GoogleRedisCl
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) PutManagedBackupSource(value *GoogleRedisClusterManagedBackupSource) {
+	if err := g.validatePutManagedBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedBackupSource",
 		[]interface{}{value},
 	)
 }
@@ -1539,6 +1620,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetDeletionProtectionEnabled() {
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) ResetGcsSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGcsSource",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1559,6 +1648,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetManagedBackupSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedBackupSource",
 		nil, // no parameters
 	)
 }

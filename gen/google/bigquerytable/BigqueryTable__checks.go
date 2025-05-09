@@ -226,6 +226,17 @@ func (b *jsiiProxy_BigqueryTable) validatePutEncryptionConfigurationParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *BigqueryTableExternalCatalogTableOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutExternalDataConfigurationParameters(value *BigqueryTableExternalDataConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -249,6 +260,17 @@ func (b *jsiiProxy_BigqueryTable) validatePutMaterializedViewParameters(value *B
 }
 
 func (b *jsiiProxy_BigqueryTable) validatePutRangePartitioningParameters(value *BigqueryTableRangePartitioning) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTable) validatePutSchemaForeignTypeInfoParameters(value *BigqueryTableSchemaForeignTypeInfo) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

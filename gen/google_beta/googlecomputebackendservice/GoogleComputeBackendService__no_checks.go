@@ -104,6 +104,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutLogConfigParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutMaxStreamDurationParameters(value *GoogleComputeBackendServiceMaxStreamDuration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutOutlierDetectionParameters(value *GoogleComputeBackendServiceOutlierDetection) error {
 	return nil
 }

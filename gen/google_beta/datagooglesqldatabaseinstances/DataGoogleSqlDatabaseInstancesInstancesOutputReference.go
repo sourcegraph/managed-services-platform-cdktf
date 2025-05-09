@@ -31,6 +31,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	DatabaseVersion() *string
 	DeletionProtection() cdktf.IResolvable
 	DnsName() *string
+	DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
 	EncryptionKeyName() *string
 	FirstIpAddress() *string
 	// Experimental.
@@ -188,6 +189,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNa
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
+	_jsii_.Get(
+		j,
+		"dnsNames",
 		&returns,
 	)
 	return returns

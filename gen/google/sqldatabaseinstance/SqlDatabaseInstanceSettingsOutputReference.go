@@ -35,6 +35,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() SqlDatabaseInstanceSettingsConnectionPoolConfigList
+	ConnectionPoolConfigInput() interface{}
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -90,6 +92,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
+	RetainBackupsOnDelete() interface{}
+	SetRetainBackupsOnDelete(val interface{})
+	RetainBackupsOnDeleteInput() interface{}
 	SqlServerAuditConfig() SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	SqlServerAuditConfigInput() *SqlDatabaseInstanceSettingsSqlServerAuditConfig
 	// Experimental.
@@ -137,6 +142,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *SqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
+	PutConnectionPoolConfig(value interface{})
 	PutDatabaseFlags(value interface{})
 	PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
@@ -152,6 +158,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectionPoolConfig()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
@@ -170,6 +177,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetMaintenanceWindow()
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
+	ResetRetainBackupsOnDelete()
 	ResetSqlServerAuditConfig()
 	ResetTimeZone()
 	ResetUserLabels()
@@ -323,6 +331,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComplexObjectIsFr
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfig() SqlDatabaseInstanceSettingsConnectionPoolConfigList {
+	var returns SqlDatabaseInstanceSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -718,6 +746,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PricingPlanInput(
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SqlServerAuditConfig() SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference {
 	var returns SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	_jsii_.Get(
@@ -1032,6 +1080,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetPricingPlan(val
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOnDelete(val interface{}) {
+	if err := j.validateSetRetainBackupsOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retainBackupsOnDelete",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -1306,6 +1365,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutBackupConfigur
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+	if err := s.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
 	if err := s.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
@@ -1453,6 +1523,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetCollation() 
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConnectionPoolConfig",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetConnectorEnforcement() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1593,6 +1671,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetPricingPlan(
 	_jsii_.InvokeVoid(
 		s,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetRetainBackupsOnDelete() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetainBackupsOnDelete",
 		nil, // no parameters
 	)
 }

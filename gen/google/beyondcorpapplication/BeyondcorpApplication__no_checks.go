@@ -80,6 +80,10 @@ func (b *jsiiProxy_BeyondcorpApplication) validatePutTimeoutsParameters(value *B
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpApplication) validatePutUpstreamsParameters(value interface{}) error {
+	return nil
+}
+
 func validateBeyondcorpApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

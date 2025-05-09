@@ -84,7 +84,15 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutGcsSourceParameters(value *GoogleMemorystoreInstanceGcsSource) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutMaintenancePolicyParameters(value *GoogleMemorystoreInstanceMaintenancePolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutManagedBackupSourceParameters(value *GoogleMemorystoreInstanceManagedBackupSource) error {
 	return nil
 }
 

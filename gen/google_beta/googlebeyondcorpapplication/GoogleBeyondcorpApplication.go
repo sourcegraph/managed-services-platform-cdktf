@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebeyondcorpapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application google_beyondcorp_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application google_beyondcorp_application}.
 type GoogleBeyondcorpApplication interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -80,6 +80,8 @@ type GoogleBeyondcorpApplication interface {
 	Timeouts() GoogleBeyondcorpApplicationTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	Upstreams() GoogleBeyondcorpApplicationUpstreamsList
+	UpstreamsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,6 +127,7 @@ type GoogleBeyondcorpApplication interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpointMatchers(value interface{})
 	PutTimeouts(value *GoogleBeyondcorpApplicationTimeouts)
+	PutUpstreams(value interface{})
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -132,6 +135,7 @@ type GoogleBeyondcorpApplication interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetUpstreams()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -480,8 +484,28 @@ func (j *jsiiProxy_GoogleBeyondcorpApplication) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBeyondcorpApplication) Upstreams() GoogleBeyondcorpApplicationUpstreamsList {
+	var returns GoogleBeyondcorpApplicationUpstreamsList
+	_jsii_.Get(
+		j,
+		"upstreams",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
+func (j *jsiiProxy_GoogleBeyondcorpApplication) UpstreamsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"upstreamsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
 func NewGoogleBeyondcorpApplication(scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationConfig) GoogleBeyondcorpApplication {
 	_init_.Initialize()
 
@@ -499,7 +523,7 @@ func NewGoogleBeyondcorpApplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
 func NewGoogleBeyondcorpApplication_Override(g GoogleBeyondcorpApplication, scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationConfig) {
 	_init_.Initialize()
 
@@ -1008,6 +1032,17 @@ func (g *jsiiProxy_GoogleBeyondcorpApplication) PutTimeouts(value *GoogleBeyondc
 	)
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpApplication) PutUpstreams(value interface{}) {
+	if err := g.validatePutUpstreamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpstreams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpApplication) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1044,6 +1079,14 @@ func (g *jsiiProxy_GoogleBeyondcorpApplication) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpApplication) ResetUpstreams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpstreams",
 		nil, // no parameters
 	)
 }
