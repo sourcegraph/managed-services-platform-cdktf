@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_network google_compute_network}.
 type DataGoogleComputeNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -46,6 +46,9 @@ type DataGoogleComputeNetwork interface {
 	SetName(val *string)
 	NameInput() *string
 	NetworkId() *float64
+	NetworkProfile() *string
+	SetNetworkProfile(val *string)
+	NetworkProfileInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NumericId() *string
@@ -92,6 +95,7 @@ type DataGoogleComputeNetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetNetworkProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -275,6 +279,26 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) NetworkId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeNetwork) NetworkProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeNetwork) NetworkProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeNetwork) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -386,7 +410,7 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) DataGoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -404,7 +428,7 @@ func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork_Override(d DataGoogleComputeNetwork, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_DataGoogleComputeNetwork)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleComputeNetwork)SetNetworkProfile(val *string) {
+	if err := j.validateSetNetworkProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkProfile",
 		val,
 	)
 }
@@ -783,6 +818,14 @@ func (d *jsiiProxy_DataGoogleComputeNetwork) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleComputeNetwork) ResetNetworkProfile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkProfile",
 		nil, // no parameters
 	)
 }

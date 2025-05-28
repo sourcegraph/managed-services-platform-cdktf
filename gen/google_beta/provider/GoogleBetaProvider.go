@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -39,6 +39,9 @@ type GoogleBetaProvider interface {
 	ApigeeCustomEndpoint() *string
 	SetApigeeCustomEndpoint(val *string)
 	ApigeeCustomEndpointInput() *string
+	ApihubCustomEndpoint() *string
+	SetApihubCustomEndpoint(val *string)
+	ApihubCustomEndpointInput() *string
 	ApikeysCustomEndpoint() *string
 	SetApikeysCustomEndpoint(val *string)
 	ApikeysCustomEndpointInput() *string
@@ -158,6 +161,9 @@ type GoogleBetaProvider interface {
 	CloudTasksCustomEndpoint() *string
 	SetCloudTasksCustomEndpoint(val *string)
 	CloudTasksCustomEndpointInput() *string
+	ColabCustomEndpoint() *string
+	SetColabCustomEndpoint(val *string)
+	ColabCustomEndpointInput() *string
 	ComposerCustomEndpoint() *string
 	SetComposerCustomEndpoint(val *string)
 	ComposerCustomEndpointInput() *string
@@ -262,18 +268,27 @@ type GoogleBetaProvider interface {
 	EventarcCustomEndpoint() *string
 	SetEventarcCustomEndpoint(val *string)
 	EventarcCustomEndpointInput() *string
+	ExternalCredentials() interface{}
+	SetExternalCredentials(val interface{})
+	ExternalCredentialsInput() interface{}
 	FilestoreCustomEndpoint() *string
 	SetFilestoreCustomEndpoint(val *string)
 	FilestoreCustomEndpointInput() *string
 	FirebaseAppCheckCustomEndpoint() *string
 	SetFirebaseAppCheckCustomEndpoint(val *string)
 	FirebaseAppCheckCustomEndpointInput() *string
+	FirebaseAppHostingCustomEndpoint() *string
+	SetFirebaseAppHostingCustomEndpoint(val *string)
+	FirebaseAppHostingCustomEndpointInput() *string
 	FirebaseCustomEndpoint() *string
 	SetFirebaseCustomEndpoint(val *string)
 	FirebaseCustomEndpointInput() *string
 	FirebaseDatabaseCustomEndpoint() *string
 	SetFirebaseDatabaseCustomEndpoint(val *string)
 	FirebaseDatabaseCustomEndpointInput() *string
+	FirebaseDataConnectCustomEndpoint() *string
+	SetFirebaseDataConnectCustomEndpoint(val *string)
+	FirebaseDataConnectCustomEndpointInput() *string
 	FirebaseExtensionsCustomEndpoint() *string
 	SetFirebaseExtensionsCustomEndpoint(val *string)
 	FirebaseExtensionsCustomEndpointInput() *string
@@ -359,6 +374,9 @@ type GoogleBetaProvider interface {
 	LookerCustomEndpoint() *string
 	SetLookerCustomEndpoint(val *string)
 	LookerCustomEndpointInput() *string
+	LustreCustomEndpoint() *string
+	SetLustreCustomEndpoint(val *string)
+	LustreCustomEndpointInput() *string
 	ManagedKafkaCustomEndpoint() *string
 	SetManagedKafkaCustomEndpoint(val *string)
 	ManagedKafkaCustomEndpointInput() *string
@@ -408,12 +426,21 @@ type GoogleBetaProvider interface {
 	OsConfigCustomEndpoint() *string
 	SetOsConfigCustomEndpoint(val *string)
 	OsConfigCustomEndpointInput() *string
+	OsConfigV2CustomEndpoint() *string
+	SetOsConfigV2CustomEndpoint(val *string)
+	OsConfigV2CustomEndpointInput() *string
 	OsLoginCustomEndpoint() *string
 	SetOsLoginCustomEndpoint(val *string)
 	OsLoginCustomEndpointInput() *string
 	ParallelstoreCustomEndpoint() *string
 	SetParallelstoreCustomEndpoint(val *string)
 	ParallelstoreCustomEndpointInput() *string
+	ParameterManagerCustomEndpoint() *string
+	SetParameterManagerCustomEndpoint(val *string)
+	ParameterManagerCustomEndpointInput() *string
+	ParameterManagerRegionalCustomEndpoint() *string
+	SetParameterManagerRegionalCustomEndpoint(val *string)
+	ParameterManagerRegionalCustomEndpointInput() *string
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
@@ -449,6 +476,9 @@ type GoogleBetaProvider interface {
 	RequestTimeout() *string
 	SetRequestTimeout(val *string)
 	RequestTimeoutInput() *string
+	ResourceManager3CustomEndpoint() *string
+	SetResourceManager3CustomEndpoint(val *string)
+	ResourceManager3CustomEndpointInput() *string
 	ResourceManagerCustomEndpoint() *string
 	SetResourceManagerCustomEndpoint(val *string)
 	ResourceManagerCustomEndpointInput() *string
@@ -512,6 +542,12 @@ type GoogleBetaProvider interface {
 	SqlCustomEndpoint() *string
 	SetSqlCustomEndpoint(val *string)
 	SqlCustomEndpointInput() *string
+	StorageBatchOperationsCustomEndpoint() *string
+	SetStorageBatchOperationsCustomEndpoint(val *string)
+	StorageBatchOperationsCustomEndpointInput() *string
+	StorageControlCustomEndpoint() *string
+	SetStorageControlCustomEndpoint(val *string)
+	StorageControlCustomEndpointInput() *string
 	StorageCustomEndpoint() *string
 	SetStorageCustomEndpoint(val *string)
 	StorageCustomEndpointInput() *string
@@ -586,6 +622,7 @@ type GoogleBetaProvider interface {
 	ResetAlloydbCustomEndpoint()
 	ResetApiGatewayCustomEndpoint()
 	ResetApigeeCustomEndpoint()
+	ResetApihubCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
 	ResetApphubCustomEndpoint()
@@ -625,6 +662,7 @@ type GoogleBetaProvider interface {
 	ResetCloudRunV2CustomEndpoint()
 	ResetCloudSchedulerCustomEndpoint()
 	ResetCloudTasksCustomEndpoint()
+	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
@@ -659,10 +697,13 @@ type GoogleBetaProvider interface {
 	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
+	ResetExternalCredentials()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseAppCheckCustomEndpoint()
+	ResetFirebaseAppHostingCustomEndpoint()
 	ResetFirebaseCustomEndpoint()
 	ResetFirebaseDatabaseCustomEndpoint()
+	ResetFirebaseDataConnectCustomEndpoint()
 	ResetFirebaseExtensionsCustomEndpoint()
 	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
@@ -690,6 +731,7 @@ type GoogleBetaProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
+	ResetLustreCustomEndpoint()
 	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMemorystoreCustomEndpoint()
@@ -705,11 +747,14 @@ type GoogleBetaProvider interface {
 	ResetOracleDatabaseCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
 	ResetOsConfigCustomEndpoint()
+	ResetOsConfigV2CustomEndpoint()
 	ResetOsLoginCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelstoreCustomEndpoint()
+	ResetParameterManagerCustomEndpoint()
+	ResetParameterManagerRegionalCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
 	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
@@ -721,6 +766,7 @@ type GoogleBetaProvider interface {
 	ResetRegion()
 	ResetRequestReason()
 	ResetRequestTimeout()
+	ResetResourceManager3CustomEndpoint()
 	ResetResourceManagerCustomEndpoint()
 	ResetResourceManagerV3CustomEndpoint()
 	ResetRuntimeconfigCustomEndpoint()
@@ -742,6 +788,8 @@ type GoogleBetaProvider interface {
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
+	ResetStorageBatchOperationsCustomEndpoint()
+	ResetStorageControlCustomEndpoint()
 	ResetStorageCustomEndpoint()
 	ResetStorageInsightsCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
@@ -953,6 +1001,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ApigeeCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"apigeeCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApihubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApihubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1748,6 +1816,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CloudTasksCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ColabCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ColabCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) ComposerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2438,6 +2526,26 @@ func (j *jsiiProxy_GoogleBetaProvider) EventarcCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ExternalCredentials() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ExternalCredentialsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentialsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) FilestoreCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2478,6 +2586,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseAppCheckCustomEndpointInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseAppHostingCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppHostingCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseAppHostingCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppHostingCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) FirebaseCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2513,6 +2641,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseDatabaseCustomEndpointInput() *st
 	_jsii_.Get(
 		j,
 		"firebaseDatabaseCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseDataConnectCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDataConnectCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseDataConnectCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDataConnectCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3078,6 +3226,26 @@ func (j *jsiiProxy_GoogleBetaProvider) LookerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) LustreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) LustreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) ManagedKafkaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3398,6 +3566,26 @@ func (j *jsiiProxy_GoogleBetaProvider) OsConfigCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) OsConfigV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) OsConfigV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) OsLoginCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3433,6 +3621,46 @@ func (j *jsiiProxy_GoogleBetaProvider) ParallelstoreCustomEndpointInput() *strin
 	_jsii_.Get(
 		j,
 		"parallelstoreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerRegionalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerRegionalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3663,6 +3891,26 @@ func (j *jsiiProxy_GoogleBetaProvider) RequestTimeoutInput() *string {
 	_jsii_.Get(
 		j,
 		"requestTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ResourceManager3CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManager3CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ResourceManager3CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManager3CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4088,6 +4336,46 @@ func (j *jsiiProxy_GoogleBetaProvider) SqlCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) StorageBatchOperationsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) StorageBatchOperationsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) StorageControlCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) StorageControlCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) StorageCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4479,7 +4767,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4497,7 +4785,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4579,6 +4867,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetApigeeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"apigeeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetApihubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"apihubCustomEndpoint",
 		val,
 	)
 }
@@ -4898,6 +5194,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCloudTasksCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetColabCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"colabCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetComposerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5170,6 +5474,17 @@ func (j *jsiiProxy_GoogleBetaProvider)SetEventarcCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetExternalCredentials(val interface{}) {
+	if err := j.validateSetExternalCredentialsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalCredentials",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetFilestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5186,6 +5501,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseAppCheckCustomEndpoint(val *str
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseAppHostingCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseAppHostingCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5198,6 +5521,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseDatabaseCustomEndpoint(val *str
 	_jsii_.Set(
 		j,
 		"firebaseDatabaseCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseDataConnectCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseDataConnectCustomEndpoint",
 		val,
 	)
 }
@@ -5418,6 +5749,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetLookerCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetLustreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"lustreCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetManagedKafkaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5538,6 +5877,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetOsConfigCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetOsConfigV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"osConfigV2CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetOsLoginCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5550,6 +5897,22 @@ func (j *jsiiProxy_GoogleBetaProvider)SetParallelstoreCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"parallelstoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetParameterManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetParameterManagerRegionalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
 		val,
 	)
 }
@@ -5638,6 +6001,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetRequestTimeout(val *string) {
 	_jsii_.Set(
 		j,
 		"requestTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetResourceManager3CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"resourceManager3CustomEndpoint",
 		val,
 	)
 }
@@ -5806,6 +6177,22 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetStorageBatchOperationsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageBatchOperationsCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetStorageControlCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageControlCustomEndpoint",
 		val,
 	)
 }
@@ -6154,6 +6541,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetApigeeCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetApihubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApihubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetApikeysCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6466,6 +6861,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCloudTasksCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetColabCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetColabCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetComposerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6738,6 +7141,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetEventarcCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetExternalCredentials() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCredentials",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetFilestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6754,6 +7165,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseAppCheckCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseAppHostingCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseAppHostingCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6766,6 +7185,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseDatabaseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirebaseDatabaseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseDataConnectCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseDataConnectCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -6986,6 +7413,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetLookerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetLustreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLustreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetManagedKafkaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -7106,6 +7541,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetOsConfigCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetOsConfigV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOsConfigV2CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetOsLoginCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -7126,6 +7569,22 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetParallelstoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParallelstoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetParameterManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetParameterManagerRegionalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerRegionalCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -7214,6 +7673,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetRequestTimeout() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequestTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetResourceManager3CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceManager3CustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -7382,6 +7849,22 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetStorageBatchOperationsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageBatchOperationsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetStorageControlCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageControlCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -204,6 +204,28 @@ func (m *jsiiProxy_MemorystoreInstance) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutAutomatedBackupConfigParameters(value *MemorystoreInstanceAutomatedBackupConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *MemorystoreInstanceCrossInstanceReplicationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -230,6 +252,39 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsPara
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MemorystoreInstanceDesiredPscAutoConnections; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutGcsSourceParameters(value *MemorystoreInstanceGcsSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutMaintenancePolicyParameters(value *MemorystoreInstanceMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutManagedBackupSourceParameters(value *MemorystoreInstanceManagedBackupSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

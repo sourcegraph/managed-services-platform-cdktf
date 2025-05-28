@@ -192,6 +192,10 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetSkipAwaitMajorVersionUpgradeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetSubscriptionTypeParameters(val *string) error {
 	return nil
 }

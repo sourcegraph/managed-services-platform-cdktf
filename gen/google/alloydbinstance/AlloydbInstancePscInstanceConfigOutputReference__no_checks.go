@@ -44,6 +44,14 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateInte
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscAutoConnectionsParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscInterfaceConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

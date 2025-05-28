@@ -9,11 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworksecuritymirroringendpointgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
 type GoogleNetworkSecurityMirroringEndpointGroup interface {
 	cdktf.TerraformResource
+	Associations() GoogleNetworkSecurityMirroringEndpointGroupAssociationsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConnectedDeploymentGroups() GoogleNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -29,6 +31,9 @@ type GoogleNetworkSecurityMirroringEndpointGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -129,6 +134,7 @@ type GoogleNetworkSecurityMirroringEndpointGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecurityMirroringEndpointGroupTimeouts)
+	ResetDescription()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -154,11 +160,31 @@ type jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) Associations() GoogleNetworkSecurityMirroringEndpointGroupAssociationsList {
+	var returns GoogleNetworkSecurityMirroringEndpointGroupAssociationsList
+	_jsii_.Get(
+		j,
+		"associations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) ConnectedDeploymentGroups() GoogleNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList {
+	var returns GoogleNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList
+	_jsii_.Get(
+		j,
+		"connectedDeploymentGroups",
 		&returns,
 	)
 	return returns
@@ -209,6 +235,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) DependsOn() *[]*
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -525,7 +571,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
 func NewGoogleNetworkSecurityMirroringEndpointGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringEndpointGroupConfig) GoogleNetworkSecurityMirroringEndpointGroup {
 	_init_.Initialize()
 
@@ -543,7 +589,7 @@ func NewGoogleNetworkSecurityMirroringEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource.
 func NewGoogleNetworkSecurityMirroringEndpointGroup_Override(g GoogleNetworkSecurityMirroringEndpointGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -580,6 +626,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup)SetDependsOn(val 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1049,6 +1106,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) PutTimeouts(valu
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroup) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

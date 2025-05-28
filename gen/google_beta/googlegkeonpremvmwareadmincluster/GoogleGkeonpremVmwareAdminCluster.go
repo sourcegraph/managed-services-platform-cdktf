@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlegkeonpremvmwareadmincluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
 type GoogleGkeonpremVmwareAdminCluster interface {
 	cdktf.TerraformResource
 	AddonNode() GoogleGkeonpremVmwareAdminClusterAddonNodeOutputReference
@@ -49,6 +49,7 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveAnnotations() cdktf.StringMap
+	EnableAdvancedCluster() cdktf.IResolvable
 	Endpoint() *string
 	Etag() *string
 	Fleet() GoogleGkeonpremVmwareAdminClusterFleetList
@@ -431,6 +432,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EffectiveAnnotations() cdk
 	_jsii_.Get(
 		j,
 		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EnableAdvancedCluster() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableAdvancedCluster",
 		&returns,
 	)
 	return returns
@@ -857,7 +868,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) VcenterInput() *GoogleGkeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) GoogleGkeonpremVmwareAdminCluster {
 	_init_.Initialize()
 
@@ -875,7 +886,7 @@ func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster_Override(g GoogleGkeonpremVmwareAdminCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) {
 	_init_.Initialize()
 

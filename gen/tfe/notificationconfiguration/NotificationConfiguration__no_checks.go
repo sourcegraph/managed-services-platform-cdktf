@@ -112,10 +112,6 @@ func (j *jsiiProxy_NotificationConfiguration) validateSetEnabledParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_NotificationConfiguration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NotificationConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -129,6 +125,10 @@ func (j *jsiiProxy_NotificationConfiguration) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_NotificationConfiguration) validateSetTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationConfiguration) validateSetTokenWoParameters(val *string) error {
 	return nil
 }
 

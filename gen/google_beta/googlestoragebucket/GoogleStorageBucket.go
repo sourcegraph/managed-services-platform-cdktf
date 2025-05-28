@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -116,11 +116,13 @@ type GoogleStorageBucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeCreated() *string
 	Timeouts() GoogleStorageBucketTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UniformBucketLevelAccess() interface{}
 	SetUniformBucketLevelAccess(val interface{})
 	UniformBucketLevelAccessInput() interface{}
+	Updated() *string
 	Url() *string
 	Versioning() GoogleStorageBucketVersioningOutputReference
 	VersioningInput() *GoogleStorageBucketVersioning
@@ -845,6 +847,16 @@ func (j *jsiiProxy_GoogleStorageBucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) TimeCreated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeCreated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) Timeouts() GoogleStorageBucketTimeoutsOutputReference {
 	var returns GoogleStorageBucketTimeoutsOutputReference
 	_jsii_.Get(
@@ -880,6 +892,16 @@ func (j *jsiiProxy_GoogleStorageBucket) UniformBucketLevelAccessInput() interfac
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
 		&returns,
 	)
 	return returns
@@ -936,7 +958,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -954,7 +976,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 

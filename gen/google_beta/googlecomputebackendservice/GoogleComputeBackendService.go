@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -42,6 +42,8 @@ type GoogleComputeBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() GoogleComputeBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	CustomRequestHeaders() *[]*string
 	SetCustomRequestHeaders(val *[]*string)
 	CustomRequestHeadersInput() *[]*string
@@ -61,6 +63,12 @@ type GoogleComputeBackendService interface {
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
+	ExternalManagedMigrationState() *string
+	SetExternalManagedMigrationState(val *string)
+	ExternalManagedMigrationStateInput() *string
+	ExternalManagedMigrationTestingPercentage() *float64
+	SetExternalManagedMigrationTestingPercentage(val *float64)
+	ExternalManagedMigrationTestingPercentageInput() *float64
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -96,6 +104,8 @@ type GoogleComputeBackendService interface {
 	LocalityLbPolicyInput() *string
 	LogConfig() GoogleComputeBackendServiceLogConfigOutputReference
 	LogConfigInput() *GoogleComputeBackendServiceLogConfig
+	MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -147,6 +157,8 @@ type GoogleComputeBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -194,13 +206,16 @@ type GoogleComputeBackendService interface {
 	PutCdnPolicy(value *GoogleComputeBackendServiceCdnPolicy)
 	PutCircuitBreakers(value *GoogleComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *GoogleComputeBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutIap(value *GoogleComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
+	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
+	PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -208,11 +223,14 @@ type GoogleComputeBackendService interface {
 	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
+	ResetExternalManagedMigrationState()
+	ResetExternalManagedMigrationTestingPercentage()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -221,6 +239,7 @@ type GoogleComputeBackendService interface {
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
+	ResetMaxStreamDuration()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -235,6 +254,7 @@ type GoogleComputeBackendService interface {
 	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -443,6 +463,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) CreationTimestamp() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) CustomMetrics() GoogleComputeBackendServiceCustomMetricsList {
+	var returns GoogleComputeBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) CustomRequestHeaders() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -548,6 +588,46 @@ func (j *jsiiProxy_GoogleComputeBackendService) EnableCdnInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableCdnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ExternalManagedMigrationTestingPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentageInput",
 		&returns,
 	)
 	return returns
@@ -768,6 +848,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) LogConfigInput() *GoogleComputeB
 	_jsii_.Get(
 		j,
 		"logConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDuration() GoogleComputeBackendServiceMaxStreamDurationOutputReference {
+	var returns GoogleComputeBackendServiceMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) MaxStreamDurationInput() *GoogleComputeBackendServiceMaxStreamDuration {
+	var returns *GoogleComputeBackendServiceMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
 		&returns,
 	)
 	return returns
@@ -1093,8 +1193,28 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference {
+	var returns GoogleComputeBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings {
+	var returns *GoogleComputeBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1112,7 +1232,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1237,6 +1357,28 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetEnableCdn(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableCdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetExternalManagedMigrationState(val *string) {
+	if err := j.validateSetExternalManagedMigrationStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetExternalManagedMigrationTestingPercentage(val *float64) {
+	if err := j.validateSetExternalManagedMigrationTestingPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationTestingPercentage",
 		val,
 	)
 }
@@ -1819,6 +1961,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutConsistentHash(value *GoogleC
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutIap(value *GoogleComputeBackendServiceIap) {
 	if err := g.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1848,6 +2001,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutLogConfig(value *GoogleComput
 	_jsii_.InvokeVoid(
 		g,
 		"putLogConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration) {
+	if err := g.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaxStreamDuration",
 		[]interface{}{value},
 	)
 }
@@ -1892,6 +2056,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutTimeouts(value *GoogleCompute
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings) {
+	if err := g.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTlsSettings",
 		[]interface{}{value},
 	)
 }
@@ -1952,6 +2127,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetConsistentHash() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetCustomRequestHeaders() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1988,6 +2171,22 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetEnableCdn() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableCdn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetExternalManagedMigrationState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedMigrationState",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetExternalManagedMigrationTestingPercentage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalManagedMigrationTestingPercentage",
 		nil, // no parameters
 	)
 }
@@ -2052,6 +2251,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }
@@ -2148,6 +2355,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

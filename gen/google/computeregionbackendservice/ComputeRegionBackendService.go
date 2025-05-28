@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
 type ComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -39,6 +39,8 @@ type ComputeRegionBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() ComputeRegionBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,6 +182,7 @@ type ComputeRegionBackendService interface {
 	PutCdnPolicy(value *ComputeRegionBackendServiceCdnPolicy)
 	PutCircuitBreakers(value *ComputeRegionBackendServiceCircuitBreakers)
 	PutConsistentHash(value *ComputeRegionBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutFailoverPolicy(value *ComputeRegionBackendServiceFailoverPolicy)
 	PutIap(value *ComputeRegionBackendServiceIap)
 	PutLogConfig(value *ComputeRegionBackendServiceLogConfig)
@@ -192,6 +195,7 @@ type ComputeRegionBackendService interface {
 	ResetCircuitBreakers()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_ComputeRegionBackendService) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) CustomMetrics() ComputeRegionBackendServiceCustomMetricsList {
+	var returns ComputeRegionBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -974,7 +998,7 @@ func (j *jsiiProxy_ComputeRegionBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService(scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) ComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -992,7 +1016,7 @@ func NewComputeRegionBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService_Override(c ComputeRegionBackendService, scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1655,6 +1679,17 @@ func (c *jsiiProxy_ComputeRegionBackendService) PutConsistentHash(value *Compute
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) PutCustomMetrics(value interface{}) {
+	if err := c.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) PutFailoverPolicy(value *ComputeRegionBackendServiceFailoverPolicy) {
 	if err := c.validatePutFailoverPolicyParameters(value); err != nil {
 		panic(err)
@@ -1765,6 +1800,14 @@ func (c *jsiiProxy_ComputeRegionBackendService) ResetConsistentHash() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConsistentHash",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }

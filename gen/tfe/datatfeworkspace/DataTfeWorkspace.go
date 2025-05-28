@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeworkspace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/workspace tfe_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/workspace tfe_workspace}.
 type DataTfeWorkspace interface {
 	cdktf.TerraformDataSource
 	AllowDestroyPlan() cdktf.IResolvable
@@ -31,6 +31,7 @@ type DataTfeWorkspace interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	EffectiveTags() cdktf.StringMap
 	ExecutionMode() *string
 	FileTriggersEnabled() cdktf.IResolvable
 	// Experimental.
@@ -46,6 +47,7 @@ type DataTfeWorkspace interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InheritsProjectAutoDestroy() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -251,6 +253,16 @@ func (j *jsiiProxy_DataTfeWorkspace) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataTfeWorkspace) EffectiveTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveTags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataTfeWorkspace) ExecutionMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -336,6 +348,16 @@ func (j *jsiiProxy_DataTfeWorkspace) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTfeWorkspace) InheritsProjectAutoDestroy() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"inheritsProjectAutoDestroy",
 		&returns,
 	)
 	return returns
@@ -652,7 +674,7 @@ func (j *jsiiProxy_DataTfeWorkspace) WorkingDirectory() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/workspace tfe_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/workspace tfe_workspace} Data Source.
 func NewDataTfeWorkspace(scope constructs.Construct, id *string, config *DataTfeWorkspaceConfig) DataTfeWorkspace {
 	_init_.Initialize()
 
@@ -670,7 +692,7 @@ func NewDataTfeWorkspace(scope constructs.Construct, id *string, config *DataTfe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/workspace tfe_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/workspace tfe_workspace} Data Source.
 func NewDataTfeWorkspace_Override(d DataTfeWorkspace, scope constructs.Construct, id *string, config *DataTfeWorkspaceConfig) {
 	_init_.Initialize()
 

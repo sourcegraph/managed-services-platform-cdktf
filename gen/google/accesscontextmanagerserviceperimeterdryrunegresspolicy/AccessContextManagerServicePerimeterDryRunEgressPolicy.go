@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/accesscontextmanagerserviceperimeterdryrunegresspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy}.
 type AccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 	cdktf.TerraformResource
+	AccessPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -32,6 +33,7 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 	EgressFromInput() *AccessContextManagerServicePerimeterDryRunEgressPolicyEgressFrom
 	EgressTo() AccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOutputReference
 	EgressToInput() *AccessContextManagerServicePerimeterDryRunEgressPolicyEgressTo
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,6 +72,9 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 	TerraformResourceType() *string
 	Timeouts() AccessContextManagerServicePerimeterDryRunEgressPolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,6 +128,7 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetTitle()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -139,6 +145,16 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 // The jsii proxy struct for AccessContextManagerServicePerimeterDryRunEgressPolicy
 type jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) AccessPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) CdktfStack() cdktf.TerraformStack {
@@ -226,6 +242,16 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) Egres
 	_jsii_.Get(
 		j,
 		"egressToInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -401,8 +427,28 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) Timeo
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
 func NewAccessContextManagerServicePerimeterDryRunEgressPolicy(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunEgressPolicyConfig) AccessContextManagerServicePerimeterDryRunEgressPolicy {
 	_init_.Initialize()
 
@@ -420,7 +466,7 @@ func NewAccessContextManagerServicePerimeterDryRunEgressPolicy(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
 func NewAccessContextManagerServicePerimeterDryRunEgressPolicy_Override(a AccessContextManagerServicePerimeterDryRunEgressPolicy, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunEgressPolicyConfig) {
 	_init_.Initialize()
 
@@ -517,6 +563,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy)SetPro
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
 		val,
 	)
 }
@@ -943,6 +1000,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) Reset
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) ResetTitle() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTitle",
 		nil, // no parameters
 	)
 }

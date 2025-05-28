@@ -26,6 +26,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList
 	ConnectorEnforcement() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -34,6 +35,8 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstancesInstancesSettingsDatabaseFlagsList
 	DataCacheConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsDataCacheConfigList
+	DataDiskProvisionedIops() *float64
+	DataDiskProvisionedThroughput() *float64
 	DeletionProtectionEnabled() cdktf.IResolvable
 	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstancesInstancesSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
@@ -53,6 +56,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	MaintenanceWindow() DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList
 	PasswordValidationPolicy() DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList
 	PricingPlan() *string
+	RetainBackupsOnDelete() cdktf.IResolvable
 	SqlServerAuditConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsSqlServerAuditConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -185,6 +189,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) ConnectionPoolConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) ConnectorEnforcement() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,6 +234,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"dataCacheConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) DataDiskProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) DataDiskProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataDiskProvisionedThroughput",
 		&returns,
 	)
 	return returns
@@ -390,6 +424,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"pricingPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) RetainBackupsOnDelete() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
 		&returns,
 	)
 	return returns

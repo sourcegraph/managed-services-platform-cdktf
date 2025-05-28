@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/integrationpagerduty/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty sentry_integration_pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty sentry_integration_pagerduty}.
 type IntegrationPagerduty interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -386,7 +386,7 @@ func (j *jsiiProxy_IntegrationPagerduty) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty sentry_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty sentry_integration_pagerduty} Resource.
 func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) IntegrationPagerduty {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *Int
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty sentry_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty sentry_integration_pagerduty} Resource.
 func NewIntegrationPagerduty_Override(i IntegrationPagerduty, scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) {
 	_init_.Initialize()
 

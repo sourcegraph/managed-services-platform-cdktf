@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/storagebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() StorageBucketAutoclassOutputReference
@@ -116,11 +116,13 @@ type StorageBucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeCreated() *string
 	Timeouts() StorageBucketTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UniformBucketLevelAccess() interface{}
 	SetUniformBucketLevelAccess(val interface{})
 	UniformBucketLevelAccessInput() interface{}
+	Updated() *string
 	Url() *string
 	Versioning() StorageBucketVersioningOutputReference
 	VersioningInput() *StorageBucketVersioning
@@ -845,6 +847,16 @@ func (j *jsiiProxy_StorageBucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucket) TimeCreated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeCreated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucket) Timeouts() StorageBucketTimeoutsOutputReference {
 	var returns StorageBucketTimeoutsOutputReference
 	_jsii_.Get(
@@ -880,6 +892,16 @@ func (j *jsiiProxy_StorageBucket) UniformBucketLevelAccessInput() interface{} {
 	_jsii_.Get(
 		j,
 		"uniformBucketLevelAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
 		&returns,
 	)
 	return returns
@@ -936,7 +958,7 @@ func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -954,7 +976,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 

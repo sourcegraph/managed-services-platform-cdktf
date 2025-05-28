@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_router_nat google_compute_router_nat}.
 type DataGoogleComputeRouterNat interface {
 	cdktf.TerraformDataSource
 	AutoNetworkTier() *string
@@ -83,6 +83,7 @@ type DataGoogleComputeRouterNat interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	UdpIdleTimeoutSec() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -554,6 +555,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNat) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -565,7 +576,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
 func NewDataGoogleComputeRouterNat(scope constructs.Construct, id *string, config *DataGoogleComputeRouterNatConfig) DataGoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -583,7 +594,7 @@ func NewDataGoogleComputeRouterNat(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
 func NewDataGoogleComputeRouterNat_Override(d DataGoogleComputeRouterNat, scope constructs.Construct, id *string, config *DataGoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 

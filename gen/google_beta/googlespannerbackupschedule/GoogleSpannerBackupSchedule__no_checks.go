@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerBackupSchedule) validatePutEncryptionConfigParameters(value *GoogleSpannerBackupScheduleEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerBackupSchedule) validatePutFullBackupSpecParameters(value *GoogleSpannerBackupScheduleFullBackupSpec) error {
 	return nil
 }

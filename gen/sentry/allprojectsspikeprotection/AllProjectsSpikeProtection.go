@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/allprojectsspikeprotection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection}.
 type AllProjectsSpikeProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_AllProjectsSpikeProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection} Resource.
 func NewAllProjectsSpikeProtection(scope constructs.Construct, id *string, config *AllProjectsSpikeProtectionConfig) AllProjectsSpikeProtection {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewAllProjectsSpikeProtection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/all_projects_spike_protection sentry_all_projects_spike_protection} Resource.
 func NewAllProjectsSpikeProtection_Override(a AllProjectsSpikeProtection, scope constructs.Construct, id *string, config *AllProjectsSpikeProtectionConfig) {
 	_init_.Initialize()
 

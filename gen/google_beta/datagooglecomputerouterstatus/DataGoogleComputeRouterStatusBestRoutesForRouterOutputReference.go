@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	cdktf.ComplexObject
+	AsPaths() DataGoogleComputeRouterStatusBestRoutesForRouterAsPathsList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,6 +26,7 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CreationTimestamp() *string
 	Description() *string
 	DestRange() *string
 	// Experimental.
@@ -34,6 +36,7 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	Name() *string
 	Network() *string
 	NextHopGateway() *string
+	NextHopHub() *string
 	NextHopIlb() *string
 	NextHopInstance() *string
 	NextHopInstanceZone() *string
@@ -42,9 +45,12 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	NextHopMed() *string
 	NextHopNetwork() *string
 	NextHopOrigin() *string
+	NextHopPeering() *string
 	NextHopVpnTunnel() *string
 	Priority() *float64
 	Project() *string
+	RouteStatus() *string
+	RouteType() *string
 	SelfLink() *string
 	Tags() *[]*string
 	// Experimental.
@@ -55,6 +61,7 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Warnings() DataGoogleComputeRouterStatusBestRoutesForRouterWarningsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -94,6 +101,16 @@ type jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) AsPaths() DataGoogleComputeRouterStatusBestRoutesForRouterAsPathsList {
+	var returns DataGoogleComputeRouterStatusBestRoutesForRouterAsPathsList
+	_jsii_.Get(
+		j,
+		"asPaths",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -119,6 +136,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -189,6 +216,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	_jsii_.Get(
 		j,
 		"nextHopGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) NextHopHub() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopHub",
 		&returns,
 	)
 	return returns
@@ -274,6 +311,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) NextHopPeering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopPeering",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) NextHopVpnTunnel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -299,6 +346,26 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	_jsii_.Get(
 		j,
 		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) RouteStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) RouteType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeType",
 		&returns,
 	)
 	return returns
@@ -339,6 +406,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReferen
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference) Warnings() DataGoogleComputeRouterStatusBestRoutesForRouterWarningsList {
+	var returns DataGoogleComputeRouterStatusBestRoutesForRouterWarningsList
+	_jsii_.Get(
+		j,
+		"warnings",
 		&returns,
 	)
 	return returns

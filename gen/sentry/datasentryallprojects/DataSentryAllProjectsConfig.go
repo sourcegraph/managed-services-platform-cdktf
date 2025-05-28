@@ -21,7 +21,7 @@ type DataSentryAllProjectsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The organization the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_projects#organization DataSentryAllProjects#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_projects#organization DataSentryAllProjects#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 }
 

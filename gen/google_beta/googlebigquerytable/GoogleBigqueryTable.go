@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference
@@ -110,6 +110,8 @@ type GoogleBigqueryTable interface {
 	ResourceTagsInput() *map[string]*string
 	Schema() *string
 	SetSchema(val *string)
+	SchemaForeignTypeInfo() GoogleBigqueryTableSchemaForeignTypeInfoOutputReference
+	SchemaForeignTypeInfoInput() *GoogleBigqueryTableSchemaForeignTypeInfo
 	SchemaInput() *string
 	SelfLink() *string
 	TableConstraints() GoogleBigqueryTableTableConstraintsOutputReference
@@ -117,6 +119,9 @@ type GoogleBigqueryTable interface {
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
+	TableMetadataView() *string
+	SetTableMetadataView(val *string)
+	TableMetadataViewInput() *string
 	TableReplicationInfo() GoogleBigqueryTableTableReplicationInfoOutputReference
 	TableReplicationInfoInput() *GoogleBigqueryTableTableReplicationInfo
 	// Experimental.
@@ -180,6 +185,7 @@ type GoogleBigqueryTable interface {
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
 	PutRangePartitioning(value *GoogleBigqueryTableRangePartitioning)
+	PutSchemaForeignTypeInfo(value *GoogleBigqueryTableSchemaForeignTypeInfo)
 	PutTableConstraints(value *GoogleBigqueryTableTableConstraints)
 	PutTableReplicationInfo(value *GoogleBigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning)
@@ -205,7 +211,9 @@ type GoogleBigqueryTable interface {
 	ResetRequirePartitionFilter()
 	ResetResourceTags()
 	ResetSchema()
+	ResetSchemaForeignTypeInfo()
 	ResetTableConstraints()
+	ResetTableMetadataView()
 	ResetTableReplicationInfo()
 	ResetTimePartitioning()
 	ResetView()
@@ -807,6 +815,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) Schema() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) SchemaForeignTypeInfo() GoogleBigqueryTableSchemaForeignTypeInfoOutputReference {
+	var returns GoogleBigqueryTableSchemaForeignTypeInfoOutputReference
+	_jsii_.Get(
+		j,
+		"schemaForeignTypeInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) SchemaForeignTypeInfoInput() *GoogleBigqueryTableSchemaForeignTypeInfo {
+	var returns *GoogleBigqueryTableSchemaForeignTypeInfo
+	_jsii_.Get(
+		j,
+		"schemaForeignTypeInfoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) SchemaInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -862,6 +890,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) TableIdInput() *string {
 	_jsii_.Get(
 		j,
 		"tableIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TableMetadataView() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataView",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TableMetadataViewInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataViewInput",
 		&returns,
 	)
 	return returns
@@ -978,7 +1026,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -996,7 +1044,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1225,6 +1273,17 @@ func (j *jsiiProxy_GoogleBigqueryTable)SetTableId(val *string) {
 	_jsii_.Set(
 		j,
 		"tableId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable)SetTableMetadataView(val *string) {
+	if err := j.validateSetTableMetadataViewParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableMetadataView",
 		val,
 	)
 }
@@ -1648,6 +1707,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutRangePartitioning(value *GoogleBigque
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutSchemaForeignTypeInfo(value *GoogleBigqueryTableSchemaForeignTypeInfo) {
+	if err := g.validatePutSchemaForeignTypeInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSchemaForeignTypeInfo",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutTableConstraints(value *GoogleBigqueryTableTableConstraints) {
 	if err := g.validatePutTableConstraintsParameters(value); err != nil {
 		panic(err)
@@ -1844,10 +1914,26 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetSchema() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) ResetSchemaForeignTypeInfo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSchemaForeignTypeInfo",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) ResetTableConstraints() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTableConstraints",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetTableMetadataView() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTableMetadataView",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputeregioninstancetemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template}.
 type DataGoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesList
@@ -723,7 +723,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) DataGoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -741,7 +741,7 @@ func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate_Override(d DataGoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 

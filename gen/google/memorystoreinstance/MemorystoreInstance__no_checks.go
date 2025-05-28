@@ -72,7 +72,27 @@ func (m *jsiiProxy_MemorystoreInstance) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutAutomatedBackupConfigParameters(value *MemorystoreInstanceAutomatedBackupConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *MemorystoreInstanceCrossInstanceReplicationConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutGcsSourceParameters(value *MemorystoreInstanceGcsSource) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutMaintenancePolicyParameters(value *MemorystoreInstanceMaintenancePolicy) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutManagedBackupSourceParameters(value *MemorystoreInstanceManagedBackupSource) error {
 	return nil
 }
 

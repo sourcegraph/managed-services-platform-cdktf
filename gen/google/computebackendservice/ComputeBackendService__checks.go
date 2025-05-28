@@ -268,6 +268,37 @@ func (c *jsiiProxy_ComputeBackendService) validatePutConsistentHashParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ComputeBackendServiceCustomMetrics:
+		value := value.(*[]*ComputeBackendServiceCustomMetrics)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ComputeBackendServiceCustomMetrics:
+		value_ := value.([]*ComputeBackendServiceCustomMetrics)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeBackendServiceCustomMetrics; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *ComputeBackendServiceIap) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -311,6 +342,17 @@ func (c *jsiiProxy_ComputeBackendService) validatePutLocalityLbPoliciesParameter
 }
 
 func (c *jsiiProxy_ComputeBackendService) validatePutLogConfigParameters(value *ComputeBackendServiceLogConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendService) validatePutMaxStreamDurationParameters(value *ComputeBackendServiceMaxStreamDuration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -566,6 +608,22 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val int
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

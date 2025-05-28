@@ -210,6 +210,50 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetDisk
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

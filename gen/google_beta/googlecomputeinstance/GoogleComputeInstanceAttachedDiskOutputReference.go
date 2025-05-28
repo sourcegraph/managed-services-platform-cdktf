@@ -31,7 +31,16 @@ type GoogleComputeInstanceAttachedDiskOutputReference interface {
 	DiskEncryptionKeyRaw() *string
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
+	DiskEncryptionKeyRsa() *string
+	SetDiskEncryptionKeyRsa(val *string)
+	DiskEncryptionKeyRsaInput() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
+	SetDiskEncryptionServiceAccount(val *string)
+	DiskEncryptionServiceAccountInput() *string
+	ForceAttach() interface{}
+	SetForceAttach(val interface{})
+	ForceAttachInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -79,6 +88,9 @@ type GoogleComputeInstanceAttachedDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
+	ResetDiskEncryptionKeyRsa()
+	ResetDiskEncryptionServiceAccount()
+	ResetForceAttach()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	// Produce the Token's value at resolution time.
@@ -166,11 +178,71 @@ func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncrypt
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionKeyRsaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeySha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ForceAttach() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ForceAttachInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttachInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +416,39 @@ func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference)SetDiskEncry
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference)SetDiskEncryptionKeyRsa(val *string) {
+	if err := j.validateSetDiskEncryptionKeyRsaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionKeyRsa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference)SetDiskEncryptionServiceAccount(val *string) {
+	if err := j.validateSetDiskEncryptionServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference)SetForceAttach(val interface{}) {
+	if err := j.validateSetForceAttachParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceAttach",
 		val,
 	)
 }
@@ -612,6 +717,30 @@ func (g *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ResetDiskEn
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionKeyRaw",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ResetDiskEncryptionKeyRsa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskEncryptionKeyRsa",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ResetDiskEncryptionServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference) ResetForceAttach() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceAttach",
 		nil, // no parameters
 	)
 }

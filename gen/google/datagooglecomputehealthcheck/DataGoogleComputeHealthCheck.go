@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputehealthcheck/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_health_check google_compute_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_health_check google_compute_health_check}.
 type DataGoogleComputeHealthCheck interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataGoogleComputeHealthCheck) UnhealthyThreshold() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_health_check google_compute_health_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_health_check google_compute_health_check} Data Source.
 func NewDataGoogleComputeHealthCheck(scope constructs.Construct, id *string, config *DataGoogleComputeHealthCheckConfig) DataGoogleComputeHealthCheck {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDataGoogleComputeHealthCheck(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/compute_health_check google_compute_health_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/compute_health_check google_compute_health_check} Data Source.
 func NewDataGoogleComputeHealthCheck_Override(d DataGoogleComputeHealthCheck, scope constructs.Construct, id *string, config *DataGoogleComputeHealthCheckConfig) {
 	_init_.Initialize()
 

@@ -34,6 +34,9 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference i
 	DestIpRanges() *[]*string
 	SetDestIpRanges(val *[]*string)
 	DestIpRangesInput() *[]*string
+	DestNetworkScope() *string
+	SetDestNetworkScope(val *string)
+	DestNetworkScopeInput() *string
 	DestRegionCodes() *[]*string
 	SetDestRegionCodes(val *[]*string)
 	DestRegionCodesInput() *[]*string
@@ -55,6 +58,12 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference i
 	SrcIpRanges() *[]*string
 	SetSrcIpRanges(val *[]*string)
 	SrcIpRangesInput() *[]*string
+	SrcNetworks() *[]*string
+	SetSrcNetworks(val *[]*string)
+	SrcNetworkScope() *string
+	SetSrcNetworkScope(val *string)
+	SrcNetworkScopeInput() *string
+	SrcNetworksInput() *[]*string
 	SrcRegionCodes() *[]*string
 	SetSrcRegionCodes(val *[]*string)
 	SrcRegionCodesInput() *[]*string
@@ -100,11 +109,14 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference i
 	ResetDestAddressGroups()
 	ResetDestFqdns()
 	ResetDestIpRanges()
+	ResetDestNetworkScope()
 	ResetDestRegionCodes()
 	ResetDestThreatIntelligences()
 	ResetSrcAddressGroups()
 	ResetSrcFqdns()
 	ResetSrcIpRanges()
+	ResetSrcNetworks()
+	ResetSrcNetworkScope()
 	ResetSrcRegionCodes()
 	ResetSrcSecureTag()
 	ResetSrcThreatIntelligences()
@@ -208,6 +220,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	_jsii_.Get(
 		j,
 		"destIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) DestNetworkScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destNetworkScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) DestNetworkScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destNetworkScopeInput",
 		&returns,
 	)
 	return returns
@@ -348,6 +380,46 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	_jsii_.Get(
 		j,
 		"srcIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcNetworks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcNetworks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcNetworkScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"srcNetworkScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcNetworkScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"srcNetworkScopeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcNetworksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcNetworksInput",
 		&returns,
 	)
 	return returns
@@ -516,6 +588,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestNetworkScope(val *string) {
+	if err := j.validateSetDestNetworkScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destNetworkScope",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
 	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
 		panic(err)
@@ -578,6 +661,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	_jsii_.Set(
 		j,
 		"srcIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcNetworks(val *[]*string) {
+	if err := j.validateSetSrcNetworksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcNetworks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcNetworkScope(val *string) {
+	if err := j.validateSetSrcNetworkScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcNetworkScope",
 		val,
 	)
 }
@@ -858,6 +963,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ResetDestNetworkScope() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestNetworkScope",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ResetDestRegionCodes() {
 	_jsii_.InvokeVoid(
 		g,
@@ -894,6 +1007,22 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOut
 	_jsii_.InvokeVoid(
 		g,
 		"resetSrcIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ResetSrcNetworks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcNetworks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ResetSrcNetworkScope() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcNetworkScope",
 		nil, // no parameters
 	)
 }

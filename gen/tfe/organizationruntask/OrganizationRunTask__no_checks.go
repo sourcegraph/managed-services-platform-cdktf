@@ -112,6 +112,10 @@ func (j *jsiiProxy_OrganizationRunTask) validateSetHmacKeyParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationRunTask) validateSetHmacKeyWoParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationRunTask) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

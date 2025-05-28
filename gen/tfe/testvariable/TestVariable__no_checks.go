@@ -140,6 +140,10 @@ func (j *jsiiProxy_TestVariable) validateSetValueParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_TestVariable) validateSetValueWoParameters(val *string) error {
+	return nil
+}
+
 func validateNewTestVariableParameters(scope constructs.Construct, id *string, config *TestVariableConfig) error {
 	return nil
 }

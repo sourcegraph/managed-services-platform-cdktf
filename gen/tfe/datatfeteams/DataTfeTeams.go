@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeteams/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/teams tfe_teams}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/teams tfe_teams}.
 type DataTfeTeams interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataTfeTeams) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/teams tfe_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/teams tfe_teams} Data Source.
 func NewDataTfeTeams(scope constructs.Construct, id *string, config *DataTfeTeamsConfig) DataTfeTeams {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataTfeTeams(scope constructs.Construct, id *string, config *DataTfeTeam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/teams tfe_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/teams tfe_teams} Data Source.
 func NewDataTfeTeams_Override(d DataTfeTeams, scope constructs.Construct, id *string, config *DataTfeTeamsConfig) {
 	_init_.Initialize()
 

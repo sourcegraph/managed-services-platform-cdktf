@@ -112,6 +112,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutTaintP
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *ContainerNodePoolNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *ContainerNodePoolNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }
@@ -169,6 +173,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLoggin
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	return nil
 }
 

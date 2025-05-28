@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/organizationrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository sentry_organization_repository}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository sentry_organization_repository}.
 type OrganizationRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -386,7 +386,7 @@ func (j *jsiiProxy_OrganizationRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository sentry_organization_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository sentry_organization_repository} Resource.
 func NewOrganizationRepository(scope constructs.Construct, id *string, config *OrganizationRepositoryConfig) OrganizationRepository {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewOrganizationRepository(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository sentry_organization_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository sentry_organization_repository} Resource.
 func NewOrganizationRepository_Override(o OrganizationRepository, scope constructs.Construct, id *string, config *OrganizationRepositoryConfig) {
 	_init_.Initialize()
 

@@ -116,11 +116,19 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetDescriptionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetEnvoyHeadersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetGatewaySecurityPolicyParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) validateSetIpVersionParameters(val *string) error {
 	return nil
 }
 

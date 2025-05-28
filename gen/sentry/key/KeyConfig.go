@@ -21,27 +21,27 @@ type KeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the client key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#name Key#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#name Key#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#organization Key#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#organization Key#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The project of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#project Key#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#project Key#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The JavaScript loader script configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#javascript_loader_script Key#javascript_loader_script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#javascript_loader_script Key#javascript_loader_script}
 	JavascriptLoaderScript *KeyJavascriptLoaderScript `field:"optional" json:"javascriptLoaderScript" yaml:"javascriptLoaderScript"`
 	// Number of events that can be reported within the rate limit window.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#rate_limit_count Key#rate_limit_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#rate_limit_count Key#rate_limit_count}
 	RateLimitCount *float64 `field:"optional" json:"rateLimitCount" yaml:"rateLimitCount"`
 	// Length of time in seconds that will be considered when checking the rate limit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/key#rate_limit_window Key#rate_limit_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/key#rate_limit_window Key#rate_limit_window}
 	RateLimitWindow *float64 `field:"optional" json:"rateLimitWindow" yaml:"rateLimitWindow"`
 }
 

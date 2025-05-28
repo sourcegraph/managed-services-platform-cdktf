@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/alloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -113,6 +113,9 @@ type AlloydbCluster interface {
 	RestoreContinuousBackupSourceInput() *AlloydbClusterRestoreContinuousBackupSource
 	SecondaryConfig() AlloydbClusterSecondaryConfigOutputReference
 	SecondaryConfigInput() *AlloydbClusterSecondaryConfig
+	SkipAwaitMajorVersionUpgrade() interface{}
+	SetSkipAwaitMajorVersionUpgrade(val interface{})
+	SkipAwaitMajorVersionUpgradeInput() interface{}
 	State() *string
 	SubscriptionType() *string
 	SetSubscriptionType(val *string)
@@ -204,6 +207,7 @@ type AlloydbCluster interface {
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
+	ResetSkipAwaitMajorVersionUpgrade()
 	ResetSubscriptionType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -854,6 +858,26 @@ func (j *jsiiProxy_AlloydbCluster) SecondaryConfigInput() *AlloydbClusterSeconda
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) SkipAwaitMajorVersionUpgrade() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitMajorVersionUpgrade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) SkipAwaitMajorVersionUpgradeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitMajorVersionUpgradeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -965,7 +989,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -983,7 +1007,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1179,6 +1203,17 @@ func (j *jsiiProxy_AlloydbCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetSkipAwaitMajorVersionUpgrade(val interface{}) {
+	if err := j.validateSetSkipAwaitMajorVersionUpgradeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipAwaitMajorVersionUpgrade",
 		val,
 	)
 }
@@ -1824,6 +1859,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetSecondaryConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSecondaryConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetSkipAwaitMajorVersionUpgrade() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSkipAwaitMajorVersionUpgrade",
 		nil, // no parameters
 	)
 }

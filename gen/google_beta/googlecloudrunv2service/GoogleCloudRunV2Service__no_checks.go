@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutBinaryAuthorizationParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutBuildConfigParameters(value *GoogleCloudRunV2ServiceBuildConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutScalingParameters(value *GoogleCloudRunV2ServiceScaling) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDeletionProtectionParamet
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIapEnabledParameters(val interface{}) error {
 	return nil
 }
 

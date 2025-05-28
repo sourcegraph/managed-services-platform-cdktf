@@ -21,19 +21,19 @@ type IntegrationPagerdutyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the PagerDuty integration. Source from the URL `https://<organization>.sentry.io/settings/integrations/pagerduty/<integration-id>/` or use the `sentry_organization_integration` data source.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty#integration_id IntegrationPagerduty#integration_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty#integration_id IntegrationPagerduty#integration_id}
 	IntegrationId *string `field:"required" json:"integrationId" yaml:"integrationId"`
 	// The integration key of the PagerDuty service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty#integration_key IntegrationPagerduty#integration_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty#integration_key IntegrationPagerduty#integration_key}
 	IntegrationKey *string `field:"required" json:"integrationKey" yaml:"integrationKey"`
 	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty#organization IntegrationPagerduty#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty#organization IntegrationPagerduty#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The name of the PagerDuty service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_pagerduty#service IntegrationPagerduty#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty#service IntegrationPagerduty#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 }
 

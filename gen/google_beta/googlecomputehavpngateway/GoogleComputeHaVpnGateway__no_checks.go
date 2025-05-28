@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

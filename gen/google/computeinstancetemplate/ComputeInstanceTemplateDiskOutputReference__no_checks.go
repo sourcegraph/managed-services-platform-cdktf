@@ -60,6 +60,10 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetDiskSi
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	return nil
 }
 

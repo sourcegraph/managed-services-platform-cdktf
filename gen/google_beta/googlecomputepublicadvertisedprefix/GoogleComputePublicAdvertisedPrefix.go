@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputepublicadvertisedprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type GoogleComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type GoogleComputePublicAdvertisedPrefix interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PdpScope() *string
+	SetPdpScope(val *string)
+	PdpScopeInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -129,6 +132,7 @@ type GoogleComputePublicAdvertisedPrefix interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPdpScope()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -349,6 +353,26 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) PdpScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pdpScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) PdpScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pdpScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -470,7 +494,7 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) GoogleComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -488,7 +512,7 @@ func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix_Override(g GoogleComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix)SetPdpScope(val *string) {
+	if err := j.validateSetPdpScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pdpScope",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePublicAdvertisedPrefix) ResetPdpScope() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPdpScope",
 		nil, // no parameters
 	)
 }

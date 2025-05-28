@@ -27,6 +27,7 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubjectAlternativeNames() *[]*string
 	EnablePrivatePathForGoogleCloudServices() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -36,6 +37,7 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interfa
 	PrivateNetwork() *string
 	PscConfig() DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	ServerCaMode() *string
+	ServerCaPool() *string
 	SslMode() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -134,6 +136,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -199,6 +211,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
 		&returns,
 	)
 	return returns

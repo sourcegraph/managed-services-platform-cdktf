@@ -88,6 +88,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutConsistentHashParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *ComputeBackendServiceIap) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutLocalityLbPoliciesParameter
 }
 
 func (c *jsiiProxy_ComputeBackendService) validatePutLogConfigParameters(value *ComputeBackendServiceLogConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendService) validatePutMaxStreamDurationParameters(value *ComputeBackendServiceMaxStreamDuration) error {
 	return nil
 }
 
@@ -169,6 +177,14 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEdgeSecurityPolicyParameter
 }
 
 func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
 	return nil
 }
 

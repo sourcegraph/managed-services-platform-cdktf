@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetPolicyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetPresetTopologyParameters(val *string) error {
 	return nil
 }

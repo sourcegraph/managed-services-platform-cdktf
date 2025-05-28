@@ -30,6 +30,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubjectAlternativeNames() *[]*string
+	SetCustomSubjectAlternativeNames(val *[]*string)
+	CustomSubjectAlternativeNamesInput() *[]*string
 	EnablePrivatePathForGoogleCloudServices() interface{}
 	SetEnablePrivatePathForGoogleCloudServices(val interface{})
 	EnablePrivatePathForGoogleCloudServicesInput() interface{}
@@ -48,6 +51,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -87,11 +93,13 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PutPscConfig(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
+	ResetCustomSubjectAlternativeNames()
 	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
 	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +181,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNamesInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +326,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Se
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,6 +447,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetCustomSubjectAlternativeNames(val *[]*string) {
+	if err := j.validateSetCustomSubjectAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customSubjectAlternativeNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetEnablePrivatePathForGoogleCloudServices(val interface{}) {
 	if err := j.validateSetEnablePrivatePathForGoogleCloudServicesParameters(val); err != nil {
 		panic(err)
@@ -450,6 +509,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -711,6 +781,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetCustomSubjectAlternativeNames() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomSubjectAlternativeNames",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetEnablePrivatePathForGoogleCloudServices() {
 	_jsii_.InvokeVoid(
 		s,
@@ -747,6 +825,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

@@ -50,6 +50,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	EphemeralStorageLocalSsdConfigInput() *GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() GoogleContainerClusterNodeConfigFastSocketOutputReference
 	FastSocketInput() *GoogleContainerClusterNodeConfigFastSocket
+	FlexStart() interface{}
+	SetFlexStart(val interface{})
+	FlexStartInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() GoogleContainerClusterNodeConfigGcfsConfigOutputReference
@@ -86,6 +89,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -139,6 +145,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() GoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference
+	WindowsNodeConfigInput() *GoogleContainerClusterNodeConfigWindowsNodeConfig
 	WorkloadMetadataConfig() GoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference
 	WorkloadMetadataConfigInput() *GoogleContainerClusterNodeConfigWorkloadMetadataConfig
 	// Experimental.
@@ -184,6 +192,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *GoogleContainerClusterNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
+	PutWindowsNodeConfig(value *GoogleContainerClusterNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
@@ -195,6 +204,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetEphemeralStorageConfig()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
+	ResetFlexStart()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -208,6 +218,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -225,6 +236,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
+	ResetWindowsNodeConfig()
 	ResetWorkloadMetadataConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -476,6 +488,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FastSocketIn
 	_jsii_.Get(
 		j,
 		"fastSocketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FlexStart() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FlexStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStartInput",
 		&returns,
 	)
 	return returns
@@ -756,6 +788,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) MachineTypeI
 	_jsii_.Get(
 		j,
 		"machineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
 		&returns,
 	)
 	return returns
@@ -1121,6 +1173,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) WindowsNodeConfig() GoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) WindowsNodeConfigInput() *GoogleContainerClusterNodeConfigWindowsNodeConfig {
+	var returns *GoogleContainerClusterNodeConfigWindowsNodeConfig
+	_jsii_.Get(
+		j,
+		"windowsNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) WorkloadMetadataConfig() GoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference {
 	var returns GoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference
 	_jsii_.Get(
@@ -1235,6 +1307,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetEnableConf
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetFlexStart(val interface{}) {
+	if err := j.validateSetFlexStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexStart",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
@@ -1308,6 +1391,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetMachineTyp
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -1850,6 +1944,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutTaint(val
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutWindowsNodeConfig(value *GoogleContainerClusterNodeConfigWindowsNodeConfig) {
+	if err := g.validatePutWindowsNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWindowsNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutWorkloadMetadataConfig(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig) {
 	if err := g.validatePutWorkloadMetadataConfigParameters(value); err != nil {
 		panic(err)
@@ -1937,6 +2042,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetFastSoc
 	_jsii_.InvokeVoid(
 		g,
 		"resetFastSocket",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetFlexStart() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFlexStart",
 		nil, // no parameters
 	)
 }
@@ -2041,6 +2154,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetMachine
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxRunDuration",
 		nil, // no parameters
 	)
 }
@@ -2177,6 +2298,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetTaint()
 	_jsii_.InvokeVoid(
 		g,
 		"resetTaint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetWindowsNodeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWindowsNodeConfig",
 		nil, // no parameters
 	)
 }

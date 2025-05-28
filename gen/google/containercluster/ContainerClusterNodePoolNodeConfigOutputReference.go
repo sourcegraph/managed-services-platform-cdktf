@@ -84,6 +84,9 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -135,6 +138,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference
+	WindowsNodeConfigInput() *ContainerClusterNodePoolNodeConfigWindowsNodeConfig
 	WorkloadMetadataConfig() ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 	WorkloadMetadataConfigInput() *ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig
 	// Experimental.
@@ -178,6 +183,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
+	PutWindowsNodeConfig(value *ContainerClusterNodePoolNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
@@ -201,6 +207,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -217,6 +224,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
+	ResetWindowsNodeConfig()
 	ResetWorkloadMetadataConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -733,6 +741,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MachineTyp
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) Metadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1073,6 +1101,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfig() ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfigInput() *ContainerClusterNodePoolNodeConfigWindowsNodeConfig {
+	var returns *ContainerClusterNodePoolNodeConfigWindowsNodeConfig
+	_jsii_.Get(
+		j,
+		"windowsNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) WorkloadMetadataConfig() ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference {
 	var returns ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 	_jsii_.Get(
@@ -1260,6 +1308,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetMachineT
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -1780,6 +1839,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutTaint(v
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutWindowsNodeConfig(value *ContainerClusterNodePoolNodeConfigWindowsNodeConfig) {
+	if err := c.validatePutWindowsNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWindowsNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutWorkloadMetadataConfig(value *ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig) {
 	if err := c.validatePutWorkloadMetadataConfigParameters(value); err != nil {
 		panic(err)
@@ -1967,6 +2037,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetMachi
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxRunDuration",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetMetadata() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2091,6 +2169,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetTaint
 	_jsii_.InvokeVoid(
 		c,
 		"resetTaint",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetWindowsNodeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWindowsNodeConfig",
 		nil, // no parameters
 	)
 }

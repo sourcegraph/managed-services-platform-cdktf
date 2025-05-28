@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlediscoveryenginedatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
 type GoogleDiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
+	AdvancedSiteSearchConfig() GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
+	AdvancedSiteSearchConfigInput() *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -138,8 +140,10 @@ type GoogleDiscoveryEngineDataStore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSiteSearchConfig(value *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig)
 	PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig)
 	PutTimeouts(value *GoogleDiscoveryEngineDataStoreTimeouts)
+	ResetAdvancedSiteSearchConfig()
 	ResetCreateAdvancedSiteSearch()
 	ResetDocumentProcessingConfig()
 	ResetId()
@@ -166,6 +170,26 @@ type GoogleDiscoveryEngineDataStore interface {
 // The jsii proxy struct for GoogleDiscoveryEngineDataStore
 type jsiiProxy_GoogleDiscoveryEngineDataStore struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) AdvancedSiteSearchConfig() GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference {
+	var returns GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSiteSearchConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) AdvancedSiteSearchConfigInput() *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig {
+	var returns *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig
+	_jsii_.Get(
+		j,
+		"advancedSiteSearchConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) CdktfStack() cdktf.TerraformStack {
@@ -599,7 +623,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) GoogleDiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -617,7 +641,7 @@ func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore_Override(g GoogleDiscoveryEngineDataStore, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -1159,6 +1183,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) PutAdvancedSiteSearchConfig(value *GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfig) {
+	if err := g.validatePutAdvancedSiteSearchConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedSiteSearchConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig) {
 	if err := g.validatePutDocumentProcessingConfigParameters(value); err != nil {
 		panic(err)
@@ -1178,6 +1213,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) PutTimeouts(value *GoogleDisc
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetAdvancedSiteSearchConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedSiteSearchConfig",
+		nil, // no parameters
 	)
 }
 

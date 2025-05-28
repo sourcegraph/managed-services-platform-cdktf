@@ -35,6 +35,8 @@ type GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference inter
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobReplicationSpecTransferOptions
 	SetInternalValue(val *GoogleStorageTransferJobReplicationSpecTransferOptions)
+	MetadataOptions() GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference
+	MetadataOptionsInput() *GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptions
 	OverwriteObjectsAlreadyExistingInSink() interface{}
 	SetOverwriteObjectsAlreadyExistingInSink(val interface{})
 	OverwriteObjectsAlreadyExistingInSinkInput() interface{}
@@ -73,8 +75,10 @@ type GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMetadataOptions(value *GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptions)
 	ResetDeleteObjectsFromSourceAfterTransfer()
 	ResetDeleteObjectsUniqueInSink()
+	ResetMetadataOptions()
 	ResetOverwriteObjectsAlreadyExistingInSink()
 	ResetOverwriteWhen()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference) MetadataOptions() GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference {
+	var returns GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"metadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference) MetadataOptionsInput() *GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptions {
+	var returns *GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptions
+	_jsii_.Get(
+		j,
+		"metadataOptionsInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (g *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputR
 	return returns
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference) PutMetadataOptions(value *GoogleStorageTransferJobReplicationSpecTransferOptionsMetadataOptions) {
+	if err := g.validatePutMetadataOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference) ResetDeleteObjectsFromSourceAfterTransfer() {
 	_jsii_.InvokeVoid(
 		g,
@@ -567,6 +602,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetDeleteObjectsUniqueInSink",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobReplicationSpecTransferOptionsOutputReference) ResetMetadataOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetadataOptions",
 		nil, // no parameters
 	)
 }

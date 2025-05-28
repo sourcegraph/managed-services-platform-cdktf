@@ -33,6 +33,8 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GracefulShutdown() GoogleComputeInstanceSchedulingGracefulShutdownOutputReference
+	GracefulShutdownInput() *GoogleComputeInstanceSchedulingGracefulShutdown
 	HostErrorTimeoutSeconds() *float64
 	SetHostErrorTimeoutSeconds(val *float64)
 	HostErrorTimeoutSecondsInput() *float64
@@ -64,6 +66,9 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	TerminationTime() *string
+	SetTerminationTime(val *string)
+	TerminationTimeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -96,12 +101,14 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGracefulShutdown(value *GoogleComputeInstanceSchedulingGracefulShutdown)
 	PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout)
 	PutMaxRunDuration(value *GoogleComputeInstanceSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
 	PutOnInstanceStopAction(value *GoogleComputeInstanceSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetAvailabilityDomain()
+	ResetGracefulShutdown()
 	ResetHostErrorTimeoutSeconds()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
@@ -113,6 +120,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
+	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -203,6 +211,26 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GracefulShutdown() GoogleComputeInstanceSchedulingGracefulShutdownOutputReference {
+	var returns GoogleComputeInstanceSchedulingGracefulShutdownOutputReference
+	_jsii_.Get(
+		j,
+		"gracefulShutdown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GracefulShutdownInput() *GoogleComputeInstanceSchedulingGracefulShutdown {
+	var returns *GoogleComputeInstanceSchedulingGracefulShutdown
+	_jsii_.Get(
+		j,
+		"gracefulShutdownInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +466,26 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ProvisioningM
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerminationTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -614,6 +662,17 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetProvisionin
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetTerminationTime(val *string) {
+	if err := j.validateSetTerminationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationTime",
 		val,
 	)
 }
@@ -826,6 +885,17 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Interpolation
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) PutGracefulShutdown(value *GoogleComputeInstanceSchedulingGracefulShutdown) {
+	if err := g.validatePutGracefulShutdownParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGracefulShutdown",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout) {
 	if err := g.validatePutLocalSsdRecoveryTimeoutParameters(value); err != nil {
 		panic(err)
@@ -882,6 +952,14 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetAvailabi
 	_jsii_.InvokeVoid(
 		g,
 		"resetAvailabilityDomain",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetGracefulShutdown() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGracefulShutdown",
 		nil, // no parameters
 	)
 }
@@ -970,6 +1048,14 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetProvisio
 	_jsii_.InvokeVoid(
 		g,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetTerminationTime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTerminationTime",
 		nil, // no parameters
 	)
 }

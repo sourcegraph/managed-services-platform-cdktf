@@ -9,12 +9,16 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledeveloperconnectconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_developer_connect_connection google_developer_connect_connection}.
 type GoogleDeveloperConnectConnection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	BitbucketCloudConfig() GoogleDeveloperConnectConnectionBitbucketCloudConfigOutputReference
+	BitbucketCloudConfigInput() *GoogleDeveloperConnectConnectionBitbucketCloudConfig
+	BitbucketDataCenterConfig() GoogleDeveloperConnectConnectionBitbucketDataCenterConfigOutputReference
+	BitbucketDataCenterConfigInput() *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,6 +35,8 @@ type GoogleDeveloperConnectConnection interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CryptoKeyConfig() GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference
+	CryptoKeyConfigInput() *GoogleDeveloperConnectConnectionCryptoKeyConfig
 	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -54,6 +60,12 @@ type GoogleDeveloperConnectConnection interface {
 	FriendlyUniqueId() *string
 	GithubConfig() GoogleDeveloperConnectConnectionGithubConfigOutputReference
 	GithubConfigInput() *GoogleDeveloperConnectConnectionGithubConfig
+	GithubEnterpriseConfig() GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference
+	GithubEnterpriseConfigInput() *GoogleDeveloperConnectConnectionGithubEnterpriseConfig
+	GitlabConfig() GoogleDeveloperConnectConnectionGitlabConfigOutputReference
+	GitlabConfigInput() *GoogleDeveloperConnectConnectionGitlabConfig
+	GitlabEnterpriseConfig() GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference
+	GitlabEnterpriseConfigInput() *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -139,12 +151,24 @@ type GoogleDeveloperConnectConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBitbucketCloudConfig(value *GoogleDeveloperConnectConnectionBitbucketCloudConfig)
+	PutBitbucketDataCenterConfig(value *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig)
+	PutCryptoKeyConfig(value *GoogleDeveloperConnectConnectionCryptoKeyConfig)
 	PutGithubConfig(value *GoogleDeveloperConnectConnectionGithubConfig)
+	PutGithubEnterpriseConfig(value *GoogleDeveloperConnectConnectionGithubEnterpriseConfig)
+	PutGitlabConfig(value *GoogleDeveloperConnectConnectionGitlabConfig)
+	PutGitlabEnterpriseConfig(value *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig)
 	PutTimeouts(value *GoogleDeveloperConnectConnectionTimeouts)
 	ResetAnnotations()
+	ResetBitbucketCloudConfig()
+	ResetBitbucketDataCenterConfig()
+	ResetCryptoKeyConfig()
 	ResetDisabled()
 	ResetEtag()
 	ResetGithubConfig()
+	ResetGithubEnterpriseConfig()
+	ResetGitlabConfig()
+	ResetGitlabEnterpriseConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -185,6 +209,46 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) AnnotationsInput() *map[str
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) BitbucketCloudConfig() GoogleDeveloperConnectConnectionBitbucketCloudConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionBitbucketCloudConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) BitbucketCloudConfigInput() *GoogleDeveloperConnectConnectionBitbucketCloudConfig {
+	var returns *GoogleDeveloperConnectConnectionBitbucketCloudConfig
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) BitbucketDataCenterConfig() GoogleDeveloperConnectConnectionBitbucketDataCenterConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionBitbucketDataCenterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) BitbucketDataCenterConfigInput() *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig {
+	var returns *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfigInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +319,26 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) CryptoKeyConfig() GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) CryptoKeyConfigInput() *GoogleDeveloperConnectConnectionCryptoKeyConfig {
+	var returns *GoogleDeveloperConnectConnectionCryptoKeyConfig
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfigInput",
 		&returns,
 	)
 	return returns
@@ -385,6 +469,66 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) GithubConfigInput() *Google
 	_jsii_.Get(
 		j,
 		"githubConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GithubEnterpriseConfig() GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GithubEnterpriseConfigInput() *GoogleDeveloperConnectConnectionGithubEnterpriseConfig {
+	var returns *GoogleDeveloperConnectConnectionGithubEnterpriseConfig
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GitlabConfig() GoogleDeveloperConnectConnectionGitlabConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionGitlabConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gitlabConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GitlabConfigInput() *GoogleDeveloperConnectConnectionGitlabConfig {
+	var returns *GoogleDeveloperConnectConnectionGitlabConfig
+	_jsii_.Get(
+		j,
+		"gitlabConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GitlabEnterpriseConfig() GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference {
+	var returns GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gitlabEnterpriseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) GitlabEnterpriseConfigInput() *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig {
+	var returns *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig
+	_jsii_.Get(
+		j,
+		"gitlabEnterpriseConfigInput",
 		&returns,
 	)
 	return returns
@@ -631,7 +775,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
 func NewGoogleDeveloperConnectConnection(scope constructs.Construct, id *string, config *GoogleDeveloperConnectConnectionConfig) GoogleDeveloperConnectConnection {
 	_init_.Initialize()
 
@@ -649,7 +793,7 @@ func NewGoogleDeveloperConnectConnection(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
 func NewGoogleDeveloperConnectConnection_Override(g GoogleDeveloperConnectConnection, scope constructs.Construct, id *string, config *GoogleDeveloperConnectConnectionConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1313,39 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) OverrideLogicalId(newLogica
 	)
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutBitbucketCloudConfig(value *GoogleDeveloperConnectConnectionBitbucketCloudConfig) {
+	if err := g.validatePutBitbucketCloudConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBitbucketCloudConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutBitbucketDataCenterConfig(value *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig) {
+	if err := g.validatePutBitbucketDataCenterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBitbucketDataCenterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutCryptoKeyConfig(value *GoogleDeveloperConnectConnectionCryptoKeyConfig) {
+	if err := g.validatePutCryptoKeyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCryptoKeyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutGithubConfig(value *GoogleDeveloperConnectConnectionGithubConfig) {
 	if err := g.validatePutGithubConfigParameters(value); err != nil {
 		panic(err)
@@ -1176,6 +1353,39 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutGithubConfig(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putGithubConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutGithubEnterpriseConfig(value *GoogleDeveloperConnectConnectionGithubEnterpriseConfig) {
+	if err := g.validatePutGithubEnterpriseConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGithubEnterpriseConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutGitlabConfig(value *GoogleDeveloperConnectConnectionGitlabConfig) {
+	if err := g.validatePutGitlabConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGitlabConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) PutGitlabEnterpriseConfig(value *GoogleDeveloperConnectConnectionGitlabEnterpriseConfig) {
+	if err := g.validatePutGitlabEnterpriseConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGitlabEnterpriseConfig",
 		[]interface{}{value},
 	)
 }
@@ -1195,6 +1405,30 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetBitbucketCloudConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBitbucketCloudConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetBitbucketDataCenterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBitbucketDataCenterConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetCryptoKeyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCryptoKeyConfig",
 		nil, // no parameters
 	)
 }
@@ -1219,6 +1453,30 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetGithubConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGithubConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetGithubEnterpriseConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetGitlabConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitlabConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) ResetGitlabEnterpriseConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitlabEnterpriseConfig",
 		nil, // no parameters
 	)
 }

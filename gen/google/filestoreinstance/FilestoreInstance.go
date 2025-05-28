@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/filestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/filestore_instance google_filestore_instance}.
 type FilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type FilestoreInstance interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EffectiveReplication() FilestoreInstanceEffectiveReplicationList
 	Etag() *string
 	FileShares() FilestoreInstanceFileSharesOutputReference
 	FileSharesInput() *FilestoreInstanceFileShares
@@ -53,6 +54,8 @@ type FilestoreInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialReplication() FilestoreInstanceInitialReplicationOutputReference
+	InitialReplicationInput() *FilestoreInstanceInitialReplication
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
@@ -91,6 +94,9 @@ type FilestoreInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -150,6 +156,7 @@ type FilestoreInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFileShares(value *FilestoreInstanceFileShares)
+	PutInitialReplication(value *FilestoreInstanceInitialReplication)
 	PutNetworks(value interface{})
 	PutPerformanceConfig(value *FilestoreInstancePerformanceConfig)
 	PutTimeouts(value *FilestoreInstanceTimeouts)
@@ -157,6 +164,7 @@ type FilestoreInstance interface {
 	ResetDeletionProtectionReason()
 	ResetDescription()
 	ResetId()
+	ResetInitialReplication()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetLocation()
@@ -166,6 +174,7 @@ type FilestoreInstance interface {
 	ResetPerformanceConfig()
 	ResetProject()
 	ResetProtocol()
+	ResetTags()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -316,6 +325,16 @@ func (j *jsiiProxy_FilestoreInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreInstance) EffectiveReplication() FilestoreInstanceEffectiveReplicationList {
+	var returns FilestoreInstanceEffectiveReplicationList
+	_jsii_.Get(
+		j,
+		"effectiveReplication",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreInstance) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,6 +410,26 @@ func (j *jsiiProxy_FilestoreInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) InitialReplication() FilestoreInstanceInitialReplicationOutputReference {
+	var returns FilestoreInstanceInitialReplicationOutputReference
+	_jsii_.Get(
+		j,
+		"initialReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) InitialReplicationInput() *FilestoreInstanceInitialReplication {
+	var returns *FilestoreInstanceInitialReplication
+	_jsii_.Get(
+		j,
+		"initialReplicationInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +645,26 @@ func (j *jsiiProxy_FilestoreInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreInstance) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -707,7 +766,7 @@ func (j *jsiiProxy_FilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance(scope constructs.Construct, id *string, config *FilestoreInstanceConfig) FilestoreInstance {
 	_init_.Initialize()
 
@@ -725,7 +784,7 @@ func NewFilestoreInstance(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance_Override(f FilestoreInstance, scope constructs.Construct, id *string, config *FilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -910,6 +969,17 @@ func (j *jsiiProxy_FilestoreInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1300,6 +1370,17 @@ func (f *jsiiProxy_FilestoreInstance) PutFileShares(value *FilestoreInstanceFile
 	)
 }
 
+func (f *jsiiProxy_FilestoreInstance) PutInitialReplication(value *FilestoreInstanceInitialReplication) {
+	if err := f.validatePutInitialReplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putInitialReplication",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FilestoreInstance) PutNetworks(value interface{}) {
 	if err := f.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -1365,6 +1446,14 @@ func (f *jsiiProxy_FilestoreInstance) ResetId() {
 	)
 }
 
+func (f *jsiiProxy_FilestoreInstance) ResetInitialReplication() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetInitialReplication",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FilestoreInstance) ResetKmsKeyName() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1417,6 +1506,14 @@ func (f *jsiiProxy_FilestoreInstance) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTags",
 		nil, // no parameters
 	)
 }

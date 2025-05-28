@@ -25,6 +25,9 @@ type GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DomainName() *string
+	SetDomainName(val *string)
+	DomainNameInput() *string
 	ForwardingPath() *string
 	SetForwardingPath(val *string)
 	ForwardingPathInput() *string
@@ -67,7 +70,9 @@ type GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDomainName()
 	ResetForwardingPath()
+	ResetIpv4Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +113,26 @@ func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameInput",
 		&returns,
 	)
 	return returns
@@ -239,6 +264,17 @@ func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetDomainName(val *string) {
+	if err := j.validateSetDomainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainName",
 		val,
 	)
 }
@@ -484,10 +520,26 @@ func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetDomainName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDomainName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetForwardingPath() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetForwardingPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetIpv4Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv4Address",
 		nil, // no parameters
 	)
 }

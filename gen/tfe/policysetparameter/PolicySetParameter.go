@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/policysetparameter/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter tfe_policy_set_parameter}.
 type PolicySetParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,8 +37,6 @@ type PolicySetParameter interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -73,6 +71,9 @@ type PolicySetParameter interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	ValueWo() *string
+	SetValueWo(val *string)
+	ValueWoInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,12 +117,12 @@ type PolicySetParameter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSensitive()
 	ResetValue()
+	ResetValueWo()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -225,16 +226,6 @@ func (j *jsiiProxy_PolicySetParameter) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicySetParameter) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -400,8 +391,28 @@ func (j *jsiiProxy_PolicySetParameter) ValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PolicySetParameter) ValueWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWo",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource.
+func (j *jsiiProxy_PolicySetParameter) ValueWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource.
 func NewPolicySetParameter(scope constructs.Construct, id *string, config *PolicySetParameterConfig) PolicySetParameter {
 	_init_.Initialize()
 
@@ -419,7 +430,7 @@ func NewPolicySetParameter(scope constructs.Construct, id *string, config *Polic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter tfe_policy_set_parameter} Resource.
 func NewPolicySetParameter_Override(p PolicySetParameter, scope constructs.Construct, id *string, config *PolicySetParameterConfig) {
 	_init_.Initialize()
 
@@ -464,17 +475,6 @@ func (j *jsiiProxy_PolicySetParameter)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicySetParameter)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -549,6 +549,17 @@ func (j *jsiiProxy_PolicySetParameter)SetValue(val *string) {
 	_jsii_.Set(
 		j,
 		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicySetParameter)SetValueWo(val *string) {
+	if err := j.validateSetValueWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWo",
 		val,
 	)
 }
@@ -906,14 +917,6 @@ func (p *jsiiProxy_PolicySetParameter) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_PolicySetParameter) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PolicySetParameter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -934,6 +937,14 @@ func (p *jsiiProxy_PolicySetParameter) ResetValue() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySetParameter) ResetValueWo() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetValueWo",
 		nil, // no parameters
 	)
 }

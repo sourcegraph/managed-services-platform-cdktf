@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_route google_compute_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_route google_compute_route}.
 type GoogleComputeRoute interface {
 	cdktf.TerraformResource
+	AsPaths() GoogleComputeRouteAsPathsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +25,7 @@ type GoogleComputeRoute interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +60,7 @@ type GoogleComputeRoute interface {
 	NextHopGateway() *string
 	SetNextHopGateway(val *string)
 	NextHopGatewayInput() *string
+	NextHopHub() *string
 	NextHopIlb() *string
 	SetNextHopIlb(val *string)
 	NextHopIlbInput() *string
@@ -74,6 +77,7 @@ type GoogleComputeRoute interface {
 	NextHopMed() *string
 	NextHopNetwork() *string
 	NextHopOrigin() *string
+	NextHopPeering() *string
 	NextHopVpnTunnel() *string
 	SetNextHopVpnTunnel(val *string)
 	NextHopVpnTunnelInput() *string
@@ -95,6 +99,8 @@ type GoogleComputeRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RouteStatus() *string
+	RouteType() *string
 	SelfLink() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
@@ -107,6 +113,7 @@ type GoogleComputeRoute interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRouteTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Warnings() GoogleComputeRouteWarningsList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -184,6 +191,16 @@ type jsiiProxy_GoogleComputeRoute struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) AsPaths() GoogleComputeRouteAsPathsList {
+	var returns GoogleComputeRouteAsPathsList
+	_jsii_.Get(
+		j,
+		"asPaths",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -219,6 +236,16 @@ func (j *jsiiProxy_GoogleComputeRoute) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRoute) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -394,6 +421,16 @@ func (j *jsiiProxy_GoogleComputeRoute) NextHopGatewayInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) NextHopHub() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopHub",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) NextHopIlb() *string {
 	var returns *string
 	_jsii_.Get(
@@ -514,6 +551,16 @@ func (j *jsiiProxy_GoogleComputeRoute) NextHopOrigin() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) NextHopPeering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopPeering",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) NextHopVpnTunnel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -614,6 +661,26 @@ func (j *jsiiProxy_GoogleComputeRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) RouteStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRoute) RouteType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -694,8 +761,18 @@ func (j *jsiiProxy_GoogleComputeRoute) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) Warnings() GoogleComputeRouteWarningsList {
+	var returns GoogleComputeRouteWarningsList
+	_jsii_.Get(
+		j,
+		"warnings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_route google_compute_route} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) GoogleComputeRoute {
 	_init_.Initialize()
 
@@ -713,7 +790,7 @@ func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute_Override(g GoogleComputeRoute, scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) {
 	_init_.Initialize()
 

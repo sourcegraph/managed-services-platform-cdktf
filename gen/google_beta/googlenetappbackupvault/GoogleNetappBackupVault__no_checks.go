@@ -92,6 +92,14 @@ func validateGoogleNetappBackupVault_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappBackupVault) validateSetBackupRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappBackupVault) validateSetBackupVaultTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappBackupVault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

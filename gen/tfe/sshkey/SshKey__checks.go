@@ -334,7 +334,7 @@ func (j *jsiiProxy_SshKey) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SshKey) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_SshKey) validateSetKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func (j *jsiiProxy_SshKey) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SshKey) validateSetKeyParameters(val *string) error {
+func (j *jsiiProxy_SshKey) validateSetKeyWoParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -129,6 +129,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSettings", GoMethod: "ResetSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeams", GoMethod: "ResetTeams"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVariableSets", GoMethod: "ResetVariableSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
 			_jsii_.MemberProperty{JsiiProperty: "settingsInput", GoGetter: "SettingsInput"},
@@ -137,6 +138,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "variableSets", GoGetter: "VariableSets"},
+			_jsii_.MemberProperty{JsiiProperty: "variableSetsInput", GoGetter: "VariableSetsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamProjectAccessProjectAccessOutputReference{}

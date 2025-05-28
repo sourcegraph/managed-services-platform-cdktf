@@ -44,6 +44,14 @@ func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) validatePutPscAutoConnectionsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) validatePutPscInterfaceConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

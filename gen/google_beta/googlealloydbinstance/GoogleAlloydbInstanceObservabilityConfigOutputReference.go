@@ -10,6 +10,9 @@ import (
 
 type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	cdktf.ComplexObject
+	AssistiveExperiencesEnabled() interface{}
+	SetAssistiveExperiencesEnabled(val interface{})
+	AssistiveExperiencesEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +88,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAssistiveExperiencesEnabled()
 	ResetEnabled()
 	ResetMaxQueryStringLength()
 	ResetPreserveComments()
@@ -106,6 +110,26 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 // The jsii proxy struct for GoogleAlloydbInstanceObservabilityConfigOutputReference
 type jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"assistiveExperiencesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"assistiveExperiencesEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -363,6 +387,17 @@ func NewGoogleAlloydbInstanceObservabilityConfigOutputReference_Override(g Googl
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetAssistiveExperiencesEnabled(val interface{}) {
+	if err := j.validateSetAssistiveExperiencesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assistiveExperiencesEnabled",
+		val,
 	)
 }
 
@@ -693,6 +728,14 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ResetAssistiveExperiencesEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAssistiveExperiencesEnabled",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) ResetEnabled() {

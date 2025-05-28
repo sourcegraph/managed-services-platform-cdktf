@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/notificationconfiguration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/notification_configuration tfe_notification_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration tfe_notification_configuration}.
 type NotificationConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,8 +49,6 @@ type NotificationConfiguration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -79,6 +77,9 @@ type NotificationConfiguration interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
+	TokenWo() *string
+	SetTokenWo(val *string)
+	TokenWoInput() *string
 	Triggers() *[]*string
 	SetTriggers(val *[]*string)
 	TriggersInput() *[]*string
@@ -134,11 +135,11 @@ type NotificationConfiguration interface {
 	ResetEmailAddresses()
 	ResetEmailUserIds()
 	ResetEnabled()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetToken()
+	ResetTokenWo()
 	ResetTriggers()
 	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
@@ -329,16 +330,6 @@ func (j *jsiiProxy_NotificationConfiguration) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationConfiguration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NotificationConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -459,6 +450,26 @@ func (j *jsiiProxy_NotificationConfiguration) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationConfiguration) TokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationConfiguration) TokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationConfiguration) Triggers() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -520,7 +531,7 @@ func (j *jsiiProxy_NotificationConfiguration) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/notification_configuration tfe_notification_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration tfe_notification_configuration} Resource.
 func NewNotificationConfiguration(scope constructs.Construct, id *string, config *NotificationConfigurationConfig) NotificationConfiguration {
 	_init_.Initialize()
 
@@ -538,7 +549,7 @@ func NewNotificationConfiguration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/notification_configuration tfe_notification_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/notification_configuration tfe_notification_configuration} Resource.
 func NewNotificationConfiguration_Override(n NotificationConfiguration, scope constructs.Construct, id *string, config *NotificationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -631,17 +642,6 @@ func (j *jsiiProxy_NotificationConfiguration)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NotificationConfiguration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_NotificationConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -690,6 +690,17 @@ func (j *jsiiProxy_NotificationConfiguration)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationConfiguration)SetTokenWo(val *string) {
+	if err := j.validateSetTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWo",
 		val,
 	)
 }
@@ -1104,14 +1115,6 @@ func (n *jsiiProxy_NotificationConfiguration) ResetEnabled() {
 	)
 }
 
-func (n *jsiiProxy_NotificationConfiguration) ResetId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NotificationConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1124,6 +1127,14 @@ func (n *jsiiProxy_NotificationConfiguration) ResetToken() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationConfiguration) ResetTokenWo() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTokenWo",
 		nil, // no parameters
 	)
 }

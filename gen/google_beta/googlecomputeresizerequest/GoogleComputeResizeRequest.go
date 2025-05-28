@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeresizerequest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_resize_request google_compute_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_resize_request google_compute_resize_request}.
 type GoogleComputeResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -139,6 +139,7 @@ type GoogleComputeResizeRequest interface {
 	ResetProject()
 	ResetRequestedRunDuration()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -528,7 +529,7 @@ func (j *jsiiProxy_GoogleComputeResizeRequest) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_resize_request google_compute_resize_request} Resource.
 func NewGoogleComputeResizeRequest(scope constructs.Construct, id *string, config *GoogleComputeResizeRequestConfig) GoogleComputeResizeRequest {
 	_init_.Initialize()
 
@@ -546,7 +547,7 @@ func NewGoogleComputeResizeRequest(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_resize_request google_compute_resize_request} Resource.
 func NewGoogleComputeResizeRequest_Override(g GoogleComputeResizeRequest, scope constructs.Construct, id *string, config *GoogleComputeResizeRequestConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1122,14 @@ func (g *jsiiProxy_GoogleComputeResizeRequest) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResizeRequest) ResetZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZone",
 		nil, // no parameters
 	)
 }

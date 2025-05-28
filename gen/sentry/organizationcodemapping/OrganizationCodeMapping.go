@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/organizationcodemapping/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_code_mapping sentry_organization_code_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_code_mapping sentry_organization_code_mapping}.
 type OrganizationCodeMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_OrganizationCodeMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_code_mapping sentry_organization_code_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_code_mapping sentry_organization_code_mapping} Resource.
 func NewOrganizationCodeMapping(scope constructs.Construct, id *string, config *OrganizationCodeMappingConfig) OrganizationCodeMapping {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewOrganizationCodeMapping(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_code_mapping sentry_organization_code_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_code_mapping sentry_organization_code_mapping} Resource.
 func NewOrganizationCodeMapping_Override(o OrganizationCodeMapping, scope constructs.Construct, id *string, config *OrganizationCodeMappingConfig) {
 	_init_.Initialize()
 

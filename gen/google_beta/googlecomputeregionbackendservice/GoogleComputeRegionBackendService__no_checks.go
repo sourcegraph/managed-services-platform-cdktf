@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutConsistentHashP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutFailoverPolicyParameters(value *GoogleComputeRegionBackendServiceFailoverPolicy) error {
 	return nil
 }

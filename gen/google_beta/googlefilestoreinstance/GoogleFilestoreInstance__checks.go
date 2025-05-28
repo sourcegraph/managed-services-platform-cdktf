@@ -204,7 +204,29 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutDirectoryServicesParameters(value *GoogleFilestoreInstanceDirectoryServices) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutFileSharesParameters(value *GoogleFilestoreInstanceFileShares) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutInitialReplicationParameters(value *GoogleFilestoreInstanceInitialReplication) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -539,6 +561,14 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(va
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

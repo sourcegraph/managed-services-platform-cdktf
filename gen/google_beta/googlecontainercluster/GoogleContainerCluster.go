@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -66,6 +66,9 @@ type GoogleContainerCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableL4LbFirewallReconciliation() interface{}
+	SetDisableL4LbFirewallReconciliation(val interface{})
+	DisableL4LbFirewallReconciliationInput() interface{}
 	DnsConfig() GoogleContainerClusterDnsConfigOutputReference
 	DnsConfigInput() *GoogleContainerClusterDnsConfig
 	EffectiveLabels() cdktf.StringMap
@@ -124,6 +127,9 @@ type GoogleContainerCluster interface {
 	InitialNodeCount() *float64
 	SetInitialNodeCount(val *float64)
 	InitialNodeCountInput() *float64
+	InTransitEncryptionConfig() *string
+	SetInTransitEncryptionConfig(val *string)
+	InTransitEncryptionConfigInput() *string
 	IpAllocationPolicy() GoogleContainerClusterIpAllocationPolicyOutputReference
 	IpAllocationPolicyInput() *GoogleContainerClusterIpAllocationPolicy
 	LabelFingerprint() *string
@@ -186,6 +192,8 @@ type GoogleContainerCluster interface {
 	NotificationConfig() GoogleContainerClusterNotificationConfigOutputReference
 	NotificationConfigInput() *GoogleContainerClusterNotificationConfig
 	Operation() *string
+	PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference
+	PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling
 	PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference
 	PodSecurityPolicyConfigInput() *GoogleContainerClusterPodSecurityPolicyConfig
 	PrivateClusterConfig() GoogleContainerClusterPrivateClusterConfigOutputReference
@@ -321,6 +329,7 @@ type GoogleContainerCluster interface {
 	PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
+	PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling)
 	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
 	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
@@ -351,6 +360,7 @@ type GoogleContainerCluster interface {
 	ResetDefaultSnatStatus()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetDisableL4LbFirewallReconciliation()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
 	ResetEnableCiliumClusterwideNetworkPolicy()
@@ -369,6 +379,7 @@ type GoogleContainerCluster interface {
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
+	ResetInTransitEncryptionConfig()
 	ResetIpAllocationPolicy()
 	ResetLocation()
 	ResetLoggingConfig()
@@ -393,6 +404,7 @@ type GoogleContainerCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodAutoscaling()
 	ResetPodSecurityPolicyConfig()
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
@@ -795,6 +807,26 @@ func (j *jsiiProxy_GoogleContainerCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliationInput",
 		&returns,
 	)
 	return returns
@@ -1205,6 +1237,26 @@ func (j *jsiiProxy_GoogleContainerCluster) InitialNodeCountInput() *float64 {
 	_jsii_.Get(
 		j,
 		"initialNodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -1700,6 +1752,26 @@ func (j *jsiiProxy_GoogleContainerCluster) Operation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference {
+	var returns GoogleContainerClusterPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling {
+	var returns *GoogleContainerClusterPodAutoscaling
+	_jsii_.Get(
+		j,
+		"podAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference {
 	var returns GoogleContainerClusterPodSecurityPolicyConfigOutputReference
 	_jsii_.Get(
@@ -2181,7 +2253,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2199,7 +2271,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2302,6 +2374,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDisableL4LbFirewallReconciliation(val interface{}) {
+	if err := j.validateSetDisableL4LbFirewallReconciliationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableL4LbFirewallReconciliation",
 		val,
 	)
 }
@@ -2442,6 +2525,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetInitialNodeCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"initialNodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetInTransitEncryptionConfig(val *string) {
+	if err := j.validateSetInTransitEncryptionConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inTransitEncryptionConfig",
 		val,
 	)
 }
@@ -3302,6 +3396,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNotificationConfig(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling) {
+	if err := g.validatePutPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodAutoscaling",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig) {
 	if err := g.validatePutPodSecurityPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -3584,6 +3689,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetDisableL4LbFirewallReconciliation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableL4LbFirewallReconciliation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetDnsConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3724,6 +3837,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetInitialNodeCount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitialNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetInTransitEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInTransitEncryptionConfig",
 		nil, // no parameters
 	)
 }
@@ -3900,6 +4021,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodAutoscaling",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlelookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_looker_instance google_looker_instance}.
 type GoogleLookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() GoogleLookerInstanceAdminSettingsOutputReference
@@ -862,7 +862,7 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
 
@@ -880,7 +880,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) {
 	_init_.Initialize()
 

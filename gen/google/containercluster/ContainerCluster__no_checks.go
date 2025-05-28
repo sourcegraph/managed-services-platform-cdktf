@@ -272,6 +272,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	return nil
 }
@@ -317,6 +321,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetIdParameters(val *string) error 
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetInitialNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
 	return nil
 }
 

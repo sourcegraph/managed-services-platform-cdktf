@@ -19,16 +19,29 @@ type ProjectConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project#name Project#name}.
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project#description Project#description}.
-	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project#id Project#id}.
+	// Name of the project.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/project#organization Project#organization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#name Project#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Duration after which the project will be auto-destroyed.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#auto_destroy_activity_duration Project#auto_destroy_activity_duration}
+	AutoDestroyActivityDuration *string `field:"optional" json:"autoDestroyActivityDuration" yaml:"autoDestroyActivityDuration"`
+	// Description of the project.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#description Project#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
+	IgnoreAdditionalTags interface{} `field:"optional" json:"ignoreAdditionalTags" yaml:"ignoreAdditionalTags"`
+	// Name of the organization to which the project belongs.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#organization Project#organization}
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
+	// A map of key-value tags to add to the project.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#tags Project#tags}
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

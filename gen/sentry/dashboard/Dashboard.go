@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/dashboard/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard sentry_dashboard}.
 type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard sentry_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard sentry_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard sentry_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefilestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_filestore_instance google_filestore_instance}.
 type GoogleFilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,7 +38,10 @@ type GoogleFilestoreInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DirectoryServices() GoogleFilestoreInstanceDirectoryServicesOutputReference
+	DirectoryServicesInput() *GoogleFilestoreInstanceDirectoryServices
 	EffectiveLabels() cdktf.StringMap
+	EffectiveReplication() GoogleFilestoreInstanceEffectiveReplicationList
 	Etag() *string
 	FileShares() GoogleFilestoreInstanceFileSharesOutputReference
 	FileSharesInput() *GoogleFilestoreInstanceFileShares
@@ -53,6 +56,8 @@ type GoogleFilestoreInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialReplication() GoogleFilestoreInstanceInitialReplicationOutputReference
+	InitialReplicationInput() *GoogleFilestoreInstanceInitialReplication
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
@@ -91,6 +96,9 @@ type GoogleFilestoreInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -149,14 +157,18 @@ type GoogleFilestoreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDirectoryServices(value *GoogleFilestoreInstanceDirectoryServices)
 	PutFileShares(value *GoogleFilestoreInstanceFileShares)
+	PutInitialReplication(value *GoogleFilestoreInstanceInitialReplication)
 	PutNetworks(value interface{})
 	PutPerformanceConfig(value *GoogleFilestoreInstancePerformanceConfig)
 	PutTimeouts(value *GoogleFilestoreInstanceTimeouts)
 	ResetDeletionProtectionEnabled()
 	ResetDeletionProtectionReason()
 	ResetDescription()
+	ResetDirectoryServices()
 	ResetId()
+	ResetInitialReplication()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetLocation()
@@ -166,6 +178,7 @@ type GoogleFilestoreInstance interface {
 	ResetPerformanceConfig()
 	ResetProject()
 	ResetProtocol()
+	ResetTags()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -306,11 +319,41 @@ func (j *jsiiProxy_GoogleFilestoreInstance) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) DirectoryServices() GoogleFilestoreInstanceDirectoryServicesOutputReference {
+	var returns GoogleFilestoreInstanceDirectoryServicesOutputReference
+	_jsii_.Get(
+		j,
+		"directoryServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) DirectoryServicesInput() *GoogleFilestoreInstanceDirectoryServices {
+	var returns *GoogleFilestoreInstanceDirectoryServices
+	_jsii_.Get(
+		j,
+		"directoryServicesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) EffectiveLabels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) EffectiveReplication() GoogleFilestoreInstanceEffectiveReplicationList {
+	var returns GoogleFilestoreInstanceEffectiveReplicationList
+	_jsii_.Get(
+		j,
+		"effectiveReplication",
 		&returns,
 	)
 	return returns
@@ -391,6 +434,26 @@ func (j *jsiiProxy_GoogleFilestoreInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) InitialReplication() GoogleFilestoreInstanceInitialReplicationOutputReference {
+	var returns GoogleFilestoreInstanceInitialReplicationOutputReference
+	_jsii_.Get(
+		j,
+		"initialReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) InitialReplicationInput() *GoogleFilestoreInstanceInitialReplication {
+	var returns *GoogleFilestoreInstanceInitialReplication
+	_jsii_.Get(
+		j,
+		"initialReplicationInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +669,26 @@ func (j *jsiiProxy_GoogleFilestoreInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -707,7 +790,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) GoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -725,7 +808,7 @@ func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance_Override(g GoogleFilestoreInstance, scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -910,6 +993,17 @@ func (j *jsiiProxy_GoogleFilestoreInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1289,6 +1383,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) PutDirectoryServices(value *GoogleFilestoreInstanceDirectoryServices) {
+	if err := g.validatePutDirectoryServicesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDirectoryServices",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) PutFileShares(value *GoogleFilestoreInstanceFileShares) {
 	if err := g.validatePutFileSharesParameters(value); err != nil {
 		panic(err)
@@ -1296,6 +1401,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) PutFileShares(value *GoogleFilestore
 	_jsii_.InvokeVoid(
 		g,
 		"putFileShares",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) PutInitialReplication(value *GoogleFilestoreInstanceInitialReplication) {
+	if err := g.validatePutInitialReplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInitialReplication",
 		[]interface{}{value},
 	)
 }
@@ -1357,10 +1473,26 @@ func (g *jsiiProxy_GoogleFilestoreInstance) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) ResetDirectoryServices() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDirectoryServices",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) ResetInitialReplication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInitialReplication",
 		nil, // no parameters
 	)
 }
@@ -1417,6 +1549,14 @@ func (g *jsiiProxy_GoogleFilestoreInstance) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

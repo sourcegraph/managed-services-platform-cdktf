@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworkservicesgateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_services_gateway google_network_services_gateway}.
 type GoogleNetworkServicesGateway interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -42,6 +42,9 @@ type GoogleNetworkServicesGateway interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EnvoyHeaders() *string
+	SetEnvoyHeaders(val *string)
+	EnvoyHeadersInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,6 +59,9 @@ type GoogleNetworkServicesGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -164,8 +170,10 @@ type GoogleNetworkServicesGateway interface {
 	ResetCertificateUrls()
 	ResetDeleteSwgAutogenRouterOnDestroy()
 	ResetDescription()
+	ResetEnvoyHeaders()
 	ResetGatewaySecurityPolicy()
 	ResetId()
+	ResetIpVersion()
 	ResetLabels()
 	ResetLocation()
 	ResetNetwork()
@@ -346,6 +354,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) EffectiveLabels() cdktf.StringM
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway) EnvoyHeaders() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"envoyHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) EnvoyHeadersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"envoyHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -411,6 +439,26 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -767,7 +815,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) GoogleNetworkServicesGateway {
 	_init_.Initialize()
 
@@ -785,7 +833,7 @@ func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway_Override(g GoogleNetworkServicesGateway, scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) {
 	_init_.Initialize()
 
@@ -870,6 +918,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetEnvoyHeaders(val *string) {
+	if err := j.validateSetEnvoyHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"envoyHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGateway)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -896,6 +955,17 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesGateway)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -1447,6 +1517,14 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetEnvoyHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnvoyHeaders",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetGatewaySecurityPolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1459,6 +1537,14 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }

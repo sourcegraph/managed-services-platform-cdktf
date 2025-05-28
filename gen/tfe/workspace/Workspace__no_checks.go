@@ -156,6 +156,10 @@ func (j *jsiiProxy_Workspace) validateSetIgnoreAdditionalTagNamesParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Workspace) validateSetIgnoreAdditionalTagsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Workspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -209,6 +213,10 @@ func (j *jsiiProxy_Workspace) validateSetStructuredRunOutputEnabledParameters(va
 }
 
 func (j *jsiiProxy_Workspace) validateSetTagNamesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Workspace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

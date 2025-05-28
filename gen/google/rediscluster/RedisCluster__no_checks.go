@@ -72,11 +72,23 @@ func (r *jsiiProxy_RedisCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutAutomatedBackupConfigParameters(value *RedisClusterAutomatedBackupConfig) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutCrossClusterReplicationConfigParameters(value *RedisClusterCrossClusterReplicationConfig) error {
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutGcsSourceParameters(value *RedisClusterGcsSource) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *RedisClusterMaintenancePolicy) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutManagedBackupSourceParameters(value *RedisClusterManagedBackupSource) error {
 	return nil
 }
 
@@ -129,6 +141,10 @@ func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(
 }
 
 func (j *jsiiProxy_RedisCluster) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisCluster) validateSetKmsKeyParameters(val *string) error {
 	return nil
 }
 

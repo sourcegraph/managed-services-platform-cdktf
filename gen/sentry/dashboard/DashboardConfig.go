@@ -21,15 +21,15 @@ type DashboardConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The slug of the organization the dashboard belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard#organization Dashboard#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard#organization Dashboard#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// Dashboard title.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard#title Dashboard#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard#title Dashboard#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// widget block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/dashboard#widget Dashboard#widget}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard#widget Dashboard#widget}
 	Widget interface{} `field:"optional" json:"widget" yaml:"widget"`
 }
 

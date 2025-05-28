@@ -132,6 +132,10 @@ func (j *jsiiProxy_SamlSettings) validateSetPrivateKeyParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_SamlSettings) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlSettings) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

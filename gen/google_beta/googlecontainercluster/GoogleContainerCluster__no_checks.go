@@ -188,6 +188,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutPodAutoscalingParameters(value *GoogleContainerClusterPodAutoscaling) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutPodSecurityPolicyConfigParameters(value *GoogleContainerClusterPodSecurityPolicyConfig) error {
 	return nil
 }
@@ -292,6 +296,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	return nil
 }
@@ -337,6 +345,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetIdParameters(val *string) 
 }
 
 func (j *jsiiProxy_GoogleContainerCluster) validateSetInitialNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
 	return nil
 }
 

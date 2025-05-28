@@ -31,6 +31,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	DatabaseVersion() *string
 	DeletionProtection() cdktf.IResolvable
 	DnsName() *string
+	DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
 	EncryptionKeyName() *string
 	FirstIpAddress() *string
 	// Experimental.
@@ -49,6 +50,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	Region() *string
 	ReplicaConfiguration() DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationList
 	ReplicaNames() *[]*string
+	ReplicationCluster() DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList
 	RestoreBackupContext() DataGoogleSqlDatabaseInstancesInstancesRestoreBackupContextList
 	RootPassword() *string
 	SelfLink() *string
@@ -187,6 +189,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNa
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsNames() DataGoogleSqlDatabaseInstancesInstancesDnsNamesList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesDnsNamesList
+	_jsii_.Get(
+		j,
+		"dnsNames",
 		&returns,
 	)
 	return returns
@@ -347,6 +359,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Repli
 	_jsii_.Get(
 		j,
 		"replicaNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ReplicationCluster() DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesReplicationClusterList
+	_jsii_.Get(
+		j,
+		"replicationCluster",
 		&returns,
 	)
 	return returns

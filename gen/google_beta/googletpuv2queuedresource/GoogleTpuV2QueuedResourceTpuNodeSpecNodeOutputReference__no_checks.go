@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) validatePutNetworkConfigParameters(value *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

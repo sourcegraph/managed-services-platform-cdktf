@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglefilestoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/filestore_instance google_filestore_instance}.
 type DataGoogleFilestoreInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,6 +29,7 @@ type DataGoogleFilestoreInstance interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	EffectiveLabels() cdktf.StringMap
+	EffectiveReplication() DataGoogleFilestoreInstanceEffectiveReplicationList
 	Etag() *string
 	FileShares() DataGoogleFilestoreInstanceFileSharesList
 	// Experimental.
@@ -42,6 +43,7 @@ type DataGoogleFilestoreInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitialReplication() DataGoogleFilestoreInstanceInitialReplicationList
 	KmsKeyName() *string
 	Labels() cdktf.StringMap
 	// Experimental.
@@ -68,6 +70,7 @@ type DataGoogleFilestoreInstance interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -217,6 +220,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) EffectiveLabels() cdktf.StringMa
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) EffectiveReplication() DataGoogleFilestoreInstanceEffectiveReplicationList {
+	var returns DataGoogleFilestoreInstanceEffectiveReplicationList
+	_jsii_.Get(
+		j,
+		"effectiveReplication",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -282,6 +295,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstance) InitialReplication() DataGoogleFilestoreInstanceInitialReplicationList {
+	var returns DataGoogleFilestoreInstanceInitialReplicationList
+	_jsii_.Get(
+		j,
+		"initialReplication",
 		&returns,
 	)
 	return returns
@@ -437,6 +460,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -498,7 +531,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) DataGoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -516,7 +549,7 @@ func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance_Override(d DataGoogleFilestoreInstance, scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 

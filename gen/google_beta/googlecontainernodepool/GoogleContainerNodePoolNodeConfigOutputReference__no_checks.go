@@ -120,6 +120,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *GoogleContainerNodePoolNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *GoogleContainerNodePoolNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }
@@ -152,6 +156,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }
@@ -177,6 +185,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
 	return nil
 }
 

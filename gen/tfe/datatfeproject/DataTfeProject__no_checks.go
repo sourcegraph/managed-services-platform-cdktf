@@ -72,10 +72,6 @@ func (j *jsiiProxy_DataTfeProject) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeProject) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataTfeProject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -85,14 +81,6 @@ func (j *jsiiProxy_DataTfeProject) validateSetNameParameters(val *string) error 
 }
 
 func (j *jsiiProxy_DataTfeProject) validateSetOrganizationParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataTfeProject) validateSetWorkspaceIdsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataTfeProject) validateSetWorkspaceNamesParameters(val *[]*string) error {
 	return nil
 }
 
