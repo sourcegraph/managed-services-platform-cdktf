@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/networksecurityauthzpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
 type NetworkSecurityAuthzPolicy interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -587,7 +587,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
 func NewNetworkSecurityAuthzPolicy(scope constructs.Construct, id *string, config *NetworkSecurityAuthzPolicyConfig) NetworkSecurityAuthzPolicy {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewNetworkSecurityAuthzPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource.
 func NewNetworkSecurityAuthzPolicy_Override(n NetworkSecurityAuthzPolicy, scope constructs.Construct, id *string, config *NetworkSecurityAuthzPolicyConfig) {
 	_init_.Initialize()
 

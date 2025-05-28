@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -57,6 +57,8 @@ type GoogleComputeBackendService interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DynamicForwarding() GoogleComputeBackendServiceDynamicForwardingOutputReference
+	DynamicForwardingInput() *GoogleComputeBackendServiceDynamicForwarding
 	EdgeSecurityPolicy() *string
 	SetEdgeSecurityPolicy(val *string)
 	EdgeSecurityPolicyInput() *string
@@ -109,6 +111,8 @@ type GoogleComputeBackendService interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkPassThroughLbTrafficPolicy() GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() GoogleComputeBackendServiceOutlierDetectionOutputReference
@@ -207,10 +211,12 @@ type GoogleComputeBackendService interface {
 	PutCircuitBreakers(value *GoogleComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *GoogleComputeBackendServiceConsistentHash)
 	PutCustomMetrics(value interface{})
+	PutDynamicForwarding(value *GoogleComputeBackendServiceDynamicForwarding)
 	PutIap(value *GoogleComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *GoogleComputeBackendServiceLogConfig)
 	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
+	PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
@@ -227,6 +233,7 @@ type GoogleComputeBackendService interface {
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
+	ResetDynamicForwarding()
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
 	ResetExternalManagedMigrationState()
@@ -240,6 +247,7 @@ type GoogleComputeBackendService interface {
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
 	ResetMaxStreamDuration()
+	ResetNetworkPassThroughLbTrafficPolicy()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -548,6 +556,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) DynamicForwarding() GoogleComputeBackendServiceDynamicForwardingOutputReference {
+	var returns GoogleComputeBackendServiceDynamicForwardingOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) DynamicForwardingInput() *GoogleComputeBackendServiceDynamicForwarding {
+	var returns *GoogleComputeBackendServiceDynamicForwarding
+	_jsii_.Get(
+		j,
+		"dynamicForwardingInput",
 		&returns,
 	)
 	return returns
@@ -893,6 +921,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) NetworkPassThroughLbTrafficPolicy() GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference {
+	var returns GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy {
+	var returns *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1214,7 +1262,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1232,7 +1280,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1972,6 +2020,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutCustomMetrics(value interface
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutDynamicForwarding(value *GoogleComputeBackendServiceDynamicForwarding) {
+	if err := g.validatePutDynamicForwardingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDynamicForwarding",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutIap(value *GoogleComputeBackendServiceIap) {
 	if err := g.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -2012,6 +2071,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutMaxStreamDuration(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy) {
+	if err := g.validatePutNetworkPassThroughLbTrafficPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPassThroughLbTrafficPolicy",
 		[]interface{}{value},
 	)
 }
@@ -2159,6 +2229,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) ResetDynamicForwarding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDynamicForwarding",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetEdgeSecurityPolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2259,6 +2337,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetMaxStreamDuration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxStreamDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetNetworkPassThroughLbTrafficPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPassThroughLbTrafficPolicy",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleosconfigv2policyorchestratorforfolder/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder}.
 type GoogleOsConfigV2PolicyOrchestratorForFolder interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForFolder) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder} Resource.
 func NewGoogleOsConfigV2PolicyOrchestratorForFolder(scope constructs.Construct, id *string, config *GoogleOsConfigV2PolicyOrchestratorForFolderConfig) GoogleOsConfigV2PolicyOrchestratorForFolder {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewGoogleOsConfigV2PolicyOrchestratorForFolder(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder} Resource.
 func NewGoogleOsConfigV2PolicyOrchestratorForFolder_Override(g GoogleOsConfigV2PolicyOrchestratorForFolder, scope constructs.Construct, id *string, config *GoogleOsConfigV2PolicyOrchestratorForFolderConfig) {
 	_init_.Initialize()
 

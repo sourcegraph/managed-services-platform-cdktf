@@ -390,10 +390,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipRanges", GoGetter: "IpRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "ipRangesInput", GoGetter: "IpRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessMode", GoMethod: "ResetAccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnonGid", GoMethod: "ResetAnonGid"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnonUid", GoMethod: "ResetAnonUid"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpRanges", GoMethod: "ResetIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSquashMode", GoMethod: "ResetSquashMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "squashMode", GoGetter: "SquashMode"},
@@ -608,9 +611,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modesInput", GoGetter: "ModesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pscConfig", GoGetter: "PscConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "pscConfigInput", GoGetter: "PscConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPscConfig", GoMethod: "PutPscConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedIpRange", GoGetter: "ReservedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedIpRangeInput", GoGetter: "ReservedIpRangeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectMode", GoMethod: "ResetConnectMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscConfig", GoMethod: "ResetPscConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReservedIpRange", GoMethod: "ResetReservedIpRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -619,6 +626,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksPscConfig",
+		reflect.TypeOf((*GoogleFilestoreInstanceNetworksPscConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksPscConfigOutputReference",
+		reflect.TypeOf((*GoogleFilestoreInstanceNetworksPscConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointProject", GoGetter: "EndpointProject"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointProjectInput", GoGetter: "EndpointProjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointProject", GoMethod: "ResetEndpointProject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleFilestoreInstanceNetworksPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

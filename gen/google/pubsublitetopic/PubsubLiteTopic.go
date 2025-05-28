@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/pubsublitetopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
 type PubsubLiteTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_PubsubLiteTopic) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
 func NewPubsubLiteTopic(scope constructs.Construct, id *string, config *PubsubLiteTopicConfig) PubsubLiteTopic {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewPubsubLiteTopic(scope constructs.Construct, id *string, config *PubsubLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
 func NewPubsubLiteTopic_Override(p PubsubLiteTopic, scope constructs.Construct, id *string, config *PubsubLiteTopicConfig) {
 	_init_.Initialize()
 

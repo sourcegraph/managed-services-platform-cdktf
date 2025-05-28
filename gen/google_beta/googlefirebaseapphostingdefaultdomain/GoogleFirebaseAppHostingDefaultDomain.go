@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseapphostingdefaultdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain}.
 type GoogleFirebaseAppHostingDefaultDomain interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -503,7 +503,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingDefaultDomain) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain} Resource.
 func NewGoogleFirebaseAppHostingDefaultDomain(scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingDefaultDomainConfig) GoogleFirebaseAppHostingDefaultDomain {
 	_init_.Initialize()
 
@@ -521,7 +521,7 @@ func NewGoogleFirebaseAppHostingDefaultDomain(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_default_domain google_firebase_app_hosting_default_domain} Resource.
 func NewGoogleFirebaseAppHostingDefaultDomain_Override(g GoogleFirebaseAppHostingDefaultDomain, scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingDefaultDomainConfig) {
 	_init_.Initialize()
 

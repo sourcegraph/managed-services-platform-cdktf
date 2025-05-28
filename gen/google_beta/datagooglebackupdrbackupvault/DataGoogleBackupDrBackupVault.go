@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglebackupdrbackupvault/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
 type DataGoogleBackupDrBackupVault interface {
 	cdktf.TerraformDataSource
 	AccessRestriction() *string
@@ -596,7 +596,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Data Source.
 func NewDataGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupVaultConfig) DataGoogleBackupDrBackupVault {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewDataGoogleBackupDrBackupVault(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Data Source.
 func NewDataGoogleBackupDrBackupVault_Override(d DataGoogleBackupDrBackupVault, scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupVaultConfig) {
 	_init_.Initialize()
 

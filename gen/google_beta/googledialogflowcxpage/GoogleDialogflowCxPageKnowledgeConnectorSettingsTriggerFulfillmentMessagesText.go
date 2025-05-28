@@ -7,7 +7,7 @@ type GoogleDialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentMessagesT
 	// If multiple variants are defined, only one text response variant is returned at runtime.
 	// required: true
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
 	Text *[]*string `field:"optional" json:"text" yaml:"text"`
 }
 

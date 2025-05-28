@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
 type DataGoogleComputeBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -36,6 +36,7 @@ type DataGoogleComputeBackendService interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DynamicForwarding() DataGoogleComputeBackendServiceDynamicForwardingList
 	EdgeSecurityPolicy() *string
 	EnableCdn() cdktf.IResolvable
 	ExternalManagedMigrationState() *string
@@ -68,6 +69,7 @@ type DataGoogleComputeBackendService interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkPassThroughLbTrafficPolicy() DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() DataGoogleComputeBackendServiceOutlierDetectionList
@@ -305,6 +307,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) DynamicForwarding() DataGoogleComputeBackendServiceDynamicForwardingList {
+	var returns DataGoogleComputeBackendServiceDynamicForwardingList
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) EdgeSecurityPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -525,6 +537,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) NetworkPassThroughLbTrafficPolicy() DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList {
+	var returns DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyList
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -716,7 +738,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) TlsSettings() DataGoogleComp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) DataGoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -734,7 +756,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 

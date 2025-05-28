@@ -48,24 +48,24 @@ type GoogleCloudRunServiceTemplateMetadata struct {
 	// - 'run.googleapis.com/gpu-zonal-redundancy-disabled' sets
 	//   [GPU zonal redundancy](https://cloud.google.com/run/docs/configuring/services/gpu-zonal-redundancy) for the Revision.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Name must be unique within a Google Cloud project and region.
 	//
 	// Is required when creating resources. Name is primarily intended
 	// for creation idempotence and configuration definition. Cannot be updated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloud_run_service#name GoogleCloudRunService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_service#name GoogleCloudRunService#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
 	// It will default to the resource's project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

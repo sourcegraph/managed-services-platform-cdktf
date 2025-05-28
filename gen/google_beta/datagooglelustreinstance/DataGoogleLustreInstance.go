@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglelustreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_lustre_instance google_lustre_instance}.
 type DataGoogleLustreInstance interface {
 	cdktf.TerraformDataSource
 	CapacityGib() *string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_DataGoogleLustreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) DataGoogleLustreInstance {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance_Override(d DataGoogleLustreInstance, scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) {
 	_init_.Initialize()
 

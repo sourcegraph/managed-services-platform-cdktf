@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigqueryanalyticshubdataexchange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type GoogleBigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -566,7 +566,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) GoogleBigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 

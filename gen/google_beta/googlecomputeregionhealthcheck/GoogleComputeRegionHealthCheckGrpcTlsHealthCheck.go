@@ -9,13 +9,13 @@ type GoogleComputeRegionHealthCheckGrpcTlsHealthCheck struct {
 	//
 	// The grpcServiceName can only be ASCII.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_health_check#grpc_service_name GoogleComputeRegionHealthCheck#grpc_service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_health_check#grpc_service_name GoogleComputeRegionHealthCheck#grpc_service_name}
 	GrpcServiceName *string `field:"optional" json:"grpcServiceName" yaml:"grpcServiceName"`
 	// The port number for the health check request.
 	//
 	// Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Specifies how port is selected for health checking, can be one of the following values:.
 	//
@@ -30,7 +30,7 @@ type GoogleComputeRegionHealthCheckGrpcTlsHealthCheck struct {
 	//
 	// If not specified, gRPC health check follows behavior specified in the 'port' field. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 	PortSpecification *string `field:"optional" json:"portSpecification" yaml:"portSpecification"`
 }
 

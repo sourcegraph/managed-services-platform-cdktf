@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputenetworkfirewallpolicywithrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}.
 type GoogleComputeNetworkFirewallPolicyWithRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -502,7 +502,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRules) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
 func NewGoogleComputeNetworkFirewallPolicyWithRules(scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyWithRulesConfig) GoogleComputeNetworkFirewallPolicyWithRules {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewGoogleComputeNetworkFirewallPolicyWithRules(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
 func NewGoogleComputeNetworkFirewallPolicyWithRules_Override(g GoogleComputeNetworkFirewallPolicyWithRules, scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyWithRulesConfig) {
 	_init_.Initialize()
 

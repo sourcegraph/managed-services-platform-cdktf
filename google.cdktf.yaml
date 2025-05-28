@@ -3,7 +3,7 @@ name: google
 provider:
   # https://registry.terraform.io/providers/hashicorp/google/latest
   source: registry.terraform.io/hashicorp/google
-  version: 6.36.1
+  version: 6.37.0
 
 target:
   language: go

@@ -21,24 +21,24 @@ type GoogleResourceManagerCapabilityConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Capability name that should be updated on the folder.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_resource_manager_capability#capability_name GoogleResourceManagerCapability#capability_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_resource_manager_capability#capability_name GoogleResourceManagerCapability#capability_name}
 	CapabilityName *string `field:"required" json:"capabilityName" yaml:"capabilityName"`
 	// Folder on which Capability needs to be updated in the format folders/folder_id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_resource_manager_capability#parent GoogleResourceManagerCapability#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_resource_manager_capability#parent GoogleResourceManagerCapability#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// Capability Value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_resource_manager_capability#value GoogleResourceManagerCapability#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_resource_manager_capability#value GoogleResourceManagerCapability#value}
 	Value interface{} `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_resource_manager_capability#id GoogleResourceManagerCapability#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_resource_manager_capability#id GoogleResourceManagerCapability#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_resource_manager_capability#timeouts GoogleResourceManagerCapability#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_resource_manager_capability#timeouts GoogleResourceManagerCapability#timeouts}
 	Timeouts *GoogleResourceManagerCapabilityTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

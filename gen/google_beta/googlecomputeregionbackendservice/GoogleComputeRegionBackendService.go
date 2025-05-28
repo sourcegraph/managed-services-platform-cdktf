@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -50,6 +50,8 @@ type GoogleComputeRegionBackendService interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DynamicForwarding() GoogleComputeRegionBackendServiceDynamicForwardingOutputReference
+	DynamicForwardingInput() *GoogleComputeRegionBackendServiceDynamicForwarding
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
@@ -191,6 +193,7 @@ type GoogleComputeRegionBackendService interface {
 	PutConnectionTrackingPolicy(value *GoogleComputeRegionBackendServiceConnectionTrackingPolicy)
 	PutConsistentHash(value *GoogleComputeRegionBackendServiceConsistentHash)
 	PutCustomMetrics(value interface{})
+	PutDynamicForwarding(value *GoogleComputeRegionBackendServiceDynamicForwarding)
 	PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy)
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
@@ -207,6 +210,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetConsistentHash()
 	ResetCustomMetrics()
 	ResetDescription()
+	ResetDynamicForwarding()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
 	ResetHealthChecks()
@@ -484,6 +488,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) DescriptionInput() *string
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) DynamicForwarding() GoogleComputeRegionBackendServiceDynamicForwardingOutputReference {
+	var returns GoogleComputeRegionBackendServiceDynamicForwardingOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) DynamicForwardingInput() *GoogleComputeRegionBackendServiceDynamicForwarding {
+	var returns *GoogleComputeRegionBackendServiceDynamicForwarding
+	_jsii_.Get(
+		j,
+		"dynamicForwardingInput",
 		&returns,
 	)
 	return returns
@@ -1070,7 +1094,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1088,7 +1112,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1784,6 +1808,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutCustomMetrics(value int
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutDynamicForwarding(value *GoogleComputeRegionBackendServiceDynamicForwarding) {
+	if err := g.validatePutDynamicForwardingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDynamicForwarding",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy) {
 	if err := g.validatePutFailoverPolicyParameters(value); err != nil {
 		panic(err)
@@ -1929,6 +1964,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetDynamicForwarding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDynamicForwarding",
 		nil, // no parameters
 	)
 }

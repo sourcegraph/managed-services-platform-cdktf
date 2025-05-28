@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service}.
 type DataGoogleComputeRegionBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -34,6 +34,7 @@ type DataGoogleComputeRegionBackendService interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DynamicForwarding() DataGoogleComputeRegionBackendServiceDynamicForwardingList
 	EnableCdn() cdktf.IResolvable
 	FailoverPolicy() DataGoogleComputeRegionBackendServiceFailoverPolicyList
 	Fingerprint() *string
@@ -277,6 +278,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) Description() *string 
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendService) DynamicForwarding() DataGoogleComputeRegionBackendServiceDynamicForwardingList {
+	var returns DataGoogleComputeRegionBackendServiceDynamicForwardingList
+	_jsii_.Get(
+		j,
+		"dynamicForwarding",
 		&returns,
 	)
 	return returns
@@ -663,7 +674,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) TimeoutSec() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) DataGoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -681,7 +692,7 @@ func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService_Override(d DataGoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 

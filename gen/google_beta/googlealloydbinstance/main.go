@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		reflect.TypeOf((*GoogleAlloydbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "activationPolicyInput", GoGetter: "ActivationPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -92,6 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readPoolConfig", GoGetter: "ReadPoolConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "readPoolConfigInput", GoGetter: "ReadPoolConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActivationPolicy", GoMethod: "ResetActivationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityType", GoMethod: "ResetAvailabilityType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientConnectionConfig", GoMethod: "ResetClientConnectionConfig"},

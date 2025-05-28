@@ -7,13 +7,13 @@ type GoogleDialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesO
 	// For more information, see SSML.
 	// This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dialogflow_cx_flow#ssml GoogleDialogflowCxFlow#ssml}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_flow#ssml GoogleDialogflowCxFlow#ssml}
 	Ssml *string `field:"optional" json:"ssml" yaml:"ssml"`
 	// The raw text to be synthesized.
 	//
 	// This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

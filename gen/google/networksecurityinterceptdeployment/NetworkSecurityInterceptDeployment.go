@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/networksecurityinterceptdeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}.
 type NetworkSecurityInterceptDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -572,7 +572,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptDeployment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewNetworkSecurityInterceptDeployment(scope constructs.Construct, id *string, config *NetworkSecurityInterceptDeploymentConfig) NetworkSecurityInterceptDeployment {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewNetworkSecurityInterceptDeployment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewNetworkSecurityInterceptDeployment_Override(n NetworkSecurityInterceptDeployment, scope constructs.Construct, id *string, config *NetworkSecurityInterceptDeploymentConfig) {
 	_init_.Initialize()
 

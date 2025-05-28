@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/memorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -40,6 +40,8 @@ type MemorystoreInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredAutoCreatedEndpoints() MemorystoreInstanceDesiredAutoCreatedEndpointsList
+	DesiredAutoCreatedEndpointsInput() interface{}
 	DesiredPscAutoConnections() MemorystoreInstanceDesiredPscAutoConnectionsList
 	DesiredPscAutoConnectionsInput() interface{}
 	DiscoveryEndpoints() MemorystoreInstanceDiscoveryEndpointsList
@@ -178,6 +180,7 @@ type MemorystoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupConfig(value *MemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig)
+	PutDesiredAutoCreatedEndpoints(value interface{})
 	PutDesiredPscAutoConnections(value interface{})
 	PutGcsSource(value *MemorystoreInstanceGcsSource)
 	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
@@ -189,6 +192,7 @@ type MemorystoreInstance interface {
 	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
 	ResetDeletionProtectionEnabled()
+	ResetDesiredAutoCreatedEndpoints()
 	ResetDesiredPscAutoConnections()
 	ResetEngineConfigs()
 	ResetEngineVersion()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_MemorystoreInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpoints() MemorystoreInstanceDesiredAutoCreatedEndpointsList {
+	var returns MemorystoreInstanceDesiredAutoCreatedEndpointsList
+	_jsii_.Get(
+		j,
+		"desiredAutoCreatedEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpointsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"desiredAutoCreatedEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -997,7 +1021,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -1015,7 +1039,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1623,6 +1647,17 @@ func (m *jsiiProxy_MemorystoreInstance) PutCrossInstanceReplicationConfig(value 
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) PutDesiredAutoCreatedEndpoints(value interface{}) {
+	if err := m.validatePutDesiredAutoCreatedEndpointsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDesiredAutoCreatedEndpoints",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value interface{}) {
 	if err := m.validatePutDesiredPscAutoConnectionsParameters(value); err != nil {
 		panic(err)
@@ -1728,6 +1763,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetDesiredAutoCreatedEndpoints() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDesiredAutoCreatedEndpoints",
 		nil, // no parameters
 	)
 }
