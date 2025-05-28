@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/apishieldoperation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 type ApiShieldOperation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,8 +43,6 @@ type ApiShieldOperation interface {
 	SetHost(val *string)
 	HostInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,7 +114,6 @@ type ApiShieldOperation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -268,16 +265,6 @@ func (j *jsiiProxy_ApiShieldOperation) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldOperation) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiShieldOperation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -399,7 +386,7 @@ func (j *jsiiProxy_ApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiShieldOperationConfig) ApiShieldOperation {
 	_init_.Initialize()
 
@@ -417,7 +404,7 @@ func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiSh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation_Override(a ApiShieldOperation, scope constructs.Construct, id *string, config *ApiShieldOperationConfig) {
 	_init_.Initialize()
 
@@ -484,17 +471,6 @@ func (j *jsiiProxy_ApiShieldOperation)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiShieldOperation)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -901,14 +877,6 @@ func (a *jsiiProxy_ApiShieldOperation) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_ApiShieldOperation) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

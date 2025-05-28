@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workersforplatformsnamespace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace}.
 type WorkersForPlatformsNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -340,7 +340,7 @@ func (j *jsiiProxy_WorkersForPlatformsNamespace) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource.
 func NewWorkersForPlatformsNamespace(scope constructs.Construct, id *string, config *WorkersForPlatformsNamespaceConfig) WorkersForPlatformsNamespace {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewWorkersForPlatformsNamespace(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_namespace cloudflare_workers_for_platforms_namespace} Resource.
 func NewWorkersForPlatformsNamespace_Override(w WorkersForPlatformsNamespace, scope constructs.Construct, id *string, config *WorkersForPlatformsNamespaceConfig) {
 	_init_.Initialize()
 

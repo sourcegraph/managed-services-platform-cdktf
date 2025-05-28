@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workerssecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_secret cloudflare_workers_secret}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret}.
 type WorkersSecret interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_WorkersSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
 func NewWorkersSecret(scope constructs.Construct, id *string, config *WorkersSecretConfig) WorkersSecret {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewWorkersSecret(scope constructs.Construct, id *string, config *WorkersSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
 func NewWorkersSecret_Override(w WorkersSecret, scope constructs.Construct, id *string, config *WorkersSecretConfig) {
 	_init_.Initialize()
 

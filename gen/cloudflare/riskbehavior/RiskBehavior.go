@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/riskbehavior/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/risk_behavior cloudflare_risk_behavior}.
 type RiskBehavior interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_RiskBehavior) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource.
 func NewRiskBehavior(scope constructs.Construct, id *string, config *RiskBehaviorConfig) RiskBehavior {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewRiskBehavior(scope constructs.Construct, id *string, config *RiskBehavio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/risk_behavior cloudflare_risk_behavior} Resource.
 func NewRiskBehavior_Override(r RiskBehavior, scope constructs.Construct, id *string, config *RiskBehaviorConfig) {
 	_init_.Initialize()
 

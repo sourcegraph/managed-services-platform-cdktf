@@ -76,6 +76,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutResolveDnsInternallyParameters(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutUntrustedCertParameters(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdextest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 type ZeroTrustDexTest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -467,7 +467,7 @@ func (j *jsiiProxy_ZeroTrustDexTest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) ZeroTrustDexTest {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest_Override(z ZeroTrustDexTest, scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) {
 	_init_.Initialize()
 

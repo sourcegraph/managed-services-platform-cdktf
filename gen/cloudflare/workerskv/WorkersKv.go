@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workerskv/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv}.
 type WorkersKv interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_WorkersKv) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfig) WorkersKv {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, config *WorkersKvConfig) {
 	_init_.Initialize()
 

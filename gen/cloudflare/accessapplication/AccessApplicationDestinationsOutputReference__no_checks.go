@@ -48,6 +48,10 @@ func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetCidrParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -56,7 +60,19 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetL4ProtocolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetPortRangeParameters(val *string) error {
 	return nil
 }
 
@@ -73,6 +89,10 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetType
 }
 
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetUriParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) validateSetVnetIdParameters(val *string) error {
 	return nil
 }
 

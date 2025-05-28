@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/cloudconnectorrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type CloudConnectorRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_CloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules(scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) CloudConnectorRules {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewCloudConnectorRules(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules_Override(c CloudConnectorRules, scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/r2bucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 type R2Bucket interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_R2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig) R2Bucket {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket_Override(r R2Bucket, scope constructs.Construct, id *string, config *R2BucketConfig) {
 	_init_.Initialize()
 

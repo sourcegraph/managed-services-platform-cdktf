@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/hostnametlssetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 

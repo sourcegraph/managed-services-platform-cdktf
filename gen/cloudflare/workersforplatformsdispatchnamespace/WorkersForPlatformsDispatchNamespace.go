@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workersforplatformsdispatchnamespace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 type WorkersForPlatformsDispatchNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -340,7 +340,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) WorkersForPlatformsDispatchNamespace {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace_Override(w WorkersForPlatformsDispatchNamespace, scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) {
 	_init_.Initialize()
 

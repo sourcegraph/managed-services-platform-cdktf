@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflaregatewayapptypes/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types}.
 type DataCloudflareGatewayAppTypes interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataCloudflareGatewayAppTypes) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source.
 func NewDataCloudflareGatewayAppTypes(scope constructs.Construct, id *string, config *DataCloudflareGatewayAppTypesConfig) DataCloudflareGatewayAppTypes {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataCloudflareGatewayAppTypes(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/gateway_app_types cloudflare_gateway_app_types} Data Source.
 func NewDataCloudflareGatewayAppTypes_Override(d DataCloudflareGatewayAppTypes, scope constructs.Construct, id *string, config *DataCloudflareGatewayAppTypesConfig) {
 	_init_.Initialize()
 

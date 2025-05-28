@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workersdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_domain cloudflare_workers_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_domain cloudflare_workers_domain}.
 type WorkersDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_WorkersDomain) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_domain cloudflare_workers_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_domain cloudflare_workers_domain} Resource.
 func NewWorkersDomain(scope constructs.Construct, id *string, config *WorkersDomainConfig) WorkersDomain {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewWorkersDomain(scope constructs.Construct, id *string, config *WorkersDom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_domain cloudflare_workers_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_domain cloudflare_workers_domain} Resource.
 func NewWorkersDomain_Override(w WorkersDomain, scope constructs.Construct, id *string, config *WorkersDomainConfig) {
 	_init_.Initialize()
 

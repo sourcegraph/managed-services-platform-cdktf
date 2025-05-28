@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accessservicetoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_service_token cloudflare_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_service_token cloudflare_access_service_token}.
 type AccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_AccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken(scope constructs.Construct, id *string, config *AccessServiceTokenConfig) AccessServiceToken {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewAccessServiceToken(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken_Override(a AccessServiceToken, scope constructs.Construct, id *string, config *AccessServiceTokenConfig) {
 	_init_.Initialize()
 
