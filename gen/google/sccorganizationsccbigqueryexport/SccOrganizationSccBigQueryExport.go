@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/sccorganizationsccbigqueryexport/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export}.
 type SccOrganizationSccBigQueryExport interface {
 	cdktf.TerraformResource
 	BigQueryExportId() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_SccOrganizationSccBigQueryExport) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export} Resource.
 func NewSccOrganizationSccBigQueryExport(scope constructs.Construct, id *string, config *SccOrganizationSccBigQueryExportConfig) SccOrganizationSccBigQueryExport {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewSccOrganizationSccBigQueryExport(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_scc_big_query_export google_scc_organization_scc_big_query_export} Resource.
 func NewSccOrganizationSccBigQueryExport_Override(s SccOrganizationSccBigQueryExport, scope constructs.Construct, id *string, config *SccOrganizationSccBigQueryExportConfig) {
 	_init_.Initialize()
 

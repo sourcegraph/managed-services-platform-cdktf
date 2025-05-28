@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/dataretentionpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/data_retention_policy tfe_data_retention_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/data_retention_policy tfe_data_retention_policy}.
 type DataRetentionPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataRetentionPolicy) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource.
 func NewDataRetentionPolicy(scope constructs.Construct, id *string, config *DataRetentionPolicyConfig) DataRetentionPolicy {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataRetentionPolicy(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource.
 func NewDataRetentionPolicy_Override(d DataRetentionPolicy, scope constructs.Construct, id *string, config *DataRetentionPolicyConfig) {
 	_init_.Initialize()
 

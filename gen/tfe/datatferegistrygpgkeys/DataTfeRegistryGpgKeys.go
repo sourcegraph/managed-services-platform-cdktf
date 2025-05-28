@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatferegistrygpgkeys/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys}.
 type DataTfeRegistryGpgKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataTfeRegistryGpgKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys} Data Source.
 func NewDataTfeRegistryGpgKeys(scope constructs.Construct, id *string, config *DataTfeRegistryGpgKeysConfig) DataTfeRegistryGpgKeys {
 	_init_.Initialize()
 
@@ -302,7 +302,7 @@ func NewDataTfeRegistryGpgKeys(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_gpg_keys tfe_registry_gpg_keys} Data Source.
 func NewDataTfeRegistryGpgKeys_Override(d DataTfeRegistryGpgKeys, scope constructs.Construct, id *string, config *DataTfeRegistryGpgKeysConfig) {
 	_init_.Initialize()
 

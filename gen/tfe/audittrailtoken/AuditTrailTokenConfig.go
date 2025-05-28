@@ -21,15 +21,15 @@ type AuditTrailTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The time when the audit trail token will expire. This must be a valid ISO8601 timestamp.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token#expired_at AuditTrailToken#expired_at}
 	ExpiredAt *string `field:"optional" json:"expiredAt" yaml:"expiredAt"`
 	// When set to true will force the audit trail token to be recreated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token#force_regenerate AuditTrailToken#force_regenerate}
 	ForceRegenerate interface{} `field:"optional" json:"forceRegenerate" yaml:"forceRegenerate"`
 	// Name of the organization. If omitted, organization must be defined in the provider config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token#organization AuditTrailToken#organization}
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/mtlscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 type MtlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -479,7 +479,7 @@ func (j *jsiiProxy_MtlsCertificate) UploadedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCertificateConfig) MtlsCertificate {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate_Override(m MtlsCertificate, scope constructs.Construct, id *string, config *MtlsCertificateConfig) {
 	_init_.Initialize()
 

@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutCustomMetricsPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutDynamicForwardingParameters(value *GoogleComputeRegionBackendServiceDynamicForwarding) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutFailoverPolicyParameters(value *GoogleComputeRegionBackendServiceFailoverPolicy) error {
 	return nil
 }

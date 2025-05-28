@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/policyset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set tfe_policy_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set tfe_policy_set}.
 type PolicySet interface {
 	cdktf.TerraformResource
 	AgentEnabled() interface{}
@@ -618,7 +618,7 @@ func (j *jsiiProxy_PolicySet) WorkspaceIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set tfe_policy_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set tfe_policy_set} Resource.
 func NewPolicySet(scope constructs.Construct, id *string, config *PolicySetConfig) PolicySet {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewPolicySet(scope constructs.Construct, id *string, config *PolicySetConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/policy_set tfe_policy_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set tfe_policy_set} Resource.
 func NewPolicySet_Override(p PolicySet, scope constructs.Construct, id *string, config *PolicySetConfig) {
 	_init_.Initialize()
 

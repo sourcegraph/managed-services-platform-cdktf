@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/audittrailtoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token tfe_audit_trail_token}.
 type AuditTrailToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_AuditTrailToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token tfe_audit_trail_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token tfe_audit_trail_token} Resource.
 func NewAuditTrailToken(scope constructs.Construct, id *string, config *AuditTrailTokenConfig) AuditTrailToken {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewAuditTrailToken(scope constructs.Construct, id *string, config *AuditTra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/audit_trail_token tfe_audit_trail_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/audit_trail_token tfe_audit_trail_token} Resource.
 func NewAuditTrailToken_Override(a AuditTrailToken, scope constructs.Construct, id *string, config *AuditTrailTokenConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	OverrideIpsInput() *[]*string
 	PayloadLog() TeamsRuleRuleSettingsPayloadLogOutputReference
 	PayloadLogInput() *TeamsRuleRuleSettingsPayloadLog
+	ResolveDnsInternally() TeamsRuleRuleSettingsResolveDnsInternallyOutputReference
+	ResolveDnsInternallyInput() *TeamsRuleRuleSettingsResolveDnsInternally
 	ResolveDnsThroughCloudflare() interface{}
 	SetResolveDnsThroughCloudflare(val interface{})
 	ResolveDnsThroughCloudflareInput() interface{}
@@ -120,6 +122,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	PutL4Override(value *TeamsRuleRuleSettingsL4Override)
 	PutNotificationSettings(value *TeamsRuleRuleSettingsNotificationSettings)
 	PutPayloadLog(value *TeamsRuleRuleSettingsPayloadLog)
+	PutResolveDnsInternally(value *TeamsRuleRuleSettingsResolveDnsInternally)
 	PutUntrustedCert(value *TeamsRuleRuleSettingsUntrustedCert)
 	ResetAddHeaders()
 	ResetAllowChildBypass()
@@ -139,6 +142,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetOverrideHost()
 	ResetOverrideIps()
 	ResetPayloadLog()
+	ResetResolveDnsInternally()
 	ResetResolveDnsThroughCloudflare()
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
@@ -561,6 +565,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PayloadLogInput() *Team
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResolveDnsInternally() TeamsRuleRuleSettingsResolveDnsInternallyOutputReference {
+	var returns TeamsRuleRuleSettingsResolveDnsInternallyOutputReference
+	_jsii_.Get(
+		j,
+		"resolveDnsInternally",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResolveDnsInternallyInput() *TeamsRuleRuleSettingsResolveDnsInternally {
+	var returns *TeamsRuleRuleSettingsResolveDnsInternally
+	_jsii_.Get(
+		j,
+		"resolveDnsInternallyInput",
 		&returns,
 	)
 	return returns
@@ -1104,6 +1128,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutPayloadLog(value *Te
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutResolveDnsInternally(value *TeamsRuleRuleSettingsResolveDnsInternally) {
+	if err := t.validatePutResolveDnsInternallyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putResolveDnsInternally",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutUntrustedCert(value *TeamsRuleRuleSettingsUntrustedCert) {
 	if err := t.validatePutUntrustedCertParameters(value); err != nil {
 		panic(err)
@@ -1255,6 +1290,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetPayloadLog() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetResolveDnsInternally() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetResolveDnsInternally",
 		nil, // no parameters
 	)
 }

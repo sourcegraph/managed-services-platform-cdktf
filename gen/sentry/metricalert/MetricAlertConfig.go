@@ -21,61 +21,61 @@ type MetricAlertConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The aggregation criteria to apply.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#aggregate MetricAlert#aggregate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#aggregate MetricAlert#aggregate}
 	Aggregate *string `field:"required" json:"aggregate" yaml:"aggregate"`
 	// The metric alert name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#name MetricAlert#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#name MetricAlert#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The slug of the organization the metric alert belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#organization MetricAlert#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#organization MetricAlert#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The slug of the project to create the metric alert for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#project MetricAlert#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#project MetricAlert#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// The query filter to apply.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#query MetricAlert#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#query MetricAlert#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 	// The type of threshold.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#threshold_type MetricAlert#threshold_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#threshold_type MetricAlert#threshold_type}
 	ThresholdType *float64 `field:"required" json:"thresholdType" yaml:"thresholdType"`
 	// The period to evaluate the Alert rule in minutes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#time_window MetricAlert#time_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#time_window MetricAlert#time_window}
 	TimeWindow *float64 `field:"required" json:"timeWindow" yaml:"timeWindow"`
 	// trigger block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#trigger MetricAlert#trigger}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#trigger MetricAlert#trigger}
 	Trigger interface{} `field:"required" json:"trigger" yaml:"trigger"`
 	// An optional int representing the time delta to use as the comparison period, in minutes.
 	//
 	// Required when using a percentage change threshold
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#comparison_delta MetricAlert#comparison_delta}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#comparison_delta MetricAlert#comparison_delta}
 	ComparisonDelta *float64 `field:"optional" json:"comparisonDelta" yaml:"comparisonDelta"`
 	// The Sentry Alert category.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#dataset MetricAlert#dataset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#dataset MetricAlert#dataset}
 	Dataset *string `field:"optional" json:"dataset" yaml:"dataset"`
 	// Perform Alert rule in a specific environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#environment MetricAlert#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#environment MetricAlert#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 	// The events type of dataset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#event_types MetricAlert#event_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#event_types MetricAlert#event_types}
 	EventTypes *[]*string `field:"optional" json:"eventTypes" yaml:"eventTypes"`
 	// Specifies the owner id of this Alert rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#owner MetricAlert#owner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#owner MetricAlert#owner}
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
 	// The value at which the Alert rule resolves.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/metric_alert#resolve_threshold MetricAlert#resolve_threshold}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/metric_alert#resolve_threshold MetricAlert#resolve_threshold}
 	ResolveThreshold *float64 `field:"optional" json:"resolveThreshold" yaml:"resolveThreshold"`
 }
 

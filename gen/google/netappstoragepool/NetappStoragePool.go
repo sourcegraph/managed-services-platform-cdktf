@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/netappstoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
 type NetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -33,6 +33,9 @@ type NetappStoragePool interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomPerformanceEnabled() interface{}
+	SetCustomPerformanceEnabled(val interface{})
+	CustomPerformanceEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -105,6 +108,12 @@ type NetappStoragePool interface {
 	TerraformResourceType() *string
 	Timeouts() NetappStoragePoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TotalIops() *string
+	SetTotalIops(val *string)
+	TotalIopsInput() *string
+	TotalThroughputMibps() *string
+	SetTotalThroughputMibps(val *string)
+	TotalThroughputMibpsInput() *string
 	VolumeCapacityGib() *string
 	VolumeCount() *float64
 	Zone() *string
@@ -156,6 +165,7 @@ type NetappStoragePool interface {
 	PutTimeouts(value *NetappStoragePoolTimeouts)
 	ResetActiveDirectory()
 	ResetAllowAutoTiering()
+	ResetCustomPerformanceEnabled()
 	ResetDescription()
 	ResetId()
 	ResetKmsConfig()
@@ -167,6 +177,8 @@ type NetappStoragePool interface {
 	ResetProject()
 	ResetReplicaZone()
 	ResetTimeouts()
+	ResetTotalIops()
+	ResetTotalThroughputMibps()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -281,6 +293,26 @@ func (j *jsiiProxy_NetappStoragePool) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabledInput",
 		&returns,
 	)
 	return returns
@@ -676,6 +708,46 @@ func (j *jsiiProxy_NetappStoragePool) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetappStoragePool) TotalIops() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) TotalIopsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) TotalThroughputMibps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) TotalThroughputMibpsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappStoragePool) VolumeCapacityGib() *string {
 	var returns *string
 	_jsii_.Get(
@@ -717,7 +789,7 @@ func (j *jsiiProxy_NetappStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool(scope constructs.Construct, id *string, config *NetappStoragePoolConfig) NetappStoragePool {
 	_init_.Initialize()
 
@@ -735,7 +807,7 @@ func NewNetappStoragePool(scope constructs.Construct, id *string, config *Netapp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool_Override(n NetappStoragePool, scope constructs.Construct, id *string, config *NetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -797,6 +869,17 @@ func (j *jsiiProxy_NetappStoragePool)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetCustomPerformanceEnabled(val interface{}) {
+	if err := j.validateSetCustomPerformanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customPerformanceEnabled",
 		val,
 	)
 }
@@ -964,6 +1047,28 @@ func (j *jsiiProxy_NetappStoragePool)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetTotalIops(val *string) {
+	if err := j.validateSetTotalIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetTotalThroughputMibps(val *string) {
+	if err := j.validateSetTotalThroughputMibpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalThroughputMibps",
 		val,
 	)
 }
@@ -1359,6 +1464,14 @@ func (n *jsiiProxy_NetappStoragePool) ResetAllowAutoTiering() {
 	)
 }
 
+func (n *jsiiProxy_NetappStoragePool) ResetCustomPerformanceEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCustomPerformanceEnabled",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1427,6 +1540,22 @@ func (n *jsiiProxy_NetappStoragePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappStoragePool) ResetTotalIops() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTotalIops",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappStoragePool) ResetTotalThroughputMibps() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTotalThroughputMibps",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutAdvancedSettingsParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutGenAppBuilderSettingsParameters(value *GoogleDialogflowCxAgentGenAppBuilderSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutGitIntegrationSettingsParameters(value *GoogleDialogflowCxAgentGitIntegrationSettings) error {
 	return nil
 }

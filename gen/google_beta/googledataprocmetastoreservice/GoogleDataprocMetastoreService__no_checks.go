@@ -180,10 +180,6 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetServiceIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetTierParameters(val *string) error {
 	return nil
 }

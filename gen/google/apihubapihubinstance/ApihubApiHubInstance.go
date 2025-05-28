@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/apihubapihubinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance}.
 type ApihubApiHubInstance interface {
 	cdktf.TerraformResource
 	ApiHubInstanceId() *string
@@ -550,7 +550,7 @@ func (j *jsiiProxy_ApihubApiHubInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance} Resource.
 func NewApihubApiHubInstance(scope constructs.Construct, id *string, config *ApihubApiHubInstanceConfig) ApihubApiHubInstance {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewApihubApiHubInstance(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apihub_api_hub_instance google_apihub_api_hub_instance} Resource.
 func NewApihubApiHubInstance_Override(a ApihubApiHubInstance, scope constructs.Construct, id *string, config *ApihubApiHubInstanceConfig) {
 	_init_.Initialize()
 

@@ -334,6 +334,14 @@ func (j *jsiiProxy_TeamToken) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_TeamToken) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamToken) validateSetExpiredAtParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -357,14 +365,6 @@ func (j *jsiiProxy_TeamToken) validateSetForceRegenerateParameters(val interface
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_TeamToken) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

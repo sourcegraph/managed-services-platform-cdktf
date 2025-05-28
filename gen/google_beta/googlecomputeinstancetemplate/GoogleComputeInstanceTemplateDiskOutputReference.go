@@ -10,6 +10,9 @@ import (
 
 type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	AutoDelete() interface{}
 	SetAutoDelete(val interface{})
 	AutoDeleteInput() interface{}
@@ -47,6 +50,9 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	DiskTypeInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -121,6 +127,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	PutDiskEncryptionKey(value *GoogleComputeInstanceTemplateDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
+	ResetArchitecture()
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -128,6 +135,7 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResetDiskName()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetGuestOsFeatures()
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
@@ -154,6 +162,26 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for GoogleComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) AutoDelete() interface{} {
@@ -331,6 +359,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -654,6 +702,17 @@ func NewGoogleComputeInstanceTemplateDiskOutputReference_Override(g GoogleComput
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetAutoDelete(val interface{}) {
 	if err := j.validateSetAutoDeleteParameters(val); err != nil {
 		panic(err)
@@ -738,6 +797,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetDiskType(
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -1115,6 +1185,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) PutSourceSn
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1167,6 +1245,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetDiskTy
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }

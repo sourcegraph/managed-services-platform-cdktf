@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutInlineCertificateIssuanceConfigParameters(value *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutInlineTrustConfigParameters(value *GoogleIamWorkloadIdentityPoolInlineTrustConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutTimeoutsParameters(value *GoogleIamWorkloadIdentityPoolTimeouts) error {
 	return nil
 }
@@ -117,6 +125,10 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetIdParameters(val *s
 }
 
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetModeParameters(val *string) error {
 	return nil
 }
 

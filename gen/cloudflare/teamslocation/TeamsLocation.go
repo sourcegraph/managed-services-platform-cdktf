@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/teamslocation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_location cloudflare_teams_location}.
 type TeamsLocation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -552,7 +552,7 @@ func (j *jsiiProxy_TeamsLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocationConfig) TeamsLocation {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation_Override(t TeamsLocation, scope constructs.Construct, id *string, config *TeamsLocationConfig) {
 	_init_.Initialize()
 

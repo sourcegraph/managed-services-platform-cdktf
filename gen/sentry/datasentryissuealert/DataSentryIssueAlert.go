@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryissuealert/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/issue_alert sentry_issue_alert}.
 type DataSentryIssueAlert interface {
 	cdktf.TerraformDataSource
 	ActionMatch() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataSentryIssueAlert) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
 func NewDataSentryIssueAlert(scope constructs.Construct, id *string, config *DataSentryIssueAlertConfig) DataSentryIssueAlert {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDataSentryIssueAlert(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/issue_alert sentry_issue_alert} Data Source.
 func NewDataSentryIssueAlert_Override(d DataSentryIssueAlert, scope constructs.Construct, id *string, config *DataSentryIssueAlertConfig) {
 	_init_.Initialize()
 

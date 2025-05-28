@@ -378,14 +378,6 @@ func (j *jsiiProxy_NotificationConfiguration) validateSetEnabledParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_NotificationConfiguration) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_NotificationConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -449,6 +441,14 @@ func (j *jsiiProxy_NotificationConfiguration) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_NotificationConfiguration) validateSetTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationConfiguration) validateSetTokenWoParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

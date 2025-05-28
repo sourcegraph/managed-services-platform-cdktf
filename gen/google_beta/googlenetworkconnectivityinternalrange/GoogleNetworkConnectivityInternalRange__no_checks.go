@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetImmutableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) validateSetIpCidrRangeParameters(val *string) error {
 	return nil
 }

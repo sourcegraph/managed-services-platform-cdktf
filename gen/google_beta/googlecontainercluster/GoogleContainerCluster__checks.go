@@ -1146,6 +1146,14 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetInitialNodeCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

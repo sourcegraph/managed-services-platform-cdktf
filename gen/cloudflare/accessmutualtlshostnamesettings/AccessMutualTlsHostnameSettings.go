@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/accessmutualtlshostnamesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings}.
 type AccessMutualTlsHostnameSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_AccessMutualTlsHostnameSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings} Resource.
 func NewAccessMutualTlsHostnameSettings(scope constructs.Construct, id *string, config *AccessMutualTlsHostnameSettingsConfig) AccessMutualTlsHostnameSettings {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewAccessMutualTlsHostnameSettings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_mutual_tls_hostname_settings cloudflare_access_mutual_tls_hostname_settings} Resource.
 func NewAccessMutualTlsHostnameSettings_Override(a AccessMutualTlsHostnameSettings, scope constructs.Construct, id *string, config *AccessMutualTlsHostnameSettingsConfig) {
 	_init_.Initialize()
 

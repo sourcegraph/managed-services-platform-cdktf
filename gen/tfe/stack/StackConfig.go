@@ -21,19 +21,19 @@ type StackConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the Stack.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/stack#name Stack#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#name Stack#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// ID of the project that the Stack belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/stack#project_id Stack#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#project_id Stack#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Description of the Stack.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/stack#description Stack#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#description Stack#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// vcs_repo block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/stack#vcs_repo Stack#vcs_repo}
 	VcsRepo *StackVcsRepo `field:"optional" json:"vcsRepo" yaml:"vcsRepo"`
 }
 

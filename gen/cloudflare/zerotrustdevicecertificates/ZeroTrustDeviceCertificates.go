@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicecertificates/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates}.
 type ZeroTrustDeviceCertificates interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates} Resource.
 func NewZeroTrustDeviceCertificates(scope constructs.Construct, id *string, config *ZeroTrustDeviceCertificatesConfig) ZeroTrustDeviceCertificates {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewZeroTrustDeviceCertificates(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_certificates cloudflare_zero_trust_device_certificates} Resource.
 func NewZeroTrustDeviceCertificates_Override(z ZeroTrustDeviceCertificates, scope constructs.Construct, id *string, config *ZeroTrustDeviceCertificatesConfig) {
 	_init_.Initialize()
 

@@ -131,6 +131,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -261,6 +269,14 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetDiskTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -19,16 +19,21 @@ type SshKeyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/ssh_key#key SshKey#key}.
-	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/ssh_key#name SshKey#name}.
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/ssh_key#id SshKey#id}.
+	// The name of the SSH key.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/ssh_key#organization SshKey#organization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/ssh_key#name SshKey#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// The text of the SSH private key.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/ssh_key#key SshKey#key}
+	Key *string `field:"optional" json:"key" yaml:"key"`
+	// The text of the SSH private key, guaranteed not to be written to state.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/ssh_key#key_wo SshKey#key_wo}
+	KeyWo *string `field:"optional" json:"keyWo" yaml:"keyWo"`
+	// The name of the organization.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/ssh_key#organization SshKey#organization}
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/teammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member sentry_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member sentry_team_member}.
 type TeamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_TeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member sentry_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member sentry_team_member} Resource.
 func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberConfig) TeamMember {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member sentry_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member sentry_team_member} Resource.
 func NewTeamMember_Override(t TeamMember, scope constructs.Construct, id *string, config *TeamMemberConfig) {
 	_init_.Initialize()
 

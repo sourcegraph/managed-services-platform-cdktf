@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustsplittunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel}.
 type ZeroTrustSplitTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ZeroTrustSplitTunnel) TunnelsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel} Resource.
 func NewZeroTrustSplitTunnel(scope constructs.Construct, id *string, config *ZeroTrustSplitTunnelConfig) ZeroTrustSplitTunnel {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewZeroTrustSplitTunnel(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_split_tunnel cloudflare_zero_trust_split_tunnel} Resource.
 func NewZeroTrustSplitTunnel_Override(z ZeroTrustSplitTunnel, scope constructs.Construct, id *string, config *ZeroTrustSplitTunnelConfig) {
 	_init_.Initialize()
 

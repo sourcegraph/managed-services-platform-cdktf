@@ -96,11 +96,11 @@ func (j *jsiiProxy_SshKey) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SshKey) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_SshKey) validateSetKeyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SshKey) validateSetKeyParameters(val *string) error {
+func (j *jsiiProxy_SshKey) validateSetKeyWoParameters(val *string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryorganizationintegration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization_integration sentry_organization_integration}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_integration sentry_organization_integration}.
 type DataSentryOrganizationIntegration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_DataSentryOrganizationIntegration) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization_integration sentry_organization_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_integration sentry_organization_integration} Data Source.
 func NewDataSentryOrganizationIntegration(scope constructs.Construct, id *string, config *DataSentryOrganizationIntegrationConfig) DataSentryOrganizationIntegration {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataSentryOrganizationIntegration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/organization_integration sentry_organization_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_integration sentry_organization_integration} Data Source.
 func NewDataSentryOrganizationIntegration_Override(d DataSentryOrganizationIntegration, scope constructs.Construct, id *string, config *DataSentryOrganizationIntegrationConfig) {
 	_init_.Initialize()
 

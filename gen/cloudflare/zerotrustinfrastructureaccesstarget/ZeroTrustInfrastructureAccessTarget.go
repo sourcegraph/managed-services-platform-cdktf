@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustinfrastructureaccesstarget/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target}.
 type ZeroTrustInfrastructureAccessTarget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ZeroTrustInfrastructureAccessTarget) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target} Resource.
 func NewZeroTrustInfrastructureAccessTarget(scope constructs.Construct, id *string, config *ZeroTrustInfrastructureAccessTargetConfig) ZeroTrustInfrastructureAccessTarget {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewZeroTrustInfrastructureAccessTarget(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_infrastructure_access_target cloudflare_zero_trust_infrastructure_access_target} Resource.
 func NewZeroTrustInfrastructureAccessTarget_Override(z ZeroTrustInfrastructureAccessTarget, scope constructs.Construct, id *string, config *ZeroTrustInfrastructureAccessTargetConfig) {
 	_init_.Initialize()
 

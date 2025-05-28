@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization}.
 type ZeroTrustAccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_ZeroTrustAccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization} Resource.
 func NewZeroTrustAccessOrganization(scope constructs.Construct, id *string, config *ZeroTrustAccessOrganizationConfig) ZeroTrustAccessOrganization {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewZeroTrustAccessOrganization(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_organization cloudflare_zero_trust_access_organization} Resource.
 func NewZeroTrustAccessOrganization_Override(z ZeroTrustAccessOrganization, scope constructs.Construct, id *string, config *ZeroTrustAccessOrganizationConfig) {
 	_init_.Initialize()
 

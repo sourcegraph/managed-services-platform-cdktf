@@ -43,6 +43,9 @@ type TeamProjectAccessProjectAccessOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VariableSets() *string
+	SetVariableSets(val *string)
+	VariableSetsInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type TeamProjectAccessProjectAccessOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetSettings()
 	ResetTeams()
+	ResetVariableSets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_TeamProjectAccessProjectAccessOutputReference) TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_TeamProjectAccessProjectAccessOutputReference) VariableSets() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variableSets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamProjectAccessProjectAccessOutputReference) VariableSetsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variableSetsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewTeamProjectAccessProjectAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TeamProjectAccessProjectAccessOutputReference {
 	_init_.Initialize()
@@ -295,6 +319,17 @@ func (j *jsiiProxy_TeamProjectAccessProjectAccessOutputReference)SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamProjectAccessProjectAccessOutputReference)SetVariableSets(val *string) {
+	if err := j.validateSetVariableSetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"variableSets",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (t *jsiiProxy_TeamProjectAccessProjectAccessOutputReference) ResetTeams() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetTeams",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamProjectAccessProjectAccessOutputReference) ResetVariableSets() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetVariableSets",
 		nil, // no parameters
 	)
 }

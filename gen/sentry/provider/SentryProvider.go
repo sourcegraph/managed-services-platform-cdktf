@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs sentry}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs sentry}.
 type SentryProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -231,7 +231,7 @@ func (j *jsiiProxy_SentryProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs sentry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs sentry} Resource.
 func NewSentryProvider(scope constructs.Construct, id *string, config *SentryProviderConfig) SentryProvider {
 	_init_.Initialize()
 
@@ -249,7 +249,7 @@ func NewSentryProvider(scope constructs.Construct, id *string, config *SentryPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs sentry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs sentry} Resource.
 func NewSentryProvider_Override(s SentryProvider, scope constructs.Construct, id *string, config *SentryProviderConfig) {
 	_init_.Initialize()
 

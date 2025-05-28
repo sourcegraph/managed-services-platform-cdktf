@@ -21,15 +21,15 @@ type DataSentryAllKeysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The organization the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys#organization DataSentryAllKeys#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys#organization DataSentryAllKeys#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The project the resource belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys#project DataSentryAllKeys#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys#project DataSentryAllKeys#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Filter client keys by `active` or `inactive`. Defaults to returning all keys if not specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys#filter_status DataSentryAllKeys#filter_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys#filter_status DataSentryAllKeys#filter_status}
 	FilterStatus *string `field:"optional" json:"filterStatus" yaml:"filterStatus"`
 }
 

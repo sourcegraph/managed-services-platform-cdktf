@@ -3,7 +3,7 @@ name: sentry
 provider:
   # https://registry.terraform.io/providers/jianyuan/sentry/latest
   source: registry.terraform.io/jianyuan/sentry
-  version: "0.14.3"
+  version: "0.14.5"
 
 target:
   language: go

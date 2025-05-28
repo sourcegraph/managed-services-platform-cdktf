@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/infrastructureaccesstarget/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target}.
 type InfrastructureAccessTarget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_InfrastructureAccessTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource.
 func NewInfrastructureAccessTarget(scope constructs.Construct, id *string, config *InfrastructureAccessTargetConfig) InfrastructureAccessTarget {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewInfrastructureAccessTarget(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/infrastructure_access_target cloudflare_infrastructure_access_target} Resource.
 func NewInfrastructureAccessTarget_Override(i InfrastructureAccessTarget, scope constructs.Construct, id *string, config *InfrastructureAccessTargetConfig) {
 	_init_.Initialize()
 

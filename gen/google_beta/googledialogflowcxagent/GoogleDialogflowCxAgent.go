@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledialogflowcxagent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
 type GoogleDialogflowCxAgent interface {
 	cdktf.TerraformResource
 	AdvancedSettings() GoogleDialogflowCxAgentAdvancedSettingsOutputReference
@@ -56,6 +56,8 @@ type GoogleDialogflowCxAgent interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GenAppBuilderSettings() GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference
+	GenAppBuilderSettingsInput() *GoogleDialogflowCxAgentGenAppBuilderSettings
 	GitIntegrationSettings() GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference
 	GitIntegrationSettingsInput() *GoogleDialogflowCxAgentGitIntegrationSettings
 	Id() *string
@@ -150,6 +152,7 @@ type GoogleDialogflowCxAgent interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSettings(value *GoogleDialogflowCxAgentAdvancedSettings)
+	PutGenAppBuilderSettings(value *GoogleDialogflowCxAgentGenAppBuilderSettings)
 	PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings)
 	PutSpeechToTextSettings(value *GoogleDialogflowCxAgentSpeechToTextSettings)
 	PutTextToSpeechSettings(value *GoogleDialogflowCxAgentTextToSpeechSettings)
@@ -159,6 +162,7 @@ type GoogleDialogflowCxAgent interface {
 	ResetDescription()
 	ResetEnableSpellCorrection()
 	ResetEnableStackdriverLogging()
+	ResetGenAppBuilderSettings()
 	ResetGitIntegrationSettings()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -403,6 +407,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GenAppBuilderSettings() GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentGenAppBuilderSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"genAppBuilderSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GenAppBuilderSettingsInput() *GoogleDialogflowCxAgentGenAppBuilderSettings {
+	var returns *GoogleDialogflowCxAgentGenAppBuilderSettings
+	_jsii_.Get(
+		j,
+		"genAppBuilderSettingsInput",
 		&returns,
 	)
 	return returns
@@ -709,7 +733,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) GoogleDialogflowCxAgent {
 	_init_.Initialize()
 
@@ -727,7 +751,7 @@ func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent_Override(g GoogleDialogflowCxAgent, scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -1302,6 +1326,17 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) PutAdvancedSettings(value *GoogleDia
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGenAppBuilderSettings(value *GoogleDialogflowCxAgentGenAppBuilderSettings) {
+	if err := g.validatePutGenAppBuilderSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGenAppBuilderSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings) {
 	if err := g.validatePutGitIntegrationSettingsParameters(value); err != nil {
 		panic(err)
@@ -1382,6 +1417,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetEnableStackdriverLogging() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableStackdriverLogging",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetGenAppBuilderSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGenAppBuilderSettings",
 		nil, // no parameters
 	)
 }

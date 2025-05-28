@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrusttunnelvirtualnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
 type DataCloudflareZeroTrustTunnelVirtualNetwork interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelVirtualNetwork) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Data Source.
 func NewDataCloudflareZeroTrustTunnelVirtualNetwork(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelVirtualNetworkConfig) DataCloudflareZeroTrustTunnelVirtualNetwork {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataCloudflareZeroTrustTunnelVirtualNetwork(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Data Source.
 func NewDataCloudflareZeroTrustTunnelVirtualNetwork_Override(d DataCloudflareZeroTrustTunnelVirtualNetwork, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelVirtualNetworkConfig) {
 	_init_.Initialize()
 

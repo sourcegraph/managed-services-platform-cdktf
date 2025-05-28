@@ -19,22 +19,22 @@ type DataTfeVariableSetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#name DataTfeVariableSet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#name DataTfeVariableSet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#id DataTfeVariableSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#id DataTfeVariableSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#organization DataTfeVariableSet#organization}.
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#parent_project_id DataTfeVariableSet#parent_project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#parent_project_id DataTfeVariableSet#parent_project_id}.
 	ParentProjectId *string `field:"optional" json:"parentProjectId" yaml:"parentProjectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#project_ids DataTfeVariableSet#project_ids}.
 	ProjectIds *[]*string `field:"optional" json:"projectIds" yaml:"projectIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#variable_ids DataTfeVariableSet#variable_ids}.
 	VariableIds *[]*string `field:"optional" json:"variableIds" yaml:"variableIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/variable_set#workspace_ids DataTfeVariableSet#workspace_ids}.
 	WorkspaceIds *[]*string `field:"optional" json:"workspaceIds" yaml:"workspaceIds"`
 }
 

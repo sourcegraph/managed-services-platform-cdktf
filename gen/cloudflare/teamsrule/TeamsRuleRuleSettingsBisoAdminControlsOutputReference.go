@@ -20,6 +20,9 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Copy() *string
+	SetCopy(val *string)
+	CopyInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -43,10 +46,22 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	DisableUpload() interface{}
 	SetDisableUpload(val interface{})
 	DisableUploadInput() interface{}
+	Download() *string
+	SetDownload(val *string)
+	DownloadInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *TeamsRuleRuleSettingsBisoAdminControls
 	SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls)
+	Keyboard() *string
+	SetKeyboard(val *string)
+	KeyboardInput() *string
+	Paste() *string
+	SetPaste(val *string)
+	PasteInput() *string
+	Printing() *string
+	SetPrinting(val *string)
+	PrintingInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,6 +70,12 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Upload() *string
+	SetUpload(val *string)
+	UploadInput() *string
+	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,12 +100,19 @@ type TeamsRuleRuleSettingsBisoAdminControlsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCopy()
 	ResetDisableClipboardRedirection()
 	ResetDisableCopyPaste()
 	ResetDisableDownload()
 	ResetDisableKeyboard()
 	ResetDisablePrinting()
 	ResetDisableUpload()
+	ResetDownload()
+	ResetKeyboard()
+	ResetPaste()
+	ResetPrinting()
+	ResetUpload()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -115,6 +143,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Comple
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Copy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"copy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) CopyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"copyInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +298,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Disabl
 	return returns
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Download() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"download",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) DownloadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"downloadInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -270,6 +338,66 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Keyboard() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyboard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) KeyboardInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyboardInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Paste() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"paste",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) PasteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pasteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Printing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"printing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) PrintingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"printingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +413,46 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Terraf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Upload() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"upload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) UploadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +504,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetCopy(val *string) {
+	if err := j.validateSetCopyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copy",
 		val,
 	)
 }
@@ -406,6 +585,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisa
 	)
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDownload(val *string) {
+	if err := j.validateSetDownloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"download",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -413,6 +603,39 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetKeyboard(val *string) {
+	if err := j.validateSetKeyboardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyboard",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetPaste(val *string) {
+	if err := j.validateSetPasteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paste",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetPrinting(val *string) {
+	if err := j.validateSetPrintingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"printing",
 		val,
 	)
 }
@@ -435,6 +658,28 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetUpload(val *string) {
+	if err := j.validateSetUploadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"upload",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -625,6 +870,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Interp
 	return returns
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetCopy() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetCopy",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetDisableClipboardRedirection() {
 	_jsii_.InvokeVoid(
 		t,
@@ -669,6 +922,54 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		t,
 		"resetDisableUpload",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetDownload() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDownload",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetKeyboard() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetKeyboard",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetPaste() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPaste",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetPrinting() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPrinting",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetUpload() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetUpload",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

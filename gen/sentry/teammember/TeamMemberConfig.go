@@ -21,21 +21,21 @@ type TeamMemberConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the member to add to the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member#member_id TeamMember#member_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member#member_id TeamMember#member_id}
 	MemberId *string `field:"required" json:"memberId" yaml:"memberId"`
 	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member#organization TeamMember#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member#organization TeamMember#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The slug of the team to add the member to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member#team TeamMember#team}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member#team TeamMember#team}
 	Team *string `field:"required" json:"team" yaml:"team"`
 	// The role of the member in the team.
 	//
 	// When not set, resolve to the minimum team role given by this member's organization role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/team_member#role TeamMember#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member#role TeamMember#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 }
 

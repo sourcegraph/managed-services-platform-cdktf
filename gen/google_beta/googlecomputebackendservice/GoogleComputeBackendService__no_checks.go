@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutDynamicForwardingParameters(value *GoogleComputeBackendServiceDynamicForwarding) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *GoogleComputeBackendServiceIap) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutLogConfigParameters(v
 }
 
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutMaxStreamDurationParameters(value *GoogleComputeBackendServiceMaxStreamDuration) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutNetworkPassThroughLbTrafficPolicyParameters(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy) error {
 	return nil
 }
 
@@ -181,6 +189,14 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetEdgeSecurityPolicyPar
 }
 
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
 	return nil
 }
 

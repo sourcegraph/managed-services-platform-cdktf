@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/integrationopsgenie/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_opsgenie sentry_integration_opsgenie}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_opsgenie sentry_integration_opsgenie}.
 type IntegrationOpsgenie interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -386,7 +386,7 @@ func (j *jsiiProxy_IntegrationOpsgenie) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_opsgenie sentry_integration_opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_opsgenie sentry_integration_opsgenie} Resource.
 func NewIntegrationOpsgenie(scope constructs.Construct, id *string, config *IntegrationOpsgenieConfig) IntegrationOpsgenie {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewIntegrationOpsgenie(scope constructs.Construct, id *string, config *Inte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/integration_opsgenie sentry_integration_opsgenie} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_opsgenie sentry_integration_opsgenie} Resource.
 func NewIntegrationOpsgenie_Override(i IntegrationOpsgenie, scope constructs.Construct, id *string, config *IntegrationOpsgenieConfig) {
 	_init_.Initialize()
 

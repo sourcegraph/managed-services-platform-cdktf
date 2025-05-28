@@ -7,7 +7,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest struct {
 	// If the value in a row is
 	// NULL, that row is ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_monitoring_alert_policy#column GoogleMonitoringAlertPolicy#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_monitoring_alert_policy#column GoogleMonitoringAlertPolicy#column}
 	Column *string `field:"required" json:"column" yaml:"column"`
 }
 

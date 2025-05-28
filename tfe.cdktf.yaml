@@ -3,7 +3,7 @@ name: tfe
 provider:
   # https://registry.terraform.io/providers/hashicorp/tfe/latest
   source: registry.terraform.io/hashicorp/tfe
-  version: "0.62.0"
+  version: "0.66.0"
 
 target:
   language: go

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -127,6 +127,9 @@ type GoogleContainerCluster interface {
 	InitialNodeCount() *float64
 	SetInitialNodeCount(val *float64)
 	InitialNodeCountInput() *float64
+	InTransitEncryptionConfig() *string
+	SetInTransitEncryptionConfig(val *string)
+	InTransitEncryptionConfigInput() *string
 	IpAllocationPolicy() GoogleContainerClusterIpAllocationPolicyOutputReference
 	IpAllocationPolicyInput() *GoogleContainerClusterIpAllocationPolicy
 	LabelFingerprint() *string
@@ -376,6 +379,7 @@ type GoogleContainerCluster interface {
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
+	ResetInTransitEncryptionConfig()
 	ResetIpAllocationPolicy()
 	ResetLocation()
 	ResetLoggingConfig()
@@ -1233,6 +1237,26 @@ func (j *jsiiProxy_GoogleContainerCluster) InitialNodeCountInput() *float64 {
 	_jsii_.Get(
 		j,
 		"initialNodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -2229,7 +2253,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2247,7 +2271,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2501,6 +2525,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetInitialNodeCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"initialNodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetInTransitEncryptionConfig(val *string) {
+	if err := j.validateSetInTransitEncryptionConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inTransitEncryptionConfig",
 		val,
 	)
 }
@@ -3802,6 +3837,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetInitialNodeCount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitialNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetInTransitEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInTransitEncryptionConfig",
 		nil, // no parameters
 	)
 }

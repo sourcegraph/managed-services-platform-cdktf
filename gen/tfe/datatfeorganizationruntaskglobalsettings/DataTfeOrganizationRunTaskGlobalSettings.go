@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatfeorganizationruntaskglobalsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings}.
 type DataTfeOrganizationRunTaskGlobalSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataTfeOrganizationRunTaskGlobalSettings) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source.
 func NewDataTfeOrganizationRunTaskGlobalSettings(scope constructs.Construct, id *string, config *DataTfeOrganizationRunTaskGlobalSettingsConfig) DataTfeOrganizationRunTaskGlobalSettings {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataTfeOrganizationRunTaskGlobalSettings(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/organization_run_task_global_settings tfe_organization_run_task_global_settings} Data Source.
 func NewDataTfeOrganizationRunTaskGlobalSettings_Override(d DataTfeOrganizationRunTaskGlobalSettings, scope constructs.Construct, id *string, config *DataTfeOrganizationRunTaskGlobalSettingsConfig) {
 	_init_.Initialize()
 

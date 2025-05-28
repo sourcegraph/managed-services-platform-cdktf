@@ -112,6 +112,10 @@ func (j *jsiiProxy_NetappStoragePool) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetCustomPerformanceEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -161,6 +165,14 @@ func (j *jsiiProxy_NetappStoragePool) validateSetReplicaZoneParameters(val *stri
 }
 
 func (j *jsiiProxy_NetappStoragePool) validateSetServiceLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetTotalIopsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetTotalThroughputMibpsParameters(val *string) error {
 	return nil
 }
 

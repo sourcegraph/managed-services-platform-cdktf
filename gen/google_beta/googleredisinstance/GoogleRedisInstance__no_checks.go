@@ -196,10 +196,6 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetSecondaryIpRangeParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstance) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleRedisInstance) validateSetTierParameters(val *string) error {
 	return nil
 }

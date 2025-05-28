@@ -21,17 +21,17 @@ type DataSentryMetricAlertConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The internal ID for this metric alert.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert#internal_id DataSentryMetricAlert#internal_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/metric_alert#internal_id DataSentryMetricAlert#internal_id}
 	InternalId *string `field:"required" json:"internalId" yaml:"internalId"`
 	// The slug of the organization the metric alert belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert#organization DataSentryMetricAlert#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/metric_alert#organization DataSentryMetricAlert#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The slug of the project the metric alert belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert#project DataSentryMetricAlert#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/metric_alert#project DataSentryMetricAlert#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/metric_alert#id DataSentryMetricAlert#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/metric_alert#id DataSentryMetricAlert#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

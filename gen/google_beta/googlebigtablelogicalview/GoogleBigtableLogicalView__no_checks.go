@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -334,14 +334,6 @@ func (j *jsiiProxy_PolicySetParameter) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_PolicySetParameter) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PolicySetParameter) validateSetKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -433,6 +425,14 @@ func (j *jsiiProxy_PolicySetParameter) validateSetSensitiveParameters(val interf
 }
 
 func (j *jsiiProxy_PolicySetParameter) validateSetValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PolicySetParameter) validateSetValueWoParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

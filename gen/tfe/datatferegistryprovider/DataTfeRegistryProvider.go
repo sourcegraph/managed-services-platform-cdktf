@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/datatferegistryprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_provider tfe_registry_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_provider tfe_registry_provider}.
 type DataTfeRegistryProvider interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_provider tfe_registry_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_provider tfe_registry_provider} Data Source.
 func NewDataTfeRegistryProvider(scope constructs.Construct, id *string, config *DataTfeRegistryProviderConfig) DataTfeRegistryProvider {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDataTfeRegistryProvider(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/data-sources/registry_provider tfe_registry_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_provider tfe_registry_provider} Data Source.
 func NewDataTfeRegistryProvider_Override(d DataTfeRegistryProvider, scope constructs.Construct, id *string, config *DataTfeRegistryProviderConfig) {
 	_init_.Initialize()
 

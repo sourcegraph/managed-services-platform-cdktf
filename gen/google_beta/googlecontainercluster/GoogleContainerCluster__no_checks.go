@@ -348,6 +348,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetInitialNodeCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetInTransitEncryptionConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

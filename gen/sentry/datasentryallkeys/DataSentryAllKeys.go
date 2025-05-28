@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryallkeys/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys sentry_all_keys}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys sentry_all_keys}.
 type DataSentryAllKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataSentryAllKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys sentry_all_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys sentry_all_keys} Data Source.
 func NewDataSentryAllKeys(scope constructs.Construct, id *string, config *DataSentryAllKeysConfig) DataSentryAllKeys {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataSentryAllKeys(scope constructs.Construct, id *string, config *DataSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/data-sources/all_keys sentry_all_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_keys sentry_all_keys} Data Source.
 func NewDataSentryAllKeys_Override(d DataSentryAllKeys, scope constructs.Construct, id *string, config *DataSentryAllKeysConfig) {
 	_init_.Initialize()
 

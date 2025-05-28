@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/teamtoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token tfe_team_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token tfe_team_token}.
 type TeamToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type TeamToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	ExpiredAt() *string
 	SetExpiredAt(val *string)
 	ExpiredAtInput() *string
@@ -43,8 +46,6 @@ type TeamToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -114,9 +115,9 @@ type TeamToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetExpiredAt()
 	ResetForceRegenerate()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,6 +184,26 @@ func (j *jsiiProxy_TeamToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamToken) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamToken) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -263,16 +284,6 @@ func (j *jsiiProxy_TeamToken) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TeamToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -389,7 +400,7 @@ func (j *jsiiProxy_TeamToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token tfe_team_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token tfe_team_token} Resource.
 func NewTeamToken(scope constructs.Construct, id *string, config *TeamTokenConfig) TeamToken {
 	_init_.Initialize()
 
@@ -407,7 +418,7 @@ func NewTeamToken(scope constructs.Construct, id *string, config *TeamTokenConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/team_token tfe_team_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_token tfe_team_token} Resource.
 func NewTeamToken_Override(t TeamToken, scope constructs.Construct, id *string, config *TeamTokenConfig) {
 	_init_.Initialize()
 
@@ -448,6 +459,17 @@ func (j *jsiiProxy_TeamToken)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_TeamToken)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TeamToken)SetExpiredAt(val *string) {
 	if err := j.validateSetExpiredAtParameters(val); err != nil {
 		panic(err)
@@ -474,17 +496,6 @@ func (j *jsiiProxy_TeamToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TeamToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -883,6 +894,14 @@ func (t *jsiiProxy_TeamToken) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_TeamToken) ResetDescription() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamToken) ResetExpiredAt() {
 	_jsii_.InvokeVoid(
 		t,
@@ -895,14 +914,6 @@ func (t *jsiiProxy_TeamToken) ResetForceRegenerate() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetForceRegenerate",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TeamToken) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
 		nil, // no parameters
 	)
 }

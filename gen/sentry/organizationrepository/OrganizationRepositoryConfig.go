@@ -23,19 +23,19 @@ type OrganizationRepositoryConfig struct {
 	//
 	// For GitHub, GitLab and BitBucket, it is `{organization}/{repository}`. For VSTS, it is the [repository ID](https://learn.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get#get-a-repository-by-repositoryid).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository#identifier OrganizationRepository#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository#identifier OrganizationRepository#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// The ID of the organization integration. Source from the URL `https://<organization>.sentry.io/settings/integrations/<integration-type>/<integration-id>/` or use the `sentry_organization_integration` data source.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository#integration_id OrganizationRepository#integration_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository#integration_id OrganizationRepository#integration_id}
 	IntegrationId *string `field:"required" json:"integrationId" yaml:"integrationId"`
 	// The type of the organization integration. Supported values are `github`, `github_enterprise`, `gitlab`, `vsts` (Azure DevOps), `bitbucket`, and `bitbucket_server`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository#integration_type OrganizationRepository#integration_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository#integration_type OrganizationRepository#integration_type}
 	IntegrationType *string `field:"required" json:"integrationType" yaml:"integrationType"`
 	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.3/docs/resources/organization_repository#organization OrganizationRepository#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository#organization OrganizationRepository#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 }
 

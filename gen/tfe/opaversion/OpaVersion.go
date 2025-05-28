@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/opaversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/opa_version tfe_opa_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/opa_version tfe_opa_version}.
 type OpaVersion interface {
 	cdktf.TerraformResource
 	Beta() interface{}
@@ -496,7 +496,7 @@ func (j *jsiiProxy_OpaVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/opa_version tfe_opa_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/opa_version tfe_opa_version} Resource.
 func NewOpaVersion(scope constructs.Construct, id *string, config *OpaVersionConfig) OpaVersion {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewOpaVersion(scope constructs.Construct, id *string, config *OpaVersionCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/opa_version tfe_opa_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/opa_version tfe_opa_version} Resource.
 func NewOpaVersion_Override(o OpaVersion, scope constructs.Construct, id *string, config *OpaVersionConfig) {
 	_init_.Initialize()
 

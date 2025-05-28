@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/tfe/workspacesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings tfe_workspace_settings}.
 type WorkspaceSettings interface {
 	cdktf.TerraformResource
 	AgentPoolId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_WorkspaceSettings) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
 func NewWorkspaceSettings(scope constructs.Construct, id *string, config *WorkspaceSettingsConfig) WorkspaceSettings {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewWorkspaceSettings(scope constructs.Construct, id *string, config *Worksp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.62.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace_settings tfe_workspace_settings} Resource.
 func NewWorkspaceSettings_Override(w WorkspaceSettings, scope constructs.Construct, id *string, config *WorkspaceSettingsConfig) {
 	_init_.Initialize()
 
