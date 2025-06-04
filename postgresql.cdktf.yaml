@@ -1,9 +1,9 @@
 name: postgresql
 
 provider:
-  # https://registry.terraform.io/providers/cyrilgdn/postgresql/latest
-  source: registry.terraform.io/cyrilgdn/postgresql
-  version: "1.25.0"
+  # https://registry.terraform.io/providers/sourcegraph/postgresql/latest
+  source: registry.terraform.io/sourcegraph/postgresql
+  version: "1.25.0-sg.2"
 
 target:
   language: go
