@@ -1,3 +1,4 @@
+golang 1.24
+nodejs 20.13
+# Should align with https://sourcegraph.sourcegraph.com/github.com/sourcegraph/sourcegraph@main/-/blob/dev/managedservicesplatform/internal/terraform/terraform.go?L5
 terraform 1.7.5
-golang 1.20
-nodejs 18.17.1
