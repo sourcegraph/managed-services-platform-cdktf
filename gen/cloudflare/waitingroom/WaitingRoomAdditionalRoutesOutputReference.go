@@ -67,6 +67,7 @@ type WaitingRoomAdditionalRoutesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -482,6 +483,14 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHost",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) ResetPath() {

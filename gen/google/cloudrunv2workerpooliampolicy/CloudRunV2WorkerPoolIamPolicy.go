@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/cloudrunv2workerpooliampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
 type CloudRunV2WorkerPoolIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, config *CloudRunV2WorkerPoolIamPolicyConfig) CloudRunV2WorkerPoolIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewCloudRunV2WorkerPoolIamPolicy_Override(c CloudRunV2WorkerPoolIamPolicy, scope constructs.Construct, id *string, config *CloudRunV2WorkerPoolIamPolicyConfig) {
 	_init_.Initialize()
 

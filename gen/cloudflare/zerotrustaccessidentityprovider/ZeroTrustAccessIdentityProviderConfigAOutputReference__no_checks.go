@@ -44,11 +44,11 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validatePutHeaderAttributesParameters(value interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetApiTokenParameters(val *string) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -116,7 +116,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -141,6 +141,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetPromptParameters(val *string) error {
 	return nil
 }
 
@@ -172,7 +176,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

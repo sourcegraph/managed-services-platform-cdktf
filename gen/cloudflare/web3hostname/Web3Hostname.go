@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/web3hostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web3_hostname cloudflare_web3_hostname}.
 type Web3Hostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,8 +44,6 @@ type Web3Hostname interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -124,7 +122,6 @@ type Web3Hostname interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetDnslink()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -281,16 +278,6 @@ func (j *jsiiProxy_Web3Hostname) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Web3Hostname) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -457,7 +444,7 @@ func (j *jsiiProxy_Web3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3HostnameConfig) Web3Hostname {
 	_init_.Initialize()
 
@@ -475,7 +462,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *string, config *Web3HostnameConfig) {
 	_init_.Initialize()
 
@@ -542,17 +529,6 @@ func (j *jsiiProxy_Web3Hostname)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Web3Hostname)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -985,14 +961,6 @@ func (w *jsiiProxy_Web3Hostname) ResetDnslink() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDnslink",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_Web3Hostname) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
 		nil, // no parameters
 	)
 }

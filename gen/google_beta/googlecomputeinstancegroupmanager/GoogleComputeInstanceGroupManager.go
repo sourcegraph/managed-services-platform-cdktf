@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager}.
 type GoogleComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() GoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference
@@ -85,6 +85,8 @@ type GoogleComputeInstanceGroupManager interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourcePolicies() GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference
+	ResourcePoliciesInput() *GoogleComputeInstanceGroupManagerResourcePolicies
 	SelfLink() *string
 	StandbyPolicy() GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
 	StandbyPolicyInput() *GoogleComputeInstanceGroupManagerStandbyPolicy
@@ -176,6 +178,7 @@ type GoogleComputeInstanceGroupManager interface {
 	PutInstanceLifecyclePolicy(value *GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutParams(value *GoogleComputeInstanceGroupManagerParams)
+	PutResourcePolicies(value *GoogleComputeInstanceGroupManagerResourcePolicies)
 	PutStandbyPolicy(value *GoogleComputeInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
@@ -195,6 +198,7 @@ type GoogleComputeInstanceGroupManager interface {
 	ResetOverrideLogicalId()
 	ResetParams()
 	ResetProject()
+	ResetResourcePolicies()
 	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
@@ -626,6 +630,26 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ResourcePolicies() GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference {
+	var returns GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ResourcePoliciesInput() *GoogleComputeInstanceGroupManagerResourcePolicies {
+	var returns *GoogleComputeInstanceGroupManagerResourcePolicies
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroupManager) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -957,7 +981,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupManagerConfig) GoogleComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -975,7 +999,7 @@ func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewGoogleComputeInstanceGroupManager_Override(g GoogleComputeInstanceGroupManager, scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1605,6 +1629,17 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutParams(value *GoogleCom
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutResourcePolicies(value *GoogleComputeInstanceGroupManagerResourcePolicies) {
+	if err := g.validatePutResourcePoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putResourcePolicies",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStandbyPolicy(value *GoogleComputeInstanceGroupManagerStandbyPolicy) {
 	if err := g.validatePutStandbyPolicyParameters(value); err != nil {
 		panic(err)
@@ -1758,6 +1793,14 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourcePolicies",
 		nil, // no parameters
 	)
 }

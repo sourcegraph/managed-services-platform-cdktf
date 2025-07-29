@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/regionalhostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,8 +41,6 @@ type RegionalHostname interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -62,14 +60,15 @@ type RegionalHostname interface {
 	RegionKey() *string
 	SetRegionKey(val *string)
 	RegionKeyInput() *string
+	Routing() *string
+	SetRouting(val *string)
+	RoutingInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() RegionalHostnameTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -116,12 +115,10 @@ type RegionalHostname interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *RegionalHostnameTimeouts)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
+	ResetRouting()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -260,16 +257,6 @@ func (j *jsiiProxy_RegionalHostname) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalHostname) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RegionalHostname) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -340,6 +327,26 @@ func (j *jsiiProxy_RegionalHostname) RegionKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RegionalHostname) Routing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegionalHostname) RoutingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegionalHostname) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -370,26 +377,6 @@ func (j *jsiiProxy_RegionalHostname) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalHostname) Timeouts() RegionalHostnameTimeoutsOutputReference {
-	var returns RegionalHostnameTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RegionalHostname) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RegionalHostname) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -411,7 +398,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -429,7 +416,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 
@@ -489,17 +476,6 @@ func (j *jsiiProxy_RegionalHostname)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegionalHostname)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_RegionalHostname)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -537,6 +513,17 @@ func (j *jsiiProxy_RegionalHostname)SetRegionKey(val *string) {
 	_jsii_.Set(
 		j,
 		"regionKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegionalHostname)SetRouting(val *string) {
+	if err := j.validateSetRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routing",
 		val,
 	)
 }
@@ -905,25 +892,6 @@ func (r *jsiiProxy_RegionalHostname) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_RegionalHostname) PutTimeouts(value *RegionalHostnameTimeouts) {
-	if err := r.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_RegionalHostname) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RegionalHostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -932,10 +900,10 @@ func (r *jsiiProxy_RegionalHostname) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RegionalHostname) ResetTimeouts() {
+func (r *jsiiProxy_RegionalHostname) ResetRouting() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetTimeouts",
+		"resetRouting",
 		nil, // no parameters
 	)
 }

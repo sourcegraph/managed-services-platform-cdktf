@@ -17,20 +17,22 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	SetAllowChildBypass(val interface{})
 	AllowChildBypassInput() interface{}
 	AuditSsh() ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
-	AuditSshInput() *ZeroTrustGatewayPolicyRuleSettingsAuditSsh
+	AuditSshInput() interface{}
 	BisoAdminControls() ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
-	BisoAdminControlsInput() *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls
+	BisoAdminControlsInput() interface{}
+	BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
 	BlockPageEnabled() interface{}
 	SetBlockPageEnabled(val interface{})
 	BlockPageEnabledInput() interface{}
-	BlockPageReason() *string
-	SetBlockPageReason(val *string)
-	BlockPageReasonInput() *string
+	BlockPageInput() interface{}
+	BlockReason() *string
+	SetBlockReason(val *string)
+	BlockReasonInput() *string
 	BypassParentRule() interface{}
 	SetBypassParentRule(val interface{})
 	BypassParentRuleInput() interface{}
 	CheckSession() ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
-	CheckSessionInput() *ZeroTrustGatewayPolicyRuleSettingsCheckSession
+	CheckSessionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,9 +49,9 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DnsResolvers() ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
-	DnsResolversInput() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
+	DnsResolversInput() interface{}
 	Egress() ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
-	EgressInput() *ZeroTrustGatewayPolicyRuleSettingsEgress
+	EgressInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() interface{}
@@ -58,15 +60,18 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	InsecureDisableDnssecValidation() interface{}
 	SetInsecureDisableDnssecValidation(val interface{})
 	InsecureDisableDnssecValidationInput() interface{}
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettings
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettings)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	IpCategories() interface{}
 	SetIpCategories(val interface{})
 	IpCategoriesInput() interface{}
+	IpIndicatorFeeds() interface{}
+	SetIpIndicatorFeeds(val interface{})
+	IpIndicatorFeedsInput() interface{}
 	L4Override() ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference
-	L4OverrideInput() *ZeroTrustGatewayPolicyRuleSettingsL4Override
+	L4OverrideInput() interface{}
 	NotificationSettings() ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference
-	NotificationSettingsInput() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
+	NotificationSettingsInput() interface{}
 	OverrideHost() *string
 	SetOverrideHost(val *string)
 	OverrideHostInput() *string
@@ -74,9 +79,13 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	SetOverrideIps(val *[]*string)
 	OverrideIpsInput() *[]*string
 	PayloadLog() ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference
-	PayloadLogInput() *ZeroTrustGatewayPolicyRuleSettingsPayloadLog
+	PayloadLogInput() interface{}
+	Quarantine() ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference
+	QuarantineInput() interface{}
+	Redirect() ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
+	RedirectInput() interface{}
 	ResolveDnsInternally() ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
-	ResolveDnsInternallyInput() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
+	ResolveDnsInternallyInput() interface{}
 	ResolveDnsThroughCloudflare() interface{}
 	SetResolveDnsThroughCloudflare(val interface{})
 	ResolveDnsThroughCloudflareInput() interface{}
@@ -89,7 +98,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UntrustedCert() ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference
-	UntrustedCertInput() *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert
+	UntrustedCertInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -116,20 +125,24 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuditSsh(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
+	PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage)
 	PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
 	PutDnsResolvers(value *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
 	PutEgress(value *ZeroTrustGatewayPolicyRuleSettingsEgress)
 	PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override)
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
+	PutQuarantine(value *ZeroTrustGatewayPolicyRuleSettingsQuarantine)
+	PutRedirect(value *ZeroTrustGatewayPolicyRuleSettingsRedirect)
 	PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
 	PutUntrustedCert(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert)
 	ResetAddHeaders()
 	ResetAllowChildBypass()
 	ResetAuditSsh()
 	ResetBisoAdminControls()
+	ResetBlockPage()
 	ResetBlockPageEnabled()
-	ResetBlockPageReason()
+	ResetBlockReason()
 	ResetBypassParentRule()
 	ResetCheckSession()
 	ResetDnsResolvers()
@@ -137,11 +150,14 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetIgnoreCnameCategoryMatches()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
+	ResetIpIndicatorFeeds()
 	ResetL4Override()
 	ResetNotificationSettings()
 	ResetOverrideHost()
 	ResetOverrideIps()
 	ResetPayloadLog()
+	ResetQuarantine()
+	ResetRedirect()
 	ResetResolveDnsInternally()
 	ResetResolveDnsThroughCloudflare()
 	ResetUntrustedCert()
@@ -210,8 +226,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSsh()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSshInput() *ZeroTrustGatewayPolicyRuleSettingsAuditSsh {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsAuditSsh
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSshInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"auditSshInput",
@@ -230,11 +246,21 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminC
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminControlsInput() *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminControlsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"bisoAdminControlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
+	_jsii_.Get(
+		j,
+		"blockPage",
 		&returns,
 	)
 	return returns
@@ -260,21 +286,31 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageE
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageReason() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"blockPageReason",
+		"blockPageInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageReasonInput() *string {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockReason() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"blockPageReasonInput",
+		"blockReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockReasonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blockReasonInput",
 		&returns,
 	)
 	return returns
@@ -310,8 +346,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessionInput() *ZeroTrustGatewayPolicyRuleSettingsCheckSession {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsCheckSession
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"checkSessionInput",
@@ -360,8 +396,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolve
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolversInput() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolversInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dnsResolversInput",
@@ -380,8 +416,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Egress() Z
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInput() *ZeroTrustGatewayPolicyRuleSettingsEgress {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsEgress
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"egressInput",
@@ -440,8 +476,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettings {
-	var returns *ZeroTrustGatewayPolicyRuleSettings
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -470,6 +506,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategori
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeeds() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipIndicatorFeeds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeedsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipIndicatorFeedsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4Override() ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference {
 	var returns ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference
 	_jsii_.Get(
@@ -480,8 +536,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4Override
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4OverrideInput() *ZeroTrustGatewayPolicyRuleSettingsL4Override {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsL4Override
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4OverrideInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"l4OverrideInput",
@@ -500,8 +556,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Notificati
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) NotificationSettingsInput() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) NotificationSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"notificationSettingsInput",
@@ -560,11 +616,51 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLog
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLogInput() *ZeroTrustGatewayPolicyRuleSettingsPayloadLog {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsPayloadLog
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLogInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Quarantine() ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference
+	_jsii_.Get(
+		j,
+		"quarantine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) QuarantineInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"quarantineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Redirect() ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"redirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) RedirectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectInput",
 		&returns,
 	)
 	return returns
@@ -580,8 +676,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDns
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternallyInput() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternallyInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"resolveDnsInternallyInput",
@@ -640,8 +736,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedC
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedCertInput() *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedCertInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"untrustedCertInput",
@@ -711,13 +807,13 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockPag
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockPageReason(val *string) {
-	if err := j.validateSetBlockPageReasonParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockReason(val *string) {
+	if err := j.validateSetBlockReasonParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"blockPageReason",
+		"blockReason",
 		val,
 	)
 }
@@ -777,7 +873,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInsecure
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettings) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,6 +891,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpCatego
 	_jsii_.Set(
 		j,
 		"ipCategories",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpIndicatorFeeds(val interface{}) {
+	if err := j.validateSetIpIndicatorFeedsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipIndicatorFeeds",
 		val,
 	)
 }
@@ -1062,6 +1169,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBisoAdm
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage) {
+	if err := z.validatePutBlockPageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putBlockPage",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession) {
 	if err := z.validatePutCheckSessionParameters(value); err != nil {
 		panic(err)
@@ -1128,6 +1246,28 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutPayload
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutQuarantine(value *ZeroTrustGatewayPolicyRuleSettingsQuarantine) {
+	if err := z.validatePutQuarantineParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putQuarantine",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutRedirect(value *ZeroTrustGatewayPolicyRuleSettingsRedirect) {
+	if err := z.validatePutRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putRedirect",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) {
 	if err := z.validatePutResolveDnsInternallyParameters(value); err != nil {
 		panic(err)
@@ -1182,6 +1322,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBisoA
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlockPage() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetBlockPage",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlockPageEnabled() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1190,10 +1338,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlock
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlockPageReason() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlockReason() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetBlockPageReason",
+		"resetBlockReason",
 		nil, // no parameters
 	)
 }
@@ -1254,6 +1402,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetIpCat
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetIpIndicatorFeeds() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIpIndicatorFeeds",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetL4Override() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1290,6 +1446,22 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetPaylo
 	_jsii_.InvokeVoid(
 		z,
 		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetQuarantine() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetQuarantine",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetRedirect() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRedirect",
 		nil, // no parameters
 	)
 }

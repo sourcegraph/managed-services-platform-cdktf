@@ -319,6 +319,14 @@ func validateGoogleComputeRegionDisk_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -502,6 +510,22 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetPhysicalBlockSizeBytesPar
 }
 
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

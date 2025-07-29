@@ -100,10 +100,6 @@ func (j *jsiiProxy_HostnameTlsSetting) validateSetHostnameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_HostnameTlsSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -112,11 +108,11 @@ func (j *jsiiProxy_HostnameTlsSetting) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) validateSetSettingParameters(val *string) error {
+func (j *jsiiProxy_HostnameTlsSetting) validateSetSettingIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) validateSetValueParameters(val *string) error {
+func (j *jsiiProxy_HostnameTlsSetting) validateSetValueParameters(val *map[string]interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/waitingroomevent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 type WaitingRoomEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -53,8 +53,6 @@ type WaitingRoomEvent interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -102,6 +100,12 @@ type WaitingRoomEvent interface {
 	TotalActiveUsers() *float64
 	SetTotalActiveUsers(val *float64)
 	TotalActiveUsersInput() *float64
+	TurnstileAction() *string
+	SetTurnstileAction(val *string)
+	TurnstileActionInput() *string
+	TurnstileMode() *string
+	SetTurnstileMode(val *string)
+	TurnstileModeInput() *string
 	WaitingRoomId() *string
 	SetWaitingRoomId(val *string)
 	WaitingRoomIdInput() *string
@@ -154,7 +158,6 @@ type WaitingRoomEvent interface {
 	ResetCustomPageHtml()
 	ResetDescription()
 	ResetDisableSessionRenewal()
-	ResetId()
 	ResetNewUsersPerMinute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -165,6 +168,8 @@ type WaitingRoomEvent interface {
 	ResetShuffleAtEventStart()
 	ResetSuspended()
 	ResetTotalActiveUsers()
+	ResetTurnstileAction()
+	ResetTurnstileMode()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -378,16 +383,6 @@ func (j *jsiiProxy_WaitingRoomEvent) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomEvent) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -643,6 +638,46 @@ func (j *jsiiProxy_WaitingRoomEvent) TotalActiveUsersInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoomEvent) WaitingRoomId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -684,7 +719,7 @@ func (j *jsiiProxy_WaitingRoomEvent) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *WaitingRoomEventConfig) WaitingRoomEvent {
 	_init_.Initialize()
 
@@ -702,7 +737,7 @@ func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent_Override(w WaitingRoomEvent, scope constructs.Construct, id *string, config *WaitingRoomEventConfig) {
 	_init_.Initialize()
 
@@ -802,17 +837,6 @@ func (j *jsiiProxy_WaitingRoomEvent)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WaitingRoomEvent)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -931,6 +955,28 @@ func (j *jsiiProxy_WaitingRoomEvent)SetTotalActiveUsers(val *float64) {
 	_jsii_.Set(
 		j,
 		"totalActiveUsers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoomEvent)SetTurnstileAction(val *string) {
+	if err := j.validateSetTurnstileActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoomEvent)SetTurnstileMode(val *string) {
+	if err := j.validateSetTurnstileModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileMode",
 		val,
 	)
 }
@@ -1334,14 +1380,6 @@ func (w *jsiiProxy_WaitingRoomEvent) ResetDisableSessionRenewal() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomEvent) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WaitingRoomEvent) ResetNewUsersPerMinute() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1402,6 +1440,22 @@ func (w *jsiiProxy_WaitingRoomEvent) ResetTotalActiveUsers() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTotalActiveUsers",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) ResetTurnstileAction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileAction",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) ResetTurnstileMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileMode",
 		nil, // no parameters
 	)
 }

@@ -267,29 +267,29 @@ func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) Tls13Input() *strin
 }
 
 
-func NewCustomHostnameSslSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomHostnameSslSettingsOutputReference {
+func NewCustomHostnameSslSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomHostnameSslSettingsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewCustomHostnameSslSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewCustomHostnameSslSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_CustomHostnameSslSettingsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewCustomHostnameSslSettingsOutputReference_Override(c CustomHostnameSslSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCustomHostnameSslSettingsOutputReference_Override(c CustomHostnameSslSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }

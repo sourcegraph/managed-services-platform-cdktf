@@ -1,8 +1,10 @@
 module github.com/sourcegraph/managed-services-platform-cdktf
 
-go 1.20
+go 1.22
 
-require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20240517194515-ac2b160ed174
+toolchain go1.24.2
+
+require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20250729170248-aba02d8115c3
 
 require (
 	bitbucket.org/creachadair/shell v0.0.7 // indirect

@@ -85,10 +85,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCharacteristics()
 	ResetCountingExpression()
 	ResetMitigationTimeout()
-	ResetPeriod()
 	ResetRequestsPerPeriod()
 	ResetRequestsToOrigin()
 	ResetScorePerPeriod()
@@ -339,29 +337,29 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformResource() cdk
 }
 
 
-func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesRatelimitOutputReference {
+func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesRatelimitOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesRatelimitOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -695,14 +693,6 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetCharacteristics() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCharacteristics",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetCountingExpression() {
 	_jsii_.InvokeVoid(
 		r,
@@ -715,14 +705,6 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetMitigationTimeout(
 	_jsii_.InvokeVoid(
 		r,
 		"resetMitigationTimeout",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetPeriod() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPeriod",
 		nil, // no parameters
 	)
 }

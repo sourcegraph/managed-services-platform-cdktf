@@ -27,8 +27,8 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *UserAgentBlockingRuleConfiguration
-	SetInternalValue(val *UserAgentBlockingRuleConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -67,6 +67,8 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTarget()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,8 +124,8 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InternalValue() *UserAgentBlockingRuleConfiguration {
-	var returns *UserAgentBlockingRuleConfiguration
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +244,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetInternalValue(val *UserAgentBlockingRuleConfiguration) {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +483,22 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ResetTarget() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetTarget",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

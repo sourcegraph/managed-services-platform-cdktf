@@ -1,0 +1,6 @@
+package datacloudflaremagicnetworkmonitoringconfiguration
+
+
+type DataCloudflareMagicNetworkMonitoringConfigurationWarpDevices struct {
+}
+

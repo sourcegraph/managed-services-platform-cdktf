@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebeyondcorpsecuritygatewayapplicationiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding}.
 type GoogleBeyondcorpSecurityGatewayApplicationIamBinding interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationIamBinding) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding} Resource.
 func NewGoogleBeyondcorpSecurityGatewayApplicationIamBinding(scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayApplicationIamBindingConfig) GoogleBeyondcorpSecurityGatewayApplicationIamBinding {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleBeyondcorpSecurityGatewayApplicationIamBinding(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_security_gateway_application_iam_binding google_beyondcorp_security_gateway_application_iam_binding} Resource.
 func NewGoogleBeyondcorpSecurityGatewayApplicationIamBinding_Override(g GoogleBeyondcorpSecurityGatewayApplicationIamBinding, scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayApplicationIamBindingConfig) {
 	_init_.Initialize()
 

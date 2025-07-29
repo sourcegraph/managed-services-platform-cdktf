@@ -1,0 +1,6 @@
+package datacloudflarezerotrusttunnelwarpconnectors
+
+
+type DataCloudflareZeroTrustTunnelWarpConnectorsResult struct {
+}
+

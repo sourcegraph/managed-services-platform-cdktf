@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) validateOverrid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) validatePutAttestationRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) validatePutTimeoutsParameters(value *GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts) error {
 	return nil
 }

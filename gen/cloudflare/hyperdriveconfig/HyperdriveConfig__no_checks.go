@@ -76,6 +76,10 @@ func (h *jsiiProxy_HyperdriveConfig) validatePutCachingParameters(value *Hyperdr
 	return nil
 }
 
+func (h *jsiiProxy_HyperdriveConfig) validatePutMtlsParameters(value *HyperdriveConfigMtls) error {
+	return nil
+}
+
 func (h *jsiiProxy_HyperdriveConfig) validatePutOriginParameters(value *HyperdriveConfigOrigin) error {
 	return nil
 }
@@ -108,15 +112,15 @@ func (j *jsiiProxy_HyperdriveConfig) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_HyperdriveConfig) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_HyperdriveConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_HyperdriveConfig) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_HyperdriveConfig) validateSetOriginConnectionLimitParameters(val *float64) error {
 	return nil
 }
 

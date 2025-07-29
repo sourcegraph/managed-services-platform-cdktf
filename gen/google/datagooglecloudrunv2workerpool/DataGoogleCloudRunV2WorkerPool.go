@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecloudrunv2workerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
 type DataGoogleCloudRunV2WorkerPool interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -674,7 +674,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source.
 func NewDataGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2WorkerPoolConfig) DataGoogleCloudRunV2WorkerPool {
 	_init_.Initialize()
 
@@ -692,7 +692,7 @@ func NewDataGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source.
 func NewDataGoogleCloudRunV2WorkerPool_Override(d DataGoogleCloudRunV2WorkerPool, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2WorkerPoolConfig) {
 	_init_.Initialize()
 

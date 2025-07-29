@@ -25,9 +25,9 @@ type ZeroTrustAccessGroupExcludeGsuiteOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Email() *[]*string
-	SetEmail(val *[]*string)
-	EmailInput() *[]*string
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
 	// Experimental.
 	Fqn() *string
 	IdentityProviderId() *string
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) Email() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) Email() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"email",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) Email() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) EmailInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) EmailInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"emailInput",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference) TerraformRe
 }
 
 
-func NewZeroTrustAccessGroupExcludeGsuiteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessGroupExcludeGsuiteOutputReference {
+func NewZeroTrustAccessGroupExcludeGsuiteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeGsuiteOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessGroupExcludeGsuiteOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessGroupExcludeGsuiteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuiteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessGroupExcludeGsuiteOutputReference_Override(z ZeroTrustAccessGroupExcludeGsuiteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessGroupExcludeGsuiteOutputReference_Override(z ZeroTrustAccessGroupExcludeGsuiteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeGsuiteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference)SetEmail(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeGsuiteOutputReference)SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}

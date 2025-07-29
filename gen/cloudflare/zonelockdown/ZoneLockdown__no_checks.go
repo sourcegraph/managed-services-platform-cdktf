@@ -104,10 +104,6 @@ func (j *jsiiProxy_ZoneLockdown) validateSetDescriptionParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdown) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneLockdown) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

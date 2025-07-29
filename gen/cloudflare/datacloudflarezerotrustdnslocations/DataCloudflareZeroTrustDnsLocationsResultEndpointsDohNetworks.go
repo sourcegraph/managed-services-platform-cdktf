@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdnslocations
+
+
+type DataCloudflareZeroTrustDnsLocationsResultEndpointsDohNetworks struct {
+}
+

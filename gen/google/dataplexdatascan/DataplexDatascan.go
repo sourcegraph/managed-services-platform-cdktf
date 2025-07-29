@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/dataplexdatascan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
 type DataplexDatascan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,6 +26,8 @@ type DataplexDatascan interface {
 	SetCount(val interface{})
 	CreateTime() *string
 	Data() DataplexDatascanDataOutputReference
+	DataDiscoverySpec() DataplexDatascanDataDiscoverySpecOutputReference
+	DataDiscoverySpecInput() *DataplexDatascanDataDiscoverySpec
 	DataInput() *DataplexDatascanData
 	DataProfileSpec() DataplexDatascanDataProfileSpecOutputReference
 	DataProfileSpecInput() *DataplexDatascanDataProfileSpec
@@ -142,10 +144,12 @@ type DataplexDatascan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutData(value *DataplexDatascanData)
+	PutDataDiscoverySpec(value *DataplexDatascanDataDiscoverySpec)
 	PutDataProfileSpec(value *DataplexDatascanDataProfileSpec)
 	PutDataQualitySpec(value *DataplexDatascanDataQualitySpec)
 	PutExecutionSpec(value *DataplexDatascanExecutionSpec)
 	PutTimeouts(value *DataplexDatascanTimeouts)
+	ResetDataDiscoverySpec()
 	ResetDataProfileSpec()
 	ResetDataQualitySpec()
 	ResetDescription()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_DataplexDatascan) Data() DataplexDatascanDataOutputReference 
 	_jsii_.Get(
 		j,
 		"data",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDiscoverySpec() DataplexDatascanDataDiscoverySpecOutputReference {
+	var returns DataplexDatascanDataDiscoverySpecOutputReference
+	_jsii_.Get(
+		j,
+		"dataDiscoverySpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascan) DataDiscoverySpecInput() *DataplexDatascanDataDiscoverySpec {
+	var returns *DataplexDatascanDataDiscoverySpec
+	_jsii_.Get(
+		j,
+		"dataDiscoverySpecInput",
 		&returns,
 	)
 	return returns
@@ -666,7 +690,7 @@ func (j *jsiiProxy_DataplexDatascan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
 func NewDataplexDatascan(scope constructs.Construct, id *string, config *DataplexDatascanConfig) DataplexDatascan {
 	_init_.Initialize()
 
@@ -684,7 +708,7 @@ func NewDataplexDatascan(scope constructs.Construct, id *string, config *Dataple
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataplex_datascan google_dataplex_datascan} Resource.
 func NewDataplexDatascan_Override(d DataplexDatascan, scope constructs.Construct, id *string, config *DataplexDatascanConfig) {
 	_init_.Initialize()
 
@@ -1204,6 +1228,17 @@ func (d *jsiiProxy_DataplexDatascan) PutData(value *DataplexDatascanData) {
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascan) PutDataDiscoverySpec(value *DataplexDatascanDataDiscoverySpec) {
+	if err := d.validatePutDataDiscoverySpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDataDiscoverySpec",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascan) PutDataProfileSpec(value *DataplexDatascanDataProfileSpec) {
 	if err := d.validatePutDataProfileSpecParameters(value); err != nil {
 		panic(err)
@@ -1245,6 +1280,14 @@ func (d *jsiiProxy_DataplexDatascan) PutTimeouts(value *DataplexDatascanTimeouts
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascan) ResetDataDiscoverySpec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataDiscoverySpec",
+		nil, // no parameters
 	)
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/apishield/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield}.
 type ApiShield interface {
 	cdktf.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
@@ -30,6 +30,7 @@ type ApiShield interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Errors() ApiShieldErrorsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,12 +40,11 @@ type ApiShield interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Messages() ApiShieldMessagesList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -57,6 +57,7 @@ type ApiShield interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Success() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,8 +111,6 @@ type ApiShield interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthIdCharacteristics(value interface{})
-	ResetAuthIdCharacteristics()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -203,6 +202,16 @@ func (j *jsiiProxy_ApiShield) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShield) Errors() ApiShieldErrorsList {
+	var returns ApiShieldErrorsList
+	_jsii_.Get(
+		j,
+		"errors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShield) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -243,21 +252,21 @@ func (j *jsiiProxy_ApiShield) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiShield) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShield) Messages() ApiShieldMessagesList {
+	var returns ApiShieldMessagesList
+	_jsii_.Get(
+		j,
+		"messages",
 		&returns,
 	)
 	return returns
@@ -298,6 +307,16 @@ func (j *jsiiProxy_ApiShield) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShield) Success() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"success",
 		&returns,
 	)
 	return returns
@@ -354,7 +373,7 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
 
@@ -372,7 +391,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
 	_init_.Initialize()
 
@@ -417,17 +436,6 @@ func (j *jsiiProxy_ApiShield)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiShield)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -834,22 +842,6 @@ func (a *jsiiProxy_ApiShield) PutAuthIdCharacteristics(value interface{}) {
 		a,
 		"putAuthIdCharacteristics",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApiShield) ResetAuthIdCharacteristics() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAuthIdCharacteristics",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShield) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

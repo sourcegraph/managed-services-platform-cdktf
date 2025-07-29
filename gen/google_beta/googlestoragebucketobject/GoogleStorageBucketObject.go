@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
 type GoogleStorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -58,6 +58,9 @@ type GoogleStorageBucketObject interface {
 	EventBasedHold() interface{}
 	SetEventBasedHold(val interface{})
 	EventBasedHoldInput() interface{}
+	ForceEmptyContentType() interface{}
+	SetForceEmptyContentType(val interface{})
+	ForceEmptyContentTypeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -105,6 +108,9 @@ type GoogleStorageBucketObject interface {
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
+	SourceMd5Hash() *string
+	SetSourceMd5Hash(val *string)
+	SourceMd5HashInput() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
@@ -174,6 +180,7 @@ type GoogleStorageBucketObject interface {
 	ResetCustomerEncryption()
 	ResetDetectMd5Hash()
 	ResetEventBasedHold()
+	ResetForceEmptyContentType()
 	ResetId()
 	ResetKmsKeyName()
 	ResetMetadata()
@@ -182,6 +189,7 @@ type GoogleStorageBucketObject interface {
 	ResetOverrideLogicalId()
 	ResetRetention()
 	ResetSource()
+	ResetSourceMd5Hash()
 	ResetStorageClass()
 	ResetTemporaryHold()
 	ResetTimeouts()
@@ -463,6 +471,26 @@ func (j *jsiiProxy_GoogleStorageBucketObject) EventBasedHoldInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) ForceEmptyContentType() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) ForceEmptyContentTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -723,6 +751,26 @@ func (j *jsiiProxy_GoogleStorageBucketObject) SourceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) SourceMd5Hash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5Hash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) SourceMd5HashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5HashInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -814,7 +862,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) GoogleStorageBucketObject {
 	_init_.Initialize()
 
@@ -832,7 +880,7 @@ func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject_Override(g GoogleStorageBucketObject, scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -972,6 +1020,17 @@ func (j *jsiiProxy_GoogleStorageBucketObject)SetEventBasedHold(val interface{}) 
 	)
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject)SetForceEmptyContentType(val interface{}) {
+	if err := j.validateSetForceEmptyContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceEmptyContentType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1061,6 +1120,17 @@ func (j *jsiiProxy_GoogleStorageBucketObject)SetSource(val *string) {
 	_jsii_.Set(
 		j,
 		"source",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject)SetSourceMd5Hash(val *string) {
+	if err := j.validateSetSourceMd5HashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceMd5Hash",
 		val,
 	)
 }
@@ -1545,6 +1615,14 @@ func (g *jsiiProxy_GoogleStorageBucketObject) ResetEventBasedHold() {
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) ResetForceEmptyContentType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceEmptyContentType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1589,6 +1667,14 @@ func (g *jsiiProxy_GoogleStorageBucketObject) ResetSource() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketObject) ResetSourceMd5Hash() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceMd5Hash",
 		nil, // no parameters
 	)
 }

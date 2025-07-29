@@ -21,6 +21,7 @@ type AddressMapMembershipsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -68,6 +69,8 @@ type AddressMapMembershipsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentifier()
+	ResetKind()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -108,6 +111,16 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) ComplexObjectIsFromSet(
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -492,6 +505,22 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) ResetIdentifier() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKind",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AddressMapMembershipsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

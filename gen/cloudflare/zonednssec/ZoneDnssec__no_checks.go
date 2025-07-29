@@ -96,7 +96,15 @@ func (j *jsiiProxy_ZoneDnssec) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnssec) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ZoneDnssec) validateSetDnssecMultiSignerParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneDnssec) validateSetDnssecPresignedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneDnssec) validateSetDnssecUseNsec3Parameters(val interface{}) error {
 	return nil
 }
 
@@ -104,11 +112,11 @@ func (j *jsiiProxy_ZoneDnssec) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnssec) validateSetModifiedOnParameters(val *string) error {
+func (j *jsiiProxy_ZoneDnssec) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnssec) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZoneDnssec) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

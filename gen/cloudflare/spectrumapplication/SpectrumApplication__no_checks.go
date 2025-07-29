@@ -84,10 +84,6 @@ func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *Sp
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplication) validatePutOriginPortRangeParameters(value *SpectrumApplicationOriginPortRange) error {
-	return nil
-}
-
 func validateSpectrumApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,10 +112,6 @@ func (j *jsiiProxy_SpectrumApplication) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SpectrumApplication) validateSetIpFirewallParameters(val interface{}) error {
 	return nil
 }
@@ -132,7 +124,7 @@ func (j *jsiiProxy_SpectrumApplication) validateSetOriginDirectParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetOriginPortParameters(val *float64) error {
+func (j *jsiiProxy_SpectrumApplication) validateSetOriginPortParameters(val *map[string]interface{}) error {
 	return nil
 }
 

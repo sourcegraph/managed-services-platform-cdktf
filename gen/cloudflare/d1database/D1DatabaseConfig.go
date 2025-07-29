@@ -19,13 +19,24 @@ type D1DatabaseConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#account_id D1Database#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#account_id D1Database#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The name of the D1 Database.
+	// D1 database name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database#name D1Database#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#name D1Database#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Specify the region to create the D1 primary, if available.
+	//
+	// If this option is omitted, the D1 will be created as close as possible to the current user.
+	// Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+	PrimaryLocationHint *string `field:"optional" json:"primaryLocationHint" yaml:"primaryLocationHint"`
+	// Configuration for D1 read replication.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#read_replication D1Database#read_replication}
+	ReadReplication *D1DatabaseReadReplication `field:"optional" json:"readReplication" yaml:"readReplication"`
 }
 

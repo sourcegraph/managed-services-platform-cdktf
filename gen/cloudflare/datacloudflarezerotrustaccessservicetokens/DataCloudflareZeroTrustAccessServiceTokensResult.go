@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessservicetokens
+
+
+type DataCloudflareZeroTrustAccessServiceTokensResult struct {
+}
+

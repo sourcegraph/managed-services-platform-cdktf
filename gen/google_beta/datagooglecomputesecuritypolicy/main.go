@@ -483,6 +483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonCustomConfig", GoGetter: "JsonCustomConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonParsing", GoGetter: "JsonParsing"},
 			_jsii_.MemberProperty{JsiiProperty: "logLevel", GoGetter: "LogLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "requestBodyInspectionSize", GoGetter: "RequestBodyInspectionSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

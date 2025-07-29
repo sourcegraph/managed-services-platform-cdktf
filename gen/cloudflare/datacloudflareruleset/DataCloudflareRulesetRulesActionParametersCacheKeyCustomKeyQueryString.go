@@ -1,0 +1,6 @@
+package datacloudflareruleset
+
+
+type DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyQueryString struct {
+}
+

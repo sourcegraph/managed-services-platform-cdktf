@@ -1,0 +1,6 @@
+package datacloudflarenotificationpolicies
+
+
+type DataCloudflareNotificationPoliciesResultMechanismsPagerduty struct {
+}
+

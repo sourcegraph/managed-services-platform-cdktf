@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/backupdrbackupplan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
 type BackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -538,7 +538,7 @@ func (j *jsiiProxy_BackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) BackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *Backu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan_Override(b BackupDrBackupPlan, scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) {
 	_init_.Initialize()
 

@@ -2,9 +2,9 @@ package pagesproject
 
 
 type PagesProjectDeploymentConfigsPreviewPlacement struct {
-	// Placement Mode for the Pages Function.
+	// Placement mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#mode PagesProject#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#mode PagesProject#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

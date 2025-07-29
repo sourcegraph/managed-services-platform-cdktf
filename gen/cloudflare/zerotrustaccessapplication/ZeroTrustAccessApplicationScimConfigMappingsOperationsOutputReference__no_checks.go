@@ -64,7 +64,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationScimConfigMappingsOperations) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

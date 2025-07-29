@@ -21,7 +21,7 @@ type PagesProjectSourceOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Config() PagesProjectSourceConfigOutputReference
-	ConfigInput() *PagesProjectSourceConfig
+	ConfigInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,8 +29,8 @@ type PagesProjectSourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectSource
-	SetInternalValue(val *PagesProjectSource)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) Config() PagesProjectSourc
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference) ConfigInput() *PagesProjectSourceConfig {
-	var returns *PagesProjectSourceConfig
+func (j *jsiiProxy_PagesProjectSourceOutputReference) ConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"configInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference) InternalValue() *PagesProjectSource {
-	var returns *PagesProjectSource
+func (j *jsiiProxy_PagesProjectSourceOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference)SetInternalValue(val *PagesProjectSource) {
+func (j *jsiiProxy_PagesProjectSourceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

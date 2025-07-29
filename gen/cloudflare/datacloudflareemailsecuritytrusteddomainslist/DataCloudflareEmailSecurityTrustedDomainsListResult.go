@@ -1,0 +1,6 @@
+package datacloudflareemailsecuritytrusteddomainslist
+
+
+type DataCloudflareEmailSecurityTrustedDomainsListResult struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -172,6 +172,9 @@ type GoogleBetaProvider interface {
 	ComputeCustomEndpointInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContactCenterInsightsCustomEndpoint() *string
+	SetContactCenterInsightsCustomEndpoint(val *string)
+	ContactCenterInsightsCustomEndpointInput() *string
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
@@ -394,6 +397,12 @@ type GoogleBetaProvider interface {
 	MlEngineCustomEndpoint() *string
 	SetMlEngineCustomEndpoint(val *string)
 	MlEngineCustomEndpointInput() *string
+	ModelArmorCustomEndpoint() *string
+	SetModelArmorCustomEndpoint(val *string)
+	ModelArmorCustomEndpointInput() *string
+	ModelArmorGlobalCustomEndpoint() *string
+	SetModelArmorGlobalCustomEndpoint(val *string)
+	ModelArmorGlobalCustomEndpointInput() *string
 	MonitoringCustomEndpoint() *string
 	SetMonitoringCustomEndpoint(val *string)
 	MonitoringCustomEndpointInput() *string
@@ -665,6 +674,7 @@ type GoogleBetaProvider interface {
 	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
+	ResetContactCenterInsightsCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
 	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
@@ -737,6 +747,8 @@ type GoogleBetaProvider interface {
 	ResetMemorystoreCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
+	ResetModelArmorCustomEndpoint()
+	ResetModelArmorGlobalCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
 	ResetNetappCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
@@ -1881,6 +1893,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ConstructNodeMetadata() *map[string]inter
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ContactCenterInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ContactCenterInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3356,6 +3388,46 @@ func (j *jsiiProxy_GoogleBetaProvider) MlEngineCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ModelArmorCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ModelArmorCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ModelArmorGlobalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ModelArmorGlobalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) MonitoringCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4767,7 +4839,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4785,7 +4857,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5214,6 +5286,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetComputeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"computeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetContactCenterInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"contactCenterInsightsCustomEndpoint",
 		val,
 	)
 }
@@ -5793,6 +5873,22 @@ func (j *jsiiProxy_GoogleBetaProvider)SetMlEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"mlEngineCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetModelArmorCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"modelArmorCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetModelArmorGlobalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"modelArmorGlobalCustomEndpoint",
 		val,
 	)
 }
@@ -6885,6 +6981,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetComputeCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetContactCenterInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContactCenterInsightsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetContainerAnalysisCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -7457,6 +7561,22 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetMlEngineCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMlEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetModelArmorCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelArmorCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetModelArmorGlobalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelArmorGlobalCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdevicedefaultprofile
+
+
+type DataCloudflareZeroTrustDeviceDefaultProfileInclude struct {
+}
+

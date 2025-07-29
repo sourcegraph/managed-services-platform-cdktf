@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -80,6 +80,8 @@ type GoogleComputeSubnetwork interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeSubnetworkParamsOutputReference
+	ParamsInput() *GoogleComputeSubnetworkParams
 	PrivateIpGoogleAccess() interface{}
 	SetPrivateIpGoogleAccess(val interface{})
 	PrivateIpGoogleAccessInput() interface{}
@@ -174,6 +176,7 @@ type GoogleComputeSubnetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *GoogleComputeSubnetworkLogConfig)
+	PutParams(value *GoogleComputeSubnetworkParams)
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *GoogleComputeSubnetworkTimeouts)
 	ResetAllowSubnetCidrRoutesOverlap()
@@ -188,6 +191,7 @@ type GoogleComputeSubnetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPrivateIpGoogleAccess()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
@@ -597,6 +601,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) Params() GoogleComputeSubnetworkParamsOutputReference {
+	var returns GoogleComputeSubnetworkParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) ParamsInput() *GoogleComputeSubnetworkParams {
+	var returns *GoogleComputeSubnetworkParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) PrivateIpGoogleAccess() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -908,7 +932,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -926,7 +950,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1578,6 +1602,17 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) PutLogConfig(value *GoogleComputeSub
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetwork) PutParams(value *GoogleComputeSubnetworkParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetwork) PutSecondaryIpRange(value interface{}) {
 	if err := g.validatePutSecondaryIpRangeParameters(value); err != nil {
 		panic(err)
@@ -1676,6 +1711,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

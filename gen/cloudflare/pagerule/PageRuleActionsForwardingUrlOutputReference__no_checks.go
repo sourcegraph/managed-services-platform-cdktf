@@ -56,7 +56,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetInternalValueParameters(val *PageRuleActionsForwardingUrl) error {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

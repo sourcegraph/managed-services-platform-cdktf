@@ -9,24 +9,32 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrusttunnelcloudflared/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
 type DataCloudflareZeroTrustTunnelCloudflared interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AccountTag() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Connections() DataCloudflareZeroTrustTunnelCloudflaredConnectionsList
+	ConnsActiveAt() *string
+	ConnsInactiveAt() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	DeletedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() DataCloudflareZeroTrustTunnelCloudflaredFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,16 +44,12 @@ type DataCloudflareZeroTrustTunnelCloudflared interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	IsDeleted() interface{}
-	SetIsDeleted(val interface{})
-	IsDeletedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -62,7 +66,10 @@ type DataCloudflareZeroTrustTunnelCloudflared interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TunnelType() *string
+	TunnelId() *string
+	SetTunnelId(val *string)
+	TunnelIdInput() *string
+	TunType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,10 +95,12 @@ type DataCloudflareZeroTrustTunnelCloudflared interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetIsDeleted()
+	PutFilter(value *DataCloudflareZeroTrustTunnelCloudflaredFilter)
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTunnelId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -131,11 +140,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) AccountIdInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) AccountTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Connections() DataCloudflareZeroTrustTunnelCloudflaredConnectionsList {
+	var returns DataCloudflareZeroTrustTunnelCloudflaredConnectionsList
+	_jsii_.Get(
+		j,
+		"connections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ConnsActiveAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connsActiveAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ConnsInactiveAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connsInactiveAt",
 		&returns,
 	)
 	return returns
@@ -161,11 +210,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Count() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) DeletedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Filter() DataCloudflareZeroTrustTunnelCloudflaredFilterOutputReference {
+	var returns DataCloudflareZeroTrustTunnelCloudflaredFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -211,26 +300,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) IsDeleted() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isDeleted",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) IsDeletedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isDeletedInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -241,21 +310,21 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Lifecycle() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Name() *string {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Metadata() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"metadata",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) NameInput() *string {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"name",
 		&returns,
 	)
 	return returns
@@ -341,18 +410,38 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TerraformResourceTy
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TunnelType() *string {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TunnelId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"tunnelType",
+		"tunnelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TunnelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TunType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunType",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflared(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfig) DataCloudflareZeroTrustTunnelCloudflared {
 	_init_.Initialize()
 
@@ -370,7 +459,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflared(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflared_Override(d DataCloudflareZeroTrustTunnelCloudflared, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfig) {
 	_init_.Initialize()
 
@@ -419,17 +508,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetIsDeleted(val interface{}) {
-	if err := j.validateSetIsDeletedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isDeleted",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -441,21 +519,21 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared)SetTunnelId(val *string) {
+	if err := j.validateSetTunnelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelId",
 		val,
 	)
 }
@@ -745,10 +823,21 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) OverrideLogicalId(n
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ResetIsDeleted() {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) PutFilter(value *DataCloudflareZeroTrustTunnelCloudflaredFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
-		"resetIsDeleted",
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }
@@ -757,6 +846,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) ResetTunnelId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTunnelId",
 		nil, // no parameters
 	)
 }

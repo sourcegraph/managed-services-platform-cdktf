@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/origincacertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type OriginCaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,15 +45,10 @@ type OriginCaCertificate interface {
 	SetHostnames(val *[]*string)
 	HostnamesInput() *[]*string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MinDaysForRenewal() *float64
-	SetMinDaysForRenewal(val *float64)
-	MinDaysForRenewalInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -121,12 +116,13 @@ type OriginCaCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
-	ResetMinDaysForRenewal()
+	ResetCsr()
+	ResetHostnames()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestedValidity()
+	ResetRequestType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -295,41 +291,11 @@ func (j *jsiiProxy_OriginCaCertificate) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OriginCaCertificate) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OriginCaCertificate) MinDaysForRenewal() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minDaysForRenewal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OriginCaCertificate) MinDaysForRenewalInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minDaysForRenewalInput",
 		&returns,
 	)
 	return returns
@@ -446,7 +412,7 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
@@ -464,7 +430,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Construct, id *string, config *OriginCaCertificateConfig) {
 	_init_.Initialize()
 
@@ -535,17 +501,6 @@ func (j *jsiiProxy_OriginCaCertificate)SetHostnames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -553,17 +508,6 @@ func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OriginCaCertificate)SetMinDaysForRenewal(val *float64) {
-	if err := j.validateSetMinDaysForRenewalParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"minDaysForRenewal",
 		val,
 	)
 }
@@ -962,18 +906,18 @@ func (o *jsiiProxy_OriginCaCertificate) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ResetId() {
+func (o *jsiiProxy_OriginCaCertificate) ResetCsr() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetId",
+		"resetCsr",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ResetMinDaysForRenewal() {
+func (o *jsiiProxy_OriginCaCertificate) ResetHostnames() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetMinDaysForRenewal",
+		"resetHostnames",
 		nil, // no parameters
 	)
 }
@@ -990,6 +934,14 @@ func (o *jsiiProxy_OriginCaCertificate) ResetRequestedValidity() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRequestedValidity",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OriginCaCertificate) ResetRequestType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRequestType",
 		nil, // no parameters
 	)
 }

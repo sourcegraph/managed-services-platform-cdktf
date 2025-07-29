@@ -10,6 +10,12 @@ import (
 
 type GoogleStorageBucketIpFilterOutputReference interface {
 	cdktf.ComplexObject
+	AllowAllServiceAgentAccess() interface{}
+	SetAllowAllServiceAgentAccess(val interface{})
+	AllowAllServiceAgentAccessInput() interface{}
+	AllowCrossOrgVpcs() interface{}
+	SetAllowCrossOrgVpcs(val interface{})
+	AllowCrossOrgVpcsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +76,8 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPublicNetworkSource(value *GoogleStorageBucketIpFilterPublicNetworkSource)
 	PutVpcNetworkSources(value interface{})
+	ResetAllowAllServiceAgentAccess()
+	ResetAllowCrossOrgVpcs()
 	ResetPublicNetworkSource()
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
@@ -85,6 +93,46 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 // The jsii proxy struct for GoogleStorageBucketIpFilterOutputReference
 type jsiiProxy_GoogleStorageBucketIpFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) AllowAllServiceAgentAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAllServiceAgentAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) AllowAllServiceAgentAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAllServiceAgentAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) AllowCrossOrgVpcs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossOrgVpcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) AllowCrossOrgVpcsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossOrgVpcsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -242,6 +290,28 @@ func NewGoogleStorageBucketIpFilterOutputReference_Override(g GoogleStorageBucke
 		"@cdktf/provider-google_beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference)SetAllowAllServiceAgentAccess(val interface{}) {
+	if err := j.validateSetAllowAllServiceAgentAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAllServiceAgentAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference)SetAllowCrossOrgVpcs(val interface{}) {
+	if err := j.validateSetAllowCrossOrgVpcsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowCrossOrgVpcs",
+		val,
 	)
 }
 
@@ -516,6 +586,22 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) PutVpcNetworkSour
 		g,
 		"putVpcNetworkSources",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) ResetAllowAllServiceAgentAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowAllServiceAgentAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) ResetAllowCrossOrgVpcs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowCrossOrgVpcs",
+		nil, // no parameters
 	)
 }
 

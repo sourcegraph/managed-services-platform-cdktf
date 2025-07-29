@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinterconnectattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
 type ComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
 	SetAdminEnabled(val interface{})
 	AdminEnabledInput() interface{}
+	AttachmentGroup() *string
 	Bandwidth() *string
 	SetBandwidth(val *string)
 	BandwidthInput() *string
@@ -229,6 +230,16 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) AdminEnabledInput() interface{
 	_jsii_.Get(
 		j,
 		"adminEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) AttachmentGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentGroup",
 		&returns,
 	)
 	return returns
@@ -915,7 +926,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) VlanTag8021QInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) ComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -933,7 +944,7 @@ func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment_Override(c ComputeInterconnectAttachment, scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleiamworkloadidentitypoolnamespace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
 type GoogleIamWorkloadIdentityPoolNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolNamespace) WorkloadIdentityPoolN
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
 func NewGoogleIamWorkloadIdentityPoolNamespace(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolNamespaceConfig) GoogleIamWorkloadIdentityPoolNamespace {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewGoogleIamWorkloadIdentityPoolNamespace(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
 func NewGoogleIamWorkloadIdentityPoolNamespace_Override(g GoogleIamWorkloadIdentityPoolNamespace, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolNamespaceConfig) {
 	_init_.Initialize()
 

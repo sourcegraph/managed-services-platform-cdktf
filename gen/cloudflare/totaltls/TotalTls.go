@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/totaltls/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/total_tls cloudflare_total_tls}.
 type TotalTls interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,8 +43,6 @@ type TotalTls interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,6 +65,7 @@ type TotalTls interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ValidityPeriod() *float64
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -114,7 +113,6 @@ type TotalTls interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCertificateAuthority()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -266,16 +264,6 @@ func (j *jsiiProxy_TotalTls) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TotalTls) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TotalTls) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -356,6 +344,16 @@ func (j *jsiiProxy_TotalTls) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TotalTls) ValidityPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"validityPeriod",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TotalTls) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -377,7 +375,7 @@ func (j *jsiiProxy_TotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig) TotalTls {
 	_init_.Initialize()
 
@@ -395,7 +393,7 @@ func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls_Override(t TotalTls, scope constructs.Construct, id *string, config *TotalTlsConfig) {
 	_init_.Initialize()
 
@@ -462,17 +460,6 @@ func (j *jsiiProxy_TotalTls)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TotalTls)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -875,14 +862,6 @@ func (t *jsiiProxy_TotalTls) ResetCertificateAuthority() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetCertificateAuthority",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TotalTls) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package datacloudflareworkersforplatformsdispatchnamespaces
+
+
+type DataCloudflareWorkersForPlatformsDispatchNamespacesResult struct {
+}
+

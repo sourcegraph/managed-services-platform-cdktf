@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledataplexaspecttype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
 type GoogleDataplexAspectType interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -576,7 +576,7 @@ func (j *jsiiProxy_GoogleDataplexAspectType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) GoogleDataplexAspectType {
 	_init_.Initialize()
 
@@ -594,7 +594,7 @@ func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType_Override(g GoogleDataplexAspectType, scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) {
 	_init_.Initialize()
 

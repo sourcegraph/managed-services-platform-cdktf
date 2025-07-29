@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledataplexglossaryterm/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term}.
 type GoogleDataplexGlossaryTerm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -587,7 +587,7 @@ func (j *jsiiProxy_GoogleDataplexGlossaryTerm) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term} Resource.
 func NewGoogleDataplexGlossaryTerm(scope constructs.Construct, id *string, config *GoogleDataplexGlossaryTermConfig) GoogleDataplexGlossaryTerm {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewGoogleDataplexGlossaryTerm(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_term google_dataplex_glossary_term} Resource.
 func NewGoogleDataplexGlossaryTerm_Override(g GoogleDataplexGlossaryTerm, scope constructs.Construct, id *string, config *GoogleDataplexGlossaryTermConfig) {
 	_init_.Initialize()
 

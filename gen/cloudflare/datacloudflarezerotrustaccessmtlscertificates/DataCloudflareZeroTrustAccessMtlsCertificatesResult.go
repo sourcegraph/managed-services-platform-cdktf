@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessmtlscertificates
+
+
+type DataCloudflareZeroTrustAccessMtlsCertificatesResult struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudrunv2workerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
 type GoogleCloudRunV2WorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -897,7 +897,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPool) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource.
 func NewGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolConfig) GoogleCloudRunV2WorkerPool {
 	_init_.Initialize()
 
@@ -915,7 +915,7 @@ func NewGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource.
 func NewGoogleCloudRunV2WorkerPool_Override(g GoogleCloudRunV2WorkerPool, scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolConfig) {
 	_init_.Initialize()
 

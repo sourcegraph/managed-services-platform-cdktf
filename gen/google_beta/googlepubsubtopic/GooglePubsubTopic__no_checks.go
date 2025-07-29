@@ -80,6 +80,10 @@ func (g *jsiiProxy_GooglePubsubTopic) validatePutMessageStoragePolicyParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) validatePutSchemaSettingsParameters(value *GooglePubsubTopicSchemaSettings) error {
 	return nil
 }

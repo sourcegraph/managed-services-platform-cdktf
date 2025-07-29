@@ -283,6 +283,38 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetBandwidthPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpv6AddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpv6AddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateSubnetsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

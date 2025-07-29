@@ -25,6 +25,8 @@ type ComputeRegionUrlMapPathMatcherOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultRouteAction() ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference
+	DefaultRouteActionInput() *ComputeRegionUrlMapPathMatcherDefaultRouteAction
 	DefaultService() *string
 	SetDefaultService(val *string)
 	DefaultServiceInput() *string
@@ -76,9 +78,11 @@ type ComputeRegionUrlMapPathMatcherOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDefaultRouteAction(value *ComputeRegionUrlMapPathMatcherDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeRegionUrlMapPathMatcherDefaultUrlRedirect)
 	PutPathRule(value interface{})
 	PutRouteRules(value interface{})
+	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
@@ -124,6 +128,26 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) DefaultRouteAction() ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference {
+	var returns ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference
+	_jsii_.Get(
+		j,
+		"defaultRouteAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) DefaultRouteActionInput() *ComputeRegionUrlMapPathMatcherDefaultRouteAction {
+	var returns *ComputeRegionUrlMapPathMatcherDefaultRouteAction
+	_jsii_.Get(
+		j,
+		"defaultRouteActionInput",
 		&returns,
 	)
 	return returns
@@ -591,6 +615,17 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) InterpolationF
 	return returns
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutDefaultRouteAction(value *ComputeRegionUrlMapPathMatcherDefaultRouteAction) {
+	if err := c.validatePutDefaultRouteActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDefaultRouteAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutDefaultUrlRedirect(value *ComputeRegionUrlMapPathMatcherDefaultUrlRedirect) {
 	if err := c.validatePutDefaultUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -621,6 +656,14 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutRouteRules(
 		c,
 		"putRouteRules",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) ResetDefaultRouteAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultRouteAction",
+		nil, // no parameters
 	)
 }
 

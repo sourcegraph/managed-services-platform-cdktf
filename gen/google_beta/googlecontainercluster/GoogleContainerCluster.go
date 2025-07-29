@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -17,6 +17,8 @@ type GoogleContainerCluster interface {
 	AllowNetAdmin() interface{}
 	SetAllowNetAdmin(val interface{})
 	AllowNetAdminInput() interface{}
+	AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
@@ -119,6 +121,8 @@ type GoogleContainerCluster interface {
 	FriendlyUniqueId() *string
 	GatewayApiConfig() GoogleContainerClusterGatewayApiConfigOutputReference
 	GatewayApiConfigInput() *GoogleContainerClusterGatewayApiConfig
+	GkeAutoUpgradeConfig() GoogleContainerClusterGkeAutoUpgradeConfigOutputReference
+	GkeAutoUpgradeConfigInput() *GoogleContainerClusterGkeAutoUpgradeConfig
 	Id() *string
 	SetId(val *string)
 	IdentityServiceConfig() GoogleContainerClusterIdentityServiceConfigOutputReference
@@ -171,6 +175,8 @@ type GoogleContainerCluster interface {
 	SetNetworkingMode(val *string)
 	NetworkingModeInput() *string
 	NetworkInput() *string
+	NetworkPerformanceConfig() GoogleContainerClusterNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *GoogleContainerClusterNetworkPerformanceConfig
 	NetworkPolicy() GoogleContainerClusterNetworkPolicyOutputReference
 	NetworkPolicyInput() *GoogleContainerClusterNetworkPolicy
 	// The tree node.
@@ -301,6 +307,7 @@ type GoogleContainerCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAddonsConfig(value *GoogleContainerClusterAddonsConfig)
+	PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig)
 	PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig)
 	PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
@@ -315,6 +322,7 @@ type GoogleContainerCluster interface {
 	PutEnterpriseConfig(value *GoogleContainerClusterEnterpriseConfig)
 	PutFleet(value *GoogleContainerClusterFleet)
 	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
+	PutGkeAutoUpgradeConfig(value *GoogleContainerClusterGkeAutoUpgradeConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *GoogleContainerClusterLoggingConfig)
@@ -323,6 +331,7 @@ type GoogleContainerCluster interface {
 	PutMasterAuthorizedNetworksConfig(value *GoogleContainerClusterMasterAuthorizedNetworksConfig)
 	PutMeshCertificates(value *GoogleContainerClusterMeshCertificates)
 	PutMonitoringConfig(value *GoogleContainerClusterMonitoringConfig)
+	PutNetworkPerformanceConfig(value *GoogleContainerClusterNetworkPerformanceConfig)
 	PutNetworkPolicy(value *GoogleContainerClusterNetworkPolicy)
 	PutNodeConfig(value *GoogleContainerClusterNodeConfig)
 	PutNodePool(value interface{})
@@ -346,6 +355,7 @@ type GoogleContainerCluster interface {
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
 	ResetAllowNetAdmin()
+	ResetAnonymousAuthenticationConfig()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -376,6 +386,7 @@ type GoogleContainerCluster interface {
 	ResetEnterpriseConfig()
 	ResetFleet()
 	ResetGatewayApiConfig()
+	ResetGkeAutoUpgradeConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
@@ -393,6 +404,7 @@ type GoogleContainerCluster interface {
 	ResetMonitoringService()
 	ResetNetwork()
 	ResetNetworkingMode()
+	ResetNetworkPerformanceConfig()
 	ResetNetworkPolicy()
 	ResetNodeConfig()
 	ResetNodeLocations()
@@ -477,6 +489,26 @@ func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowNetAdminInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference {
+	var returns GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig {
+	var returns *GoogleContainerClusterAnonymousAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfigInput",
 		&returns,
 	)
 	return returns
@@ -1182,6 +1214,26 @@ func (j *jsiiProxy_GoogleContainerCluster) GatewayApiConfigInput() *GoogleContai
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) GkeAutoUpgradeConfig() GoogleContainerClusterGkeAutoUpgradeConfigOutputReference {
+	var returns GoogleContainerClusterGkeAutoUpgradeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GkeAutoUpgradeConfigInput() *GoogleContainerClusterGkeAutoUpgradeConfig {
+	var returns *GoogleContainerClusterGkeAutoUpgradeConfig
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1567,6 +1619,26 @@ func (j *jsiiProxy_GoogleContainerCluster) NetworkInput() *string {
 	_jsii_.Get(
 		j,
 		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPerformanceConfig() GoogleContainerClusterNetworkPerformanceConfigOutputReference {
+	var returns GoogleContainerClusterNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPerformanceConfigInput() *GoogleContainerClusterNetworkPerformanceConfig {
+	var returns *GoogleContainerClusterNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -2253,7 +2325,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2271,7 +2343,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3088,6 +3160,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAddonsConfig(value *GoogleContaine
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig) {
+	if err := g.validatePutAnonymousAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAnonymousAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig) {
 	if err := g.validatePutAuthenticatorGroupsConfigParameters(value); err != nil {
 		panic(err)
@@ -3242,6 +3325,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleCont
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutGkeAutoUpgradeConfig(value *GoogleContainerClusterGkeAutoUpgradeConfig) {
+	if err := g.validatePutGkeAutoUpgradeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGkeAutoUpgradeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig) {
 	if err := g.validatePutIdentityServiceConfigParameters(value); err != nil {
 		panic(err)
@@ -3326,6 +3420,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMonitoringConfig(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putMonitoringConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNetworkPerformanceConfig(value *GoogleContainerClusterNetworkPerformanceConfig) {
+	if err := g.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPerformanceConfig",
 		[]interface{}{value},
 	)
 }
@@ -3577,6 +3682,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetAllowNetAdmin() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetAnonymousAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnonymousAuthenticationConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetAuthenticatorGroupsConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3817,6 +3930,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetGatewayApiConfig() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetGkeAutoUpgradeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeAutoUpgradeConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3949,6 +4070,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetNetworkingMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkingMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPerformanceConfig",
 		nil, // no parameters
 	)
 }

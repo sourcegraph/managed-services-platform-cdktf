@@ -9,13 +9,14 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/authenticatedoriginpullscertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
 type AuthenticatedOriginPullsCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
 	SetCertificate(val *string)
+	CertificateId() *string
 	CertificateInput() *string
 	// Experimental.
 	Connection() interface{}
@@ -31,6 +32,7 @@ type AuthenticatedOriginPullsCertificate interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() cdktf.IResolvable
 	ExpiresOn() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -41,8 +43,6 @@ type AuthenticatedOriginPullsCertificate interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Issuer() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -63,7 +63,6 @@ type AuthenticatedOriginPullsCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SerialNumber() *string
 	Signature() *string
 	Status() *string
 	// Experimental.
@@ -72,11 +71,6 @@ type AuthenticatedOriginPullsCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() AuthenticatedOriginPullsCertificateTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	UploadedOn() *string
 	ZoneId() *string
 	SetZoneId(val *string)
@@ -124,12 +118,9 @@ type AuthenticatedOriginPullsCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *AuthenticatedOriginPullsCertificateTimeouts)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -163,6 +154,16 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Certificate() *string {
 	_jsii_.Get(
 		j,
 		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) CertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateId",
 		&returns,
 	)
 	return returns
@@ -218,6 +219,16 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) ExpiresOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -263,16 +274,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -358,16 +359,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) SerialNumber() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serialNumber",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Signature() *string {
 	var returns *string
 	_jsii_.Get(
@@ -418,46 +409,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) TerraformResourceType() 
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Timeouts() AuthenticatedOriginPullsCertificateTimeoutsOutputReference {
-	var returns AuthenticatedOriginPullsCertificateTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) UploadedOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -489,7 +440,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) AuthenticatedOriginPullsCertificate {
 	_init_.Initialize()
 
@@ -507,7 +458,7 @@ func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate_Override(a AuthenticatedOriginPullsCertificate, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) {
 	_init_.Initialize()
 
@@ -567,17 +518,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -615,17 +555,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -994,37 +923,10 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) OverrideLogicalId(newLog
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) PutTimeouts(value *AuthenticatedOriginPullsCertificateTimeouts) {
-	if err := a.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

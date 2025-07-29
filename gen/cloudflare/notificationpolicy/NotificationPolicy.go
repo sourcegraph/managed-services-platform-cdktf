@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/notificationpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy cloudflare_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/notification_policy cloudflare_notification_policy}.
 type NotificationPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AlertInterval() *string
+	SetAlertInterval(val *string)
+	AlertIntervalInput() *string
 	AlertType() *string
 	SetAlertType(val *string)
 	AlertTypeInput() *string
@@ -38,13 +41,11 @@ type NotificationPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EmailIntegration() NotificationPolicyEmailIntegrationList
-	EmailIntegrationInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	Filters() NotificationPolicyFiltersOutputReference
-	FiltersInput() *NotificationPolicyFilters
+	FiltersInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,20 +55,18 @@ type NotificationPolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mechanisms() NotificationPolicyMechanismsOutputReference
+	MechanismsInput() interface{}
 	Modified() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	PagerdutyIntegration() NotificationPolicyPagerdutyIntegrationList
-	PagerdutyIntegrationInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -84,8 +83,6 @@ type NotificationPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WebhooksIntegration() NotificationPolicyWebhooksIntegrationList
-	WebhooksIntegrationInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,19 +126,15 @@ type NotificationPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEmailIntegration(value interface{})
 	PutFilters(value *NotificationPolicyFilters)
-	PutPagerdutyIntegration(value interface{})
-	PutWebhooksIntegration(value interface{})
+	PutMechanisms(value *NotificationPolicyMechanisms)
+	ResetAlertInterval()
 	ResetDescription()
-	ResetEmailIntegration()
+	ResetEnabled()
 	ResetFilters()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPagerdutyIntegration()
-	ResetWebhooksIntegration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -175,6 +168,26 @@ func (j *jsiiProxy_NotificationPolicy) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicy) AlertInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicy) AlertIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertIntervalInput",
 		&returns,
 	)
 	return returns
@@ -280,26 +293,6 @@ func (j *jsiiProxy_NotificationPolicy) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicy) EmailIntegration() NotificationPolicyEmailIntegrationList {
-	var returns NotificationPolicyEmailIntegrationList
-	_jsii_.Get(
-		j,
-		"emailIntegration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationPolicy) EmailIntegrationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"emailIntegrationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NotificationPolicy) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -330,8 +323,8 @@ func (j *jsiiProxy_NotificationPolicy) Filters() NotificationPolicyFiltersOutput
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicy) FiltersInput() *NotificationPolicyFilters {
-	var returns *NotificationPolicyFilters
+func (j *jsiiProxy_NotificationPolicy) FiltersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"filtersInput",
@@ -380,21 +373,31 @@ func (j *jsiiProxy_NotificationPolicy) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicy) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NotificationPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicy) Mechanisms() NotificationPolicyMechanismsOutputReference {
+	var returns NotificationPolicyMechanismsOutputReference
+	_jsii_.Get(
+		j,
+		"mechanisms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicy) MechanismsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mechanismsInput",
 		&returns,
 	)
 	return returns
@@ -435,26 +438,6 @@ func (j *jsiiProxy_NotificationPolicy) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationPolicy) PagerdutyIntegration() NotificationPolicyPagerdutyIntegrationList {
-	var returns NotificationPolicyPagerdutyIntegrationList
-	_jsii_.Get(
-		j,
-		"pagerdutyIntegration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationPolicy) PagerdutyIntegrationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pagerdutyIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -520,28 +503,8 @@ func (j *jsiiProxy_NotificationPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicy) WebhooksIntegration() NotificationPolicyWebhooksIntegrationList {
-	var returns NotificationPolicyWebhooksIntegrationList
-	_jsii_.Get(
-		j,
-		"webhooksIntegration",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_NotificationPolicy) WebhooksIntegrationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"webhooksIntegrationInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy(scope constructs.Construct, id *string, config *NotificationPolicyConfig) NotificationPolicy {
 	_init_.Initialize()
 
@@ -559,7 +522,7 @@ func NewNotificationPolicy(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy_Override(n NotificationPolicy, scope constructs.Construct, id *string, config *NotificationPolicyConfig) {
 	_init_.Initialize()
 
@@ -577,6 +540,17 @@ func (j *jsiiProxy_NotificationPolicy)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicy)SetAlertInterval(val *string) {
+	if err := j.validateSetAlertIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertInterval",
 		val,
 	)
 }
@@ -648,17 +622,6 @@ func (j *jsiiProxy_NotificationPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationPolicy)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1057,17 +1020,6 @@ func (n *jsiiProxy_NotificationPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicy) PutEmailIntegration(value interface{}) {
-	if err := n.validatePutEmailIntegrationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		n,
-		"putEmailIntegration",
-		[]interface{}{value},
-	)
-}
-
 func (n *jsiiProxy_NotificationPolicy) PutFilters(value *NotificationPolicyFilters) {
 	if err := n.validatePutFiltersParameters(value); err != nil {
 		panic(err)
@@ -1079,25 +1031,22 @@ func (n *jsiiProxy_NotificationPolicy) PutFilters(value *NotificationPolicyFilte
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicy) PutPagerdutyIntegration(value interface{}) {
-	if err := n.validatePutPagerdutyIntegrationParameters(value); err != nil {
+func (n *jsiiProxy_NotificationPolicy) PutMechanisms(value *NotificationPolicyMechanisms) {
+	if err := n.validatePutMechanismsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
-		"putPagerdutyIntegration",
+		"putMechanisms",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicy) PutWebhooksIntegration(value interface{}) {
-	if err := n.validatePutWebhooksIntegrationParameters(value); err != nil {
-		panic(err)
-	}
+func (n *jsiiProxy_NotificationPolicy) ResetAlertInterval() {
 	_jsii_.InvokeVoid(
 		n,
-		"putWebhooksIntegration",
-		[]interface{}{value},
+		"resetAlertInterval",
+		nil, // no parameters
 	)
 }
 
@@ -1109,10 +1058,10 @@ func (n *jsiiProxy_NotificationPolicy) ResetDescription() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicy) ResetEmailIntegration() {
+func (n *jsiiProxy_NotificationPolicy) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		n,
-		"resetEmailIntegration",
+		"resetEnabled",
 		nil, // no parameters
 	)
 }
@@ -1125,34 +1074,10 @@ func (n *jsiiProxy_NotificationPolicy) ResetFilters() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicy) ResetId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NotificationPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationPolicy) ResetPagerdutyIntegration() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetPagerdutyIntegration",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationPolicy) ResetWebhooksIntegration() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetWebhooksIntegration",
 		nil, // no parameters
 	)
 }

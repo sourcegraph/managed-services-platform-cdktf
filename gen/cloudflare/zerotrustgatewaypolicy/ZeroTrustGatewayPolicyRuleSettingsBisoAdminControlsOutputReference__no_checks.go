@@ -60,27 +60,15 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableClipboardRedirectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDcpParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableCopyPasteParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDdParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableDownloadParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableKeyboardParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisablePrintingParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableUploadParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDkParameters(val interface{}) error {
 	return nil
 }
 
@@ -88,7 +76,15 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDuParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleworkbenchinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_workbench_instance google_workbench_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance}.
 type GoogleWorkbenchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -679,7 +679,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) UpgradeHistory() GoogleWorkbenchInst
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
 func NewGoogleWorkbenchInstance(scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceConfig) GoogleWorkbenchInstance {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewGoogleWorkbenchInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
 func NewGoogleWorkbenchInstance_Override(g GoogleWorkbenchInstance, scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceConfig) {
 	_init_.Initialize()
 

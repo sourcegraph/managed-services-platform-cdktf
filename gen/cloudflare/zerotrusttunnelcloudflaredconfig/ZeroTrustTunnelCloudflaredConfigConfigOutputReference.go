@@ -27,12 +27,12 @@ type ZeroTrustTunnelCloudflaredConfigConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IngressRule() ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList
-	IngressRuleInput() interface{}
-	InternalValue() *ZeroTrustTunnelCloudflaredConfigConfig
-	SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfig)
+	Ingress() ZeroTrustTunnelCloudflaredConfigConfigIngressList
+	IngressInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	OriginRequest() ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference
-	OriginRequestInput() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest
+	OriginRequestInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	WarpRouting() ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
-	WarpRoutingInput() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
+	WarpRoutingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,9 +67,10 @@ type ZeroTrustTunnelCloudflaredConfigConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIngressRule(value interface{})
+	PutIngress(value interface{})
 	PutOriginRequest(value *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest)
 	PutWarpRouting(value *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting)
+	ResetIngress()
 	ResetOriginRequest()
 	ResetWarpRouting()
 	// Produce the Token's value at resolution time.
@@ -127,28 +128,28 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) IngressRule() ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList {
-	var returns ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) Ingress() ZeroTrustTunnelCloudflaredConfigConfigIngressList {
+	var returns ZeroTrustTunnelCloudflaredConfigConfigIngressList
 	_jsii_.Get(
 		j,
-		"ingressRule",
+		"ingress",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) IngressRuleInput() interface{} {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) IngressInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"ingressRuleInput",
+		"ingressInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) InternalValue() *ZeroTrustTunnelCloudflaredConfigConfig {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfig
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -167,8 +168,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) Origin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) OriginRequestInput() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) OriginRequestInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"originRequestInput",
@@ -207,8 +208,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRoutingInput() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRoutingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"warpRoutingInput",
@@ -267,7 +268,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference)SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfig) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,13 +487,13 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) Interp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) PutIngressRule(value interface{}) {
-	if err := z.validatePutIngressRuleParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) PutIngress(value interface{}) {
+	if err := z.validatePutIngressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putIngressRule",
+		"putIngress",
 		[]interface{}{value},
 	)
 }
@@ -516,6 +517,14 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) PutWar
 		z,
 		"putWarpRouting",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) ResetIngress() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIngress",
+		nil, // no parameters
 	)
 }
 

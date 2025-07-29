@@ -72,6 +72,14 @@ func (f *jsiiProxy_FirewallRule) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (f *jsiiProxy_FirewallRule) validatePutActionParameters(value *FirewallRuleAction) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirewallRule) validatePutFilterParameters(value *FirewallRuleFilter) error {
+	return nil
+}
+
 func validateFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,10 +96,6 @@ func validateFirewallRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRule) validateSetActionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -100,31 +104,7 @@ func (j *jsiiProxy_FirewallRule) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRule) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_FirewallRule) validateSetFilterIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_FirewallRule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FirewallRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_FirewallRule) validateSetPausedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_FirewallRule) validateSetPriorityParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_FirewallRule) validateSetProductsParameters(val *[]*string) error {
 	return nil
 }
 

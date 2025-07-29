@@ -9,25 +9,14 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustgatewaysettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
 type ZeroTrustGatewaySettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	ActivityLogEnabled() interface{}
-	SetActivityLogEnabled(val interface{})
-	ActivityLogEnabledInput() interface{}
-	Antivirus() ZeroTrustGatewaySettingsAntivirusOutputReference
-	AntivirusInput() *ZeroTrustGatewaySettingsAntivirus
-	BlockPage() ZeroTrustGatewaySettingsBlockPageOutputReference
-	BlockPageInput() *ZeroTrustGatewaySettingsBlockPage
-	BodyScanning() ZeroTrustGatewaySettingsBodyScanningOutputReference
-	BodyScanningInput() *ZeroTrustGatewaySettingsBodyScanning
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Certificate() ZeroTrustGatewaySettingsCertificateOutputReference
-	CertificateInput() *ZeroTrustGatewaySettingsCertificate
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,16 +27,11 @@ type ZeroTrustGatewaySettings interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CustomCertificate() ZeroTrustGatewaySettingsCustomCertificateOutputReference
-	CustomCertificateInput() *ZeroTrustGatewaySettingsCustomCertificate
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ExtendedEmailMatching() ZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference
-	ExtendedEmailMatchingInput() *ZeroTrustGatewaySettingsExtendedEmailMatching
-	Fips() ZeroTrustGatewaySettingsFipsOutputReference
-	FipsInput() *ZeroTrustGatewaySettingsFips
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,24 +41,12 @@ type ZeroTrustGatewaySettings interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Logging() ZeroTrustGatewaySettingsLoggingOutputReference
-	LoggingInput() *ZeroTrustGatewaySettingsLogging
 	// The tree node.
 	Node() constructs.Node
-	NonIdentityBrowserIsolationEnabled() interface{}
-	SetNonIdentityBrowserIsolationEnabled(val interface{})
-	NonIdentityBrowserIsolationEnabledInput() interface{}
-	PayloadLog() ZeroTrustGatewaySettingsPayloadLogOutputReference
-	PayloadLogInput() *ZeroTrustGatewaySettingsPayloadLog
-	ProtocolDetectionEnabled() interface{}
-	SetProtocolDetectionEnabled(val interface{})
-	ProtocolDetectionEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -83,24 +55,17 @@ type ZeroTrustGatewaySettings interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	Proxy() ZeroTrustGatewaySettingsProxyOutputReference
-	ProxyInput() *ZeroTrustGatewaySettingsProxy
 	// Experimental.
 	RawOverrides() interface{}
-	SshSessionLog() ZeroTrustGatewaySettingsSshSessionLogOutputReference
-	SshSessionLogInput() *ZeroTrustGatewaySettingsSshSessionLog
+	Settings() ZeroTrustGatewaySettingsSettingsOutputReference
+	SettingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TlsDecryptEnabled() interface{}
-	SetTlsDecryptEnabled(val interface{})
-	TlsDecryptEnabledInput() interface{}
-	UrlBrowserIsolationEnabled() interface{}
-	SetUrlBrowserIsolationEnabled(val interface{})
-	UrlBrowserIsolationEnabledInput() interface{}
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -144,37 +109,11 @@ type ZeroTrustGatewaySettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAntivirus(value *ZeroTrustGatewaySettingsAntivirus)
-	PutBlockPage(value *ZeroTrustGatewaySettingsBlockPage)
-	PutBodyScanning(value *ZeroTrustGatewaySettingsBodyScanning)
-	PutCertificate(value *ZeroTrustGatewaySettingsCertificate)
-	PutCustomCertificate(value *ZeroTrustGatewaySettingsCustomCertificate)
-	PutExtendedEmailMatching(value *ZeroTrustGatewaySettingsExtendedEmailMatching)
-	PutFips(value *ZeroTrustGatewaySettingsFips)
-	PutLogging(value *ZeroTrustGatewaySettingsLogging)
-	PutPayloadLog(value *ZeroTrustGatewaySettingsPayloadLog)
-	PutProxy(value *ZeroTrustGatewaySettingsProxy)
-	PutSshSessionLog(value *ZeroTrustGatewaySettingsSshSessionLog)
-	ResetActivityLogEnabled()
-	ResetAntivirus()
-	ResetBlockPage()
-	ResetBodyScanning()
-	ResetCertificate()
-	ResetCustomCertificate()
-	ResetExtendedEmailMatching()
-	ResetFips()
-	ResetId()
-	ResetLogging()
-	ResetNonIdentityBrowserIsolationEnabled()
+	PutSettings(value *ZeroTrustGatewaySettingsSettings)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPayloadLog()
-	ResetProtocolDetectionEnabled()
-	ResetProxy()
-	ResetSshSessionLog()
-	ResetTlsDecryptEnabled()
-	ResetUrlBrowserIsolationEnabled()
+	ResetSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -213,111 +152,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ActivityLogEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activityLogEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ActivityLogEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activityLogEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) Antivirus() ZeroTrustGatewaySettingsAntivirusOutputReference {
-	var returns ZeroTrustGatewaySettingsAntivirusOutputReference
-	_jsii_.Get(
-		j,
-		"antivirus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) AntivirusInput() *ZeroTrustGatewaySettingsAntivirus {
-	var returns *ZeroTrustGatewaySettingsAntivirus
-	_jsii_.Get(
-		j,
-		"antivirusInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) BlockPage() ZeroTrustGatewaySettingsBlockPageOutputReference {
-	var returns ZeroTrustGatewaySettingsBlockPageOutputReference
-	_jsii_.Get(
-		j,
-		"blockPage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) BlockPageInput() *ZeroTrustGatewaySettingsBlockPage {
-	var returns *ZeroTrustGatewaySettingsBlockPage
-	_jsii_.Get(
-		j,
-		"blockPageInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) BodyScanning() ZeroTrustGatewaySettingsBodyScanningOutputReference {
-	var returns ZeroTrustGatewaySettingsBodyScanningOutputReference
-	_jsii_.Get(
-		j,
-		"bodyScanning",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) BodyScanningInput() *ZeroTrustGatewaySettingsBodyScanning {
-	var returns *ZeroTrustGatewaySettingsBodyScanning
-	_jsii_.Get(
-		j,
-		"bodyScanningInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) Certificate() ZeroTrustGatewaySettingsCertificateOutputReference {
-	var returns ZeroTrustGatewaySettingsCertificateOutputReference
-	_jsii_.Get(
-		j,
-		"certificate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) CertificateInput() *ZeroTrustGatewaySettingsCertificate {
-	var returns *ZeroTrustGatewaySettingsCertificate
-	_jsii_.Get(
-		j,
-		"certificateInput",
 		&returns,
 	)
 	return returns
@@ -353,21 +192,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) CustomCertificate() ZeroTrustGatewaySettingsCustomCertificateOutputReference {
-	var returns ZeroTrustGatewaySettingsCustomCertificateOutputReference
+func (j *jsiiProxy_ZeroTrustGatewaySettings) CreatedAt() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"customCertificate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) CustomCertificateInput() *ZeroTrustGatewaySettingsCustomCertificate {
-	var returns *ZeroTrustGatewaySettingsCustomCertificate
-	_jsii_.Get(
-		j,
-		"customCertificateInput",
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -378,46 +207,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ExtendedEmailMatching() ZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference {
-	var returns ZeroTrustGatewaySettingsExtendedEmailMatchingOutputReference
-	_jsii_.Get(
-		j,
-		"extendedEmailMatching",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ExtendedEmailMatchingInput() *ZeroTrustGatewaySettingsExtendedEmailMatching {
-	var returns *ZeroTrustGatewaySettingsExtendedEmailMatching
-	_jsii_.Get(
-		j,
-		"extendedEmailMatchingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) Fips() ZeroTrustGatewaySettingsFipsOutputReference {
-	var returns ZeroTrustGatewaySettingsFipsOutputReference
-	_jsii_.Get(
-		j,
-		"fips",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) FipsInput() *ZeroTrustGatewaySettingsFips {
-	var returns *ZeroTrustGatewaySettingsFips
-	_jsii_.Get(
-		j,
-		"fipsInput",
 		&returns,
 	)
 	return returns
@@ -463,16 +252,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -483,91 +262,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) Logging() ZeroTrustGatewaySettingsLoggingOutputReference {
-	var returns ZeroTrustGatewaySettingsLoggingOutputReference
-	_jsii_.Get(
-		j,
-		"logging",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) LoggingInput() *ZeroTrustGatewaySettingsLogging {
-	var returns *ZeroTrustGatewaySettingsLogging
-	_jsii_.Get(
-		j,
-		"loggingInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) NonIdentityBrowserIsolationEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"nonIdentityBrowserIsolationEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) NonIdentityBrowserIsolationEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"nonIdentityBrowserIsolationEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) PayloadLog() ZeroTrustGatewaySettingsPayloadLogOutputReference {
-	var returns ZeroTrustGatewaySettingsPayloadLogOutputReference
-	_jsii_.Get(
-		j,
-		"payloadLog",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) PayloadLogInput() *ZeroTrustGatewaySettingsPayloadLog {
-	var returns *ZeroTrustGatewaySettingsPayloadLog
-	_jsii_.Get(
-		j,
-		"payloadLogInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ProtocolDetectionEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"protocolDetectionEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ProtocolDetectionEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"protocolDetectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -593,26 +292,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) Proxy() ZeroTrustGatewaySettingsProxyOutputReference {
-	var returns ZeroTrustGatewaySettingsProxyOutputReference
-	_jsii_.Get(
-		j,
-		"proxy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) ProxyInput() *ZeroTrustGatewaySettingsProxy {
-	var returns *ZeroTrustGatewaySettingsProxy
-	_jsii_.Get(
-		j,
-		"proxyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -623,21 +302,21 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) SshSessionLog() ZeroTrustGatewaySettingsSshSessionLogOutputReference {
-	var returns ZeroTrustGatewaySettingsSshSessionLogOutputReference
+func (j *jsiiProxy_ZeroTrustGatewaySettings) Settings() ZeroTrustGatewaySettingsSettingsOutputReference {
+	var returns ZeroTrustGatewaySettingsSettingsOutputReference
 	_jsii_.Get(
 		j,
-		"sshSessionLog",
+		"settings",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) SshSessionLogInput() *ZeroTrustGatewaySettingsSshSessionLog {
-	var returns *ZeroTrustGatewaySettingsSshSessionLog
+func (j *jsiiProxy_ZeroTrustGatewaySettings) SettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"sshSessionLogInput",
+		"settingsInput",
 		&returns,
 	)
 	return returns
@@ -673,48 +352,18 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) TlsDecryptEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettings) UpdatedAt() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"tlsDecryptEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) TlsDecryptEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tlsDecryptEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) UrlBrowserIsolationEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"urlBrowserIsolationEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) UrlBrowserIsolationEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"urlBrowserIsolationEnabledInput",
+		"updatedAt",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
 func NewZeroTrustGatewaySettings(scope constructs.Construct, id *string, config *ZeroTrustGatewaySettingsConfig) ZeroTrustGatewaySettings {
 	_init_.Initialize()
 
@@ -732,7 +381,7 @@ func NewZeroTrustGatewaySettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
 func NewZeroTrustGatewaySettings_Override(z ZeroTrustGatewaySettings, scope constructs.Construct, id *string, config *ZeroTrustGatewaySettingsConfig) {
 	_init_.Initialize()
 
@@ -750,17 +399,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetActivityLogEnabled(val interface{}) {
-	if err := j.validateSetActivityLogEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"activityLogEnabled",
 		val,
 	)
 }
@@ -803,17 +441,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -821,28 +448,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings)SetLifecycle(val *cdktf.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetNonIdentityBrowserIsolationEnabled(val interface{}) {
-	if err := j.validateSetNonIdentityBrowserIsolationEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"nonIdentityBrowserIsolationEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetProtocolDetectionEnabled(val interface{}) {
-	if err := j.validateSetProtocolDetectionEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"protocolDetectionEnabled",
 		val,
 	)
 }
@@ -862,28 +467,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetTlsDecryptEnabled(val interface{}) {
-	if err := j.validateSetTlsDecryptEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tlsDecryptEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings)SetUrlBrowserIsolationEnabled(val interface{}) {
-	if err := j.validateSetUrlBrowserIsolationEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"urlBrowserIsolationEnabled",
 		val,
 	)
 }
@@ -1241,212 +824,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) OverrideLogicalId(newLogicalId *str
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutAntivirus(value *ZeroTrustGatewaySettingsAntivirus) {
-	if err := z.validatePutAntivirusParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustGatewaySettings) PutSettings(value *ZeroTrustGatewaySettingsSettings) {
+	if err := z.validatePutSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putAntivirus",
+		"putSettings",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutBlockPage(value *ZeroTrustGatewaySettingsBlockPage) {
-	if err := z.validatePutBlockPageParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putBlockPage",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutBodyScanning(value *ZeroTrustGatewaySettingsBodyScanning) {
-	if err := z.validatePutBodyScanningParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putBodyScanning",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutCertificate(value *ZeroTrustGatewaySettingsCertificate) {
-	if err := z.validatePutCertificateParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putCertificate",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutCustomCertificate(value *ZeroTrustGatewaySettingsCustomCertificate) {
-	if err := z.validatePutCustomCertificateParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putCustomCertificate",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutExtendedEmailMatching(value *ZeroTrustGatewaySettingsExtendedEmailMatching) {
-	if err := z.validatePutExtendedEmailMatchingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putExtendedEmailMatching",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutFips(value *ZeroTrustGatewaySettingsFips) {
-	if err := z.validatePutFipsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putFips",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutLogging(value *ZeroTrustGatewaySettingsLogging) {
-	if err := z.validatePutLoggingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putLogging",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutPayloadLog(value *ZeroTrustGatewaySettingsPayloadLog) {
-	if err := z.validatePutPayloadLogParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putPayloadLog",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutProxy(value *ZeroTrustGatewaySettingsProxy) {
-	if err := z.validatePutProxyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putProxy",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) PutSshSessionLog(value *ZeroTrustGatewaySettingsSshSessionLog) {
-	if err := z.validatePutSshSessionLogParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putSshSessionLog",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetActivityLogEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetActivityLogEnabled",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetAntivirus() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAntivirus",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetBlockPage() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetBlockPage",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetBodyScanning() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetBodyScanning",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetCertificate() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCertificate",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetCustomCertificate() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCustomCertificate",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetExtendedEmailMatching() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetExtendedEmailMatching",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetFips() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetFips",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetLogging() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetLogging",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetNonIdentityBrowserIsolationEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetNonIdentityBrowserIsolationEnabled",
-		nil, // no parameters
 	)
 }
 
@@ -1458,50 +843,10 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetOverrideLogicalId() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetPayloadLog() {
+func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetSettings() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetPayloadLog",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetProtocolDetectionEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetProtocolDetectionEnabled",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetProxy() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetProxy",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetSshSessionLog() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetSshSessionLog",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetTlsDecryptEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetTlsDecryptEnabled",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetUrlBrowserIsolationEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetUrlBrowserIsolationEnabled",
+		"resetSettings",
 		nil, // no parameters
 	)
 }

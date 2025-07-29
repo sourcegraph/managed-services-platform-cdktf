@@ -72,11 +72,11 @@ func (j *jsiiProxy_DataCloudflareIpRanges) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareIpRanges) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareIpRanges) validateSetNetworksParameters(val *string) error {
 	return nil
 }
 

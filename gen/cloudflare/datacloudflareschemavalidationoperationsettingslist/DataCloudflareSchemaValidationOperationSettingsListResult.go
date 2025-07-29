@@ -1,0 +1,6 @@
+package datacloudflareschemavalidationoperationsettingslist
+
+
+type DataCloudflareSchemaValidationOperationSettingsListResult struct {
+}
+

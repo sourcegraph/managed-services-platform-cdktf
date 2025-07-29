@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -169,6 +173,10 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
 	return nil
 }
 

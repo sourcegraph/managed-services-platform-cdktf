@@ -21,28 +21,28 @@ type GoogleApigeeSecurityProfileV2Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Apigee Organization associated with the Apigee Security Profile V2, in the format 'organizations/{{org_name}}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#org_id GoogleApigeeSecurityProfileV2#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#org_id GoogleApigeeSecurityProfileV2#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// profile_assessment_configs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#profile_assessment_configs GoogleApigeeSecurityProfileV2#profile_assessment_configs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#profile_assessment_configs GoogleApigeeSecurityProfileV2#profile_assessment_configs}
 	ProfileAssessmentConfigs interface{} `field:"required" json:"profileAssessmentConfigs" yaml:"profileAssessmentConfigs"`
 	// Resource ID of the security profile.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#profile_id GoogleApigeeSecurityProfileV2#profile_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#profile_id GoogleApigeeSecurityProfileV2#profile_id}
 	ProfileId *string `field:"required" json:"profileId" yaml:"profileId"`
 	// Description of the security profile.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#description GoogleApigeeSecurityProfileV2#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#description GoogleApigeeSecurityProfileV2#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#id GoogleApigeeSecurityProfileV2#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#id GoogleApigeeSecurityProfileV2#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_security_profile_v2#timeouts GoogleApigeeSecurityProfileV2#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_security_profile_v2#timeouts GoogleApigeeSecurityProfileV2#timeouts}
 	Timeouts *GoogleApigeeSecurityProfileV2Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

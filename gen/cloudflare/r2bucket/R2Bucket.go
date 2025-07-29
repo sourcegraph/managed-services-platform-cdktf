@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/r2bucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket cloudflare_r2_bucket}.
 type R2Bucket interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,6 +27,7 @@ type R2Bucket interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,6 +41,9 @@ type R2Bucket interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -62,6 +66,9 @@ type R2Bucket interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageClass() *string
+	SetStorageClass(val *string)
+	StorageClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,10 +118,12 @@ type R2Bucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetJurisdiction()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageClass()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,6 +202,16 @@ func (j *jsiiProxy_R2Bucket) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_R2Bucket) CreationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationDate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2Bucket) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -238,6 +257,26 @@ func (j *jsiiProxy_R2Bucket) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2Bucket) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2Bucket) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
 		&returns,
 	)
 	return returns
@@ -333,6 +372,26 @@ func (j *jsiiProxy_R2Bucket) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_R2Bucket) StorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2Bucket) StorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageClassInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2Bucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -364,7 +423,7 @@ func (j *jsiiProxy_R2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig) R2Bucket {
 	_init_.Initialize()
 
@@ -382,7 +441,7 @@ func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket_Override(r R2Bucket, scope constructs.Construct, id *string, config *R2BucketConfig) {
 	_init_.Initialize()
 
@@ -442,6 +501,17 @@ func (j *jsiiProxy_R2Bucket)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_R2Bucket)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_R2Bucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -490,6 +560,17 @@ func (j *jsiiProxy_R2Bucket)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2Bucket)SetStorageClass(val *string) {
+	if err := j.validateSetStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageClass",
 		val,
 	)
 }
@@ -847,6 +928,14 @@ func (r *jsiiProxy_R2Bucket) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_R2Bucket) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetJurisdiction",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_R2Bucket) ResetLocation() {
 	_jsii_.InvokeVoid(
 		r,
@@ -859,6 +948,14 @@ func (r *jsiiProxy_R2Bucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_R2Bucket) ResetStorageClass() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStorageClass",
 		nil, // no parameters
 	)
 }

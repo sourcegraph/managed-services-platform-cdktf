@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdevicepostureintegration
+
+
+type DataCloudflareZeroTrustDevicePostureIntegrationConfigA struct {
+}
+

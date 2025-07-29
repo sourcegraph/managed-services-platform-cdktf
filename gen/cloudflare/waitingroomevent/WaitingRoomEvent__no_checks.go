@@ -116,10 +116,6 @@ func (j *jsiiProxy_WaitingRoomEvent) validateSetEventStartTimeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomEvent) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomEvent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -157,6 +153,14 @@ func (j *jsiiProxy_WaitingRoomEvent) validateSetSuspendedParameters(val interfac
 }
 
 func (j *jsiiProxy_WaitingRoomEvent) validateSetTotalActiveUsersParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) validateSetTurnstileActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) validateSetTurnstileModeParameters(val *string) error {
 	return nil
 }
 

@@ -1,0 +1,6 @@
+package datacloudflaremagictransitsitelans
+
+
+type DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelay struct {
+}
+

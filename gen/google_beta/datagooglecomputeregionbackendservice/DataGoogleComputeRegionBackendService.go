@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service}.
 type DataGoogleComputeRegionBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -674,7 +674,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendService) TimeoutSec() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) DataGoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -692,7 +692,7 @@ func NewDataGoogleComputeRegionBackendService(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_region_backend_service google_compute_region_backend_service} Data Source.
 func NewDataGoogleComputeRegionBackendService_Override(d DataGoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_disk google_compute_region_disk}.
 type ComputeRegionDisk interface {
 	cdktf.TerraformResource
+	AccessMode() *string
+	SetAccessMode(val *string)
+	AccessModeInput() *string
 	AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference
 	AsyncPrimaryDiskInput() *ComputeRegionDiskAsyncPrimaryDisk
 	// Experimental.
@@ -85,6 +88,12 @@ type ComputeRegionDisk interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -172,6 +181,7 @@ type ComputeRegionDisk interface {
 	PutGuestOsFeatures(value interface{})
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeRegionDiskTimeouts)
+	ResetAccessMode()
 	ResetAsyncPrimaryDisk()
 	ResetCreateSnapshotBeforeDestroy()
 	ResetCreateSnapshotBeforeDestroyPrefix()
@@ -186,6 +196,8 @@ type ComputeRegionDisk interface {
 	ResetOverrideLogicalId()
 	ResetPhysicalBlockSizeBytes()
 	ResetProject()
+	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetRegion()
 	ResetSize()
 	ResetSnapshot()
@@ -209,6 +221,26 @@ type ComputeRegionDisk interface {
 // The jsii proxy struct for ComputeRegionDisk
 type jsiiProxy_ComputeRegionDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionDisk) AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference {
@@ -621,6 +653,46 @@ func (j *jsiiProxy_ComputeRegionDisk) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -882,7 +954,7 @@ func (j *jsiiProxy_ComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk(scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) ComputeRegionDisk {
 	_init_.Initialize()
 
@@ -900,7 +972,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -908,6 +980,17 @@ func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Constru
 		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetAccessMode(val *string) {
+	if err := j.validateSetAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessMode",
+		val,
 	)
 }
 
@@ -1063,6 +1146,28 @@ func (j *jsiiProxy_ComputeRegionDisk)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -1552,6 +1657,14 @@ func (c *jsiiProxy_ComputeRegionDisk) PutTimeouts(value *ComputeRegionDiskTimeou
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) ResetAccessMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccessMode",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) ResetAsyncPrimaryDisk() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1644,6 +1757,22 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

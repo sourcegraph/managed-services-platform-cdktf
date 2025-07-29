@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdeviceposturerule
+
+
+type DataCloudflareZeroTrustDevicePostureRuleInputLocations struct {
+}
+

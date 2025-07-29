@@ -44,7 +44,11 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutSettingsParameters(value interface{}) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutCustomCertBundleParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutSettingsParameters(value *CustomHostnameSslSettings) error {
 	return nil
 }
 
@@ -57,6 +61,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetBundleMethodPara
 }
 
 func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCertificateAuthorityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCloudflareBrandingParameters(val interface{}) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetWildcardParamete
 	return nil
 }
 
-func validateNewCustomHostnameSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCustomHostnameSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

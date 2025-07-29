@@ -544,6 +544,14 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetInstanceIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

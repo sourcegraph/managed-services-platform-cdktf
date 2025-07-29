@@ -44,7 +44,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateInterpolation
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validatePutHeaderParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validatePutHeaderParameters(value *LoadBalancerPoolOriginsHeader) error {
 	return nil
 }
 
@@ -73,6 +73,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetInternalVa
 }
 
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetPortParameters(val *float64) error {
 	return nil
 }
 

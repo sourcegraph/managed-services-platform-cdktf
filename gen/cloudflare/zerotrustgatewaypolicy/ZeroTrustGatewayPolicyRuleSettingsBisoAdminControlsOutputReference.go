@@ -28,31 +28,28 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableClipboardRedirection() interface{}
-	SetDisableClipboardRedirection(val interface{})
-	DisableClipboardRedirectionInput() interface{}
-	DisableCopyPaste() interface{}
-	SetDisableCopyPaste(val interface{})
-	DisableCopyPasteInput() interface{}
-	DisableDownload() interface{}
-	SetDisableDownload(val interface{})
-	DisableDownloadInput() interface{}
-	DisableKeyboard() interface{}
-	SetDisableKeyboard(val interface{})
-	DisableKeyboardInput() interface{}
-	DisablePrinting() interface{}
-	SetDisablePrinting(val interface{})
-	DisablePrintingInput() interface{}
-	DisableUpload() interface{}
-	SetDisableUpload(val interface{})
-	DisableUploadInput() interface{}
+	Dcp() interface{}
+	SetDcp(val interface{})
+	DcpInput() interface{}
+	Dd() interface{}
+	SetDd(val interface{})
+	DdInput() interface{}
+	Dk() interface{}
+	SetDk(val interface{})
+	DkInput() interface{}
 	Download() *string
 	SetDownload(val *string)
 	DownloadInput() *string
+	Dp() interface{}
+	SetDp(val interface{})
+	DpInput() interface{}
+	Du() interface{}
+	SetDu(val interface{})
+	DuInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Keyboard() *string
 	SetKeyboard(val *string)
 	KeyboardInput() *string
@@ -101,13 +98,12 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCopy()
-	ResetDisableClipboardRedirection()
-	ResetDisableCopyPaste()
-	ResetDisableDownload()
-	ResetDisableKeyboard()
-	ResetDisablePrinting()
-	ResetDisableUpload()
+	ResetDcp()
+	ResetDd()
+	ResetDk()
 	ResetDownload()
+	ResetDp()
+	ResetDu()
 	ResetKeyboard()
 	ResetPaste()
 	ResetPrinting()
@@ -178,121 +174,61 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableClipboardRedirection() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Dcp() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableClipboardRedirection",
+		"dcp",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableClipboardRedirectionInput() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DcpInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableClipboardRedirectionInput",
+		"dcpInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableCopyPaste() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Dd() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableCopyPaste",
+		"dd",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableCopyPasteInput() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DdInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableCopyPasteInput",
+		"ddInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableDownload() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Dk() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableDownload",
+		"dk",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableDownloadInput() interface{} {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DkInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"disableDownloadInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableKeyboard() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableKeyboard",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableKeyboardInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableKeyboardInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisablePrinting() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disablePrinting",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisablePrintingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disablePrintingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableUpload() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableUpload",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DisableUploadInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableUploadInput",
+		"dkInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +254,46 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Dp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Du() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"du",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DuInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"duInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -328,8 +304,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -519,68 +495,35 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisableClipboardRedirection(val interface{}) {
-	if err := j.validateSetDisableClipboardRedirectionParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDcp(val interface{}) {
+	if err := j.validateSetDcpParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"disableClipboardRedirection",
+		"dcp",
 		val,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisableCopyPaste(val interface{}) {
-	if err := j.validateSetDisableCopyPasteParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDd(val interface{}) {
+	if err := j.validateSetDdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"disableCopyPaste",
+		"dd",
 		val,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisableDownload(val interface{}) {
-	if err := j.validateSetDisableDownloadParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDk(val interface{}) {
+	if err := j.validateSetDkParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"disableDownload",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisableKeyboard(val interface{}) {
-	if err := j.validateSetDisableKeyboardParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disableKeyboard",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisablePrinting(val interface{}) {
-	if err := j.validateSetDisablePrintingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disablePrinting",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDisableUpload(val interface{}) {
-	if err := j.validateSetDisableUploadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disableUpload",
+		"dk",
 		val,
 	)
 }
@@ -596,7 +539,29 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDp(val interface{}) {
+	if err := j.validateSetDpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDu(val interface{}) {
+	if err := j.validateSetDuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"du",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,50 +843,26 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableClipboardRedirection() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDcp() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetDisableClipboardRedirection",
+		"resetDcp",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableCopyPaste() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDd() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetDisableCopyPaste",
+		"resetDd",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableDownload() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDk() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetDisableDownload",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableKeyboard() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDisableKeyboard",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisablePrinting() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDisablePrinting",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableUpload() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDisableUpload",
+		"resetDk",
 		nil, // no parameters
 	)
 }
@@ -930,6 +871,22 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.InvokeVoid(
 		z,
 		"resetDownload",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDp() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDp",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDu() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDu",
 		nil, // no parameters
 	)
 }

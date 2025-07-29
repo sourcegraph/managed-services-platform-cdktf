@@ -19,17 +19,17 @@ type LeakedCredentialCheckRuleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The ruleset expression to use in matching the password in a request.
+	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
-	Password *string `field:"required" json:"password" yaml:"password"`
-	// The ruleset expression to use in matching the username in a request.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
-	Username *string `field:"required" json:"username" yaml:"username"`
-	// The zone identifier to target for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Defines ehe ruleset expression to use in matching the password in a request.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
+	Password *string `field:"optional" json:"password" yaml:"password"`
+	// Defines the ruleset expression to use in matching the username in a request.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

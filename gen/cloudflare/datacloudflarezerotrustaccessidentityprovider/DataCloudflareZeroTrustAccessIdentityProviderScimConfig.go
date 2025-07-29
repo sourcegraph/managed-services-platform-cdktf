@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessidentityprovider
+
+
+type DataCloudflareZeroTrustAccessIdentityProviderScimConfig struct {
+}
+

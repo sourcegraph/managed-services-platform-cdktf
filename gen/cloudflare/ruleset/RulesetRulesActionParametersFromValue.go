@@ -2,17 +2,17 @@ package ruleset
 
 
 type RulesetRulesActionParametersFromValue struct {
-	// Preserve query string for redirect URL.
+	// Keep the query string of the original request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 	PreserveQueryString interface{} `field:"optional" json:"preserveQueryString" yaml:"preserveQueryString"`
-	// Status code for redirect.
+	// The status code to be used for the redirect. Available values: 301, 302, 303, 307, 308.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#status_code Ruleset#status_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#status_code Ruleset#status_code}
 	StatusCode *float64 `field:"optional" json:"statusCode" yaml:"statusCode"`
-	// target_url block.
+	// The URL to redirect the request to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#target_url Ruleset#target_url}
-	TargetUrl interface{} `field:"optional" json:"targetUrl" yaml:"targetUrl"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#target_url Ruleset#target_url}
+	TargetUrl *RulesetRulesActionParametersFromValueTargetUrl `field:"optional" json:"targetUrl" yaml:"targetUrl"`
 }
 

@@ -32,7 +32,7 @@ type LoadBalancerRulesOutputReference interface {
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
 	FixedResponse() LoadBalancerRulesFixedResponseOutputReference
-	FixedResponseInput() *LoadBalancerRulesFixedResponse
+	FixedResponseInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -40,7 +40,7 @@ type LoadBalancerRulesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Overrides() LoadBalancerRulesOverridesList
+	Overrides() LoadBalancerRulesOverridesOutputReference
 	OverridesInput() interface{}
 	Priority() *float64
 	SetPriority(val *float64)
@@ -81,10 +81,11 @@ type LoadBalancerRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFixedResponse(value *LoadBalancerRulesFixedResponse)
-	PutOverrides(value interface{})
+	PutOverrides(value *LoadBalancerRulesOverrides)
 	ResetCondition()
 	ResetDisabled()
 	ResetFixedResponse()
+	ResetName()
 	ResetOverrides()
 	ResetPriority()
 	ResetTerminates()
@@ -183,8 +184,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) FixedResponse() LoadBalance
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) FixedResponseInput() *LoadBalancerRulesFixedResponse {
-	var returns *LoadBalancerRulesFixedResponse
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) FixedResponseInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"fixedResponseInput",
@@ -233,8 +234,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) Overrides() LoadBalancerRulesOverridesList {
-	var returns LoadBalancerRulesOverridesList
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) Overrides() LoadBalancerRulesOverridesOutputReference {
+	var returns LoadBalancerRulesOverridesOutputReference
 	_jsii_.Get(
 		j,
 		"overrides",
@@ -648,7 +649,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutFixedResponse(value *Loa
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutOverrides(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) PutOverrides(value *LoadBalancerRulesOverrides) {
 	if err := l.validatePutOverridesParameters(value); err != nil {
 		panic(err)
 	}
@@ -679,6 +680,14 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) ResetFixedResponse() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetFixedResponse",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetName",
 		nil, // no parameters
 	)
 }

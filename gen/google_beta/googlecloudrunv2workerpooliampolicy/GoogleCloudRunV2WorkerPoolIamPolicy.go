@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudrunv2workerpooliampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
 type GoogleCloudRunV2WorkerPoolIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewGoogleCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolIamPolicyConfig) GoogleCloudRunV2WorkerPoolIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewGoogleCloudRunV2WorkerPoolIamPolicy_Override(g GoogleCloudRunV2WorkerPoolIamPolicy, scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolIamPolicyConfig) {
 	_init_.Initialize()
 

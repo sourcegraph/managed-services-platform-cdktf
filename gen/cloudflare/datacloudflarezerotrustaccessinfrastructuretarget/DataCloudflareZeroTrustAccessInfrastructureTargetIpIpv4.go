@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessinfrastructuretarget
+
+
+type DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4 struct {
+}
+

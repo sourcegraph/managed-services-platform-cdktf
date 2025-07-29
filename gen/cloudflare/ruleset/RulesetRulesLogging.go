@@ -2,9 +2,9 @@ package ruleset
 
 
 type RulesetRulesLogging struct {
-	// Override the default logging behavior when a rule is matched.
+	// Whether to generate a log when the rule matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#enabled Ruleset#enabled}
+	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

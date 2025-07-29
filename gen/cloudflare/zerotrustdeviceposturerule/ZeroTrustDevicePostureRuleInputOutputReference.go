@@ -83,11 +83,14 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	LastSeen() *string
 	SetLastSeen(val *string)
 	LastSeenInput() *string
-	Locations() ZeroTrustDevicePostureRuleInputLocationsList
+	Locations() ZeroTrustDevicePostureRuleInputLocationsOutputReference
 	LocationsInput() interface{}
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
+	OperatingSystem() *string
+	SetOperatingSystem(val *string)
+	OperatingSystemInput() *string
 	OperationalState() *string
 	SetOperationalState(val *string)
 	OperationalStateInput() *string
@@ -118,12 +121,12 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	RiskLevel() *string
 	SetRiskLevel(val *string)
 	RiskLevelInput() *string
-	Running() interface{}
-	SetRunning(val interface{})
-	RunningInput() interface{}
 	Score() *float64
 	SetScore(val *float64)
 	ScoreInput() *float64
+	ScoreOperator() *string
+	SetScoreOperator(val *string)
+	ScoreOperatorInput() *string
 	SensorConfig() *string
 	SetSensorConfig(val *string)
 	SensorConfigInput() *string
@@ -133,6 +136,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	State() *string
 	SetState(val *string)
 	StateInput() *string
+	SubjectAlternativeNames() *[]*string
+	SetSubjectAlternativeNames(val *[]*string)
+	SubjectAlternativeNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -177,7 +183,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLocations(value interface{})
+	PutLocations(value *ZeroTrustDevicePostureRuleInputLocations)
 	ResetActiveThreats()
 	ResetCertificateId()
 	ResetCheckDisks()
@@ -198,6 +204,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetLastSeen()
 	ResetLocations()
 	ResetNetworkStatus()
+	ResetOperatingSystem()
 	ResetOperationalState()
 	ResetOperator()
 	ResetOs()
@@ -208,11 +215,12 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetPath()
 	ResetRequireAll()
 	ResetRiskLevel()
-	ResetRunning()
 	ResetScore()
+	ResetScoreOperator()
 	ResetSensorConfig()
 	ResetSha256()
 	ResetState()
+	ResetSubjectAlternativeNames()
 	ResetThumbprint()
 	ResetTotalScore()
 	ResetVersion()
@@ -642,8 +650,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) LastSeenInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Locations() ZeroTrustDevicePostureRuleInputLocationsList {
-	var returns ZeroTrustDevicePostureRuleInputLocationsList
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Locations() ZeroTrustDevicePostureRuleInputLocationsOutputReference {
+	var returns ZeroTrustDevicePostureRuleInputLocationsOutputReference
 	_jsii_.Get(
 		j,
 		"locations",
@@ -677,6 +685,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) NetworkStatus
 	_jsii_.Get(
 		j,
 		"networkStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) OperatingSystem() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operatingSystem",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) OperatingSystemInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operatingSystemInput",
 		&returns,
 	)
 	return returns
@@ -882,26 +910,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RiskLevelInpu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Running() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"running",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RunningInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"runningInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Score() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -917,6 +925,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ScoreInput() 
 	_jsii_.Get(
 		j,
 		"scoreInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ScoreOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ScoreOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreOperatorInput",
 		&returns,
 	)
 	return returns
@@ -977,6 +1005,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) StateInput() 
 	_jsii_.Get(
 		j,
 		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SubjectAlternativeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subjectAlternativeNamesInput",
 		&returns,
 	)
 	return returns
@@ -1083,29 +1131,29 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) VersionOperat
 }
 
 
-func NewZeroTrustDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDevicePostureRuleInputOutputReference {
+func NewZeroTrustDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureRuleInputOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustDevicePostureRuleInputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustDevicePostureRuleInputOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustDevicePostureRuleInputOutputReference_Override(z ZeroTrustDevicePostureRuleInputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustDevicePostureRuleInputOutputReference_Override(z ZeroTrustDevicePostureRuleInputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -1352,6 +1400,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetNetworkStat
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperatingSystem(val *string) {
+	if err := j.validateSetOperatingSystemParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operatingSystem",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperationalState(val *string) {
 	if err := j.validateSetOperationalStateParameters(val); err != nil {
 		panic(err)
@@ -1462,17 +1521,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRiskLevel(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRunning(val interface{}) {
-	if err := j.validateSetRunningParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"running",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScore(val *float64) {
 	if err := j.validateSetScoreParameters(val); err != nil {
 		panic(err)
@@ -1480,6 +1528,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScore(val *
 	_jsii_.Set(
 		j,
 		"score",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScoreOperator(val *string) {
+	if err := j.validateSetScoreOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scoreOperator",
 		val,
 	)
 }
@@ -1513,6 +1572,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetState(val *
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSubjectAlternativeNames(val *[]*string) {
+	if err := j.validateSetSubjectAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subjectAlternativeNames",
 		val,
 	)
 }
@@ -1769,7 +1839,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Interpolation
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) PutLocations(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) PutLocations(value *ZeroTrustDevicePostureRuleInputLocations) {
 	if err := z.validatePutLocationsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1940,6 +2010,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetNetworkS
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetOperatingSystem() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOperatingSystem",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetOperationalState() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2020,18 +2098,18 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetRiskLeve
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetRunning() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetRunning",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetScore() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetScore",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetScoreOperator() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetScoreOperator",
 		nil, // no parameters
 	)
 }
@@ -2056,6 +2134,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetState() 
 	_jsii_.InvokeVoid(
 		z,
 		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetSubjectAlternativeNames() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSubjectAlternativeNames",
 		nil, // no parameters
 	)
 }

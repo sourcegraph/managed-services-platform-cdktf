@@ -72,6 +72,10 @@ func (n *jsiiProxy_NetappBackupVault) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (n *jsiiProxy_NetappBackupVault) validatePutBackupRetentionPolicyParameters(value *NetappBackupVaultBackupRetentionPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappBackupVault) validatePutTimeoutsParameters(value *NetappBackupVaultTimeouts) error {
 	return nil
 }

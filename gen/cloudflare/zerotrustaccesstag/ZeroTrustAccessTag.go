@@ -9,15 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesstag/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 type ZeroTrustAccessTag interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
-	SetAppCount(val *float64)
-	AppCountInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -43,8 +40,6 @@ type ZeroTrustAccessTag interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -70,9 +65,6 @@ type ZeroTrustAccessTag interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ZoneId() *string
-	SetZoneId(val *string)
-	ZoneIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,13 +108,9 @@ type ZeroTrustAccessTag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
-	ResetAppCount()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -156,26 +144,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) AppCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCountInput",
 		&returns,
 	)
 	return returns
@@ -266,16 +234,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -381,28 +339,8 @@ func (j *jsiiProxy_ZeroTrustAccessTag) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) ZoneId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ZeroTrustAccessTag) ZoneIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) ZeroTrustAccessTag {
 	_init_.Initialize()
 
@@ -420,7 +358,7 @@ func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag_Override(z ZeroTrustAccessTag, scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) {
 	_init_.Initialize()
 
@@ -438,17 +376,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag)SetAppCount(val *float64) {
-	if err := j.validateSetAppCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appCount",
 		val,
 	)
 }
@@ -491,17 +418,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -539,17 +455,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag)SetZoneId(val *string) {
-	if err := j.validateSetZoneIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneId",
 		val,
 	)
 }
@@ -907,42 +812,10 @@ func (z *jsiiProxy_ZeroTrustAccessTag) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetAppCount() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAppCount",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessTag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

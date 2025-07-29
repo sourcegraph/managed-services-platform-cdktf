@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/firebaseapphostingbackend/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend}.
 type FirebaseAppHostingBackend interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -711,7 +711,7 @@ func (j *jsiiProxy_FirebaseAppHostingBackend) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend} Resource.
 func NewFirebaseAppHostingBackend(scope constructs.Construct, id *string, config *FirebaseAppHostingBackendConfig) FirebaseAppHostingBackend {
 	_init_.Initialize()
 
@@ -729,7 +729,7 @@ func NewFirebaseAppHostingBackend(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/firebase_app_hosting_backend google_firebase_app_hosting_backend} Resource.
 func NewFirebaseAppHostingBackend_Override(f FirebaseAppHostingBackend, scope constructs.Construct, id *string, config *FirebaseAppHostingBackendConfig) {
 	_init_.Initialize()
 

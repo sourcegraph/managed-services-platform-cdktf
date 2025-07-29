@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewayapptypeslist
+
+
+type DataCloudflareZeroTrustGatewayAppTypesListResult struct {
+}
+

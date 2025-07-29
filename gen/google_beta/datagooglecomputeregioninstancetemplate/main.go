@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkInterface", GoGetter: "NetworkInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "networkPerformanceConfig", GoGetter: "NetworkPerformanceConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "numericId", GoGetter: "NumericId"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "partnerMetadata", GoGetter: "PartnerMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},

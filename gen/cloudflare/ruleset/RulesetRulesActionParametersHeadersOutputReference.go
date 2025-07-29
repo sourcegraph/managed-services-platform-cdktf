@@ -32,9 +32,6 @@ type RulesetRulesActionParametersHeadersOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	Operation() *string
 	SetOperation(val *string)
 	OperationInput() *string
@@ -74,8 +71,6 @@ type RulesetRulesActionParametersHeadersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExpression()
-	ResetName()
-	ResetOperation()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -162,26 +157,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) Operation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -243,29 +218,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ValueInpu
 }
 
 
-func NewRulesetRulesActionParametersHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersHeadersOutputReference {
+func NewRulesetRulesActionParametersHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) RulesetRulesActionParametersHeadersOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersHeadersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersHeadersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectKey); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersHeadersOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersHeadersOutputReference_Override(r RulesetRulesActionParametersHeadersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersHeadersOutputReference_Override(r RulesetRulesActionParametersHeadersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		r,
 	)
 }
@@ -310,17 +285,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -559,22 +523,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ResetExpr
 	_jsii_.InvokeVoid(
 		r,
 		"resetExpression",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ResetOperation() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetOperation",
 		nil, // no parameters
 	)
 }

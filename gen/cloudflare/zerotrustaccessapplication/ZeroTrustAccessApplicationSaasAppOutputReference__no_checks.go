@@ -44,11 +44,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateInt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomAttributeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomAttributesParameters(value interface{}) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomClaimParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomClaimsParameters(value interface{}) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePut
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value *ZeroTrustAccessApplicationSaasAppRefreshTokenOptions) error {
 	return nil
 }
 
@@ -104,7 +104,11 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationSaasApp) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetIdpEntityIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -129,6 +133,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetSpEntityIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetSsoEndpointParameters(val *string) error {
 	return nil
 }
 
