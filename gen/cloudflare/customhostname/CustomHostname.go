@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/customhostname/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname cloudflare_custom_hostname}.
 type CustomHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,7 @@ type CustomHostname interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	CustomMetadata() *map[string]*string
 	SetCustomMetadata(val *map[string]*string)
 	CustomMetadataInput() *map[string]*string
@@ -49,16 +50,14 @@ type CustomHostname interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OwnershipVerification() cdktf.StringMap
-	OwnershipVerificationHttp() cdktf.StringMap
+	OwnershipVerification() CustomHostnameOwnershipVerificationOutputReference
+	OwnershipVerificationHttp() CustomHostnameOwnershipVerificationHttpOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -69,7 +68,7 @@ type CustomHostname interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Ssl() CustomHostnameSslList
+	Ssl() CustomHostnameSslOutputReference
 	SslInput() interface{}
 	Status() *string
 	// Experimental.
@@ -78,9 +77,7 @@ type CustomHostname interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WaitForSslPendingValidation() interface{}
-	SetWaitForSslPendingValidation(val interface{})
-	WaitForSslPendingValidationInput() interface{}
+	VerificationErrors() *[]*string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -127,16 +124,13 @@ type CustomHostname interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSsl(value interface{})
+	PutSsl(value *CustomHostnameSsl)
 	ResetCustomMetadata()
 	ResetCustomOriginServer()
 	ResetCustomOriginSni()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSsl()
-	ResetWaitForSslPendingValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -190,6 +184,16 @@ func (j *jsiiProxy_CustomHostname) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -325,16 +329,6 @@ func (j *jsiiProxy_CustomHostname) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CustomHostname) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -355,8 +349,8 @@ func (j *jsiiProxy_CustomHostname) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) OwnershipVerification() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_CustomHostname) OwnershipVerification() CustomHostnameOwnershipVerificationOutputReference {
+	var returns CustomHostnameOwnershipVerificationOutputReference
 	_jsii_.Get(
 		j,
 		"ownershipVerification",
@@ -365,8 +359,8 @@ func (j *jsiiProxy_CustomHostname) OwnershipVerification() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) OwnershipVerificationHttp() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_CustomHostname) OwnershipVerificationHttp() CustomHostnameOwnershipVerificationHttpOutputReference {
+	var returns CustomHostnameOwnershipVerificationHttpOutputReference
 	_jsii_.Get(
 		j,
 		"ownershipVerificationHttp",
@@ -405,8 +399,8 @@ func (j *jsiiProxy_CustomHostname) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) Ssl() CustomHostnameSslList {
-	var returns CustomHostnameSslList
+func (j *jsiiProxy_CustomHostname) Ssl() CustomHostnameSslOutputReference {
+	var returns CustomHostnameSslOutputReference
 	_jsii_.Get(
 		j,
 		"ssl",
@@ -465,21 +459,11 @@ func (j *jsiiProxy_CustomHostname) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) VerificationErrors() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"waitForSslPendingValidation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"waitForSslPendingValidationInput",
+		"verificationErrors",
 		&returns,
 	)
 	return returns
@@ -506,7 +490,7 @@ func (j *jsiiProxy_CustomHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHostnameConfig) CustomHostname {
 	_init_.Initialize()
 
@@ -524,7 +508,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id *string, config *CustomHostnameConfig) {
 	_init_.Initialize()
 
@@ -617,17 +601,6 @@ func (j *jsiiProxy_CustomHostname)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_CustomHostname)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -654,17 +627,6 @@ func (j *jsiiProxy_CustomHostname)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CustomHostname)SetWaitForSslPendingValidation(val interface{}) {
-	if err := j.validateSetWaitForSslPendingValidationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"waitForSslPendingValidation",
 		val,
 	)
 }
@@ -1033,7 +995,7 @@ func (c *jsiiProxy_CustomHostname) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) PutSsl(value interface{}) {
+func (c *jsiiProxy_CustomHostname) PutSsl(value *CustomHostnameSsl) {
 	if err := c.validatePutSslParameters(value); err != nil {
 		panic(err)
 	}
@@ -1068,34 +1030,10 @@ func (c *jsiiProxy_CustomHostname) ResetCustomOriginSni() {
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CustomHostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CustomHostname) ResetSsl() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetSsl",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CustomHostname) ResetWaitForSslPendingValidation() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetWaitForSslPendingValidation",
 		nil, // no parameters
 	)
 }

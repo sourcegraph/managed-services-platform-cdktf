@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaypolicies
+
+
+type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsL4Override struct {
+}
+

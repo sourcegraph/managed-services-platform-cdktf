@@ -58,6 +58,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	SqlAssertionInput() *GoogleDataplexDatascanDataQualitySpecRulesSqlAssertion
 	StatisticRangeExpectation() GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 	StatisticRangeExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
+	Suspended() interface{}
+	SetSuspended(val interface{})
+	SuspendedInput() interface{}
 	TableConditionExpectation() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	TableConditionExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation
 	// Experimental.
@@ -117,6 +120,7 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	ResetSetExpectation()
 	ResetSqlAssertion()
 	ResetStatisticRangeExpectation()
+	ResetSuspended()
 	ResetTableConditionExpectation()
 	ResetThreshold()
 	ResetUniquenessExpectation()
@@ -425,6 +429,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) St
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Suspended() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) SuspendedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"suspendedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) TableConditionExpectation() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference {
 	var returns GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 	_jsii_.Get(
@@ -617,6 +641,17 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetSuspended(val interface{}) {
+	if err := j.validateSetSuspendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspended",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetStatisticRangeExpectation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetSuspended() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSuspended",
 		nil, // no parameters
 	)
 }

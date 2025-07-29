@@ -28,6 +28,7 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerManagedEncryption() DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList
+	DeletionProtection() cdktf.IResolvable
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
 	ExpireTime() *string
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	_jsii_.Get(
 		j,
 		"customerManagedEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns

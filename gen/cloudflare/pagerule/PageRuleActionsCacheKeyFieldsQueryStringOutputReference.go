@@ -30,14 +30,11 @@ type PageRuleActionsCacheKeyFieldsQueryStringOutputReference interface {
 	ExcludeInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	Ignore() interface{}
-	SetIgnore(val interface{})
-	IgnoreInput() interface{}
 	Include() *[]*string
 	SetInclude(val *[]*string)
 	IncludeInput() *[]*string
-	InternalValue() *PageRuleActionsCacheKeyFieldsQueryString
-	SetInternalValue(val *PageRuleActionsCacheKeyFieldsQueryString)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,7 +68,6 @@ type PageRuleActionsCacheKeyFieldsQueryStringOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExclude()
-	ResetIgnore()
 	ResetInclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,26 +144,6 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) Ignore() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ignore",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) IgnoreInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ignoreInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) Include() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -188,8 +164,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) Incl
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) InternalValue() *PageRuleActionsCacheKeyFieldsQueryString {
-	var returns *PageRuleActionsCacheKeyFieldsQueryString
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -279,17 +255,6 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetIgnore(val interface{}) {
-	if err := j.validateSetIgnoreParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ignore",
-		val,
-	)
-}
-
 func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetInclude(val *[]*string) {
 	if err := j.validateSetIncludeParameters(val); err != nil {
 		panic(err)
@@ -301,7 +266,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFieldsQueryString) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,14 +489,6 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) Rese
 	_jsii_.InvokeVoid(
 		p,
 		"resetExclude",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) ResetIgnore() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIgnore",
 		nil, // no parameters
 	)
 }

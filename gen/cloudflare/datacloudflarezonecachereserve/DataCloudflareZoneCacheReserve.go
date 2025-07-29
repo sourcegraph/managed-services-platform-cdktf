@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezonecachereserve/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type DataCloudflareZoneCacheReserve interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,7 +24,7 @@ type DataCloudflareZoneCacheReserve interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() cdktf.IResolvable
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -34,12 +34,11 @@ type DataCloudflareZoneCacheReserve interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -54,6 +53,7 @@ type DataCloudflareZoneCacheReserve interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Value() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -82,7 +82,6 @@ type DataCloudflareZoneCacheReserve interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -145,11 +144,11 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Enabled() cdktf.IResolvable {
+func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Editable() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"enabled",
+		"editable",
 		&returns,
 	)
 	return returns
@@ -195,21 +194,21 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneCacheReserve) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -275,6 +274,16 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,7 +305,7 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) DataCloudflareZoneCacheReserve {
 	_init_.Initialize()
 
@@ -314,7 +323,7 @@ func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve_Override(d DataCloudflareZoneCacheReserve, scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) {
 	_init_.Initialize()
 
@@ -348,17 +357,6 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZoneCacheReserve)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -675,14 +673,6 @@ func (d *jsiiProxy_DataCloudflareZoneCacheReserve) OverrideLogicalId(newLogicalI
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZoneCacheReserve) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

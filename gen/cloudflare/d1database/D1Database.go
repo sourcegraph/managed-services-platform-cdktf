@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/d1database/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,10 +27,12 @@ type D1Database interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FileSize() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,6 +51,10 @@ type D1Database interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumTables() *float64
+	PrimaryLocationHint() *string
+	SetPrimaryLocationHint(val *string)
+	PrimaryLocationHintInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -59,12 +65,15 @@ type D1Database interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadReplication() D1DatabaseReadReplicationOutputReference
+	ReadReplicationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uuid() *string
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -109,9 +118,12 @@ type D1Database interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutReadReplication(value *D1DatabaseReadReplication)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrimaryLocationHint()
+	ResetReadReplication()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -190,11 +202,31 @@ func (j *jsiiProxy_D1Database) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) FileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fileSize",
 		&returns,
 	)
 	return returns
@@ -280,6 +312,36 @@ func (j *jsiiProxy_D1Database) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) NumTables() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) PrimaryLocationHint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLocationHint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) PrimaryLocationHintInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLocationHintInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -305,6 +367,26 @@ func (j *jsiiProxy_D1Database) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) ReadReplication() D1DatabaseReadReplicationOutputReference {
+	var returns D1DatabaseReadReplicationOutputReference
+	_jsii_.Get(
+		j,
+		"readReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) ReadReplicationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readReplicationInput",
 		&returns,
 	)
 	return returns
@@ -340,6 +422,16 @@ func (j *jsiiProxy_D1Database) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -351,7 +443,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -369,7 +461,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -447,6 +539,17 @@ func (j *jsiiProxy_D1Database)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_D1Database)SetPrimaryLocationHint(val *string) {
+	if err := j.validateSetPrimaryLocationHintParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryLocationHint",
 		val,
 	)
 }
@@ -823,10 +926,37 @@ func (d *jsiiProxy_D1Database) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_D1Database) PutReadReplication(value *D1DatabaseReadReplication) {
+	if err := d.validatePutReadReplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putReadReplication",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_D1Database) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetPrimaryLocationHint() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrimaryLocationHint",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetReadReplication() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReadReplication",
 		nil, // no parameters
 	)
 }

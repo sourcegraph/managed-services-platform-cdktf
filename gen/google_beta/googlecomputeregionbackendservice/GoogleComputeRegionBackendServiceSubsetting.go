@@ -4,7 +4,7 @@ package googlecomputeregionbackendservice
 type GoogleComputeRegionBackendServiceSubsetting struct {
 	// The algorithm used for subsetting. Possible values: ["CONSISTENT_HASH_SUBSETTING"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_backend_service#policy GoogleComputeRegionBackendService#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#policy GoogleComputeRegionBackendService#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 	// The number of backends per backend group assigned to each proxy instance or each service mesh client.
 	//
@@ -15,7 +15,7 @@ type GoogleComputeRegionBackendServiceSubsetting struct {
 	// of proxies/clients visible to each backend and vice versa.
 	// Must be greater than 0. If subsetSize is larger than the number of backends/endpoints, then subsetting is disabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_backend_service#subset_size GoogleComputeRegionBackendService#subset_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#subset_size GoogleComputeRegionBackendService#subset_size}
 	SubsetSize *float64 `field:"optional" json:"subsetSize" yaml:"subsetSize"`
 }
 

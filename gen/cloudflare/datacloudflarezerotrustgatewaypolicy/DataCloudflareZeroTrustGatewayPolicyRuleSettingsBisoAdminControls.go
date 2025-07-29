@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaypolicy
+
+
+type DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControls struct {
+}
+

@@ -19,26 +19,21 @@ type HostnameTlsSettingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Hostname that belongs to this zone name. **Modifying this attribute will force creation of a new resource.**.
+	// The hostname for which the tls settings are set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// TLS setting name. **Modifying this attribute will force creation of a new resource.**.
+	// The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting#setting HostnameTlsSetting#setting}
-	Setting *string `field:"required" json:"setting" yaml:"setting"`
-	// TLS setting value.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+	SettingId *string `field:"required" json:"settingId" yaml:"settingId"`
+	// The tls setting value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
-	Value *string `field:"required" json:"value" yaml:"value"`
-	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+	Value *map[string]interface{} `field:"required" json:"value" yaml:"value"`
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting#id HostnameTlsSetting#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 }
 

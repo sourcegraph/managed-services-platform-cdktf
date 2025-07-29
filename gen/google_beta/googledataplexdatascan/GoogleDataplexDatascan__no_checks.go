@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataDiscoverySpecParameters(value *GoogleDataplexDatascanDataDiscoverySpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascan) validatePutDataProfileSpecParameters(value *GoogleDataplexDatascanDataProfileSpec) error {
 	return nil
 }

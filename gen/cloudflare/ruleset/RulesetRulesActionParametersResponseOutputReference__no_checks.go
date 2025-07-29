@@ -80,7 +80,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) validate
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

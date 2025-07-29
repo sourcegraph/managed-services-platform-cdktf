@@ -56,7 +56,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetInternalValueParameters(val *PageRuleActionsCacheKeyFieldsHost) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

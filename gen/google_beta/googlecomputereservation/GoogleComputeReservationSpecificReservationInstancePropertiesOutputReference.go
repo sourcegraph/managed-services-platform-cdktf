@@ -36,6 +36,9 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaintenanceInterval() *string
+	SetMaintenanceInterval(val *string)
+	MaintenanceIntervalInput() *string
 	MinCpuPlatform() *string
 	SetMinCpuPlatform(val *string)
 	MinCpuPlatformInput() *string
@@ -75,6 +78,7 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	PutLocalSsds(value interface{})
 	ResetGuestAccelerators()
 	ResetLocalSsds()
+	ResetMaintenanceInterval()
 	ResetMinCpuPlatform()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) MaintenanceIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) MinCpuPlatform() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +333,17 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)SetMaintenanceInterval(val *string) {
+	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceInterval",
 		val,
 	)
 }
@@ -566,6 +601,14 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocalSsds",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) ResetMaintenanceInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceInterval",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validatePutMulticlust
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validatePutRbacrolebindingactuationParameters(value *GoogleGkeHubFeatureSpecRbacrolebindingactuation) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

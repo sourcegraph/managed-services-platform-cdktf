@@ -334,14 +334,6 @@ func (j *jsiiProxy_WorkersRoute) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_WorkersRoute) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_WorkersRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -404,7 +396,7 @@ func (j *jsiiProxy_WorkersRoute) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_WorkersRoute) validateSetScriptNameParameters(val *string) error {
+func (j *jsiiProxy_WorkersRoute) validateSetScriptParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

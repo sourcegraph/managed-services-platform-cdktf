@@ -140,6 +140,10 @@ func (j *jsiiProxy_LustreInstance) validateSetNetworkParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_LustreInstance) validateSetPerUnitStorageThroughputParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LustreInstance) validateSetProjectParameters(val *string) error {
 	return nil
 }

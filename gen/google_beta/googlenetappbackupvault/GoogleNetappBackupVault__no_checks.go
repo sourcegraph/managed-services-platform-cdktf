@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleNetappBackupVault) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappBackupVault) validatePutBackupRetentionPolicyParameters(value *GoogleNetappBackupVaultBackupRetentionPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappBackupVault) validatePutTimeoutsParameters(value *GoogleNetappBackupVaultTimeouts) error {
 	return nil
 }

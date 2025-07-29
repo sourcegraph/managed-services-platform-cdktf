@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlesecretmanagerregionalsecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret}.
 type GoogleSecretManagerRegionalSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -30,6 +30,9 @@ type GoogleSecretManagerRegionalSecret interface {
 	CreateTime() *string
 	CustomerManagedEncryption() GoogleSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference
 	CustomerManagedEncryptionInput() *GoogleSecretManagerRegionalSecretCustomerManagedEncryption
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,6 +153,7 @@ type GoogleSecretManagerRegionalSecret interface {
 	PutTopics(value interface{})
 	ResetAnnotations()
 	ResetCustomerManagedEncryption()
+	ResetDeletionProtection()
 	ResetExpireTime()
 	ResetId()
 	ResetLabels()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) CustomerManagedEncryptionI
 	_jsii_.Get(
 		j,
 		"customerManagedEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -672,7 +696,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) VersionDestroyTtlInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
 func NewGoogleSecretManagerRegionalSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretConfig) GoogleSecretManagerRegionalSecret {
 	_init_.Initialize()
 
@@ -690,7 +714,7 @@ func NewGoogleSecretManagerRegionalSecret(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secret_manager_regional_secret google_secret_manager_regional_secret} Resource.
 func NewGoogleSecretManagerRegionalSecret_Override(g GoogleSecretManagerRegionalSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretConfig) {
 	_init_.Initialize()
 
@@ -730,6 +754,17 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1288,6 +1323,14 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetCustomerManagedEncryp
 	_jsii_.InvokeVoid(
 		g,
 		"resetCustomerManagedEncryption",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecret) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

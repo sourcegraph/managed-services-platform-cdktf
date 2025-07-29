@@ -9,24 +9,28 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezone/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone cloudflare_zone}.
 type DataCloudflareZone interface {
 	cdktf.TerraformDataSource
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
+	Account() DataCloudflareZoneAccountOutputReference
+	ActivatedOn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CnameSuffix() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DevelopmentMode() *float64
+	Filter() DataCloudflareZoneFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,20 +40,23 @@ type DataCloudflareZone interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Meta() DataCloudflareZoneMetaOutputReference
+	ModifiedOn() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	NameServers() *[]*string
 	// The tree node.
 	Node() constructs.Node
+	OriginalDnshost() *string
+	OriginalNameServers() *[]*string
+	OriginalRegistrar() *string
+	Owner() DataCloudflareZoneOwnerOutputReference
 	Paused() cdktf.IResolvable
-	Plan() *string
+	Permissions() *[]*string
+	Plan() DataCloudflareZonePlanOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -57,13 +64,17 @@ type DataCloudflareZone interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	Tenant() DataCloudflareZoneTenantOutputReference
+	TenantUnit() DataCloudflareZoneTenantUnitOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	VanityNameServers() *[]*string
+	VerificationKey() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -92,9 +103,8 @@ type DataCloudflareZone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
-	ResetId()
-	ResetName()
+	PutFilter(value *DataCloudflareZoneFilter)
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -118,21 +128,21 @@ type jsiiProxy_DataCloudflareZone struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareZone) AccountId() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZone) Account() DataCloudflareZoneAccountOutputReference {
+	var returns DataCloudflareZoneAccountOutputReference
 	_jsii_.Get(
 		j,
-		"accountId",
+		"account",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZone) AccountIdInput() *string {
+func (j *jsiiProxy_DataCloudflareZone) ActivatedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdInput",
+		"activatedOn",
 		&returns,
 	)
 	return returns
@@ -143,6 +153,16 @@ func (j *jsiiProxy_DataCloudflareZone) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) CnameSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnameSuffix",
 		&returns,
 	)
 	return returns
@@ -168,11 +188,51 @@ func (j *jsiiProxy_DataCloudflareZone) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZone) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZone) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) DevelopmentMode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"developmentMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) Filter() DataCloudflareZoneFilterOutputReference {
+	var returns DataCloudflareZoneFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -218,16 +278,6 @@ func (j *jsiiProxy_DataCloudflareZone) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZone) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZone) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -238,21 +288,31 @@ func (j *jsiiProxy_DataCloudflareZone) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZone) Name() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZone) Meta() DataCloudflareZoneMetaOutputReference {
+	var returns DataCloudflareZoneMetaOutputReference
 	_jsii_.Get(
 		j,
-		"name",
+		"meta",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZone) NameInput() *string {
+func (j *jsiiProxy_DataCloudflareZone) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns
@@ -278,6 +338,46 @@ func (j *jsiiProxy_DataCloudflareZone) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZone) OriginalDnshost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalDnshost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) OriginalNameServers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"originalNameServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) OriginalRegistrar() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalRegistrar",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) Owner() DataCloudflareZoneOwnerOutputReference {
+	var returns DataCloudflareZoneOwnerOutputReference
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZone) Paused() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -288,8 +388,18 @@ func (j *jsiiProxy_DataCloudflareZone) Paused() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZone) Plan() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZone) Permissions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) Plan() DataCloudflareZonePlanOutputReference {
+	var returns DataCloudflareZonePlanOutputReference
 	_jsii_.Get(
 		j,
 		"plan",
@@ -328,6 +438,26 @@ func (j *jsiiProxy_DataCloudflareZone) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZone) Tenant() DataCloudflareZoneTenantOutputReference {
+	var returns DataCloudflareZoneTenantOutputReference
+	_jsii_.Get(
+		j,
+		"tenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) TenantUnit() DataCloudflareZoneTenantUnitOutputReference {
+	var returns DataCloudflareZoneTenantUnitOutputReference
+	_jsii_.Get(
+		j,
+		"tenantUnit",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZone) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -358,11 +488,31 @@ func (j *jsiiProxy_DataCloudflareZone) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZone) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZone) VanityNameServers() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"vanityNameServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZone) VerificationKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationKey",
 		&returns,
 	)
 	return returns
@@ -389,7 +539,7 @@ func (j *jsiiProxy_DataCloudflareZone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) DataCloudflareZone {
 	_init_.Initialize()
 
@@ -407,7 +557,7 @@ func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone_Override(d DataCloudflareZone, scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) {
 	_init_.Initialize()
 
@@ -415,17 +565,6 @@ func NewDataCloudflareZone_Override(d DataCloudflareZone, scope constructs.Const
 		"@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZone",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZone)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -456,17 +595,6 @@ func (j *jsiiProxy_DataCloudflareZone)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZone)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareZone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -474,17 +602,6 @@ func (j *jsiiProxy_DataCloudflareZone)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZone)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -793,26 +910,21 @@ func (d *jsiiProxy_DataCloudflareZone) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZone) ResetAccountId() {
+func (d *jsiiProxy_DataCloudflareZone) PutFilter(value *DataCloudflareZoneFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
-		"resetAccountId",
-		nil, // no parameters
+		"putFilter",
+		[]interface{}{value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZone) ResetId() {
+func (d *jsiiProxy_DataCloudflareZone) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZone) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
+		"resetFilter",
 		nil, // no parameters
 	)
 }

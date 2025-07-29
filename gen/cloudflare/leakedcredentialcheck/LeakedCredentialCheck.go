@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/leakedcredentialcheck/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 type LeakedCredentialCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -107,6 +107,7 @@ type LeakedCredentialCheck interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -329,7 +330,7 @@ func (j *jsiiProxy_LeakedCredentialCheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) LeakedCredentialCheck {
 	_init_.Initialize()
 
@@ -347,7 +348,7 @@ func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *Le
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck_Override(l LeakedCredentialCheck, scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) {
 	_init_.Initialize()
 
@@ -798,6 +799,14 @@ func (l *jsiiProxy_LeakedCredentialCheck) OverrideLogicalId(newLogicalId *string
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LeakedCredentialCheck) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 

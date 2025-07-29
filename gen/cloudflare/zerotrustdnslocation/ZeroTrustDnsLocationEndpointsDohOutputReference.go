@@ -10,7 +10,6 @@ import (
 
 type ZeroTrustDnsLocationEndpointsDohOutputReference interface {
 	cdktf.ComplexObject
-	AuthenticationEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,11 +30,13 @@ type ZeroTrustDnsLocationEndpointsDohOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDnsLocationEndpointsDoh
-	SetInternalValue(val *ZeroTrustDnsLocationEndpointsDoh)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Networks() ZeroTrustDnsLocationEndpointsDohNetworksList
 	NetworksInput() interface{}
-	RequireToken() cdktf.IResolvable
+	RequireToken() interface{}
+	SetRequireToken(val interface{})
+	RequireTokenInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +70,9 @@ type ZeroTrustDnsLocationEndpointsDohOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworks(value interface{})
+	ResetEnabled()
 	ResetNetworks()
+	ResetRequireToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,16 +86,6 @@ type ZeroTrustDnsLocationEndpointsDohOutputReference interface {
 // The jsii proxy struct for ZeroTrustDnsLocationEndpointsDohOutputReference
 type jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) AuthenticationEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"authenticationEnabled",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) ComplexObjectIndex() interface{} {
@@ -155,8 +148,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) InternalValue() *ZeroTrustDnsLocationEndpointsDoh {
-	var returns *ZeroTrustDnsLocationEndpointsDoh
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -185,11 +178,21 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) NetworksInpu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) RequireToken() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) RequireToken() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"requireToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) RequireTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireTokenInput",
 		&returns,
 	)
 	return returns
@@ -276,13 +279,24 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference)SetEnabled(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference)SetInternalValue(val *ZeroTrustDnsLocationEndpointsDoh) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference)SetRequireToken(val interface{}) {
+	if err := j.validateSetRequireTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireToken",
 		val,
 	)
 }
@@ -506,10 +520,26 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) PutNetworks(
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) ResetNetworks() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetNetworks",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) ResetRequireToken() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRequireToken",
 		nil, // no parameters
 	)
 }

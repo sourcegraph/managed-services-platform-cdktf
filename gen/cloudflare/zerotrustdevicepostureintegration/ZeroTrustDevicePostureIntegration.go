@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustdevicepostureintegration/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
 type ZeroTrustDevicePostureIntegration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -17,7 +17,7 @@ type ZeroTrustDevicePostureIntegration interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Config() ZeroTrustDevicePostureIntegrationConfigAList
+	Config() ZeroTrustDevicePostureIntegrationConfigAOutputReference
 	ConfigInput() interface{}
 	// Experimental.
 	Connection() interface{}
@@ -42,11 +42,6 @@ type ZeroTrustDevicePostureIntegration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	Identifier() *string
-	SetIdentifier(val *string)
-	IdentifierInput() *string
-	IdInput() *string
 	Interval() *string
 	SetInterval(val *string)
 	IntervalInput() *string
@@ -121,11 +116,7 @@ type ZeroTrustDevicePostureIntegration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfig(value interface{})
-	ResetConfig()
-	ResetId()
-	ResetIdentifier()
-	ResetInterval()
+	PutConfig(value *ZeroTrustDevicePostureIntegrationConfigA)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -177,8 +168,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) Config() ZeroTrustDevicePostureIntegrationConfigAList {
-	var returns ZeroTrustDevicePostureIntegrationConfigAList
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) Config() ZeroTrustDevicePostureIntegrationConfigAOutputReference {
+	var returns ZeroTrustDevicePostureIntegrationConfigAOutputReference
 	_jsii_.Get(
 		j,
 		"config",
@@ -272,36 +263,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) Identifier() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"identifier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) IdentifierInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"identifierInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -448,7 +409,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
 func NewZeroTrustDevicePostureIntegration(scope constructs.Construct, id *string, config *ZeroTrustDevicePostureIntegrationConfig) ZeroTrustDevicePostureIntegration {
 	_init_.Initialize()
 
@@ -466,7 +427,7 @@ func NewZeroTrustDevicePostureIntegration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource.
 func NewZeroTrustDevicePostureIntegration_Override(z ZeroTrustDevicePostureIntegration, scope constructs.Construct, id *string, config *ZeroTrustDevicePostureIntegrationConfig) {
 	_init_.Initialize()
 
@@ -522,28 +483,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegration)SetForEach(val cdktf.ITerra
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegration)SetIdentifier(val *string) {
-	if err := j.validateSetIdentifierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"identifier",
 		val,
 	)
 }
@@ -964,7 +903,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) OverrideLogicalId(newLogic
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) PutConfig(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) PutConfig(value *ZeroTrustDevicePostureIntegrationConfigA) {
 	if err := z.validatePutConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -972,38 +911,6 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) PutConfig(value interface{
 		z,
 		"putConfig",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) ResetConfig() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetConfig",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) ResetIdentifier() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIdentifier",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegration) ResetInterval() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetInterval",
-		nil, // no parameters
 	)
 }
 

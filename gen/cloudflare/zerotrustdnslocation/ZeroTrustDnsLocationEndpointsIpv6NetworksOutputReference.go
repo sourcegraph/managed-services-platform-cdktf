@@ -64,7 +64,6 @@ type ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference) Int
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference) ResetNetwork() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetNetwork",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

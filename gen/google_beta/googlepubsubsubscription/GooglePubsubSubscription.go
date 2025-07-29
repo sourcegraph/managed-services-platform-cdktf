@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlepubsubsubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
 type GooglePubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -70,6 +70,8 @@ type GooglePubsubSubscription interface {
 	MessageRetentionDuration() *string
 	SetMessageRetentionDuration(val *string)
 	MessageRetentionDurationInput() *string
+	MessageTransforms() GooglePubsubSubscriptionMessageTransformsList
+	MessageTransformsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -154,6 +156,7 @@ type GooglePubsubSubscription interface {
 	PutCloudStorageConfig(value *GooglePubsubSubscriptionCloudStorageConfig)
 	PutDeadLetterPolicy(value *GooglePubsubSubscriptionDeadLetterPolicy)
 	PutExpirationPolicy(value *GooglePubsubSubscriptionExpirationPolicy)
+	PutMessageTransforms(value interface{})
 	PutPushConfig(value *GooglePubsubSubscriptionPushConfig)
 	PutRetryPolicy(value *GooglePubsubSubscriptionRetryPolicy)
 	PutTimeouts(value *GooglePubsubSubscriptionTimeouts)
@@ -168,6 +171,7 @@ type GooglePubsubSubscription interface {
 	ResetId()
 	ResetLabels()
 	ResetMessageRetentionDuration()
+	ResetMessageTransforms()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -514,6 +518,26 @@ func (j *jsiiProxy_GooglePubsubSubscription) MessageRetentionDurationInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) MessageTransforms() GooglePubsubSubscriptionMessageTransformsList {
+	var returns GooglePubsubSubscriptionMessageTransformsList
+	_jsii_.Get(
+		j,
+		"messageTransforms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) MessageTransformsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"messageTransformsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -735,7 +759,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) GooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -753,7 +777,7 @@ func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription_Override(g GooglePubsubSubscription, scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1350,6 +1374,17 @@ func (g *jsiiProxy_GooglePubsubSubscription) PutExpirationPolicy(value *GooglePu
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) PutMessageTransforms(value interface{}) {
+	if err := g.validatePutMessageTransformsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMessageTransforms",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) PutPushConfig(value *GooglePubsubSubscriptionPushConfig) {
 	if err := g.validatePutPushConfigParameters(value); err != nil {
 		panic(err)
@@ -1467,6 +1502,14 @@ func (g *jsiiProxy_GooglePubsubSubscription) ResetMessageRetentionDuration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMessageRetentionDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) ResetMessageTransforms() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMessageTransforms",
 		nil, // no parameters
 	)
 }

@@ -76,7 +76,7 @@ func (w *jsiiProxy_WaitingRoom) validatePutAdditionalRoutesParameters(value inte
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoom) validatePutTimeoutsParameters(value *WaitingRoomTimeouts) error {
+func (w *jsiiProxy_WaitingRoom) validatePutCookieAttributesParameters(value *WaitingRoomCookieAttributes) error {
 	return nil
 }
 
@@ -129,10 +129,6 @@ func (j *jsiiProxy_WaitingRoom) validateSetEnabledOriginCommandsParameters(val *
 }
 
 func (j *jsiiProxy_WaitingRoom) validateSetHostParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_WaitingRoom) validateSetIdParameters(val *string) error {
 	return nil
 }
 

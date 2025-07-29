@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetExpireTimeParameters(val *string) error {
 	return nil
 }

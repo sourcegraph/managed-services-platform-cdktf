@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglecomputereservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/compute_reservation google_compute_reservation}.
 type DataGoogleComputeReservation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -22,6 +22,8 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DeleteAfterDuration() DataGoogleComputeReservationDeleteAfterDurationList
+	DeleteAtTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,6 +58,7 @@ type DataGoogleComputeReservation interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReservationSharingPolicy() DataGoogleComputeReservationReservationSharingPolicyList
 	SelfLink() *string
 	ShareSettings() DataGoogleComputeReservationShareSettingsList
 	SpecificReservation() DataGoogleComputeReservationSpecificReservationList
@@ -164,6 +167,26 @@ func (j *jsiiProxy_DataGoogleComputeReservation) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) DeleteAfterDuration() DataGoogleComputeReservationDeleteAfterDurationList {
+	var returns DataGoogleComputeReservationDeleteAfterDurationList
+	_jsii_.Get(
+		j,
+		"deleteAfterDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservation) DeleteAtTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTime",
 		&returns,
 	)
 	return returns
@@ -319,6 +342,16 @@ func (j *jsiiProxy_DataGoogleComputeReservation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeReservation) ReservationSharingPolicy() DataGoogleComputeReservationReservationSharingPolicyList {
+	var returns DataGoogleComputeReservationReservationSharingPolicyList
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeReservation) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -420,7 +453,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) DataGoogleComputeReservation {
 	_init_.Initialize()
 
@@ -438,7 +471,7 @@ func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation_Override(d DataGoogleComputeReservation, scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) {
 	_init_.Initialize()
 

@@ -9,14 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareipranges/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
 type DataCloudflareIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ChinaIpv4CidrBlocks() *[]*string
-	ChinaIpv6CidrBlocks() *[]*string
-	CidrBlocks() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -27,6 +24,7 @@ type DataCloudflareIpRanges interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,15 +33,16 @@ type DataCloudflareIpRanges interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	Ipv4CidrBlocks() *[]*string
-	Ipv6CidrBlocks() *[]*string
+	Ipv4Cidrs() *[]*string
+	Ipv6Cidrs() *[]*string
+	JdcloudCidrs() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Networks() *string
+	SetNetworks(val *string)
+	NetworksInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -83,7 +82,7 @@ type DataCloudflareIpRanges interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -111,36 +110,6 @@ func (j *jsiiProxy_DataCloudflareIpRanges) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareIpRanges) ChinaIpv4CidrBlocks() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"chinaIpv4CidrBlocks",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareIpRanges) ChinaIpv6CidrBlocks() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"chinaIpv6CidrBlocks",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareIpRanges) CidrBlocks() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"cidrBlocks",
 		&returns,
 	)
 	return returns
@@ -176,6 +145,16 @@ func (j *jsiiProxy_DataCloudflareIpRanges) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareIpRanges) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareIpRanges) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -206,41 +185,31 @@ func (j *jsiiProxy_DataCloudflareIpRanges) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareIpRanges) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareIpRanges) Ipv4CidrBlocks() *[]*string {
+func (j *jsiiProxy_DataCloudflareIpRanges) Ipv4Cidrs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"ipv4CidrBlocks",
+		"ipv4Cidrs",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges) Ipv6CidrBlocks() *[]*string {
+func (j *jsiiProxy_DataCloudflareIpRanges) Ipv6Cidrs() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"ipv6CidrBlocks",
+		"ipv6Cidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareIpRanges) JdcloudCidrs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"jdcloudCidrs",
 		&returns,
 	)
 	return returns
@@ -251,6 +220,26 @@ func (j *jsiiProxy_DataCloudflareIpRanges) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareIpRanges) Networks() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareIpRanges) NetworksInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networksInput",
 		&returns,
 	)
 	return returns
@@ -317,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) DataCloudflareIpRanges {
 	_init_.Initialize()
 
@@ -335,7 +324,7 @@ func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) {
 	_init_.Initialize()
 
@@ -373,17 +362,6 @@ func (j *jsiiProxy_DataCloudflareIpRanges)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareIpRanges)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -391,6 +369,17 @@ func (j *jsiiProxy_DataCloudflareIpRanges)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareIpRanges)SetNetworks(val *string) {
+	if err := j.validateSetNetworksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networks",
 		val,
 	)
 }
@@ -688,10 +677,10 @@ func (d *jsiiProxy_DataCloudflareIpRanges) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareIpRanges) ResetId() {
+func (d *jsiiProxy_DataCloudflareIpRanges) ResetNetworks() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetNetworks",
 		nil, // no parameters
 	)
 }

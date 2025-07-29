@@ -60,11 +60,19 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val *PagesProjectSourceConfig) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathExcludesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathIncludesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -88,7 +96,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductio
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
 	return nil
 }
 

@@ -70,8 +70,6 @@ type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetChinaNetwork()
-	ResetClientCertificateForwarding()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -517,22 +515,6 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) I
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ResetChinaNetwork() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetChinaNetwork",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ResetClientCertificateForwarding() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetClientCertificateForwarding",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

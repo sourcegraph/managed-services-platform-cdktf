@@ -16,9 +16,9 @@ type PageRuleActionsOutputReference interface {
 	AutomaticHttpsRewrites() *string
 	SetAutomaticHttpsRewrites(val *string)
 	AutomaticHttpsRewritesInput() *string
-	BrowserCacheTtl() *string
-	SetBrowserCacheTtl(val *string)
-	BrowserCacheTtlInput() *string
+	BrowserCacheTtl() *float64
+	SetBrowserCacheTtl(val *float64)
+	BrowserCacheTtlInput() *float64
 	BrowserCheck() *string
 	SetBrowserCheck(val *string)
 	BrowserCheckInput() *string
@@ -32,15 +32,16 @@ type PageRuleActionsOutputReference interface {
 	SetCacheDeceptionArmor(val *string)
 	CacheDeceptionArmorInput() *string
 	CacheKeyFields() PageRuleActionsCacheKeyFieldsOutputReference
-	CacheKeyFieldsInput() *PageRuleActionsCacheKeyFields
+	CacheKeyFieldsInput() interface{}
 	CacheLevel() *string
 	SetCacheLevel(val *string)
 	CacheLevelInput() *string
 	CacheOnCookie() *string
 	SetCacheOnCookie(val *string)
 	CacheOnCookieInput() *string
-	CacheTtlByStatus() PageRuleActionsCacheTtlByStatusList
-	CacheTtlByStatusInput() interface{}
+	CacheTtlByStatus() *map[string]*string
+	SetCacheTtlByStatus(val *map[string]*string)
+	CacheTtlByStatusInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -62,9 +63,6 @@ type PageRuleActionsOutputReference interface {
 	DisablePerformance() interface{}
 	SetDisablePerformance(val interface{})
 	DisablePerformanceInput() interface{}
-	DisableRailgun() interface{}
-	SetDisableRailgun(val interface{})
-	DisableRailgunInput() interface{}
 	DisableSecurity() interface{}
 	SetDisableSecurity(val interface{})
 	DisableSecurityInput() interface{}
@@ -81,19 +79,17 @@ type PageRuleActionsOutputReference interface {
 	SetExplicitCacheControl(val *string)
 	ExplicitCacheControlInput() *string
 	ForwardingUrl() PageRuleActionsForwardingUrlOutputReference
-	ForwardingUrlInput() *PageRuleActionsForwardingUrl
+	ForwardingUrlInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HostHeaderOverride() *string
 	SetHostHeaderOverride(val *string)
 	HostHeaderOverrideInput() *string
-	InternalValue() *PageRuleActions
-	SetInternalValue(val *PageRuleActions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	IpGeolocation() *string
 	SetIpGeolocation(val *string)
 	IpGeolocationInput() *string
-	Minify() PageRuleActionsMinifyList
-	MinifyInput() interface{}
 	Mirage() *string
 	SetMirage(val *string)
 	MirageInput() *string
@@ -121,9 +117,6 @@ type PageRuleActionsOutputReference interface {
 	SecurityLevel() *string
 	SetSecurityLevel(val *string)
 	SecurityLevelInput() *string
-	ServerSideExclude() *string
-	SetServerSideExclude(val *string)
-	ServerSideExcludeInput() *string
 	SortQueryStringForCache() *string
 	SetSortQueryStringForCache(val *string)
 	SortQueryStringForCacheInput() *string
@@ -169,9 +162,7 @@ type PageRuleActionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCacheKeyFields(value *PageRuleActionsCacheKeyFields)
-	PutCacheTtlByStatus(value interface{})
 	PutForwardingUrl(value *PageRuleActionsForwardingUrl)
-	PutMinify(value interface{})
 	ResetAlwaysUseHttps()
 	ResetAutomaticHttpsRewrites()
 	ResetBrowserCacheTtl()
@@ -185,7 +176,6 @@ type PageRuleActionsOutputReference interface {
 	ResetCacheTtlByStatus()
 	ResetDisableApps()
 	ResetDisablePerformance()
-	ResetDisableRailgun()
 	ResetDisableSecurity()
 	ResetDisableZaraz()
 	ResetEdgeCacheTtl()
@@ -194,7 +184,6 @@ type PageRuleActionsOutputReference interface {
 	ResetForwardingUrl()
 	ResetHostHeaderOverride()
 	ResetIpGeolocation()
-	ResetMinify()
 	ResetMirage()
 	ResetOpportunisticEncryption()
 	ResetOriginErrorPagePassThru()
@@ -204,7 +193,6 @@ type PageRuleActionsOutputReference interface {
 	ResetResponseBuffering()
 	ResetRocketLoader()
 	ResetSecurityLevel()
-	ResetServerSideExclude()
 	ResetSortQueryStringForCache()
 	ResetSsl()
 	ResetTrueClientIpHeader()
@@ -264,8 +252,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) AutomaticHttpsRewritesInput()
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) BrowserCacheTtl() *string {
-	var returns *string
+func (j *jsiiProxy_PageRuleActionsOutputReference) BrowserCacheTtl() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"browserCacheTtl",
@@ -274,8 +262,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) BrowserCacheTtl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) BrowserCacheTtlInput() *string {
-	var returns *string
+func (j *jsiiProxy_PageRuleActionsOutputReference) BrowserCacheTtlInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"browserCacheTtlInput",
@@ -374,8 +362,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFields() PageRuleActi
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFieldsInput() *PageRuleActionsCacheKeyFields {
-	var returns *PageRuleActionsCacheKeyFields
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheKeyFieldsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cacheKeyFieldsInput",
@@ -424,8 +412,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheOnCookieInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() PageRuleActionsCacheTtlByStatusList {
-	var returns PageRuleActionsCacheTtlByStatusList
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"cacheTtlByStatus",
@@ -434,8 +422,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() PageRuleAc
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatusInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatusInput() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"cacheTtlByStatusInput",
@@ -509,26 +497,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) DisablePerformanceInput() int
 	_jsii_.Get(
 		j,
 		"disablePerformanceInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableRailgun() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableRailgun",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) DisableRailgunInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disableRailgunInput",
 		&returns,
 	)
 	return returns
@@ -644,8 +612,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrl() PageRuleActio
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrlInput() *PageRuleActionsForwardingUrl {
-	var returns *PageRuleActionsForwardingUrl
+func (j *jsiiProxy_PageRuleActionsOutputReference) ForwardingUrlInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"forwardingUrlInput",
@@ -684,8 +652,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) HostHeaderOverrideInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) InternalValue() *PageRuleActions {
-	var returns *PageRuleActions
+func (j *jsiiProxy_PageRuleActionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -709,26 +677,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) IpGeolocationInput() *string 
 	_jsii_.Get(
 		j,
 		"ipGeolocationInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) Minify() PageRuleActionsMinifyList {
-	var returns PageRuleActionsMinifyList
-	_jsii_.Get(
-		j,
-		"minify",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) MinifyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"minifyInput",
 		&returns,
 	)
 	return returns
@@ -914,26 +862,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SecurityLevelInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) ServerSideExclude() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverSideExclude",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) ServerSideExcludeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverSideExcludeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PageRuleActionsOutputReference) SortQueryStringForCache() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1084,7 +1012,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetAutomaticHttpsRewrites(val 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCacheTtl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCacheTtl(val *float64) {
 	if err := j.validateSetBrowserCacheTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,6 +1089,17 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheOnCookie(val *string) 
 	)
 }
 
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheTtlByStatus(val *map[string]*string) {
+	if err := j.validateSetCacheTtlByStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheTtlByStatus",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1201,17 +1140,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisablePerformance(val inte
 	_jsii_.Set(
 		j,
 		"disablePerformance",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableRailgun(val interface{}) {
-	if err := j.validateSetDisableRailgunParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disableRailgun",
 		val,
 	)
 }
@@ -1282,7 +1210,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetHostHeaderOverride(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetInternalValue(val *PageRuleActions) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1399,17 +1327,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetSecurityLevel(val *string) 
 	_jsii_.Set(
 		j,
 		"securityLevel",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetServerSideExclude(val *string) {
-	if err := j.validateSetServerSideExcludeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverSideExclude",
 		val,
 	)
 }
@@ -1677,17 +1594,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheKeyFields(value *Page
 	)
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheTtlByStatus(value interface{}) {
-	if err := p.validatePutCacheTtlByStatusParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putCacheTtlByStatus",
-		[]interface{}{value},
-	)
-}
-
 func (p *jsiiProxy_PageRuleActionsOutputReference) PutForwardingUrl(value *PageRuleActionsForwardingUrl) {
 	if err := p.validatePutForwardingUrlParameters(value); err != nil {
 		panic(err)
@@ -1695,17 +1601,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutForwardingUrl(value *PageR
 	_jsii_.InvokeVoid(
 		p,
 		"putForwardingUrl",
-		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) PutMinify(value interface{}) {
-	if err := p.validatePutMinifyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putMinify",
 		[]interface{}{value},
 	)
 }
@@ -1814,14 +1709,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ResetDisablePerformance() {
 	)
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) ResetDisableRailgun() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDisableRailgun",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PageRuleActionsOutputReference) ResetDisableSecurity() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1882,14 +1769,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ResetIpGeolocation() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIpGeolocation",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) ResetMinify() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetMinify",
 		nil, // no parameters
 	)
 }
@@ -1962,14 +1841,6 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ResetSecurityLevel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSecurityLevel",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) ResetServerSideExclude() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetServerSideExclude",
 		nil, // no parameters
 	)
 }

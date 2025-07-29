@@ -72,6 +72,10 @@ func (d *jsiiProxy_D1Database) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (d *jsiiProxy_D1Database) validatePutReadReplicationParameters(value *D1DatabaseReadReplication) error {
+	return nil
+}
+
 func validateD1Database_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_D1Database) validateSetLifecycleParameters(val *cdktf.Terrafo
 }
 
 func (j *jsiiProxy_D1Database) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_D1Database) validateSetPrimaryLocationHintParameters(val *string) error {
 	return nil
 }
 

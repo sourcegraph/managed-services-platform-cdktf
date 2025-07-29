@@ -44,31 +44,19 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolat
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value *LoadBalancerRulesOverridesAdaptiveRouting) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value *LoadBalancerRulesOverridesLocationStrategy) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value *LoadBalancerRulesOverridesRandomSteering) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionPoolsParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value *LoadBalancerRulesOverridesSessionAffinityAttributes) error {
 	return nil
 }
 
@@ -84,6 +72,10 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetCountryPoolsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetDefaultPoolsParameters(val *[]*string) error {
 	return nil
 }
@@ -93,6 +85,14 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetFallbac
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetPopPoolsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetRegionPoolsParameters(val interface{}) error {
 	return nil
 }
 
@@ -120,7 +120,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetTtlPara
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

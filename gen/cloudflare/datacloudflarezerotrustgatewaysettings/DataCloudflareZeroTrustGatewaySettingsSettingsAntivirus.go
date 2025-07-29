@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaysettings
+
+
+type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirus struct {
+}
+

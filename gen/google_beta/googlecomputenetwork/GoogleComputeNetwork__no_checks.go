@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeNetwork) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetwork) validatePutParamsParameters(value *GoogleComputeNetworkParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetwork) validatePutTimeoutsParameters(value *GoogleComputeNetworkTimeouts) error {
 	return nil
 }

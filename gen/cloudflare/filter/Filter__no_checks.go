@@ -96,15 +96,7 @@ func (j *jsiiProxy_Filter) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Filter) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Filter) validateSetExpressionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Filter) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -112,15 +104,7 @@ func (j *jsiiProxy_Filter) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Filter) validateSetPausedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Filter) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Filter) validateSetRefParameters(val *string) error {
 	return nil
 }
 

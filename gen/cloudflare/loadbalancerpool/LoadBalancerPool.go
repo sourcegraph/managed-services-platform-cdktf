@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/loadbalancerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -38,6 +38,7 @@ type LoadBalancerPool interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisabledAt() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -50,8 +51,6 @@ type LoadBalancerPool interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Latitude() *float64
 	SetLatitude(val *float64)
 	LatitudeInput() *float64
@@ -59,7 +58,7 @@ type LoadBalancerPool interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LoadShedding() LoadBalancerPoolLoadSheddingList
+	LoadShedding() LoadBalancerPoolLoadSheddingOutputReference
 	LoadSheddingInput() interface{}
 	Longitude() *float64
 	SetLongitude(val *float64)
@@ -74,14 +73,17 @@ type LoadBalancerPool interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Networks() *[]*string
 	// The tree node.
 	Node() constructs.Node
 	NotificationEmail() *string
 	SetNotificationEmail(val *string)
 	NotificationEmailInput() *string
+	NotificationFilter() LoadBalancerPoolNotificationFilterOutputReference
+	NotificationFilterInput() interface{}
 	Origins() LoadBalancerPoolOriginsList
 	OriginsInput() interface{}
-	OriginSteering() LoadBalancerPoolOriginSteeringList
+	OriginSteering() LoadBalancerPoolOriginSteeringOutputReference
 	OriginSteeringInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -142,19 +144,20 @@ type LoadBalancerPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLoadShedding(value interface{})
+	PutLoadShedding(value *LoadBalancerPoolLoadShedding)
+	PutNotificationFilter(value *LoadBalancerPoolNotificationFilter)
 	PutOrigins(value interface{})
-	PutOriginSteering(value interface{})
+	PutOriginSteering(value *LoadBalancerPoolOriginSteering)
 	ResetCheckRegions()
 	ResetDescription()
 	ResetEnabled()
-	ResetId()
 	ResetLatitude()
 	ResetLoadShedding()
 	ResetLongitude()
 	ResetMinimumOrigins()
 	ResetMonitor()
 	ResetNotificationEmail()
+	ResetNotificationFilter()
 	ResetOriginSteering()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -297,6 +300,16 @@ func (j *jsiiProxy_LoadBalancerPool) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPool) DisabledAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"disabledAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPool) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -357,16 +370,6 @@ func (j *jsiiProxy_LoadBalancerPool) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LoadBalancerPool) Latitude() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -397,8 +400,8 @@ func (j *jsiiProxy_LoadBalancerPool) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) LoadShedding() LoadBalancerPoolLoadSheddingList {
-	var returns LoadBalancerPoolLoadSheddingList
+func (j *jsiiProxy_LoadBalancerPool) LoadShedding() LoadBalancerPoolLoadSheddingOutputReference {
+	var returns LoadBalancerPoolLoadSheddingOutputReference
 	_jsii_.Get(
 		j,
 		"loadShedding",
@@ -507,6 +510,16 @@ func (j *jsiiProxy_LoadBalancerPool) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPool) Networks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networks",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPool) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -537,6 +550,26 @@ func (j *jsiiProxy_LoadBalancerPool) NotificationEmailInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPool) NotificationFilter() LoadBalancerPoolNotificationFilterOutputReference {
+	var returns LoadBalancerPoolNotificationFilterOutputReference
+	_jsii_.Get(
+		j,
+		"notificationFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPool) NotificationFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPool) Origins() LoadBalancerPoolOriginsList {
 	var returns LoadBalancerPoolOriginsList
 	_jsii_.Get(
@@ -557,8 +590,8 @@ func (j *jsiiProxy_LoadBalancerPool) OriginsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) OriginSteering() LoadBalancerPoolOriginSteeringList {
-	var returns LoadBalancerPoolOriginSteeringList
+func (j *jsiiProxy_LoadBalancerPool) OriginSteering() LoadBalancerPoolOriginSteeringOutputReference {
+	var returns LoadBalancerPoolOriginSteeringOutputReference
 	_jsii_.Get(
 		j,
 		"originSteering",
@@ -638,7 +671,7 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
 
@@ -656,7 +689,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -745,17 +778,6 @@ func (j *jsiiProxy_LoadBalancerPool)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LoadBalancerPool)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1209,13 +1231,24 @@ func (l *jsiiProxy_LoadBalancerPool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) PutLoadShedding(value interface{}) {
+func (l *jsiiProxy_LoadBalancerPool) PutLoadShedding(value *LoadBalancerPoolLoadShedding) {
 	if err := l.validatePutLoadSheddingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putLoadShedding",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPool) PutNotificationFilter(value *LoadBalancerPoolNotificationFilter) {
+	if err := l.validatePutNotificationFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putNotificationFilter",
 		[]interface{}{value},
 	)
 }
@@ -1231,7 +1264,7 @@ func (l *jsiiProxy_LoadBalancerPool) PutOrigins(value interface{}) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPool) PutOriginSteering(value interface{}) {
+func (l *jsiiProxy_LoadBalancerPool) PutOriginSteering(value *LoadBalancerPoolOriginSteering) {
 	if err := l.validatePutOriginSteeringParameters(value); err != nil {
 		panic(err)
 	}
@@ -1262,14 +1295,6 @@ func (l *jsiiProxy_LoadBalancerPool) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerPool) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -1318,6 +1343,14 @@ func (l *jsiiProxy_LoadBalancerPool) ResetNotificationEmail() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetNotificationEmail",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPool) ResetNotificationFilter() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetNotificationFilter",
 		nil, // no parameters
 	)
 }

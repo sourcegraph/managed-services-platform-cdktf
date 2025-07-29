@@ -72,11 +72,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupParameters(value interface{}) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutConnectionRulesParameters(value *ZeroTrustAccessPolicyConnectionRules) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(value interface{}) error {
 	return nil
 }
 
@@ -112,10 +108,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApplicationIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApprovalRequiredParameters(val interface{}) error {
 	return nil
 }
@@ -132,10 +124,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetDecisionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIsolationRequiredParameters(val interface{}) error {
 	return nil
 }
@@ -145,10 +133,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetLifecycleParameters(val *cd
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPrecedenceParameters(val *float64) error {
 	return nil
 }
 
@@ -165,10 +149,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPurposeJustificationRequire
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetSessionDurationParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

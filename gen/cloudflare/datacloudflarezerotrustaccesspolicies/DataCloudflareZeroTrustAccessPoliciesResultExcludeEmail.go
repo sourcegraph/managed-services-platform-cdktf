@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccesspolicies
+
+
+type DataCloudflareZeroTrustAccessPoliciesResultExcludeEmail struct {
+}
+

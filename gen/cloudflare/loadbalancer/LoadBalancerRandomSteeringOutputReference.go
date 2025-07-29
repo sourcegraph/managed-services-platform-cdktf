@@ -195,29 +195,29 @@ func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) TerraformResource(
 }
 
 
-func NewLoadBalancerRandomSteeringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRandomSteeringOutputReference {
+func NewLoadBalancerRandomSteeringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerRandomSteeringOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerRandomSteeringOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerRandomSteeringOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerRandomSteeringOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerRandomSteeringOutputReference_Override(l LoadBalancerRandomSteeringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerRandomSteeringOutputReference_Override(l LoadBalancerRandomSteeringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaycertificates
+
+
+type DataCloudflareZeroTrustGatewayCertificatesResult struct {
+}
+

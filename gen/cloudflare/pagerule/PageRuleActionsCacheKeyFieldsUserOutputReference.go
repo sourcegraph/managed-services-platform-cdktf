@@ -33,8 +33,8 @@ type PageRuleActionsCacheKeyFieldsUserOutputReference interface {
 	Geo() interface{}
 	SetGeo(val interface{})
 	GeoInput() interface{}
-	InternalValue() *PageRuleActionsCacheKeyFieldsUser
-	SetInternalValue(val *PageRuleActionsCacheKeyFieldsUser)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Lang() interface{}
 	SetLang(val interface{})
 	LangInput() interface{}
@@ -168,8 +168,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) GeoInput() 
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) InternalValue() *PageRuleActionsCacheKeyFieldsUser {
-	var returns *PageRuleActionsCacheKeyFieldsUser
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference)SetGeo(val i
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFieldsUser) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

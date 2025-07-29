@@ -56,7 +56,7 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetInternalValueParameters(val *SpectrumApplicationOriginDns) error {
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -69,6 +69,14 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTtlParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

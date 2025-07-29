@@ -6,11 +6,11 @@ type GoogleComputeFutureReservationAutoCreatedReservationsDuration struct {
 	//
 	// Durations less than one second are represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_future_reservation#nanos GoogleComputeFutureReservation#nanos}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#nanos GoogleComputeFutureReservation#nanos}
 	Nanos *float64 `field:"optional" json:"nanos" yaml:"nanos"`
 	// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_future_reservation#seconds GoogleComputeFutureReservation#seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#seconds GoogleComputeFutureReservation#seconds}
 	Seconds *string `field:"optional" json:"seconds" yaml:"seconds"`
 }
 

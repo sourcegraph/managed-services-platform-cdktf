@@ -25,6 +25,9 @@ type LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DrainDuration() *float64
+	SetDrainDuration(val *float64)
+	DrainDurationInput() *float64
 	// Experimental.
 	Fqn() *string
 	Headers() *[]*string
@@ -76,6 +79,7 @@ type LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDrainDuration()
 	ResetHeaders()
 	ResetRequireAllHeaders()
 	ResetSamesite()
@@ -121,6 +125,26 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) DrainDuration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) DrainDurationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainDurationInput",
 		&returns,
 	)
 	return returns
@@ -267,29 +291,29 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 }
 
 
-func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference {
+func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference_Override(l LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference_Override(l LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }
@@ -312,6 +336,17 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference)SetDrainDuration(val *float64) {
+	if err := j.validateSetDrainDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"drainDuration",
 		val,
 	)
 }
@@ -588,6 +623,14 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) ResetDrainDuration() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDrainDuration",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) ResetHeaders() {

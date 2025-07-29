@@ -27,8 +27,8 @@ type ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ipv4() ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List
 	Ipv4Input() interface{}
 	Ipv6() ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6List
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

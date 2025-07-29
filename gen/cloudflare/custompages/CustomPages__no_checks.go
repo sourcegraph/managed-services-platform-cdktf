@@ -100,7 +100,7 @@ func (j *jsiiProxy_CustomPages) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_CustomPages) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_CustomPages) validateSetIdentifierParameters(val *string) error {
 	return nil
 }
 
@@ -113,10 +113,6 @@ func (j *jsiiProxy_CustomPages) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_CustomPages) validateSetStateParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_CustomPages) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

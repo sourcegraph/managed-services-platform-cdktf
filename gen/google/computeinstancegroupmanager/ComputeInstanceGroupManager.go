@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() ComputeInstanceGroupManagerAllInstancesConfigOutputReference
@@ -83,6 +83,8 @@ type ComputeInstanceGroupManager interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourcePolicies() ComputeInstanceGroupManagerResourcePoliciesOutputReference
+	ResourcePoliciesInput() *ComputeInstanceGroupManagerResourcePolicies
 	SelfLink() *string
 	StandbyPolicy() ComputeInstanceGroupManagerStandbyPolicyOutputReference
 	StandbyPolicyInput() *ComputeInstanceGroupManagerStandbyPolicy
@@ -173,6 +175,7 @@ type ComputeInstanceGroupManager interface {
 	PutAutoHealingPolicies(value *ComputeInstanceGroupManagerAutoHealingPolicies)
 	PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
+	PutResourcePolicies(value *ComputeInstanceGroupManagerResourcePolicies)
 	PutStandbyPolicy(value *ComputeInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
@@ -191,6 +194,7 @@ type ComputeInstanceGroupManager interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetResourcePolicies()
 	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
@@ -602,6 +606,26 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceGroupManager) ResourcePolicies() ComputeInstanceGroupManagerResourcePoliciesOutputReference {
+	var returns ComputeInstanceGroupManagerResourcePoliciesOutputReference
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) ResourcePoliciesInput() *ComputeInstanceGroupManagerResourcePolicies {
+	var returns *ComputeInstanceGroupManagerResourcePolicies
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupManager) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -933,7 +957,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -951,7 +975,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1570,6 +1594,17 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) PutNamedPort(value interface{}) 
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutResourcePolicies(value *ComputeInstanceGroupManagerResourcePolicies) {
+	if err := c.validatePutResourcePoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putResourcePolicies",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) PutStandbyPolicy(value *ComputeInstanceGroupManagerStandbyPolicy) {
 	if err := c.validatePutStandbyPolicyParameters(value); err != nil {
 		panic(err)
@@ -1715,6 +1750,14 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourcePolicies",
 		nil, // no parameters
 	)
 }

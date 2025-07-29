@@ -9,11 +9,17 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/customssl/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_ssl cloudflare_custom_ssl}.
 type CustomSsl interface {
 	cdktf.TerraformResource
+	BundleMethod() *string
+	SetBundleMethod(val *string)
+	BundleMethodInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Certificate() *string
+	SetCertificate(val *string)
+	CertificateInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -24,10 +30,6 @@ type CustomSsl interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CustomSslOptions() CustomSslCustomSslOptionsOutputReference
-	CustomSslOptionsInput() *CustomSslCustomSslOptions
-	CustomSslPriority() CustomSslCustomSslPriorityList
-	CustomSslPriorityInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,11 +43,12 @@ type CustomSsl interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeoRestrictions() CustomSslGeoRestrictionsOutputReference
+	GeoRestrictionsInput() interface{}
 	Hosts() *[]*string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Issuer() *string
+	KeylessServer() CustomSslKeylessServerOutputReference
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,7 +56,13 @@ type CustomSsl interface {
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
+	Policy() *string
+	SetPolicy(val *string)
+	PolicyInput() *string
 	Priority() *float64
+	PrivateKey() *string
+	SetPrivateKey(val *string)
+	PrivateKeyInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -72,6 +81,9 @@ type CustomSsl interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UploadedOn() *string
 	ZoneId() *string
 	SetZoneId(val *string)
@@ -119,14 +131,14 @@ type CustomSsl interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCustomSslOptions(value *CustomSslCustomSslOptions)
-	PutCustomSslPriority(value interface{})
-	ResetCustomSslOptions()
-	ResetCustomSslPriority()
-	ResetId()
+	PutGeoRestrictions(value *CustomSslGeoRestrictions)
+	ResetBundleMethod()
+	ResetGeoRestrictions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicy()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -145,11 +157,51 @@ type jsiiProxy_CustomSsl struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_CustomSsl) BundleMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bundleMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) BundleMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bundleMethodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomSsl) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) Certificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) CertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateInput",
 		&returns,
 	)
 	return returns
@@ -180,46 +232,6 @@ func (j *jsiiProxy_CustomSsl) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomSsl) CustomSslOptions() CustomSslCustomSslOptionsOutputReference {
-	var returns CustomSslCustomSslOptionsOutputReference
-	_jsii_.Get(
-		j,
-		"customSslOptions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomSsl) CustomSslOptionsInput() *CustomSslCustomSslOptions {
-	var returns *CustomSslCustomSslOptions
-	_jsii_.Get(
-		j,
-		"customSslOptionsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomSsl) CustomSslPriority() CustomSslCustomSslPriorityList {
-	var returns CustomSslCustomSslPriorityList
-	_jsii_.Get(
-		j,
-		"customSslPriority",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomSsl) CustomSslPriorityInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customSslPriorityInput",
 		&returns,
 	)
 	return returns
@@ -275,6 +287,26 @@ func (j *jsiiProxy_CustomSsl) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CustomSsl) GeoRestrictions() CustomSslGeoRestrictionsOutputReference {
+	var returns CustomSslGeoRestrictionsOutputReference
+	_jsii_.Get(
+		j,
+		"geoRestrictions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) GeoRestrictionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geoRestrictionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomSsl) Hosts() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -295,21 +327,21 @@ func (j *jsiiProxy_CustomSsl) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomSsl) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CustomSsl) Issuer() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"issuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) KeylessServer() CustomSslKeylessServerOutputReference {
+	var returns CustomSslKeylessServerOutputReference
+	_jsii_.Get(
+		j,
+		"keylessServer",
 		&returns,
 	)
 	return returns
@@ -345,11 +377,51 @@ func (j *jsiiProxy_CustomSsl) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CustomSsl) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) PolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomSsl) Priority() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) PrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyInput",
 		&returns,
 	)
 	return returns
@@ -435,6 +507,26 @@ func (j *jsiiProxy_CustomSsl) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CustomSsl) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomSsl) UploadedOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -466,7 +558,7 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
@@ -484,7 +576,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, config *CustomSslConfig) {
 	_init_.Initialize()
 
@@ -492,6 +584,28 @@ func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, 
 		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetBundleMethod(val *string) {
+	if err := j.validateSetBundleMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bundleMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificate",
+		val,
 	)
 }
 
@@ -533,17 +647,6 @@ func (j *jsiiProxy_CustomSsl)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_CustomSsl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -551,6 +654,28 @@ func (j *jsiiProxy_CustomSsl)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKey",
 		val,
 	)
 }
@@ -570,6 +695,17 @@ func (j *jsiiProxy_CustomSsl)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -938,48 +1074,29 @@ func (c *jsiiProxy_CustomSsl) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CustomSsl) PutCustomSslOptions(value *CustomSslCustomSslOptions) {
-	if err := c.validatePutCustomSslOptionsParameters(value); err != nil {
+func (c *jsiiProxy_CustomSsl) PutGeoRestrictions(value *CustomSslGeoRestrictions) {
+	if err := c.validatePutGeoRestrictionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
-		"putCustomSslOptions",
+		"putGeoRestrictions",
 		[]interface{}{value},
 	)
 }
 
-func (c *jsiiProxy_CustomSsl) PutCustomSslPriority(value interface{}) {
-	if err := c.validatePutCustomSslPriorityParameters(value); err != nil {
-		panic(err)
-	}
+func (c *jsiiProxy_CustomSsl) ResetBundleMethod() {
 	_jsii_.InvokeVoid(
 		c,
-		"putCustomSslPriority",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_CustomSsl) ResetCustomSslOptions() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCustomSslOptions",
+		"resetBundleMethod",
 		nil, // no parameters
 	)
 }
 
-func (c *jsiiProxy_CustomSsl) ResetCustomSslPriority() {
+func (c *jsiiProxy_CustomSsl) ResetGeoRestrictions() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetCustomSslPriority",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CustomSsl) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
+		"resetGeoRestrictions",
 		nil, // no parameters
 	)
 }
@@ -988,6 +1105,22 @@ func (c *jsiiProxy_CustomSsl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomSsl) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomSsl) ResetType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetType",
 		nil, // no parameters
 	)
 }

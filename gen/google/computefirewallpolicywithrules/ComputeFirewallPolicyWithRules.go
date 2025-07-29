@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computefirewallpolicywithrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules}.
 type ComputeFirewallPolicyWithRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -501,7 +501,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRules) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules} Resource.
 func NewComputeFirewallPolicyWithRules(scope constructs.Construct, id *string, config *ComputeFirewallPolicyWithRulesConfig) ComputeFirewallPolicyWithRules {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewComputeFirewallPolicyWithRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_firewall_policy_with_rules google_compute_firewall_policy_with_rules} Resource.
 func NewComputeFirewallPolicyWithRules_Override(c ComputeFirewallPolicyWithRules, scope constructs.Construct, id *string, config *ComputeFirewallPolicyWithRulesConfig) {
 	_init_.Initialize()
 

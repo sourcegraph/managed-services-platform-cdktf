@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/botmanagement/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -30,6 +30,9 @@ type BotManagement interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CrawlerProtection() *string
+	SetCrawlerProtection(val *string)
+	CrawlerProtectionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,8 +52,6 @@ type BotManagement interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -82,6 +83,7 @@ type BotManagement interface {
 	SbfmVerifiedBots() *string
 	SetSbfmVerifiedBots(val *string)
 	SbfmVerifiedBotsInput() *string
+	StaleZoneConfiguration() BotManagementStaleZoneConfigurationOutputReference
 	SuppressSessionScore() interface{}
 	SetSuppressSessionScore(val interface{})
 	SuppressSessionScoreInput() interface{}
@@ -140,9 +142,9 @@ type BotManagement interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
+	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
-	ResetId()
 	ResetOptimizeWordpress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -250,6 +252,26 @@ func (j *jsiiProxy_BotManagement) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BotManagement) CrawlerProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crawlerProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CrawlerProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crawlerProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotManagement) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -335,16 +357,6 @@ func (j *jsiiProxy_BotManagement) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BotManagement) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -500,6 +512,16 @@ func (j *jsiiProxy_BotManagement) SbfmVerifiedBotsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BotManagement) StaleZoneConfiguration() BotManagementStaleZoneConfigurationOutputReference {
+	var returns BotManagementStaleZoneConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"staleZoneConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotManagement) SuppressSessionScore() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -581,7 +603,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -599,7 +621,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -654,6 +676,17 @@ func (j *jsiiProxy_BotManagement)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_BotManagement)SetCrawlerProtection(val *string) {
+	if err := j.validateSetCrawlerProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crawlerProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BotManagement)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -688,17 +721,6 @@ func (j *jsiiProxy_BotManagement)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BotManagement)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1179,6 +1201,14 @@ func (b *jsiiProxy_BotManagement) ResetAutoUpdateModel() {
 	)
 }
 
+func (b *jsiiProxy_BotManagement) ResetCrawlerProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCrawlerProtection",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotManagement) ResetEnableJs() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1191,14 +1221,6 @@ func (b *jsiiProxy_BotManagement) ResetFightMode() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetFightMode",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BotManagement) ResetId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetId",
 		nil, // no parameters
 	)
 }

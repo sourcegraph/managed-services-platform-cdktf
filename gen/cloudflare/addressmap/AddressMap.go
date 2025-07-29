@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/addressmap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map cloudflare_address_map}.
 type AddressMap interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -29,6 +29,7 @@ type AddressMap interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	DefaultSni() *string
 	SetDefaultSni(val *string)
 	DefaultSniInput() *string
@@ -51,16 +52,16 @@ type AddressMap interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	Ips() AddressMapIpsList
-	IpsInput() interface{}
+	Ips() *[]*string
+	SetIps(val *[]*string)
+	IpsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Memberships() AddressMapMembershipsList
 	MembershipsInput() interface{}
+	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -122,11 +123,10 @@ type AddressMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIps(value interface{})
 	PutMemberships(value interface{})
 	ResetDefaultSni()
 	ResetDescription()
-	ResetId()
+	ResetEnabled()
 	ResetIps()
 	ResetMemberships()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -225,6 +225,16 @@ func (j *jsiiProxy_AddressMap) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AddressMap) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -340,18 +350,8 @@ func (j *jsiiProxy_AddressMap) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AddressMap) Ips() AddressMapIpsList {
-	var returns AddressMapIpsList
+func (j *jsiiProxy_AddressMap) Ips() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"ips",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_AddressMap) Ips() AddressMapIpsList {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) IpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AddressMap) IpsInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"ipsInput",
@@ -395,6 +395,16 @@ func (j *jsiiProxy_AddressMap) MembershipsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"membershipsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AddressMap) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -471,7 +481,7 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
 
@@ -489,7 +499,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string, config *AddressMapConfig) {
 	_init_.Initialize()
 
@@ -582,13 +592,13 @@ func (j *jsiiProxy_AddressMap)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_AddressMap)SetIps(val *[]*string) {
+	if err := j.validateSetIpsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"ips",
 		val,
 	)
 }
@@ -976,17 +986,6 @@ func (a *jsiiProxy_AddressMap) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_AddressMap) PutIps(value interface{}) {
-	if err := a.validatePutIpsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putIps",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AddressMap) PutMemberships(value interface{}) {
 	if err := a.validatePutMembershipsParameters(value); err != nil {
 		panic(err)
@@ -1014,10 +1013,10 @@ func (a *jsiiProxy_AddressMap) ResetDescription() {
 	)
 }
 
-func (a *jsiiProxy_AddressMap) ResetId() {
+func (a *jsiiProxy_AddressMap) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetId",
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

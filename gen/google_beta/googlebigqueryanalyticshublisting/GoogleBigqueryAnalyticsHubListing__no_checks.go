@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutPublisherParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutPubsubTopicParameters(value *GoogleBigqueryAnalyticsHubListingPubsubTopic) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutRestrictedExportConfigParameters(value *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig) error {
 	return nil
 }
@@ -153,6 +157,10 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetListingIdParame
 }
 
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
 	return nil
 }
 

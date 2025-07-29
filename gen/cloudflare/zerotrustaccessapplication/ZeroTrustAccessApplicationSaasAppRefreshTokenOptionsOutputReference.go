@@ -171,29 +171,29 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputRef
 }
 
 
-func NewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference {
+func NewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference_Override(z ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference_Override(z ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }

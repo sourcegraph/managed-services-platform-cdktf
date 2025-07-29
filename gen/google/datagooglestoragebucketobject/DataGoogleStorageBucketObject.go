@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglestoragebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object}.
 type DataGoogleStorageBucketObject interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -37,6 +37,7 @@ type DataGoogleStorageBucketObject interface {
 	SetDependsOn(val *[]*string)
 	DetectMd5Hash() *string
 	EventBasedHold() cdktf.IResolvable
+	ForceEmptyContentType() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +74,7 @@ type DataGoogleStorageBucketObject interface {
 	Retention() DataGoogleStorageBucketObjectRetentionList
 	SelfLink() *string
 	Source() *string
+	SourceMd5Hash() *string
 	StorageClass() *string
 	TemporaryHold() cdktf.IResolvable
 	// Experimental.
@@ -291,6 +293,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) EventBasedHold() cdktf.IResolv
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObject) ForceEmptyContentType() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forceEmptyContentType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObject) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -501,6 +513,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) Source() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObject) SourceMd5Hash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5Hash",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObject) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -552,7 +574,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
 func NewDataGoogleStorageBucketObject(scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectConfig) DataGoogleStorageBucketObject {
 	_init_.Initialize()
 
@@ -570,7 +592,7 @@ func NewDataGoogleStorageBucketObject(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/storage_bucket_object google_storage_bucket_object} Data Source.
 func NewDataGoogleStorageBucketObject_Override(d DataGoogleStorageBucketObject, scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectConfig) {
 	_init_.Initialize()
 

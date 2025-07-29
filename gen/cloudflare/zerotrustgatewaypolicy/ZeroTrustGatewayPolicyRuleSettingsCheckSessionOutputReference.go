@@ -33,8 +33,8 @@ type ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference interface {
 	EnforceInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsCheckSession
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +67,8 @@ type ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDuration()
+	ResetEnforce()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -162,8 +164,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsCheckSession {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsCheckSession
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +266,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsCheckSession) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +483,22 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) ResetDuration() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDuration",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) ResetEnforce() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnforce",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

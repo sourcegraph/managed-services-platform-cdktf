@@ -27,8 +27,8 @@ type SpectrumApplicationOriginDnsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SpectrumApplicationOriginDns
-	SetInternalValue(val *SpectrumApplicationOriginDns)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -40,6 +40,12 @@ type SpectrumApplicationOriginDnsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Ttl() *float64
+	SetTtl(val *float64)
+	TtlInput() *float64
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,6 +70,9 @@ type SpectrumApplicationOriginDnsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
+	ResetTtl()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -119,8 +128,8 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) InternalValue() *SpectrumApplicationOriginDns {
-	var returns *SpectrumApplicationOriginDns
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -164,6 +173,46 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) Ttl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) TtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
 		&returns,
 	)
 	return returns
@@ -219,7 +268,7 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetInternalValue(val *SpectrumApplicationOriginDns) {
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -259,6 +308,28 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ttl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -447,6 +518,30 @@ func (s *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) ResetTtl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTtl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

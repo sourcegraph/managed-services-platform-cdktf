@@ -27,12 +27,12 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectDeploymentConfigs
-	SetInternalValue(val *PagesProjectDeploymentConfigs)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Preview() PagesProjectDeploymentConfigsPreviewOutputReference
-	PreviewInput() *PagesProjectDeploymentConfigsPreview
+	PreviewInput() interface{}
 	Production() PagesProjectDeploymentConfigsProductionOutputReference
-	ProductionInput() *PagesProjectDeploymentConfigsProduction
+	ProductionInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InternalValue() *PagesProjectDeploymentConfigs {
-	var returns *PagesProjectDeploymentConfigs
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Preview() Pages
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PreviewInput() *PagesProjectDeploymentConfigsPreview {
-	var returns *PagesProjectDeploymentConfigsPreview
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PreviewInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"previewInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Production() Pa
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ProductionInput() *PagesProjectDeploymentConfigsProduction {
-	var returns *PagesProjectDeploymentConfigsProduction
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ProductionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"productionInput",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetInternalValue(val *PagesProjectDeploymentConfigs) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

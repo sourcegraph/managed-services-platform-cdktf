@@ -36,8 +36,8 @@ type ZeroTrustAccessApplicationLandingPageDesignOutputReference interface {
 	ImageUrl() *string
 	SetImageUrl(val *string)
 	ImageUrlInput() *string
-	InternalValue() *ZeroTrustAccessApplicationLandingPageDesign
-	SetInternalValue(val *ZeroTrustAccessApplicationLandingPageDesign)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) InternalValue() *ZeroTrustAccessApplicationLandingPageDesign {
-	var returns *ZeroTrustAccessApplicationLandingPageDesign
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -349,7 +349,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationLandingPageDesign) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

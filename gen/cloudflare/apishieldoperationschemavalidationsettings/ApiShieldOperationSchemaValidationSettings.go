@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/apishieldoperationschemavalidationsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type ApiShieldOperationSchemaValidationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,8 +37,6 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -113,7 +111,6 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetMitigationAction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -221,16 +218,6 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +364,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -395,7 +382,7 @@ func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings_Override(a ApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -440,17 +427,6 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetForEach(val cdk
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -868,14 +844,6 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) OverrideLogicalId
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

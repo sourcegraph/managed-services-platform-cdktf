@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/regionaltieredcache/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 type RegionalTieredCache interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type RegionalTieredCache interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -37,12 +38,11 @@ type RegionalTieredCache interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -110,10 +110,10 @@ type RegionalTieredCache interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetValue()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -182,6 +182,16 @@ func (j *jsiiProxy_RegionalTieredCache) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_RegionalTieredCache) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegionalTieredCache) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -222,21 +232,21 @@ func (j *jsiiProxy_RegionalTieredCache) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalTieredCache) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RegionalTieredCache) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegionalTieredCache) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -353,7 +363,7 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
 
@@ -371,7 +381,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) {
 	_init_.Initialize()
 
@@ -416,17 +426,6 @@ func (j *jsiiProxy_RegionalTieredCache)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RegionalTieredCache)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -836,18 +835,18 @@ func (r *jsiiProxy_RegionalTieredCache) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (r *jsiiProxy_RegionalTieredCache) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RegionalTieredCache) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegionalTieredCache) ResetValue() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetValue",
 		nil, // no parameters
 	)
 }

@@ -9,14 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/pagesproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	BuildConfig() PagesProjectBuildConfigOutputReference
-	BuildConfigInput() *PagesProjectBuildConfig
+	BuildConfigInput() interface{}
+	CanonicalDeployment() PagesProjectCanonicalDeploymentOutputReference
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -35,7 +36,7 @@ type PagesProject interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeploymentConfigs() PagesProjectDeploymentConfigsOutputReference
-	DeploymentConfigsInput() *PagesProjectDeploymentConfigs
+	DeploymentConfigsInput() interface{}
 	Domains() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -46,8 +47,7 @@ type PagesProject interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	LatestDeployment() PagesProjectLatestDeploymentOutputReference
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,7 +71,7 @@ type PagesProject interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Source() PagesProjectSourceOutputReference
-	SourceInput() *PagesProjectSource
+	SourceInput() interface{}
 	Subdomain() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -127,10 +127,10 @@ type PagesProject interface {
 	PutSource(value *PagesProjectSource)
 	ResetBuildConfig()
 	ResetDeploymentConfigs()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProductionBranch()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -180,11 +180,21 @@ func (j *jsiiProxy_PagesProject) BuildConfig() PagesProjectBuildConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) BuildConfigInput() *PagesProjectBuildConfig {
-	var returns *PagesProjectBuildConfig
+func (j *jsiiProxy_PagesProject) BuildConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"buildConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProject) CanonicalDeployment() PagesProjectCanonicalDeploymentOutputReference {
+	var returns PagesProjectCanonicalDeploymentOutputReference
+	_jsii_.Get(
+		j,
+		"canonicalDeployment",
 		&returns,
 	)
 	return returns
@@ -260,8 +270,8 @@ func (j *jsiiProxy_PagesProject) DeploymentConfigs() PagesProjectDeploymentConfi
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) DeploymentConfigsInput() *PagesProjectDeploymentConfigs {
-	var returns *PagesProjectDeploymentConfigs
+func (j *jsiiProxy_PagesProject) DeploymentConfigsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"deploymentConfigsInput",
@@ -320,11 +330,11 @@ func (j *jsiiProxy_PagesProject) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_PagesProject) LatestDeployment() PagesProjectLatestDeploymentOutputReference {
+	var returns PagesProjectLatestDeploymentOutputReference
 	_jsii_.Get(
 		j,
-		"idInput",
+		"latestDeployment",
 		&returns,
 	)
 	return returns
@@ -430,8 +440,8 @@ func (j *jsiiProxy_PagesProject) Source() PagesProjectSourceOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) SourceInput() *PagesProjectSource {
-	var returns *PagesProjectSource
+func (j *jsiiProxy_PagesProject) SourceInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -481,7 +491,7 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -499,7 +509,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 
@@ -555,17 +565,6 @@ func (j *jsiiProxy_PagesProject)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProject)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1024,18 +1023,18 @@ func (p *jsiiProxy_PagesProject) ResetDeploymentConfigs() {
 	)
 }
 
-func (p *jsiiProxy_PagesProject) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PagesProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProject) ResetProductionBranch() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductionBranch",
 		nil, // no parameters
 	)
 }

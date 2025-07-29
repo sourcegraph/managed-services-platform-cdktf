@@ -44,7 +44,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressRuleParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressParameters(value interface{}) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val *ZeroTrustTunnelCloudflaredConfigConfig) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

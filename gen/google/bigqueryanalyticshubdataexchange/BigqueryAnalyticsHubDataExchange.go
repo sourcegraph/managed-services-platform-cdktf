@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/bigqueryanalyticshubdataexchange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type BigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type BigqueryAnalyticsHubDataExchange interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogLinkedDatasetQueryUserEmail() interface{}
+	SetLogLinkedDatasetQueryUserEmail(val interface{})
+	LogLinkedDatasetQueryUserEmailInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -140,6 +143,7 @@ type BigqueryAnalyticsHubDataExchange interface {
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
+	ResetLogLinkedDatasetQueryUserEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -405,6 +409,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) LogLinkedDatasetQueryUserEmail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) LogLinkedDatasetQueryUserEmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -566,7 +590,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) BigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -584,7 +608,7 @@ func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange_Override(b BigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 
@@ -717,6 +741,17 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange)SetLogLinkedDatasetQueryUserEmail(val interface{}) {
+	if err := j.validateSetLogLinkedDatasetQueryUserEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logLinkedDatasetQueryUserEmail",
 		val,
 	)
 }
@@ -1165,6 +1200,14 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) ResetLogLinkedDatasetQueryUserEmail() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLogLinkedDatasetQueryUserEmail",
 		nil, // no parameters
 	)
 }

@@ -27,8 +27,8 @@ type PageRuleActionsCacheKeyFieldsHostOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PageRuleActionsCacheKeyFieldsHost
-	SetInternalValue(val *PageRuleActionsCacheKeyFieldsHost)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Resolved() interface{}
 	SetResolved(val interface{})
 	ResolvedInput() interface{}
@@ -120,8 +120,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) InternalValue() *PageRuleActionsCacheKeyFieldsHost {
-	var returns *PageRuleActionsCacheKeyFieldsHost
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFieldsHost) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

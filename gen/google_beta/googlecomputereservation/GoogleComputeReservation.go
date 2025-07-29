@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputereservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation google_compute_reservation}.
 type GoogleComputeReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,6 +26,11 @@ type GoogleComputeReservation interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DeleteAfterDuration() GoogleComputeReservationDeleteAfterDurationOutputReference
+	DeleteAfterDurationInput() *GoogleComputeReservationDeleteAfterDuration
+	DeleteAtTime() *string
+	SetDeleteAtTime(val *string)
+	DeleteAtTimeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,6 +38,9 @@ type GoogleComputeReservation interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableEmergentMaintenance() interface{}
+	SetEnableEmergentMaintenance(val interface{})
+	EnableEmergentMaintenanceInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,6 +74,8 @@ type GoogleComputeReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReservationSharingPolicy() GoogleComputeReservationReservationSharingPolicyOutputReference
+	ReservationSharingPolicyInput() *GoogleComputeReservationReservationSharingPolicy
 	SelfLink() *string
 	ShareSettings() GoogleComputeReservationShareSettingsOutputReference
 	ShareSettingsInput() *GoogleComputeReservationShareSettings
@@ -129,15 +139,21 @@ type GoogleComputeReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDeleteAfterDuration(value *GoogleComputeReservationDeleteAfterDuration)
+	PutReservationSharingPolicy(value *GoogleComputeReservationReservationSharingPolicy)
 	PutShareSettings(value *GoogleComputeReservationShareSettings)
 	PutSpecificReservation(value *GoogleComputeReservationSpecificReservation)
 	PutTimeouts(value *GoogleComputeReservationTimeouts)
+	ResetDeleteAfterDuration()
+	ResetDeleteAtTime()
 	ResetDescription()
+	ResetEnableEmergentMaintenance()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReservationSharingPolicy()
 	ResetShareSettings()
 	ResetSpecificReservationRequired()
 	ResetTimeouts()
@@ -219,6 +235,46 @@ func (j *jsiiProxy_GoogleComputeReservation) CreationTimestamp() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeReservation) DeleteAfterDuration() GoogleComputeReservationDeleteAfterDurationOutputReference {
+	var returns GoogleComputeReservationDeleteAfterDurationOutputReference
+	_jsii_.Get(
+		j,
+		"deleteAfterDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) DeleteAfterDurationInput() *GoogleComputeReservationDeleteAfterDuration {
+	var returns *GoogleComputeReservationDeleteAfterDuration
+	_jsii_.Get(
+		j,
+		"deleteAfterDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) DeleteAtTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) DeleteAtTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeReservation) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -244,6 +300,26 @@ func (j *jsiiProxy_GoogleComputeReservation) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) EnableEmergentMaintenance() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEmergentMaintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) EnableEmergentMaintenanceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEmergentMaintenanceInput",
 		&returns,
 	)
 	return returns
@@ -384,6 +460,26 @@ func (j *jsiiProxy_GoogleComputeReservation) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) ReservationSharingPolicy() GoogleComputeReservationReservationSharingPolicyOutputReference {
+	var returns GoogleComputeReservationReservationSharingPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservation) ReservationSharingPolicyInput() *GoogleComputeReservationReservationSharingPolicy {
+	var returns *GoogleComputeReservationReservationSharingPolicy
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicyInput",
 		&returns,
 	)
 	return returns
@@ -540,7 +636,7 @@ func (j *jsiiProxy_GoogleComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation google_compute_reservation} Resource.
 func NewGoogleComputeReservation(scope constructs.Construct, id *string, config *GoogleComputeReservationConfig) GoogleComputeReservation {
 	_init_.Initialize()
 
@@ -558,7 +654,7 @@ func NewGoogleComputeReservation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation google_compute_reservation} Resource.
 func NewGoogleComputeReservation_Override(g GoogleComputeReservation, scope constructs.Construct, id *string, config *GoogleComputeReservationConfig) {
 	_init_.Initialize()
 
@@ -591,6 +687,17 @@ func (j *jsiiProxy_GoogleComputeReservation)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeReservation)SetDeleteAtTime(val *string) {
+	if err := j.validateSetDeleteAtTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteAtTime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeReservation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -606,6 +713,17 @@ func (j *jsiiProxy_GoogleComputeReservation)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeReservation)SetEnableEmergentMaintenance(val interface{}) {
+	if err := j.validateSetEnableEmergentMaintenanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableEmergentMaintenance",
 		val,
 	)
 }
@@ -1056,6 +1174,28 @@ func (g *jsiiProxy_GoogleComputeReservation) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeReservation) PutDeleteAfterDuration(value *GoogleComputeReservationDeleteAfterDuration) {
+	if err := g.validatePutDeleteAfterDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeleteAfterDuration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) PutReservationSharingPolicy(value *GoogleComputeReservationReservationSharingPolicy) {
+	if err := g.validatePutReservationSharingPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReservationSharingPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeReservation) PutShareSettings(value *GoogleComputeReservationShareSettings) {
 	if err := g.validatePutShareSettingsParameters(value); err != nil {
 		panic(err)
@@ -1089,10 +1229,34 @@ func (g *jsiiProxy_GoogleComputeReservation) PutTimeouts(value *GoogleComputeRes
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeReservation) ResetDeleteAfterDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteAfterDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) ResetDeleteAtTime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteAtTime",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeReservation) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) ResetEnableEmergentMaintenance() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableEmergentMaintenance",
 		nil, // no parameters
 	)
 }
@@ -1117,6 +1281,14 @@ func (g *jsiiProxy_GoogleComputeReservation) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservation) ResetReservationSharingPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservationSharingPolicy",
 		nil, // no parameters
 	)
 }

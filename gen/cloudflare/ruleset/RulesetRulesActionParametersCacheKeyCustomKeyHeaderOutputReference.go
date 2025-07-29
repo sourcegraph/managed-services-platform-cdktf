@@ -243,29 +243,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }

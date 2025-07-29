@@ -9,28 +9,47 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarezerotrustaccessapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type DataCloudflareZeroTrustAccessApplication interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowAuthenticateViaWarp() cdktf.IResolvable
+	AllowedIdps() *[]*string
+	AllowIframe() cdktf.IResolvable
+	AppId() *string
+	SetAppId(val *string)
+	AppIdInput() *string
+	AppLauncherLogoUrl() *string
+	AppLauncherVisible() cdktf.IResolvable
 	Aud() *string
+	AutoRedirectToIdentity() cdktf.IResolvable
+	BgColor() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CorsHeaders() DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	CustomDenyMessage() *string
+	CustomDenyUrl() *string
+	CustomNonIdentityDenyUrl() *string
+	CustomPages() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destinations() DataCloudflareZeroTrustAccessApplicationDestinationsList
 	Domain() *string
-	SetDomain(val *string)
-	DomainInput() *string
+	EnableBindingCookie() cdktf.IResolvable
+	Filter() DataCloudflareZeroTrustAccessApplicationFilterOutputReference
+	FilterInput() interface{}
+	FooterLinks() DataCloudflareZeroTrustAccessApplicationFooterLinksList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,30 +58,46 @@ type DataCloudflareZeroTrustAccessApplication interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderBgColor() *string
+	HttpOnlyCookieAttribute() cdktf.IResolvable
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	LandingPageDesign() DataCloudflareZeroTrustAccessApplicationLandingPageDesignOutputReference
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogoUrl() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OptionsPreflightBypass() cdktf.IResolvable
+	PathCookieAttribute() cdktf.IResolvable
+	Policies() DataCloudflareZeroTrustAccessApplicationPoliciesList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReadServiceTokensFromHeader() *string
+	SaasApp() DataCloudflareZeroTrustAccessApplicationSaasAppOutputReference
+	SameSiteCookieAttribute() *string
+	ScimConfig() DataCloudflareZeroTrustAccessApplicationScimConfigOutputReference
+	SelfHostedDomains() *[]*string
+	ServiceAuth401Redirect() cdktf.IResolvable
+	SessionDuration() *string
+	SkipAppLauncherLoginPage() cdktf.IResolvable
+	SkipInterstitial() cdktf.IResolvable
+	Tags() *[]*string
+	TargetCriteria() DataCloudflareZeroTrustAccessApplicationTargetCriteriaList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -91,10 +126,10 @@ type DataCloudflareZeroTrustAccessApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustAccessApplicationFilter)
 	ResetAccountId()
-	ResetDomain()
-	ResetId()
-	ResetName()
+	ResetAppId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -138,11 +173,101 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AccountIdInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AllowAuthenticateViaWarp() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AllowedIdps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedIdps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AllowIframe() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowIframe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AppId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AppIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AppLauncherLogoUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherLogoUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AppLauncherVisible() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"appLauncherVisible",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Aud() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"aud",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AutoRedirectToIdentity() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoRedirectToIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) BgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgColor",
 		&returns,
 	)
 	return returns
@@ -168,11 +293,71 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ConstructNodeMetada
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CorsHeaders() DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference
+	_jsii_.Get(
+		j,
+		"corsHeaders",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CustomDenyMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDenyMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CustomDenyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDenyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CustomNonIdentityDenyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) CustomPages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customPages",
 		&returns,
 	)
 	return returns
@@ -188,6 +373,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) DependsOn() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Destinations() DataCloudflareZeroTrustAccessApplicationDestinationsList {
+	var returns DataCloudflareZeroTrustAccessApplicationDestinationsList
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Domain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -198,11 +393,41 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Domain() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) DomainInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) EnableBindingCookie() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"domainInput",
+		"enableBindingCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Filter() DataCloudflareZeroTrustAccessApplicationFilterOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) FooterLinks() DataCloudflareZeroTrustAccessApplicationFooterLinksList {
+	var returns DataCloudflareZeroTrustAccessApplicationFooterLinksList
+	_jsii_.Get(
+		j,
+		"footerLinks",
 		&returns,
 	)
 	return returns
@@ -238,6 +463,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) FriendlyUniqueId() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) HeaderBgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerBgColor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) HttpOnlyCookieAttribute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"httpOnlyCookieAttribute",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -248,11 +493,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) LandingPageDesign() DataCloudflareZeroTrustAccessApplicationLandingPageDesignOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationLandingPageDesignOutputReference
 	_jsii_.Get(
 		j,
-		"idInput",
+		"landingPageDesign",
 		&returns,
 	)
 	return returns
@@ -268,6 +513,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Lifecycle() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) LogoUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logoUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -278,21 +533,41 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) OptionsPreflightBypass() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"optionsPreflightBypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) PathCookieAttribute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"pathCookieAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Policies() DataCloudflareZeroTrustAccessApplicationPoliciesList {
+	var returns DataCloudflareZeroTrustAccessApplicationPoliciesList
+	_jsii_.Get(
+		j,
+		"policies",
 		&returns,
 	)
 	return returns
@@ -313,6 +588,116 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) RawOverrides() inte
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ReadServiceTokensFromHeader() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readServiceTokensFromHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SaasApp() DataCloudflareZeroTrustAccessApplicationSaasAppOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationSaasAppOutputReference
+	_jsii_.Get(
+		j,
+		"saasApp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SameSiteCookieAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sameSiteCookieAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ScimConfig() DataCloudflareZeroTrustAccessApplicationScimConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationScimConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scimConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SelfHostedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selfHostedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ServiceAuth401Redirect() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"serviceAuth401Redirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SkipAppLauncherLoginPage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"skipAppLauncherLoginPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) SkipInterstitial() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"skipInterstitial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) TargetCriteria() DataCloudflareZeroTrustAccessApplicationTargetCriteriaList {
+	var returns DataCloudflareZeroTrustAccessApplicationTargetCriteriaList
+	_jsii_.Get(
+		j,
+		"targetCriteria",
 		&returns,
 	)
 	return returns
@@ -348,6 +733,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) TerraformResourceTy
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -369,7 +774,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
 func NewDataCloudflareZeroTrustAccessApplication(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationConfig) DataCloudflareZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -387,7 +792,7 @@ func NewDataCloudflareZeroTrustAccessApplication(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
 func NewDataCloudflareZeroTrustAccessApplication_Override(d DataCloudflareZeroTrustAccessApplication, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -405,6 +810,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetAccountId(val *st
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetAppId(val *string) {
+	if err := j.validateSetAppIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appId",
 		val,
 	)
 }
@@ -428,32 +844,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetDomain(val *string) {
-	if err := j.validateSetDomainParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"domain",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -465,17 +859,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetLifecycle(val *cd
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -784,6 +1167,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) OverrideLogicalId(n
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) PutFilter(value *DataCloudflareZeroTrustAccessApplicationFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -792,26 +1186,18 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetAccountId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetDomain() {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetAppId() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetDomain",
+		"resetAppId",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetId() {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
+		"resetFilter",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirestoredatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firestore_database google_firestore_database}.
 type GoogleFirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -88,6 +88,9 @@ type GoogleFirestoreDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -159,6 +162,7 @@ type GoogleFirestoreDatabase interface {
 	ResetOverrideLogicalId()
 	ResetPointInTimeRecoveryEnablement()
 	ResetProject()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -568,6 +572,26 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -669,7 +693,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase {
 	_init_.Initialize()
 
@@ -687,7 +711,7 @@ func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase_Override(g GoogleFirestoreDatabase, scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -872,6 +896,17 @@ func (j *jsiiProxy_GoogleFirestoreDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1338,6 +1373,14 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreDatabase) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

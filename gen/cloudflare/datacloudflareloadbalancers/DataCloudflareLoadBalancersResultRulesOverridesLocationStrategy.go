@@ -1,0 +1,6 @@
+package datacloudflareloadbalancers
+
+
+type DataCloudflareLoadBalancersResultRulesOverridesLocationStrategy struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlerediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -66,6 +66,7 @@ type GoogleRedisCluster interface {
 	MaintenanceSchedule() GoogleRedisClusterMaintenanceScheduleList
 	ManagedBackupSource() GoogleRedisClusterManagedBackupSourceOutputReference
 	ManagedBackupSourceInput() *GoogleRedisClusterManagedBackupSource
+	ManagedServerCa() GoogleRedisClusterManagedServerCaList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -526,6 +527,16 @@ func (j *jsiiProxy_GoogleRedisCluster) ManagedBackupSourceInput() *GoogleRedisCl
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) ManagedServerCa() GoogleRedisClusterManagedServerCaList {
+	var returns GoogleRedisClusterManagedServerCaList
+	_jsii_.Get(
+		j,
+		"managedServerCa",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -907,7 +918,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -925,7 +936,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computereservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_reservation google_compute_reservation}.
 type ComputeReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,6 +26,11 @@ type ComputeReservation interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DeleteAfterDuration() ComputeReservationDeleteAfterDurationOutputReference
+	DeleteAfterDurationInput() *ComputeReservationDeleteAfterDuration
+	DeleteAtTime() *string
+	SetDeleteAtTime(val *string)
+	DeleteAtTimeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,6 +71,8 @@ type ComputeReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReservationSharingPolicy() ComputeReservationReservationSharingPolicyOutputReference
+	ReservationSharingPolicyInput() *ComputeReservationReservationSharingPolicy
 	SelfLink() *string
 	ShareSettings() ComputeReservationShareSettingsOutputReference
 	ShareSettingsInput() *ComputeReservationShareSettings
@@ -129,15 +136,20 @@ type ComputeReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDeleteAfterDuration(value *ComputeReservationDeleteAfterDuration)
+	PutReservationSharingPolicy(value *ComputeReservationReservationSharingPolicy)
 	PutShareSettings(value *ComputeReservationShareSettings)
 	PutSpecificReservation(value *ComputeReservationSpecificReservation)
 	PutTimeouts(value *ComputeReservationTimeouts)
+	ResetDeleteAfterDuration()
+	ResetDeleteAtTime()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReservationSharingPolicy()
 	ResetShareSettings()
 	ResetSpecificReservationRequired()
 	ResetTimeouts()
@@ -214,6 +226,46 @@ func (j *jsiiProxy_ComputeReservation) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) DeleteAfterDuration() ComputeReservationDeleteAfterDurationOutputReference {
+	var returns ComputeReservationDeleteAfterDurationOutputReference
+	_jsii_.Get(
+		j,
+		"deleteAfterDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) DeleteAfterDurationInput() *ComputeReservationDeleteAfterDuration {
+	var returns *ComputeReservationDeleteAfterDuration
+	_jsii_.Get(
+		j,
+		"deleteAfterDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) DeleteAtTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) DeleteAtTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteAtTimeInput",
 		&returns,
 	)
 	return returns
@@ -389,6 +441,26 @@ func (j *jsiiProxy_ComputeReservation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeReservation) ReservationSharingPolicy() ComputeReservationReservationSharingPolicyOutputReference {
+	var returns ComputeReservationReservationSharingPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) ReservationSharingPolicyInput() *ComputeReservationReservationSharingPolicy {
+	var returns *ComputeReservationReservationSharingPolicy
+	_jsii_.Get(
+		j,
+		"reservationSharingPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeReservation) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -540,7 +612,7 @@ func (j *jsiiProxy_ComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation(scope constructs.Construct, id *string, config *ComputeReservationConfig) ComputeReservation {
 	_init_.Initialize()
 
@@ -558,7 +630,7 @@ func NewComputeReservation(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation_Override(c ComputeReservation, scope constructs.Construct, id *string, config *ComputeReservationConfig) {
 	_init_.Initialize()
 
@@ -587,6 +659,17 @@ func (j *jsiiProxy_ComputeReservation)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeReservation)SetDeleteAtTime(val *string) {
+	if err := j.validateSetDeleteAtTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteAtTime",
 		val,
 	)
 }
@@ -1056,6 +1139,28 @@ func (c *jsiiProxy_ComputeReservation) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeReservation) PutDeleteAfterDuration(value *ComputeReservationDeleteAfterDuration) {
+	if err := c.validatePutDeleteAfterDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeleteAfterDuration",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeReservation) PutReservationSharingPolicy(value *ComputeReservationReservationSharingPolicy) {
+	if err := c.validatePutReservationSharingPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putReservationSharingPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeReservation) PutShareSettings(value *ComputeReservationShareSettings) {
 	if err := c.validatePutShareSettingsParameters(value); err != nil {
 		panic(err)
@@ -1089,6 +1194,22 @@ func (c *jsiiProxy_ComputeReservation) PutTimeouts(value *ComputeReservationTime
 	)
 }
 
+func (c *jsiiProxy_ComputeReservation) ResetDeleteAfterDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteAfterDuration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeReservation) ResetDeleteAtTime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteAtTime",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeReservation) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1117,6 +1238,14 @@ func (c *jsiiProxy_ComputeReservation) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeReservation) ResetReservationSharingPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReservationSharingPolicy",
 		nil, // no parameters
 	)
 }

@@ -2,13 +2,16 @@ package useragentblockingrule
 
 
 type UserAgentBlockingRuleConfiguration struct {
-	// The configuration target for this rule. You must set the target to ua for User Agent Blocking rules.
+	// The configuration target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
-	Target *string `field:"required" json:"target" yaml:"target"`
-	// The exact user agent string to match. This value will be compared to the received User-Agent HTTP header value.
+	// You must set the target to `ua` when specifying a user agent in the rule.
+	// Available values: "ua".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
-	Value *string `field:"required" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+	Target *string `field:"optional" json:"target" yaml:"target"`
+	// the user agent to exactly match.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

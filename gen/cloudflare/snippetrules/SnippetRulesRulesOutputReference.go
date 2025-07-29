@@ -75,6 +75,8 @@ type SnippetRulesRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
 	ResetEnabled()
+	ResetExpression()
+	ResetSnippetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -565,6 +567,22 @@ func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetExpression() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpression",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetSnippetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSnippetName",
 		nil, // no parameters
 	)
 }

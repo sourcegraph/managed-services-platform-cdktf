@@ -1,0 +1,6 @@
+package datacloudflareloadbalancerpools
+
+
+type DataCloudflareLoadBalancerPoolsResultNotificationFilterPool struct {
+}
+

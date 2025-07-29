@@ -1,3 +1,4 @@
+CDKTF_VERSION=0.21.0 # https://github.com/hashicorp/terraform-cdk/releases
 CDKTF_GENERATOR=.bin/cdktf-provider-gen
 CDKTF_PACKAGES=$(patsubst %.cdktf.yaml,%,$(wildcard *.cdktf.yaml))
 
@@ -13,4 +14,4 @@ targets:
 	@echo $(CDKTF_PACKAGES)
 
 %: ./%.cdktf.yaml
-	$(CDKTF_GENERATOR) --config $@.cdktf.yaml --cdktf-version=0.20.7
+	$(CDKTF_GENERATOR) --config $@.cdktf.yaml --cdktf-version=$(CDKTF_VERSION)

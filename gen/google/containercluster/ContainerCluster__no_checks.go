@@ -76,6 +76,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutAddonsConfigParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *ContainerClusterAnonymousAuthenticationConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *ContainerClusterAuthenticatorGroupsConfig) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *ContainerClusterGkeAutoUpgradeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
 	return nil
 }
@@ -160,6 +168,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutMonitoringConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNetworkPerformanceConfigParameters(value *ContainerClusterNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNetworkPolicyParameters(value *ContainerClusterNetworkPolicy) error {
 	return nil
 }
@@ -181,6 +193,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodePoolDefaultsParameters(value
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutNotificationConfigParameters(value *ContainerClusterNotificationConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutPodAutoscalingParameters(value *ContainerClusterPodAutoscaling) error {
 	return nil
 }
 

@@ -33,6 +33,7 @@ type DataGoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	InternalValue() *DataGoogleCloudRunV2JobTemplateTemplate
 	SetInternalValue(val *DataGoogleCloudRunV2JobTemplateTemplate)
 	MaxRetries() *float64
+	NodeSelector() DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList
 	ServiceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) MaxRe
 	_jsii_.Get(
 		j,
 		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelector() DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList
+	_jsii_.Get(
+		j,
+		"nodeSelector",
 		&returns,
 	)
 	return returns

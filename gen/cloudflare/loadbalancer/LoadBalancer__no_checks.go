@@ -72,27 +72,15 @@ func (l *jsiiProxy_LoadBalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value *LoadBalancerAdaptiveRouting) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value *LoadBalancerLocationStrategy) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancer) validatePutRegionPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value *LoadBalancerRandomSteering) error {
 	return nil
 }
 
@@ -100,7 +88,7 @@ func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) e
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value *LoadBalancerSessionAffinityAttributes) error {
 	return nil
 }
 
@@ -128,7 +116,11 @@ func (j *jsiiProxy_LoadBalancer) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetDefaultPoolIdsParameters(val *[]*string) error {
+func (j *jsiiProxy_LoadBalancer) validateSetCountryPoolsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancer) validateSetDefaultPoolsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -140,11 +132,7 @@ func (j *jsiiProxy_LoadBalancer) validateSetEnabledParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancer) validateSetFallbackPoolIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancer) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_LoadBalancer) validateSetFallbackPoolParameters(val *string) error {
 	return nil
 }
 
@@ -156,11 +144,23 @@ func (j *jsiiProxy_LoadBalancer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancer) validateSetNetworksParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancer) validateSetPopPoolsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancer) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_LoadBalancer) validateSetProxiedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancer) validateSetRegionPoolsParameters(val interface{}) error {
 	return nil
 }
 

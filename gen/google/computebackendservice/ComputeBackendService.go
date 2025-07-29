@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -157,6 +157,8 @@ type ComputeBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() ComputeBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *ComputeBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -213,6 +215,7 @@ type ComputeBackendService interface {
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeBackendServiceTimeouts)
+	PutTlsSettings(value *ComputeBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -251,6 +254,7 @@ type ComputeBackendService interface {
 	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1189,8 +1193,28 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) TlsSettings() ComputeBackendServiceTlsSettingsOutputReference {
+	var returns ComputeBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+func (j *jsiiProxy_ComputeBackendService) TlsSettingsInput() *ComputeBackendServiceTlsSettings {
+	var returns *ComputeBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1208,7 +1232,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -2036,6 +2060,17 @@ func (c *jsiiProxy_ComputeBackendService) PutTimeouts(value *ComputeBackendServi
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutTlsSettings(value *ComputeBackendServiceTlsSettings) {
+	if err := c.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTlsSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) ResetAffinityCookieTtlSec() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2320,6 +2355,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

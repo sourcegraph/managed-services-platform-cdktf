@@ -27,8 +27,8 @@ type SpectrumApplicationDnsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SpectrumApplicationDns
-	SetInternalValue(val *SpectrumApplicationDns)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,6 +67,8 @@ type SpectrumApplicationDnsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,8 +124,8 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) InternalValue() *SpectrumApplicationDns {
-	var returns *SpectrumApplicationDns
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +244,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetInternalValue(val *SpectrumApplicationDns) {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +483,22 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

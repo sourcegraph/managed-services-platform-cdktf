@@ -1,0 +1,6 @@
+package datacloudflareapishielddiscoveryoperations
+
+
+type DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStats struct {
+}
+

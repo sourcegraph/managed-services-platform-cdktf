@@ -30,8 +30,8 @@ type ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference interface 
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
-	SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -231,7 +231,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference)SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

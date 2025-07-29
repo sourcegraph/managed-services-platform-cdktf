@@ -44,7 +44,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateInter
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validatePutLocationsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validatePutLocationsParameters(value *ZeroTrustDevicePostureRuleInputLocations) error {
 	return nil
 }
 
@@ -140,6 +140,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetNe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetOperatingSystemParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetOperationalStateParameters(val *string) error {
 	return nil
 }
@@ -180,11 +184,11 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetRi
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetRunningParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetScoreParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetScoreParameters(val *float64) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetScoreOperatorParameters(val *string) error {
 	return nil
 }
 
@@ -197,6 +201,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetSh
 }
 
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetSubjectAlternativeNamesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -224,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetVe
 	return nil
 }
 
-func validateNewZeroTrustDevicePostureRuleInputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustDevicePostureRuleInputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,14 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) validateSetAllowAllServiceAgentAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) validateSetAllowCrossOrgVpcsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

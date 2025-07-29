@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/workersroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_route cloudflare_workers_route}.
 type WorkersRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,8 +37,6 @@ type WorkersRoute interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,9 +56,9 @@ type WorkersRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ScriptName() *string
-	SetScriptName(val *string)
-	ScriptNameInput() *string
+	Script() *string
+	SetScript(val *string)
+	ScriptInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,11 +111,10 @@ type WorkersRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetScriptName()
+	ResetScript()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -226,16 +223,6 @@ func (j *jsiiProxy_WorkersRoute) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersRoute) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersRoute) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -306,21 +293,21 @@ func (j *jsiiProxy_WorkersRoute) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersRoute) ScriptName() *string {
+func (j *jsiiProxy_WorkersRoute) Script() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"scriptName",
+		"script",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersRoute) ScriptNameInput() *string {
+func (j *jsiiProxy_WorkersRoute) ScriptInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"scriptNameInput",
+		"scriptInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +364,7 @@ func (j *jsiiProxy_WorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRouteConfig) WorkersRoute {
 	_init_.Initialize()
 
@@ -395,7 +382,7 @@ func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute_Override(w WorkersRoute, scope constructs.Construct, id *string, config *WorkersRouteConfig) {
 	_init_.Initialize()
 
@@ -444,17 +431,6 @@ func (j *jsiiProxy_WorkersRoute)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkersRoute)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WorkersRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -496,13 +472,13 @@ func (j *jsiiProxy_WorkersRoute)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersRoute)SetScriptName(val *string) {
-	if err := j.validateSetScriptNameParameters(val); err != nil {
+func (j *jsiiProxy_WorkersRoute)SetScript(val *string) {
+	if err := j.validateSetScriptParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"scriptName",
+		"script",
 		val,
 	)
 }
@@ -871,14 +847,6 @@ func (w *jsiiProxy_WorkersRoute) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkersRoute) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WorkersRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -887,10 +855,10 @@ func (w *jsiiProxy_WorkersRoute) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WorkersRoute) ResetScriptName() {
+func (w *jsiiProxy_WorkersRoute) ResetScript() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetScriptName",
+		"resetScript",
 		nil, // no parameters
 	)
 }

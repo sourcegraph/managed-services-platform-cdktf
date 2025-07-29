@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetappstoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 type GoogleNetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -44,6 +44,9 @@ type GoogleNetappStoragePool interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EnableHotTierAutoResize() interface{}
+	SetEnableHotTierAutoResize(val interface{})
+	EnableHotTierAutoResizeInput() interface{}
 	EncryptionType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -53,6 +56,9 @@ type GoogleNetappStoragePool interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HotTierSizeGib() *string
+	SetHotTierSizeGib(val *string)
+	HotTierSizeGibInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -167,6 +173,8 @@ type GoogleNetappStoragePool interface {
 	ResetAllowAutoTiering()
 	ResetCustomPerformanceEnabled()
 	ResetDescription()
+	ResetEnableHotTierAutoResize()
+	ResetHotTierSizeGib()
 	ResetId()
 	ResetKmsConfig()
 	ResetLabels()
@@ -358,6 +366,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) EnableHotTierAutoResize() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHotTierAutoResize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) EnableHotTierAutoResizeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableHotTierAutoResizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) EncryptionType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -393,6 +421,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) HotTierSizeGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hotTierSizeGib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) HotTierSizeGibInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hotTierSizeGibInput",
 		&returns,
 	)
 	return returns
@@ -789,7 +837,7 @@ func (j *jsiiProxy_GoogleNetappStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) GoogleNetappStoragePool {
 	_init_.Initialize()
 
@@ -807,7 +855,7 @@ func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool_Override(g GoogleNetappStoragePool, scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -903,10 +951,32 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool)SetEnableHotTierAutoResize(val interface{}) {
+	if err := j.validateSetEnableHotTierAutoResizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableHotTierAutoResize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetHotTierSizeGib(val *string) {
+	if err := j.validateSetHotTierSizeGibParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hotTierSizeGib",
 		val,
 	)
 }
@@ -1476,6 +1546,22 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetEnableHotTierAutoResize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableHotTierAutoResize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetHotTierSizeGib() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHotTierSizeGib",
 		nil, // no parameters
 	)
 }

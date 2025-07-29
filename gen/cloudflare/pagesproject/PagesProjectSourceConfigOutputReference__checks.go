@@ -183,15 +183,47 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val *PagesProjectSourceConfig) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *PagesProjectSourceConfig:
+		val := val.(*PagesProjectSourceConfig)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case PagesProjectSourceConfig:
+		val_ := val.(PagesProjectSourceConfig)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PagesProjectSourceConfig; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathExcludesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathIncludesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +283,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductio
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

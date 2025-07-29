@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type ComputeSubnetwork interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeSubnetworkParamsOutputReference
+	ParamsInput() *ComputeSubnetworkParams
 	PrivateIpGoogleAccess() interface{}
 	SetPrivateIpGoogleAccess(val interface{})
 	PrivateIpGoogleAccessInput() interface{}
@@ -171,6 +173,7 @@ type ComputeSubnetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *ComputeSubnetworkLogConfig)
+	PutParams(value *ComputeSubnetworkParams)
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *ComputeSubnetworkTimeouts)
 	ResetDescription()
@@ -184,6 +187,7 @@ type ComputeSubnetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPrivateIpGoogleAccess()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
@@ -573,6 +577,26 @@ func (j *jsiiProxy_ComputeSubnetwork) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) Params() ComputeSubnetworkParamsOutputReference {
+	var returns ComputeSubnetworkParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) ParamsInput() *ComputeSubnetworkParams {
+	var returns *ComputeSubnetworkParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) PrivateIpGoogleAccess() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -884,7 +908,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -902,7 +926,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1543,6 +1567,17 @@ func (c *jsiiProxy_ComputeSubnetwork) PutLogConfig(value *ComputeSubnetworkLogCo
 	)
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) PutParams(value *ComputeSubnetworkParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) PutSecondaryIpRange(value interface{}) {
 	if err := c.validatePutSecondaryIpRangeParameters(value); err != nil {
 		panic(err)
@@ -1633,6 +1668,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

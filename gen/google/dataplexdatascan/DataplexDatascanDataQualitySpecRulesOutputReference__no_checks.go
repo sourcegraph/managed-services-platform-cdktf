@@ -116,6 +116,10 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetSuspendedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

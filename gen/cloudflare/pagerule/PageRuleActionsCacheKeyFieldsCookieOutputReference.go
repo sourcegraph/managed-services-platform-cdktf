@@ -33,8 +33,8 @@ type PageRuleActionsCacheKeyFieldsCookieOutputReference interface {
 	Include() *[]*string
 	SetInclude(val *[]*string)
 	IncludeInput() *[]*string
-	InternalValue() *PageRuleActionsCacheKeyFieldsCookie
-	SetInternalValue(val *PageRuleActionsCacheKeyFieldsCookie)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) IncludeIn
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) InternalValue() *PageRuleActionsCacheKeyFieldsCookie {
-	var returns *PageRuleActionsCacheKeyFieldsCookie
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference)SetInclude
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFieldsCookie) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -104,6 +104,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutPlatformConfigP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutPrivateRegistryConfigParameters(value *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutTimeoutsParameters(value *GoogleGkeonpremVmwareAdminClusterTimeouts) error {
 	return nil
 }

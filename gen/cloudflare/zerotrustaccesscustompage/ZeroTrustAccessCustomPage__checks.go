@@ -252,14 +252,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAppCountParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -358,14 +350,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetCustomHtmlParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -429,14 +413,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

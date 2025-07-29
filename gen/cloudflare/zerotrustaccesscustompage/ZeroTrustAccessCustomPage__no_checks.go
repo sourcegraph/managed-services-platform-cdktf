@@ -92,10 +92,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAppCountParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -105,10 +101,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetCountParameters(val int
 }
 
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetCustomHtmlParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -125,10 +117,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

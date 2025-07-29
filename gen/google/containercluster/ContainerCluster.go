@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/containercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -17,6 +17,8 @@ type ContainerCluster interface {
 	AllowNetAdmin() interface{}
 	SetAllowNetAdmin(val interface{})
 	AllowNetAdminInput() interface{}
+	AnonymousAuthenticationConfig() ContainerClusterAnonymousAuthenticationConfigOutputReference
+	AnonymousAuthenticationConfigInput() *ContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() ContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *ContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() ContainerClusterBinaryAuthorizationOutputReference
@@ -117,6 +119,8 @@ type ContainerCluster interface {
 	FriendlyUniqueId() *string
 	GatewayApiConfig() ContainerClusterGatewayApiConfigOutputReference
 	GatewayApiConfigInput() *ContainerClusterGatewayApiConfig
+	GkeAutoUpgradeConfig() ContainerClusterGkeAutoUpgradeConfigOutputReference
+	GkeAutoUpgradeConfigInput() *ContainerClusterGkeAutoUpgradeConfig
 	Id() *string
 	SetId(val *string)
 	IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference
@@ -169,6 +173,8 @@ type ContainerCluster interface {
 	SetNetworkingMode(val *string)
 	NetworkingModeInput() *string
 	NetworkInput() *string
+	NetworkPerformanceConfig() ContainerClusterNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *ContainerClusterNetworkPerformanceConfig
 	NetworkPolicy() ContainerClusterNetworkPolicyOutputReference
 	NetworkPolicyInput() *ContainerClusterNetworkPolicy
 	// The tree node.
@@ -190,6 +196,8 @@ type ContainerCluster interface {
 	NotificationConfig() ContainerClusterNotificationConfigOutputReference
 	NotificationConfigInput() *ContainerClusterNotificationConfig
 	Operation() *string
+	PodAutoscaling() ContainerClusterPodAutoscalingOutputReference
+	PodAutoscalingInput() *ContainerClusterPodAutoscaling
 	PrivateClusterConfig() ContainerClusterPrivateClusterConfigOutputReference
 	PrivateClusterConfigInput() *ContainerClusterPrivateClusterConfig
 	PrivateIpv6GoogleAccess() *string
@@ -289,6 +297,7 @@ type ContainerCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAddonsConfig(value *ContainerClusterAddonsConfig)
+	PutAnonymousAuthenticationConfig(value *ContainerClusterAnonymousAuthenticationConfig)
 	PutAuthenticatorGroupsConfig(value *ContainerClusterAuthenticatorGroupsConfig)
 	PutBinaryAuthorization(value *ContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *ContainerClusterClusterAutoscaling)
@@ -302,6 +311,7 @@ type ContainerCluster interface {
 	PutEnterpriseConfig(value *ContainerClusterEnterpriseConfig)
 	PutFleet(value *ContainerClusterFleet)
 	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
+	PutGkeAutoUpgradeConfig(value *ContainerClusterGkeAutoUpgradeConfig)
 	PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
@@ -310,12 +320,14 @@ type ContainerCluster interface {
 	PutMasterAuthorizedNetworksConfig(value *ContainerClusterMasterAuthorizedNetworksConfig)
 	PutMeshCertificates(value *ContainerClusterMeshCertificates)
 	PutMonitoringConfig(value *ContainerClusterMonitoringConfig)
+	PutNetworkPerformanceConfig(value *ContainerClusterNetworkPerformanceConfig)
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
 	PutNodePool(value interface{})
 	PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
+	PutPodAutoscaling(value *ContainerClusterPodAutoscaling)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
@@ -328,6 +340,7 @@ type ContainerCluster interface {
 	PutWorkloadIdentityConfig(value *ContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
 	ResetAllowNetAdmin()
+	ResetAnonymousAuthenticationConfig()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -357,6 +370,7 @@ type ContainerCluster interface {
 	ResetEnterpriseConfig()
 	ResetFleet()
 	ResetGatewayApiConfig()
+	ResetGkeAutoUpgradeConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
@@ -374,6 +388,7 @@ type ContainerCluster interface {
 	ResetMonitoringService()
 	ResetNetwork()
 	ResetNetworkingMode()
+	ResetNetworkPerformanceConfig()
 	ResetNetworkPolicy()
 	ResetNodeConfig()
 	ResetNodeLocations()
@@ -385,6 +400,7 @@ type ContainerCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodAutoscaling()
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
@@ -453,6 +469,26 @@ func (j *jsiiProxy_ContainerCluster) AllowNetAdminInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowNetAdminInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AnonymousAuthenticationConfig() ContainerClusterAnonymousAuthenticationConfigOutputReference {
+	var returns ContainerClusterAnonymousAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AnonymousAuthenticationConfigInput() *ContainerClusterAnonymousAuthenticationConfig {
+	var returns *ContainerClusterAnonymousAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfigInput",
 		&returns,
 	)
 	return returns
@@ -1138,6 +1174,26 @@ func (j *jsiiProxy_ContainerCluster) GatewayApiConfigInput() *ContainerClusterGa
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) GkeAutoUpgradeConfig() ContainerClusterGkeAutoUpgradeConfigOutputReference {
+	var returns ContainerClusterGkeAutoUpgradeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) GkeAutoUpgradeConfigInput() *ContainerClusterGkeAutoUpgradeConfig {
+	var returns *ContainerClusterGkeAutoUpgradeConfig
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1528,6 +1584,26 @@ func (j *jsiiProxy_ContainerCluster) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) NetworkPerformanceConfig() ContainerClusterNetworkPerformanceConfigOutputReference {
+	var returns ContainerClusterNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NetworkPerformanceConfigInput() *ContainerClusterNetworkPerformanceConfig {
+	var returns *ContainerClusterNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) NetworkPolicy() ContainerClusterNetworkPolicyOutputReference {
 	var returns ContainerClusterNetworkPolicyOutputReference
 	_jsii_.Get(
@@ -1703,6 +1779,26 @@ func (j *jsiiProxy_ContainerCluster) Operation() *string {
 	_jsii_.Get(
 		j,
 		"operation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) PodAutoscaling() ContainerClusterPodAutoscalingOutputReference {
+	var returns ContainerClusterPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) PodAutoscalingInput() *ContainerClusterPodAutoscaling {
+	var returns *ContainerClusterPodAutoscaling
+	_jsii_.Get(
+		j,
+		"podAutoscalingInput",
 		&returns,
 	)
 	return returns
@@ -2109,7 +2205,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2127,7 +2223,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2944,6 +3040,17 @@ func (c *jsiiProxy_ContainerCluster) PutAddonsConfig(value *ContainerClusterAddo
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutAnonymousAuthenticationConfig(value *ContainerClusterAnonymousAuthenticationConfig) {
+	if err := c.validatePutAnonymousAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAnonymousAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutAuthenticatorGroupsConfig(value *ContainerClusterAuthenticatorGroupsConfig) {
 	if err := c.validatePutAuthenticatorGroupsConfigParameters(value); err != nil {
 		panic(err)
@@ -3087,6 +3194,17 @@ func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerCluster
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutGkeAutoUpgradeConfig(value *ContainerClusterGkeAutoUpgradeConfig) {
+	if err := c.validatePutGkeAutoUpgradeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGkeAutoUpgradeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig) {
 	if err := c.validatePutIdentityServiceConfigParameters(value); err != nil {
 		panic(err)
@@ -3175,6 +3293,17 @@ func (c *jsiiProxy_ContainerCluster) PutMonitoringConfig(value *ContainerCluster
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutNetworkPerformanceConfig(value *ContainerClusterNetworkPerformanceConfig) {
+	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutNetworkPolicy(value *ContainerClusterNetworkPolicy) {
 	if err := c.validatePutNetworkPolicyParameters(value); err != nil {
 		panic(err)
@@ -3237,6 +3366,17 @@ func (c *jsiiProxy_ContainerCluster) PutNotificationConfig(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putNotificationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) PutPodAutoscaling(value *ContainerClusterPodAutoscaling) {
+	if err := c.validatePutPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPodAutoscaling",
 		[]interface{}{value},
 	)
 }
@@ -3363,6 +3503,14 @@ func (c *jsiiProxy_ContainerCluster) ResetAllowNetAdmin() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowNetAdmin",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetAnonymousAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnonymousAuthenticationConfig",
 		nil, // no parameters
 	)
 }
@@ -3599,6 +3747,14 @@ func (c *jsiiProxy_ContainerCluster) ResetGatewayApiConfig() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetGkeAutoUpgradeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGkeAutoUpgradeConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3735,6 +3891,14 @@ func (c *jsiiProxy_ContainerCluster) ResetNetworkingMode() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkPerformanceConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetNetworkPolicy() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3803,6 +3967,14 @@ func (c *jsiiProxy_ContainerCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPodAutoscaling",
 		nil, // no parameters
 	)
 }

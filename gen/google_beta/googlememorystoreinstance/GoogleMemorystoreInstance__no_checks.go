@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetInstanceIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

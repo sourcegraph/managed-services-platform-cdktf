@@ -9,23 +9,29 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflareorigincacertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type DataCloudflareOriginCaCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
+	CertificateId() *string
+	SetCertificateId(val *string)
+	CertificateIdInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Csr() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ExpiresOn() *string
+	Filter() DataCloudflareOriginCaCertificateFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,8 +42,6 @@ type DataCloudflareOriginCaCertificate interface {
 	FriendlyUniqueId() *string
 	Hostnames() *[]*string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -50,8 +54,8 @@ type DataCloudflareOriginCaCertificate interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RequestedValidity() *float64
 	RequestType() *string
-	RevokedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -83,6 +87,9 @@ type DataCloudflareOriginCaCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareOriginCaCertificateFilter)
+	ResetCertificateId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -125,6 +132,26 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Certificate() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) CertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) CertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOriginCaCertificate) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -145,6 +172,16 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Csr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"csr",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOriginCaCertificate) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -160,6 +197,26 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) ExpiresOn() *string {
 	_jsii_.Get(
 		j,
 		"expiresOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Filter() DataCloudflareOriginCaCertificateFilterOutputReference {
+	var returns DataCloudflareOriginCaCertificateFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -215,16 +272,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareOriginCaCertificate) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -265,21 +312,21 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) RawOverrides() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) RequestType() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) RequestedValidity() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"requestType",
+		"requestedValidity",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) RevokedAt() *string {
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) RequestType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"revokedAt",
+		"requestType",
 		&returns,
 	)
 	return returns
@@ -316,7 +363,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
 func NewDataCloudflareOriginCaCertificate(scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificateConfig) DataCloudflareOriginCaCertificate {
 	_init_.Initialize()
 
@@ -334,7 +381,7 @@ func NewDataCloudflareOriginCaCertificate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
 func NewDataCloudflareOriginCaCertificate_Override(d DataCloudflareOriginCaCertificate, scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificateConfig) {
 	_init_.Initialize()
 
@@ -342,6 +389,17 @@ func NewDataCloudflareOriginCaCertificate_Override(d DataCloudflareOriginCaCerti
 		"@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate)SetCertificateId(val *string) {
+	if err := j.validateSetCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateId",
+		val,
 	)
 }
 
@@ -368,17 +426,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate)SetForEach(val cdktf.ITerra
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -684,6 +731,33 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificate) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOriginCaCertificate) PutFilter(value *DataCloudflareOriginCaCertificateFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOriginCaCertificate) ResetCertificateId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificateId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOriginCaCertificate) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

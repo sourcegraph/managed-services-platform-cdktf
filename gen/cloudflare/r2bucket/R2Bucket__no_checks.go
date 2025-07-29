@@ -100,6 +100,10 @@ func (j *jsiiProxy_R2Bucket) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_R2Bucket) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2Bucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_R2Bucket) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_R2Bucket) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_R2Bucket) validateSetStorageClassParameters(val *string) error {
 	return nil
 }
 

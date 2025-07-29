@@ -104,15 +104,15 @@ func (j *jsiiProxy_BotManagement) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetCrawlerProtectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetEnableJsParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_BotManagement) validateSetIdParameters(val *string) error {
 	return nil
 }
 

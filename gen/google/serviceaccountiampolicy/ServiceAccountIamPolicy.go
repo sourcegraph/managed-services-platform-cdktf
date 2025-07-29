@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/serviceaccountiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/service_account_iam_policy google_service_account_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/service_account_iam_policy google_service_account_iam_policy}.
 type ServiceAccountIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_ServiceAccountIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/service_account_iam_policy google_service_account_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/service_account_iam_policy google_service_account_iam_policy} Resource.
 func NewServiceAccountIamPolicy(scope constructs.Construct, id *string, config *ServiceAccountIamPolicyConfig) ServiceAccountIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewServiceAccountIamPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/service_account_iam_policy google_service_account_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/service_account_iam_policy google_service_account_iam_policy} Resource.
 func NewServiceAccountIamPolicy_Override(s ServiceAccountIamPolicy, scope constructs.Construct, id *string, config *ServiceAccountIamPolicyConfig) {
 	_init_.Initialize()
 

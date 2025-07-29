@@ -72,10 +72,6 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateOverrideLogicalI
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validatePutTimeoutsParameters(value *AuthenticatedOriginPullsCertificateTimeouts) error {
-	return nil
-}
-
 func validateAuthenticatedOriginPullsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,10 +100,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCountParamete
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -117,10 +109,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetPrivateKeyPar
 }
 
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

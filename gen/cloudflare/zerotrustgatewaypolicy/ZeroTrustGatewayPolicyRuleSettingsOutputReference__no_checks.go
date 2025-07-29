@@ -52,6 +52,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutBlockPageParameters(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutCheckSessionParameters(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession) error {
 	return nil
 }
@@ -73,6 +77,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutPayloadLogParameters(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutQuarantineParameters(value *ZeroTrustGatewayPolicyRuleSettingsQuarantine) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutRedirectParameters(value *ZeroTrustGatewayPolicyRuleSettingsRedirect) error {
 	return nil
 }
 
@@ -100,7 +112,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBlockPageReasonParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetBlockReasonParameters(val *string) error {
 	return nil
 }
 
@@ -124,11 +136,15 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettings) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpCategoriesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIpIndicatorFeedsParameters(val interface{}) error {
 	return nil
 }
 

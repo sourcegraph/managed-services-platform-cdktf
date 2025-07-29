@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdevicemanagednetworkslist
+
+
+type DataCloudflareZeroTrustDeviceManagedNetworksListResult struct {
+}
+

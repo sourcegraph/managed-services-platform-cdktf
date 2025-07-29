@@ -1,0 +1,6 @@
+package datacloudflareemailsecurityimpersonationregistries
+
+
+type DataCloudflareEmailSecurityImpersonationRegistriesResult struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/emailroutingsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 type EmailRoutingSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,9 +29,7 @@ type EmailRoutingSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,8 +39,6 @@ type EmailRoutingSettings interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,9 +57,7 @@ type EmailRoutingSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SkipWizard() interface{}
-	SetSkipWizard(val interface{})
-	SkipWizardInput() interface{}
+	SkipWizard() cdktf.IResolvable
 	Status() *string
 	Tag() *string
 	// Experimental.
@@ -118,11 +112,9 @@ type EmailRoutingSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipWizard()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -201,21 +193,11 @@ func (j *jsiiProxy_EmailRoutingSettings) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingSettings) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingSettings) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingSettings) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -256,16 +238,6 @@ func (j *jsiiProxy_EmailRoutingSettings) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingSettings) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -341,21 +313,11 @@ func (j *jsiiProxy_EmailRoutingSettings) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingSettings) SkipWizard() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailRoutingSettings) SkipWizard() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"skipWizard",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingSettings) SkipWizardInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipWizardInput",
 		&returns,
 	)
 	return returns
@@ -432,7 +394,7 @@ func (j *jsiiProxy_EmailRoutingSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) EmailRoutingSettings {
 	_init_.Initialize()
 
@@ -450,7 +412,7 @@ func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings_Override(e EmailRoutingSettings, scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) {
 	_init_.Initialize()
 
@@ -491,32 +453,10 @@ func (j *jsiiProxy_EmailRoutingSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingSettings)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_EmailRoutingSettings)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailRoutingSettings)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -547,17 +487,6 @@ func (j *jsiiProxy_EmailRoutingSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailRoutingSettings)SetSkipWizard(val interface{}) {
-	if err := j.validateSetSkipWizardParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipWizard",
 		val,
 	)
 }
@@ -926,26 +855,10 @@ func (e *jsiiProxy_EmailRoutingSettings) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingSettings) ResetId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_EmailRoutingSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EmailRoutingSettings) ResetSkipWizard() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetSkipWizard",
 		nil, // no parameters
 	)
 }

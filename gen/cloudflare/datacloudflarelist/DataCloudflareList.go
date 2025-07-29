@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarelist/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list cloudflare_list}.
 type DataCloudflareList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -23,6 +23,7 @@ type DataCloudflareList interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,19 +38,20 @@ type DataCloudflareList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListId() *string
+	SetListId(val *string)
+	ListIdInput() *string
+	ModifiedOn() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Numitems() *float64
+	NumItems() *float64
+	NumReferencingFilters() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -87,7 +89,7 @@ type DataCloudflareList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetListId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -160,6 +162,16 @@ func (j *jsiiProxy_DataCloudflareList) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareList) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareList) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -220,16 +232,6 @@ func (j *jsiiProxy_DataCloudflareList) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareList) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareList) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -250,21 +252,41 @@ func (j *jsiiProxy_DataCloudflareList) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareList) Name() *string {
+func (j *jsiiProxy_DataCloudflareList) ListId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"listId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareList) NameInput() *string {
+func (j *jsiiProxy_DataCloudflareList) ListIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"listIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareList) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareList) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns
@@ -280,11 +302,21 @@ func (j *jsiiProxy_DataCloudflareList) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareList) Numitems() *float64 {
+func (j *jsiiProxy_DataCloudflareList) NumItems() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"numitems",
+		"numItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareList) NumReferencingFilters() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numReferencingFilters",
 		&returns,
 	)
 	return returns
@@ -341,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataCloudflareListConfig) DataCloudflareList {
 	_init_.Initialize()
 
@@ -359,7 +391,7 @@ func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList_Override(d DataCloudflareList, scope constructs.Construct, id *string, config *DataCloudflareListConfig) {
 	_init_.Initialize()
 
@@ -408,17 +440,6 @@ func (j *jsiiProxy_DataCloudflareList)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareList)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -430,13 +451,13 @@ func (j *jsiiProxy_DataCloudflareList)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareList)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareList)SetListId(val *string) {
+	if err := j.validateSetListIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"name",
+		"listId",
 		val,
 	)
 }
@@ -734,10 +755,10 @@ func (d *jsiiProxy_DataCloudflareList) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareList) ResetId() {
+func (d *jsiiProxy_DataCloudflareList) ResetListId() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetListId",
 		nil, // no parameters
 	)
 }

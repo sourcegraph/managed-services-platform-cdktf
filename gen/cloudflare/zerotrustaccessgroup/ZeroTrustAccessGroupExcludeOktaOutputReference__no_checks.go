@@ -64,7 +64,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetNameParameters(val *[]*string) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOktaOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewZeroTrustAccessGroupExcludeOktaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessGroupExcludeOktaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

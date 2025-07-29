@@ -56,7 +56,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReference) validateSetInternalValueParameters(val *PagesProjectDeploymentConfigsProductionPlacement) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

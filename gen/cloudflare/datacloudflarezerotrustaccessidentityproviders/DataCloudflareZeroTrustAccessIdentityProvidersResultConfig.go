@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessidentityproviders
+
+
+type DataCloudflareZeroTrustAccessIdentityProvidersResultConfig struct {
+}
+

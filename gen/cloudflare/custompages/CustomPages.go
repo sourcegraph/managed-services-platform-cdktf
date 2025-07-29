@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/custompages/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_pages cloudflare_custom_pages}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages cloudflare_custom_pages}.
 type CustomPages interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -40,8 +40,9 @@ type CustomPages interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Identifier() *string
+	SetIdentifier(val *string)
+	IdentifierInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,9 +68,6 @@ type CustomPages interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -120,11 +118,9 @@ type CustomPages interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetState()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -254,11 +250,21 @@ func (j *jsiiProxy_CustomPages) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) IdInput() *string {
+func (j *jsiiProxy_CustomPages) Identifier() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"identifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomPages) IdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierInput",
 		&returns,
 	)
 	return returns
@@ -364,26 +370,6 @@ func (j *jsiiProxy_CustomPages) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomPages) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CustomPages) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,7 +411,7 @@ func (j *jsiiProxy_CustomPages) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesConfig) CustomPages {
 	_init_.Initialize()
 
@@ -443,7 +429,7 @@ func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *string, config *CustomPagesConfig) {
 	_init_.Initialize()
 
@@ -503,13 +489,13 @@ func (j *jsiiProxy_CustomPages)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_CustomPages)SetIdentifier(val *string) {
+	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"identifier",
 		val,
 	)
 }
@@ -551,17 +537,6 @@ func (j *jsiiProxy_CustomPages)SetState(val *string) {
 	_jsii_.Set(
 		j,
 		"state",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CustomPages)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -949,26 +924,10 @@ func (c *jsiiProxy_CustomPages) ResetAccountId() {
 	)
 }
 
-func (c *jsiiProxy_CustomPages) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CustomPages) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CustomPages) ResetState() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetState",
 		nil, // no parameters
 	)
 }

@@ -9,17 +9,14 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	ApplicationId() *string
-	SetApplicationId(val *string)
-	ApplicationIdInput() *string
-	ApprovalGroup() ZeroTrustAccessPolicyApprovalGroupList
-	ApprovalGroupInput() interface{}
+	ApprovalGroups() ZeroTrustAccessPolicyApprovalGroupsList
+	ApprovalGroupsInput() interface{}
 	ApprovalRequired() interface{}
 	SetApprovalRequired(val interface{})
 	ApprovalRequiredInput() interface{}
@@ -29,8 +26,6 @@ type ZeroTrustAccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
-	ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference
-	ConnectionRulesInput() *ZeroTrustAccessPolicyConnectionRules
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -55,8 +50,6 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Include() ZeroTrustAccessPolicyIncludeList
 	IncludeInput() interface{}
 	IsolationRequired() interface{}
@@ -71,9 +64,6 @@ type ZeroTrustAccessPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Precedence() *float64
-	SetPrecedence(val *float64)
-	PrecedenceInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -101,9 +91,6 @@ type ZeroTrustAccessPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ZoneId() *string
-	SetZoneId(val *string)
-	ZoneIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -147,28 +134,21 @@ type ZeroTrustAccessPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApprovalGroup(value interface{})
-	PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules)
+	PutApprovalGroups(value interface{})
 	PutExclude(value interface{})
 	PutInclude(value interface{})
 	PutRequire(value interface{})
-	ResetAccountId()
-	ResetApplicationId()
-	ResetApprovalGroup()
+	ResetApprovalGroups()
 	ResetApprovalRequired()
-	ResetConnectionRules()
 	ResetExclude()
-	ResetId()
 	ResetIsolationRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPrecedence()
 	ResetPurposeJustificationPrompt()
 	ResetPurposeJustificationRequired()
 	ResetRequire()
 	ResetSessionDuration()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -207,41 +187,21 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApplicationId() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroups() ZeroTrustAccessPolicyApprovalGroupsList {
+	var returns ZeroTrustAccessPolicyApprovalGroupsList
 	_jsii_.Get(
 		j,
-		"applicationId",
+		"approvalGroups",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApplicationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroup() ZeroTrustAccessPolicyApprovalGroupList {
-	var returns ZeroTrustAccessPolicyApprovalGroupList
-	_jsii_.Get(
-		j,
-		"approvalGroup",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroupInput() interface{} {
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ApprovalGroupsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"approvalGroupInput",
+		"approvalGroupsInput",
 		&returns,
 	)
 	return returns
@@ -282,26 +242,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference {
-	var returns ZeroTrustAccessPolicyConnectionRulesOutputReference
-	_jsii_.Get(
-		j,
-		"connectionRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRulesInput() *ZeroTrustAccessPolicyConnectionRules {
-	var returns *ZeroTrustAccessPolicyConnectionRules
-	_jsii_.Get(
-		j,
-		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -417,16 +357,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) Include() ZeroTrustAccessPolicyIncludeList {
 	var returns ZeroTrustAccessPolicyIncludeList
 	_jsii_.Get(
@@ -502,26 +432,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) Precedence() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"precedence",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) PrecedenceInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"precedenceInput",
 		&returns,
 	)
 	return returns
@@ -667,28 +577,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ZoneId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) ZoneIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -706,7 +596,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -724,17 +614,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetApplicationId(val *string) {
-	if err := j.validateSetApplicationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationId",
 		val,
 	)
 }
@@ -799,17 +678,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy)SetIsolationRequired(val interface{}) {
 	if err := j.validateSetIsolationRequiredParameters(val); err != nil {
 		panic(err)
@@ -839,17 +707,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPrecedence(val *float64) {
-	if err := j.validateSetPrecedenceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"precedence",
 		val,
 	)
 }
@@ -902,17 +759,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetSessionDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"sessionDuration",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy)SetZoneId(val *string) {
-	if err := j.validateSetZoneIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneId",
 		val,
 	)
 }
@@ -1270,24 +1116,13 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroup(value interface{}) {
-	if err := z.validatePutApprovalGroupParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroups(value interface{}) {
+	if err := z.validatePutApprovalGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putApprovalGroup",
-		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules) {
-	if err := z.validatePutConnectionRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putConnectionRules",
+		"putApprovalGroups",
 		[]interface{}{value},
 	)
 }
@@ -1325,26 +1160,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutRequire(value interface{}) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetAccountId() {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalGroups() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApplicationId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetApplicationId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalGroup() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetApprovalGroup",
+		"resetApprovalGroups",
 		nil, // no parameters
 	)
 }
@@ -1357,26 +1176,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalRequired() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetConnectionRules() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetConnectionRules",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetExclude() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetExclude",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -1393,14 +1196,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetPrecedence() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPrecedence",
 		nil, // no parameters
 	)
 }
@@ -1433,14 +1228,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetSessionDuration() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSessionDuration",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

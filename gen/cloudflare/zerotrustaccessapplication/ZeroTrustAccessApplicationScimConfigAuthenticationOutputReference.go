@@ -362,29 +362,29 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 }
 
 
-func NewZeroTrustAccessApplicationScimConfigAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference {
+func NewZeroTrustAccessApplicationScimConfigAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessApplicationScimConfigAuthenticationOutputReference_Override(z ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessApplicationScimConfigAuthenticationOutputReference_Override(z ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }

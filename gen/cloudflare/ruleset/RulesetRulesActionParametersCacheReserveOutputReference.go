@@ -67,7 +67,6 @@ type RulesetRulesActionParametersCacheReserveOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMinimumFileSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,29 +193,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) Terr
 }
 
 
-func NewRulesetRulesActionParametersCacheReserveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheReserveOutputReference {
+func NewRulesetRulesActionParametersCacheReserveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheReserveOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheReserveOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheReserveOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheReserveOutputReference_Override(r RulesetRulesActionParametersCacheReserveOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersCacheReserveOutputReference_Override(r RulesetRulesActionParametersCacheReserveOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -482,14 +481,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) Inte
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) ResetMinimumFileSize() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMinimumFileSize",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

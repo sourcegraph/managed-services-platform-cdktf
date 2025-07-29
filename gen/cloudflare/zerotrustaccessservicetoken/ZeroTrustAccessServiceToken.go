@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessservicetoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type ZeroTrustAccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -46,15 +46,10 @@ type ZeroTrustAccessServiceToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MinDaysForRenewal() *float64
-	SetMinDaysForRenewal(val *float64)
-	MinDaysForRenewalInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -124,8 +119,6 @@ type ZeroTrustAccessServiceToken interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
 	ResetDuration()
-	ResetId()
-	ResetMinDaysForRenewal()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,41 +301,11 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) MinDaysForRenewal() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minDaysForRenewal",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) MinDaysForRenewalInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minDaysForRenewalInput",
 		&returns,
 	)
 	return returns
@@ -459,7 +422,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -477,7 +440,7 @@ func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken_Override(z ZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -548,17 +511,6 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -566,17 +518,6 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetMinDaysForRenewal(val *float64) {
-	if err := j.validateSetMinDaysForRenewalParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"minDaysForRenewal",
 		val,
 	)
 }
@@ -987,22 +928,6 @@ func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetDuration() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDuration",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetMinDaysForRenewal() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetMinDaysForRenewal",
 		nil, // no parameters
 	)
 }

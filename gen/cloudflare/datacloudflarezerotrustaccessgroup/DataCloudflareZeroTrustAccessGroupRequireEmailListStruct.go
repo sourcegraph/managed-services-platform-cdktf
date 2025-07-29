@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessgroup
+
+
+type DataCloudflareZeroTrustAccessGroupRequireEmailListStruct struct {
+}
+

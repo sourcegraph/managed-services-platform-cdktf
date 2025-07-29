@@ -36,7 +36,7 @@ type ZeroTrustAccessApplicationScimConfigMappingsOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Operations() ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference
-	OperationsInput() *ZeroTrustAccessApplicationScimConfigMappingsOperations
+	OperationsInput() interface{}
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) OperationsInput() *ZeroTrustAccessApplicationScimConfigMappingsOperations {
-	var returns *ZeroTrustAccessApplicationScimConfigMappingsOperations
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) OperationsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"operationsInput",

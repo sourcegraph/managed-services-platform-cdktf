@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeregionnetworkfirewallpolicywithrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules}.
 type ComputeRegionNetworkFirewallPolicyWithRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -526,7 +526,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
 func NewComputeRegionNetworkFirewallPolicyWithRules(scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyWithRulesConfig) ComputeRegionNetworkFirewallPolicyWithRules {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewComputeRegionNetworkFirewallPolicyWithRules(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_network_firewall_policy_with_rules google_compute_region_network_firewall_policy_with_rules} Resource.
 func NewComputeRegionNetworkFirewallPolicyWithRules_Override(c ComputeRegionNetworkFirewallPolicyWithRules, scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyWithRulesConfig) {
 	_init_.Initialize()
 

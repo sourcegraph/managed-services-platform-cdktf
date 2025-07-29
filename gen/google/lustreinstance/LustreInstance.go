@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/lustreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/lustre_instance google_lustre_instance}.
 type LustreInstance interface {
 	cdktf.TerraformResource
 	CapacityGib() *string
@@ -73,6 +73,9 @@ type LustreInstance interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PerUnitStorageThroughput() *string
+	SetPerUnitStorageThroughput(val *string)
+	PerUnitStorageThroughputInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -488,6 +491,26 @@ func (j *jsiiProxy_LustreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LustreInstance) PerUnitStorageThroughput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"perUnitStorageThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LustreInstance) PerUnitStorageThroughputInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"perUnitStorageThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LustreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -619,7 +642,7 @@ func (j *jsiiProxy_LustreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/lustre_instance google_lustre_instance} Resource.
 func NewLustreInstance(scope constructs.Construct, id *string, config *LustreInstanceConfig) LustreInstance {
 	_init_.Initialize()
 
@@ -637,7 +660,7 @@ func NewLustreInstance(scope constructs.Construct, id *string, config *LustreIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/lustre_instance google_lustre_instance} Resource.
 func NewLustreInstance_Override(l LustreInstance, scope constructs.Construct, id *string, config *LustreInstanceConfig) {
 	_init_.Initialize()
 
@@ -792,6 +815,17 @@ func (j *jsiiProxy_LustreInstance)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LustreInstance)SetPerUnitStorageThroughput(val *string) {
+	if err := j.validateSetPerUnitStorageThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perUnitStorageThroughput",
 		val,
 	)
 }
