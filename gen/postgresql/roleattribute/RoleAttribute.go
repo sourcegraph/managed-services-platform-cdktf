@@ -1,4 +1,4 @@
-package role
+package roleattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
@@ -6,11 +6,11 @@ import (
 
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
-	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/role/internal"
+	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/roleattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role postgresql_role}.
-type Role interface {
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute}.
+type RoleAttribute interface {
 	cdktf.TerraformResource
 	AssumeRole() *string
 	SetAssumeRole(val *string)
@@ -43,12 +43,12 @@ type Role interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Encrypted() *string
-	SetEncrypted(val *string)
-	EncryptedInput() *string
 	EncryptedPassword() interface{}
 	SetEncryptedPassword(val interface{})
 	EncryptedPasswordInput() interface{}
+	ExtensionAttrs() *map[string]*string
+	SetExtensionAttrs(val *map[string]*string)
+	ExtensionAttrsInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -94,18 +94,9 @@ type Role interface {
 	Replication() interface{}
 	SetReplication(val interface{})
 	ReplicationInput() interface{}
-	Roles() *[]*string
-	SetRoles(val *[]*string)
-	RolesInput() *[]*string
 	SearchPath() *[]*string
 	SetSearchPath(val *[]*string)
 	SearchPathInput() *[]*string
-	SkipDropRole() interface{}
-	SetSkipDropRole(val interface{})
-	SkipDropRoleInput() interface{}
-	SkipReassignOwned() interface{}
-	SetSkipReassignOwned(val interface{})
-	SkipReassignOwnedInput() interface{}
 	StatementTimeout() *float64
 	SetStatementTimeout(val *float64)
 	StatementTimeoutInput() *float64
@@ -169,8 +160,8 @@ type Role interface {
 	ResetConnectionLimit()
 	ResetCreateDatabase()
 	ResetCreateRole()
-	ResetEncrypted()
 	ResetEncryptedPassword()
+	ResetExtensionAttrs()
 	ResetId()
 	ResetIdleInTransactionSessionTimeout()
 	ResetInherit()
@@ -180,10 +171,7 @@ type Role interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetReplication()
-	ResetRoles()
 	ResetSearchPath()
-	ResetSkipDropRole()
-	ResetSkipReassignOwned()
 	ResetStatementTimeout()
 	ResetSuperuser()
 	ResetValidUntil()
@@ -200,12 +188,12 @@ type Role interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for Role
-type jsiiProxy_Role struct {
+// The jsii proxy struct for RoleAttribute
+type jsiiProxy_RoleAttribute struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Role) AssumeRole() *string {
+func (j *jsiiProxy_RoleAttribute) AssumeRole() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -215,7 +203,7 @@ func (j *jsiiProxy_Role) AssumeRole() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) AssumeRoleInput() *string {
+func (j *jsiiProxy_RoleAttribute) AssumeRoleInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -225,7 +213,7 @@ func (j *jsiiProxy_Role) AssumeRoleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) BypassRowLevelSecurity() interface{} {
+func (j *jsiiProxy_RoleAttribute) BypassRowLevelSecurity() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -235,7 +223,7 @@ func (j *jsiiProxy_Role) BypassRowLevelSecurity() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) BypassRowLevelSecurityInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) BypassRowLevelSecurityInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -245,7 +233,7 @@ func (j *jsiiProxy_Role) BypassRowLevelSecurityInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_RoleAttribute) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -255,7 +243,7 @@ func (j *jsiiProxy_Role) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Connection() interface{} {
+func (j *jsiiProxy_RoleAttribute) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -265,7 +253,7 @@ func (j *jsiiProxy_Role) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ConnectionLimit() *float64 {
+func (j *jsiiProxy_RoleAttribute) ConnectionLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -275,7 +263,7 @@ func (j *jsiiProxy_Role) ConnectionLimit() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ConnectionLimitInput() *float64 {
+func (j *jsiiProxy_RoleAttribute) ConnectionLimitInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -285,7 +273,7 @@ func (j *jsiiProxy_Role) ConnectionLimitInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_RoleAttribute) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -295,7 +283,7 @@ func (j *jsiiProxy_Role) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Count() interface{} {
+func (j *jsiiProxy_RoleAttribute) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -305,7 +293,7 @@ func (j *jsiiProxy_Role) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) CreateDatabase() interface{} {
+func (j *jsiiProxy_RoleAttribute) CreateDatabase() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -315,7 +303,7 @@ func (j *jsiiProxy_Role) CreateDatabase() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) CreateDatabaseInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) CreateDatabaseInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -325,7 +313,7 @@ func (j *jsiiProxy_Role) CreateDatabaseInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) CreateRole() interface{} {
+func (j *jsiiProxy_RoleAttribute) CreateRole() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -335,7 +323,7 @@ func (j *jsiiProxy_Role) CreateRole() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) CreateRoleInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) CreateRoleInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -345,7 +333,7 @@ func (j *jsiiProxy_Role) CreateRoleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) DependsOn() *[]*string {
+func (j *jsiiProxy_RoleAttribute) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -355,27 +343,7 @@ func (j *jsiiProxy_Role) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Encrypted() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"encrypted",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) EncryptedInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"encryptedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) EncryptedPassword() interface{} {
+func (j *jsiiProxy_RoleAttribute) EncryptedPassword() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -385,7 +353,7 @@ func (j *jsiiProxy_Role) EncryptedPassword() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) EncryptedPasswordInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) EncryptedPasswordInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -395,7 +363,27 @@ func (j *jsiiProxy_Role) EncryptedPasswordInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_RoleAttribute) ExtensionAttrs() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extensionAttrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleAttribute) ExtensionAttrsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extensionAttrsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleAttribute) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -405,7 +393,7 @@ func (j *jsiiProxy_Role) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Fqn() *string {
+func (j *jsiiProxy_RoleAttribute) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -415,7 +403,7 @@ func (j *jsiiProxy_Role) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) FriendlyUniqueId() *string {
+func (j *jsiiProxy_RoleAttribute) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -425,7 +413,7 @@ func (j *jsiiProxy_Role) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Id() *string {
+func (j *jsiiProxy_RoleAttribute) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -435,7 +423,7 @@ func (j *jsiiProxy_Role) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) IdInput() *string {
+func (j *jsiiProxy_RoleAttribute) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -445,7 +433,7 @@ func (j *jsiiProxy_Role) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) IdleInTransactionSessionTimeout() *float64 {
+func (j *jsiiProxy_RoleAttribute) IdleInTransactionSessionTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -455,7 +443,7 @@ func (j *jsiiProxy_Role) IdleInTransactionSessionTimeout() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) IdleInTransactionSessionTimeoutInput() *float64 {
+func (j *jsiiProxy_RoleAttribute) IdleInTransactionSessionTimeoutInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -465,7 +453,7 @@ func (j *jsiiProxy_Role) IdleInTransactionSessionTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Inherit() interface{} {
+func (j *jsiiProxy_RoleAttribute) Inherit() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -475,7 +463,7 @@ func (j *jsiiProxy_Role) Inherit() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) InheritInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) InheritInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -485,7 +473,7 @@ func (j *jsiiProxy_Role) InheritInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_RoleAttribute) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -495,7 +483,7 @@ func (j *jsiiProxy_Role) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Login() interface{} {
+func (j *jsiiProxy_RoleAttribute) Login() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -505,7 +493,7 @@ func (j *jsiiProxy_Role) Login() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) LoginInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) LoginInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -515,7 +503,7 @@ func (j *jsiiProxy_Role) LoginInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Name() *string {
+func (j *jsiiProxy_RoleAttribute) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -525,7 +513,7 @@ func (j *jsiiProxy_Role) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) NameInput() *string {
+func (j *jsiiProxy_RoleAttribute) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -535,7 +523,7 @@ func (j *jsiiProxy_Role) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Node() constructs.Node {
+func (j *jsiiProxy_RoleAttribute) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -545,7 +533,7 @@ func (j *jsiiProxy_Role) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Password() *string {
+func (j *jsiiProxy_RoleAttribute) Password() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -555,7 +543,7 @@ func (j *jsiiProxy_Role) Password() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) PasswordInput() *string {
+func (j *jsiiProxy_RoleAttribute) PasswordInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -565,7 +553,7 @@ func (j *jsiiProxy_Role) PasswordInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_RoleAttribute) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -575,7 +563,7 @@ func (j *jsiiProxy_Role) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Provisioners() *[]interface{} {
+func (j *jsiiProxy_RoleAttribute) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -585,7 +573,7 @@ func (j *jsiiProxy_Role) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) RawOverrides() interface{} {
+func (j *jsiiProxy_RoleAttribute) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -595,7 +583,7 @@ func (j *jsiiProxy_Role) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Replication() interface{} {
+func (j *jsiiProxy_RoleAttribute) Replication() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -605,7 +593,7 @@ func (j *jsiiProxy_Role) Replication() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ReplicationInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) ReplicationInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -615,27 +603,7 @@ func (j *jsiiProxy_Role) ReplicationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Roles() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"roles",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) RolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"rolesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) SearchPath() *[]*string {
+func (j *jsiiProxy_RoleAttribute) SearchPath() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -645,7 +613,7 @@ func (j *jsiiProxy_Role) SearchPath() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) SearchPathInput() *[]*string {
+func (j *jsiiProxy_RoleAttribute) SearchPathInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -655,47 +623,7 @@ func (j *jsiiProxy_Role) SearchPathInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) SkipDropRole() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDropRole",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) SkipDropRoleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDropRoleInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) SkipReassignOwned() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipReassignOwned",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) SkipReassignOwnedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipReassignOwnedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Role) StatementTimeout() *float64 {
+func (j *jsiiProxy_RoleAttribute) StatementTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -705,7 +633,7 @@ func (j *jsiiProxy_Role) StatementTimeout() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) StatementTimeoutInput() *float64 {
+func (j *jsiiProxy_RoleAttribute) StatementTimeoutInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -715,7 +643,7 @@ func (j *jsiiProxy_Role) StatementTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Role) Superuser() interface{} {
+func (j *jsiiProxy_RoleAttribute) Superuser() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -725,7 +653,7 @@ func (j *jsiiProxy_Role) Superuser() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) SuperuserInput() interface{} {
+func (j *jsiiProxy_RoleAttribute) SuperuserInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -735,7 +663,7 @@ func (j *jsiiProxy_Role) SuperuserInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_RoleAttribute) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -745,7 +673,7 @@ func (j *jsiiProxy_Role) TerraformGeneratorMetadata() *cdktf.TerraformProviderGe
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_RoleAttribute) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -755,7 +683,7 @@ func (j *jsiiProxy_Role) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Role) TerraformResourceType() *string {
+func (j *jsiiProxy_RoleAttribute) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -765,7 +693,7 @@ func (j *jsiiProxy_Role) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ValidUntil() *string {
+func (j *jsiiProxy_RoleAttribute) ValidUntil() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -775,7 +703,7 @@ func (j *jsiiProxy_Role) ValidUntil() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Role) ValidUntilInput() *string {
+func (j *jsiiProxy_RoleAttribute) ValidUntilInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -786,17 +714,17 @@ func (j *jsiiProxy_Role) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role postgresql_role} Resource.
-func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute} Resource.
+func NewRoleAttribute(scope constructs.Construct, id *string, config *RoleAttributeConfig) RoleAttribute {
 	_init_.Initialize()
 
-	if err := validateNewRoleParameters(scope, id, config); err != nil {
+	if err := validateNewRoleAttributeParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_Role{}
+	j := jsiiProxy_RoleAttribute{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -804,18 +732,18 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role postgresql_role} Resource.
-func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute} Resource.
+func NewRoleAttribute_Override(r RoleAttribute, scope constructs.Construct, id *string, config *RoleAttributeConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		[]interface{}{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Role)SetAssumeRole(val *string) {
+func (j *jsiiProxy_RoleAttribute)SetAssumeRole(val *string) {
 	if err := j.validateSetAssumeRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +754,7 @@ func (j *jsiiProxy_Role)SetAssumeRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetBypassRowLevelSecurity(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetBypassRowLevelSecurity(val interface{}) {
 	if err := j.validateSetBypassRowLevelSecurityParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +765,7 @@ func (j *jsiiProxy_Role)SetBypassRowLevelSecurity(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetConnection(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +776,7 @@ func (j *jsiiProxy_Role)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetConnectionLimit(val *float64) {
+func (j *jsiiProxy_RoleAttribute)SetConnectionLimit(val *float64) {
 	if err := j.validateSetConnectionLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +787,7 @@ func (j *jsiiProxy_Role)SetConnectionLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetCount(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +798,7 @@ func (j *jsiiProxy_Role)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetCreateDatabase(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetCreateDatabase(val interface{}) {
 	if err := j.validateSetCreateDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +809,7 @@ func (j *jsiiProxy_Role)SetCreateDatabase(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetCreateRole(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetCreateRole(val interface{}) {
 	if err := j.validateSetCreateRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +820,7 @@ func (j *jsiiProxy_Role)SetCreateRole(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RoleAttribute)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -900,18 +828,7 @@ func (j *jsiiProxy_Role)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetEncrypted(val *string) {
-	if err := j.validateSetEncryptedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"encrypted",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetEncryptedPassword(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetEncryptedPassword(val interface{}) {
 	if err := j.validateSetEncryptedPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -922,7 +839,18 @@ func (j *jsiiProxy_Role)SetEncryptedPassword(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RoleAttribute)SetExtensionAttrs(val *map[string]*string) {
+	if err := j.validateSetExtensionAttrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extensionAttrs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoleAttribute)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -930,7 +858,7 @@ func (j *jsiiProxy_Role)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetId(val *string) {
+func (j *jsiiProxy_RoleAttribute)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +869,7 @@ func (j *jsiiProxy_Role)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetIdleInTransactionSessionTimeout(val *float64) {
+func (j *jsiiProxy_RoleAttribute)SetIdleInTransactionSessionTimeout(val *float64) {
 	if err := j.validateSetIdleInTransactionSessionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +880,7 @@ func (j *jsiiProxy_Role)SetIdleInTransactionSessionTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetInherit(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetInherit(val interface{}) {
 	if err := j.validateSetInheritParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +891,7 @@ func (j *jsiiProxy_Role)SetInherit(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RoleAttribute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -974,7 +902,7 @@ func (j *jsiiProxy_Role)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetLogin(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetLogin(val interface{}) {
 	if err := j.validateSetLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -985,7 +913,7 @@ func (j *jsiiProxy_Role)SetLogin(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetName(val *string) {
+func (j *jsiiProxy_RoleAttribute)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -996,7 +924,7 @@ func (j *jsiiProxy_Role)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetPassword(val *string) {
+func (j *jsiiProxy_RoleAttribute)SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +935,7 @@ func (j *jsiiProxy_Role)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RoleAttribute)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1015,7 +943,7 @@ func (j *jsiiProxy_Role)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1026,7 +954,7 @@ func (j *jsiiProxy_Role)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetReplication(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetReplication(val interface{}) {
 	if err := j.validateSetReplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1037,18 +965,7 @@ func (j *jsiiProxy_Role)SetReplication(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetRoles(val *[]*string) {
-	if err := j.validateSetRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"roles",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetSearchPath(val *[]*string) {
+func (j *jsiiProxy_RoleAttribute)SetSearchPath(val *[]*string) {
 	if err := j.validateSetSearchPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1059,29 +976,7 @@ func (j *jsiiProxy_Role)SetSearchPath(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetSkipDropRole(val interface{}) {
-	if err := j.validateSetSkipDropRoleParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipDropRole",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetSkipReassignOwned(val interface{}) {
-	if err := j.validateSetSkipReassignOwnedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipReassignOwned",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Role)SetStatementTimeout(val *float64) {
+func (j *jsiiProxy_RoleAttribute)SetStatementTimeout(val *float64) {
 	if err := j.validateSetStatementTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1092,7 +987,7 @@ func (j *jsiiProxy_Role)SetStatementTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetSuperuser(val interface{}) {
+func (j *jsiiProxy_RoleAttribute)SetSuperuser(val interface{}) {
 	if err := j.validateSetSuperuserParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +998,7 @@ func (j *jsiiProxy_Role)SetSuperuser(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Role)SetValidUntil(val *string) {
+func (j *jsiiProxy_RoleAttribute)SetValidUntil(val *string) {
 	if err := j.validateSetValidUntilParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,17 +1009,17 @@ func (j *jsiiProxy_Role)SetValidUntil(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>".
-func Role_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTF code for importing a RoleAttribute resource upon running "cdktf plan <stack-name>".
+func RoleAttribute_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
 	_init_.Initialize()
 
-	if err := validateRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+	if err := validateRoleAttribute_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1150,16 +1045,16 @@ func Role_GenerateConfigForImport(scope constructs.Construct, importToId *string
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Role_IsConstruct(x interface{}) *bool {
+func RoleAttribute_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsConstructParameters(x); err != nil {
+	if err := validateRoleAttribute_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1169,16 +1064,16 @@ func Role_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Role_IsTerraformElement(x interface{}) *bool {
+func RoleAttribute_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsTerraformElementParameters(x); err != nil {
+	if err := validateRoleAttribute_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1188,16 +1083,16 @@ func Role_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Role_IsTerraformResource(x interface{}) *bool {
+func RoleAttribute_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRole_IsTerraformResourceParameters(x); err != nil {
+	if err := validateRoleAttribute_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1206,18 +1101,18 @@ func Role_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func Role_TfResourceType() *string {
+func RoleAttribute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-postgresql.role.Role",
+		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (r *jsiiProxy_Role) AddMoveTarget(moveTarget *string) {
+func (r *jsiiProxy_RoleAttribute) AddMoveTarget(moveTarget *string) {
 	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
 		panic(err)
 	}
@@ -1228,7 +1123,7 @@ func (r *jsiiProxy_Role) AddMoveTarget(moveTarget *string) {
 	)
 }
 
-func (r *jsiiProxy_Role) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RoleAttribute) AddOverride(path *string, value interface{}) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -1239,7 +1134,7 @@ func (r *jsiiProxy_Role) AddOverride(path *string, value interface{}) {
 	)
 }
 
-func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RoleAttribute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1150,7 @@ func (r *jsiiProxy_Role) GetAnyMapAttribute(terraformAttribute *string) *map[str
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RoleAttribute) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1271,7 +1166,7 @@ func (r *jsiiProxy_Role) GetBooleanAttribute(terraformAttribute *string) cdktf.I
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (r *jsiiProxy_RoleAttribute) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1182,7 @@ func (r *jsiiProxy_Role) GetBooleanMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string {
+func (r *jsiiProxy_RoleAttribute) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1303,7 +1198,7 @@ func (r *jsiiProxy_Role) GetListAttribute(terraformAttribute *string) *[]*string
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (r *jsiiProxy_RoleAttribute) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1319,7 +1214,7 @@ func (r *jsiiProxy_Role) GetNumberAttribute(terraformAttribute *string) *float64
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (r *jsiiProxy_RoleAttribute) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1335,7 +1230,7 @@ func (r *jsiiProxy_Role) GetNumberListAttribute(terraformAttribute *string) *[]*
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (r *jsiiProxy_RoleAttribute) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1351,7 +1246,7 @@ func (r *jsiiProxy_Role) GetNumberMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string {
+func (r *jsiiProxy_RoleAttribute) GetStringAttribute(terraformAttribute *string) *string {
 	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1367,7 +1262,7 @@ func (r *jsiiProxy_Role) GetStringAttribute(terraformAttribute *string) *string 
 	return returns
 }
 
-func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (r *jsiiProxy_RoleAttribute) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1278,7 @@ func (r *jsiiProxy_Role) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (r *jsiiProxy_Role) HasResourceMove() interface{} {
+func (r *jsiiProxy_RoleAttribute) HasResourceMove() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -1396,7 +1291,7 @@ func (r *jsiiProxy_Role) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RoleAttribute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1407,7 +1302,7 @@ func (r *jsiiProxy_Role) ImportFrom(id *string, provider cdktf.TerraformProvider
 	)
 }
 
-func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RoleAttribute) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1423,7 +1318,7 @@ func (r *jsiiProxy_Role) InterpolationForAttribute(terraformAttribute *string) c
 	return returns
 }
 
-func (r *jsiiProxy_Role) MoveFromId(id *string) {
+func (r *jsiiProxy_RoleAttribute) MoveFromId(id *string) {
 	if err := r.validateMoveFromIdParameters(id); err != nil {
 		panic(err)
 	}
@@ -1434,7 +1329,7 @@ func (r *jsiiProxy_Role) MoveFromId(id *string) {
 	)
 }
 
-func (r *jsiiProxy_Role) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RoleAttribute) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
@@ -1445,7 +1340,7 @@ func (r *jsiiProxy_Role) MoveTo(moveTarget *string, index interface{}) {
 	)
 }
 
-func (r *jsiiProxy_Role) MoveToId(id *string) {
+func (r *jsiiProxy_RoleAttribute) MoveToId(id *string) {
 	if err := r.validateMoveToIdParameters(id); err != nil {
 		panic(err)
 	}
@@ -1456,7 +1351,7 @@ func (r *jsiiProxy_Role) MoveToId(id *string) {
 	)
 }
 
-func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
+func (r *jsiiProxy_RoleAttribute) OverrideLogicalId(newLogicalId *string) {
 	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -1467,7 +1362,7 @@ func (r *jsiiProxy_Role) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetAssumeRole() {
+func (r *jsiiProxy_RoleAttribute) ResetAssumeRole() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAssumeRole",
@@ -1475,7 +1370,7 @@ func (r *jsiiProxy_Role) ResetAssumeRole() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetBypassRowLevelSecurity() {
+func (r *jsiiProxy_RoleAttribute) ResetBypassRowLevelSecurity() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetBypassRowLevelSecurity",
@@ -1483,7 +1378,7 @@ func (r *jsiiProxy_Role) ResetBypassRowLevelSecurity() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetConnectionLimit() {
+func (r *jsiiProxy_RoleAttribute) ResetConnectionLimit() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetConnectionLimit",
@@ -1491,7 +1386,7 @@ func (r *jsiiProxy_Role) ResetConnectionLimit() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetCreateDatabase() {
+func (r *jsiiProxy_RoleAttribute) ResetCreateDatabase() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCreateDatabase",
@@ -1499,7 +1394,7 @@ func (r *jsiiProxy_Role) ResetCreateDatabase() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetCreateRole() {
+func (r *jsiiProxy_RoleAttribute) ResetCreateRole() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCreateRole",
@@ -1507,15 +1402,7 @@ func (r *jsiiProxy_Role) ResetCreateRole() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetEncrypted() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetEncrypted",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) ResetEncryptedPassword() {
+func (r *jsiiProxy_RoleAttribute) ResetEncryptedPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEncryptedPassword",
@@ -1523,7 +1410,15 @@ func (r *jsiiProxy_Role) ResetEncryptedPassword() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetId() {
+func (r *jsiiProxy_RoleAttribute) ResetExtensionAttrs() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetExtensionAttrs",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoleAttribute) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
@@ -1531,7 +1426,7 @@ func (r *jsiiProxy_Role) ResetId() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetIdleInTransactionSessionTimeout() {
+func (r *jsiiProxy_RoleAttribute) ResetIdleInTransactionSessionTimeout() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetIdleInTransactionSessionTimeout",
@@ -1539,7 +1434,7 @@ func (r *jsiiProxy_Role) ResetIdleInTransactionSessionTimeout() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetInherit() {
+func (r *jsiiProxy_RoleAttribute) ResetInherit() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetInherit",
@@ -1547,7 +1442,7 @@ func (r *jsiiProxy_Role) ResetInherit() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetLogin() {
+func (r *jsiiProxy_RoleAttribute) ResetLogin() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetLogin",
@@ -1555,7 +1450,7 @@ func (r *jsiiProxy_Role) ResetLogin() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetOverrideLogicalId() {
+func (r *jsiiProxy_RoleAttribute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
@@ -1563,7 +1458,7 @@ func (r *jsiiProxy_Role) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetPassword() {
+func (r *jsiiProxy_RoleAttribute) ResetPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPassword",
@@ -1571,7 +1466,7 @@ func (r *jsiiProxy_Role) ResetPassword() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetReplication() {
+func (r *jsiiProxy_RoleAttribute) ResetReplication() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetReplication",
@@ -1579,15 +1474,7 @@ func (r *jsiiProxy_Role) ResetReplication() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetRoles() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetRoles",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) ResetSearchPath() {
+func (r *jsiiProxy_RoleAttribute) ResetSearchPath() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSearchPath",
@@ -1595,23 +1482,7 @@ func (r *jsiiProxy_Role) ResetSearchPath() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetSkipDropRole() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetSkipDropRole",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) ResetSkipReassignOwned() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetSkipReassignOwned",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Role) ResetStatementTimeout() {
+func (r *jsiiProxy_RoleAttribute) ResetStatementTimeout() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatementTimeout",
@@ -1619,7 +1490,7 @@ func (r *jsiiProxy_Role) ResetStatementTimeout() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetSuperuser() {
+func (r *jsiiProxy_RoleAttribute) ResetSuperuser() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSuperuser",
@@ -1627,7 +1498,7 @@ func (r *jsiiProxy_Role) ResetSuperuser() {
 	)
 }
 
-func (r *jsiiProxy_Role) ResetValidUntil() {
+func (r *jsiiProxy_RoleAttribute) ResetValidUntil() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetValidUntil",
@@ -1635,7 +1506,7 @@ func (r *jsiiProxy_Role) ResetValidUntil() {
 	)
 }
 
-func (r *jsiiProxy_Role) SynthesizeAttributes() *map[string]interface{} {
+func (r *jsiiProxy_RoleAttribute) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1648,7 +1519,7 @@ func (r *jsiiProxy_Role) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) SynthesizeHclAttributes() *map[string]interface{} {
+func (r *jsiiProxy_RoleAttribute) SynthesizeHclAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1661,7 +1532,7 @@ func (r *jsiiProxy_Role) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToHclTerraform() interface{} {
+func (r *jsiiProxy_RoleAttribute) ToHclTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -1674,7 +1545,7 @@ func (r *jsiiProxy_Role) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToMetadata() interface{} {
+func (r *jsiiProxy_RoleAttribute) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -1687,7 +1558,7 @@ func (r *jsiiProxy_Role) ToMetadata() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToString() *string {
+func (r *jsiiProxy_RoleAttribute) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1700,7 +1571,7 @@ func (r *jsiiProxy_Role) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Role) ToTerraform() interface{} {
+func (r *jsiiProxy_RoleAttribute) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(

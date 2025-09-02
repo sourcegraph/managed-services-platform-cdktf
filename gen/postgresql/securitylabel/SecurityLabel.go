@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/securitylabel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/security_label postgresql_security_label}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/security_label postgresql_security_label}.
 type SecurityLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_SecurityLabel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/security_label postgresql_security_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/security_label postgresql_security_label} Resource.
 func NewSecurityLabel(scope constructs.Construct, id *string, config *SecurityLabelConfig) SecurityLabel {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewSecurityLabel(scope constructs.Construct, id *string, config *SecurityLa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs/resources/security_label postgresql_security_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/security_label postgresql_security_label} Resource.
 func NewSecurityLabel_Override(s SecurityLabel, scope constructs.Construct, id *string, config *SecurityLabelConfig) {
 	_init_.Initialize()
 
