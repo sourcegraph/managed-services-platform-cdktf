@@ -84,7 +84,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewLoadBalancerPoolLoadSheddingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerPoolLoadSheddingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

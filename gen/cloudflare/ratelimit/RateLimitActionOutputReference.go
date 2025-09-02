@@ -27,13 +27,13 @@ type RateLimitActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RateLimitAction
-	SetInternalValue(val *RateLimitAction)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	Response() RateLimitActionResponseOutputReference
-	ResponseInput() *RateLimitActionResponse
+	ResponseInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +70,7 @@ type RateLimitActionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutResponse(value *RateLimitActionResponse)
+	ResetMode()
 	ResetResponse()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
@@ -127,8 +128,8 @@ func (j *jsiiProxy_RateLimitActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) InternalValue() *RateLimitAction {
-	var returns *RateLimitAction
+func (j *jsiiProxy_RateLimitActionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -167,8 +168,8 @@ func (j *jsiiProxy_RateLimitActionOutputReference) Response() RateLimitActionRes
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) ResponseInput() *RateLimitActionResponse {
-	var returns *RateLimitActionResponse
+func (j *jsiiProxy_RateLimitActionOutputReference) ResponseInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"responseInput",
@@ -267,7 +268,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference)SetInternalValue(val *RateLimitAction) {
+func (j *jsiiProxy_RateLimitActionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,6 +517,14 @@ func (r *jsiiProxy_RateLimitActionOutputReference) PutResponse(value *RateLimitA
 		r,
 		"putResponse",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RateLimitActionOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMode",
+		nil, // no parameters
 	)
 }
 

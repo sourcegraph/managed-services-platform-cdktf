@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendbucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket}.
 type GoogleComputeBackendBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -64,6 +64,9 @@ type GoogleComputeBackendBucket interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancingScheme() *string
+	SetLoadBalancingScheme(val *string)
+	LoadBalancingSchemeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -143,6 +146,7 @@ type GoogleComputeBackendBucket interface {
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
 	ResetId()
+	ResetLoadBalancingScheme()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -426,6 +430,26 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) Lifecycle() *cdktf.TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendBucket) LoadBalancingScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket) LoadBalancingSchemeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingSchemeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucket) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,7 +591,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
 func NewGoogleComputeBackendBucket(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketConfig) GoogleComputeBackendBucket {
 	_init_.Initialize()
 
@@ -585,7 +609,7 @@ func NewGoogleComputeBackendBucket(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
 func NewGoogleComputeBackendBucket_Override(g GoogleComputeBackendBucket, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketConfig) {
 	_init_.Initialize()
 
@@ -718,6 +742,17 @@ func (j *jsiiProxy_GoogleComputeBackendBucket)SetLifecycle(val *cdktf.TerraformR
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket)SetLoadBalancingScheme(val *string) {
+	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalancingScheme",
 		val,
 	)
 }
@@ -1190,6 +1225,14 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendBucket) ResetLoadBalancingScheme() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoadBalancingScheme",
 		nil, // no parameters
 	)
 }

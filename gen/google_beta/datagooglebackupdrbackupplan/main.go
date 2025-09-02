@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceType", GoGetter: "ResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "supportedResourceTypes", GoGetter: "SupportedResourceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},

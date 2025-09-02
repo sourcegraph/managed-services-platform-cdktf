@@ -72,10 +72,6 @@ func (a *jsiiProxy_AddressMap) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (a *jsiiProxy_AddressMap) validatePutIpsParameters(value interface{}) error {
-	return nil
-}
-
 func (a *jsiiProxy_AddressMap) validatePutMembershipsParameters(value interface{}) error {
 	return nil
 }
@@ -120,7 +116,7 @@ func (j *jsiiProxy_AddressMap) validateSetEnabledParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_AddressMap) validateSetIpsParameters(val *[]*string) error {
 	return nil
 }
 

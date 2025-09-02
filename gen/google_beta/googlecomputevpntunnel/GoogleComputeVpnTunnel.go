@@ -9,11 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputevpntunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
 type GoogleComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CipherSuite() GoogleComputeVpnTunnelCipherSuiteOutputReference
+	CipherSuiteInput() *GoogleComputeVpnTunnelCipherSuite
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -165,7 +167,9 @@ type GoogleComputeVpnTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCipherSuite(value *GoogleComputeVpnTunnelCipherSuite)
 	PutTimeouts(value *GoogleComputeVpnTunnelTimeouts)
+	ResetCipherSuite()
 	ResetDescription()
 	ResetId()
 	ResetIkeVersion()
@@ -209,6 +213,26 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) CipherSuite() GoogleComputeVpnTunnelCipherSuiteOutputReference {
+	var returns GoogleComputeVpnTunnelCipherSuiteOutputReference
+	_jsii_.Get(
+		j,
+		"cipherSuite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) CipherSuiteInput() *GoogleComputeVpnTunnelCipherSuite {
+	var returns *GoogleComputeVpnTunnelCipherSuite
+	_jsii_.Get(
+		j,
+		"cipherSuiteInput",
 		&returns,
 	)
 	return returns
@@ -825,7 +849,7 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) GoogleComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -843,7 +867,7 @@ func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel_Override(g GoogleComputeVpnTunnel, scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) {
 	_init_.Initialize()
 
@@ -1473,6 +1497,17 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) PutCipherSuite(value *GoogleComputeVpnTunnelCipherSuite) {
+	if err := g.validatePutCipherSuiteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCipherSuite",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) PutTimeouts(value *GoogleComputeVpnTunnelTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1481,6 +1516,14 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) PutTimeouts(value *GoogleComputeVpnTu
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetCipherSuite() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCipherSuite",
+		nil, // no parameters
 	)
 }
 

@@ -1,0 +1,6 @@
+package datacloudflarezerotrusttunnelcloudflaredconfig
+
+
+type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequest struct {
+}
+

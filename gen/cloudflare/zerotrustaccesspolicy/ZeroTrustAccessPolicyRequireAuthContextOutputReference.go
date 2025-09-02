@@ -216,29 +216,29 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireAuthContextOutputReference) Terra
 }
 
 
-func NewZeroTrustAccessPolicyRequireAuthContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireAuthContextOutputReference {
+func NewZeroTrustAccessPolicyRequireAuthContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyRequireAuthContextOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessPolicyRequireAuthContextOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessPolicyRequireAuthContextOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessPolicyRequireAuthContextOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireAuthContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessPolicyRequireAuthContextOutputReference_Override(z ZeroTrustAccessPolicyRequireAuthContextOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessPolicyRequireAuthContextOutputReference_Override(z ZeroTrustAccessPolicyRequireAuthContextOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireAuthContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }

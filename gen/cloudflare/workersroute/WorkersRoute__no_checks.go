@@ -96,10 +96,6 @@ func (j *jsiiProxy_WorkersRoute) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_WorkersRoute) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WorkersRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -112,7 +108,7 @@ func (j *jsiiProxy_WorkersRoute) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_WorkersRoute) validateSetScriptNameParameters(val *string) error {
+func (j *jsiiProxy_WorkersRoute) validateSetScriptParameters(val *string) error {
 	return nil
 }
 

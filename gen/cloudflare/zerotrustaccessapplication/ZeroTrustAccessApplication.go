@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type ZeroTrustAccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,6 +21,9 @@ type ZeroTrustAccessApplication interface {
 	AllowedIdps() *[]*string
 	SetAllowedIdps(val *[]*string)
 	AllowedIdpsInput() *[]*string
+	AllowIframe() interface{}
+	SetAllowIframe(val interface{})
+	AllowIframeInput() interface{}
 	AppLauncherLogoUrl() *string
 	SetAppLauncherLogoUrl(val *string)
 	AppLauncherLogoUrlInput() *string
@@ -42,7 +45,7 @@ type ZeroTrustAccessApplication interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	CorsHeaders() ZeroTrustAccessApplicationCorsHeadersList
+	CorsHeaders() ZeroTrustAccessApplicationCorsHeadersOutputReference
 	CorsHeadersInput() interface{}
 	// Experimental.
 	Count() interface{}
@@ -69,9 +72,6 @@ type ZeroTrustAccessApplication interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
-	DomainType() *string
-	SetDomainType(val *string)
-	DomainTypeInput() *string
 	EnableBindingCookie() interface{}
 	SetEnableBindingCookie(val interface{})
 	EnableBindingCookieInput() interface{}
@@ -92,10 +92,8 @@ type ZeroTrustAccessApplication interface {
 	SetHttpOnlyCookieAttribute(val interface{})
 	HttpOnlyCookieAttributeInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LandingPageDesign() ZeroTrustAccessApplicationLandingPageDesignOutputReference
-	LandingPageDesignInput() *ZeroTrustAccessApplicationLandingPageDesign
+	LandingPageDesignInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -111,9 +109,11 @@ type ZeroTrustAccessApplication interface {
 	OptionsPreflightBypass() interface{}
 	SetOptionsPreflightBypass(val interface{})
 	OptionsPreflightBypassInput() interface{}
-	Policies() *[]*string
-	SetPolicies(val *[]*string)
-	PoliciesInput() *[]*string
+	PathCookieAttribute() interface{}
+	SetPathCookieAttribute(val interface{})
+	PathCookieAttributeInput() interface{}
+	Policies() ZeroTrustAccessApplicationPoliciesList
+	PoliciesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -124,13 +124,16 @@ type ZeroTrustAccessApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadServiceTokensFromHeader() *string
+	SetReadServiceTokensFromHeader(val *string)
+	ReadServiceTokensFromHeaderInput() *string
 	SaasApp() ZeroTrustAccessApplicationSaasAppOutputReference
-	SaasAppInput() *ZeroTrustAccessApplicationSaasApp
+	SaasAppInput() interface{}
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
 	ScimConfig() ZeroTrustAccessApplicationScimConfigOutputReference
-	ScimConfigInput() *ZeroTrustAccessApplicationScimConfig
+	ScimConfigInput() interface{}
 	SelfHostedDomains() *[]*string
 	SetSelfHostedDomains(val *[]*string)
 	SelfHostedDomainsInput() *[]*string
@@ -206,16 +209,18 @@ type ZeroTrustAccessApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCorsHeaders(value interface{})
+	PutCorsHeaders(value *ZeroTrustAccessApplicationCorsHeaders)
 	PutDestinations(value interface{})
 	PutFooterLinks(value interface{})
 	PutLandingPageDesign(value *ZeroTrustAccessApplicationLandingPageDesign)
+	PutPolicies(value interface{})
 	PutSaasApp(value *ZeroTrustAccessApplicationSaasApp)
 	PutScimConfig(value *ZeroTrustAccessApplicationScimConfig)
 	PutTargetCriteria(value interface{})
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
+	ResetAllowIframe()
 	ResetAppLauncherLogoUrl()
 	ResetAppLauncherVisible()
 	ResetAutoRedirectToIdentity()
@@ -227,12 +232,10 @@ type ZeroTrustAccessApplication interface {
 	ResetCustomPages()
 	ResetDestinations()
 	ResetDomain()
-	ResetDomainType()
 	ResetEnableBindingCookie()
 	ResetFooterLinks()
 	ResetHeaderBgColor()
 	ResetHttpOnlyCookieAttribute()
-	ResetId()
 	ResetLandingPageDesign()
 	ResetLogoUrl()
 	ResetName()
@@ -240,7 +243,9 @@ type ZeroTrustAccessApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPathCookieAttribute()
 	ResetPolicies()
+	ResetReadServiceTokensFromHeader()
 	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
 	ResetScimConfig()
@@ -326,6 +331,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) AllowedIdpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedIdpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) AllowIframe() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIframe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) AllowIframeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIframeInput",
 		&returns,
 	)
 	return returns
@@ -451,8 +476,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) CorsHeaders() ZeroTrustAccessApplicationCorsHeadersList {
-	var returns ZeroTrustAccessApplicationCorsHeadersList
+func (j *jsiiProxy_ZeroTrustAccessApplication) CorsHeaders() ZeroTrustAccessApplicationCorsHeadersOutputReference {
+	var returns ZeroTrustAccessApplicationCorsHeadersOutputReference
 	_jsii_.Get(
 		j,
 		"corsHeaders",
@@ -611,26 +636,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) DomainInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) DomainType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplication) DomainTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplication) EnableBindingCookie() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -751,16 +756,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplication) LandingPageDesign() ZeroTrustAccessApplicationLandingPageDesignOutputReference {
 	var returns ZeroTrustAccessApplicationLandingPageDesignOutputReference
 	_jsii_.Get(
@@ -771,8 +766,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) LandingPageDesign() ZeroTrustAcce
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) LandingPageDesignInput() *ZeroTrustAccessApplicationLandingPageDesign {
-	var returns *ZeroTrustAccessApplicationLandingPageDesign
+func (j *jsiiProxy_ZeroTrustAccessApplication) LandingPageDesignInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"landingPageDesignInput",
@@ -861,8 +856,28 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) OptionsPreflightBypassInput() int
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) Policies() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessApplication) PathCookieAttribute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pathCookieAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) PathCookieAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pathCookieAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) Policies() ZeroTrustAccessApplicationPoliciesList {
+	var returns ZeroTrustAccessApplicationPoliciesList
 	_jsii_.Get(
 		j,
 		"policies",
@@ -871,8 +886,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) Policies() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) PoliciesInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessApplication) PoliciesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"policiesInput",
@@ -911,6 +926,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) ReadServiceTokensFromHeader() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readServiceTokensFromHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) ReadServiceTokensFromHeaderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readServiceTokensFromHeaderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) SaasApp() ZeroTrustAccessApplicationSaasAppOutputReference {
 	var returns ZeroTrustAccessApplicationSaasAppOutputReference
 	_jsii_.Get(
@@ -921,8 +956,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) SaasApp() ZeroTrustAccessApplicat
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) SaasAppInput() *ZeroTrustAccessApplicationSaasApp {
-	var returns *ZeroTrustAccessApplicationSaasApp
+func (j *jsiiProxy_ZeroTrustAccessApplication) SaasAppInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"saasAppInput",
@@ -961,8 +996,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ScimConfig() ZeroTrustAccessAppli
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) ScimConfigInput() *ZeroTrustAccessApplicationScimConfig {
-	var returns *ZeroTrustAccessApplicationScimConfig
+func (j *jsiiProxy_ZeroTrustAccessApplication) ScimConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"scimConfigInput",
@@ -1182,7 +1217,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -1200,7 +1235,7 @@ func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication_Override(z ZeroTrustAccessApplication, scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1240,6 +1275,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetAllowedIdps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedIdps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication)SetAllowIframe(val interface{}) {
+	if err := j.validateSetAllowIframeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowIframe",
 		val,
 	)
 }
@@ -1373,17 +1419,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication)SetDomainType(val *string) {
-	if err := j.validateSetDomainTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"domainType",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplication)SetEnableBindingCookie(val interface{}) {
 	if err := j.validateSetEnableBindingCookieParameters(val); err != nil {
 		panic(err)
@@ -1421,17 +1456,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetHttpOnlyCookieAttribute(val int
 	_jsii_.Set(
 		j,
 		"httpOnlyCookieAttribute",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplication)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1480,13 +1504,13 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetOptionsPreflightBypass(val inte
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication)SetPolicies(val *[]*string) {
-	if err := j.validateSetPoliciesParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustAccessApplication)SetPathCookieAttribute(val interface{}) {
+	if err := j.validateSetPathCookieAttributeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"policies",
+		"pathCookieAttribute",
 		val,
 	)
 }
@@ -1506,6 +1530,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication)SetReadServiceTokensFromHeader(val *string) {
+	if err := j.validateSetReadServiceTokensFromHeaderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readServiceTokensFromHeader",
 		val,
 	)
 }
@@ -1962,7 +1997,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) PutCorsHeaders(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutCorsHeaders(value *ZeroTrustAccessApplicationCorsHeaders) {
 	if err := z.validatePutCorsHeadersParameters(value); err != nil {
 		panic(err)
 	}
@@ -2002,6 +2037,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) PutLandingPageDesign(value *ZeroT
 	_jsii_.InvokeVoid(
 		z,
 		"putLandingPageDesign",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutPolicies(value interface{}) {
+	if err := z.validatePutPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putPolicies",
 		[]interface{}{value},
 	)
 }
@@ -2059,6 +2105,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetAllowedIdps() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAllowedIdps",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetAllowIframe() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAllowIframe",
 		nil, // no parameters
 	)
 }
@@ -2151,14 +2205,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetDomain() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) ResetDomainType() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDomainType",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessApplication) ResetEnableBindingCookie() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2187,14 +2233,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetHttpOnlyCookieAttribute() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetHttpOnlyCookieAttribute",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplication) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -2239,10 +2277,26 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetOverrideLogicalId() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetPathCookieAttribute() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPathCookieAttribute",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) ResetPolicies() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetReadServiceTokensFromHeader() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetReadServiceTokensFromHeader",
 		nil, // no parameters
 	)
 }

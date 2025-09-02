@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/leakedcredentialcheckrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 type LeakedCredentialCheckRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -114,6 +114,8 @@ type LeakedCredentialCheckRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
+	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -363,7 +365,7 @@ func (j *jsiiProxy_LeakedCredentialCheckRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) LeakedCredentialCheckRule {
 	_init_.Initialize()
 
@@ -381,7 +383,7 @@ func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule_Override(l LeakedCredentialCheckRule, scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) {
 	_init_.Initialize()
 
@@ -850,6 +852,22 @@ func (l *jsiiProxy_LeakedCredentialCheckRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LeakedCredentialCheckRule) ResetPassword() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LeakedCredentialCheckRule) ResetUsername() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

@@ -27,8 +27,8 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions
-	SetInternalValue(val *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	ReturnAccessTokenFromAuthorizationEndpoint() interface{}
 	SetReturnAccessTokenFromAuthorizationEndpoint(val interface{})
 	ReturnAccessTokenFromAuthorizationEndpointInput() interface{}
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions {
-	var returns *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,7 +244,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

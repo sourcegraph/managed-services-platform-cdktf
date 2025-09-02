@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccesspolicy
+
+
+type DataCloudflareZeroTrustAccessPolicyIncludeExternalEvaluation struct {
+}
+

@@ -44,19 +44,19 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value *RulesetRulesActionParameters) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value *RulesetRulesExposedCredentialCheck) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value *RulesetRulesLogging) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value *RulesetRulesRatelimit) error {
 	return nil
 }
 
@@ -65,6 +65,10 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validateResolveParameters(_conte
 }
 
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }
 

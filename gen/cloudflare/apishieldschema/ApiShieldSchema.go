@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/apishieldschema/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 type ApiShieldSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,10 +24,14 @@ type ApiShieldSchema interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	File() *string
+	SetFile(val *string)
+	FileInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,9 +40,6 @@ type ApiShieldSchema interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -61,18 +62,21 @@ type ApiShieldSchema interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Schema() ApiShieldSchemaSchemaOutputReference
+	SchemaId() *string
+	SetSchemaId(val *string)
+	SchemaIdInput() *string
 	Source() *string
-	SetSource(val *string)
-	SourceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ValidationEnabled() interface{}
-	SetValidationEnabled(val interface{})
-	ValidationEnabledInput() interface{}
+	UploadDetails() ApiShieldSchemaUploadDetailsOutputReference
+	ValidationEnabled() *string
+	SetValidationEnabled(val *string)
+	ValidationEnabledInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -119,11 +123,11 @@ type ApiShieldSchema interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
-	ResetKind()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSchemaId()
 	ResetValidationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -183,11 +187,41 @@ func (j *jsiiProxy_ApiShieldSchema) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldSchema) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldSchema) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) File() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"file",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) FileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileInput",
 		&returns,
 	)
 	return returns
@@ -218,26 +252,6 @@ func (j *jsiiProxy_ApiShieldSchema) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldSchema) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldSchema) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -333,21 +347,41 @@ func (j *jsiiProxy_ApiShieldSchema) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldSchema) Source() *string {
-	var returns *string
+func (j *jsiiProxy_ApiShieldSchema) Schema() ApiShieldSchemaSchemaOutputReference {
+	var returns ApiShieldSchemaSchemaOutputReference
 	_jsii_.Get(
 		j,
-		"source",
+		"schema",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldSchema) SourceInput() *string {
+func (j *jsiiProxy_ApiShieldSchema) SchemaId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"sourceInput",
+		"schemaId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) SchemaIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns
@@ -383,8 +417,18 @@ func (j *jsiiProxy_ApiShieldSchema) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldSchema) ValidationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldSchema) UploadDetails() ApiShieldSchemaUploadDetailsOutputReference {
+	var returns ApiShieldSchemaUploadDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"uploadDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) ValidationEnabled() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"validationEnabled",
@@ -393,8 +437,8 @@ func (j *jsiiProxy_ApiShieldSchema) ValidationEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldSchema) ValidationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldSchema) ValidationEnabledInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"validationEnabledInput",
@@ -424,7 +468,7 @@ func (j *jsiiProxy_ApiShieldSchema) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) ApiShieldSchema {
 	_init_.Initialize()
 
@@ -442,7 +486,7 @@ func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShiel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema_Override(a ApiShieldSchema, scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) {
 	_init_.Initialize()
 
@@ -483,21 +527,21 @@ func (j *jsiiProxy_ApiShieldSchema)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchema)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiShieldSchema)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_ApiShieldSchema)SetFile(val *string) {
+	if err := j.validateSetFileParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"file",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiShieldSchema)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -554,18 +598,18 @@ func (j *jsiiProxy_ApiShieldSchema)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchema)SetSource(val *string) {
-	if err := j.validateSetSourceParameters(val); err != nil {
+func (j *jsiiProxy_ApiShieldSchema)SetSchemaId(val *string) {
+	if err := j.validateSetSchemaIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"source",
+		"schemaId",
 		val,
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchema)SetValidationEnabled(val interface{}) {
+func (j *jsiiProxy_ApiShieldSchema)SetValidationEnabled(val *string) {
 	if err := j.validateSetValidationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,18 +984,10 @@ func (a *jsiiProxy_ApiShieldSchema) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_ApiShieldSchema) ResetId() {
+func (a *jsiiProxy_ApiShieldSchema) ResetName() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShieldSchema) ResetKind() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetKind",
+		"resetName",
 		nil, // no parameters
 	)
 }
@@ -960,6 +996,14 @@ func (a *jsiiProxy_ApiShieldSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiShieldSchema) ResetSchemaId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSchemaId",
 		nil, // no parameters
 	)
 }

@@ -9,14 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/ratelimit/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/rate_limit cloudflare_rate_limit}.
 type RateLimit interface {
 	cdktf.TerraformResource
 	Action() RateLimitActionOutputReference
-	ActionInput() *RateLimitAction
-	BypassUrlPatterns() *[]*string
-	SetBypassUrlPatterns(val *[]*string)
-	BypassUrlPatternsInput() *[]*string
+	ActionInput() interface{}
+	Bypass() RateLimitBypassList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -25,8 +23,6 @@ type RateLimit interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	Correlate() RateLimitCorrelateOutputReference
-	CorrelateInput() *RateLimitCorrelate
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -36,11 +32,7 @@ type RateLimit interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,14 +42,12 @@ type RateLimit interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Match() RateLimitMatchOutputReference
-	MatchInput() *RateLimitMatch
+	MatchInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Period() *float64
@@ -129,14 +119,7 @@ type RateLimit interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value *RateLimitAction)
-	PutCorrelate(value *RateLimitCorrelate)
 	PutMatch(value *RateLimitMatch)
-	ResetBypassUrlPatterns()
-	ResetCorrelate()
-	ResetDescription()
-	ResetDisabled()
-	ResetId()
-	ResetMatch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -168,8 +151,8 @@ func (j *jsiiProxy_RateLimit) Action() RateLimitActionOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) ActionInput() *RateLimitAction {
-	var returns *RateLimitAction
+func (j *jsiiProxy_RateLimit) ActionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -178,21 +161,11 @@ func (j *jsiiProxy_RateLimit) ActionInput() *RateLimitAction {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) BypassUrlPatterns() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_RateLimit) Bypass() RateLimitBypassList {
+	var returns RateLimitBypassList
 	_jsii_.Get(
 		j,
-		"bypassUrlPatterns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) BypassUrlPatternsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"bypassUrlPatternsInput",
+		"bypass",
 		&returns,
 	)
 	return returns
@@ -228,26 +201,6 @@ func (j *jsiiProxy_RateLimit) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) Correlate() RateLimitCorrelateOutputReference {
-	var returns RateLimitCorrelateOutputReference
-	_jsii_.Get(
-		j,
-		"correlate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) CorrelateInput() *RateLimitCorrelate {
-	var returns *RateLimitCorrelate
-	_jsii_.Get(
-		j,
-		"correlateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RateLimit) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -278,31 +231,11 @@ func (j *jsiiProxy_RateLimit) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RateLimit) Disabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) DisabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -348,16 +281,6 @@ func (j *jsiiProxy_RateLimit) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RateLimit) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -378,8 +301,8 @@ func (j *jsiiProxy_RateLimit) Match() RateLimitMatchOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) MatchInput() *RateLimitMatch {
-	var returns *RateLimitMatch
+func (j *jsiiProxy_RateLimit) MatchInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"matchInput",
@@ -519,7 +442,7 @@ func (j *jsiiProxy_RateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfig) RateLimit {
 	_init_.Initialize()
 
@@ -537,7 +460,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, config *RateLimitConfig) {
 	_init_.Initialize()
 
@@ -545,17 +468,6 @@ func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, 
 		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		[]interface{}{scope, id, config},
 		r,
-	)
-}
-
-func (j *jsiiProxy_RateLimit)SetBypassUrlPatterns(val *[]*string) {
-	if err := j.validateSetBypassUrlPatternsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bypassUrlPatterns",
-		val,
 	)
 }
 
@@ -589,43 +501,10 @@ func (j *jsiiProxy_RateLimit)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimit)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RateLimit)SetDisabled(val interface{}) {
-	if err := j.validateSetDisabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_RateLimit)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RateLimit)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1057,17 +936,6 @@ func (r *jsiiProxy_RateLimit) PutAction(value *RateLimitAction) {
 	)
 }
 
-func (r *jsiiProxy_RateLimit) PutCorrelate(value *RateLimitCorrelate) {
-	if err := r.validatePutCorrelateParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putCorrelate",
-		[]interface{}{value},
-	)
-}
-
 func (r *jsiiProxy_RateLimit) PutMatch(value *RateLimitMatch) {
 	if err := r.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -1076,54 +944,6 @@ func (r *jsiiProxy_RateLimit) PutMatch(value *RateLimitMatch) {
 		r,
 		"putMatch",
 		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetBypassUrlPatterns() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetBypassUrlPatterns",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetCorrelate() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCorrelate",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetDescription() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetDisabled() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetDisabled",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimit) ResetMatch() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMatch",
-		nil, // no parameters
 	)
 }
 

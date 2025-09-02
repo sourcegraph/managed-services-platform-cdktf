@@ -48,15 +48,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheKeyFieldsPara
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheTtlByStatusParameters(value interface{}) error {
-	return nil
-}
-
 func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutForwardingUrlParameters(value *PageRuleActionsForwardingUrl) error {
-	return nil
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutMinifyParameters(value interface{}) error {
 	return nil
 }
 
@@ -72,7 +64,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAutomaticHttpsRewr
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetBrowserCacheTtlParameters(val *string) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetBrowserCacheTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -100,6 +92,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheOnCookieParam
 	return nil
 }
 
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -113,10 +109,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableAppsParamet
 }
 
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisablePerformanceParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableRailgunParameters(val interface{}) error {
 	return nil
 }
 
@@ -144,7 +136,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetHostHeaderOverride
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetInternalValueParameters(val *PageRuleActions) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -185,10 +177,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetRocketLoaderParame
 }
 
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetSecurityLevelParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetServerSideExcludeParameters(val *string) error {
 	return nil
 }
 

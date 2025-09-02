@@ -26,17 +26,17 @@ type ZeroTrustDnsLocationEndpointsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Doh() ZeroTrustDnsLocationEndpointsDohOutputReference
-	DohInput() *ZeroTrustDnsLocationEndpointsDoh
+	DohInput() interface{}
 	Dot() ZeroTrustDnsLocationEndpointsDotOutputReference
-	DotInput() *ZeroTrustDnsLocationEndpointsDot
+	DotInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDnsLocationEndpoints
-	SetInternalValue(val *ZeroTrustDnsLocationEndpoints)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ipv4() ZeroTrustDnsLocationEndpointsIpv4OutputReference
-	Ipv4Input() *ZeroTrustDnsLocationEndpointsIpv4
+	Ipv4Input() interface{}
 	Ipv6() ZeroTrustDnsLocationEndpointsIpv6OutputReference
-	Ipv6Input() *ZeroTrustDnsLocationEndpointsIpv6
+	Ipv6Input() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Doh() ZeroTrust
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) DohInput() *ZeroTrustDnsLocationEndpointsDoh {
-	var returns *ZeroTrustDnsLocationEndpointsDoh
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) DohInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dohInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Dot() ZeroTrust
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) DotInput() *ZeroTrustDnsLocationEndpointsDot {
-	var returns *ZeroTrustDnsLocationEndpointsDot
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) DotInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dotInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InternalValue() *ZeroTrustDnsLocationEndpoints {
-	var returns *ZeroTrustDnsLocationEndpoints
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv4() ZeroTrus
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv4Input() *ZeroTrustDnsLocationEndpointsIpv4 {
-	var returns *ZeroTrustDnsLocationEndpointsIpv4
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv4Input() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipv4Input",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv6() ZeroTrus
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv6Input() *ZeroTrustDnsLocationEndpointsIpv6 {
-	var returns *ZeroTrustDnsLocationEndpointsIpv6
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Ipv6Input() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipv6Input",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetInternalValue(val *ZeroTrustDnsLocationEndpoints) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

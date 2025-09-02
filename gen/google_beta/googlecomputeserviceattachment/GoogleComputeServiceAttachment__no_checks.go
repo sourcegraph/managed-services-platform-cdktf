@@ -160,6 +160,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetRegionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetSendPropagatedConnectionLimitIfZeroParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetTargetServiceParameters(val *string) error {
 	return nil
 }

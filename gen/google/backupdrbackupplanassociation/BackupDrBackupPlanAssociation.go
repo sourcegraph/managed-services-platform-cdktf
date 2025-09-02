@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/backupdrbackupplanassociation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association}.
 type BackupDrBackupPlanAssociation interface {
 	cdktf.TerraformResource
 	BackupPlan() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Resource.
 func NewBackupDrBackupPlanAssociation(scope constructs.Construct, id *string, config *BackupDrBackupPlanAssociationConfig) BackupDrBackupPlanAssociation {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewBackupDrBackupPlanAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Resource.
 func NewBackupDrBackupPlanAssociation_Override(b BackupDrBackupPlanAssociation, scope constructs.Construct, id *string, config *BackupDrBackupPlanAssociationConfig) {
 	_init_.Initialize()
 

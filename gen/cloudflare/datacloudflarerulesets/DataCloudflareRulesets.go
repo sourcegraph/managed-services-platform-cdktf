@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/datacloudflarerulesets/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/rulesets cloudflare_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets}.
 type DataCloudflareRulesets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -27,8 +27,6 @@ type DataCloudflareRulesets interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Filter() DataCloudflareRulesetsFilterOutputReference
-	FilterInput() *DataCloudflareRulesetsFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -37,16 +35,13 @@ type DataCloudflareRulesets interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	IncludeRules() interface{}
-	SetIncludeRules(val interface{})
-	IncludeRulesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxItems() *float64
+	SetMaxItems(val *float64)
+	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -55,7 +50,7 @@ type DataCloudflareRulesets interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Rulesets() DataCloudflareRulesetsRulesetsList
+	Result() DataCloudflareRulesetsResultList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,11 +85,8 @@ type DataCloudflareRulesets interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value *DataCloudflareRulesetsFilter)
 	ResetAccountId()
-	ResetFilter()
-	ResetId()
-	ResetIncludeRules()
+	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -178,26 +170,6 @@ func (j *jsiiProxy_DataCloudflareRulesets) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) Filter() DataCloudflareRulesetsFilterOutputReference {
-	var returns DataCloudflareRulesetsFilterOutputReference
-	_jsii_.Get(
-		j,
-		"filter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets) FilterInput() *DataCloudflareRulesetsFilter {
-	var returns *DataCloudflareRulesetsFilter
-	_jsii_.Get(
-		j,
-		"filterInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareRulesets) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -228,51 +200,31 @@ func (j *jsiiProxy_DataCloudflareRulesets) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets) IncludeRules() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets) IncludeRulesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeRulesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareRulesets) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesets) MaxItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesets) MaxItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItemsInput",
 		&returns,
 	)
 	return returns
@@ -308,11 +260,11 @@ func (j *jsiiProxy_DataCloudflareRulesets) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) Rulesets() DataCloudflareRulesetsRulesetsList {
-	var returns DataCloudflareRulesetsRulesetsList
+func (j *jsiiProxy_DataCloudflareRulesets) Result() DataCloudflareRulesetsResultList {
+	var returns DataCloudflareRulesetsResultList
 	_jsii_.Get(
 		j,
-		"rulesets",
+		"result",
 		&returns,
 	)
 	return returns
@@ -369,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareRulesets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) DataCloudflareRulesets {
 	_init_.Initialize()
 
@@ -387,7 +339,7 @@ func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets_Override(d DataCloudflareRulesets, scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) {
 	_init_.Initialize()
 
@@ -436,28 +388,6 @@ func (j *jsiiProxy_DataCloudflareRulesets)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets)SetIncludeRules(val interface{}) {
-	if err := j.validateSetIncludeRulesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"includeRules",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareRulesets)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -465,6 +395,17 @@ func (j *jsiiProxy_DataCloudflareRulesets)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareRulesets)SetMaxItems(val *float64) {
+	if err := j.validateSetMaxItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxItems",
 		val,
 	)
 }
@@ -773,17 +714,6 @@ func (d *jsiiProxy_DataCloudflareRulesets) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareRulesets) PutFilter(value *DataCloudflareRulesetsFilter) {
-	if err := d.validatePutFilterParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFilter",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareRulesets) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -792,26 +722,10 @@ func (d *jsiiProxy_DataCloudflareRulesets) ResetAccountId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareRulesets) ResetFilter() {
+func (d *jsiiProxy_DataCloudflareRulesets) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetFilter",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareRulesets) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareRulesets) ResetIncludeRules() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludeRules",
+		"resetMaxItems",
 		nil, // no parameters
 	)
 }

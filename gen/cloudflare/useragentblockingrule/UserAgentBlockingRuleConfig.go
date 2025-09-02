@@ -19,30 +19,23 @@ type UserAgentBlockingRuleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// configuration block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}.
 	Configuration *UserAgentBlockingRuleConfiguration `field:"required" json:"configuration" yaml:"configuration"`
-	// An informative summary of the rule.
+	// The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
-	Description *string `field:"required" json:"description" yaml:"description"`
-	// The action to apply to a matched request. Available values: `block`, `challenge`, `js_challenge`, `managed_challenge`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
+	// Defines an identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// An informative summary of the rule. This value is sanitized and any tags will be removed.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// When true, indicates that the rule is currently paused.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
-	Paused interface{} `field:"required" json:"paused" yaml:"paused"`
-	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule#id UserAgentBlockingRule#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
+	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 }
 

@@ -72,10 +72,6 @@ func (r *jsiiProxy_RegionalHostname) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (r *jsiiProxy_RegionalHostname) validatePutTimeoutsParameters(value *RegionalHostnameTimeouts) error {
-	return nil
-}
-
 func validateRegionalHostname_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,10 +100,6 @@ func (j *jsiiProxy_RegionalHostname) validateSetHostnameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_RegionalHostname) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RegionalHostname) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -117,6 +109,10 @@ func (j *jsiiProxy_RegionalHostname) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_RegionalHostname) validateSetRegionKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RegionalHostname) validateSetRoutingParameters(val *string) error {
 	return nil
 }
 

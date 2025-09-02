@@ -27,8 +27,8 @@ type ZeroTrustDeviceManagedNetworksConfigAOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDeviceManagedNetworksConfigA
-	SetInternalValue(val *ZeroTrustDeviceManagedNetworksConfigA)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Sha256() *string
 	SetSha256(val *string)
 	Sha256Input() *string
@@ -67,6 +67,7 @@ type ZeroTrustDeviceManagedNetworksConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSha256()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,8 +123,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) InternalValue() *ZeroTrustDeviceManagedNetworksConfigA {
-	var returns *ZeroTrustDeviceManagedNetworksConfigA
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference)SetInternalValue(val *ZeroTrustDeviceManagedNetworksConfigA) {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +482,14 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) ResetSha256() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSha256",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

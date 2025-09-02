@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessgroups
+
+
+type DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethod struct {
+}
+

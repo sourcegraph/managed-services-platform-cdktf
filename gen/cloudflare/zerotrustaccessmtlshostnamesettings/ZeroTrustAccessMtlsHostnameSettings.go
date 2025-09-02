@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccessmtlshostnamesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
 type ZeroTrustAccessMtlsHostnameSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -17,6 +17,8 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChinaNetwork() cdktf.IResolvable
+	ClientCertificateForwarding() cdktf.IResolvable
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,6 +41,7 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -114,7 +117,6 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSettings()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -159,6 +161,26 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) CdktfStack() cdktf.Terra
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ChinaNetwork() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"chinaNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ClientCertificateForwarding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"clientCertificateForwarding",
 		&returns,
 	)
 	return returns
@@ -229,6 +251,16 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) FriendlyUniqueId() *stri
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
 		&returns,
 	)
 	return returns
@@ -355,7 +387,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) ZeroTrustAccessMtlsHostnameSettings {
 	_init_.Initialize()
 
@@ -373,7 +405,7 @@ func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings_Override(z ZeroTrustAccessMtlsHostnameSettings, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) {
 	_init_.Initialize()
 
@@ -850,14 +882,6 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ResetSettings() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetSettings",
 		nil, // no parameters
 	)
 }

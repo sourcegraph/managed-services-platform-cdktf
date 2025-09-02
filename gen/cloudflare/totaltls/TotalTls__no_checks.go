@@ -104,10 +104,6 @@ func (j *jsiiProxy_TotalTls) validateSetEnabledParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_TotalTls) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_TotalTls) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/magicwanstaticroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 type MagicWanStaticRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -17,12 +17,6 @@ type MagicWanStaticRoute interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ColoNames() *[]*string
-	SetColoNames(val *[]*string)
-	ColoNamesInput() *[]*string
-	ColoRegions() *[]*string
-	SetColoRegions(val *[]*string)
-	ColoRegionsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,6 +27,7 @@ type MagicWanStaticRoute interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,12 +44,11 @@ type MagicWanStaticRoute interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	Nexthop() *string
 	SetNexthop(val *string)
 	NexthopInput() *string
@@ -76,6 +70,8 @@ type MagicWanStaticRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scope() MagicWanStaticRouteScopeOutputReference
+	ScopeInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,14 +124,12 @@ type MagicWanStaticRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
-	ResetColoNames()
-	ResetColoRegions()
+	PutScope(value *MagicWanStaticRouteScope)
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScope()
 	ResetWeight()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -185,46 +179,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) ColoNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"coloNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) ColoNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"coloNamesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) ColoRegions() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"coloRegions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) ColoRegionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"coloRegionsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanStaticRoute) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -250,6 +204,16 @@ func (j *jsiiProxy_MagicWanStaticRoute) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRoute) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -325,21 +289,21 @@ func (j *jsiiProxy_MagicWanStaticRoute) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanStaticRoute) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRoute) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -445,6 +409,26 @@ func (j *jsiiProxy_MagicWanStaticRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRoute) Scope() MagicWanStaticRouteScopeOutputReference {
+	var returns MagicWanStaticRouteScopeOutputReference
+	_jsii_.Get(
+		j,
+		"scope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRoute) ScopeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRoute) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -496,7 +480,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) MagicWanStaticRoute {
 	_init_.Initialize()
 
@@ -514,7 +498,7 @@ func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute_Override(m MagicWanStaticRoute, scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) {
 	_init_.Initialize()
 
@@ -532,28 +516,6 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute)SetColoNames(val *[]*string) {
-	if err := j.validateSetColoNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"coloNames",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute)SetColoRegions(val *[]*string) {
-	if err := j.validateSetColoRegionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"coloRegions",
 		val,
 	)
 }
@@ -603,17 +565,6 @@ func (j *jsiiProxy_MagicWanStaticRoute)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1045,27 +996,14 @@ func (m *jsiiProxy_MagicWanStaticRoute) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) ResetAccountId() {
+func (m *jsiiProxy_MagicWanStaticRoute) PutScope(value *MagicWanStaticRouteScope) {
+	if err := m.validatePutScopeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MagicWanStaticRoute) ResetColoNames() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetColoNames",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MagicWanStaticRoute) ResetColoRegions() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetColoRegions",
-		nil, // no parameters
+		"putScope",
+		[]interface{}{value},
 	)
 }
 
@@ -1077,18 +1015,18 @@ func (m *jsiiProxy_MagicWanStaticRoute) ResetDescription() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) ResetId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MagicWanStaticRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRoute) ResetScope() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetScope",
 		nil, // no parameters
 	)
 }

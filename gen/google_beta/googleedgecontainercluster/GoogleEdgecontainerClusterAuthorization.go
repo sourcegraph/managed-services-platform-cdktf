@@ -4,7 +4,7 @@ package googleedgecontainercluster
 type GoogleEdgecontainerClusterAuthorization struct {
 	// admin_users block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
 	AdminUsers *GoogleEdgecontainerClusterAuthorizationAdminUsers `field:"required" json:"adminUsers" yaml:"adminUsers"`
 }
 

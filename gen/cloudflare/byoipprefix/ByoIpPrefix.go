@@ -9,17 +9,23 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/byoipprefix/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type ByoIpPrefix interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Advertisement() *string
-	SetAdvertisement(val *string)
-	AdvertisementInput() *string
+	Advertised() cdktf.IResolvable
+	AdvertisedModifiedAt() *string
+	Approved() *string
+	Asn() *float64
+	SetAsn(val *float64)
+	AsnInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Cidr() *string
+	SetCidr(val *string)
+	CidrInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -30,6 +36,7 @@ type ByoIpPrefix interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,17 +53,18 @@ type ByoIpPrefix interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoaDocumentId() *string
+	SetLoaDocumentId(val *string)
+	LoaDocumentIdInput() *string
+	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
-	PrefixId() *string
-	SetPrefixId(val *string)
-	PrefixIdInput() *string
+	OnDemandEnabled() cdktf.IResolvable
+	OnDemandLocked() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -116,9 +124,7 @@ type ByoIpPrefix interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAdvertisement()
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -160,21 +166,51 @@ func (j *jsiiProxy_ByoIpPrefix) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ByoIpPrefix) Advertisement() *string {
-	var returns *string
+func (j *jsiiProxy_ByoIpPrefix) Advertised() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"advertisement",
+		"advertised",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ByoIpPrefix) AdvertisementInput() *string {
+func (j *jsiiProxy_ByoIpPrefix) AdvertisedModifiedAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"advertisementInput",
+		"advertisedModifiedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) Approved() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"approved",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) Asn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) AsnInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asnInput",
 		&returns,
 	)
 	return returns
@@ -185,6 +221,26 @@ func (j *jsiiProxy_ByoIpPrefix) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) CidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +271,16 @@ func (j *jsiiProxy_ByoIpPrefix) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -290,21 +356,41 @@ func (j *jsiiProxy_ByoIpPrefix) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ByoIpPrefix) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ByoIpPrefix) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) LoaDocumentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loaDocumentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) LoaDocumentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loaDocumentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ByoIpPrefix) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -320,21 +406,21 @@ func (j *jsiiProxy_ByoIpPrefix) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ByoIpPrefix) PrefixId() *string {
-	var returns *string
+func (j *jsiiProxy_ByoIpPrefix) OnDemandEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"prefixId",
+		"onDemandEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ByoIpPrefix) PrefixIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_ByoIpPrefix) OnDemandLocked() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"prefixIdInput",
+		"onDemandLocked",
 		&returns,
 	)
 	return returns
@@ -401,7 +487,7 @@ func (j *jsiiProxy_ByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixConfig) ByoIpPrefix {
 	_init_.Initialize()
 
@@ -419,7 +505,7 @@ func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix_Override(b ByoIpPrefix, scope constructs.Construct, id *string, config *ByoIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -441,13 +527,24 @@ func (j *jsiiProxy_ByoIpPrefix)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ByoIpPrefix)SetAdvertisement(val *string) {
-	if err := j.validateSetAdvertisementParameters(val); err != nil {
+func (j *jsiiProxy_ByoIpPrefix)SetAsn(val *float64) {
+	if err := j.validateSetAsnParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"advertisement",
+		"asn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ByoIpPrefix)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidr",
 		val,
 	)
 }
@@ -501,17 +598,6 @@ func (j *jsiiProxy_ByoIpPrefix)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ByoIpPrefix)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ByoIpPrefix)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -523,13 +609,13 @@ func (j *jsiiProxy_ByoIpPrefix)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_ByoIpPrefix)SetPrefixId(val *string) {
-	if err := j.validateSetPrefixIdParameters(val); err != nil {
+func (j *jsiiProxy_ByoIpPrefix)SetLoaDocumentId(val *string) {
+	if err := j.validateSetLoaDocumentIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"prefixId",
+		"loaDocumentId",
 		val,
 	)
 }
@@ -906,26 +992,10 @@ func (b *jsiiProxy_ByoIpPrefix) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (b *jsiiProxy_ByoIpPrefix) ResetAdvertisement() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetAdvertisement",
-		nil, // no parameters
-	)
-}
-
 func (b *jsiiProxy_ByoIpPrefix) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_ByoIpPrefix) ResetId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetId",
 		nil, // no parameters
 	)
 }

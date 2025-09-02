@@ -3879,6 +3879,140 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "configInput", GoGetter: "ConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "configTypeUrl", GoGetter: "ConfigTypeUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "configTypeUrlInput", GoGetter: "ConfigTypeUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filterName", GoGetter: "FilterName"},
+			_jsii_.MemberProperty{JsiiProperty: "filterNameInput", GoGetter: "FilterNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfig", GoMethod: "ResetConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfigTypeUrl", GoMethod: "ResetConfigTypeUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilterName", GoMethod: "ResetFilterName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterConfigsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadata)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "configInput", GoGetter: "ConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "configTypeUrl", GoGetter: "ConfigTypeUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "configTypeUrlInput", GoGetter: "ConfigTypeUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filterName", GoGetter: "FilterName"},
+			_jsii_.MemberProperty{JsiiProperty: "filterNameInput", GoGetter: "FilterNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfig", GoMethod: "ResetConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfigTypeUrl", GoMethod: "ResetConfigTypeUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilterName", GoMethod: "ResetFilterName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHttpFilterMetadataOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesList",
 		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesList)(nil)).Elem(),
@@ -4324,6 +4458,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "headerAction", GoGetter: "HeaderAction"},
 			_jsii_.MemberProperty{JsiiProperty: "headerActionInput", GoGetter: "HeaderActionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "httpFilterConfigs", GoGetter: "HttpFilterConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "httpFilterConfigsInput", GoGetter: "HttpFilterConfigsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "httpFilterMetadata", GoGetter: "HttpFilterMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "httpFilterMetadataInput", GoGetter: "HttpFilterMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -4333,11 +4471,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomErrorResponsePolicy", GoMethod: "PutCustomErrorResponsePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putHeaderAction", GoMethod: "PutHeaderAction"},
+			_jsii_.MemberMethod{JsiiMethod: "putHttpFilterConfigs", GoMethod: "PutHttpFilterConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "putHttpFilterMetadata", GoMethod: "PutHttpFilterMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putMatchRules", GoMethod: "PutMatchRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putRouteAction", GoMethod: "PutRouteAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putUrlRedirect", GoMethod: "PutUrlRedirect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomErrorResponsePolicy", GoMethod: "ResetCustomErrorResponsePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHeaderAction", GoMethod: "ResetHeaderAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpFilterConfigs", GoMethod: "ResetHttpFilterConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpFilterMetadata", GoMethod: "ResetHttpFilterMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMatchRules", GoMethod: "ResetMatchRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouteAction", GoMethod: "ResetRouteAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},
@@ -5213,6 +5355,68 @@ func init() {
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapTest",
 		reflect.TypeOf((*GoogleComputeUrlMapTest)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeaders",
+		reflect.TypeOf((*GoogleComputeUrlMapTestHeaders)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersList",
+		reflect.TypeOf((*GoogleComputeUrlMapTestHeadersList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapTestHeadersList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapTestHeadersOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapTestHeadersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapTestHeadersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMapTestList",
 		reflect.TypeOf((*GoogleComputeUrlMapTestList)(nil)).Elem(),
@@ -5245,6 +5449,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "expectedOutputUrl", GoGetter: "ExpectedOutputUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "expectedOutputUrlInput", GoGetter: "ExpectedOutputUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "expectedRedirectResponseCode", GoGetter: "ExpectedRedirectResponseCode"},
+			_jsii_.MemberProperty{JsiiProperty: "expectedRedirectResponseCodeInput", GoGetter: "ExpectedRedirectResponseCodeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -5255,6 +5463,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "headers", GoGetter: "Headers"},
+			_jsii_.MemberProperty{JsiiProperty: "headersInput", GoGetter: "HeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
 			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -5262,7 +5472,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putHeaders", GoMethod: "PutHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExpectedOutputUrl", GoMethod: "ResetExpectedOutputUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExpectedRedirectResponseCode", GoMethod: "ResetExpectedRedirectResponseCode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeaders", GoMethod: "ResetHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},

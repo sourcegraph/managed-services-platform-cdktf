@@ -1,0 +1,6 @@
+package datacloudflareuseragentblockingrules
+
+
+type DataCloudflareUserAgentBlockingRulesResultConfiguration struct {
+}
+

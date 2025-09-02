@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessapplications
+
+
+type DataCloudflareZeroTrustAccessApplicationsResultSaasAppCustomAttributesSource struct {
+}
+

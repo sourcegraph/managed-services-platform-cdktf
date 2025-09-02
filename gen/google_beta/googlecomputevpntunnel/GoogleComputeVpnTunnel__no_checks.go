@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutCipherSuiteParameters(value *GoogleComputeVpnTunnelCipherSuite) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutTimeoutsParameters(value *GoogleComputeVpnTunnelTimeouts) error {
 	return nil
 }

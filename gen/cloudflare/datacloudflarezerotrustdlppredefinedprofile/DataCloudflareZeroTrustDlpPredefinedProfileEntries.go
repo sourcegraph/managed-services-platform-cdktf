@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdlppredefinedprofile
+
+
+type DataCloudflareZeroTrustDlpPredefinedProfileEntries struct {
+}
+

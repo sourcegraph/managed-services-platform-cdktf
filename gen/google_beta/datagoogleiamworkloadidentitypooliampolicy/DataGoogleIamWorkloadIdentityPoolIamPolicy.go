@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagoogleiamworkloadidentitypooliampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy}.
 type DataGoogleIamWorkloadIdentityPoolIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolIamPolicy) WorkloadIdentityP
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Data Source.
 func NewDataGoogleIamWorkloadIdentityPoolIamPolicy(scope constructs.Construct, id *string, config *DataGoogleIamWorkloadIdentityPoolIamPolicyConfig) DataGoogleIamWorkloadIdentityPoolIamPolicy {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataGoogleIamWorkloadIdentityPoolIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Data Source.
 func NewDataGoogleIamWorkloadIdentityPoolIamPolicy_Override(d DataGoogleIamWorkloadIdentityPoolIamPolicy, scope constructs.Construct, id *string, config *DataGoogleIamWorkloadIdentityPoolIamPolicyConfig) {
 	_init_.Initialize()
 

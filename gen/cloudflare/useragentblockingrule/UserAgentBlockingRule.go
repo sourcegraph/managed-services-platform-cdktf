@@ -9,13 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/useragentblockingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 type UserAgentBlockingRule interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configuration() UserAgentBlockingRuleConfigurationOutputReference
-	ConfigurationInput() *UserAgentBlockingRuleConfiguration
+	ConfigurationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -42,8 +42,6 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -119,10 +117,11 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *UserAgentBlockingRuleConfiguration)
-	ResetId()
+	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPaused()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -161,8 +160,8 @@ func (j *jsiiProxy_UserAgentBlockingRule) Configuration() UserAgentBlockingRuleC
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) ConfigurationInput() *UserAgentBlockingRuleConfiguration {
-	var returns *UserAgentBlockingRuleConfiguration
+func (j *jsiiProxy_UserAgentBlockingRule) ConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"configurationInput",
@@ -266,16 +265,6 @@ func (j *jsiiProxy_UserAgentBlockingRule) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_UserAgentBlockingRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -422,7 +411,7 @@ func (j *jsiiProxy_UserAgentBlockingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) UserAgentBlockingRule {
 	_init_.Initialize()
 
@@ -440,7 +429,7 @@ func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *Us
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule_Override(u UserAgentBlockingRule, scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) {
 	_init_.Initialize()
 
@@ -496,17 +485,6 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UserAgentBlockingRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -938,10 +916,10 @@ func (u *jsiiProxy_UserAgentBlockingRule) PutConfiguration(value *UserAgentBlock
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) ResetId() {
+func (u *jsiiProxy_UserAgentBlockingRule) ResetDescription() {
 	_jsii_.InvokeVoid(
 		u,
-		"resetId",
+		"resetDescription",
 		nil, // no parameters
 	)
 }
@@ -950,6 +928,14 @@ func (u *jsiiProxy_UserAgentBlockingRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) ResetPaused() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetPaused",
 		nil, // no parameters
 	)
 }

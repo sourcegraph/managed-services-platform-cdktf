@@ -35,6 +35,8 @@ type GoogleGkeHubFeatureSpecOutputReference interface {
 	SetInternalValue(val *GoogleGkeHubFeatureSpec)
 	Multiclusteringress() GoogleGkeHubFeatureSpecMulticlusteringressOutputReference
 	MulticlusteringressInput() *GoogleGkeHubFeatureSpecMulticlusteringress
+	Rbacrolebindingactuation() GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference
+	RbacrolebindingactuationInput() *GoogleGkeHubFeatureSpecRbacrolebindingactuation
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type GoogleGkeHubFeatureSpecOutputReference interface {
 	PutClusterupgrade(value *GoogleGkeHubFeatureSpecClusterupgrade)
 	PutFleetobservability(value *GoogleGkeHubFeatureSpecFleetobservability)
 	PutMulticlusteringress(value *GoogleGkeHubFeatureSpecMulticlusteringress)
+	PutRbacrolebindingactuation(value *GoogleGkeHubFeatureSpecRbacrolebindingactuation)
 	ResetClusterupgrade()
 	ResetFleetobservability()
 	ResetMulticlusteringress()
+	ResetRbacrolebindingactuation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) MulticlusteringressIn
 	_jsii_.Get(
 		j,
 		"multiclusteringressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) Rbacrolebindingactuation() GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference {
+	var returns GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference
+	_jsii_.Get(
+		j,
+		"rbacrolebindingactuation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) RbacrolebindingactuationInput() *GoogleGkeHubFeatureSpecRbacrolebindingactuation {
+	var returns *GoogleGkeHubFeatureSpecRbacrolebindingactuation
+	_jsii_.Get(
+		j,
+		"rbacrolebindingactuationInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) PutMulticlusteringres
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) PutRbacrolebindingactuation(value *GoogleGkeHubFeatureSpecRbacrolebindingactuation) {
+	if err := g.validatePutRbacrolebindingactuationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRbacrolebindingactuation",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ResetClusterupgrade() {
 	_jsii_.InvokeVoid(
 		g,
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ResetMulticlusteringr
 	_jsii_.InvokeVoid(
 		g,
 		"resetMulticlusteringress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ResetRbacrolebindingactuation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRbacrolebindingactuation",
 		nil, // no parameters
 	)
 }

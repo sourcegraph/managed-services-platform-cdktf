@@ -3,7 +3,7 @@ name: google_beta
 provider:
   # https://registry.terraform.io/providers/hashicorp/google-beta/latest
   source: registry.terraform.io/hashicorp/google-beta
-  version: 6.37.0
+  version: 6.45.0
 
 target:
   language: go

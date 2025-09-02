@@ -36,8 +36,8 @@ type PagesProjectBuildConfigOutputReference interface {
 	DestinationDirInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectBuildConfig
-	SetInternalValue(val *PagesProjectBuildConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RootDir() *string
 	SetRootDir(val *string)
 	RootDirInput() *string
@@ -200,8 +200,8 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) InternalValue() *PagesProjectBuildConfig {
-	var returns *PagesProjectBuildConfig
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -373,7 +373,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetDestinationDir(val 
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val *PagesProjectBuildConfig) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

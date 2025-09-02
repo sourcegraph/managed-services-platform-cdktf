@@ -72,6 +72,10 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *MagicWanGreTunnelHealthCheck) error {
+	return nil
+}
+
 func validateMagicWanGreTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -109,22 +113,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetCustomerGreEndpointParameters(v
 }
 
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetHealthCheckEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetHealthCheckTargetParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetHealthCheckTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetIdParameters(val *string) error {
 	return nil
 }
 

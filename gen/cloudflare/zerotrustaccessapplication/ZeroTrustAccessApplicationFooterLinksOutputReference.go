@@ -67,8 +67,6 @@ type ZeroTrustAccessApplicationFooterLinksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetName()
-	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,22 +481,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) Interpo
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) ResetUrl() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetUrl",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

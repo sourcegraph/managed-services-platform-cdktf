@@ -194,29 +194,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Terraf
 }
 
 
-func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersBrowserTtlOutputReference {
+func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersBrowserTtlOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersBrowserTtlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersBrowserTtlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r RulesetRulesActionParametersBrowserTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r RulesetRulesActionParametersBrowserTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }

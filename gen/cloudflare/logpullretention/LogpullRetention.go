@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/logpullretention/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpull_retention cloudflare_logpull_retention}.
 type LogpullRetention interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,9 +28,9 @@ type LogpullRetention interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Flag() interface{}
+	SetFlag(val interface{})
+	FlagInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,8 +40,6 @@ type LogpullRetention interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -110,7 +108,7 @@ type LogpullRetention interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetFlag()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -182,21 +180,21 @@ func (j *jsiiProxy_LogpullRetention) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) Enabled() interface{} {
+func (j *jsiiProxy_LogpullRetention) Flag() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enabled",
+		"flag",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LogpullRetention) EnabledInput() interface{} {
+func (j *jsiiProxy_LogpullRetention) FlagInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enabledInput",
+		"flagInput",
 		&returns,
 	)
 	return returns
@@ -237,16 +235,6 @@ func (j *jsiiProxy_LogpullRetention) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogpullRetention) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -353,7 +341,7 @@ func (j *jsiiProxy_LogpullRetention) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention(scope constructs.Construct, id *string, config *LogpullRetentionConfig) LogpullRetention {
 	_init_.Initialize()
 
@@ -371,7 +359,7 @@ func NewLogpullRetention(scope constructs.Construct, id *string, config *Logpull
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention_Override(l LogpullRetention, scope constructs.Construct, id *string, config *LogpullRetentionConfig) {
 	_init_.Initialize()
 
@@ -412,13 +400,13 @@ func (j *jsiiProxy_LogpullRetention)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogpullRetention)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
+func (j *jsiiProxy_LogpullRetention)SetFlag(val interface{}) {
+	if err := j.validateSetFlagParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"enabled",
+		"flag",
 		val,
 	)
 }
@@ -427,17 +415,6 @@ func (j *jsiiProxy_LogpullRetention)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LogpullRetention)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -836,10 +813,10 @@ func (l *jsiiProxy_LogpullRetention) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_LogpullRetention) ResetId() {
+func (l *jsiiProxy_LogpullRetention) ResetFlag() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetId",
+		"resetFlag",
 		nil, // no parameters
 	)
 }

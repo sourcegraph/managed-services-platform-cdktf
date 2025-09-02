@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessgroups
+
+
+type DataCloudflareZeroTrustAccessGroupsResultRequireAzureAd struct {
+}
+

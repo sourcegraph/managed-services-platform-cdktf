@@ -40,6 +40,8 @@ type GoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
+	NodeSelector() GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *GoogleCloudRunV2JobTemplateTemplateNodeSelector
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -83,12 +85,14 @@ type GoogleCloudRunV2JobTemplateTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *GoogleCloudRunV2JobTemplateTemplateVpcAccess)
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
 	ResetMaxRetries()
+	ResetNodeSelector()
 	ResetServiceAccount()
 	ResetTimeout()
 	ResetVolumes()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) MaxRetrie
 	_jsii_.Get(
 		j,
 		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelector() GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference {
+	var returns GoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) NodeSelectorInput() *GoogleCloudRunV2JobTemplateTemplateNodeSelector {
+	var returns *GoogleCloudRunV2JobTemplateTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutContai
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutNodeSelector(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector) {
+	if err := g.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) PutVolumes(value interface{}) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
@@ -723,6 +758,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetMaxR
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

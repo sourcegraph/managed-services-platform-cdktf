@@ -1,0 +1,6 @@
+package datacloudflareaccountapitokenpermissiongroupslist
+
+
+type DataCloudflareAccountApiTokenPermissionGroupsListResult struct {
+}
+

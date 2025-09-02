@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudrunv2workerpooliammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member}.
 type GoogleCloudRunV2WorkerPoolIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member} Resource.
 func NewGoogleCloudRunV2WorkerPoolIamMember(scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolIamMemberConfig) GoogleCloudRunV2WorkerPoolIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGoogleCloudRunV2WorkerPoolIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool_iam_member google_cloud_run_v2_worker_pool_iam_member} Resource.
 func NewGoogleCloudRunV2WorkerPoolIamMember_Override(g GoogleCloudRunV2WorkerPoolIamMember, scope constructs.Construct, id *string, config *GoogleCloudRunV2WorkerPoolIamMemberConfig) {
 	_init_.Initialize()
 

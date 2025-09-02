@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeinterconnect/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect google_compute_interconnect}.
 type ComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -56,6 +56,7 @@ type ComputeInterconnect interface {
 	SetId(val *string)
 	IdInput() *string
 	InterconnectAttachments() *[]*string
+	InterconnectGroups() *[]*string
 	InterconnectType() *string
 	SetInterconnectType(val *string)
 	InterconnectTypeInput() *string
@@ -435,6 +436,16 @@ func (j *jsiiProxy_ComputeInterconnect) InterconnectAttachments() *[]*string {
 	_jsii_.Get(
 		j,
 		"interconnectAttachments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnect) InterconnectGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"interconnectGroups",
 		&returns,
 	)
 	return returns
@@ -851,7 +862,7 @@ func (j *jsiiProxy_ComputeInterconnect) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect(scope constructs.Construct, id *string, config *ComputeInterconnectConfig) ComputeInterconnect {
 	_init_.Initialize()
 
@@ -869,7 +880,7 @@ func NewComputeInterconnect(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect_Override(c ComputeInterconnect, scope constructs.Construct, id *string, config *ComputeInterconnectConfig) {
 	_init_.Initialize()
 

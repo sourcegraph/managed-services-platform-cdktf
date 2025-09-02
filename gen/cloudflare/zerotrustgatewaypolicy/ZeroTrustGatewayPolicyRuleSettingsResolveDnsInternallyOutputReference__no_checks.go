@@ -60,7 +60,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

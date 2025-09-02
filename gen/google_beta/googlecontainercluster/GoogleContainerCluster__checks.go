@@ -215,6 +215,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutAddonsConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *GoogleContainerClusterAnonymousAuthenticationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *GoogleContainerClusterAuthenticatorGroupsConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -369,6 +380,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *GoogleContainerClusterGkeAutoUpgradeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutIdentityServiceConfigParameters(value *GoogleContainerClusterIdentityServiceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -447,6 +469,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutMeshCertificatesParameters
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutMonitoringConfigParameters(value *GoogleContainerClusterMonitoringConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutNetworkPerformanceConfigParameters(value *GoogleContainerClusterNetworkPerformanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

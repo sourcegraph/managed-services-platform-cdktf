@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) validatePutLogConfigParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetwork) validatePutParamsParameters(value *GoogleComputeSubnetworkParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetwork) validatePutSecondaryIpRangeParameters(value interface{}) error {
 	return nil
 }

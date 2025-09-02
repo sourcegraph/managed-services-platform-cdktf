@@ -30,8 +30,8 @@ type ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference inter
 	FallbackInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -255,7 +255,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

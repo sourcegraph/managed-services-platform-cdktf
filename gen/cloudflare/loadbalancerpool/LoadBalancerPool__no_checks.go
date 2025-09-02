@@ -72,7 +72,11 @@ func (l *jsiiProxy_LoadBalancerPool) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPool) validatePutLoadSheddingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPool) validatePutLoadSheddingParameters(value *LoadBalancerPoolLoadShedding) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerPool) validatePutNotificationFilterParameters(value *LoadBalancerPoolNotificationFilter) error {
 	return nil
 }
 
@@ -80,7 +84,7 @@ func (l *jsiiProxy_LoadBalancerPool) validatePutOriginsParameters(value interfac
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPool) validatePutOriginSteeringParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPool) validatePutOriginSteeringParameters(value *LoadBalancerPoolOriginSteering) error {
 	return nil
 }
 
@@ -121,10 +125,6 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetDescriptionParameters(val *strin
 }
 
 func (j *jsiiProxy_LoadBalancerPool) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancerPool) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaycategorieslist
+
+
+type DataCloudflareZeroTrustGatewayCategoriesListResultSubcategories struct {
+}
+

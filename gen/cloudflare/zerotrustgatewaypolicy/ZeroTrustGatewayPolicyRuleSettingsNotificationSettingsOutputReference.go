@@ -30,11 +30,14 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
-	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
+	IncludeContext() interface{}
+	SetIncludeContext(val interface{})
+	IncludeContextInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Msg() *string
+	SetMsg(val *string)
+	MsgInput() *string
 	SupportUrl() *string
 	SetSupportUrl(val *string)
 	SupportUrlInput() *string
@@ -71,7 +74,8 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
-	ResetMessage()
+	ResetIncludeContext()
+	ResetMsg()
 	ResetSupportUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,8 +152,28 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) IncludeContext() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) IncludeContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -158,21 +182,21 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) Message() *string {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) Msg() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"message",
+		"msg",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) MessageInput() *string {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) MsgInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"messageInput",
+		"msgInput",
 		&returns,
 	)
 	return returns
@@ -279,7 +303,18 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetIncludeContext(val interface{}) {
+	if err := j.validateSetIncludeContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeContext",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,13 +325,13 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetMsg(val *string) {
+	if err := j.validateSetMsgParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"message",
+		"msg",
 		val,
 	)
 }
@@ -528,10 +563,18 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetMessage() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetIncludeContext() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetMessage",
+		"resetIncludeContext",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetMsg() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMsg",
 		nil, // no parameters
 	)
 }

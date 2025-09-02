@@ -1,0 +1,6 @@
+package datacloudflarezerotrustriskscoringintegrations
+
+
+type DataCloudflareZeroTrustRiskScoringIntegrationsResult struct {
+}
+

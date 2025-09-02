@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessgroups
+
+
+type DataCloudflareZeroTrustAccessGroupsResultIsDefaultExternalEvaluation struct {
+}
+

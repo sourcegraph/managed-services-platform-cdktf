@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebeyondcorpapplicationiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
 type GoogleBeyondcorpApplicationIamBinding interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleBeyondcorpApplicationIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
 func NewGoogleBeyondcorpApplicationIamBinding(scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamBindingConfig) GoogleBeyondcorpApplicationIamBinding {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewGoogleBeyondcorpApplicationIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
 func NewGoogleBeyondcorpApplicationIamBinding_Override(g GoogleBeyondcorpApplicationIamBinding, scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamBindingConfig) {
 	_init_.Initialize()
 

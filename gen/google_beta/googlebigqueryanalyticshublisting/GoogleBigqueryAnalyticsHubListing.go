@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigqueryanalyticshublisting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type GoogleBigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
 	BigqueryDataset() GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference
@@ -71,6 +71,9 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogLinkedDatasetQueryUserEmail() interface{}
+	SetLogLinkedDatasetQueryUserEmail(val interface{})
+	LogLinkedDatasetQueryUserEmailInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -90,6 +93,8 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	SetProvisioners(val *[]interface{})
 	Publisher() GoogleBigqueryAnalyticsHubListingPublisherOutputReference
 	PublisherInput() *GoogleBigqueryAnalyticsHubListingPublisher
+	PubsubTopic() GoogleBigqueryAnalyticsHubListingPubsubTopicOutputReference
+	PubsubTopicInput() *GoogleBigqueryAnalyticsHubListingPubsubTopic
 	// Experimental.
 	RawOverrides() interface{}
 	RequestAccess() *string
@@ -151,20 +156,24 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	PutBigqueryDataset(value *GoogleBigqueryAnalyticsHubListingBigqueryDataset)
 	PutDataProvider(value *GoogleBigqueryAnalyticsHubListingDataProvider)
 	PutPublisher(value *GoogleBigqueryAnalyticsHubListingPublisher)
+	PutPubsubTopic(value *GoogleBigqueryAnalyticsHubListingPubsubTopic)
 	PutRestrictedExportConfig(value *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig)
 	PutTimeouts(value *GoogleBigqueryAnalyticsHubListingTimeouts)
+	ResetBigqueryDataset()
 	ResetCategories()
 	ResetDataProvider()
 	ResetDescription()
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
+	ResetLogLinkedDatasetQueryUserEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrimaryContact()
 	ResetProject()
 	ResetPublisher()
+	ResetPubsubTopic()
 	ResetRequestAccess()
 	ResetRestrictedExportConfig()
 	ResetTimeouts()
@@ -496,6 +505,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -591,6 +620,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PublisherInput() *GoogleBi
 	_jsii_.Get(
 		j,
 		"publisherInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PubsubTopic() GoogleBigqueryAnalyticsHubListingPubsubTopicOutputReference {
+	var returns GoogleBigqueryAnalyticsHubListingPubsubTopicOutputReference
+	_jsii_.Get(
+		j,
+		"pubsubTopic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PubsubTopicInput() *GoogleBigqueryAnalyticsHubListingPubsubTopic {
+	var returns *GoogleBigqueryAnalyticsHubListingPubsubTopic
+	_jsii_.Get(
+		j,
+		"pubsubTopicInput",
 		&returns,
 	)
 	return returns
@@ -697,7 +746,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) GoogleBigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -715,7 +764,7 @@ func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 
@@ -870,6 +919,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetLogLinkedDatasetQueryUserEmail(val interface{}) {
+	if err := j.validateSetLogLinkedDatasetQueryUserEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logLinkedDatasetQueryUserEmail",
 		val,
 	)
 }
@@ -1312,6 +1372,17 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PutPublisher(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PutPubsubTopic(value *GoogleBigqueryAnalyticsHubListingPubsubTopic) {
+	if err := g.validatePutPubsubTopicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPubsubTopic",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PutRestrictedExportConfig(value *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig) {
 	if err := g.validatePutRestrictedExportConfigParameters(value); err != nil {
 		panic(err)
@@ -1331,6 +1402,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PutTimeouts(value *GoogleB
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetBigqueryDataset() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBigqueryDataset",
+		nil, // no parameters
 	)
 }
 
@@ -1382,6 +1461,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetLogLinkedDatasetQueryUserEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogLinkedDatasetQueryUserEmail",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1410,6 +1497,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetPublisher() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPublisher",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetPubsubTopic() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPubsubTopic",
 		nil, // no parameters
 	)
 }

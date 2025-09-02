@@ -64,7 +64,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsCheckSession) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

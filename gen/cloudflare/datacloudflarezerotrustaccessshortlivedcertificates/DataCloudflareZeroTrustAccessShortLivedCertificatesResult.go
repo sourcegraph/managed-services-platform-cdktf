@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccessshortlivedcertificates
+
+
+type DataCloudflareZeroTrustAccessShortLivedCertificatesResult struct {
+}
+

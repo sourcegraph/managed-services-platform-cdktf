@@ -30,20 +30,16 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	GroupMemberDeprovision() interface{}
-	SetGroupMemberDeprovision(val interface{})
-	GroupMemberDeprovisionInput() interface{}
 	IdentityUpdateBehavior() *string
 	SetIdentityUpdateBehavior(val *string)
 	IdentityUpdateBehaviorInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ScimBaseUrl() *string
 	SeatDeprovision() interface{}
 	SetSeatDeprovision(val interface{})
 	SeatDeprovisionInput() interface{}
 	Secret() *string
-	SetSecret(val *string)
-	SecretInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,10 +76,8 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
-	ResetGroupMemberDeprovision()
 	ResetIdentityUpdateBehavior()
 	ResetSeatDeprovision()
-	ResetSecret()
 	ResetUserDeprovision()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -160,26 +154,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) GroupMemberDeprovision() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"groupMemberDeprovision",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) GroupMemberDeprovisionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"groupMemberDeprovisionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) IdentityUpdateBehavior() *string {
 	var returns *string
 	_jsii_.Get(
@@ -210,6 +184,16 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Int
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ScimBaseUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scimBaseUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SeatDeprovision() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -235,16 +219,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Sec
 	_jsii_.Get(
 		j,
 		"secret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SecretInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretInput",
 		&returns,
 	)
 	return returns
@@ -291,29 +265,29 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Use
 }
 
 
-func NewZeroTrustAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessIdentityProviderScimConfigOutputReference {
+func NewZeroTrustAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessIdentityProviderScimConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessIdentityProviderScimConfigOutputReference_Override(z ZeroTrustAccessIdentityProviderScimConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessIdentityProviderScimConfigOutputReference_Override(z ZeroTrustAccessIdentityProviderScimConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -351,17 +325,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetGroupMemberDeprovision(val interface{}) {
-	if err := j.validateSetGroupMemberDeprovisionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupMemberDeprovision",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetIdentityUpdateBehavior(val *string) {
 	if err := j.validateSetIdentityUpdateBehaviorParameters(val); err != nil {
 		panic(err)
@@ -391,17 +354,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetS
 	_jsii_.Set(
 		j,
 		"seatDeprovision",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetSecret(val *string) {
-	if err := j.validateSetSecretParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"secret",
 		val,
 	)
 }
@@ -633,14 +585,6 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ResetGroupMemberDeprovision() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetGroupMemberDeprovision",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ResetIdentityUpdateBehavior() {
 	_jsii_.InvokeVoid(
 		z,
@@ -653,14 +597,6 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		z,
 		"resetSeatDeprovision",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ResetSecret() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetSecret",
 		nil, // no parameters
 	)
 }

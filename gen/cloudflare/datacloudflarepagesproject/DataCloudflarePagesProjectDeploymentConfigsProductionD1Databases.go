@@ -1,0 +1,6 @@
+package datacloudflarepagesproject
+
+
+type DataCloudflarePagesProjectDeploymentConfigsProductionD1Databases struct {
+}
+

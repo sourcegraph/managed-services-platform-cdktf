@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetDefaultLanguageCodeParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetDeleteChatEngineOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

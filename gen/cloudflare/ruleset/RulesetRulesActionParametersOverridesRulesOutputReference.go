@@ -78,7 +78,6 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAction()
 	ResetEnabled()
-	ResetId()
 	ResetScoreThreshold()
 	ResetSensitivityLevel()
 	// Produce the Token's value at resolution time.
@@ -602,14 +601,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Re
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
 		nil, // no parameters
 	)
 }

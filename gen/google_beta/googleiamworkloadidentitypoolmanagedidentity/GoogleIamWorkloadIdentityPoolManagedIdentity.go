@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleiamworkloadidentitypoolmanagedidentity/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity}.
 type GoogleIamWorkloadIdentityPoolManagedIdentity interface {
 	cdktf.TerraformResource
+	AttestationRules() GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList
+	AttestationRulesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -126,7 +128,9 @@ type GoogleIamWorkloadIdentityPoolManagedIdentity interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAttestationRules(value interface{})
 	PutTimeouts(value *GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts)
+	ResetAttestationRules()
 	ResetDescription()
 	ResetDisabled()
 	ResetId()
@@ -151,6 +155,26 @@ type GoogleIamWorkloadIdentityPoolManagedIdentity interface {
 // The jsii proxy struct for GoogleIamWorkloadIdentityPoolManagedIdentity
 type jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) AttestationRules() GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList {
+	var returns GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList
+	_jsii_.Get(
+		j,
+		"attestationRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) AttestationRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"attestationRulesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) CdktfStack() cdktf.TerraformStack {
@@ -494,7 +518,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) WorkloadIdentit
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity} Resource.
 func NewGoogleIamWorkloadIdentityPoolManagedIdentity(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolManagedIdentityConfig) GoogleIamWorkloadIdentityPoolManagedIdentity {
 	_init_.Initialize()
 
@@ -512,7 +536,7 @@ func NewGoogleIamWorkloadIdentityPoolManagedIdentity(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool_managed_identity google_iam_workload_identity_pool_managed_identity} Resource.
 func NewGoogleIamWorkloadIdentityPoolManagedIdentity_Override(g GoogleIamWorkloadIdentityPoolManagedIdentity, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolManagedIdentityConfig) {
 	_init_.Initialize()
 
@@ -1021,6 +1045,17 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) OverrideLogical
 	)
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) PutAttestationRules(value interface{}) {
+	if err := g.validatePutAttestationRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAttestationRules",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) PutTimeouts(value *GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1029,6 +1064,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) PutTimeouts(val
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity) ResetAttestationRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAttestationRules",
+		nil, // no parameters
 	)
 }
 

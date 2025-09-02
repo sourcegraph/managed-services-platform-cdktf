@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaylogging
+
+
+type DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType struct {
+}
+

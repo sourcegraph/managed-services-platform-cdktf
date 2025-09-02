@@ -1,0 +1,6 @@
+package datacloudflarenotificationpolicywebhookslist
+
+
+type DataCloudflareNotificationPolicyWebhooksListResult struct {
+}
+

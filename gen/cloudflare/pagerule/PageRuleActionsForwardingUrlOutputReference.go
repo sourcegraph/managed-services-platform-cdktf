@@ -27,8 +27,8 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PageRuleActionsForwardingUrl
-	SetInternalValue(val *PageRuleActionsForwardingUrl)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
@@ -122,8 +122,8 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InternalValue() *PageRuleActionsForwardingUrl {
-	var returns *PageRuleActionsForwardingUrl
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetInternalValue(val *PageRuleActionsForwardingUrl) {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

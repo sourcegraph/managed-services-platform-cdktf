@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/contentscanningexpression/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 type ContentScanningExpression interface {
 	cdktf.TerraformResource
+	Body() ContentScanningExpressionBodyList
+	BodyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -43,9 +45,6 @@ type ContentScanningExpression interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Payload() *string
-	SetPayload(val *string)
-	PayloadInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -108,6 +107,7 @@ type ContentScanningExpression interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBody(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -127,6 +127,26 @@ type ContentScanningExpression interface {
 // The jsii proxy struct for ContentScanningExpression
 type jsiiProxy_ContentScanningExpression struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ContentScanningExpression) Body() ContentScanningExpressionBodyList {
+	var returns ContentScanningExpressionBodyList
+	_jsii_.Get(
+		j,
+		"body",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContentScanningExpression) BodyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bodyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContentScanningExpression) CdktfStack() cdktf.TerraformStack {
@@ -239,26 +259,6 @@ func (j *jsiiProxy_ContentScanningExpression) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) Payload() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"payload",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContentScanningExpression) PayloadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"payloadInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContentScanningExpression) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -340,7 +340,7 @@ func (j *jsiiProxy_ContentScanningExpression) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression(scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) ContentScanningExpression {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewContentScanningExpression(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression_Override(c ContentScanningExpression, scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) {
 	_init_.Initialize()
 
@@ -414,17 +414,6 @@ func (j *jsiiProxy_ContentScanningExpression)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContentScanningExpression)SetPayload(val *string) {
-	if err := j.validateSetPayloadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"payload",
 		val,
 	)
 }
@@ -809,6 +798,17 @@ func (c *jsiiProxy_ContentScanningExpression) OverrideLogicalId(newLogicalId *st
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ContentScanningExpression) PutBody(value interface{}) {
+	if err := c.validatePutBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBody",
+		[]interface{}{value},
 	)
 }
 

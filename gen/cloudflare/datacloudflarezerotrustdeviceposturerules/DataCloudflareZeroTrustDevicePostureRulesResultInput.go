@@ -1,0 +1,6 @@
+package datacloudflarezerotrustdeviceposturerules
+
+
+type DataCloudflareZeroTrustDevicePostureRulesResultInput struct {
+}
+

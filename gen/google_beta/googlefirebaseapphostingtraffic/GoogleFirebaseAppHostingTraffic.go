@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlefirebaseapphostingtraffic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic}.
 type GoogleFirebaseAppHostingTraffic interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTraffic) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic} Resource.
 func NewGoogleFirebaseAppHostingTraffic(scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingTrafficConfig) GoogleFirebaseAppHostingTraffic {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewGoogleFirebaseAppHostingTraffic(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_app_hosting_traffic google_firebase_app_hosting_traffic} Resource.
 func NewGoogleFirebaseAppHostingTraffic_Override(g GoogleFirebaseAppHostingTraffic, scope constructs.Construct, id *string, config *GoogleFirebaseAppHostingTrafficConfig) {
 	_init_.Initialize()
 

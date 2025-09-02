@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInstanceLifecyclePolicy", GoMethod: "PutInstanceLifecyclePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNamedPort", GoMethod: "PutNamedPort"},
 			_jsii_.MemberMethod{JsiiMethod: "putParams", GoMethod: "PutParams"},
+			_jsii_.MemberMethod{JsiiMethod: "putResourcePolicies", GoMethod: "PutResourcePolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "putStandbyPolicy", GoMethod: "PutStandbyPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulDisk", GoMethod: "PutStatefulDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatefulExternalIp", GoMethod: "PutStatefulExternalIp"},
@@ -91,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParams", GoMethod: "ResetParams"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourcePolicies", GoMethod: "ResetResourcePolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStandbyPolicy", GoMethod: "ResetStandbyPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulDisk", GoMethod: "ResetStatefulDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulExternalIp", GoMethod: "ResetStatefulExternalIp"},
@@ -104,6 +106,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstances", GoMethod: "ResetWaitForInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForInstancesStatus", GoMethod: "ResetWaitForInstancesStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZone", GoMethod: "ResetZone"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePolicies", GoGetter: "ResourcePolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "resourcePoliciesInput", GoGetter: "ResourcePoliciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "standbyPolicy", GoGetter: "StandbyPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "standbyPolicyInput", GoGetter: "StandbyPolicyInput"},
@@ -378,6 +382,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeInstanceGroupManagerParamsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerResourcePolicies",
+		reflect.TypeOf((*GoogleComputeInstanceGroupManagerResourcePolicies)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference",
+		reflect.TypeOf((*GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadPolicy", GoMethod: "ResetWorkloadPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadPolicy", GoGetter: "WorkloadPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadPolicyInput", GoGetter: "WorkloadPolicyInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeInstanceGroupManagerResourcePoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

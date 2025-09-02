@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validatePutFilterParameters(value *DataCloudflareZeroTrustTunnelCloudflaredFilter) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustTunnelCloudflared_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,15 +80,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateSetIsDeletedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) validateSetTunnelIdParameters(val *string) error {
 	return nil
 }
 

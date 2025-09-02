@@ -30,8 +30,8 @@ type ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsPayloadLog
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +64,7 @@ type ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -139,8 +140,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsPayloadLog {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsPayloadLog
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -230,7 +231,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsPayloadLog) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,6 +448,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) 
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

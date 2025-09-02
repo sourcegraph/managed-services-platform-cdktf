@@ -21,7 +21,7 @@ type GoogleManagedKafkaAclConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// acl_entries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#acl_entries GoogleManagedKafkaAcl#acl_entries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#acl_entries GoogleManagedKafkaAcl#acl_entries}
 	AclEntries interface{} `field:"required" json:"aclEntries" yaml:"aclEntries"`
 	// The ID to use for the acl, which will become the final component of the acl's name.
 	//
@@ -31,26 +31,26 @@ type GoogleManagedKafkaAclConfig struct {
 	// For acls on all resources that match a prefix: 'topicPrefixed/{resource_name}' 'consumerGroupPrefixed/{resource_name}' 'transactionalIdPrefixed/{resource_name}'
 	// For acls on all resources of a given type (i.e. the wildcard literal '*''): 'allTopics' (represents 'topic/*') 'allConsumerGroups' (represents 'consumerGroup/*') 'allTransactionalIds' (represents 'transactionalId/*').
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#acl_id GoogleManagedKafkaAcl#acl_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#acl_id GoogleManagedKafkaAcl#acl_id}
 	AclId *string `field:"required" json:"aclId" yaml:"aclId"`
 	// The cluster name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#cluster GoogleManagedKafkaAcl#cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#cluster GoogleManagedKafkaAcl#cluster}
 	Cluster *string `field:"required" json:"cluster" yaml:"cluster"`
 	// ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#location GoogleManagedKafkaAcl#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#location GoogleManagedKafkaAcl#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#id GoogleManagedKafkaAcl#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#id GoogleManagedKafkaAcl#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#project GoogleManagedKafkaAcl#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#project GoogleManagedKafkaAcl#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_managed_kafka_acl#timeouts GoogleManagedKafkaAcl#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_managed_kafka_acl#timeouts GoogleManagedKafkaAcl#timeouts}
 	Timeouts *GoogleManagedKafkaAclTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

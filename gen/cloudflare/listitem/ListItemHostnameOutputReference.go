@@ -170,29 +170,29 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) UrlHostnameInput() *string {
 }
 
 
-func NewListItemHostnameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ListItemHostnameOutputReference {
+func NewListItemHostnameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemHostnameOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewListItemHostnameOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewListItemHostnameOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ListItemHostnameOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewListItemHostnameOutputReference_Override(l ListItemHostnameOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewListItemHostnameOutputReference_Override(l ListItemHostnameOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

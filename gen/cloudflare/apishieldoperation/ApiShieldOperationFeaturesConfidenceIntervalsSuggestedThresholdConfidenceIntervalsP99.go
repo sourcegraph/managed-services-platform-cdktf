@@ -1,0 +1,6 @@
+package apishieldoperation
+
+
+type ApiShieldOperationFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP99 struct {
+}
+

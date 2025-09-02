@@ -1,0 +1,6 @@
+package datacloudflarezerotrustgatewaypolicies
+
+
+type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsResolveDnsInternally struct {
+}
+

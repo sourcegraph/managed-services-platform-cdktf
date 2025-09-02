@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/loadbalancermonitor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,11 +61,10 @@ type LoadBalancerMonitor interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Header() LoadBalancerMonitorHeaderList
+	Header() interface{}
+	SetHeader(val interface{})
 	HeaderInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Interval() *float64
 	SetInterval(val *float64)
 	IntervalInput() *float64
@@ -156,7 +155,6 @@ type LoadBalancerMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutHeader(value interface{})
 	ResetAllowInsecure()
 	ResetConsecutiveDown()
 	ResetConsecutiveUp()
@@ -165,7 +163,6 @@ type LoadBalancerMonitor interface {
 	ResetExpectedCodes()
 	ResetFollowRedirects()
 	ResetHeader()
-	ResetId()
 	ResetInterval()
 	ResetMethod()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -445,8 +442,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) Header() LoadBalancerMonitorHeaderList {
-	var returns LoadBalancerMonitorHeaderList
+func (j *jsiiProxy_LoadBalancerMonitor) Header() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"header",
@@ -470,16 +467,6 @@ func (j *jsiiProxy_LoadBalancerMonitor) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LoadBalancerMonitor) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -736,7 +723,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) LoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -754,7 +741,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) {
 	_init_.Initialize()
 
@@ -891,13 +878,13 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_LoadBalancerMonitor)SetHeader(val interface{}) {
+	if err := j.validateSetHeaderParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"header",
 		val,
 	)
 }
@@ -1373,17 +1360,6 @@ func (l *jsiiProxy_LoadBalancerMonitor) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) PutHeader(value interface{}) {
-	if err := l.validatePutHeaderParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putHeader",
-		[]interface{}{value},
-	)
-}
-
 func (l *jsiiProxy_LoadBalancerMonitor) ResetAllowInsecure() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1444,14 +1420,6 @@ func (l *jsiiProxy_LoadBalancerMonitor) ResetHeader() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetHeader",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerMonitor) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

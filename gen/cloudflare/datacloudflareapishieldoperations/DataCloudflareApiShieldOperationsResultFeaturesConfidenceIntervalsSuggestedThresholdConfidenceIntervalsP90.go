@@ -1,0 +1,6 @@
+package datacloudflareapishieldoperations
+
+
+type DataCloudflareApiShieldOperationsResultFeaturesConfidenceIntervalsSuggestedThresholdConfidenceIntervalsP90 struct {
+}
+

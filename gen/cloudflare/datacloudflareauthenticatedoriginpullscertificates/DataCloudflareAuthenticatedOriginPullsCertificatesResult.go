@@ -1,0 +1,6 @@
+package datacloudflareauthenticatedoriginpullscertificates
+
+
+type DataCloudflareAuthenticatedOriginPullsCertificatesResult struct {
+}
+

@@ -342,7 +342,7 @@ func (j *jsiiProxy_CustomPages) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_CustomPages) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_CustomPages) validateSetIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,14 +405,6 @@ func (j *jsiiProxy_CustomPages) validateSetProvisionersParameters(val *[]interfa
 }
 
 func (j *jsiiProxy_CustomPages) validateSetStateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CustomPages) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

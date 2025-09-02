@@ -70,9 +70,6 @@ type RulesetRulesActionParametersResponseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetContent()
-	ResetContentType()
-	ResetStatusCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -219,29 +216,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) Terrafor
 }
 
 
-func NewRulesetRulesActionParametersResponseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersResponseOutputReference {
+func NewRulesetRulesActionParametersResponseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersResponseOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersResponseOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersResponseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersResponseOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersResponseOutputReference_Override(r RulesetRulesActionParametersResponseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersResponseOutputReference_Override(r RulesetRulesActionParametersResponseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -518,30 +515,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) Interpol
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) ResetContent() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetContent",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) ResetContentType() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetContentType",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) ResetStatusCode() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatusCode",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersResponseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

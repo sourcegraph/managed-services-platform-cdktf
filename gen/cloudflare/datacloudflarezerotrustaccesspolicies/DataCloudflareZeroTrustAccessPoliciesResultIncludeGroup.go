@@ -1,0 +1,6 @@
+package datacloudflarezerotrustaccesspolicies
+
+
+type DataCloudflareZeroTrustAccessPoliciesResultIncludeGroup struct {
+}
+

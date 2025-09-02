@@ -9,15 +9,28 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeinterconnectattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
 type GoogleComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
 	SetAdminEnabled(val interface{})
 	AdminEnabledInput() interface{}
+	AttachmentGroup() *string
 	Bandwidth() *string
 	SetBandwidth(val *string)
 	BandwidthInput() *string
+	CandidateCloudRouterIpAddress() *string
+	SetCandidateCloudRouterIpAddress(val *string)
+	CandidateCloudRouterIpAddressInput() *string
+	CandidateCloudRouterIpv6Address() *string
+	SetCandidateCloudRouterIpv6Address(val *string)
+	CandidateCloudRouterIpv6AddressInput() *string
+	CandidateCustomerRouterIpAddress() *string
+	SetCandidateCustomerRouterIpAddress(val *string)
+	CandidateCustomerRouterIpAddressInput() *string
+	CandidateCustomerRouterIpv6Address() *string
+	SetCandidateCustomerRouterIpv6Address(val *string)
+	CandidateCustomerRouterIpv6AddressInput() *string
 	CandidateSubnets() *[]*string
 	SetCandidateSubnets(val *[]*string)
 	CandidateSubnetsInput() *[]*string
@@ -177,6 +190,10 @@ type GoogleComputeInterconnectAttachment interface {
 	PutTimeouts(value *GoogleComputeInterconnectAttachmentTimeouts)
 	ResetAdminEnabled()
 	ResetBandwidth()
+	ResetCandidateCloudRouterIpAddress()
+	ResetCandidateCloudRouterIpv6Address()
+	ResetCandidateCustomerRouterIpAddress()
+	ResetCandidateCustomerRouterIpv6Address()
 	ResetCandidateSubnets()
 	ResetDescription()
 	ResetEdgeAvailabilityDomain()
@@ -234,6 +251,16 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabledInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AttachmentGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentGroup",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Bandwidth() *string {
 	var returns *string
 	_jsii_.Get(
@@ -249,6 +276,86 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) BandwidthInput() *string
 	_jsii_.Get(
 		j,
 		"bandwidthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCloudRouterIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCloudRouterIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCloudRouterIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCloudRouterIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCloudRouterIpv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCloudRouterIpv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCloudRouterIpv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCloudRouterIpv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCustomerRouterIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCustomerRouterIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCustomerRouterIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCustomerRouterIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCustomerRouterIpv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCustomerRouterIpv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CandidateCustomerRouterIpv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"candidateCustomerRouterIpv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -915,7 +1022,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) VlanTag8021QInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) GoogleComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -933,7 +1040,7 @@ func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment_Override(g GoogleComputeInterconnectAttachment, scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -962,6 +1069,50 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetBandwidth(val *string)
 	_jsii_.Set(
 		j,
 		"bandwidth",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIpAddress(val *string) {
+	if err := j.validateSetCandidateCloudRouterIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"candidateCloudRouterIpAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIpv6Address(val *string) {
+	if err := j.validateSetCandidateCloudRouterIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"candidateCloudRouterIpv6Address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRouterIpAddress(val *string) {
+	if err := j.validateSetCandidateCustomerRouterIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"candidateCustomerRouterIpAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRouterIpv6Address(val *string) {
+	if err := j.validateSetCandidateCustomerRouterIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"candidateCustomerRouterIpv6Address",
 		val,
 	)
 }
@@ -1597,6 +1748,38 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetBandwidth() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBandwidth",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetCandidateCloudRouterIpAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCandidateCloudRouterIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetCandidateCloudRouterIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCandidateCloudRouterIpv6Address",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetCandidateCustomerRouterIpAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCandidateCustomerRouterIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetCandidateCustomerRouterIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCandidateCustomerRouterIpv6Address",
 		nil, // no parameters
 	)
 }

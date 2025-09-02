@@ -27,9 +27,9 @@ type LoadBalancerPoolOriginsHeaderOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Header() *string
-	SetHeader(val *string)
-	HeaderInput() *string
+	Host() *[]*string
+	SetHost(val *[]*string)
+	HostInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -40,9 +40,6 @@ type LoadBalancerPoolOriginsHeaderOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +64,7 @@ type LoadBalancerPoolOriginsHeaderOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,21 +120,21 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) Header() *string {
-	var returns *string
+func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) Host() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"header",
+		"host",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) HeaderInput() *string {
-	var returns *string
+func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) HostInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"headerInput",
+		"hostInput",
 		&returns,
 	)
 	return returns
@@ -172,50 +170,30 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) Values() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"values",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
-
-func NewLoadBalancerPoolOriginsHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPoolOriginsHeaderOutputReference {
+func NewLoadBalancerPoolOriginsHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolOriginsHeaderOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerPoolOriginsHeaderOutputReference_Override(l LoadBalancerPoolOriginsHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerPoolOriginsHeaderOutputReference_Override(l LoadBalancerPoolOriginsHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }
@@ -242,13 +220,13 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference)SetHeader(val *string) {
-	if err := j.validateSetHeaderParameters(val); err != nil {
+func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference)SetHost(val *[]*string) {
+	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"header",
+		"host",
 		val,
 	)
 }
@@ -282,17 +260,6 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference)SetTerraformReso
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
 		val,
 	)
 }
@@ -481,6 +448,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHost",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

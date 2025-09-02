@@ -104,10 +104,6 @@ func (j *jsiiProxy_UserAgentBlockingRule) validateSetDescriptionParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_UserAgentBlockingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

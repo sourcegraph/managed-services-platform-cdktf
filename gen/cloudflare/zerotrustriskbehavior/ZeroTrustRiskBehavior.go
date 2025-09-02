@@ -9,14 +9,14 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustriskbehavior/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
 type ZeroTrustRiskBehavior interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Behavior() ZeroTrustRiskBehaviorBehaviorList
-	BehaviorInput() interface{}
+	Behaviors() ZeroTrustRiskBehaviorBehaviorsMap
+	BehaviorsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -106,8 +106,7 @@ type ZeroTrustRiskBehavior interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBehavior(value interface{})
-	ResetBehavior()
+	PutBehaviors(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -149,21 +148,21 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) Behavior() ZeroTrustRiskBehaviorBehaviorList {
-	var returns ZeroTrustRiskBehaviorBehaviorList
+func (j *jsiiProxy_ZeroTrustRiskBehavior) Behaviors() ZeroTrustRiskBehaviorBehaviorsMap {
+	var returns ZeroTrustRiskBehaviorBehaviorsMap
 	_jsii_.Get(
 		j,
-		"behavior",
+		"behaviors",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) BehaviorInput() interface{} {
+func (j *jsiiProxy_ZeroTrustRiskBehavior) BehaviorsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"behaviorInput",
+		"behaviorsInput",
 		&returns,
 	)
 	return returns
@@ -330,7 +329,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) ZeroTrustRiskBehavior {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior_Override(z ZeroTrustRiskBehavior, scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) {
 	_init_.Initialize()
 
@@ -791,22 +790,14 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) PutBehavior(value interface{}) {
-	if err := z.validatePutBehaviorParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) PutBehaviors(value interface{}) {
+	if err := z.validatePutBehaviorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putBehavior",
+		"putBehaviors",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustRiskBehavior) ResetBehavior() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetBehavior",
-		nil, // no parameters
 	)
 }
 

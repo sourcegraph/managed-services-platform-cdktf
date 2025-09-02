@@ -100,15 +100,11 @@ func (j *jsiiProxy_PagesDomain) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_PagesDomain) validateSetDomainParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesDomain) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PagesDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesDomain) validateSetNameParameters(val *string) error {
 	return nil
 }
 

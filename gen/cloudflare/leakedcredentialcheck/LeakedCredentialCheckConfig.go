@@ -19,13 +19,13 @@ type LeakedCredentialCheckConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// State of the Leaked Credential Check detection.
+	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// The zone identifier to target for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Determines whether or not Leaked Credential Checks are enabled.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

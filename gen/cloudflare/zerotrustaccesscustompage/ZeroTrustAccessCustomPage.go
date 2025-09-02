@@ -9,15 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/zerotrustaccesscustompage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type ZeroTrustAccessCustomPage interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
-	SetAppCount(val *float64)
-	AppCountInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -46,8 +43,6 @@ type ZeroTrustAccessCustomPage interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,9 +71,7 @@ type ZeroTrustAccessCustomPage interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	ZoneId() *string
-	SetZoneId(val *string)
-	ZoneIdInput() *string
+	Uid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,14 +115,9 @@ type ZeroTrustAccessCustomPage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
-	ResetAppCount()
-	ResetCustomHtml()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -163,26 +151,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) AppCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCountInput",
 		&returns,
 	)
 	return returns
@@ -293,16 +261,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -428,28 +386,18 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) ZoneId() *string {
+func (j *jsiiProxy_ZeroTrustAccessCustomPage) Uid() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"zoneId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) ZoneIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneIdInput",
+		"uid",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) ZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -467,7 +415,7 @@ func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage_Override(z ZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 
@@ -485,17 +433,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetAppCount(val *float64) {
-	if err := j.validateSetAppCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appCount",
 		val,
 	)
 }
@@ -549,17 +486,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -608,17 +534,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetZoneId(val *string) {
-	if err := j.validateSetZoneIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneId",
 		val,
 	)
 }
@@ -976,50 +891,10 @@ func (z *jsiiProxy_ZeroTrustAccessCustomPage) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetAppCount() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAppCount",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetCustomHtml() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCustomHtml",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

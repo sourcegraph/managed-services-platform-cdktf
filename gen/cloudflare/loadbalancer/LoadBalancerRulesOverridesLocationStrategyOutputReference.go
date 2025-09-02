@@ -195,29 +195,29 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) Te
 }
 
 
-func NewLoadBalancerRulesOverridesLocationStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesLocationStrategyOutputReference {
+func NewLoadBalancerRulesOverridesLocationStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesOverridesLocationStrategyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerRulesOverridesLocationStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerRulesOverridesLocationStrategyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerRulesOverridesLocationStrategyOutputReference_Override(l LoadBalancerRulesOverridesLocationStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerRulesOverridesLocationStrategyOutputReference_Override(l LoadBalancerRulesOverridesLocationStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

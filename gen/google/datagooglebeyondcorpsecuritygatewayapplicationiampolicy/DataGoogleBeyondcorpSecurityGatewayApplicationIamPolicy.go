@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglebeyondcorpsecuritygatewayapplicationiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
 type DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy) Terr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Data Source.
 func NewDataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig) DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Data Source.
 func NewDataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy_Override(d DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig) {
 	_init_.Initialize()
 

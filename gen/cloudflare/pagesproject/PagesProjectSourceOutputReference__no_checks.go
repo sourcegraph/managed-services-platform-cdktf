@@ -60,7 +60,7 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetInternalValueParameters(val *PagesProjectSource) error {
+func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

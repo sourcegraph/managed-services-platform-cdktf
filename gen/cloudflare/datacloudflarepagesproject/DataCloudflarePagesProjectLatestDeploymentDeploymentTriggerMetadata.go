@@ -1,0 +1,6 @@
+package datacloudflarepagesproject
+
+
+type DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata struct {
+}
+

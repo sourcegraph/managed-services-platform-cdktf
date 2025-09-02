@@ -88,10 +88,6 @@ func validateTieredCache_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_TieredCache) validateSetCacheTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_TieredCache) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -100,15 +96,15 @@ func (j *jsiiProxy_TieredCache) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_TieredCache) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_TieredCache) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_TieredCache) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TieredCache) validateSetValueParameters(val *string) error {
 	return nil
 }
 

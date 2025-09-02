@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -169,6 +169,9 @@ type GoogleProvider interface {
 	ComputeCustomEndpointInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContactCenterInsightsCustomEndpoint() *string
+	SetContactCenterInsightsCustomEndpoint(val *string)
+	ContactCenterInsightsCustomEndpointInput() *string
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
@@ -373,6 +376,12 @@ type GoogleProvider interface {
 	MlEngineCustomEndpoint() *string
 	SetMlEngineCustomEndpoint(val *string)
 	MlEngineCustomEndpointInput() *string
+	ModelArmorCustomEndpoint() *string
+	SetModelArmorCustomEndpoint(val *string)
+	ModelArmorCustomEndpointInput() *string
+	ModelArmorGlobalCustomEndpoint() *string
+	SetModelArmorGlobalCustomEndpoint(val *string)
+	ModelArmorGlobalCustomEndpointInput() *string
 	MonitoringCustomEndpoint() *string
 	SetMonitoringCustomEndpoint(val *string)
 	MonitoringCustomEndpointInput() *string
@@ -622,6 +631,7 @@ type GoogleProvider interface {
 	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
+	ResetContactCenterInsightsCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
 	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
@@ -688,6 +698,8 @@ type GoogleProvider interface {
 	ResetMemorystoreCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
+	ResetModelArmorCustomEndpoint()
+	ResetModelArmorGlobalCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
 	ResetNetappCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
@@ -1805,6 +1817,26 @@ func (j *jsiiProxy_GoogleProvider) ConstructNodeMetadata() *map[string]interface
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ContactCenterInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ContactCenterInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3160,6 +3192,46 @@ func (j *jsiiProxy_GoogleProvider) MlEngineCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ModelArmorCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ModelArmorCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ModelArmorGlobalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ModelArmorGlobalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) MonitoringCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4431,7 +4503,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4449,7 +4521,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4870,6 +4942,14 @@ func (j *jsiiProxy_GoogleProvider)SetComputeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"computeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetContactCenterInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"contactCenterInsightsCustomEndpoint",
 		val,
 	)
 }
@@ -5401,6 +5481,22 @@ func (j *jsiiProxy_GoogleProvider)SetMlEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"mlEngineCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetModelArmorCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"modelArmorCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetModelArmorGlobalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"modelArmorGlobalCustomEndpoint",
 		val,
 	)
 }
@@ -6429,6 +6525,14 @@ func (g *jsiiProxy_GoogleProvider) ResetComputeCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetContactCenterInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContactCenterInsightsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetContainerAnalysisCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6953,6 +7057,22 @@ func (g *jsiiProxy_GoogleProvider) ResetMlEngineCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMlEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetModelArmorCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelArmorCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetModelArmorGlobalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelArmorGlobalCustomEndpoint",
 		nil, // no parameters
 	)
 }

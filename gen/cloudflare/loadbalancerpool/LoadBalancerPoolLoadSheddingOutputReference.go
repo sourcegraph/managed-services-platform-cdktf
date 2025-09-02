@@ -243,29 +243,29 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) TerraformResourc
 }
 
 
-func NewLoadBalancerPoolLoadSheddingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPoolLoadSheddingOutputReference {
+func NewLoadBalancerPoolLoadSheddingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolLoadSheddingOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerPoolLoadSheddingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerPoolLoadSheddingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerPoolLoadSheddingOutputReference_Override(l LoadBalancerPoolLoadSheddingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerPoolLoadSheddingOutputReference_Override(l LoadBalancerPoolLoadSheddingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

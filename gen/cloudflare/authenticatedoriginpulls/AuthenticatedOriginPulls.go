@@ -9,14 +9,18 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/authenticatedoriginpulls/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
 type AuthenticatedOriginPulls interface {
 	cdktf.TerraformResource
-	AuthenticatedOriginPullsCertificate() *string
-	SetAuthenticatedOriginPullsCertificate(val *string)
-	AuthenticatedOriginPullsCertificateInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertId() *string
+	Certificate() *string
+	CertStatus() *string
+	CertUpdatedAt() *string
+	CertUploadedOn() *string
+	Config() AuthenticatedOriginPullsConfigAList
+	ConfigInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -27,13 +31,13 @@ type AuthenticatedOriginPulls interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() cdktf.IResolvable
+	ExpiresOn() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,14 +50,14 @@ type AuthenticatedOriginPulls interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Issuer() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PrivateKey() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -64,12 +68,16 @@ type AuthenticatedOriginPulls interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SerialNumber() *string
+	Signature() *string
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -116,9 +124,8 @@ type AuthenticatedOriginPulls interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAuthenticatedOriginPullsCertificate()
+	PutConfig(value interface{})
 	ResetHostname()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -140,31 +147,81 @@ type jsiiProxy_AuthenticatedOriginPulls struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) AuthenticatedOriginPullsCertificate() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"authenticatedOriginPullsCertificate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPulls) AuthenticatedOriginPullsCertificateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"authenticatedOriginPullsCertificateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) CertId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) Certificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) CertStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) CertUpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certUpdatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) CertUploadedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certUploadedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) Config() AuthenticatedOriginPullsConfigAList {
+	var returns AuthenticatedOriginPullsConfigAList
+	_jsii_.Get(
+		j,
+		"config",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) ConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +257,16 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPulls) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPulls) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -210,8 +277,8 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -220,11 +287,11 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthenticatedOriginPulls) ExpiresOn() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"enabledInput",
+		"expiresOn",
 		&returns,
 	)
 	return returns
@@ -290,11 +357,11 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) IdInput() *string {
+func (j *jsiiProxy_AuthenticatedOriginPulls) Issuer() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"issuer",
 		&returns,
 	)
 	return returns
@@ -315,6 +382,16 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
 		&returns,
 	)
 	return returns
@@ -350,6 +427,36 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPulls) SerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) Signature() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signature",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPulls) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,6 +487,16 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPulls) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPulls) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,7 +518,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls {
 	_init_.Initialize()
 
@@ -419,7 +536,7 @@ func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) {
 	_init_.Initialize()
 
@@ -427,17 +544,6 @@ func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope cons
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		[]interface{}{scope, id, config},
 		a,
-	)
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetAuthenticatedOriginPullsCertificate(val *string) {
-	if err := j.validateSetAuthenticatedOriginPullsCertificateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"authenticatedOriginPullsCertificate",
-		val,
 	)
 }
 
@@ -471,17 +577,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -497,17 +592,6 @@ func (j *jsiiProxy_AuthenticatedOriginPulls)SetHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"hostname",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPulls)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -906,11 +990,14 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) OverrideLogicalId(newLogicalId *str
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPulls) ResetAuthenticatedOriginPullsCertificate() {
+func (a *jsiiProxy_AuthenticatedOriginPulls) PutConfig(value interface{}) {
+	if err := a.validatePutConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
-		"resetAuthenticatedOriginPullsCertificate",
-		nil, // no parameters
+		"putConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -918,14 +1005,6 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) ResetHostname() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetHostname",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AuthenticatedOriginPulls) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
 		nil, // no parameters
 	)
 }

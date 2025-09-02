@@ -27,8 +27,8 @@ type RateLimitMatchRequestOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RateLimitMatchRequest
-	SetInternalValue(val *RateLimitMatchRequest)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Methods() *[]*string
 	SetMethods(val *[]*string)
 	MethodsInput() *[]*string
@@ -43,9 +43,9 @@ type RateLimitMatchRequestOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UrlPattern() *string
-	SetUrlPattern(val *string)
-	UrlPatternInput() *string
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,7 +72,7 @@ type RateLimitMatchRequestOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMethods()
 	ResetSchemes()
-	ResetUrlPattern()
+	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,8 +128,8 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) InternalValue() *RateLimitMatchRequest {
-	var returns *RateLimitMatchRequest
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,21 +198,21 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) TerraformResource() cdk
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) UrlPattern() *string {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) Url() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"urlPattern",
+		"url",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) UrlPatternInput() *string {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) UrlInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"urlPatternInput",
+		"urlInput",
 		&returns,
 	)
 	return returns
@@ -268,7 +268,7 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetInternalValue(val *RateLimitMatchRequest) {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,13 +323,13 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetUrlPattern(val *string) {
-	if err := j.validateSetUrlPatternParameters(val); err != nil {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"urlPattern",
+		"url",
 		val,
 	)
 }
@@ -536,10 +536,10 @@ func (r *jsiiProxy_RateLimitMatchRequestOutputReference) ResetSchemes() {
 	)
 }
 
-func (r *jsiiProxy_RateLimitMatchRequestOutputReference) ResetUrlPattern() {
+func (r *jsiiProxy_RateLimitMatchRequestOutputReference) ResetUrl() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetUrlPattern",
+		"resetUrl",
 		nil, // no parameters
 	)
 }

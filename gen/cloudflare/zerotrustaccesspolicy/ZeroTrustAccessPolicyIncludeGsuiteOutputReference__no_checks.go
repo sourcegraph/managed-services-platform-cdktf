@@ -56,7 +56,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGsuiteOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGsuiteOutputReference) validateSetEmailParameters(val *[]*string) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGsuiteOutputReference) validateSetEmailParameters(val *string) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeGsuiteOutputReference) validateSe
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyIncludeGsuiteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessPolicyIncludeGsuiteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

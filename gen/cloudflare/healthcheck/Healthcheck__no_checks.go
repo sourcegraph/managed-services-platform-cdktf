@@ -72,11 +72,11 @@ func (h *jsiiProxy_Healthcheck) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (h *jsiiProxy_Healthcheck) validatePutHeaderParameters(value interface{}) error {
+func (h *jsiiProxy_Healthcheck) validatePutHttpConfigParameters(value *HealthcheckHttpConfig) error {
 	return nil
 }
 
-func (h *jsiiProxy_Healthcheck) validatePutTimeoutsParameters(value *HealthcheckTimeouts) error {
+func (h *jsiiProxy_Healthcheck) validatePutTcpConfigParameters(value *HealthcheckTcpConfig) error {
 	return nil
 }
 
@@ -97,10 +97,6 @@ func validateHealthcheck_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_Healthcheck) validateSetAddressParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetAllowInsecureParameters(val interface{}) error {
 	return nil
 }
 
@@ -128,22 +124,6 @@ func (j *jsiiProxy_Healthcheck) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetExpectedBodyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetExpectedCodesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetFollowRedirectsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Healthcheck) validateSetIntervalParameters(val *float64) error {
 	return nil
 }
@@ -152,19 +132,7 @@ func (j *jsiiProxy_Healthcheck) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetMethodParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Healthcheck) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetPathParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Healthcheck) validateSetPortParameters(val *float64) error {
 	return nil
 }
 

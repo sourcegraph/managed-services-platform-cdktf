@@ -48,15 +48,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validatePutIpRulesParameters(value interface{}) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetBastionModeParameters(val interface{}) error {
 	return nil
 }
 
@@ -72,7 +64,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetConnectTimeoutParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetConnectTimeoutParameters(val *float64) error {
 	return nil
 }
 
@@ -88,7 +80,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetInternalValueParameters(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -96,7 +88,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetKeepAliveTimeoutParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetKeepAliveTimeoutParameters(val *float64) error {
 	return nil
 }
 
@@ -112,19 +104,11 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetProxyAddressParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetProxyPortParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetProxyTypeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetTcpKeepAliveParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetTcpKeepAliveParameters(val *float64) error {
 	return nil
 }
 
@@ -136,7 +120,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetTlsTimeoutParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) validateSetTlsTimeoutParameters(val *float64) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/cloudflare/certificatepack/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,8 +46,6 @@ type CertificatePack interface {
 	SetHosts(val *[]*string)
 	HostsInput() *[]*string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -64,6 +62,7 @@ type CertificatePack interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -73,19 +72,12 @@ type CertificatePack interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	ValidationErrors() CertificatePackValidationErrorsList
-	ValidationErrorsInput() interface{}
 	ValidationMethod() *string
 	SetValidationMethod(val *string)
 	ValidationMethodInput() *string
-	ValidationRecords() CertificatePackValidationRecordsList
-	ValidationRecordsInput() interface{}
 	ValidityDays() *float64
 	SetValidityDays(val *float64)
 	ValidityDaysInput() *float64
-	WaitForActiveStatus() interface{}
-	SetWaitForActiveStatus(val interface{})
-	WaitForActiveStatusInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -132,16 +124,10 @@ type CertificatePack interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutValidationErrors(value interface{})
-	PutValidationRecords(value interface{})
 	ResetCloudflareBranding()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetValidationErrors()
-	ResetValidationRecords()
-	ResetWaitForActiveStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -310,16 +296,6 @@ func (j *jsiiProxy_CertificatePack) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CertificatePack) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -365,6 +341,16 @@ func (j *jsiiProxy_CertificatePack) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -420,26 +406,6 @@ func (j *jsiiProxy_CertificatePack) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) ValidationErrors() CertificatePackValidationErrorsList {
-	var returns CertificatePackValidationErrorsList
-	_jsii_.Get(
-		j,
-		"validationErrors",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertificatePack) ValidationErrorsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"validationErrorsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CertificatePack) ValidationMethod() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,26 +426,6 @@ func (j *jsiiProxy_CertificatePack) ValidationMethodInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) ValidationRecords() CertificatePackValidationRecordsList {
-	var returns CertificatePackValidationRecordsList
-	_jsii_.Get(
-		j,
-		"validationRecords",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertificatePack) ValidationRecordsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"validationRecordsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CertificatePack) ValidityDays() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -495,26 +441,6 @@ func (j *jsiiProxy_CertificatePack) ValidityDaysInput() *float64 {
 	_jsii_.Get(
 		j,
 		"validityDaysInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertificatePack) WaitForActiveStatus() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"waitForActiveStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertificatePack) WaitForActiveStatusInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"waitForActiveStatusInput",
 		&returns,
 	)
 	return returns
@@ -541,7 +467,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -559,7 +485,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 
@@ -641,17 +567,6 @@ func (j *jsiiProxy_CertificatePack)SetHosts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -711,17 +626,6 @@ func (j *jsiiProxy_CertificatePack)SetValidityDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"validityDays",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CertificatePack)SetWaitForActiveStatus(val interface{}) {
-	if err := j.validateSetWaitForActiveStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"waitForActiveStatus",
 		val,
 	)
 }
@@ -1090,28 +994,6 @@ func (c *jsiiProxy_CertificatePack) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) PutValidationErrors(value interface{}) {
-	if err := c.validatePutValidationErrorsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putValidationErrors",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_CertificatePack) PutValidationRecords(value interface{}) {
-	if err := c.validatePutValidationRecordsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putValidationRecords",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1120,42 +1002,10 @@ func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CertificatePack) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CertificatePack) ResetValidationErrors() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetValidationErrors",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CertificatePack) ResetValidationRecords() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetValidationRecords",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CertificatePack) ResetWaitForActiveStatus() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetWaitForActiveStatus",
 		nil, // no parameters
 	)
 }

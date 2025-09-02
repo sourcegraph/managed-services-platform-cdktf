@@ -30,8 +30,8 @@ type SpectrumApplicationEdgeIpsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SpectrumApplicationEdgeIps
-	SetInternalValue(val *SpectrumApplicationEdgeIps)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
@@ -72,6 +72,7 @@ type SpectrumApplicationEdgeIpsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectivity()
 	ResetIps()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,8 +148,8 @@ func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) InternalValue() *SpectrumApplicationEdgeIps {
-	var returns *SpectrumApplicationEdgeIps
+func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -278,7 +279,7 @@ func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference)SetConnectivity(val
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference)SetInternalValue(val *SpectrumApplicationEdgeIps) {
+func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,6 +532,14 @@ func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) ResetIps() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIps",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
 		nil, // no parameters
 	)
 }

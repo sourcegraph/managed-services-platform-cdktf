@@ -100,6 +100,22 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetBandwidthPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCloudRouterIpv6AddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateCustomerRouterIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCandidateSubnetsParameters(val *[]*string) error {
 	return nil
 }

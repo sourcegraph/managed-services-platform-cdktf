@@ -218,29 +218,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Terraform
 }
 
 
-func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersEdgeTtlOutputReference {
+func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersEdgeTtlOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersEdgeTtlOutputReference_Override(r RulesetRulesActionParametersEdgeTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersEdgeTtlOutputReference_Override(r RulesetRulesActionParametersEdgeTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }

@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeFutureReservation) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFutureReservation) validatePutAggregateReservationParameters(value *GoogleComputeFutureReservationAggregateReservation) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFutureReservation) validatePutAutoCreatedReservationsDurationParameters(value *GoogleComputeFutureReservationAutoCreatedReservationsDuration) error {
 	return nil
 }

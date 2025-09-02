@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network google_compute_network}.
 type GoogleComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
@@ -84,6 +84,8 @@ type GoogleComputeNetwork interface {
 	// The tree node.
 	Node() constructs.Node
 	NumericId() *string
+	Params() GoogleComputeNetworkParamsOutputReference
+	ParamsInput() *GoogleComputeNetworkParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -152,6 +154,7 @@ type GoogleComputeNetwork interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *GoogleComputeNetworkParams)
 	PutTimeouts(value *GoogleComputeNetworkTimeouts)
 	ResetAutoCreateSubnetworks()
 	ResetBgpAlwaysCompareMed()
@@ -168,6 +171,7 @@ type GoogleComputeNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRoutingMode()
 	ResetTimeouts()
@@ -579,6 +583,26 @@ func (j *jsiiProxy_GoogleComputeNetwork) NumericId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNetwork) Params() GoogleComputeNetworkParamsOutputReference {
+	var returns GoogleComputeNetworkParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) ParamsInput() *GoogleComputeNetworkParams {
+	var returns *GoogleComputeNetworkParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeNetwork) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -710,7 +734,7 @@ func (j *jsiiProxy_GoogleComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) GoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -728,7 +752,7 @@ func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork_Override(g GoogleComputeNetwork, scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -1325,6 +1349,17 @@ func (g *jsiiProxy_GoogleComputeNetwork) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeNetwork) PutParams(value *GoogleComputeNetworkParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeNetwork) PutTimeouts(value *GoogleComputeNetworkTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1436,6 +1471,14 @@ func (g *jsiiProxy_GoogleComputeNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

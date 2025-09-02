@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutAddonsConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *GoogleContainerClusterAnonymousAuthenticationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *GoogleContainerClusterAuthenticatorGroupsConfig) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *GoogleContainerClusterGkeAutoUpgradeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutIdentityServiceConfigParameters(value *GoogleContainerClusterIdentityServiceConfig) error {
 	return nil
 }
@@ -161,6 +169,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutMeshCertificatesParameters
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutMonitoringConfigParameters(value *GoogleContainerClusterMonitoringConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutNetworkPerformanceConfigParameters(value *GoogleContainerClusterNetworkPerformanceConfig) error {
 	return nil
 }
 
