@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/datapostgresqlsequences/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/sequences postgresql_sequences}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/sequences postgresql_sequences}.
 type DataPostgresqlSequences interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataPostgresqlSequences) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/sequences postgresql_sequences} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/sequences postgresql_sequences} Data Source.
 func NewDataPostgresqlSequences(scope constructs.Construct, id *string, config *DataPostgresqlSequencesConfig) DataPostgresqlSequences {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataPostgresqlSequences(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/sequences postgresql_sequences} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/sequences postgresql_sequences} Data Source.
 func NewDataPostgresqlSequences_Override(d DataPostgresqlSequences, scope constructs.Construct, id *string, config *DataPostgresqlSequencesConfig) {
 	_init_.Initialize()
 

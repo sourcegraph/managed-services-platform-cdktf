@@ -3,7 +3,7 @@ name: postgresql
 provider:
   # https://registry.terraform.io/providers/sourcegraph/postgresql/latest
   source: registry.terraform.io/sourcegraph/postgresql
-  version: "1.25.0-sg.2"
+  version: "1.25.0-sg.4"
 
 target:
   language: go

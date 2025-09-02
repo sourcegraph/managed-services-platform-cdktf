@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/datapostgresqlschemas/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/schemas postgresql_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/schemas postgresql_schemas}.
 type DataPostgresqlSchemas interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/schemas postgresql_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/schemas postgresql_schemas} Data Source.
 func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *DataPostgresqlSchemasConfig) DataPostgresqlSchemas {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataPostgresqlSchemas(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/data-sources/schemas postgresql_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/data-sources/schemas postgresql_schemas} Data Source.
 func NewDataPostgresqlSchemas_Override(d DataPostgresqlSchemas, scope constructs.Construct, id *string, config *DataPostgresqlSchemasConfig) {
 	_init_.Initialize()
 

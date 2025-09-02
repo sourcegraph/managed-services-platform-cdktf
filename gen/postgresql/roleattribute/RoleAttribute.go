@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/roleattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/resources/role_attribute postgresql_role_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute}.
 type RoleAttribute interface {
 	cdktf.TerraformResource
 	AssumeRole() *string
@@ -46,6 +46,9 @@ type RoleAttribute interface {
 	EncryptedPassword() interface{}
 	SetEncryptedPassword(val interface{})
 	EncryptedPasswordInput() interface{}
+	ExtensionAttrs() *map[string]*string
+	SetExtensionAttrs(val *map[string]*string)
+	ExtensionAttrsInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -158,6 +161,7 @@ type RoleAttribute interface {
 	ResetCreateDatabase()
 	ResetCreateRole()
 	ResetEncryptedPassword()
+	ResetExtensionAttrs()
 	ResetId()
 	ResetIdleInTransactionSessionTimeout()
 	ResetInherit()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_RoleAttribute) EncryptedPasswordInput() interface{} {
 	_jsii_.Get(
 		j,
 		"encryptedPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleAttribute) ExtensionAttrs() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extensionAttrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleAttribute) ExtensionAttrsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"extensionAttrsInput",
 		&returns,
 	)
 	return returns
@@ -690,7 +714,7 @@ func (j *jsiiProxy_RoleAttribute) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/resources/role_attribute postgresql_role_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute} Resource.
 func NewRoleAttribute(scope constructs.Construct, id *string, config *RoleAttributeConfig) RoleAttribute {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewRoleAttribute(scope constructs.Construct, id *string, config *RoleAttrib
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs/resources/role_attribute postgresql_role_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs/resources/role_attribute postgresql_role_attribute} Resource.
 func NewRoleAttribute_Override(r RoleAttribute, scope constructs.Construct, id *string, config *RoleAttributeConfig) {
 	_init_.Initialize()
 
@@ -811,6 +835,17 @@ func (j *jsiiProxy_RoleAttribute)SetEncryptedPassword(val interface{}) {
 	_jsii_.Set(
 		j,
 		"encryptedPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoleAttribute)SetExtensionAttrs(val *map[string]*string) {
+	if err := j.validateSetExtensionAttrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extensionAttrs",
 		val,
 	)
 }
@@ -1371,6 +1406,14 @@ func (r *jsiiProxy_RoleAttribute) ResetEncryptedPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEncryptedPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoleAttribute) ResetExtensionAttrs() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetExtensionAttrs",
 		nil, // no parameters
 	)
 }

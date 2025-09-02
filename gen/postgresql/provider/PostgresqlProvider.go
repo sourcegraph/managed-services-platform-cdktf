@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/postgresql/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs postgresql}.
 type PostgresqlProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -711,7 +711,7 @@ func (j *jsiiProxy_PostgresqlProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs postgresql} Resource.
 func NewPostgresqlProvider(scope constructs.Construct, id *string, config *PostgresqlProviderConfig) PostgresqlProvider {
 	_init_.Initialize()
 
@@ -729,7 +729,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.2/docs postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/sourcegraph/postgresql/1.25.0-sg.4/docs postgresql} Resource.
 func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Construct, id *string, config *PostgresqlProviderConfig) {
 	_init_.Initialize()
 
