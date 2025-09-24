@@ -1,0 +1,12 @@
+name: incident
+
+provider:
+  # https://registry.terraform.io/providers/incident-io/incident/latest
+  source: registry.terraform.io/incident-io/incident
+  version: "5.17.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/managed-services-platform-cdktf/gen
+
+output: gen
