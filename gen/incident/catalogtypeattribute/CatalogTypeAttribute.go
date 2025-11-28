@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/catalogtypeattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute incident_catalog_type_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute incident_catalog_type_attribute}.
 type CatalogTypeAttribute interface {
 	cdktf.TerraformResource
 	Array() interface{}
@@ -459,7 +459,7 @@ func (j *jsiiProxy_CatalogTypeAttribute) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute incident_catalog_type_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute incident_catalog_type_attribute} Resource.
 func NewCatalogTypeAttribute(scope constructs.Construct, id *string, config *CatalogTypeAttributeConfig) CatalogTypeAttribute {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewCatalogTypeAttribute(scope constructs.Construct, id *string, config *Cat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute incident_catalog_type_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute incident_catalog_type_attribute} Resource.
 func NewCatalogTypeAttribute_Override(c CatalogTypeAttribute, scope constructs.Construct, id *string, config *CatalogTypeAttributeConfig) {
 	_init_.Initialize()
 

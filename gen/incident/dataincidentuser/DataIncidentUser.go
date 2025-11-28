@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentuser/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/user incident_user}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/user incident_user}.
 type DataIncidentUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataIncidentUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/user incident_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/user incident_user} Data Source.
 func NewDataIncidentUser(scope constructs.Construct, id *string, config *DataIncidentUserConfig) DataIncidentUser {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataIncidentUser(scope constructs.Construct, id *string, config *DataInc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/user incident_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/user incident_user} Data Source.
 func NewDataIncidentUser_Override(d DataIncidentUser, scope constructs.Construct, id *string, config *DataIncidentUserConfig) {
 	_init_.Initialize()
 

@@ -4,11 +4,11 @@ package alertroute
 type AlertRouteEscalationConfig struct {
 	// Should we auto cancel escalations when all alerts are resolved?
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_route#auto_cancel_escalations AlertRoute#auto_cancel_escalations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_route#auto_cancel_escalations AlertRoute#auto_cancel_escalations}
 	AutoCancelEscalations interface{} `field:"required" json:"autoCancelEscalations" yaml:"autoCancelEscalations"`
 	// Targets for escalation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_route#escalation_targets AlertRoute#escalation_targets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_route#escalation_targets AlertRoute#escalation_targets}
 	EscalationTargets interface{} `field:"required" json:"escalationTargets" yaml:"escalationTargets"`
 }
 

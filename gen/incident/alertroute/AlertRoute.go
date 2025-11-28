@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/alertroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_route incident_alert_route}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_route incident_alert_route}.
 type AlertRoute interface {
 	cdktf.TerraformResource
 	AlertSources() AlertRouteAlertSourcesList
@@ -525,7 +525,7 @@ func (j *jsiiProxy_AlertRoute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_route incident_alert_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_route incident_alert_route} Resource.
 func NewAlertRoute(scope constructs.Construct, id *string, config *AlertRouteConfig) AlertRoute {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewAlertRoute(scope constructs.Construct, id *string, config *AlertRouteCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_route incident_alert_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_route incident_alert_route} Resource.
 func NewAlertRoute_Override(a AlertRoute, scope constructs.Construct, id *string, config *AlertRouteConfig) {
 	_init_.Initialize()
 

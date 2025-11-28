@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentalertattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/alert_attribute incident_alert_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/alert_attribute incident_alert_attribute}.
 type DataIncidentAlertAttribute interface {
 	cdktf.TerraformDataSource
 	Array() cdktf.IResolvable
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/alert_attribute incident_alert_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/alert_attribute incident_alert_attribute} Data Source.
 func NewDataIncidentAlertAttribute(scope constructs.Construct, id *string, config *DataIncidentAlertAttributeConfig) DataIncidentAlertAttribute {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataIncidentAlertAttribute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/alert_attribute incident_alert_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/alert_attribute incident_alert_attribute} Data Source.
 func NewDataIncidentAlertAttribute_Override(d DataIncidentAlertAttribute, scope constructs.Construct, id *string, config *DataIncidentAlertAttributeConfig) {
 	_init_.Initialize()
 

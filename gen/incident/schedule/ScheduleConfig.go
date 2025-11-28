@@ -21,17 +21,17 @@ type ScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human readable name synced from external provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule#name Schedule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule#name Schedule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule#rotations Schedule#rotations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule#rotations Schedule#rotations}.
 	Rotations interface{} `field:"required" json:"rotations" yaml:"rotations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule#timezone Schedule#timezone}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule#timezone Schedule#timezone}.
 	Timezone *string `field:"required" json:"timezone" yaml:"timezone"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule#holidays_public_config Schedule#holidays_public_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule#holidays_public_config Schedule#holidays_public_config}.
 	HolidaysPublicConfig *ScheduleHolidaysPublicConfig `field:"optional" json:"holidaysPublicConfig" yaml:"holidaysPublicConfig"`
 	// IDs of teams that own this schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule#team_ids Schedule#team_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule#team_ids Schedule#team_ids}
 	TeamIds *[]*string `field:"optional" json:"teamIds" yaml:"teamIds"`
 }
 

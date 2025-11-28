@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/alertsource/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_source incident_alert_source}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_source incident_alert_source}.
 type AlertSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_AlertSource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_source incident_alert_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_source incident_alert_source} Resource.
 func NewAlertSource(scope constructs.Construct, id *string, config *AlertSourceConfig) AlertSource {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewAlertSource(scope constructs.Construct, id *string, config *AlertSourceC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_source incident_alert_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_source incident_alert_source} Resource.
 func NewAlertSource_Override(a AlertSource, scope constructs.Construct, id *string, config *AlertSourceConfig) {
 	_init_.Initialize()
 

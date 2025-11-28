@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentincidentrole/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/incident_role incident_incident_role}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/incident_role incident_incident_role}.
 type DataIncidentIncidentRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataIncidentIncidentRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/incident_role incident_incident_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/incident_role incident_incident_role} Data Source.
 func NewDataIncidentIncidentRole(scope constructs.Construct, id *string, config *DataIncidentIncidentRoleConfig) DataIncidentIncidentRole {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataIncidentIncidentRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/incident_role incident_incident_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/incident_role incident_incident_role} Data Source.
 func NewDataIncidentIncidentRole_Override(d DataIncidentIncidentRole, scope constructs.Construct, id *string, config *DataIncidentIncidentRoleConfig) {
 	_init_.Initialize()
 

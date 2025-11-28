@@ -6,7 +6,7 @@ type AlertSourceJiraOptions struct {
 	//
 	// IDs can either be IDs of the projects in Jira, or ID of catalog entries in the 'Jira Project' catalog type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_source#project_ids AlertSource#project_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_source#project_ids AlertSource#project_ids}
 	ProjectIds *[]*string `field:"optional" json:"projectIds" yaml:"projectIds"`
 }
 

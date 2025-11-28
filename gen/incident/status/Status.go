@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/status/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status incident_status}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status incident_status}.
 type Status interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -363,7 +363,7 @@ func (j *jsiiProxy_Status) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status incident_status} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status incident_status} Resource.
 func NewStatus(scope constructs.Construct, id *string, config *StatusConfig) Status {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewStatus(scope constructs.Construct, id *string, config *StatusConfig) Sta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status incident_status} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status incident_status} Resource.
 func NewStatus_Override(s Status, scope constructs.Construct, id *string, config *StatusConfig) {
 	_init_.Initialize()
 

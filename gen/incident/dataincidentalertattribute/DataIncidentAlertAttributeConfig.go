@@ -21,7 +21,7 @@ type DataIncidentAlertAttributeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name of this attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/alert_attribute#name DataIncidentAlertAttribute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/alert_attribute#name DataIncidentAlertAttribute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

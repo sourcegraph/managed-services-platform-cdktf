@@ -21,11 +21,11 @@ type DataIncidentCatalogTypeAttributeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of this catalog type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_type_attribute#catalog_type_id DataIncidentCatalogTypeAttribute#catalog_type_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_type_attribute#catalog_type_id DataIncidentCatalogTypeAttribute#catalog_type_id}
 	CatalogTypeId *string `field:"required" json:"catalogTypeId" yaml:"catalogTypeId"`
 	// The name of this attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_type_attribute#name DataIncidentCatalogTypeAttribute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_type_attribute#name DataIncidentCatalogTypeAttribute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

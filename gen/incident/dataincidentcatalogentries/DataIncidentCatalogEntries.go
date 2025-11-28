@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentcatalogentries/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_entries incident_catalog_entries}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_entries incident_catalog_entries}.
 type DataIncidentCatalogEntries interface {
 	cdktf.TerraformDataSource
 	CatalogEntries() DataIncidentCatalogEntriesCatalogEntriesList
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataIncidentCatalogEntries) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_entries incident_catalog_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_entries incident_catalog_entries} Data Source.
 func NewDataIncidentCatalogEntries(scope constructs.Construct, id *string, config *DataIncidentCatalogEntriesConfig) DataIncidentCatalogEntries {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataIncidentCatalogEntries(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_entries incident_catalog_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_entries incident_catalog_entries} Data Source.
 func NewDataIncidentCatalogEntries_Override(d DataIncidentCatalogEntries, scope constructs.Construct, id *string, config *DataIncidentCatalogEntriesConfig) {
 	_init_.Initialize()
 

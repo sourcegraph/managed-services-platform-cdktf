@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs incident}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs incident}.
 type IncidentProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -231,7 +231,7 @@ func (j *jsiiProxy_IncidentProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs incident} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs incident} Resource.
 func NewIncidentProvider(scope constructs.Construct, id *string, config *IncidentProviderConfig) IncidentProvider {
 	_init_.Initialize()
 
@@ -249,7 +249,7 @@ func NewIncidentProvider(scope constructs.Construct, id *string, config *Inciden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs incident} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs incident} Resource.
 func NewIncidentProvider_Override(i IncidentProvider, scope constructs.Construct, id *string, config *IncidentProviderConfig) {
 	_init_.Initialize()
 

@@ -21,15 +21,15 @@ type SeverityConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Description of the severity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity#description Severity#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity#description Severity#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Human readable name of the severity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity#name Severity#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity#name Severity#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Rank to help sort severities (lower numbers are less severe).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity#rank Severity#rank}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity#rank Severity#rank}
 	Rank *float64 `field:"optional" json:"rank" yaml:"rank"`
 }
 

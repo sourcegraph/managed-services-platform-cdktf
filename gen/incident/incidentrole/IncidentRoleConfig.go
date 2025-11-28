@@ -21,19 +21,19 @@ type IncidentRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Describes the purpose of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/incident_role#description IncidentRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/incident_role#description IncidentRole#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Provided to whoever is nominated for the role. Note that this will be empty for the 'reporter' role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/incident_role#instructions IncidentRole#instructions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/incident_role#instructions IncidentRole#instructions}
 	Instructions *string `field:"required" json:"instructions" yaml:"instructions"`
 	// Human readable name of the incident role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/incident_role#name IncidentRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/incident_role#name IncidentRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Short human readable name for Slack. Note that this will be empty for the 'reporter' role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/incident_role#shortform IncidentRole#shortform}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/incident_role#shortform IncidentRole#shortform}
 	Shortform *string `field:"required" json:"shortform" yaml:"shortform"`
 }
 

@@ -21,27 +21,27 @@ type CatalogTypeAttributeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of this catalog type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#catalog_type_id CatalogTypeAttribute#catalog_type_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#catalog_type_id CatalogTypeAttribute#catalog_type_id}
 	CatalogTypeId *string `field:"required" json:"catalogTypeId" yaml:"catalogTypeId"`
 	// The name of this attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#name CatalogTypeAttribute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#name CatalogTypeAttribute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The type of this attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#type CatalogTypeAttribute#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#type CatalogTypeAttribute#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Whether this attribute is an array or scalar.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#array CatalogTypeAttribute#array}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#array CatalogTypeAttribute#array}
 	Array interface{} `field:"optional" json:"array" yaml:"array"`
 	// If this is a backlink, the id of the attribute that it's linked from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#backlink_attribute CatalogTypeAttribute#backlink_attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#backlink_attribute CatalogTypeAttribute#backlink_attribute}
 	BacklinkAttribute *string `field:"optional" json:"backlinkAttribute" yaml:"backlinkAttribute"`
 	// If this is a path attribute, the path that we should use to pull the data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#path CatalogTypeAttribute#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#path CatalogTypeAttribute#path}
 	Path *[]*string `field:"optional" json:"path" yaml:"path"`
 	// If true, Terraform will only manage the schema of the attribute.
 	//
@@ -49,7 +49,7 @@ type CatalogTypeAttributeConfig struct {
 	//
 	// NOTE: When enabled, you should use the `managed_attributes` argument on either `incident_catalog_entry` or `incident_catalog_entries` to manage the values of other attributes on this type, without Terraform overwriting values set in the dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type_attribute#schema_only CatalogTypeAttribute#schema_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type_attribute#schema_only CatalogTypeAttribute#schema_only}
 	SchemaOnly interface{} `field:"optional" json:"schemaOnly" yaml:"schemaOnly"`
 }
 

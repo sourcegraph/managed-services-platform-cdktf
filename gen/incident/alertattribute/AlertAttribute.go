@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/alertattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_attribute incident_alert_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_attribute incident_alert_attribute}.
 type AlertAttribute interface {
 	cdktf.TerraformResource
 	Array() interface{}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_AlertAttribute) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_attribute incident_alert_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_attribute incident_alert_attribute} Resource.
 func NewAlertAttribute(scope constructs.Construct, id *string, config *AlertAttributeConfig) AlertAttribute {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewAlertAttribute(scope constructs.Construct, id *string, config *AlertAttr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/alert_attribute incident_alert_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/alert_attribute incident_alert_attribute} Resource.
 func NewAlertAttribute_Override(a AlertAttribute, scope constructs.Construct, id *string, config *AlertAttributeConfig) {
 	_init_.Initialize()
 

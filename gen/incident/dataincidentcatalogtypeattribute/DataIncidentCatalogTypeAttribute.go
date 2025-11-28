@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentcatalogtypeattribute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute}.
 type DataIncidentCatalogTypeAttribute interface {
 	cdktf.TerraformDataSource
 	Array() cdktf.IResolvable
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataIncidentCatalogTypeAttribute) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute} Data Source.
 func NewDataIncidentCatalogTypeAttribute(scope constructs.Construct, id *string, config *DataIncidentCatalogTypeAttributeConfig) DataIncidentCatalogTypeAttribute {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataIncidentCatalogTypeAttribute(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_type_attribute incident_catalog_type_attribute} Data Source.
 func NewDataIncidentCatalogTypeAttribute_Override(d DataIncidentCatalogTypeAttribute, scope constructs.Construct, id *string, config *DataIncidentCatalogTypeAttributeConfig) {
 	_init_.Initialize()
 
