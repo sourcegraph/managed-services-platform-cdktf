@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/dataincidentschedule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/schedule incident_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/schedule incident_schedule}.
 type DataIncidentSchedule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataIncidentSchedule) Timezone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/schedule incident_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/schedule incident_schedule} Data Source.
 func NewDataIncidentSchedule(scope constructs.Construct, id *string, config *DataIncidentScheduleConfig) DataIncidentSchedule {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataIncidentSchedule(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/schedule incident_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/schedule incident_schedule} Data Source.
 func NewDataIncidentSchedule_Override(d DataIncidentSchedule, scope constructs.Construct, id *string, config *DataIncidentScheduleConfig) {
 	_init_.Initialize()
 

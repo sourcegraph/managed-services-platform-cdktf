@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/severity/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity incident_severity}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity incident_severity}.
 type Severity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_Severity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity incident_severity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity incident_severity} Resource.
 func NewSeverity(scope constructs.Construct, id *string, config *SeverityConfig) Severity {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewSeverity(scope constructs.Construct, id *string, config *SeverityConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/severity incident_severity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/severity incident_severity} Resource.
 func NewSeverity_Override(s Severity, scope constructs.Construct, id *string, config *SeverityConfig) {
 	_init_.Initialize()
 

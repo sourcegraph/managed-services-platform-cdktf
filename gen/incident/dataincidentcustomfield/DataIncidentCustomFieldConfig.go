@@ -21,7 +21,7 @@ type DataIncidentCustomFieldConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human readable name for the custom field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/custom_field#name DataIncidentCustomField#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/custom_field#name DataIncidentCustomField#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

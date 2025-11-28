@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/escalationpath/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path incident_escalation_path}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path incident_escalation_path}.
 type EscalationPath interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_EscalationPath) WorkingHoursInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path incident_escalation_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path incident_escalation_path} Resource.
 func NewEscalationPath(scope constructs.Construct, id *string, config *EscalationPathConfig) EscalationPath {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewEscalationPath(scope constructs.Construct, id *string, config *Escalatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path incident_escalation_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path incident_escalation_path} Resource.
 func NewEscalationPath_Override(e EscalationPath, scope constructs.Construct, id *string, config *EscalationPathConfig) {
 	_init_.Initialize()
 

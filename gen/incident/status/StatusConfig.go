@@ -23,15 +23,15 @@ type StatusConfig struct {
 	//
 	// All statuses apart from live (renamed in the app to Active) and learning (renamed in the app to Post-incident) are managed by incident.io and cannot be configured. Possible values are: `triage`, `declined`, `merged`, `canceled`, `live`, `learning`, `closed`, `paused`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status#category Status#category}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status#category Status#category}
 	Category *string `field:"required" json:"category" yaml:"category"`
 	// Rich text description of the incident status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status#description Status#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status#description Status#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Unique name of this status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/status#name Status#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/status#name Status#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/catalogtype/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type incident_catalog_type}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type incident_catalog_type}.
 type CatalogType interface {
 	cdktf.TerraformResource
 	Categories() *[]*string
@@ -435,7 +435,7 @@ func (j *jsiiProxy_CatalogType) UseNameAsIdentifierInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type incident_catalog_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type incident_catalog_type} Resource.
 func NewCatalogType(scope constructs.Construct, id *string, config *CatalogTypeConfig) CatalogType {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewCatalogType(scope constructs.Construct, id *string, config *CatalogTypeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_type incident_catalog_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_type incident_catalog_type} Resource.
 func NewCatalogType_Override(c CatalogType, scope constructs.Construct, id *string, config *CatalogTypeConfig) {
 	_init_.Initialize()
 

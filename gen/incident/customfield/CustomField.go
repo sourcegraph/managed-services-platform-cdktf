@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/customfield/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field incident_custom_field}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field incident_custom_field}.
 type CustomField interface {
 	cdktf.TerraformResource
 	CatalogTypeId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_CustomField) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field incident_custom_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field incident_custom_field} Resource.
 func NewCustomField(scope constructs.Construct, id *string, config *CustomFieldConfig) CustomField {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewCustomField(scope constructs.Construct, id *string, config *CustomFieldC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field incident_custom_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field incident_custom_field} Resource.
 func NewCustomField_Override(c CustomField, scope constructs.Construct, id *string, config *CustomFieldConfig) {
 	_init_.Initialize()
 

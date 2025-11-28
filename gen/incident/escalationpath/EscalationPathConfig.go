@@ -21,24 +21,24 @@ type EscalationPathConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this escalation path, for the user's reference.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path#name EscalationPath#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path#name EscalationPath#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The nodes that form the levels and branches of this escalation path.
 	//
 	// -->**Note** Although the `if_else` block is recursive, currently a maximum of 3 levels are supported. Attempting to configure more than 3 levels of nesting will result in a schema error.
 	//
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path#path EscalationPath#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path#path EscalationPath#path}
 	Path interface{} `field:"required" json:"path" yaml:"path"`
 	// IDs of the teams that own this escalation path.
 	//
 	// This will automatically sync escalation paths with the right teams in Catalog. If you have an escalation paths attribute on your Teams, this attribute is required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path#team_ids EscalationPath#team_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path#team_ids EscalationPath#team_ids}
 	TeamIds *[]*string `field:"optional" json:"teamIds" yaml:"teamIds"`
 	// The working hours for this escalation path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/escalation_path#working_hours EscalationPath#working_hours}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/escalation_path#working_hours EscalationPath#working_hours}
 	WorkingHours interface{} `field:"optional" json:"workingHours" yaml:"workingHours"`
 }
 

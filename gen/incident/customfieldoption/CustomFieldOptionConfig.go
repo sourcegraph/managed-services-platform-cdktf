@@ -21,15 +21,15 @@ type CustomFieldOptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the custom field this option belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field_option#custom_field_id CustomFieldOption#custom_field_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field_option#custom_field_id CustomFieldOption#custom_field_id}
 	CustomFieldId *string `field:"required" json:"customFieldId" yaml:"customFieldId"`
 	// Human readable name for the custom field option.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field_option#value CustomFieldOption#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field_option#value CustomFieldOption#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Sort key used to order the custom field options correctly.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/custom_field_option#sort_key CustomFieldOption#sort_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/custom_field_option#sort_key CustomFieldOption#sort_key}
 	SortKey *float64 `field:"optional" json:"sortKey" yaml:"sortKey"`
 }
 

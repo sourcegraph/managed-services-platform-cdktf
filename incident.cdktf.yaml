@@ -3,7 +3,7 @@ name: incident
 provider:
   # https://registry.terraform.io/providers/incident-io/incident/latest
   source: registry.terraform.io/incident-io/incident
-  version: "5.17.0"
+  version: "5.19.1"
 
 target:
   language: go

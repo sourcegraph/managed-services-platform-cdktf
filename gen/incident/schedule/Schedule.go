@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/schedule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule incident_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule incident_schedule}.
 type Schedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_Schedule) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule incident_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule incident_schedule} Resource.
 func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig) Schedule {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewSchedule(scope constructs.Construct, id *string, config *ScheduleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/schedule incident_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/schedule incident_schedule} Resource.
 func NewSchedule_Override(s Schedule, scope constructs.Construct, id *string, config *ScheduleConfig) {
 	_init_.Initialize()
 

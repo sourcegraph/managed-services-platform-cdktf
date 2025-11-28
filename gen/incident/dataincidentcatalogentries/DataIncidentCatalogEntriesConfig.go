@@ -21,7 +21,7 @@ type DataIncidentCatalogEntriesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The catalog type ID to list entries for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/catalog_entries#catalog_type_id DataIncidentCatalogEntries#catalog_type_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/catalog_entries#catalog_type_id DataIncidentCatalogEntries#catalog_type_id}
 	CatalogTypeId *string `field:"required" json:"catalogTypeId" yaml:"catalogTypeId"`
 }
 

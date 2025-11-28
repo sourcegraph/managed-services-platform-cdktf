@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/incident/catalogentry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_entry incident_catalog_entry}.
+// Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_entry incident_catalog_entry}.
 type CatalogEntry interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_CatalogEntry) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_entry incident_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_entry incident_catalog_entry} Resource.
 func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntryConfig) CatalogEntry {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/resources/catalog_entry incident_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/resources/catalog_entry incident_catalog_entry} Resource.
 func NewCatalogEntry_Override(c CatalogEntry, scope constructs.Construct, id *string, config *CatalogEntryConfig) {
 	_init_.Initialize()
 

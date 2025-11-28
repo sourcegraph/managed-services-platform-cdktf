@@ -21,7 +21,7 @@ type DataIncidentAlertSourcesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Filter alert sources by source type (e.g., 'webhook', 'email', 'jira'). If provided, only alert sources of this type will be returned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.17.0/docs/data-sources/alert_sources#source_type DataIncidentAlertSources#source_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.19.1/docs/data-sources/alert_sources#source_type DataIncidentAlertSources#source_type}
 	SourceType *string `field:"optional" json:"sourceType" yaml:"sourceType"`
 }
 
