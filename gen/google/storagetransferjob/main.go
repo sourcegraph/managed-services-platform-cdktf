@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
-		reflect.TypeOf((*StorageTransferJob)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferSpec", GoGetter: "TransferSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "transferSpecInput", GoGetter: "TransferSpecInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobConfig",
-		reflect.TypeOf((*StorageTransferJobConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobEventStream",
-		reflect.TypeOf((*StorageTransferJobEventStream)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobEventStream](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobEventStreamOutputReference",
-		reflect.TypeOf((*StorageTransferJobEventStreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobEventStreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobEventStreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobLoggingConfig",
-		reflect.TypeOf((*StorageTransferJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobLoggingConfigOutputReference",
-		reflect.TypeOf((*StorageTransferJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,11 +195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobNotificationConfig",
-		reflect.TypeOf((*StorageTransferJobNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobNotificationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobNotificationConfigOutputReference",
-		reflect.TypeOf((*StorageTransferJobNotificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobNotificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,15 +238,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpec",
-		reflect.TypeOf((*StorageTransferJobReplicationSpec)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSink",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecGcsDataSink)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecGcsDataSink](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSinkOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecGcsDataSinkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecGcsDataSinkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecGcsDataSinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,11 +283,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSource",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecGcsDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecGcsDataSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecGcsDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecGcsDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecGcsDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecObjectConditions",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecObjectConditions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecObjectConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecObjectConditionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecObjectConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecObjectConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecObjectConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -378,7 +378,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -418,7 +418,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferOptions", GoGetter: "TransferOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "transferOptionsInput", GoGetter: "TransferOptionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -426,15 +426,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptions",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecTransferOptions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecTransferOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptions",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecTransferOptionsMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecTransferOptionsMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberProperty{JsiiProperty: "aclInput", GoGetter: "AclInput"},
@@ -485,7 +485,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "uidInput", GoGetter: "UidInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -493,7 +493,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobReplicationSpecTransferOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobReplicationSpecTransferOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -533,7 +533,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobReplicationSpecTransferOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -541,11 +541,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobSchedule",
-		reflect.TypeOf((*StorageTransferJobSchedule)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleOutputReference",
-		reflect.TypeOf((*StorageTransferJobScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -583,7 +583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -591,11 +591,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDate",
-		reflect.TypeOf((*StorageTransferJobScheduleScheduleEndDate)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleScheduleEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDateOutputReference",
-		reflect.TypeOf((*StorageTransferJobScheduleScheduleEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleScheduleEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobScheduleScheduleEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -633,11 +633,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDate",
-		reflect.TypeOf((*StorageTransferJobScheduleScheduleStartDate)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleScheduleStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDateOutputReference",
-		reflect.TypeOf((*StorageTransferJobScheduleScheduleStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleScheduleStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobScheduleScheduleStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,11 +675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay",
-		reflect.TypeOf((*StorageTransferJobScheduleStartTimeOfDay)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleStartTimeOfDay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
-		reflect.TypeOf((*StorageTransferJobScheduleStartTimeOfDayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobScheduleStartTimeOfDayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -711,7 +711,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -719,19 +719,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpec",
-		reflect.TypeOf((*StorageTransferJobTransferSpec)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAwsS3DataSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -759,7 +759,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -767,7 +767,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAwsS3DataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKey", GoGetter: "AwsAccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeyInput", GoGetter: "AwsAccessKeyInput"},
@@ -806,7 +806,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -814,15 +814,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAzureBlobStorageDataSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -848,7 +848,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -856,7 +856,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureCredentials", GoGetter: "AzureCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "azureCredentialsInput", GoGetter: "AzureCredentialsInput"},
@@ -890,7 +890,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -898,11 +898,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink",
-		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSink)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecGcsDataSink](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSinkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecGcsDataSinkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -931,7 +931,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecGcsDataSinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -939,11 +939,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecGcsDataSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecGcsDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -972,7 +972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecGcsDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -980,11 +980,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecHdfsDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecHdfsDataSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecHdfsDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecHdfsDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1018,11 +1018,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecHttpDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecHttpDataSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecHttpDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecHttpDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1048,7 +1048,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecHttpDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1056,11 +1056,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditions",
-		reflect.TypeOf((*StorageTransferJobTransferSpecObjectConditions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecObjectConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecObjectConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecObjectConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1102,7 +1102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1110,7 +1110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsS3DataSource", GoGetter: "AwsS3DataSource"},
 			_jsii_.MemberProperty{JsiiProperty: "awsS3DataSourceInput", GoGetter: "AwsS3DataSourceInput"},
@@ -1180,7 +1180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferOptions", GoGetter: "TransferOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "transferOptionsInput", GoGetter: "TransferOptionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1188,11 +1188,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink",
-		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSink)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecPosixDataSink](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSinkOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSinkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecPosixDataSinkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1218,7 +1218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecPosixDataSinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1226,11 +1226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource",
-		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSource)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecPosixDataSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecPosixDataSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1256,7 +1256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecPosixDataSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1264,15 +1264,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions",
-		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecTransferOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptions",
-		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptionsMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecTransferOptionsMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberProperty{JsiiProperty: "aclInput", GoGetter: "AclInput"},
@@ -1323,7 +1323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "uidInput", GoGetter: "UidInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1331,7 +1331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference",
-		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferJobTransferSpecTransferOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1371,7 +1371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

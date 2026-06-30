@@ -22,18 +22,18 @@ type DeveloperConnectConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyConfig() DeveloperConnectConnectionCryptoKeyConfigOutputReference
 	CryptoKeyConfigInput() *DeveloperConnectConnectionCryptoKeyConfig
@@ -42,9 +42,9 @@ type DeveloperConnectConnection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
@@ -91,30 +91,30 @@ type DeveloperConnectConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DeveloperConnectConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,7 +132,7 @@ type DeveloperConnectConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -144,7 +144,7 @@ type DeveloperConnectConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -176,17 +176,17 @@ type DeveloperConnectConnection interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DeveloperConnectConnection
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) ConnectionIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -674,8 +674,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -714,8 +714,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_DeveloperConnectConnection) Timeouts() DeveloperConnectConnec
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -774,7 +774,6 @@ func (j *jsiiProxy_DeveloperConnectConnection) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
 func NewDeveloperConnectConnection(scope constructs.Construct, id *string, config *DeveloperConnectConnectionConfig) DeveloperConnectConnection {
 	_init_.Initialize()
@@ -786,7 +785,7 @@ func NewDeveloperConnectConnection(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -799,12 +798,12 @@ func NewDeveloperConnectConnection_Override(d DeveloperConnectConnection, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetAnnotations(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetConnectionId(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -856,7 +855,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetDisabled(val interface{}) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetEtag(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -886,7 +885,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetId(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetLocation(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetProject(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -949,7 +948,7 @@ func (j *jsiiProxy_DeveloperConnectConnection)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DeveloperConnectConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -972,7 +971,7 @@ func DeveloperConnectConnection_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func DeveloperConnectConnection_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DeveloperConnectConnection_IsConstruct(x interface{}) *bool {
+func DeveloperConnectConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeveloperConnectConnection_IsConstructParameters(x); err != nil {
@@ -1007,7 +1006,7 @@ func DeveloperConnectConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func DeveloperConnectConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DeveloperConnectConnection_IsTerraformElement(x interface{}) *bool {
+func DeveloperConnectConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeveloperConnectConnection_IsTerraformElementParameters(x); err != nil {
@@ -1026,7 +1025,7 @@ func DeveloperConnectConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func DeveloperConnectConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DeveloperConnectConnection_IsTerraformResource(x interface{}) *bool {
+func DeveloperConnectConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeveloperConnectConnection_IsTerraformResourceParameters(x); err != nil {
@@ -1045,7 +1044,7 @@ func DeveloperConnectConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1070,31 +1069,31 @@ func (d *jsiiProxy_DeveloperConnectConnection) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DeveloperConnectConnection) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeveloperConnectConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,7 +1109,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1126,7 +1125,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1142,7 +1141,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1158,7 +1157,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1174,7 +1173,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1190,7 +1189,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1206,7 +1205,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1222,15 +1221,15 @@ func (d *jsiiProxy_DeveloperConnectConnection) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1249,7 +1248,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1262,7 +1261,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1276,18 +1275,18 @@ func (d *jsiiProxy_DeveloperConnectConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DeveloperConnectConnection) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1298,7 +1297,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1309,7 +1308,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1320,7 +1319,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutBitbucketCloudConfig(value *De
 	_jsii_.InvokeVoid(
 		d,
 		"putBitbucketCloudConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1331,7 +1330,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutBitbucketDataCenterConfig(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putBitbucketDataCenterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1342,7 +1341,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutCryptoKeyConfig(value *Develop
 	_jsii_.InvokeVoid(
 		d,
 		"putCryptoKeyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1353,7 +1352,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutGithubConfig(value *DeveloperC
 	_jsii_.InvokeVoid(
 		d,
 		"putGithubConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1364,7 +1363,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutGithubEnterpriseConfig(value *
 	_jsii_.InvokeVoid(
 		d,
 		"putGithubEnterpriseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1375,7 +1374,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutGitlabConfig(value *DeveloperC
 	_jsii_.InvokeVoid(
 		d,
 		"putGitlabConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1386,7 +1385,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutGitlabEnterpriseConfig(value *
 	_jsii_.InvokeVoid(
 		d,
 		"putGitlabEnterpriseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1397,7 +1396,7 @@ func (d *jsiiProxy_DeveloperConnectConnection) PutTimeouts(value *DeveloperConne
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1521,8 +1520,8 @@ func (d *jsiiProxy_DeveloperConnectConnection) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1534,8 +1533,8 @@ func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1547,8 +1546,8 @@ func (d *jsiiProxy_DeveloperConnectConnection) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1560,8 +1559,8 @@ func (d *jsiiProxy_DeveloperConnectConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1586,8 +1585,8 @@ func (d *jsiiProxy_DeveloperConnectConnection) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeveloperConnectConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1598,4 +1597,3 @@ func (d *jsiiProxy_DeveloperConnectConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

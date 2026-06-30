@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodeConfigKubeletConfig struct {
 	// Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
 	//
@@ -17,7 +16,7 @@ type ContainerClusterNodeConfigKubeletConfig struct {
 	// Enable CPU CFS quota enforcement for containers that specify CPU limits.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
-	CpuCfsQuota interface{} `field:"optional" json:"cpuCfsQuota" yaml:"cpuCfsQuota"`
+	CpuCfsQuota any `field:"optional" json:"cpuCfsQuota" yaml:"cpuCfsQuota"`
 	// Set the CPU CFS quota period value 'cpu.cfs_period_us'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
@@ -55,4 +54,3 @@ type ContainerClusterNodeConfigKubeletConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
 	PodPidsLimit *float64 `field:"optional" json:"podPidsLimit" yaml:"podPidsLimit"`
 }
-

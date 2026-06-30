@@ -12,9 +12,9 @@ type BeyondcorpApplicationEndpointMatchersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type BeyondcorpApplicationEndpointMatchersOutputReference interface {
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ports() *[]*float64
 	SetPorts(val *[]*float64)
 	PortsInput() *[]*float64
@@ -46,7 +46,7 @@ type BeyondcorpApplicationEndpointMatchersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type BeyondcorpApplicationEndpointMatchersOutputReference interface {
 	ResetPorts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Hostnam
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Terrafo
 	return returns
 }
 
-
 func NewBeyondcorpApplicationEndpointMatchersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BeyondcorpApplicationEndpointMatchersOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewBeyondcorpApplicationEndpointMatchersOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplicationEndpointMatchersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewBeyondcorpApplicationEndpointMatchersOutputReference_Override(b Beyondco
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplicationEndpointMatchersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetHostn
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetPorts(val *[]*float64) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetPorts(val *[]*float64) {
 	if err := j.validateSetPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetPorts
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Compute
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetBool
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetBool
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetList
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetNumb
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetNumb
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetNumb
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetStri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) GetStri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Interpo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) ResetPo
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) ToStrin
 
 	return returns
 }
-

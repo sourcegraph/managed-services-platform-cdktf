@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
-		reflect.TypeOf((*FirestoreIndex)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndex](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndex{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexConfig",
-		reflect.TypeOf((*FirestoreIndexConfig)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFields",
-		reflect.TypeOf((*FirestoreIndexFields)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsList",
-		reflect.TypeOf((*FirestoreIndexFieldsList)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndexFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsOutputReference",
-		reflect.TypeOf((*FirestoreIndexFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayConfig", GoGetter: "ArrayConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayConfigInput", GoGetter: "ArrayConfigInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vectorConfig", GoGetter: "VectorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorConfigInput", GoGetter: "VectorConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndexFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,15 +167,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfig",
-		reflect.TypeOf((*FirestoreIndexFieldsVectorConfig)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsVectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigFlat",
-		reflect.TypeOf((*FirestoreIndexFieldsVectorConfigFlat)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsVectorConfigFlat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigFlatOutputReference",
-		reflect.TypeOf((*FirestoreIndexFieldsVectorConfigFlatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsVectorConfigFlatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndexFieldsVectorConfigFlatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigOutputReference",
-		reflect.TypeOf((*FirestoreIndexFieldsVectorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexFieldsVectorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexTimeouts",
-		reflect.TypeOf((*FirestoreIndexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndexTimeoutsOutputReference",
-		reflect.TypeOf((*FirestoreIndexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreIndexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreIndexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -235,7 +235,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetVerboseParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetVerboseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewClouddeployTargetExecutionConfigsOutputReferenceParameters(terra
 
 	return nil
 }
-

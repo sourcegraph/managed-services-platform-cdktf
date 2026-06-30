@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway",
-		reflect.TypeOf((*BeyondcorpSecurityGateway)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGateway](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGateway{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubs",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayHubs)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayHubs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGateway",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayHubsInternetGateway)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayHubsInternetGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignedIps", GoGetter: "AssignedIps"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsList",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayHubsList)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayHubsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayHubsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -156,7 +156,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsOutputReference",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayHubsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayHubsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeoutsOutputReference",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

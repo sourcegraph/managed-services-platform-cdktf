@@ -19,7 +19,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func validateGkeonpremVmwareAdminCluster_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGkeonpremVmwareAdminCluster_IsConstructParameters(x interface{}) error {
+func validateGkeonpremVmwareAdminCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func validateGkeonpremVmwareAdminCluster_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGkeonpremVmwareAdminCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGkeonpremVmwareAdminCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func validateGkeonpremVmwareAdminCluster_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGkeonpremVmwareAdminCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGkeonpremVmwareAdminCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetBootstrapClusterMembe
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -535,7 +535,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -599,4 +599,3 @@ func validateNewGkeonpremVmwareAdminClusterParameters(scope constructs.Construct
 
 	return nil
 }
-

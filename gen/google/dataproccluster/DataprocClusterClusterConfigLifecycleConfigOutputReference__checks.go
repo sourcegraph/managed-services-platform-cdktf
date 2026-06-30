@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigLifecycleConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigLifecycleConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocClusterClusterConfigLifecycleConfigOutputReferenceParame
 
 	return nil
 }
-

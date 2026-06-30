@@ -15,15 +15,15 @@ type VmwareengineNetwork interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,20 +62,20 @@ type VmwareengineNetwork interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VmwareengineNetworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -85,9 +85,9 @@ type VmwareengineNetwork interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type VmwareengineNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type VmwareengineNetwork interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type VmwareengineNetwork interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VmwareengineNetwork
@@ -160,8 +160,8 @@ func (j *jsiiProxy_VmwareengineNetwork) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetwork) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_VmwareengineNetwork) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineNetwork) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_VmwareengineNetwork) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetwork) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_VmwareengineNetwork) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VmwareengineNetwork) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_VmwareengineNetwork) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetwork) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_VmwareengineNetwork) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineNetwork) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_VmwareengineNetwork) Timeouts() VmwareengineNetworkTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetwork) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetwork) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -480,7 +480,6 @@ func (j *jsiiProxy_VmwareengineNetwork) VpcNetworks() VmwareengineNetworkVpcNetw
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vmwareengine_network google_vmwareengine_network} Resource.
 func NewVmwareengineNetwork(scope constructs.Construct, id *string, config *VmwareengineNetworkConfig) VmwareengineNetwork {
 	_init_.Initialize()
@@ -492,7 +491,7 @@ func NewVmwareengineNetwork(scope constructs.Construct, id *string, config *Vmwa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewVmwareengineNetwork_Override(v VmwareengineNetwork, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetConnection(val interface{}) {
+func (j *jsiiProxy_VmwareengineNetwork) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetCount(val interface{}) {
+func (j *jsiiProxy_VmwareengineNetwork) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetDescription(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VmwareengineNetwork) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetId(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VmwareengineNetwork) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetLocation(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetName(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetProject(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VmwareengineNetwork) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VmwareengineNetwork) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_VmwareengineNetwork)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetwork)SetType(val *string) {
+func (j *jsiiProxy_VmwareengineNetwork) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func VmwareengineNetwork_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func VmwareengineNetwork_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VmwareengineNetwork_IsConstruct(x interface{}) *bool {
+func VmwareengineNetwork_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineNetwork_IsConstructParameters(x); err != nil {
@@ -691,7 +690,7 @@ func VmwareengineNetwork_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func VmwareengineNetwork_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineNetwork_IsTerraformElement(x interface{}) *bool {
+func VmwareengineNetwork_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineNetwork_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func VmwareengineNetwork_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func VmwareengineNetwork_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineNetwork_IsTerraformResource(x interface{}) *bool {
+func VmwareengineNetwork_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineNetwork_IsTerraformResourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func VmwareengineNetwork_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineNetwork.VmwareengineNetwork",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,31 +753,31 @@ func (v *jsiiProxy_VmwareengineNetwork) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VmwareengineNetwork) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (v *jsiiProxy_VmwareengineNetwork) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,15 +905,15 @@ func (v *jsiiProxy_VmwareengineNetwork) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineNetwork) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -933,7 +932,7 @@ func (v *jsiiProxy_VmwareengineNetwork) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -946,7 +945,7 @@ func (v *jsiiProxy_VmwareengineNetwork) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,18 +959,18 @@ func (v *jsiiProxy_VmwareengineNetwork) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VmwareengineNetwork) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -982,7 +981,7 @@ func (v *jsiiProxy_VmwareengineNetwork) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -993,7 +992,7 @@ func (v *jsiiProxy_VmwareengineNetwork) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (v *jsiiProxy_VmwareengineNetwork) PutTimeouts(value *VmwareengineNetworkTi
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1048,8 +1047,8 @@ func (v *jsiiProxy_VmwareengineNetwork) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineNetwork) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1061,8 +1060,8 @@ func (v *jsiiProxy_VmwareengineNetwork) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineNetwork) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1074,8 +1073,8 @@ func (v *jsiiProxy_VmwareengineNetwork) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineNetwork) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1087,8 +1086,8 @@ func (v *jsiiProxy_VmwareengineNetwork) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineNetwork) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1113,8 +1112,8 @@ func (v *jsiiProxy_VmwareengineNetwork) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetwork) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineNetwork) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1125,4 +1124,3 @@ func (v *jsiiProxy_VmwareengineNetwork) ToTerraform() interface{} {
 
 	return returns
 }
-

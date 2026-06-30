@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) valid
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoListParameters
 
 	return nil
 }
-

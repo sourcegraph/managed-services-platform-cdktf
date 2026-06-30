@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tpuNode.TpuNode",
-		reflect.TypeOf((*TpuNode)(nil)).Elem(),
+		reflect.TypeFor[TpuNode](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypeInput", GoGetter: "AcceleratorTypeInput"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TpuNode{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,15 +103,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tpuNode.TpuNodeConfig",
-		reflect.TypeOf((*TpuNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints",
-		reflect.TypeOf((*TpuNodeNetworkEndpoints)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeNetworkEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList",
-		reflect.TypeOf((*TpuNodeNetworkEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeNetworkEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TpuNodeNetworkEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
-		reflect.TypeOf((*TpuNodeNetworkEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeNetworkEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TpuNodeNetworkEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,11 +166,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig",
-		reflect.TypeOf((*TpuNodeSchedulingConfig)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeSchedulingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference",
-		reflect.TypeOf((*TpuNodeSchedulingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeSchedulingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TpuNodeSchedulingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,11 +204,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tpuNode.TpuNodeTimeouts",
-		reflect.TypeOf((*TpuNodeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference",
-		reflect.TypeOf((*TpuNodeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TpuNodeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TpuNodeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

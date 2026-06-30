@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
-		reflect.TypeOf((*DialogflowCxWebhook)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,19 +98,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig",
-		reflect.TypeOf((*DialogflowCxWebhookConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebService)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebService](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfig",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpointInput", GoGetter: "TokenEndpointInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCerts", GoGetter: "AllowedCaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCertsInput", GoGetter: "AllowedCaCertsInput"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookType", GoGetter: "WebhookType"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookTypeInput", GoGetter: "WebhookTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,19 +283,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectory",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectory)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectory](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebService)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebService](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpointInput", GoGetter: "TokenEndpointInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,7 +340,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCerts", GoGetter: "AllowedCaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCertsInput", GoGetter: "AllowedCaCertsInput"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookType", GoGetter: "WebhookType"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookTypeInput", GoGetter: "WebhookTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -406,11 +406,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -432,7 +432,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -460,7 +460,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -468,7 +468,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookServiceDirectoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookServiceDirectoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,11 +506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts",
-		reflect.TypeOf((*DialogflowCxWebhookTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxWebhookTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxWebhookTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -543,7 +543,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxWebhookTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

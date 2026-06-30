@@ -15,15 +15,15 @@ type DataprocJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type DataprocJob interface {
 	DriverControlsFilesUri() *string
 	DriverOutputResourceUri() *string
 	EffectiveLabels() cdktf.StringMap
-	ForceDelete() interface{}
-	SetForceDelete(val interface{})
-	ForceDeleteInput() interface{}
+	ForceDelete() any
+	SetForceDelete(val any)
+	ForceDeleteInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,13 +72,13 @@ type DataprocJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PysparkConfig() DataprocJobPysparkConfigOutputReference
 	PysparkConfigInput() *DataprocJobPysparkConfig
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reference() DataprocJobReferenceOutputReference
 	ReferenceInput() *DataprocJobReference
 	Region() *string
@@ -95,18 +95,18 @@ type DataprocJob interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocJobTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type DataprocJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type DataprocJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -172,17 +172,17 @@ type DataprocJob interface {
 	ResetSparkConfig()
 	ResetSparksqlConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocJob
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DataprocJob) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DataprocJob) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DataprocJob) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataprocJob) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) ForceDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) ForceDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDelete",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_DataprocJob) ForceDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) ForceDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) ForceDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDeleteInput",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_DataprocJob) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_DataprocJob) PysparkConfigInput() *DataprocJobPysparkConfig {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -680,8 +680,8 @@ func (j *jsiiProxy_DataprocJob) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_DataprocJob) Timeouts() DataprocJobTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJob) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJob) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -719,7 +719,6 @@ func (j *jsiiProxy_DataprocJob) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_job google_dataproc_job} Resource.
 func NewDataprocJob(scope constructs.Construct, id *string, config *DataprocJobConfig) DataprocJob {
@@ -732,7 +731,7 @@ func NewDataprocJob(scope constructs.Construct, id *string, config *DataprocJobC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -745,12 +744,12 @@ func NewDataprocJob_Override(d DataprocJob, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_DataprocJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_DataprocJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -780,7 +779,7 @@ func (j *jsiiProxy_DataprocJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetForceDelete(val interface{}) {
+func (j *jsiiProxy_DataprocJob) SetForceDelete(val any) {
 	if err := j.validateSetForceDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_DataprocJob)SetForceDelete(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -799,7 +798,7 @@ func (j *jsiiProxy_DataprocJob)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetId(val *string) {
+func (j *jsiiProxy_DataprocJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_DataprocJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocJob) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_DataprocJob)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_DataprocJob)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetProject(val *string) {
+func (j *jsiiProxy_DataprocJob) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_DataprocJob)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -851,7 +850,7 @@ func (j *jsiiProxy_DataprocJob)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_DataprocJob)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJob)SetRegion(val *string) {
+func (j *jsiiProxy_DataprocJob) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func DataprocJob_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func DataprocJob_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocJob_IsConstruct(x interface{}) *bool {
+func DataprocJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocJob_IsConstructParameters(x); err != nil {
@@ -920,7 +919,7 @@ func DataprocJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func DataprocJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocJob_IsTerraformElement(x interface{}) *bool {
+func DataprocJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocJob_IsTerraformElementParameters(x); err != nil {
@@ -939,7 +938,7 @@ func DataprocJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func DataprocJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocJob_IsTerraformResource(x interface{}) *bool {
+func DataprocJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocJob_IsTerraformResourceParameters(x); err != nil {
@@ -958,7 +957,7 @@ func DataprocJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -983,31 +982,31 @@ func (d *jsiiProxy_DataprocJob) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocJob) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocJob) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (d *jsiiProxy_DataprocJob) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (d *jsiiProxy_DataprocJob) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (d *jsiiProxy_DataprocJob) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (d *jsiiProxy_DataprocJob) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (d *jsiiProxy_DataprocJob) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func (d *jsiiProxy_DataprocJob) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func (d *jsiiProxy_DataprocJob) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1135,15 +1134,15 @@ func (d *jsiiProxy_DataprocJob) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1162,7 +1161,7 @@ func (d *jsiiProxy_DataprocJob) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (d *jsiiProxy_DataprocJob) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1189,18 +1188,18 @@ func (d *jsiiProxy_DataprocJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocJob) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocJob) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (d *jsiiProxy_DataprocJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1222,7 +1221,7 @@ func (d *jsiiProxy_DataprocJob) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1233,7 +1232,7 @@ func (d *jsiiProxy_DataprocJob) PutHadoopConfig(value *DataprocJobHadoopConfig) 
 	_jsii_.InvokeVoid(
 		d,
 		"putHadoopConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1244,7 +1243,7 @@ func (d *jsiiProxy_DataprocJob) PutHiveConfig(value *DataprocJobHiveConfig) {
 	_jsii_.InvokeVoid(
 		d,
 		"putHiveConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1255,7 +1254,7 @@ func (d *jsiiProxy_DataprocJob) PutPigConfig(value *DataprocJobPigConfig) {
 	_jsii_.InvokeVoid(
 		d,
 		"putPigConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1266,7 +1265,7 @@ func (d *jsiiProxy_DataprocJob) PutPlacement(value *DataprocJobPlacement) {
 	_jsii_.InvokeVoid(
 		d,
 		"putPlacement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1277,7 +1276,7 @@ func (d *jsiiProxy_DataprocJob) PutPrestoConfig(value *DataprocJobPrestoConfig) 
 	_jsii_.InvokeVoid(
 		d,
 		"putPrestoConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1288,7 +1287,7 @@ func (d *jsiiProxy_DataprocJob) PutPysparkConfig(value *DataprocJobPysparkConfig
 	_jsii_.InvokeVoid(
 		d,
 		"putPysparkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1299,7 +1298,7 @@ func (d *jsiiProxy_DataprocJob) PutReference(value *DataprocJobReference) {
 	_jsii_.InvokeVoid(
 		d,
 		"putReference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1310,7 +1309,7 @@ func (d *jsiiProxy_DataprocJob) PutScheduling(value *DataprocJobScheduling) {
 	_jsii_.InvokeVoid(
 		d,
 		"putScheduling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1321,7 +1320,7 @@ func (d *jsiiProxy_DataprocJob) PutSparkConfig(value *DataprocJobSparkConfig) {
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1332,7 +1331,7 @@ func (d *jsiiProxy_DataprocJob) PutSparksqlConfig(value *DataprocJobSparksqlConf
 	_jsii_.InvokeVoid(
 		d,
 		"putSparksqlConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1343,7 +1342,7 @@ func (d *jsiiProxy_DataprocJob) PutTimeouts(value *DataprocJobTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1475,8 +1474,8 @@ func (d *jsiiProxy_DataprocJob) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataprocJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1488,8 +1487,8 @@ func (d *jsiiProxy_DataprocJob) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1501,8 +1500,8 @@ func (d *jsiiProxy_DataprocJob) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1514,8 +1513,8 @@ func (d *jsiiProxy_DataprocJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJob) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1540,8 +1539,8 @@ func (d *jsiiProxy_DataprocJob) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJob) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1552,4 +1551,3 @@ func (d *jsiiProxy_DataprocJob) ToTerraform() interface{} {
 
 	return returns
 }
-

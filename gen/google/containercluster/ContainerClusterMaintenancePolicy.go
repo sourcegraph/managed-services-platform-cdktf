@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterMaintenancePolicy struct {
 	// daily_maintenance_window block.
 	//
@@ -9,10 +8,9 @@ type ContainerClusterMaintenancePolicy struct {
 	// maintenance_exclusion block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#maintenance_exclusion ContainerCluster#maintenance_exclusion}
-	MaintenanceExclusion interface{} `field:"optional" json:"maintenanceExclusion" yaml:"maintenanceExclusion"`
+	MaintenanceExclusion any `field:"optional" json:"maintenanceExclusion" yaml:"maintenanceExclusion"`
 	// recurring_window block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#recurring_window ContainerCluster#recurring_window}
 	RecurringWindow *ContainerClusterMaintenancePolicyRecurringWindow `field:"optional" json:"recurringWindow" yaml:"recurringWindow"`
 }
-

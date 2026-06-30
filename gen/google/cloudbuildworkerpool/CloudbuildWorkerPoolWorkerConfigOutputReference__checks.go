@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateSetM
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateSetNoExternalIpParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference) validateSetNoExternalIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudbuildWorkerPoolWorkerConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

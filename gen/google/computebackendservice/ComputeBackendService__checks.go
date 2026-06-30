@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeBackendService) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeBackendService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeBackendService) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeBackendService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeBackendService) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendService) validatePutBackendParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendService) validatePutBackendParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (c *jsiiProxy_ComputeBackendService) validatePutConsistentHashParameters(va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *Comput
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendService) validatePutLocalityLbPoliciesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendService) validatePutLocalityLbPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -434,7 +434,7 @@ func validateComputeBackendService_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateComputeBackendService_IsConstructParameters(x interface{}) error {
+func validateComputeBackendService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func validateComputeBackendService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeBackendService_IsTerraformElementParameters(x interface{}) error {
+func validateComputeBackendService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -450,7 +450,7 @@ func validateComputeBackendService_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateComputeBackendService_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeBackendService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ComputeBackendService) validateSetCompressionModeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -515,7 +515,7 @@ func (j *jsiiProxy_ComputeBackendService) validateSetConnectionDrainingTimeoutSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -604,7 +604,7 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEdgeSecurityPolicyParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -720,7 +720,7 @@ func (j *jsiiProxy_ComputeBackendService) validateSetProtocolParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeBackendService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -816,4 +816,3 @@ func validateNewComputeBackendServiceParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

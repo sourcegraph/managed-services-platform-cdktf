@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateSetConnectM
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewFilestoreInstanceNetworksOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

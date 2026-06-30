@@ -1,6 +1,5 @@
 package bigqueryjob
 
-
 type BigqueryJobQuery struct {
 	// SQL query text to execute.
 	//
@@ -16,7 +15,7 @@ type BigqueryJobQuery struct {
 	// However, you must still set destinationTable when result size exceeds the allowed maximum response size.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#allow_large_results BigqueryJob#allow_large_results}
-	AllowLargeResults interface{} `field:"optional" json:"allowLargeResults" yaml:"allowLargeResults"`
+	AllowLargeResults any `field:"optional" json:"allowLargeResults" yaml:"allowLargeResults"`
 	// Specifies whether the job is allowed to create new tables.
 	//
 	// The following values are supported:
@@ -43,7 +42,7 @@ type BigqueryJobQuery struct {
 	// allowLargeResults must be true if this is set to false. For standard SQL queries, this flag is ignored and results are never flattened.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#flatten_results BigqueryJob#flatten_results}
-	FlattenResults interface{} `field:"optional" json:"flattenResults" yaml:"flattenResults"`
+	FlattenResults any `field:"optional" json:"flattenResults" yaml:"flattenResults"`
 	// Limits the billing tier for this job.
 	//
 	// Queries that have resource usage beyond this tier will fail (without incurring a charge).
@@ -89,7 +88,7 @@ type BigqueryJobQuery struct {
 	// If set to false, the query will use BigQuery's standard SQL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#use_legacy_sql BigqueryJob#use_legacy_sql}
-	UseLegacySql interface{} `field:"optional" json:"useLegacySql" yaml:"useLegacySql"`
+	UseLegacySql any `field:"optional" json:"useLegacySql" yaml:"useLegacySql"`
 	// Whether to look for the result in the query cache.
 	//
 	// The query cache is a best-effort cache that will be flushed whenever
@@ -97,11 +96,11 @@ type BigqueryJobQuery struct {
 	// The default value is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#use_query_cache BigqueryJob#use_query_cache}
-	UseQueryCache interface{} `field:"optional" json:"useQueryCache" yaml:"useQueryCache"`
+	UseQueryCache any `field:"optional" json:"useQueryCache" yaml:"useQueryCache"`
 	// user_defined_function_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#user_defined_function_resources BigqueryJob#user_defined_function_resources}
-	UserDefinedFunctionResources interface{} `field:"optional" json:"userDefinedFunctionResources" yaml:"userDefinedFunctionResources"`
+	UserDefinedFunctionResources any `field:"optional" json:"userDefinedFunctionResources" yaml:"userDefinedFunctionResources"`
 	// Specifies the action that occurs if the destination table already exists.
 	//
 	// The following values are supported:
@@ -114,4 +113,3 @@ type BigqueryJobQuery struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_job#write_disposition BigqueryJob#write_disposition}
 	WriteDisposition *string `field:"optional" json:"writeDisposition" yaml:"writeDisposition"`
 }
-

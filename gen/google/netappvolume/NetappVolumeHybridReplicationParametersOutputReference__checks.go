@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewNetappVolumeHybridReplicationParametersOutputReferenceParameters
 
 	return nil
 }
-

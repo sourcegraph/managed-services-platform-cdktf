@@ -1,15 +1,14 @@
 package computeinstance
 
-
 type ComputeInstanceNetworkInterface struct {
 	// access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance#access_config ComputeInstance#access_config}
-	AccessConfig interface{} `field:"optional" json:"accessConfig" yaml:"accessConfig"`
+	AccessConfig any `field:"optional" json:"accessConfig" yaml:"accessConfig"`
 	// alias_ip_range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance#alias_ip_range ComputeInstance#alias_ip_range}
-	AliasIpRange interface{} `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
+	AliasIpRange any `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
 	// The prefix length of the primary internal IPv6 range.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance#internal_ipv6_prefix_length ComputeInstance#internal_ipv6_prefix_length}
@@ -17,7 +16,7 @@ type ComputeInstanceNetworkInterface struct {
 	// ipv6_access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance#ipv6_access_config ComputeInstance#ipv6_access_config}
-	Ipv6AccessConfig interface{} `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
+	Ipv6AccessConfig any `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
 	// An IPv6 internal network address for this network interface.
 	//
 	// If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
@@ -61,4 +60,3 @@ type ComputeInstanceNetworkInterface struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_instance#subnetwork_project ComputeInstance#subnetwork_project}
 	SubnetworkProject *string `field:"optional" json:"subnetworkProject" yaml:"subnetworkProject"`
 }
-

@@ -14,9 +14,9 @@ type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *ContainerClusterAddonsConfig
-	AllowNetAdmin() interface{}
-	SetAllowNetAdmin(val interface{})
-	AllowNetAdminInput() interface{}
+	AllowNetAdmin() any
+	SetAllowNetAdmin(val any)
+	AllowNetAdminInput() any
 	AnonymousAuthenticationConfig() ContainerClusterAnonymousAuthenticationConfigOutputReference
 	AnonymousAuthenticationConfigInput() *ContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() ContainerClusterAuthenticatorGroupsConfigOutputReference
@@ -33,19 +33,19 @@ type ContainerCluster interface {
 	ConfidentialNodes() ContainerClusterConfidentialNodesOutputReference
 	ConfidentialNodesInput() *ContainerClusterConfidentialNodes
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlaneEndpointsConfig() ContainerClusterControlPlaneEndpointsConfigOutputReference
 	ControlPlaneEndpointsConfigInput() *ContainerClusterControlPlaneEndpointsConfig
 	CostManagementConfig() ContainerClusterCostManagementConfigOutputReference
 	CostManagementConfigInput() *ContainerClusterCostManagementConfig
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseEncryption() ContainerClusterDatabaseEncryptionOutputReference
 	DatabaseEncryptionInput() *ContainerClusterDatabaseEncryption
 	DatapathProvider() *string
@@ -56,9 +56,9 @@ type ContainerCluster interface {
 	DefaultMaxPodsPerNodeInput() *float64
 	DefaultSnatStatus() ContainerClusterDefaultSnatStatusOutputReference
 	DefaultSnatStatusInput() *ContainerClusterDefaultSnatStatus
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,44 +66,44 @@ type ContainerCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableL4LbFirewallReconciliation() interface{}
-	SetDisableL4LbFirewallReconciliation(val interface{})
-	DisableL4LbFirewallReconciliationInput() interface{}
+	DisableL4LbFirewallReconciliation() any
+	SetDisableL4LbFirewallReconciliation(val any)
+	DisableL4LbFirewallReconciliationInput() any
 	DnsConfig() ContainerClusterDnsConfigOutputReference
 	DnsConfigInput() *ContainerClusterDnsConfig
 	EffectiveLabels() cdktf.StringMap
-	EnableAutopilot() interface{}
-	SetEnableAutopilot(val interface{})
-	EnableAutopilotInput() interface{}
-	EnableCiliumClusterwideNetworkPolicy() interface{}
-	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
-	EnableCiliumClusterwideNetworkPolicyInput() interface{}
-	EnableFqdnNetworkPolicy() interface{}
-	SetEnableFqdnNetworkPolicy(val interface{})
-	EnableFqdnNetworkPolicyInput() interface{}
-	EnableIntranodeVisibility() interface{}
-	SetEnableIntranodeVisibility(val interface{})
-	EnableIntranodeVisibilityInput() interface{}
+	EnableAutopilot() any
+	SetEnableAutopilot(val any)
+	EnableAutopilotInput() any
+	EnableCiliumClusterwideNetworkPolicy() any
+	SetEnableCiliumClusterwideNetworkPolicy(val any)
+	EnableCiliumClusterwideNetworkPolicyInput() any
+	EnableFqdnNetworkPolicy() any
+	SetEnableFqdnNetworkPolicy(val any)
+	EnableFqdnNetworkPolicyInput() any
+	EnableIntranodeVisibility() any
+	SetEnableIntranodeVisibility(val any)
+	EnableIntranodeVisibilityInput() any
 	EnableK8SBetaApis() ContainerClusterEnableK8SBetaApisOutputReference
 	EnableK8SBetaApisInput() *ContainerClusterEnableK8SBetaApis
-	EnableKubernetesAlpha() interface{}
-	SetEnableKubernetesAlpha(val interface{})
-	EnableKubernetesAlphaInput() interface{}
-	EnableL4IlbSubsetting() interface{}
-	SetEnableL4IlbSubsetting(val interface{})
-	EnableL4IlbSubsettingInput() interface{}
-	EnableLegacyAbac() interface{}
-	SetEnableLegacyAbac(val interface{})
-	EnableLegacyAbacInput() interface{}
-	EnableMultiNetworking() interface{}
-	SetEnableMultiNetworking(val interface{})
-	EnableMultiNetworkingInput() interface{}
-	EnableShieldedNodes() interface{}
-	SetEnableShieldedNodes(val interface{})
-	EnableShieldedNodesInput() interface{}
-	EnableTpu() interface{}
-	SetEnableTpu(val interface{})
-	EnableTpuInput() interface{}
+	EnableKubernetesAlpha() any
+	SetEnableKubernetesAlpha(val any)
+	EnableKubernetesAlphaInput() any
+	EnableL4IlbSubsetting() any
+	SetEnableL4IlbSubsetting(val any)
+	EnableL4IlbSubsettingInput() any
+	EnableLegacyAbac() any
+	SetEnableLegacyAbac(val any)
+	EnableLegacyAbacInput() any
+	EnableMultiNetworking() any
+	SetEnableMultiNetworking(val any)
+	EnableMultiNetworkingInput() any
+	EnableShieldedNodes() any
+	SetEnableShieldedNodes(val any)
+	EnableShieldedNodesInput() any
+	EnableTpu() any
+	SetEnableTpu(val any)
+	EnableTpuInput() any
 	Endpoint() *string
 	EnterpriseConfig() ContainerClusterEnterpriseConfigOutputReference
 	EnterpriseConfigInput() *ContainerClusterEnterpriseConfig
@@ -189,7 +189,7 @@ type ContainerCluster interface {
 	NodePoolAutoConfigInput() *ContainerClusterNodePoolAutoConfig
 	NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference
 	NodePoolDefaultsInput() *ContainerClusterNodePoolDefaults
-	NodePoolInput() interface{}
+	NodePoolInput() any
 	NodeVersion() *string
 	SetNodeVersion(val *string)
 	NodeVersionInput() *string
@@ -211,16 +211,16 @@ type ContainerCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() ContainerClusterReleaseChannelOutputReference
 	ReleaseChannelInput() *ContainerClusterReleaseChannel
-	RemoveDefaultNodePool() interface{}
-	SetRemoveDefaultNodePool(val interface{})
-	RemoveDefaultNodePoolInput() interface{}
+	RemoveDefaultNodePool() any
+	SetRemoveDefaultNodePool(val any)
+	RemoveDefaultNodePoolInput() any
 	ResourceLabels() *map[string]*string
 	SetResourceLabels(val *map[string]*string)
 	ResourceLabelsInput() *map[string]*string
@@ -241,11 +241,11 @@ type ContainerCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContainerClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TpuIpv4CidrBlock() *string
 	UserManagedKeysConfig() ContainerClusterUserManagedKeysConfigOutputReference
 	UserManagedKeysConfigInput() *ContainerClusterUserManagedKeysConfig
@@ -257,9 +257,9 @@ type ContainerCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -277,7 +277,7 @@ type ContainerCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -289,7 +289,7 @@ type ContainerCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -323,7 +323,7 @@ type ContainerCluster interface {
 	PutNetworkPerformanceConfig(value *ContainerClusterNetworkPerformanceConfig)
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
-	PutNodePool(value interface{})
+	PutNodePool(value any)
 	PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
@@ -416,17 +416,17 @@ type ContainerCluster interface {
 	ResetUserManagedKeysConfig()
 	ResetVerticalPodAutoscaling()
 	ResetWorkloadIdentityConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContainerCluster
@@ -454,8 +454,8 @@ func (j *jsiiProxy_ContainerCluster) AddonsConfigInput() *ContainerClusterAddons
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) AllowNetAdmin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) AllowNetAdmin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNetAdmin",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_ContainerCluster) AllowNetAdmin() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) AllowNetAdminInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) AllowNetAdminInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNetAdminInput",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_ContainerCluster) ConfidentialNodesInput() *ContainerClusterC
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_ContainerCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_ContainerCluster) CostManagementConfigInput() *ContainerClust
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -754,8 +754,8 @@ func (j *jsiiProxy_ContainerCluster) DefaultSnatStatusInput() *ContainerClusterD
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_ContainerCluster) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_ContainerCluster) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableL4LbFirewallReconciliation",
@@ -814,8 +814,8 @@ func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliation() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableL4LbFirewallReconciliationInput",
@@ -854,8 +854,8 @@ func (j *jsiiProxy_ContainerCluster) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableAutopilot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableAutopilot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutopilot",
@@ -864,8 +864,8 @@ func (j *jsiiProxy_ContainerCluster) EnableAutopilot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutopilotInput",
@@ -874,8 +874,8 @@ func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCiliumClusterwideNetworkPolicy",
@@ -884,8 +884,8 @@ func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicy() inte
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCiliumClusterwideNetworkPolicyInput",
@@ -894,8 +894,8 @@ func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput()
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFqdnNetworkPolicy",
@@ -904,8 +904,8 @@ func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFqdnNetworkPolicyInput",
@@ -914,8 +914,8 @@ func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicyInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibility() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibility() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibility",
@@ -924,8 +924,8 @@ func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibility() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibilityInput",
@@ -954,8 +954,8 @@ func (j *jsiiProxy_ContainerCluster) EnableK8SBetaApisInput() *ContainerClusterE
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlpha() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlpha() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlpha",
@@ -964,8 +964,8 @@ func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlpha() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlphaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlphaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlphaInput",
@@ -974,8 +974,8 @@ func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlphaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsetting() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsetting() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableL4IlbSubsetting",
@@ -984,8 +984,8 @@ func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsetting() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsettingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsettingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableL4IlbSubsettingInput",
@@ -994,8 +994,8 @@ func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsettingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableLegacyAbac() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableLegacyAbac() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyAbac",
@@ -1004,8 +1004,8 @@ func (j *jsiiProxy_ContainerCluster) EnableLegacyAbac() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableLegacyAbacInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableLegacyAbacInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyAbacInput",
@@ -1014,8 +1014,8 @@ func (j *jsiiProxy_ContainerCluster) EnableLegacyAbacInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableMultiNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableMultiNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMultiNetworking",
@@ -1024,8 +1024,8 @@ func (j *jsiiProxy_ContainerCluster) EnableMultiNetworking() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableMultiNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableMultiNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMultiNetworkingInput",
@@ -1034,8 +1034,8 @@ func (j *jsiiProxy_ContainerCluster) EnableMultiNetworkingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableShieldedNodes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableShieldedNodes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableShieldedNodes",
@@ -1044,8 +1044,8 @@ func (j *jsiiProxy_ContainerCluster) EnableShieldedNodes() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableShieldedNodesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableShieldedNodesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableShieldedNodesInput",
@@ -1054,8 +1054,8 @@ func (j *jsiiProxy_ContainerCluster) EnableShieldedNodesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableTpu() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableTpu() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTpu",
@@ -1064,8 +1064,8 @@ func (j *jsiiProxy_ContainerCluster) EnableTpu() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableTpuInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) EnableTpuInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTpuInput",
@@ -1724,8 +1724,8 @@ func (j *jsiiProxy_ContainerCluster) NodePoolDefaultsInput() *ContainerClusterNo
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) NodePoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) NodePoolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodePoolInput",
@@ -1874,8 +1874,8 @@ func (j *jsiiProxy_ContainerCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContainerCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1884,8 +1884,8 @@ func (j *jsiiProxy_ContainerCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1914,8 +1914,8 @@ func (j *jsiiProxy_ContainerCluster) ReleaseChannelInput() *ContainerClusterRele
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) RemoveDefaultNodePool() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) RemoveDefaultNodePool() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeDefaultNodePool",
@@ -1924,8 +1924,8 @@ func (j *jsiiProxy_ContainerCluster) RemoveDefaultNodePool() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) RemoveDefaultNodePoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) RemoveDefaultNodePoolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeDefaultNodePoolInput",
@@ -2094,8 +2094,8 @@ func (j *jsiiProxy_ContainerCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -2124,8 +2124,8 @@ func (j *jsiiProxy_ContainerCluster) Timeouts() ContainerClusterTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -2204,7 +2204,6 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
@@ -2216,7 +2215,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -2229,12 +2228,12 @@ func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetAllowNetAdmin(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetAllowNetAdmin(val any) {
 	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
 		panic(err)
 	}
@@ -2245,7 +2244,7 @@ func (j *jsiiProxy_ContainerCluster)SetAllowNetAdmin(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetClusterIpv4Cidr(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetClusterIpv4Cidr(val *string) {
 	if err := j.validateSetClusterIpv4CidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2256,7 +2255,7 @@ func (j *jsiiProxy_ContainerCluster)SetClusterIpv4Cidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2267,7 +2266,7 @@ func (j *jsiiProxy_ContainerCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -2278,7 +2277,7 @@ func (j *jsiiProxy_ContainerCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDatapathProvider(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetDatapathProvider(val *string) {
 	if err := j.validateSetDatapathProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -2289,7 +2288,7 @@ func (j *jsiiProxy_ContainerCluster)SetDatapathProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_ContainerCluster) SetDefaultMaxPodsPerNode(val *float64) {
 	if err := j.validateSetDefaultMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2300,7 +2299,7 @@ func (j *jsiiProxy_ContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2311,7 +2310,7 @@ func (j *jsiiProxy_ContainerCluster)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -2319,7 +2318,7 @@ func (j *jsiiProxy_ContainerCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDescription(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2330,7 +2329,7 @@ func (j *jsiiProxy_ContainerCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetDisableL4LbFirewallReconciliation(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetDisableL4LbFirewallReconciliation(val any) {
 	if err := j.validateSetDisableL4LbFirewallReconciliationParameters(val); err != nil {
 		panic(err)
 	}
@@ -2341,7 +2340,7 @@ func (j *jsiiProxy_ContainerCluster)SetDisableL4LbFirewallReconciliation(val int
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableAutopilot(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableAutopilot(val any) {
 	if err := j.validateSetEnableAutopilotParameters(val); err != nil {
 		panic(err)
 	}
@@ -2352,7 +2351,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableAutopilot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableCiliumClusterwideNetworkPolicy(val any) {
 	if err := j.validateSetEnableCiliumClusterwideNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2363,7 +2362,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val 
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableFqdnNetworkPolicy(val any) {
 	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2374,7 +2373,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableIntranodeVisibility(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableIntranodeVisibility(val any) {
 	if err := j.validateSetEnableIntranodeVisibilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -2385,7 +2384,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableIntranodeVisibility(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableKubernetesAlpha(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableKubernetesAlpha(val any) {
 	if err := j.validateSetEnableKubernetesAlphaParameters(val); err != nil {
 		panic(err)
 	}
@@ -2396,7 +2395,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableKubernetesAlpha(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableL4IlbSubsetting(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableL4IlbSubsetting(val any) {
 	if err := j.validateSetEnableL4IlbSubsettingParameters(val); err != nil {
 		panic(err)
 	}
@@ -2407,7 +2406,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableL4IlbSubsetting(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableLegacyAbac(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableLegacyAbac(val any) {
 	if err := j.validateSetEnableLegacyAbacParameters(val); err != nil {
 		panic(err)
 	}
@@ -2418,7 +2417,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableLegacyAbac(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableMultiNetworking(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableMultiNetworking(val any) {
 	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -2429,7 +2428,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableMultiNetworking(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableShieldedNodes(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableShieldedNodes(val any) {
 	if err := j.validateSetEnableShieldedNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -2440,7 +2439,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableShieldedNodes(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableTpu(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetEnableTpu(val any) {
 	if err := j.validateSetEnableTpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -2451,7 +2450,7 @@ func (j *jsiiProxy_ContainerCluster)SetEnableTpu(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2459,7 +2458,7 @@ func (j *jsiiProxy_ContainerCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetId(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2470,7 +2469,7 @@ func (j *jsiiProxy_ContainerCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetInitialNodeCount(val *float64) {
+func (j *jsiiProxy_ContainerCluster) SetInitialNodeCount(val *float64) {
 	if err := j.validateSetInitialNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -2481,7 +2480,7 @@ func (j *jsiiProxy_ContainerCluster)SetInitialNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetInTransitEncryptionConfig(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetInTransitEncryptionConfig(val *string) {
 	if err := j.validateSetInTransitEncryptionConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -2492,7 +2491,7 @@ func (j *jsiiProxy_ContainerCluster)SetInTransitEncryptionConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2503,7 +2502,7 @@ func (j *jsiiProxy_ContainerCluster)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetLocation(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -2514,7 +2513,7 @@ func (j *jsiiProxy_ContainerCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetLoggingService(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetLoggingService(val *string) {
 	if err := j.validateSetLoggingServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -2525,7 +2524,7 @@ func (j *jsiiProxy_ContainerCluster)SetLoggingService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetMinMasterVersion(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetMinMasterVersion(val *string) {
 	if err := j.validateSetMinMasterVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2536,7 +2535,7 @@ func (j *jsiiProxy_ContainerCluster)SetMinMasterVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetMonitoringService(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetMonitoringService(val *string) {
 	if err := j.validateSetMonitoringServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -2547,7 +2546,7 @@ func (j *jsiiProxy_ContainerCluster)SetMonitoringService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetName(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2558,7 +2557,7 @@ func (j *jsiiProxy_ContainerCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetNetwork(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -2569,7 +2568,7 @@ func (j *jsiiProxy_ContainerCluster)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetNetworkingMode(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetNetworkingMode(val *string) {
 	if err := j.validateSetNetworkingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2580,7 +2579,7 @@ func (j *jsiiProxy_ContainerCluster)SetNetworkingMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetNodeLocations(val *[]*string) {
+func (j *jsiiProxy_ContainerCluster) SetNodeLocations(val *[]*string) {
 	if err := j.validateSetNodeLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2591,7 +2590,7 @@ func (j *jsiiProxy_ContainerCluster)SetNodeLocations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetNodeVersion(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetNodeVersion(val *string) {
 	if err := j.validateSetNodeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2602,7 +2601,7 @@ func (j *jsiiProxy_ContainerCluster)SetNodeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetPrivateIpv6GoogleAccess(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetPrivateIpv6GoogleAccess(val *string) {
 	if err := j.validateSetPrivateIpv6GoogleAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -2613,7 +2612,7 @@ func (j *jsiiProxy_ContainerCluster)SetPrivateIpv6GoogleAccess(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetProject(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -2624,7 +2623,7 @@ func (j *jsiiProxy_ContainerCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2632,7 +2631,7 @@ func (j *jsiiProxy_ContainerCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2643,7 +2642,7 @@ func (j *jsiiProxy_ContainerCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetRemoveDefaultNodePool(val interface{}) {
+func (j *jsiiProxy_ContainerCluster) SetRemoveDefaultNodePool(val any) {
 	if err := j.validateSetRemoveDefaultNodePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -2654,7 +2653,7 @@ func (j *jsiiProxy_ContainerCluster)SetRemoveDefaultNodePool(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetResourceLabels(val *map[string]*string) {
+func (j *jsiiProxy_ContainerCluster) SetResourceLabels(val *map[string]*string) {
 	if err := j.validateSetResourceLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2665,7 +2664,7 @@ func (j *jsiiProxy_ContainerCluster)SetResourceLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetSubnetwork(val *string) {
+func (j *jsiiProxy_ContainerCluster) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -2688,7 +2687,7 @@ func ContainerCluster_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -2712,7 +2711,7 @@ func ContainerCluster_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContainerCluster_IsConstruct(x interface{}) *bool {
+func ContainerCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerCluster_IsConstructParameters(x); err != nil {
@@ -2723,7 +2722,7 @@ func ContainerCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2731,7 +2730,7 @@ func ContainerCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerCluster_IsTerraformElement(x interface{}) *bool {
+func ContainerCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerCluster_IsTerraformElementParameters(x); err != nil {
@@ -2742,7 +2741,7 @@ func ContainerCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2750,7 +2749,7 @@ func ContainerCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerCluster_IsTerraformResource(x interface{}) *bool {
+func ContainerCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerCluster_IsTerraformResourceParameters(x); err != nil {
@@ -2761,7 +2760,7 @@ func ContainerCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2786,31 +2785,31 @@ func (c *jsiiProxy_ContainerCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContainerCluster) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2826,7 +2825,7 @@ func (c *jsiiProxy_ContainerCluster) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2842,7 +2841,7 @@ func (c *jsiiProxy_ContainerCluster) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2858,7 +2857,7 @@ func (c *jsiiProxy_ContainerCluster) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2874,7 +2873,7 @@ func (c *jsiiProxy_ContainerCluster) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2890,7 +2889,7 @@ func (c *jsiiProxy_ContainerCluster) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2906,7 +2905,7 @@ func (c *jsiiProxy_ContainerCluster) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2922,7 +2921,7 @@ func (c *jsiiProxy_ContainerCluster) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2938,15 +2937,15 @@ func (c *jsiiProxy_ContainerCluster) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2965,7 +2964,7 @@ func (c *jsiiProxy_ContainerCluster) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2978,7 +2977,7 @@ func (c *jsiiProxy_ContainerCluster) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2992,18 +2991,18 @@ func (c *jsiiProxy_ContainerCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContainerCluster) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -3014,7 +3013,7 @@ func (c *jsiiProxy_ContainerCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -3025,7 +3024,7 @@ func (c *jsiiProxy_ContainerCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -3036,7 +3035,7 @@ func (c *jsiiProxy_ContainerCluster) PutAddonsConfig(value *ContainerClusterAddo
 	_jsii_.InvokeVoid(
 		c,
 		"putAddonsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3047,7 +3046,7 @@ func (c *jsiiProxy_ContainerCluster) PutAnonymousAuthenticationConfig(value *Con
 	_jsii_.InvokeVoid(
 		c,
 		"putAnonymousAuthenticationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3058,7 +3057,7 @@ func (c *jsiiProxy_ContainerCluster) PutAuthenticatorGroupsConfig(value *Contain
 	_jsii_.InvokeVoid(
 		c,
 		"putAuthenticatorGroupsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3069,7 +3068,7 @@ func (c *jsiiProxy_ContainerCluster) PutBinaryAuthorization(value *ContainerClus
 	_jsii_.InvokeVoid(
 		c,
 		"putBinaryAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3080,7 +3079,7 @@ func (c *jsiiProxy_ContainerCluster) PutClusterAutoscaling(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putClusterAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3091,7 +3090,7 @@ func (c *jsiiProxy_ContainerCluster) PutConfidentialNodes(value *ContainerCluste
 	_jsii_.InvokeVoid(
 		c,
 		"putConfidentialNodes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3102,7 +3101,7 @@ func (c *jsiiProxy_ContainerCluster) PutControlPlaneEndpointsConfig(value *Conta
 	_jsii_.InvokeVoid(
 		c,
 		"putControlPlaneEndpointsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3113,7 +3112,7 @@ func (c *jsiiProxy_ContainerCluster) PutCostManagementConfig(value *ContainerClu
 	_jsii_.InvokeVoid(
 		c,
 		"putCostManagementConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3124,7 +3123,7 @@ func (c *jsiiProxy_ContainerCluster) PutDatabaseEncryption(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putDatabaseEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3135,7 +3134,7 @@ func (c *jsiiProxy_ContainerCluster) PutDefaultSnatStatus(value *ContainerCluste
 	_jsii_.InvokeVoid(
 		c,
 		"putDefaultSnatStatus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3146,7 +3145,7 @@ func (c *jsiiProxy_ContainerCluster) PutDnsConfig(value *ContainerClusterDnsConf
 	_jsii_.InvokeVoid(
 		c,
 		"putDnsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3157,7 +3156,7 @@ func (c *jsiiProxy_ContainerCluster) PutEnableK8SBetaApis(value *ContainerCluste
 	_jsii_.InvokeVoid(
 		c,
 		"putEnableK8SBetaApis",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3168,7 +3167,7 @@ func (c *jsiiProxy_ContainerCluster) PutEnterpriseConfig(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putEnterpriseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3179,7 +3178,7 @@ func (c *jsiiProxy_ContainerCluster) PutFleet(value *ContainerClusterFleet) {
 	_jsii_.InvokeVoid(
 		c,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3190,7 +3189,7 @@ func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putGatewayApiConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3201,7 +3200,7 @@ func (c *jsiiProxy_ContainerCluster) PutGkeAutoUpgradeConfig(value *ContainerClu
 	_jsii_.InvokeVoid(
 		c,
 		"putGkeAutoUpgradeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3212,7 +3211,7 @@ func (c *jsiiProxy_ContainerCluster) PutIdentityServiceConfig(value *ContainerCl
 	_jsii_.InvokeVoid(
 		c,
 		"putIdentityServiceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3223,7 +3222,7 @@ func (c *jsiiProxy_ContainerCluster) PutIpAllocationPolicy(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putIpAllocationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3234,7 +3233,7 @@ func (c *jsiiProxy_ContainerCluster) PutLoggingConfig(value *ContainerClusterLog
 	_jsii_.InvokeVoid(
 		c,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3245,7 +3244,7 @@ func (c *jsiiProxy_ContainerCluster) PutMaintenancePolicy(value *ContainerCluste
 	_jsii_.InvokeVoid(
 		c,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3256,7 +3255,7 @@ func (c *jsiiProxy_ContainerCluster) PutMasterAuth(value *ContainerClusterMaster
 	_jsii_.InvokeVoid(
 		c,
 		"putMasterAuth",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3267,7 +3266,7 @@ func (c *jsiiProxy_ContainerCluster) PutMasterAuthorizedNetworksConfig(value *Co
 	_jsii_.InvokeVoid(
 		c,
 		"putMasterAuthorizedNetworksConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3278,7 +3277,7 @@ func (c *jsiiProxy_ContainerCluster) PutMeshCertificates(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putMeshCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3289,7 +3288,7 @@ func (c *jsiiProxy_ContainerCluster) PutMonitoringConfig(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putMonitoringConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3300,7 +3299,7 @@ func (c *jsiiProxy_ContainerCluster) PutNetworkPerformanceConfig(value *Containe
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3311,7 +3310,7 @@ func (c *jsiiProxy_ContainerCluster) PutNetworkPolicy(value *ContainerClusterNet
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3322,18 +3321,18 @@ func (c *jsiiProxy_ContainerCluster) PutNodeConfig(value *ContainerClusterNodeCo
 	_jsii_.InvokeVoid(
 		c,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) PutNodePool(value interface{}) {
+func (c *jsiiProxy_ContainerCluster) PutNodePool(value any) {
 	if err := c.validatePutNodePoolParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putNodePool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3344,7 +3343,7 @@ func (c *jsiiProxy_ContainerCluster) PutNodePoolAutoConfig(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putNodePoolAutoConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3355,7 +3354,7 @@ func (c *jsiiProxy_ContainerCluster) PutNodePoolDefaults(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putNodePoolDefaults",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3366,7 +3365,7 @@ func (c *jsiiProxy_ContainerCluster) PutNotificationConfig(value *ContainerClust
 	_jsii_.InvokeVoid(
 		c,
 		"putNotificationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3377,7 +3376,7 @@ func (c *jsiiProxy_ContainerCluster) PutPodAutoscaling(value *ContainerClusterPo
 	_jsii_.InvokeVoid(
 		c,
 		"putPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3388,7 +3387,7 @@ func (c *jsiiProxy_ContainerCluster) PutPrivateClusterConfig(value *ContainerClu
 	_jsii_.InvokeVoid(
 		c,
 		"putPrivateClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3399,7 +3398,7 @@ func (c *jsiiProxy_ContainerCluster) PutReleaseChannel(value *ContainerClusterRe
 	_jsii_.InvokeVoid(
 		c,
 		"putReleaseChannel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3410,7 +3409,7 @@ func (c *jsiiProxy_ContainerCluster) PutResourceUsageExportConfig(value *Contain
 	_jsii_.InvokeVoid(
 		c,
 		"putResourceUsageExportConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3421,7 +3420,7 @@ func (c *jsiiProxy_ContainerCluster) PutSecretManagerConfig(value *ContainerClus
 	_jsii_.InvokeVoid(
 		c,
 		"putSecretManagerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3432,7 +3431,7 @@ func (c *jsiiProxy_ContainerCluster) PutSecurityPostureConfig(value *ContainerCl
 	_jsii_.InvokeVoid(
 		c,
 		"putSecurityPostureConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3443,7 +3442,7 @@ func (c *jsiiProxy_ContainerCluster) PutServiceExternalIpsConfig(value *Containe
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceExternalIpsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3454,7 +3453,7 @@ func (c *jsiiProxy_ContainerCluster) PutTimeouts(value *ContainerClusterTimeouts
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3465,7 +3464,7 @@ func (c *jsiiProxy_ContainerCluster) PutUserManagedKeysConfig(value *ContainerCl
 	_jsii_.InvokeVoid(
 		c,
 		"putUserManagedKeysConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3476,7 +3475,7 @@ func (c *jsiiProxy_ContainerCluster) PutVerticalPodAutoscaling(value *ContainerC
 	_jsii_.InvokeVoid(
 		c,
 		"putVerticalPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3487,7 +3486,7 @@ func (c *jsiiProxy_ContainerCluster) PutWorkloadIdentityConfig(value *ContainerC
 	_jsii_.InvokeVoid(
 		c,
 		"putWorkloadIdentityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -4099,8 +4098,8 @@ func (c *jsiiProxy_ContainerCluster) ResetWorkloadIdentityConfig() {
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -4112,8 +4111,8 @@ func (c *jsiiProxy_ContainerCluster) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ContainerCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -4125,8 +4124,8 @@ func (c *jsiiProxy_ContainerCluster) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ContainerCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -4138,8 +4137,8 @@ func (c *jsiiProxy_ContainerCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -4164,8 +4163,8 @@ func (c *jsiiProxy_ContainerCluster) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -4176,4 +4175,3 @@ func (c *jsiiProxy_ContainerCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

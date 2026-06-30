@@ -15,9 +15,9 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	ArtifactStorageInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	ExecutionTimeoutInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -49,16 +49,16 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
-	Verbose() interface{}
-	SetVerbose(val interface{})
-	VerboseInput() interface{}
+	Verbose() any
+	SetVerbose(val any)
+	VerboseInput() any
 	WorkerPool() *string
 	SetWorkerPool(val *string)
 	WorkerPoolInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ArtifactSto
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) UsagesInput
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Verbose() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Verbose() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verbose",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Verbose() i
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) VerboseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) VerboseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verboseInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) WorkerPoolI
 	return returns
 }
 
-
 func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployTargetExecutionConfigsOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewClouddeployTargetExecutionConfigsOutputReference_Override(c ClouddeployT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetArtifactStorage(val *string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetArtifactStorage(val *string) {
 	if err := j.validateSetArtifactStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetArtifactS
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetExecutionTimeout(val *string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetExecutionTimeout(val *string) {
 	if err := j.validateSetExecutionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetExecution
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetServiceAc
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetUsages(val *[]*string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetUsages(val *[]*string) {
 	if err := j.validateSetUsagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetUsages(va
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetVerbose(val interface{}) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetVerbose(val any) {
 	if err := j.validateSetVerboseParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetVerbose(v
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetWorkerPool(val *string) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) SetWorkerPool(val *string) {
 	if err := j.validateSetWorkerPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetWorker
 	)
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ToString() 
 
 	return returns
 }
-
