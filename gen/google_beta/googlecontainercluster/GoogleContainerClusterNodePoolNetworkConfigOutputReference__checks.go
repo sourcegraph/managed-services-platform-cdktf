@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalNodeNetworkConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalNodeNetworkConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalPodNetworkConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalPodNetworkConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetCreatePodRangeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetCreatePodRangeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetEnablePrivateNodesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validateSetEnablePrivateNodesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,4 +338,3 @@ func validateNewGoogleContainerClusterNodePoolNetworkConfigOutputReferenceParame
 
 	return nil
 }
-

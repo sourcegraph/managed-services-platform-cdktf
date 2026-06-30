@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocJobSchedulingOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataprocJobSchedulingOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

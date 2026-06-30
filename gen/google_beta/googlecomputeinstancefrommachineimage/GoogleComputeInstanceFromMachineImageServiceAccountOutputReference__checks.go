@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceFromMachineImageServiceAccountOutputReferen
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTagsTagValue.GoogleTagsTagValue",
-		reflect.TypeOf((*GoogleTagsTagValue)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagValue](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTagsTagValue{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTagsTagValue.GoogleTagsTagValueConfig",
-		reflect.TypeOf((*GoogleTagsTagValueConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagValueConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTagsTagValue.GoogleTagsTagValueTimeouts",
-		reflect.TypeOf((*GoogleTagsTagValueTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagValueTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTagsTagValue.GoogleTagsTagValueTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleTagsTagValueTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTagsTagValueTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTagsTagValueTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

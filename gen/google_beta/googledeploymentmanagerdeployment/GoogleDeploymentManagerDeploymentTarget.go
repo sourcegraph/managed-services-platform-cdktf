@@ -1,6 +1,5 @@
 package googledeploymentmanagerdeployment
 
-
 type GoogleDeploymentManagerDeploymentTarget struct {
 	// config block.
 	//
@@ -9,6 +8,5 @@ type GoogleDeploymentManagerDeploymentTarget struct {
 	// imports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_deployment_manager_deployment#imports GoogleDeploymentManagerDeployment#imports}
-	Imports interface{} `field:"optional" json:"imports" yaml:"imports"`
+	Imports any `field:"optional" json:"imports" yaml:"imports"`
 }
-

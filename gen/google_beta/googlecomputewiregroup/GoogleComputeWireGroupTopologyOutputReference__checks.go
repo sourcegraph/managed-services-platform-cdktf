@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupTopologyOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupTopologyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupTopologyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeWireGroupTopologyOutputReferenceParameters(terrafor
 
 	return nil
 }
-

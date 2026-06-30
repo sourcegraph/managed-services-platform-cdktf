@@ -1,6 +1,5 @@
 package googledialogflowcxtestcase
 
-
 type GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput struct {
 	// current_page block.
 	//
@@ -13,10 +12,9 @@ type GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput struc
 	// text_responses block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_test_case#text_responses GoogleDialogflowCxTestCase#text_responses}
-	TextResponses interface{} `field:"optional" json:"textResponses" yaml:"textResponses"`
+	TextResponses any `field:"optional" json:"textResponses" yaml:"textResponses"`
 	// triggered_intent block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_test_case#triggered_intent GoogleDialogflowCxTestCase#triggered_intent}
 	TriggeredIntent *GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent `field:"optional" json:"triggeredIntent" yaml:"triggeredIntent"`
 }
-

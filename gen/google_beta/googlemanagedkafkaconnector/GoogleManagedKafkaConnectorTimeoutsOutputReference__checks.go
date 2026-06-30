@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleManagedKafkaConnectorTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

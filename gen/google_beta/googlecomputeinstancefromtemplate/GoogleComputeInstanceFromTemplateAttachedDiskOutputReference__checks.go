@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetForceAttachParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -298,4 +298,3 @@ func validateNewGoogleComputeInstanceFromTemplateAttachedDiskOutputReferencePara
 
 	return nil
 }
-

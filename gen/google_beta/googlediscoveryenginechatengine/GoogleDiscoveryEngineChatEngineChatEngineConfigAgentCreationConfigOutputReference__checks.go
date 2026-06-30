@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDiscoveryEngineChatEngineChatEngineConfigAgentCreationConf
 
 	return nil
 }
-

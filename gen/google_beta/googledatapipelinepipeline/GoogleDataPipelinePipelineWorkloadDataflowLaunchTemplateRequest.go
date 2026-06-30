@@ -1,6 +1,5 @@
 package googledatapipelinepipeline
 
-
 type GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequest struct {
 	// The ID of the Cloud Platform project that the job belongs to.
 	//
@@ -21,6 +20,5 @@ type GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequest struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#location GoogleDataPipelinePipeline#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#validate_only GoogleDataPipelinePipeline#validate_only}.
-	ValidateOnly interface{} `field:"optional" json:"validateOnly" yaml:"validateOnly"`
+	ValidateOnly any `field:"optional" json:"validateOnly" yaml:"validateOnly"`
 }
-

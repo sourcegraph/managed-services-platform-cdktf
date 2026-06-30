@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleMonitoringMetricDescriptor_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleMonitoringMetricDescriptor_IsConstructParameters(x interface{}) error {
+func validateGoogleMonitoringMetricDescriptor_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleMonitoringMetricDescriptor_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleMonitoringMetricDescriptor_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleMonitoringMetricDescriptor_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleMonitoringMetricDescriptor_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleMonitoringMetricDescriptor_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleMonitoringMetricDescriptor_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleMonitoringMetricDescriptor_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,4 +531,3 @@ func validateNewGoogleMonitoringMetricDescriptorParameters(scope constructs.Cons
 
 	return nil
 }
-

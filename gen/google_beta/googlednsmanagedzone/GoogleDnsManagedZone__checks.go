@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDnsManagedZone) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleDnsManagedZone_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateGoogleDnsManagedZone_IsConstructParameters(x interface{}) error {
+func validateGoogleDnsManagedZone_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateGoogleDnsManagedZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleDnsManagedZone_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDnsManagedZone_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateGoogleDnsManagedZone_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleDnsManagedZone_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDnsManagedZone_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateGoogleDnsManagedZone_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZone) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -354,7 +354,7 @@ func (j *jsiiProxy_GoogleDnsManagedZone) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZone) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleDnsManagedZone) validateSetDnsNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZone) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -487,7 +487,7 @@ func (j *jsiiProxy_GoogleDnsManagedZone) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZone) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -533,7 +533,7 @@ func (j *jsiiProxy_GoogleDnsManagedZone) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZone) validateSetReverseLookupParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetReverseLookupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -579,4 +579,3 @@ func validateNewGoogleDnsManagedZoneParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

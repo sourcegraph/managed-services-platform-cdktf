@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAlloydbInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAlloydbInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleAlloydbInstance_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateGoogleAlloydbInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleAlloydbInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func validateGoogleAlloydbInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleAlloydbInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAlloydbInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateGoogleAlloydbInstance_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleAlloydbInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAlloydbInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) validateSetClusterParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -397,7 +397,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -518,7 +518,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -582,4 +582,3 @@ func validateNewGoogleAlloydbInstanceParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

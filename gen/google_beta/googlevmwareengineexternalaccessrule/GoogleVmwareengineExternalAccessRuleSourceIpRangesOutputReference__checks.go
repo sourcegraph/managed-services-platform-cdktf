@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReferenc
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeReservationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeReservationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -57,7 +57,7 @@ type GoogleComputeReservationConfig struct {
 	// Indicates if this group of VMs have emergent maintenance enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#enable_emergent_maintenance GoogleComputeReservation#enable_emergent_maintenance}
-	EnableEmergentMaintenance interface{} `field:"optional" json:"enableEmergentMaintenance" yaml:"enableEmergentMaintenance"`
+	EnableEmergentMaintenance any `field:"optional" json:"enableEmergentMaintenance" yaml:"enableEmergentMaintenance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#id GoogleComputeReservation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -79,10 +79,9 @@ type GoogleComputeReservationConfig struct {
 	// affinity for any reservation. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#specific_reservation_required GoogleComputeReservation#specific_reservation_required}
-	SpecificReservationRequired interface{} `field:"optional" json:"specificReservationRequired" yaml:"specificReservationRequired"`
+	SpecificReservationRequired any `field:"optional" json:"specificReservationRequired" yaml:"specificReservationRequired"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#timeouts GoogleComputeReservation#timeouts}
 	Timeouts *GoogleComputeReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

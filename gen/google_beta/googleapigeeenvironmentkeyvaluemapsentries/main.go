@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentKeyvaluemapsEntries.GoogleApigeeEnvironmentKeyvaluemapsEntries",
-		reflect.TypeOf((*GoogleApigeeEnvironmentKeyvaluemapsEntries)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentKeyvaluemapsEntries](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentKeyvaluemapsEntries.GoogleApigeeEnvironmentKeyvaluemapsEntriesConfig",
-		reflect.TypeOf((*GoogleApigeeEnvironmentKeyvaluemapsEntriesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentKeyvaluemapsEntriesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentKeyvaluemapsEntries.GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeouts",
-		reflect.TypeOf((*GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentKeyvaluemapsEntries.GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

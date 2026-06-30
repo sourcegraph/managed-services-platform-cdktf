@@ -6,9 +6,9 @@ import (
 
 type GoogleVmwareengineNetworkPeeringConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleVmwareengineNetworkPeeringConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Network Peering.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#name GoogleVmwareengineNetworkPeering#name}
@@ -50,11 +50,11 @@ type GoogleVmwareengineNetworkPeeringConfig struct {
 	// True if custom routes are exported to the peered network; false otherwise.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#export_custom_routes GoogleVmwareengineNetworkPeering#export_custom_routes}
-	ExportCustomRoutes interface{} `field:"optional" json:"exportCustomRoutes" yaml:"exportCustomRoutes"`
+	ExportCustomRoutes any `field:"optional" json:"exportCustomRoutes" yaml:"exportCustomRoutes"`
 	// True if all subnet routes with a public IP address range are exported; false otherwise.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#export_custom_routes_with_public_ip GoogleVmwareengineNetworkPeering#export_custom_routes_with_public_ip}
-	ExportCustomRoutesWithPublicIp interface{} `field:"optional" json:"exportCustomRoutesWithPublicIp" yaml:"exportCustomRoutesWithPublicIp"`
+	ExportCustomRoutesWithPublicIp any `field:"optional" json:"exportCustomRoutesWithPublicIp" yaml:"exportCustomRoutesWithPublicIp"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#id GoogleVmwareengineNetworkPeering#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -63,11 +63,11 @@ type GoogleVmwareengineNetworkPeeringConfig struct {
 	// True if custom routes are imported from the peered network; false otherwise.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#import_custom_routes GoogleVmwareengineNetworkPeering#import_custom_routes}
-	ImportCustomRoutes interface{} `field:"optional" json:"importCustomRoutes" yaml:"importCustomRoutes"`
+	ImportCustomRoutes any `field:"optional" json:"importCustomRoutes" yaml:"importCustomRoutes"`
 	// True if custom routes are imported from the peered network; false otherwise.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#import_custom_routes_with_public_ip GoogleVmwareengineNetworkPeering#import_custom_routes_with_public_ip}
-	ImportCustomRoutesWithPublicIp interface{} `field:"optional" json:"importCustomRoutesWithPublicIp" yaml:"importCustomRoutesWithPublicIp"`
+	ImportCustomRoutesWithPublicIp any `field:"optional" json:"importCustomRoutesWithPublicIp" yaml:"importCustomRoutesWithPublicIp"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#project GoogleVmwareengineNetworkPeering#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -75,4 +75,3 @@ type GoogleVmwareengineNetworkPeeringConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering#timeouts GoogleVmwareengineNetworkPeering#timeouts}
 	Timeouts *GoogleVmwareengineNetworkPeeringTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

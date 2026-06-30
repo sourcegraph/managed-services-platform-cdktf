@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccNotificationConfigStreamingConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccNotificationConfigStreamingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccNotificationConfigStreamingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleSccNotificationConfigStreamingConfigOutputReferenceParamet
 
 	return nil
 }
-

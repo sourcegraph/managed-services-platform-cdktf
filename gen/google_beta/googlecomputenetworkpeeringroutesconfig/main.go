@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkPeeringRoutesConfig.GoogleComputeNetworkPeeringRoutesConfig",
-		reflect.TypeOf((*GoogleComputeNetworkPeeringRoutesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkPeeringRoutesConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkPeeringRoutesConfig.GoogleComputeNetworkPeeringRoutesConfigConfig",
-		reflect.TypeOf((*GoogleComputeNetworkPeeringRoutesConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkPeeringRoutesConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkPeeringRoutesConfig.GoogleComputeNetworkPeeringRoutesConfigTimeouts",
-		reflect.TypeOf((*GoogleComputeNetworkPeeringRoutesConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkPeeringRoutesConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkPeeringRoutesConfig.GoogleComputeNetworkPeeringRoutesConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeNetworkPeeringRoutesConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkPeeringRoutesConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkPeeringRoutesConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

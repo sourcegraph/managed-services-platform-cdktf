@@ -6,9 +6,9 @@ import (
 
 type DataGoogleFirebaseAndroidAppConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataGoogleFirebaseAndroidAppConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The globally unique, Firebase-assigned identifier of the AndroidApp.
 	//
 	// This identifier should be treated as an opaque token, as the data format is not specified.
@@ -33,4 +33,3 @@ type DataGoogleFirebaseAndroidAppConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

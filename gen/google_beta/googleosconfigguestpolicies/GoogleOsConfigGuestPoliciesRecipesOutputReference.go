@@ -11,12 +11,12 @@ import (
 type GoogleOsConfigGuestPoliciesRecipesOutputReference interface {
 	cdktf.ComplexObject
 	Artifacts() GoogleOsConfigGuestPoliciesRecipesArtifactsList
-	ArtifactsInput() interface{}
+	ArtifactsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,9 +33,9 @@ type GoogleOsConfigGuestPoliciesRecipesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	InstallSteps() GoogleOsConfigGuestPoliciesRecipesInstallStepsList
-	InstallStepsInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InstallStepsInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -48,14 +48,14 @@ type GoogleOsConfigGuestPoliciesRecipesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateSteps() GoogleOsConfigGuestPoliciesRecipesUpdateStepsList
-	UpdateStepsInput() interface{}
+	UpdateStepsInput() any
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleOsConfigGuestPoliciesRecipesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutArtifacts(value interface{})
-	PutInstallSteps(value interface{})
-	PutUpdateSteps(value interface{})
+	PutArtifacts(value any)
+	PutInstallSteps(value any)
+	PutUpdateSteps(value any)
 	ResetArtifacts()
 	ResetDesiredState()
 	ResetInstallSteps()
@@ -86,7 +86,7 @@ type GoogleOsConfigGuestPoliciesRecipesOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) Artifacts(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ArtifactsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ArtifactsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"artifactsInput",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ArtifactsI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InstallSte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InstallStepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InstallStepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installStepsInput",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InstallSte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) UpdateStep
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) UpdateStepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) UpdateStepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"updateStepsInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) VersionInp
 	return returns
 }
 
-
 func NewGoogleOsConfigGuestPoliciesRecipesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewGoogleOsConfigGuestPoliciesRecipesOutputReference_Override(g GoogleOsCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetDesiredState(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetDesiredS
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetName(val
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,16 +417,16 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,43 +583,43 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutArtifacts(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutArtifacts(value any) {
 	if err := g.validatePutArtifactsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putArtifacts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutInstallSteps(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutInstallSteps(value any) {
 	if err := g.validatePutInstallStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInstallSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutUpdateSteps(value interface{}) {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) PutUpdateSteps(value any) {
 	if err := g.validatePutUpdateStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putUpdateSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ResetVersi
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) ToString()
 
 	return returns
 }
-

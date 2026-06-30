@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleContainerNodePoolTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

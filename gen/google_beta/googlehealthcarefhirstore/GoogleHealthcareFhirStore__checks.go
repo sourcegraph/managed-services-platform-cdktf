@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigsPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutStreamConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutStreamConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateGoogleHealthcareFhirStore_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleHealthcareFhirStore_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateGoogleHealthcareFhirStore_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleHealthcareFhirStore_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateGoogleHealthcareFhirStore_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleHealthcareFhirStore_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetComplexDataTypeReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDatasetParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +454,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDefaultSearchHandlingSt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableReferentialIntegrityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableReferentialIntegrityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableReferentialInteg
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableResourceVersioningParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableResourceVersioningParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -494,7 +494,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetDisableResourceVersioni
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryImportParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryImportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -514,7 +514,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryImportPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryModificationsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryModificationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -534,7 +534,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableHistoryModificati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableUpdateCreateParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetEnableUpdateCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -586,7 +586,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -658,4 +658,3 @@ func validateNewGoogleHealthcareFhirStoreParameters(scope constructs.Construct, 
 
 	return nil
 }
-

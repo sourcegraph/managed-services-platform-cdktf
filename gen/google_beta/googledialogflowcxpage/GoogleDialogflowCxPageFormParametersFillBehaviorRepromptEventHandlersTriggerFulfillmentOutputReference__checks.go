@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutMessagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewGoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHan
 
 	return nil
 }
-

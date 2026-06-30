@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
-		reflect.TypeOf((*GoogleFolderServiceIdentity)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderServiceIdentity](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderServiceIdentity{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentityConfig",
-		reflect.TypeOf((*GoogleFolderServiceIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderServiceIdentityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentityTimeouts",
-		reflect.TypeOf((*GoogleFolderServiceIdentityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderServiceIdentityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentityTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFolderServiceIdentityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFolderServiceIdentityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateSetRequirePartitionFilterParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableTimePartitioningOutputReference) validateSetRequirePartitionFilterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewGoogleBigqueryTableTimePartitioningOutputReferenceParameters(ter
 
 	return nil
 }
-

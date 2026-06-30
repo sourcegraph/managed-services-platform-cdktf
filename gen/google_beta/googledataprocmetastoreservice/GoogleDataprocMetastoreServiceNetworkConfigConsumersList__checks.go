@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigConsumersList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigConsumersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigConsumersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataprocMetastoreServiceNetworkConfigConsumersListParamete
 
 	return nil
 }
-

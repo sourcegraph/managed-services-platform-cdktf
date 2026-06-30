@@ -12,9 +12,9 @@ type GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,21 +25,21 @@ type GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteObjectsFromSourceAfterTransfer() interface{}
-	SetDeleteObjectsFromSourceAfterTransfer(val interface{})
-	DeleteObjectsFromSourceAfterTransferInput() interface{}
-	DeleteObjectsUniqueInSink() interface{}
-	SetDeleteObjectsUniqueInSink(val interface{})
-	DeleteObjectsUniqueInSinkInput() interface{}
+	DeleteObjectsFromSourceAfterTransfer() any
+	SetDeleteObjectsFromSourceAfterTransfer(val any)
+	DeleteObjectsFromSourceAfterTransferInput() any
+	DeleteObjectsUniqueInSink() any
+	SetDeleteObjectsUniqueInSink(val any)
+	DeleteObjectsUniqueInSinkInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobTransferSpecTransferOptions
 	SetInternalValue(val *GoogleStorageTransferJobTransferSpecTransferOptions)
 	MetadataOptions() GoogleStorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference
 	MetadataOptionsInput() *GoogleStorageTransferJobTransferSpecTransferOptionsMetadataOptions
-	OverwriteObjectsAlreadyExistingInSink() interface{}
-	SetOverwriteObjectsAlreadyExistingInSink(val interface{})
-	OverwriteObjectsAlreadyExistingInSinkInput() interface{}
+	OverwriteObjectsAlreadyExistingInSink() any
+	SetOverwriteObjectsAlreadyExistingInSink(val any)
+	OverwriteObjectsAlreadyExistingInSinkInput() any
 	OverwriteWhen() *string
 	SetOverwriteWhen(val *string)
 	OverwriteWhenInput() *string
@@ -54,7 +54,7 @@ type GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference interfac
 	ResetOverwriteWhen()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsFromSourceAfterTransfer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsFromSourceAfterTransfer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteObjectsFromSourceAfterTransfer",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsFromSourceAfterTransferInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsFromSourceAfterTransferInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteObjectsFromSourceAfterTransferInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsUniqueInSink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsUniqueInSink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteObjectsUniqueInSink",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsUniqueInSinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) DeleteObjectsUniqueInSinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteObjectsUniqueInSinkInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteObjectsAlreadyExistingInSink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteObjectsAlreadyExistingInSink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overwriteObjectsAlreadyExistingInSink",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteObjectsAlreadyExistingInSinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteObjectsAlreadyExistingInSinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overwriteObjectsAlreadyExistingInSinkInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-
 func NewGoogleStorageTransferJobTransferSpecTransferOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleStorageTransferJobTransferSpecTransferOptionsOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleStorageTransferJobTransferSpecTransferOptionsOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetDeleteObjectsFromSourceAfterTransfer(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetDeleteObjectsFromSourceAfterTransfer(val any) {
 	if err := j.validateSetDeleteObjectsFromSourceAfterTransferParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetDeleteObjectsUniqueInSink(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetDeleteObjectsUniqueInSink(val any) {
 	if err := j.validateSetDeleteObjectsUniqueInSinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetInternalValue(val *GoogleStorageTransferJobTransferSpecTransferOptions) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetInternalValue(val *GoogleStorageTransferJobTransferSpecTransferOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetOverwriteObjectsAlreadyExistingInSink(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetOverwriteObjectsAlreadyExistingInSink(val any) {
 	if err := j.validateSetOverwriteObjectsAlreadyExistingInSinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetOverwriteWhen(val *string) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetOverwriteWhen(val *string) {
 	if err := j.validateSetOverwriteWhenParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putMetadataOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 
 	return returns
 }
-

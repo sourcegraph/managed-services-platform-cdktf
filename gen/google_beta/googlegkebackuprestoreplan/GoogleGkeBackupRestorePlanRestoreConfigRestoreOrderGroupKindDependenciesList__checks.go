@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepe
 
 	return nil
 }
-

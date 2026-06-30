@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDialogflowCxFlowTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

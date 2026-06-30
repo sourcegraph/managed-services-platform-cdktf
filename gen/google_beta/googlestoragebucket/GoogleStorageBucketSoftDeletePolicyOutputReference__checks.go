@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketSoftDeletePolicyOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketSoftDeletePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketSoftDeletePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageBucketSoftDeletePolicyOutputReferenceParameters(ter
 
 	return nil
 }
-

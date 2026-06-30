@@ -1,11 +1,10 @@
 package googlecontainercluster
 
-
 type GoogleContainerClusterNotificationConfigPubsub struct {
 	// Whether or not the notification config is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#filter GoogleContainerCluster#filter}
@@ -17,4 +16,3 @@ type GoogleContainerClusterNotificationConfigPubsub struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#topic GoogleContainerCluster#topic}
 	Topic *string `field:"optional" json:"topic" yaml:"topic"`
 }
-

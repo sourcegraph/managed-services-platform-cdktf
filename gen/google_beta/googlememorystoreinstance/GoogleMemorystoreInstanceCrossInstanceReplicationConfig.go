@@ -1,6 +1,5 @@
 package googlememorystoreinstance
 
-
 type GoogleMemorystoreInstanceCrossInstanceReplicationConfig struct {
 	// The instance role supports the following values: 1.
 	//
@@ -18,6 +17,5 @@ type GoogleMemorystoreInstanceCrossInstanceReplicationConfig struct {
 	// secondary_instances block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance#secondary_instances GoogleMemorystoreInstance#secondary_instances}
-	SecondaryInstances interface{} `field:"optional" json:"secondaryInstances" yaml:"secondaryInstances"`
+	SecondaryInstances any `field:"optional" json:"secondaryInstances" yaml:"secondaryInstances"`
 }
-

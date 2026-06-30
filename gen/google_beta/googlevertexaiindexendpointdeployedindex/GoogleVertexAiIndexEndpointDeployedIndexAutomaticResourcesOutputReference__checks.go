@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexAutomaticResourcesOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleVertexAiIndexEndpointDeployedIndexAutomaticResourcesOutput
 
 	return nil
 }
-

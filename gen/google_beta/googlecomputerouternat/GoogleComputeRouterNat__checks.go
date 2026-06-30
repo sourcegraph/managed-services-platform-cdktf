@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterNat) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterNat) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validatePutLogConfigParameters(value 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) validatePutNat64SubnetworkParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterNat) validatePutNat64SubnetworkParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validatePutNat64SubnetworkParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterNat) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validatePutRulesParameters(value inte
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) validatePutSubnetworkParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRouterNat) validatePutSubnetworkParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateGoogleComputeRouterNat_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGoogleComputeRouterNat_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRouterNat_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func validateGoogleComputeRouterNat_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleComputeRouterNat_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRouterNat_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func validateGoogleComputeRouterNat_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleComputeRouterNat_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRouterNat_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetAutoNetworkTierParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -400,7 +400,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -465,7 +465,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetDrainNatIpsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableDynamicPortAllocationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableDynamicPortAllocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableDynamicPortAllocatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -593,7 +593,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -729,4 +729,3 @@ func validateNewGoogleComputeRouterNatParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

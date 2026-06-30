@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleHealthcareDicomStoreTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

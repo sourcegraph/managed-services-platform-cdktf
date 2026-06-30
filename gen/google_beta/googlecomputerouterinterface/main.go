@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
-		reflect.TypeOf((*GoogleComputeRouterInterface)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterInterface](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnel", GoGetter: "VpnTunnel"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnelInput", GoGetter: "VpnTunnelInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterInterface{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceConfig",
-		reflect.TypeOf((*GoogleComputeRouterInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterInterfaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeouts",
-		reflect.TypeOf((*GoogleComputeRouterInterfaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterInterfaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterInterfaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterInterfaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterInterfaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package googlecloudrunv2workerpool
 
-
 type GoogleCloudRunV2WorkerPoolTemplateVolumesGcs struct {
 	// GCS Bucket name.
 	//
@@ -15,6 +14,5 @@ type GoogleCloudRunV2WorkerPoolTemplateVolumesGcs struct {
 	// If true, mount the GCS bucket as read-only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#read_only GoogleCloudRunV2WorkerPool#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

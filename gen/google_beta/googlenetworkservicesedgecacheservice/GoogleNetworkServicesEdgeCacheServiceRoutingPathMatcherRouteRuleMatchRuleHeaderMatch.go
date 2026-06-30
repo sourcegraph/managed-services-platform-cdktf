@@ -1,6 +1,5 @@
 package googlenetworkservicesedgecacheservice
 
-
 type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatch struct {
 	// The header name to match on.
 	//
@@ -15,7 +14,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHe
 	// If set to true, the headerMatch is considered a match if the match criteria above are NOT met.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#invert_match GoogleNetworkServicesEdgeCacheService#invert_match}
-	InvertMatch interface{} `field:"optional" json:"invertMatch" yaml:"invertMatch"`
+	InvertMatch any `field:"optional" json:"invertMatch" yaml:"invertMatch"`
 	// The value of the header must start with the contents of prefixMatch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#prefix_match GoogleNetworkServicesEdgeCacheService#prefix_match}
@@ -25,10 +24,9 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHe
 	// The match takes place whether or not the request's header has a value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#present_match GoogleNetworkServicesEdgeCacheService#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// The value of the header must end with the contents of suffixMatch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#suffix_match GoogleNetworkServicesEdgeCacheService#suffix_match}
 	SuffixMatch *string `field:"optional" json:"suffixMatch" yaml:"suffixMatch"`
 }
-

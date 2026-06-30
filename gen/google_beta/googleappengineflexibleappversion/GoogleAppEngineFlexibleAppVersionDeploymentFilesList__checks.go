@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionDeploymentFilesListParameters(t
 
 	return nil
 }
-

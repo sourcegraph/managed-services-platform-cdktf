@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecution",
-		reflect.TypeOf((*GoogleColabNotebookExecution)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecution](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabNotebookExecution{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionConfig",
-		reflect.TypeOf((*GoogleColabNotebookExecutionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySource",
-		reflect.TypeOf((*GoogleColabNotebookExecutionDataformRepositorySource)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionDataformRepositorySource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDataformRepositorySourceOutputReference",
-		reflect.TypeOf((*GoogleColabNotebookExecutionDataformRepositorySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionDataformRepositorySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitSha", GoGetter: "CommitSha"},
 			_jsii_.MemberProperty{JsiiProperty: "commitShaInput", GoGetter: "CommitShaInput"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabNotebookExecutionDataformRepositorySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSource",
-		reflect.TypeOf((*GoogleColabNotebookExecutionDirectNotebookSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionDirectNotebookSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionDirectNotebookSourceOutputReference",
-		reflect.TypeOf((*GoogleColabNotebookExecutionDirectNotebookSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionDirectNotebookSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabNotebookExecutionDirectNotebookSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,11 +187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSource",
-		reflect.TypeOf((*GoogleColabNotebookExecutionGcsNotebookSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionGcsNotebookSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionGcsNotebookSourceOutputReference",
-		reflect.TypeOf((*GoogleColabNotebookExecutionGcsNotebookSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionGcsNotebookSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeouts",
-		reflect.TypeOf((*GoogleColabNotebookExecutionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabNotebookExecution.GoogleColabNotebookExecutionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleColabNotebookExecutionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabNotebookExecutionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabNotebookExecutionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

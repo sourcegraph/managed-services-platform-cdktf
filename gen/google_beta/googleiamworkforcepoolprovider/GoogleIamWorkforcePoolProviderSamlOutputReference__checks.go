@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderSamlOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIamWorkforcePoolProviderSamlOutputReferenceParameters(terr
 
 	return nil
 }
-

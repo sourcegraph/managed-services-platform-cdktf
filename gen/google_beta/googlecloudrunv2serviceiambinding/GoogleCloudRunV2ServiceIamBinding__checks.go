@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleCloudRunV2ServiceIamBinding_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleCloudRunV2ServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudRunV2ServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleCloudRunV2ServiceIamBinding_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleCloudRunV2ServiceIamBindingParameters(scope constructs.Con
 
 	return nil
 }
-

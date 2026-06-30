@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfigOutput
 
 	return nil
 }
-

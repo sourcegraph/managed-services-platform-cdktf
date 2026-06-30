@@ -15,9 +15,9 @@ type GoogleCloudbuildTriggerGitFileSourceOutputReference interface {
 	BitbucketServerConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type GoogleCloudbuildTriggerGitFileSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type GoogleCloudbuildTriggerGitFileSourceOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) Bitbucke
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -312,7 +312,6 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) UriInput
 	return returns
 }
 
-
 func NewGoogleCloudbuildTriggerGitFileSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildTriggerGitFileSourceOutputReference {
 	_init_.Initialize()
 
@@ -323,7 +322,7 @@ func NewGoogleCloudbuildTriggerGitFileSourceOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGitFileSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -335,12 +334,12 @@ func NewGoogleCloudbuildTriggerGitFileSourceOutputReference_Override(g GoogleClo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGitFileSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetBitbucketServerConfig(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetBitbucketServerConfig(val *string) {
 	if err := j.validateSetBitbucketServerConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetBitbuc
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetGithubEnterpriseConfig(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetGithubEnterpriseConfig(val *string) {
 	if err := j.validateSetGithubEnterpriseConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetGithub
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetInternalValue(val *GoogleCloudbuildTriggerGitFileSource) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetInternalValue(val *GoogleCloudbuildTriggerGitFileSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetPath(v
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetRepository(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetReposi
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetRepoType(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetRepoType(val *string) {
 	if err := j.validateSetRepoTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetRepoTy
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetRevision(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetRevision(val *string) {
 	if err := j.validateSetRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetRevisi
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,16 +484,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -698,16 +697,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) ResetUri
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -726,4 +725,3 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) ToString
 
 	return returns
 }
-

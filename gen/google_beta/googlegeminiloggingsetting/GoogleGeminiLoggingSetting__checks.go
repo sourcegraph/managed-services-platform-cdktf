@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGeminiLoggingSetting_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleGeminiLoggingSetting_IsConstructParameters(x interface{}) error {
+func validateGoogleGeminiLoggingSetting_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGeminiLoggingSetting_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleGeminiLoggingSetting_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGeminiLoggingSetting_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGeminiLoggingSetting_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleGeminiLoggingSetting_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGeminiLoggingSetting_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleGeminiLoggingSetting_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLoggingSettingIdParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLogMetadataParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLogMetadataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLogMetadataParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLogPromptsAndResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLogPromptsAndResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewGoogleGeminiLoggingSettingParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) validateSetRequireConnectorsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceClientConnectionConfigOutputReference) validateSetRequireConnectorsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewGoogleAlloydbInstanceClientConnectionConfigOutputReferenceParame
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeInstanceTemplateTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

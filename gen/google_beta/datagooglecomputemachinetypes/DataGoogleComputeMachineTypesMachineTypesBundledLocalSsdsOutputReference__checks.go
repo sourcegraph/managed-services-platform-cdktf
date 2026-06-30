@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesBundledLocalSsdsOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesBundledLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesBundledLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeMachineTypesMachineTypesBundledLocalSsdsOutputR
 
 	return nil
 }
-

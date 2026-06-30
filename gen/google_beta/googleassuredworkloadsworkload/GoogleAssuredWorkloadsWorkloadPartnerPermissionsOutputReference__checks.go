@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetAssuredWorkloadsMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetAssuredWorkloadsMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetDataLogsViewerParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetDataLogsViewerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetServiceAccessApproverParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateSetServiceAccessApproverParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReferenceP
 
 	return nil
 }
-

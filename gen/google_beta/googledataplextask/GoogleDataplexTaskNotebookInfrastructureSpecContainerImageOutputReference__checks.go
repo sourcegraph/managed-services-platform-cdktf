@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutput
 
 	return nil
 }
-

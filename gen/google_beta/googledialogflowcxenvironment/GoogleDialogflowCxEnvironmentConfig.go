@@ -6,9 +6,9 @@ import (
 
 type GoogleDialogflowCxEnvironmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDialogflowCxEnvironmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the environment (unique in an agent). Limit of 64 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_environment#display_name GoogleDialogflowCxEnvironment#display_name}
@@ -26,7 +26,7 @@ type GoogleDialogflowCxEnvironmentConfig struct {
 	// version_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_environment#version_configs GoogleDialogflowCxEnvironment#version_configs}
-	VersionConfigs interface{} `field:"required" json:"versionConfigs" yaml:"versionConfigs"`
+	VersionConfigs any `field:"required" json:"versionConfigs" yaml:"versionConfigs"`
 	// The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_environment#description GoogleDialogflowCxEnvironment#description}
@@ -45,4 +45,3 @@ type GoogleDialogflowCxEnvironmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_environment#timeouts GoogleDialogflowCxEnvironment#timeouts}
 	Timeouts *GoogleDialogflowCxEnvironmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

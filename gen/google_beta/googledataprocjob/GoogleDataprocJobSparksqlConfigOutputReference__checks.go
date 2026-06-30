@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataprocJobSparksqlConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobSparksqlConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobSparksqlConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleDataprocJobSparksqlConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

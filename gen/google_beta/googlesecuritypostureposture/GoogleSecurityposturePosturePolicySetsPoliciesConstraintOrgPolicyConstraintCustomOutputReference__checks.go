@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference) validatePutPolicyRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference) validatePutPolicyRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolic
 
 	return nil
 }
-

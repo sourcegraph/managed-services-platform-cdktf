@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataplexTaskSparkInfrastructureSpecBatchOutputReferencePar
 
 	return nil
 }
-

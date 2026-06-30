@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleAccessContextManagerIngressPolicy_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleAccessContextManagerIngressPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleAccessContextManagerIngressPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleAccessContextManagerIngressPolicy_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleAccessContextManagerIngressPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAccessContextManagerIngressPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleAccessContextManagerIngressPolicy_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleAccessContextManagerIngressPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAccessContextManagerIngressPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleAccessContextManagerIngressPolicy_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleAccessContextManagerIngressPolicyParameters(scope construc
 
 	return nil
 }
-

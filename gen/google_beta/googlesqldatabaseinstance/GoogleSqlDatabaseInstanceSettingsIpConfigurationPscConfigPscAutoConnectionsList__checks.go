@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAuto
 
 	return nil
 }
-

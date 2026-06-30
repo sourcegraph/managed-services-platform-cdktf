@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsListParameter
 
 	return nil
 }
-

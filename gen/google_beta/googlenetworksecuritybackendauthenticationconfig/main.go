@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
-		reflect.TypeOf((*GoogleNetworkSecurityBackendAuthenticationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityBackendAuthenticationConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wellKnownRoots", GoGetter: "WellKnownRoots"},
 			_jsii_.MemberProperty{JsiiProperty: "wellKnownRootsInput", GoGetter: "WellKnownRootsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfigConfig",
-		reflect.TypeOf((*GoogleNetworkSecurityBackendAuthenticationConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityBackendAuthenticationConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfigTimeouts",
-		reflect.TypeOf((*GoogleNetworkSecurityBackendAuthenticationConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityBackendAuthenticationConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

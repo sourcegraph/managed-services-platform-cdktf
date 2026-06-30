@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleChronicleDataAccessScopeAllowedDataAccessLabelsOutputRefer
 
 	return nil
 }
-

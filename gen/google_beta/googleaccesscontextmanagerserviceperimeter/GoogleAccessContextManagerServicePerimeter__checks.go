@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleAccessContextManagerServicePerimeter_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeter_IsConstructParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleAccessContextManagerServicePerimeter_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeter_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleAccessContextManagerServicePerimeter_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleAccessContextManagerServicePerimeter_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetPerime
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,7 +469,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetTitleP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetUseExplicitDryRunSpecParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetUseExplicitDryRunSpecParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,4 +507,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterParameters(scope const
 
 	return nil
 }
-

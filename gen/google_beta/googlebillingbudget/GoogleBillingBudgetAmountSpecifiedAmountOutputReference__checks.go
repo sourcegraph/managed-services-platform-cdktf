@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAmountSpecifiedAmountOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAmountSpecifiedAmountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetAmountSpecifiedAmountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBillingBudgetAmountSpecifiedAmountOutputReferenceParameter
 
 	return nil
 }
-

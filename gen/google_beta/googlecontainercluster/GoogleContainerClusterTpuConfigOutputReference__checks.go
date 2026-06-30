@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetUseServiceNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterTpuConfigOutputReference) validateSetUseServiceNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewGoogleContainerClusterTpuConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

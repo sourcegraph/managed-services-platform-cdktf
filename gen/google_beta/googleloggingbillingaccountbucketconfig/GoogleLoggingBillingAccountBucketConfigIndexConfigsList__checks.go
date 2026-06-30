@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigIndexConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLoggingBillingAccountBucketConfigIndexConfigsListParameter
 
 	return nil
 }
-

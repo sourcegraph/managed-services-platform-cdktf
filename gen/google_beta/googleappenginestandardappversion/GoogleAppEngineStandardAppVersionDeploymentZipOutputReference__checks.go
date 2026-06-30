@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentZipOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentZipOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentZipOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAppEngineStandardAppVersionDeploymentZipOutputReferencePar
 
 	return nil
 }
-

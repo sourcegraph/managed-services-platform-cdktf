@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -252,4 +252,3 @@ func validateNewGoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputRe
 
 	return nil
 }
-

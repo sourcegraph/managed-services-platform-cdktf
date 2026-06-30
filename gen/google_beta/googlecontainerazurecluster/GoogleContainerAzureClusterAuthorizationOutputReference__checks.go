@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewGoogleContainerAzureClusterAuthorizationOutputReferenceParameter
 
 	return nil
 }
-

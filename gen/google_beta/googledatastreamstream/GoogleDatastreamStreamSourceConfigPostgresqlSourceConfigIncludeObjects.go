@@ -1,10 +1,8 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects struct {
 	// postgresql_schemas block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
-	PostgresqlSchemas interface{} `field:"required" json:"postgresqlSchemas" yaml:"postgresqlSchemas"`
+	PostgresqlSchemas any `field:"required" json:"postgresqlSchemas" yaml:"postgresqlSchemas"`
 }
-

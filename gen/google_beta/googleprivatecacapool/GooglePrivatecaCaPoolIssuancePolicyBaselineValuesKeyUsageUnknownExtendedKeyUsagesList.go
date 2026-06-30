@@ -17,8 +17,8 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKey
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKey
 	Get(index *float64) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	return returns
 }
 
-
 func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtended
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtended
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnkn
 
 	return returns
 }
-

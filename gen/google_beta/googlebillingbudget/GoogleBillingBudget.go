@@ -24,15 +24,15 @@ type GoogleBillingBudget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,28 +66,28 @@ type GoogleBillingBudget interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThresholdRules() GoogleBillingBudgetThresholdRulesList
-	ThresholdRulesInput() interface{}
+	ThresholdRulesInput() any
 	Timeouts() GoogleBillingBudgetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type GoogleBillingBudget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type GoogleBillingBudget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,7 +127,7 @@ type GoogleBillingBudget interface {
 	PutAllUpdatesRule(value *GoogleBillingBudgetAllUpdatesRule)
 	PutAmount(value *GoogleBillingBudgetAmount)
 	PutBudgetFilter(value *GoogleBillingBudgetBudgetFilter)
-	PutThresholdRules(value interface{})
+	PutThresholdRules(value any)
 	PutTimeouts(value *GoogleBillingBudgetTimeouts)
 	ResetAllUpdatesRule()
 	ResetBudgetFilter()
@@ -139,17 +139,17 @@ type GoogleBillingBudget interface {
 	ResetOwnershipScope()
 	ResetThresholdRules()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBillingBudget
@@ -247,8 +247,8 @@ func (j *jsiiProxy_GoogleBillingBudget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_GoogleBillingBudget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBillingBudget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_GoogleBillingBudget) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_GoogleBillingBudget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBillingBudget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_GoogleBillingBudget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_GoogleBillingBudget) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBillingBudget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_GoogleBillingBudget) ThresholdRules() GoogleBillingBudgetThre
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) ThresholdRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudget) ThresholdRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thresholdRulesInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_GoogleBillingBudget) Timeouts() GoogleBillingBudgetTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) GoogleBillingBudget {
@@ -519,7 +518,7 @@ func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -532,12 +531,12 @@ func NewGoogleBillingBudget_Override(g GoogleBillingBudget, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetBillingAccount(val *string) {
+func (j *jsiiProxy_GoogleBillingBudget) SetBillingAccount(val *string) {
 	if err := j.validateSetBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetBillingAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBillingBudget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBillingBudget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBillingBudget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleBillingBudget) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBillingBudget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetId(val *string) {
+func (j *jsiiProxy_GoogleBillingBudget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBillingBudget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetOwnershipScope(val *string) {
+func (j *jsiiProxy_GoogleBillingBudget) SetOwnershipScope(val *string) {
 	if err := j.validateSetOwnershipScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetOwnershipScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBillingBudget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleBillingBudget)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBillingBudget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func GoogleBillingBudget_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func GoogleBillingBudget_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBillingBudget_IsConstruct(x interface{}) *bool {
+func GoogleBillingBudget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBillingBudget_IsConstructParameters(x); err != nil {
@@ -696,7 +695,7 @@ func GoogleBillingBudget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func GoogleBillingBudget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBillingBudget_IsTerraformElement(x interface{}) *bool {
+func GoogleBillingBudget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBillingBudget_IsTerraformElementParameters(x); err != nil {
@@ -715,7 +714,7 @@ func GoogleBillingBudget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func GoogleBillingBudget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBillingBudget_IsTerraformResource(x interface{}) *bool {
+func GoogleBillingBudget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBillingBudget_IsTerraformResourceParameters(x); err != nil {
@@ -734,7 +733,7 @@ func GoogleBillingBudget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,31 +758,31 @@ func (g *jsiiProxy_GoogleBillingBudget) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBillingBudget) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBillingBudget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleBillingBudget) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,15 +910,15 @@ func (g *jsiiProxy_GoogleBillingBudget) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBillingBudget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleBillingBudget) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GoogleBillingBudget) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,18 +964,18 @@ func (g *jsiiProxy_GoogleBillingBudget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBillingBudget) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -987,7 +986,7 @@ func (g *jsiiProxy_GoogleBillingBudget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -998,7 +997,7 @@ func (g *jsiiProxy_GoogleBillingBudget) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1009,7 +1008,7 @@ func (g *jsiiProxy_GoogleBillingBudget) PutAllUpdatesRule(value *GoogleBillingBu
 	_jsii_.InvokeVoid(
 		g,
 		"putAllUpdatesRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleBillingBudget) PutAmount(value *GoogleBillingBudgetAmou
 	_jsii_.InvokeVoid(
 		g,
 		"putAmount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1031,18 +1030,18 @@ func (g *jsiiProxy_GoogleBillingBudget) PutBudgetFilter(value *GoogleBillingBudg
 	_jsii_.InvokeVoid(
 		g,
 		"putBudgetFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) PutThresholdRules(value interface{}) {
+func (g *jsiiProxy_GoogleBillingBudget) PutThresholdRules(value any) {
 	if err := g.validatePutThresholdRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putThresholdRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (g *jsiiProxy_GoogleBillingBudget) PutTimeouts(value *GoogleBillingBudgetTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1121,8 +1120,8 @@ func (g *jsiiProxy_GoogleBillingBudget) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBillingBudget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1134,8 +1133,8 @@ func (g *jsiiProxy_GoogleBillingBudget) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBillingBudget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1147,8 +1146,8 @@ func (g *jsiiProxy_GoogleBillingBudget) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBillingBudget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1160,8 +1159,8 @@ func (g *jsiiProxy_GoogleBillingBudget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBillingBudget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1186,8 +1185,8 @@ func (g *jsiiProxy_GoogleBillingBudget) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudget) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBillingBudget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1198,4 +1197,3 @@ func (g *jsiiProxy_GoogleBillingBudget) ToTerraform() interface{} {
 
 	return returns
 }
-

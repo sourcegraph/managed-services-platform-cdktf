@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateReservationAffinitySpecificReser
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceTemplateReservationAffinitySpecificReservat
 
 	return nil
 }
-

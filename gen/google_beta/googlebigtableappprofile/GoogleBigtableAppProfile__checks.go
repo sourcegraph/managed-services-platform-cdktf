@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAppProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigtableAppProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleBigtableAppProfile_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGoogleBigtableAppProfile_IsConstructParameters(x interface{}) error {
+func validateGoogleBigtableAppProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleBigtableAppProfile_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleBigtableAppProfile_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigtableAppProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleBigtableAppProfile_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGoogleBigtableAppProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigtableAppProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetAppProfileIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetIgnoreWarningsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetIgnoreWarningsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetMultiClusterRoutingClust
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetMultiClusterRoutingUseAnyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetMultiClusterRoutingUseAnyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,7 +520,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetRowAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetRowAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -558,4 +558,3 @@ func validateNewGoogleBigtableAppProfileParameters(scope constructs.Construct, i
 
 	return nil
 }
-

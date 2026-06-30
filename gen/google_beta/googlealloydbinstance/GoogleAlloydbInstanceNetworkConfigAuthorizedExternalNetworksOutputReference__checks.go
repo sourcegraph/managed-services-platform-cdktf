@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutp
 
 	return nil
 }
-

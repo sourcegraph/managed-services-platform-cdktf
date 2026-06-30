@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputRe
 
 	return nil
 }
-

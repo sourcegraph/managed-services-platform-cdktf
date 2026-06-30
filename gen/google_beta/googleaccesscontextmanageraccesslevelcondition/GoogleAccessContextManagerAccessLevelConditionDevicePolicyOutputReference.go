@@ -18,9 +18,9 @@ type GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference i
 	AllowedEncryptionStatusesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,16 +36,16 @@ type GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference i
 	InternalValue() *GoogleAccessContextManagerAccessLevelConditionDevicePolicy
 	SetInternalValue(val *GoogleAccessContextManagerAccessLevelConditionDevicePolicy)
 	OsConstraints() GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList
-	OsConstraintsInput() interface{}
-	RequireAdminApproval() interface{}
-	SetRequireAdminApproval(val interface{})
-	RequireAdminApprovalInput() interface{}
-	RequireCorpOwned() interface{}
-	SetRequireCorpOwned(val interface{})
-	RequireCorpOwnedInput() interface{}
-	RequireScreenLock() interface{}
-	SetRequireScreenLock(val interface{})
-	RequireScreenLockInput() interface{}
+	OsConstraintsInput() any
+	RequireAdminApproval() any
+	SetRequireAdminApproval(val any)
+	RequireAdminApprovalInput() any
+	RequireCorpOwned() any
+	SetRequireCorpOwned(val any)
+	RequireCorpOwnedInput() any
+	RequireScreenLock() any
+	SetRequireScreenLock(val any)
+	RequireScreenLockInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOsConstraints(value interface{})
+	PutOsConstraints(value any)
 	ResetAllowedDeviceManagementLevels()
 	ResetAllowedEncryptionStatuses()
 	ResetOsConstraints()
@@ -87,7 +87,7 @@ type GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference i
 	ResetRequireScreenLock()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) OsConstraintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) OsConstraintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"osConstraintsInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireAdminApproval() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireAdminApproval() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAdminApproval",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireAdminApprovalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireAdminApprovalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAdminApprovalInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireCorpOwned() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireCorpOwned() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCorpOwned",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireCorpOwnedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireCorpOwnedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCorpOwnedInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireScreenLock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireScreenLock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireScreenLock",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireScreenLockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) RequireScreenLockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireScreenLockInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-
 func NewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetAllowedDeviceManagementLevels(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetAllowedDeviceManagementLevels(val *[]*string) {
 	if err := j.validateSetAllowedDeviceManagementLevelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetAllowedEncryptionStatuses(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetAllowedEncryptionStatuses(val *[]*string) {
 	if err := j.validateSetAllowedEncryptionStatusesParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetInternalValue(val *GoogleAccessContextManagerAccessLevelConditionDevicePolicy) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetInternalValue(val *GoogleAccessContextManagerAccessLevelConditionDevicePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetRequireAdminApproval(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetRequireAdminApproval(val any) {
 	if err := j.validateSetRequireAdminApprovalParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetRequireCorpOwned(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetRequireCorpOwned(val any) {
 	if err := j.validateSetRequireCorpOwnedParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetRequireScreenLock(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetRequireScreenLock(val any) {
 	if err := j.validateSetRequireScreenLockParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,21 +606,21 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) PutOsConstraints(value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) PutOsConstraints(value any) {
 	if err := g.validatePutOsConstraintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putOsConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 
 	return returns
 }
-

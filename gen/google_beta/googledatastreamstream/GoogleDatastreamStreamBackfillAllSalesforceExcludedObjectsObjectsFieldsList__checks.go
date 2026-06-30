@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsObj
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDatastreamStreamBackfillAllSalesforceExcludedObjectsObject
 
 	return nil
 }
-

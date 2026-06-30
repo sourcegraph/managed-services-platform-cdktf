@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleChronicleRetrohuntExecutionIntervalOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleRetrohuntExecutionIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleRetrohuntExecutionIntervalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleChronicleRetrohuntExecutionIntervalOutputReferenceParamete
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type GoogleFirebaseHostingChannel interface {
 	SetChannelId(val *string)
 	ChannelIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,11 +61,11 @@ type GoogleFirebaseHostingChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetainedReleaseCount() *float64
 	SetRetainedReleaseCount(val *float64)
 	RetainedReleaseCountInput() *float64
@@ -76,11 +76,11 @@ type GoogleFirebaseHostingChannel interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleFirebaseHostingChannelTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Ttl() *string
 	SetTtl(val *string)
 	TtlInput() *string
@@ -88,9 +88,9 @@ type GoogleFirebaseHostingChannel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type GoogleFirebaseHostingChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type GoogleFirebaseHostingChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type GoogleFirebaseHostingChannel interface {
 	ResetRetainedReleaseCount()
 	ResetTimeouts()
 	ResetTtl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleFirebaseHostingChannel
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) ChannelIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) Timeouts() GoogleFirebaseHostin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) TtlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
 func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, config *GoogleFirebaseHostingChannelConfig) GoogleFirebaseHostingChannel {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewGoogleFirebaseHostingChannel_Override(g GoogleFirebaseHostingChannel, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetChannelId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetChannelId(val *string) {
 	if err := j.validateSetChannelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetChannelId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetExpireTime(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetExpireTime(val *string) {
 	if err := j.validateSetExpireTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetExpireTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetRetainedReleaseCount(val *float64) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetRetainedReleaseCount(val *float64) {
 	if err := j.validateSetRetainedReleaseCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetRetainedReleaseCount(val *flo
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetSiteId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetSiteId(val *string) {
 	if err := j.validateSetSiteIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetSiteId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel)SetTtl(val *string) {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) SetTtl(val *string) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func GoogleFirebaseHostingChannel_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func GoogleFirebaseHostingChannel_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool {
+func GoogleFirebaseHostingChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseHostingChannel_IsConstructParameters(x); err != nil {
@@ -727,7 +726,7 @@ func GoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func GoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool {
+func GoogleFirebaseHostingChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseHostingChannel_IsTerraformElementParameters(x); err != nil {
@@ -746,7 +745,7 @@ func GoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func GoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirebaseHostingChannel_IsTerraformResource(x interface{}) *bool {
+func GoogleFirebaseHostingChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseHostingChannel_IsTerraformResourceParameters(x); err != nil {
@@ -765,7 +764,7 @@ func GoogleFirebaseHostingChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,31 +789,31 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,15 +941,15 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -969,7 +968,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,18 +995,18 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) PutTimeouts(value *GoogleFireba
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,8 +1099,8 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) ResetTtl() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1113,8 +1112,8 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1126,8 +1125,8 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1139,8 +1138,8 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1165,8 +1164,8 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1177,4 +1176,3 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

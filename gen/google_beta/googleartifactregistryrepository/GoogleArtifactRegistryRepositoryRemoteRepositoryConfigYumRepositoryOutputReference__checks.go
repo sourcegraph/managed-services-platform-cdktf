@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumReposit
 
 	return nil
 }
-

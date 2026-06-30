@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTier",
-		reflect.TypeOf((*GoogleComputeProjectCloudArmorTier)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectCloudArmorTier](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeProjectCloudArmorTier{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierConfig",
-		reflect.TypeOf((*GoogleComputeProjectCloudArmorTierConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectCloudArmorTierConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeouts",
-		reflect.TypeOf((*GoogleComputeProjectCloudArmorTierTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectCloudArmorTierTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeProjectCloudArmorTier.GoogleComputeProjectCloudArmorTierTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeProjectCloudArmorTierTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectCloudArmorTierTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeProjectCloudArmorTierTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

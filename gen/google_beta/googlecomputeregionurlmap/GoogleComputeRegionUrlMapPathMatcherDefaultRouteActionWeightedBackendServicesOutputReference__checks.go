@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeighte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeighte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileForwardSshConnectivityOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDatastreamConnectionProfileForwardSshConnectivityOutputRef
 
 	return nil
 }
-

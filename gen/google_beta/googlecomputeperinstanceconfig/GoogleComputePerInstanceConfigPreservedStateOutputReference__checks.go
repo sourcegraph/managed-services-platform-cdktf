@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutDiskParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,4 +299,3 @@ func validateNewGoogleComputePerInstanceConfigPreservedStateOutputReferenceParam
 
 	return nil
 }
-

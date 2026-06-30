@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSslPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeRegionSslPolicy_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleComputeRegionSslPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionSslPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeRegionSslPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleComputeRegionSslPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionSslPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeRegionSslPolicy_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleComputeRegionSslPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionSslPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeRegionSslPolicy_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSslPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewGoogleComputeRegionSslPolicyParameters(scope constructs.Construc
 
 	return nil
 }
-

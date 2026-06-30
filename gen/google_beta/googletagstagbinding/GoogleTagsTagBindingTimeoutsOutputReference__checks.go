@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleTagsTagBindingTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectedEndpointGroups() GoogleNetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,30 +73,30 @@ type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityMirroringDeploymentGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkSecurityMirroringDeploymentGroup
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ConnectedEndpo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Connection() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Provider() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Provisioners()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) TerraformLabel
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) Timeouts() Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -570,7 +570,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) UpdateTime() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewGoogleNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringDeploymentGroupConfig) GoogleNetworkSecurityMirroringDeploymentGroup {
 	_init_.Initialize()
@@ -582,7 +581,7 @@ func NewGoogleNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -595,12 +594,12 @@ func NewGoogleNetworkSecurityMirroringDeploymentGroup_Override(g GoogleNetworkSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetConnection(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetCount(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetDependsOn(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetDescription(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetForEach(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetId(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLabels(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLifecycle(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetLocation(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetMirroringDeploymentGroupId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetMirroringDeploymentGroupId(val *string) {
 	if err := j.validateSetMirroringDeploymentGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetMirroringDep
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetNetwork(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetProject(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetProvider(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_GenerateConfigForImport(scope
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_GenerateConfigForImport(scope
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkSecurityMirroringDeploymentGroup_IsConstruct(x interface{}) *bool {
+func GoogleNetworkSecurityMirroringDeploymentGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityMirroringDeploymentGroup_IsConstructParameters(x); err != nil {
@@ -792,7 +791,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_IsConstruct(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_IsConstruct(x interface{}) *b
 }
 
 // Experimental.
-func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformElementParameters(x); err != nil {
@@ -811,7 +810,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformElement(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformElement(x interfac
 }
 
 // Experimental.
-func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformResourceParameters(x); err != nil {
@@ -830,7 +829,7 @@ func GoogleNetworkSecurityMirroringDeploymentGroup_IsTerraformResource(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeploymentGroup.GoogleNetworkSecurityMirroringDeploymentGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -855,31 +854,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) AddMoveTarget(
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,15 +1006,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1034,7 +1033,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ImportFrom(id 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1047,7 +1046,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,18 +1060,18 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) MoveFromId(id 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) MoveToId(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) OverrideLogica
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1105,7 +1104,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) PutTimeouts(va
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,8 +1156,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ResetTimeouts(
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1170,8 +1169,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1183,8 +1182,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) SynthesizeHclA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1196,8 +1195,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToHclTerraform
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1222,8 +1221,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToString() *st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1234,4 +1233,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) ToTerraform() 
 
 	return returns
 }
-

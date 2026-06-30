@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaCluster",
-		reflect.TypeOf((*GoogleManagedKafkaCluster)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,11 +94,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterCapacityConfig",
-		reflect.TypeOf((*GoogleManagedKafkaClusterCapacityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterCapacityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterCapacityConfigOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterCapacityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterCapacityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcpuCount", GoGetter: "VcpuCount"},
 			_jsii_.MemberProperty{JsiiProperty: "vcpuCountInput", GoGetter: "VcpuCountInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterCapacityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,23 +134,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterConfig",
-		reflect.TypeOf((*GoogleManagedKafkaClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfig",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigAccessConfig",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -172,7 +172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterGcpConfigOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterGcpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterGcpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "accessConfigInput", GoGetter: "AccessConfigInput"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterGcpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterRebalanceConfig",
-		reflect.TypeOf((*GoogleManagedKafkaClusterRebalanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterRebalanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterRebalanceConfigOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterRebalanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterRebalanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterRebalanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -318,11 +318,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterTimeouts",
-		reflect.TypeOf((*GoogleManagedKafkaClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleManagedKafkaCluster.GoogleManagedKafkaClusterTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleManagedKafkaClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleManagedKafkaClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleManagedKafkaClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

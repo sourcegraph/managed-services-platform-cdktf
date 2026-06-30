@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanIamMemberConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleGkeBackupRestorePlanIamMemberConditionOutputReferenceParam
 
 	return nil
 }
-

@@ -164,7 +164,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCust
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,7 +237,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCust
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,4 +304,3 @@ func validateNewGoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomI
 
 	return nil
 }
-

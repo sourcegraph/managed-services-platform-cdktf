@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutAuthorizedNetworksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutAuthorizedNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutPscConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutPscConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetEnablePrivatePathForGoogleCloudServicesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetEnablePrivatePathForGoogleCloudServicesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetIpv4EnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetIpv4EnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -348,4 +348,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferenceP
 
 	return nil
 }
-

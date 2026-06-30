@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterFleetOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAzureClusterFleetOutputReferenceParameters(terraf
 
 	return nil
 }
-

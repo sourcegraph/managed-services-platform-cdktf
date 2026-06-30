@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,23 +79,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyConfig",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRules",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityCondition", GoGetter: "AvailabilityCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityConditionInput", GoGetter: "AvailabilityConditionInput"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesList",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesOutputReference",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBoundaryRule", GoGetter: "AccessBoundaryRule"},
 			_jsii_.MemberProperty{JsiiProperty: "accessBoundaryRuleInput", GoGetter: "AccessBoundaryRuleInput"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyTimeouts",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamAccessBoundaryPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamAccessBoundaryPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamAccessBoundaryPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package googlecloudrundomainmapping
 
-
 type GoogleCloudRunDomainMappingSpec struct {
 	// The name of the Cloud Run Service that this DomainMapping applies to. The route must exist.
 	//
@@ -17,6 +16,5 @@ type GoogleCloudRunDomainMappingSpec struct {
 	// has given such a warning.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_domain_mapping#force_override GoogleCloudRunDomainMapping#force_override}
-	ForceOverride interface{} `field:"optional" json:"forceOverride" yaml:"forceOverride"`
+	ForceOverride any `field:"optional" json:"forceOverride" yaml:"forceOverride"`
 }
-

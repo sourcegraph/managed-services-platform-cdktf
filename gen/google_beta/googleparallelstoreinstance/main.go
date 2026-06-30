@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParallelstoreInstance.GoogleParallelstoreInstance",
-		reflect.TypeOf((*GoogleParallelstoreInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleParallelstoreInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPoints", GoGetter: "AccessPoints"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParallelstoreInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleParallelstoreInstance.GoogleParallelstoreInstanceConfig",
-		reflect.TypeOf((*GoogleParallelstoreInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleParallelstoreInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleParallelstoreInstance.GoogleParallelstoreInstanceTimeouts",
-		reflect.TypeOf((*GoogleParallelstoreInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleParallelstoreInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleParallelstoreInstance.GoogleParallelstoreInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleParallelstoreInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleParallelstoreInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleParallelstoreInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

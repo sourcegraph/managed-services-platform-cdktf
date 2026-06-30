@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReferencePar
 
 	return nil
 }
-

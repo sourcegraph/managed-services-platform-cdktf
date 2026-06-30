@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
-		reflect.TypeOf((*GoogleProjectDefaultServiceAccounts)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectDefaultServiceAccounts](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectDefaultServiceAccounts{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsConfig",
-		reflect.TypeOf((*GoogleProjectDefaultServiceAccountsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectDefaultServiceAccountsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeouts",
-		reflect.TypeOf((*GoogleProjectDefaultServiceAccountsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectDefaultServiceAccountsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleProjectDefaultServiceAccountsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectDefaultServiceAccountsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectDefaultServiceAccountsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConf
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeployment.GoogleNetworkSecurityMirroringDeployment",
-		reflect.TypeOf((*GoogleNetworkSecurityMirroringDeployment)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityMirroringDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkSecurityMirroringDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeployment.GoogleNetworkSecurityMirroringDeploymentConfig",
-		reflect.TypeOf((*GoogleNetworkSecurityMirroringDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityMirroringDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeployment.GoogleNetworkSecurityMirroringDeploymentTimeouts",
-		reflect.TypeOf((*GoogleNetworkSecurityMirroringDeploymentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityMirroringDeploymentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkSecurityMirroringDeployment.GoogleNetworkSecurityMirroringDeploymentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkSecurityMirroringDeploymentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkSecurityMirroringDeploymentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkSecurityMirroringDeploymentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

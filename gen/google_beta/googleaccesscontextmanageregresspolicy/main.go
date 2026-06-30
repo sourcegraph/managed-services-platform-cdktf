@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy",
-		reflect.TypeOf((*GoogleAccessContextManagerEgressPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerEgressPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicyId", GoGetter: "AccessPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerEgressPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig",
-		reflect.TypeOf((*GoogleAccessContextManagerEgressPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerEgressPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts",
-		reflect.TypeOf((*GoogleAccessContextManagerEgressPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerEgressPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

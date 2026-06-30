@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
-		reflect.TypeOf((*GoogleSqlSourceRepresentationInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlSourceRepresentationInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlSourceRepresentationInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstanceConfig",
-		reflect.TypeOf((*GoogleSqlSourceRepresentationInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlSourceRepresentationInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstanceTimeouts",
-		reflect.TypeOf((*GoogleSqlSourceRepresentationInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlSourceRepresentationInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlSourceRepresentationInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

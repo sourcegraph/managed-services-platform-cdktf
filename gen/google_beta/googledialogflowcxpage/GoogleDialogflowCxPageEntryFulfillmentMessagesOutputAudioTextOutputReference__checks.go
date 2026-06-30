@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputAudioText
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOut
 
 	return nil
 }
-

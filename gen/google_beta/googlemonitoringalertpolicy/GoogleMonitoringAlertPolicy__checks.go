@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validatePutAlertStrategyParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validatePutConditionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicy) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleMonitoringAlertPolicy_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleMonitoringAlertPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleMonitoringAlertPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleMonitoringAlertPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleMonitoringAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleMonitoringAlertPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetCombinerParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetDisplayNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -546,4 +546,3 @@ func validateNewGoogleMonitoringAlertPolicyParameters(scope constructs.Construct
 
 	return nil
 }
-

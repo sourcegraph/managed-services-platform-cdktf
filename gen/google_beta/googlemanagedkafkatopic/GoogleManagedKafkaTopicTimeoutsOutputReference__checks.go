@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaTopicTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleManagedKafkaTopicTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

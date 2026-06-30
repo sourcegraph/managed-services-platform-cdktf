@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNotebooksRuntimeSoftwareConfigKernelsListParameters(terraf
 
 	return nil
 }
-

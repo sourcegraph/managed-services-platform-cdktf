@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataplexTaskIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleDataplexTaskIamPolicy_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleDataplexTaskIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleDataplexTaskIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleDataplexTaskIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleDataplexTaskIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataplexTaskIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleDataplexTaskIamPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleDataplexTaskIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataplexTaskIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleDataplexTaskIamPolicy_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewGoogleDataplexTaskIamPolicyParameters(scope constructs.Construct
 
 	return nil
 }
-

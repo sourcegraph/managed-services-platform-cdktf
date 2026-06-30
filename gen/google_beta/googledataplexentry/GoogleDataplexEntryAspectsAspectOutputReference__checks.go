@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexEntryAspectsAspectOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryAspectsAspectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexEntryAspectsAspectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataplexEntryAspectsAspectOutputReferenceParameters(terraf
 
 	return nil
 }
-

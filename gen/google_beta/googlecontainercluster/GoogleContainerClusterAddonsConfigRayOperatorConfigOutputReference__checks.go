@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReferen
 
 	return nil
 }
-

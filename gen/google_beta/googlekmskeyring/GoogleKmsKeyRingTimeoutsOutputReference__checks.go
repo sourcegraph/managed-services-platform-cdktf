@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleKmsKeyRingTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpr
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpress
 
 	return nil
 }
-

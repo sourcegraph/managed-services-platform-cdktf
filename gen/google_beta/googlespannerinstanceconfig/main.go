@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigA",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigA)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerInstanceConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigAConfig",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigAConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigReplicas",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigReplicas)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigReplicasList",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigReplicasList)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigReplicasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerInstanceConfigReplicasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigReplicasOutputReference",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigTimeouts",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSpannerInstanceConfig.GoogleSpannerInstanceConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSpannerInstanceConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSpannerInstanceConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSpannerInstanceConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

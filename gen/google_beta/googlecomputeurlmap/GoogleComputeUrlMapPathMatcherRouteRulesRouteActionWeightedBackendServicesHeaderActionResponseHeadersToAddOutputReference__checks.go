@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetReplaceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference) validateSetReplaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
 
 	return nil
 }
-

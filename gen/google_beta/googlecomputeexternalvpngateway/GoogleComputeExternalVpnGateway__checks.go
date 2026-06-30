@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validateOverrideLogicalIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validatePutInterfaceParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeExternalVpnGateway) validatePutInterfaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleComputeExternalVpnGateway_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleComputeExternalVpnGateway_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeExternalVpnGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleComputeExternalVpnGateway_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleComputeExternalVpnGateway_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeExternalVpnGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleComputeExternalVpnGateway_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleComputeExternalVpnGateway_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeExternalVpnGateway_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleComputeExternalVpnGateway_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeExternalVpnGateway) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleComputeExternalVpnGatewayParameters(scope constructs.Const
 
 	return nil
 }
-

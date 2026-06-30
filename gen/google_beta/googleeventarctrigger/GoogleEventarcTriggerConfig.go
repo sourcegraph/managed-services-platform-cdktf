@@ -6,9 +6,9 @@ import (
 
 type GoogleEventarcTriggerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleEventarcTriggerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// destination block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_trigger#destination GoogleEventarcTrigger#destination}
@@ -30,7 +30,7 @@ type GoogleEventarcTriggerConfig struct {
 	// matching_criteria block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_trigger#matching_criteria GoogleEventarcTrigger#matching_criteria}
-	MatchingCriteria interface{} `field:"required" json:"matchingCriteria" yaml:"matchingCriteria"`
+	MatchingCriteria any `field:"required" json:"matchingCriteria" yaml:"matchingCriteria"`
 	// Required. The resource name of the trigger. Must be unique within the location on the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_trigger#name GoogleEventarcTrigger#name}
@@ -76,4 +76,3 @@ type GoogleEventarcTriggerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_trigger#transport GoogleEventarcTrigger#transport}
 	Transport *GoogleEventarcTriggerTransport `field:"optional" json:"transport" yaml:"transport"`
 }
-

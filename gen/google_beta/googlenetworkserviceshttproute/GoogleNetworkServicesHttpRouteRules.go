@@ -1,6 +1,5 @@
 package googlenetworkserviceshttproute
 
-
 type GoogleNetworkServicesHttpRouteRules struct {
 	// action block.
 	//
@@ -9,6 +8,5 @@ type GoogleNetworkServicesHttpRouteRules struct {
 	// matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#matches GoogleNetworkServicesHttpRoute#matches}
-	Matches interface{} `field:"optional" json:"matches" yaml:"matches"`
+	Matches any `field:"optional" json:"matches" yaml:"matches"`
 }
-

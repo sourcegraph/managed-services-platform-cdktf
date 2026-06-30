@@ -1,6 +1,5 @@
 package googledatabasemigrationserviceconnectionprofile
 
-
 type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings struct {
 	// The Database Migration Service source connection profile ID, in the format: projects/my_project_name/locations/us-central1/connectionProfiles/connection_profile_ID.
 	//
@@ -18,7 +17,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings struct {
 	// If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_database_migration_service_connection_profile#auto_storage_increase GoogleDatabaseMigrationServiceConnectionProfile#auto_storage_increase}
-	AutoStorageIncrease interface{} `field:"optional" json:"autoStorageIncrease" yaml:"autoStorageIncrease"`
+	AutoStorageIncrease any `field:"optional" json:"autoStorageIncrease" yaml:"autoStorageIncrease"`
 	// The KMS key name used for the csql instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_database_migration_service_connection_profile#cmek_key_name GoogleDatabaseMigrationServiceConnectionProfile#cmek_key_name}
@@ -76,4 +75,3 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_database_migration_service_connection_profile#zone GoogleDatabaseMigrationServiceConnectionProfile#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

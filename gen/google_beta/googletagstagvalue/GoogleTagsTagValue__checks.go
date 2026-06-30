@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleTagsTagValue) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTagsTagValue) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleTagsTagValue) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleTagsTagValue) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTagsTagValue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleTagsTagValue) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleTagsTagValue_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleTagsTagValue_IsConstructParameters(x interface{}) error {
+func validateGoogleTagsTagValue_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleTagsTagValue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleTagsTagValue_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleTagsTagValue_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleTagsTagValue_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleTagsTagValue_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleTagsTagValue_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleTagsTagValue_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagValue) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagValue) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleTagsTagValue) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagValue) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagValue) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleTagsTagValue) validateSetParentParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagValue) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleTagsTagValue) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleTagsTagValueParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

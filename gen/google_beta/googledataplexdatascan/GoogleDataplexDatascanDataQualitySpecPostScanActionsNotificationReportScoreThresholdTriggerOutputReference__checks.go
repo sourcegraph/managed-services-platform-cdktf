@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataplexDatascanDataQualitySpecPostScanActionsNotification
 
 	return nil
 }
-

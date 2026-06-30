@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreDedicatedServingEndpointOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreDedicatedServingEndpointOutputRe
 
 	return nil
 }
-

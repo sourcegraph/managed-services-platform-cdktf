@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateSetAllowDuplicateEmailsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateSetAllowDuplicateEmailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewGoogleIdentityPlatformConfigSignInOutputReferenceParameters(terr
 
 	return nil
 }
-

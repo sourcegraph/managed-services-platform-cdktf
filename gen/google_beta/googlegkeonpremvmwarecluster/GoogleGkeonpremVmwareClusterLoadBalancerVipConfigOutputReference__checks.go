@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference
 
 	return nil
 }
-

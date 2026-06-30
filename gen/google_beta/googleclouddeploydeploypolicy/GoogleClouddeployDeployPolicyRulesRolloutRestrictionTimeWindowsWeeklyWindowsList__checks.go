@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionTimeWindo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsW
 
 	return nil
 }
-

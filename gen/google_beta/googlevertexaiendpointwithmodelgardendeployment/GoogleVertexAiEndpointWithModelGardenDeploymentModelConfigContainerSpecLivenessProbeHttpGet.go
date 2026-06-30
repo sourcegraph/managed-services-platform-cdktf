@@ -1,6 +1,5 @@
 package googlevertexaiendpointwithmodelgardendeployment
 
-
 type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet struct {
 	// Host name to connect to, defaults to the model serving container's IP.
 	//
@@ -11,7 +10,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLive
 	// http_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#http_headers GoogleVertexAiEndpointWithModelGardenDeployment#http_headers}
-	HttpHeaders interface{} `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
+	HttpHeaders any `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#path GoogleVertexAiEndpointWithModelGardenDeployment#path}
@@ -25,4 +24,3 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLive
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#scheme GoogleVertexAiEndpointWithModelGardenDeployment#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

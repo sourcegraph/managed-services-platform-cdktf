@@ -6,9 +6,9 @@ import (
 
 type GoogleBigqueryReservationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBigqueryReservationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the reservation. This field must only contain alphanumeric characters or dash.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_reservation#name GoogleBigqueryReservation#name}
@@ -55,7 +55,7 @@ type GoogleBigqueryReservationConfig struct {
 	// capacity specified above at most.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_reservation#ignore_idle_slots GoogleBigqueryReservation#ignore_idle_slots}
-	IgnoreIdleSlots interface{} `field:"optional" json:"ignoreIdleSlots" yaml:"ignoreIdleSlots"`
+	IgnoreIdleSlots any `field:"optional" json:"ignoreIdleSlots" yaml:"ignoreIdleSlots"`
 	// The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_reservation#location GoogleBigqueryReservation#location}
@@ -76,4 +76,3 @@ type GoogleBigqueryReservationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_reservation#timeouts GoogleBigqueryReservation#timeouts}
 	Timeouts *GoogleBigqueryReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionFaultIn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjec
 
 	return nil
 }
-

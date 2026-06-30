@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceFromMachineImageSchedulingMaxRunDurationOut
 
 	return nil
 }
-

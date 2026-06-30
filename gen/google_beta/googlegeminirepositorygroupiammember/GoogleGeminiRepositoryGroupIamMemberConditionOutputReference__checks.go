@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleGeminiRepositoryGroupIamMemberConditionOutputReferencePara
 
 	return nil
 }
-

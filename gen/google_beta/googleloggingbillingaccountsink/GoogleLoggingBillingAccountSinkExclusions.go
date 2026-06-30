@@ -1,6 +1,5 @@
 package googleloggingbillingaccountsink
 
-
 type GoogleLoggingBillingAccountSinkExclusions struct {
 	// An advanced logs filter that matches the log entries to be excluded.
 	//
@@ -21,6 +20,5 @@ type GoogleLoggingBillingAccountSinkExclusions struct {
 	// If set to True, then this exclusion is disabled and it does not exclude any log entries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_billing_account_sink#disabled GoogleLoggingBillingAccountSink#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 }
-

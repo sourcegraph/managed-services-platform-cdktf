@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceConfigAOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleFirebaseExtensionsInstanceConfigAOutputReferenceParameters
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type GoogleDataprocSessionTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	// Experimental.
@@ -69,11 +69,11 @@ type GoogleDataprocSessionTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuntimeConfig() GoogleDataprocSessionTemplateRuntimeConfigOutputReference
 	RuntimeConfigInput() *GoogleDataprocSessionTemplateRuntimeConfig
 	SparkConnectSession() GoogleDataprocSessionTemplateSparkConnectSessionOutputReference
@@ -82,20 +82,20 @@ type GoogleDataprocSessionTemplate interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataprocSessionTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Uuid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleDataprocSessionTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleDataprocSessionTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type GoogleDataprocSessionTemplate interface {
 	ResetRuntimeConfig()
 	ResetSparkConnectSession()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataprocSessionTemplate
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) Timeouts() GoogleDataprocSessi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -587,7 +587,6 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate) Uuid() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_session_template google_dataproc_session_template} Resource.
 func NewGoogleDataprocSessionTemplate(scope constructs.Construct, id *string, config *GoogleDataprocSessionTemplateConfig) GoogleDataprocSessionTemplate {
 	_init_.Initialize()
@@ -599,7 +598,7 @@ func NewGoogleDataprocSessionTemplate(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -612,12 +611,12 @@ func NewGoogleDataprocSessionTemplate_Override(g GoogleDataprocSessionTemplate, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetName(val *string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataprocSessionTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func GoogleDataprocSessionTemplate_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func GoogleDataprocSessionTemplate_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataprocSessionTemplate_IsConstruct(x interface{}) *bool {
+func GoogleDataprocSessionTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocSessionTemplate_IsConstructParameters(x); err != nil {
@@ -787,7 +786,7 @@ func GoogleDataprocSessionTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func GoogleDataprocSessionTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocSessionTemplate_IsTerraformElement(x interface{}) *bool {
+func GoogleDataprocSessionTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocSessionTemplate_IsTerraformElementParameters(x); err != nil {
@@ -806,7 +805,7 @@ func GoogleDataprocSessionTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func GoogleDataprocSessionTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocSessionTemplate_IsTerraformResource(x interface{}) *bool {
+func GoogleDataprocSessionTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocSessionTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -825,7 +824,7 @@ func GoogleDataprocSessionTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocSessionTemplate.GoogleDataprocSessionTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,31 +849,31 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,15 +1001,15 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,18 +1055,18 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) PutEnvironmentConfig(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putEnvironmentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) PutJupyterSession(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putJupyterSession",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) PutRuntimeConfig(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putRuntimeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) PutSparkConnectSession(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putSparkConnectSession",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) PutTimeouts(value *GoogleDatap
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1228,8 +1227,8 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1241,8 +1240,8 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1254,8 +1253,8 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1267,8 +1266,8 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1293,8 +1292,8 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1305,4 +1304,3 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

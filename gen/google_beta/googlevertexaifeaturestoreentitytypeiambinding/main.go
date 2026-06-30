@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding",
-		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeaturestoreEntitytypeIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition",
-		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig",
-		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig](),
 	)
 }

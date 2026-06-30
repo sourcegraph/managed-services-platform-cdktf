@@ -15,11 +15,11 @@ type DataGoogleComputeHaVpnGateway interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,7 +58,7 @@ type DataGoogleComputeHaVpnGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -68,14 +68,14 @@ type DataGoogleComputeHaVpnGateway interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpnInterfaces() DataGoogleComputeHaVpnGatewayVpnInterfacesList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,18 +103,18 @@ type DataGoogleComputeHaVpnGateway interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeHaVpnGateway
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -442,7 +442,6 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) VpnInterfaces() DataGoogleComp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
 func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config *DataGoogleComputeHaVpnGatewayConfig) DataGoogleComputeHaVpnGateway {
 	_init_.Initialize()
@@ -454,7 +453,7 @@ func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -467,12 +466,12 @@ func NewDataGoogleComputeHaVpnGateway_Override(d DataGoogleComputeHaVpnGateway, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGateway)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func DataGoogleComputeHaVpnGateway_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func DataGoogleComputeHaVpnGateway_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeHaVpnGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeHaVpnGateway_IsConstructParameters(x); err != nil {
@@ -609,7 +608,7 @@ func DataGoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func DataGoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeHaVpnGateway_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeHaVpnGateway_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeHaVpnGateway_IsTerraformDataSourceParameters(x); err != nil {
@@ -628,7 +627,7 @@ func DataGoogleComputeHaVpnGateway_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func DataGoogleComputeHaVpnGateway_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeHaVpnGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeHaVpnGateway_IsTerraformElementParameters(x); err != nil {
@@ -647,7 +646,7 @@ func DataGoogleComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,27 +664,27 @@ func DataGoogleComputeHaVpnGateway_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -918,8 +917,8 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -944,8 +943,8 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -956,4 +955,3 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

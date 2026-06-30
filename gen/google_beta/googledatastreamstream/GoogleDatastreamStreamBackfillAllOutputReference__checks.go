@@ -153,7 +153,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleDatastreamStreamBackfillAllOutputReferenceParameters(terra
 
 	return nil
 }
-

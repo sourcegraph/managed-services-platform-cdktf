@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigConta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContaine
 
 	return nil
 }
-

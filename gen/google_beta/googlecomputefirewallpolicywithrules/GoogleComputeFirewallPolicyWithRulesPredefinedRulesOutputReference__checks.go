@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReferen
 
 	return nil
 }
-

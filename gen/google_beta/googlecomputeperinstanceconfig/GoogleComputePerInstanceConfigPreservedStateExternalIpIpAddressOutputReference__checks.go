@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddre
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressO
 
 	return nil
 }
-

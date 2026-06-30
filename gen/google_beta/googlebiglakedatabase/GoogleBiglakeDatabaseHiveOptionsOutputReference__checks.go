@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabaseHiveOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabaseHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBiglakeDatabaseHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBiglakeDatabaseHiveOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

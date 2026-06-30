@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeNetworkPeeringRoutesConfig_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleComputeNetworkPeeringRoutesConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeNetworkPeeringRoutesConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeNetworkPeeringRoutesConfig_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetCountPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportCustomRoutesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportCustomRoutesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportCus
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportSubnetRoutesWithPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetExportSubnetRoutesWithPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportCustomRoutesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportCustomRoutesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportCus
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportSubnetRoutesWithPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportSubnetRoutesWithPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -465,7 +465,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,4 +529,3 @@ func validateNewGoogleComputeNetworkPeeringRoutesConfigParameters(scope construc
 
 	return nil
 }
-

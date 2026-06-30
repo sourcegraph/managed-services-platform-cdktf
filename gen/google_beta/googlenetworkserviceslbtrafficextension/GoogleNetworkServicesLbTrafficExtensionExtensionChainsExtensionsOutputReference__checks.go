@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -298,4 +298,3 @@ func validateNewGoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensions
 
 	return nil
 }
-

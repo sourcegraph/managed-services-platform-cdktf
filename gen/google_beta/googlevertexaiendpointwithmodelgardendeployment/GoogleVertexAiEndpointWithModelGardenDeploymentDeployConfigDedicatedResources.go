@@ -1,6 +1,5 @@
 package googlevertexaiendpointwithmodelgardendeployment
 
-
 type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources struct {
 	// machine_spec block.
 	//
@@ -18,7 +17,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourc
 	// autoscaling_metric_specs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#autoscaling_metric_specs GoogleVertexAiEndpointWithModelGardenDeployment#autoscaling_metric_specs}
-	AutoscalingMetricSpecs interface{} `field:"optional" json:"autoscalingMetricSpecs" yaml:"autoscalingMetricSpecs"`
+	AutoscalingMetricSpecs any `field:"optional" json:"autoscalingMetricSpecs" yaml:"autoscalingMetricSpecs"`
 	// The maximum number of replicas that may be deployed on when the traffic against it increases.
 	//
 	// If the requested value is too large, the deployment
@@ -48,6 +47,5 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourc
 	// If true, schedule the deployment workload on [spot VMs](https://cloud.google.com/kubernetes-engine/docs/concepts/spot-vms).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#spot GoogleVertexAiEndpointWithModelGardenDeployment#spot}
-	Spot interface{} `field:"optional" json:"spot" yaml:"spot"`
+	Spot any `field:"optional" json:"spot" yaml:"spot"`
 }
-

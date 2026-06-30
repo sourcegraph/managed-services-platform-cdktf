@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateOverrideLogi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validatePutExtensionChainsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validatePutExtensionChainsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleNetworkServicesLbTrafficExtension_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleNetworkServicesLbTrafficExtension_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkServicesLbTrafficExtension_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleNetworkServicesLbTrafficExtension_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleNetworkServicesLbTrafficExtension_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewGoogleNetworkServicesLbTrafficExtensionParameters(scope construc
 
 	return nil
 }
-

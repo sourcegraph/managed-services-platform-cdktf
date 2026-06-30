@@ -6,9 +6,9 @@ import (
 
 type GoogleApigeeSyncAuthorizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleApigeeSyncAuthorizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Array of service accounts to grant access to control plane resources, each specified using the following format: 'serviceAccount:service-account-name'.
 	//
 	// The 'service-account-name' is formatted like an email address. For example: my-synchronizer-manager-serviceAccount@my_project_id.iam.gserviceaccount.com
@@ -43,4 +43,3 @@ type GoogleApigeeSyncAuthorizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_sync_authorization#timeouts GoogleApigeeSyncAuthorization#timeouts}
 	Timeouts *GoogleApigeeSyncAuthorizationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

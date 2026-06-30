@@ -12,9 +12,9 @@ type GoogleRedisInstanceMaintenancePolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,11 +43,11 @@ type GoogleRedisInstanceMaintenancePolicyOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdateTime() *string
 	WeeklyMaintenanceWindow() GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList
-	WeeklyMaintenanceWindowInput() interface{}
+	WeeklyMaintenanceWindowInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,12 +68,12 @@ type GoogleRedisInstanceMaintenancePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutWeeklyMaintenanceWindow(value interface{})
+	PutWeeklyMaintenanceWindow(value any)
 	ResetDescription()
 	ResetWeeklyMaintenanceWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) WeeklyMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) WeeklyMaintenanceWindowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) WeeklyMaintenanceWindowInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"weeklyMaintenanceWindowInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) WeeklyMa
 	)
 	return returns
 }
-
 
 func NewGoogleRedisInstanceMaintenancePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleRedisInstanceMaintenancePolicyOutputReference {
 	_init_.Initialize()
@@ -227,7 +226,7 @@ func NewGoogleRedisInstanceMaintenancePolicyOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewGoogleRedisInstanceMaintenancePolicyOutputReference_Override(g GoogleRed
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetDescri
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetInternalValue(val *GoogleRedisInstanceMaintenancePolicy) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetInternalValue(val *GoogleRedisInstanceMaintenancePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,21 +488,21 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) PutWeeklyMaintenanceWindow(value interface{}) {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) PutWeeklyMaintenanceWindow(value any) {
 	if err := g.validatePutWeeklyMaintenanceWindowParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putWeeklyMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -523,16 +522,16 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) ResetWee
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -551,4 +550,3 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) ToString
 
 	return returns
 }
-

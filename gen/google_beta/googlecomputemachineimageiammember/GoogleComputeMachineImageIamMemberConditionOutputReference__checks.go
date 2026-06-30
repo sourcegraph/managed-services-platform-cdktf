@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeMachineImageIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImageIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeMachineImageIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeMachineImageIamMemberConditionOutputReferenceParame
 
 	return nil
 }
-

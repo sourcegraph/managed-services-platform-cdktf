@@ -18,15 +18,15 @@ type GoogleGeminiCodeToolsSetting interface {
 	SetCodeToolsSettingId(val *string)
 	CodeToolsSettingIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -34,7 +34,7 @@ type GoogleGeminiCodeToolsSetting interface {
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
 	EnabledTool() GoogleGeminiCodeToolsSettingEnabledToolList
-	EnabledToolInput() interface{}
+	EnabledToolInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,28 +67,28 @@ type GoogleGeminiCodeToolsSetting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleGeminiCodeToolsSettingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleGeminiCodeToolsSetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,14 +118,14 @@ type GoogleGeminiCodeToolsSetting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEnabledTool(value interface{})
+	PutEnabledTool(value any)
 	PutTimeouts(value *GoogleGeminiCodeToolsSettingTimeouts)
 	ResetId()
 	ResetLabels()
@@ -135,17 +135,17 @@ type GoogleGeminiCodeToolsSetting interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleGeminiCodeToolsSetting
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) CodeToolsSettingIdInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) EnabledTool() GoogleGeminiCodeT
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) EnabledToolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) EnabledToolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledToolInput",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) Timeouts() GoogleGeminiCodeTool
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -503,7 +503,6 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gemini_code_tools_setting google_gemini_code_tools_setting} Resource.
 func NewGoogleGeminiCodeToolsSetting(scope constructs.Construct, id *string, config *GoogleGeminiCodeToolsSettingConfig) GoogleGeminiCodeToolsSetting {
 	_init_.Initialize()
@@ -515,7 +514,7 @@ func NewGoogleGeminiCodeToolsSetting(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -528,12 +527,12 @@ func NewGoogleGeminiCodeToolsSetting_Override(g GoogleGeminiCodeToolsSetting, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetCodeToolsSettingId(val *string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetCodeToolsSettingId(val *string) {
 	if err := j.validateSetCodeToolsSettingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetCodeToolsSettingId(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetId(val *string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetProject(val *string) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeToolsSetting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleGeminiCodeToolsSetting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func GoogleGeminiCodeToolsSetting_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func GoogleGeminiCodeToolsSetting_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleGeminiCodeToolsSetting_IsConstruct(x interface{}) *bool {
+func GoogleGeminiCodeToolsSetting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiCodeToolsSetting_IsConstructParameters(x); err != nil {
@@ -703,7 +702,7 @@ func GoogleGeminiCodeToolsSetting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func GoogleGeminiCodeToolsSetting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGeminiCodeToolsSetting_IsTerraformElement(x interface{}) *bool {
+func GoogleGeminiCodeToolsSetting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiCodeToolsSetting_IsTerraformElementParameters(x); err != nil {
@@ -722,7 +721,7 @@ func GoogleGeminiCodeToolsSetting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func GoogleGeminiCodeToolsSetting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGeminiCodeToolsSetting_IsTerraformResource(x interface{}) *bool {
+func GoogleGeminiCodeToolsSetting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiCodeToolsSetting_IsTerraformResourceParameters(x); err != nil {
@@ -741,7 +740,7 @@ func GoogleGeminiCodeToolsSetting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiCodeToolsSetting.GoogleGeminiCodeToolsSetting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,31 +765,31 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,15 +917,15 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -945,7 +944,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -958,7 +957,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,18 +971,18 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1005,18 +1004,18 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) PutEnabledTool(value interface{}) {
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) PutEnabledTool(value any) {
 	if err := g.validatePutEnabledToolParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEnabledTool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) PutTimeouts(value *GoogleGemini
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,8 +1078,8 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1092,8 +1091,8 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1105,8 +1104,8 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1118,8 +1117,8 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1144,8 +1143,8 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1156,4 +1155,3 @@ func (g *jsiiProxy_GoogleGeminiCodeToolsSetting) ToTerraform() interface{} {
 
 	return returns
 }
-

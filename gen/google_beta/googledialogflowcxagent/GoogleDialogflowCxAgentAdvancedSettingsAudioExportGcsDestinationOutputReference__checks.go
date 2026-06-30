@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsAudioExportGcsDestinat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxAgentAdvancedSettingsAudioExportGcsDestination
 
 	return nil
 }
-

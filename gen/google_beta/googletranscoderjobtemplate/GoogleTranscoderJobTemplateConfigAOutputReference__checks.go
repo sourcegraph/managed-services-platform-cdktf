@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validateIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutAdBreaksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutAdBreaksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutEditListParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutEditListParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutElementaryStreamsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutElementaryStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutEncryptionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutEncryptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutInputsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutInputsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutManifestsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutManifestsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutMuxStreamsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutMuxStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutOverlaysParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validatePutOverlaysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -468,4 +468,3 @@ func validateNewGoogleTranscoderJobTemplateConfigAOutputReferenceParameters(terr
 
 	return nil
 }
-

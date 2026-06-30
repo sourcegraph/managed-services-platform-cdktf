@@ -17,15 +17,15 @@ type GoogleSccSourceIamBinding interface {
 	Condition() GoogleSccSourceIamBindingConditionOutputReference
 	ConditionInput() *GoogleSccSourceIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type GoogleSccSourceIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,16 +73,16 @@ type GoogleSccSourceIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleSccSourceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleSccSourceIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type GoogleSccSourceIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSccSourceIamBinding
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) ConditionInput() *GoogleSccSourceI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config *GoogleSccSourceIamBindingConfig) GoogleSccSourceIamBinding {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewGoogleSccSourceIamBinding_Override(g GoogleSccSourceIamBinding, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetOrganization(val *string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccSourceIamBinding)SetSource(val *string) {
+func (j *jsiiProxy_GoogleSccSourceIamBinding) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func GoogleSccSourceIamBinding_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func GoogleSccSourceIamBinding_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSccSourceIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleSccSourceIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccSourceIamBinding_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func GoogleSccSourceIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func GoogleSccSourceIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSccSourceIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleSccSourceIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccSourceIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func GoogleSccSourceIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func GoogleSccSourceIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSccSourceIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleSccSourceIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccSourceIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func GoogleSccSourceIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSccSourceIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSccSourceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSccSourceIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) PutCondition(value *GoogleSccSourc
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -987,8 +986,8 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1000,8 +999,8 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1013,8 +1012,8 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccSourceIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccSourceIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1051,4 +1050,3 @@ func (g *jsiiProxy_GoogleSccSourceIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

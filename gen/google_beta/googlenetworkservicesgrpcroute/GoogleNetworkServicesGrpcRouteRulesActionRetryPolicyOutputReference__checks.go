@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputRefere
 
 	return nil
 }
-

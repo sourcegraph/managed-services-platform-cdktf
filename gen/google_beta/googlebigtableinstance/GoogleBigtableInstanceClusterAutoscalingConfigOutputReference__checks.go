@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleBigtableInstanceClusterAutoscalingConfigOutputReferencePar
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOu
 
 	return nil
 }
-

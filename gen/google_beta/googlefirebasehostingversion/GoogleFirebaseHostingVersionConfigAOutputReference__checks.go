@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutHeadersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRedirectsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRedirectsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRewritesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validatePutRewritesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewGoogleFirebaseHostingVersionConfigAOutputReferenceParameters(ter
 
 	return nil
 }
-

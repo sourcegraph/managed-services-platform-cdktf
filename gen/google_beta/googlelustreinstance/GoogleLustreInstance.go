@@ -18,15 +18,15 @@ type GoogleLustreInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -47,9 +47,9 @@ type GoogleLustreInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GkeSupportEnabled() interface{}
-	SetGkeSupportEnabled(val interface{})
-	GkeSupportEnabledInput() interface{}
+	GkeSupportEnabled() any
+	SetGkeSupportEnabled(val any)
+	GkeSupportEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -84,29 +84,29 @@ type GoogleLustreInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleLustreInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleLustreInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type GoogleLustreInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type GoogleLustreInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLustreInstance
@@ -201,8 +201,8 @@ func (j *jsiiProxy_GoogleLustreInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GoogleLustreInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLustreInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_GoogleLustreInstance) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_GoogleLustreInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) GkeSupportEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) GkeSupportEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gkeSupportEnabled",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GoogleLustreInstance) GkeSupportEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) GkeSupportEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) GkeSupportEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gkeSupportEnabledInput",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_GoogleLustreInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLustreInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_GoogleLustreInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_GoogleLustreInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLustreInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_GoogleLustreInstance) Timeouts() GoogleLustreInstanceTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLustreInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -641,7 +641,6 @@ func (j *jsiiProxy_GoogleLustreInstance) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_lustre_instance google_lustre_instance} Resource.
 func NewGoogleLustreInstance(scope constructs.Construct, id *string, config *GoogleLustreInstanceConfig) GoogleLustreInstance {
 	_init_.Initialize()
@@ -653,7 +652,7 @@ func NewGoogleLustreInstance(scope constructs.Construct, id *string, config *Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -666,12 +665,12 @@ func NewGoogleLustreInstance_Override(g GoogleLustreInstance, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetCapacityGib(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetCapacityGib(val *string) {
 	if err := j.validateSetCapacityGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetCapacityGib(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLustreInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLustreInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetFilesystem(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetFilesystem(val *string) {
 	if err := j.validateSetFilesystemParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetFilesystem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLustreInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetGkeSupportEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleLustreInstance) SetGkeSupportEnabled(val any) {
 	if err := j.validateSetGkeSupportEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetGkeSupportEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetId(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetInstanceId(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLustreInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetPerUnitStorageThroughput(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetPerUnitStorageThroughput(val *string) {
 	if err := j.validateSetPerUnitStorageThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetPerUnitStorageThroughput(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetProject(val *string) {
+func (j *jsiiProxy_GoogleLustreInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLustreInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -849,7 +848,7 @@ func (j *jsiiProxy_GoogleLustreInstance)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GoogleLustreInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLustreInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func GoogleLustreInstance_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func GoogleLustreInstance_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLustreInstance_IsConstruct(x interface{}) *bool {
+func GoogleLustreInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLustreInstance_IsConstructParameters(x); err != nil {
@@ -907,7 +906,7 @@ func GoogleLustreInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func GoogleLustreInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLustreInstance_IsTerraformElement(x interface{}) *bool {
+func GoogleLustreInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLustreInstance_IsTerraformElementParameters(x); err != nil {
@@ -926,7 +925,7 @@ func GoogleLustreInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func GoogleLustreInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLustreInstance_IsTerraformResource(x interface{}) *bool {
+func GoogleLustreInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLustreInstance_IsTerraformResourceParameters(x); err != nil {
@@ -945,7 +944,7 @@ func GoogleLustreInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLustreInstance.GoogleLustreInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -970,31 +969,31 @@ func (g *jsiiProxy_GoogleLustreInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLustreInstance) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLustreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (g *jsiiProxy_GoogleLustreInstance) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,15 +1121,15 @@ func (g *jsiiProxy_GoogleLustreInstance) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLustreInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1149,7 +1148,7 @@ func (g *jsiiProxy_GoogleLustreInstance) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1162,7 +1161,7 @@ func (g *jsiiProxy_GoogleLustreInstance) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1176,18 +1175,18 @@ func (g *jsiiProxy_GoogleLustreInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLustreInstance) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1198,7 +1197,7 @@ func (g *jsiiProxy_GoogleLustreInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1209,7 +1208,7 @@ func (g *jsiiProxy_GoogleLustreInstance) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1220,7 +1219,7 @@ func (g *jsiiProxy_GoogleLustreInstance) PutTimeouts(value *GoogleLustreInstance
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1280,8 +1279,8 @@ func (g *jsiiProxy_GoogleLustreInstance) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLustreInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1293,8 +1292,8 @@ func (g *jsiiProxy_GoogleLustreInstance) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLustreInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1306,8 +1305,8 @@ func (g *jsiiProxy_GoogleLustreInstance) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLustreInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1319,8 +1318,8 @@ func (g *jsiiProxy_GoogleLustreInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLustreInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1345,8 +1344,8 @@ func (g *jsiiProxy_GoogleLustreInstance) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLustreInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLustreInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1357,4 +1356,3 @@ func (g *jsiiProxy_GoogleLustreInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputR
 
 	return nil
 }
-

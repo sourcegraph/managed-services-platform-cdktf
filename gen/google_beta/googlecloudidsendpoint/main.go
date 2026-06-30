@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
-		reflect.TypeOf((*GoogleCloudIdsEndpoint)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdsEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdsEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointConfig",
-		reflect.TypeOf((*GoogleCloudIdsEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdsEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts",
-		reflect.TypeOf((*GoogleCloudIdsEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdsEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudIdsEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdsEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdsEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

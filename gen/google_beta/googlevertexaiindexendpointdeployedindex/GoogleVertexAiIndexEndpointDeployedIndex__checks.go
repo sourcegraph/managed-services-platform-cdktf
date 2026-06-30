@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateAddMoveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateMoveFromIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleVertexAiIndexEndpointDeployedIndex_GenerateConfigForImportPar
 	return nil
 }
 
-func validateGoogleVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x interface{}) error {
+func validateGoogleVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x in
 	return nil
 }
 
-func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformElementParamete
 	return nil
 }
 
-func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateGoogleVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetDisplayN
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetEnableAccessLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetEnableAccessLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +454,7 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -534,4 +534,3 @@ func validateNewGoogleVertexAiIndexEndpointDeployedIndexParameters(scope constru
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference
 
 	return nil
 }
-

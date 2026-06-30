@@ -18,22 +18,22 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
 	CryptoKeyNameInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -79,11 +79,11 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -102,11 +102,11 @@ type GoogleWorkflowsWorkflow interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleWorkflowsWorkflowTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	UserEnvVars() *map[string]*string
 	SetUserEnvVars(val *map[string]*string)
@@ -115,9 +115,9 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -135,7 +135,7 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -147,7 +147,7 @@ type GoogleWorkflowsWorkflow interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,17 +174,17 @@ type GoogleWorkflowsWorkflow interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetUserEnvVars()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleWorkflowsWorkflow
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) CryptoKeyNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) Timeouts() GoogleWorkflowsWorkflowTi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -732,7 +732,6 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) UserEnvVarsInput() *map[string]*stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
 func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) GoogleWorkflowsWorkflow {
 	_init_.Initialize()
@@ -744,7 +743,7 @@ func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -757,12 +756,12 @@ func NewGoogleWorkflowsWorkflow_Override(g GoogleWorkflowsWorkflow, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCallLogLevel(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetCallLogLevel(val *string) {
 	if err := j.validateSetCallLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCallLogLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDeletionProtection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -825,7 +824,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetExecutionHistoryLevel(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetExecutionHistoryLevel(val *string) {
 	if err := j.validateSetExecutionHistoryLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetExecutionHistoryLevel(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -855,7 +854,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetId(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetName(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetNamePrefix(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProject(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -929,7 +928,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetSourceContents(val *string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetSourceContents(val *string) {
 	if err := j.validateSetSourceContentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetSourceContents(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetUserEnvVars(val *map[string]*string) {
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) SetUserEnvVars(val *map[string]*string) {
 	if err := j.validateSetUserEnvVarsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1006,7 @@ func GoogleWorkflowsWorkflow_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func GoogleWorkflowsWorkflow_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool {
+func GoogleWorkflowsWorkflow_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkflowsWorkflow_IsConstructParameters(x); err != nil {
@@ -1042,7 +1041,7 @@ func GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool {
+func GoogleWorkflowsWorkflow_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkflowsWorkflow_IsTerraformElementParameters(x); err != nil {
@@ -1061,7 +1060,7 @@ func GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleWorkflowsWorkflow_IsTerraformResource(x interface{}) *bool {
+func GoogleWorkflowsWorkflow_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleWorkflowsWorkflow_IsTerraformResourceParameters(x); err != nil {
@@ -1080,7 +1079,7 @@ func GoogleWorkflowsWorkflow_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1105,31 +1104,31 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,7 +1160,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1177,7 +1176,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1193,7 +1192,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1209,7 +1208,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1225,7 +1224,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1241,7 +1240,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1257,15 +1256,15 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1284,7 +1283,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1297,7 +1296,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,18 +1310,18 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1333,7 +1332,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1344,7 +1343,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1355,7 +1354,7 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) PutTimeouts(value *GoogleWorkflowsWo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1495,8 +1494,8 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ResetUserEnvVars() {
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1508,8 +1507,8 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1521,8 +1520,8 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1534,8 +1533,8 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1560,8 +1559,8 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1572,4 +1571,3 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ToTerraform() interface{} {
 
 	return returns
 }
-

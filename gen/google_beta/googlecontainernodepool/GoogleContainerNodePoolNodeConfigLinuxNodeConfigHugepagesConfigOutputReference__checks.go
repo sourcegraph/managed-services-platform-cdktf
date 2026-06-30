@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigO
 
 	return nil
 }
-

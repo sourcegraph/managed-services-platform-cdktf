@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
-		reflect.TypeOf((*GoogleLoggingLinkedDataset)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDataset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingLinkedDataset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDataset",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetBigqueryDataset)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetBigqueryDataset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDatasetList",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetBigqueryDatasetList)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetBigqueryDatasetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingLinkedDatasetBigqueryDatasetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleLoggingLinkedDatasetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingLinkedDatasetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingLinkedDatasetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

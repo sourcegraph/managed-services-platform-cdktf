@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceGroupNamedPortListParameters(terraformResou
 
 	return nil
 }
-

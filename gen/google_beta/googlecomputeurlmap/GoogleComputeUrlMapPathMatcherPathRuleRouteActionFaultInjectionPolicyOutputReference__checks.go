@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjecti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionP
 
 	return nil
 }
-

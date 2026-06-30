@@ -1,6 +1,5 @@
 package googleapikeyskey
 
-
 type GoogleApikeysKeyRestrictions struct {
 	// android_key_restrictions block.
 	//
@@ -9,7 +8,7 @@ type GoogleApikeysKeyRestrictions struct {
 	// api_targets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apikeys_key#api_targets GoogleApikeysKey#api_targets}
-	ApiTargets interface{} `field:"optional" json:"apiTargets" yaml:"apiTargets"`
+	ApiTargets any `field:"optional" json:"apiTargets" yaml:"apiTargets"`
 	// browser_key_restrictions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apikeys_key#browser_key_restrictions GoogleApikeysKey#browser_key_restrictions}
@@ -23,4 +22,3 @@ type GoogleApikeysKeyRestrictions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apikeys_key#server_key_restrictions GoogleApikeysKey#server_key_restrictions}
 	ServerKeyRestrictions *GoogleApikeysKeyRestrictionsServerKeyRestrictions `field:"optional" json:"serverKeyRestrictions" yaml:"serverKeyRestrictions"`
 }
-

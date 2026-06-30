@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigFastSocketOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleContainerNodePoolNodeConfigFastSocketOutputReferenceParame
 
 	return nil
 }
-

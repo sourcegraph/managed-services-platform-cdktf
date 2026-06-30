@@ -18,15 +18,15 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,9 +37,9 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
-	EnableLogging() interface{}
-	SetEnableLogging(val interface{})
-	EnableLoggingInput() interface{}
+	EnableLogging() any
+	SetEnableLogging(val any)
+	EnableLoggingInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,9 +62,9 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
-	Preview() interface{}
-	SetPreview(val interface{})
-	PreviewInput() interface{}
+	Preview() any
+	SetPreview(val any)
+	PreviewInput() any
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -73,11 +73,11 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
@@ -87,18 +87,18 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type GoogleComputeOrganizationSecurityPolicyRule interface {
 	ResetTargetResources()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeOrganizationSecurityPolicyRule
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Connection() int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) DirectionInput()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) EnableLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) EnableLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogging",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) EnableLogging() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) EnableLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) EnableLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoggingInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PolicyIdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Preview() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Preview() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preview",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Preview() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PreviewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PreviewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"previewInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Provisioners() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TerraformGenerat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) Timeouts() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) TimeoutsInput() 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_organization_security_policy_rule google_compute_organization_security_policy_rule} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyRuleConfig) GoogleComputeOrganizationSecurityPolicyRule {
@@ -578,7 +577,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRule(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -591,12 +590,12 @@ func NewGoogleComputeOrganizationSecurityPolicyRule_Override(g GoogleComputeOrga
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetAction(val *string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetAction(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDirection(val *string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetDirection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetEnableLogging(val interface{}) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetEnableLogging(val any) {
 	if err := j.validateSetEnableLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetEnableLogging(
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPolicyId(val *string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPolicyId(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPreview(val interface{}) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetPreview(val any) {
 	if err := j.validateSetPreviewParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPreview(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPriority(val *float64) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetPriority(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -741,7 +740,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetProvisioners(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetTargetResources(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetTargetResources(val *[]*string) {
 	if err := j.validateSetTargetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetTargetResource
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule)SetTargetServiceAccounts(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeOrganizationSecurityPolicyRule_IsConstruct(x interface{}) *bool {
+func GoogleComputeOrganizationSecurityPolicyRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeOrganizationSecurityPolicyRule_IsConstructParameters(x); err != nil {
@@ -821,7 +820,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformElementParameters(x); err != nil {
@@ -840,7 +839,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformElement(x interface{
 }
 
 // Experimental.
-func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformResourceParameters(x); err != nil {
@@ -859,7 +858,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformResource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,31 +883,31 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) AddMoveTarget(mo
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetBooleanAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetBooleanMapAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetListAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetNumberAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetNumberListAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetNumberMapAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetStringAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,15 +1035,15 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) GetStringMapAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ImportFrom(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) InterpolationFor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,18 +1089,18 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) MoveFromId(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) MoveToId(id *str
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutMatch(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putMatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) PutTimeouts(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1221,8 +1220,8 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ResetTimeouts() 
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1234,8 +1233,8 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1247,8 +1246,8 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) SynthesizeHclAtt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1260,8 +1259,8 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToHclTerraform()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1286,8 +1285,8 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToString() *stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1298,4 +1297,3 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) ToTerraform() in
 
 	return returns
 }
-

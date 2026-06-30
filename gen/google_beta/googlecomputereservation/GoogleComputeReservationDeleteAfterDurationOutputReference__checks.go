@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeReservationDeleteAfterDurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservationDeleteAfterDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservationDeleteAfterDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeReservationDeleteAfterDurationOutputReferenceParame
 
 	return nil
 }
-

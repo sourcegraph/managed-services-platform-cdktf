@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogScopeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleLoggingLogScopeTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

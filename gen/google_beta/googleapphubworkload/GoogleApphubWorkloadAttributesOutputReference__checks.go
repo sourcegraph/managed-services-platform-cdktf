@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validateInterp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutBusinessOwnersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutBusinessOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutCri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutDeveloperOwnersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutDeveloperOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutEnv
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutOperatorOwnersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validatePutOperatorOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -313,4 +313,3 @@ func validateNewGoogleApphubWorkloadAttributesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

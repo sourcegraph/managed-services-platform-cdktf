@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetAssistiveExperiencesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetAssistiveExperiencesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetPreserveCommentsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetPreserveCommentsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetRecordApplicationTagsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetRecordApplicationTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackActiveQueriesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackActiveQueriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackWaitEventsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackWaitEventsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackWaitEventTypesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetTrackWaitEventTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -354,4 +354,3 @@ func validateNewGoogleAlloydbInstanceObservabilityConfigOutputReferenceParameter
 
 	return nil
 }
-

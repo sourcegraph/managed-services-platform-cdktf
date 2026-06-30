@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleBeyondcorpAppConnector_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleBeyondcorpAppConnector_IsConstructParameters(x interface{}) error {
+func validateGoogleBeyondcorpAppConnector_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleBeyondcorpAppConnector_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleBeyondcorpAppConnector_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBeyondcorpAppConnector_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleBeyondcorpAppConnector_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleBeyondcorpAppConnector_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBeyondcorpAppConnector_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleBeyondcorpAppConnector_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpAppConnector) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleBeyondcorpAppConnectorParameters(scope constructs.Construc
 
 	return nil
 }
-

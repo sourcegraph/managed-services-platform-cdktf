@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityScanningConfig", GoGetter: "VulnerabilityScanningConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityScanningConfigInput", GoGetter: "VulnerabilityScanningConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -122,15 +122,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPolicies",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPolicies)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPolicies](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesCondition",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionNamePrefixes", GoGetter: "VersionNamePrefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNamePrefixesInput", GoGetter: "VersionNamePrefixesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesList",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryCleanupPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryCleanupPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,15 +289,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryDockerConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryDockerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryDockerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryDockerConfigOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryDockerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryDockerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryDockerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -332,11 +332,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryMavenConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryMavenConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryMavenConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryMavenConfigOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryMavenConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryMavenConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowSnapshotOverwrites", GoGetter: "AllowSnapshotOverwrites"},
 			_jsii_.MemberProperty{JsiiProperty: "allowSnapshotOverwritesInput", GoGetter: "AllowSnapshotOverwritesInput"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionPolicy", GoGetter: "VersionPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "versionPolicyInput", GoGetter: "VersionPolicyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,15 +374,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,11 +418,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -450,7 +450,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -458,11 +458,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,15 +496,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -531,7 +531,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -539,7 +539,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -570,7 +570,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -578,15 +578,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -613,7 +613,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -621,7 +621,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -652,7 +652,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -660,15 +660,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -695,7 +695,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -703,7 +703,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -734,7 +734,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -742,7 +742,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aptRepository", GoGetter: "AptRepository"},
 			_jsii_.MemberProperty{JsiiProperty: "aptRepositoryInput", GoGetter: "AptRepositoryInput"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yumRepository", GoGetter: "YumRepository"},
 			_jsii_.MemberProperty{JsiiProperty: "yumRepositoryInput", GoGetter: "YumRepositoryInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -812,15 +812,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,7 +855,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -886,7 +886,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -894,11 +894,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -926,7 +926,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernamePasswordCredentials", GoGetter: "UsernamePasswordCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "usernamePasswordCredentialsInput", GoGetter: "UsernamePasswordCredentialsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -934,11 +934,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -968,7 +968,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -976,11 +976,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1008,7 +1008,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1016,11 +1016,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1048,7 +1048,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1056,11 +1056,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryTimeouts",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1093,7 +1093,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1101,11 +1101,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVirtualRepositoryConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVirtualRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVirtualRepositoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1133,7 +1133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upstreamPolicies", GoGetter: "UpstreamPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamPoliciesInput", GoGetter: "UpstreamPoliciesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1141,11 +1141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1159,7 +1159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1167,7 +1167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1200,7 +1200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1208,11 +1208,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVulnerabilityScanningConfig",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVulnerabilityScanningConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVulnerabilityScanningConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference",
-		reflect.TypeOf((*GoogleArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1241,7 +1241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

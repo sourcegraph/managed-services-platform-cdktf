@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeRouterNatNat64SubnetworkOutputReferenceParameters(t
 
 	return nil
 }
-

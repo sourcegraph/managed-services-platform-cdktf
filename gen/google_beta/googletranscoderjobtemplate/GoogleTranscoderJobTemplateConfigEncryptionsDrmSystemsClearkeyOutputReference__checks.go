@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearke
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOu
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecFallbackPromptOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecFallbackPromptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecFallbackPromptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDialogflowCxToolDataStoreSpecFallbackPromptOutputReference
 
 	return nil
 }
-

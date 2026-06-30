@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicyId", GoGetter: "AccessPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyConfig",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFrom",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFrom)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFrom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSources",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSources)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLevel", GoGetter: "AccessLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLevelInput", GoGetter: "AccessLevelInput"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,15 +197,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperations",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperations)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -227,11 +227,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -253,7 +253,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,7 +291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,7 +330,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -372,11 +372,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyTimeouts",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validateInte
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validatePutAdditionalConfigTemplateParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validatePutAdditionalConfigTemplateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleApihubPluginConfigTemplateOutputReferenceParameters(terraf
 
 	return nil
 }
-

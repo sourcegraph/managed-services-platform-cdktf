@@ -1,6 +1,5 @@
 package googlecontainerazurecluster
 
-
 type GoogleContainerAzureClusterControlPlane struct {
 	// ssh_config block.
 	//
@@ -29,7 +28,7 @@ type GoogleContainerAzureClusterControlPlane struct {
 	// replica_placements block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_azure_cluster#replica_placements GoogleContainerAzureCluster#replica_placements}
-	ReplicaPlacements interface{} `field:"optional" json:"replicaPlacements" yaml:"replicaPlacements"`
+	ReplicaPlacements any `field:"optional" json:"replicaPlacements" yaml:"replicaPlacements"`
 	// root_volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_azure_cluster#root_volume GoogleContainerAzureCluster#root_volume}
@@ -45,4 +44,3 @@ type GoogleContainerAzureClusterControlPlane struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_azure_cluster#vm_size GoogleContainerAzureCluster#vm_size}
 	VmSize *string `field:"optional" json:"vmSize" yaml:"vmSize"`
 }
-

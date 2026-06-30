@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWind
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows
 
 	return nil
 }
-

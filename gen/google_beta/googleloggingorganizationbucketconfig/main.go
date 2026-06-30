@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationBucketConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettings",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigCmekSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigCmekSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigConfig",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigIndexConfigs",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigIndexConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigIndexConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigIndexConfigsList",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigIndexConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigIndexConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference",
-		reflect.TypeOf((*GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

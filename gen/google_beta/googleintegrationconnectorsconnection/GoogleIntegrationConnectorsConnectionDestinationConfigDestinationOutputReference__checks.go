@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleIntegrationConnectorsConnectionDestinationConfigDestinatio
 
 	return nil
 }
-

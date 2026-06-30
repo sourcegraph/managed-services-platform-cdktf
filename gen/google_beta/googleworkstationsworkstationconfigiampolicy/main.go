@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigId", GoGetter: "WorkstationConfigId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigIdInput", GoGetter: "WorkstationConfigIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamPolicyConfig](),
 	)
 }

@@ -6,9 +6,9 @@ import (
 
 type GoogleCertificateManagerTrustConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleCertificateManagerTrustConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The trust config location.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_certificate_manager_trust_config#location GoogleCertificateManagerTrustConfig#location}
@@ -30,7 +30,7 @@ type GoogleCertificateManagerTrustConfigConfig struct {
 	// allowlisted_certificates block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_certificate_manager_trust_config#allowlisted_certificates GoogleCertificateManagerTrustConfig#allowlisted_certificates}
-	AllowlistedCertificates interface{} `field:"optional" json:"allowlistedCertificates" yaml:"allowlistedCertificates"`
+	AllowlistedCertificates any `field:"optional" json:"allowlistedCertificates" yaml:"allowlistedCertificates"`
 	// One or more paragraphs of text description of a trust config.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_certificate_manager_trust_config#description GoogleCertificateManagerTrustConfig#description}
@@ -56,6 +56,5 @@ type GoogleCertificateManagerTrustConfigConfig struct {
 	// trust_stores block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_certificate_manager_trust_config#trust_stores GoogleCertificateManagerTrustConfig#trust_stores}
-	TrustStores interface{} `field:"optional" json:"trustStores" yaml:"trustStores"`
+	TrustStores any `field:"optional" json:"trustStores" yaml:"trustStores"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolStatusOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeStoragePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeStoragePoolStatusOutputReferenceParameters(terrafor
 
 	return nil
 }
-

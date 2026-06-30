@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingImportJobPublicKeyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingImportJobPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingImportJobPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleKmsKeyRingImportJobPublicKeyOutputReferenceParameters(terr
 
 	return nil
 }
-

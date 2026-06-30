@@ -14,12 +14,12 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	SetAllocatedIpRange(val *string)
 	AllocatedIpRangeInput() *string
 	AuthorizedNetworks() GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList
-	AuthorizedNetworksInput() interface{}
+	AuthorizedNetworksInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,21 +33,21 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	CustomSubjectAlternativeNames() *[]*string
 	SetCustomSubjectAlternativeNames(val *[]*string)
 	CustomSubjectAlternativeNamesInput() *[]*string
-	EnablePrivatePathForGoogleCloudServices() interface{}
-	SetEnablePrivatePathForGoogleCloudServices(val interface{})
-	EnablePrivatePathForGoogleCloudServicesInput() interface{}
+	EnablePrivatePathForGoogleCloudServices() any
+	SetEnablePrivatePathForGoogleCloudServices(val any)
+	EnablePrivatePathForGoogleCloudServicesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceSettingsIpConfiguration
 	SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsIpConfiguration)
-	Ipv4Enabled() interface{}
-	SetIpv4Enabled(val interface{})
-	Ipv4EnabledInput() interface{}
+	Ipv4Enabled() any
+	SetIpv4Enabled(val any)
+	Ipv4EnabledInput() any
 	PrivateNetwork() *string
 	SetPrivateNetwork(val *string)
 	PrivateNetworkInput() *string
 	PscConfig() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
-	PscConfigInput() interface{}
+	PscConfigInput() any
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
@@ -68,7 +68,7 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,8 +89,8 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthorizedNetworks(value interface{})
-	PutPscConfig(value interface{})
+	PutAuthorizedNetworks(value any)
+	PutPscConfig(value any)
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
 	ResetCustomSubjectAlternativeNames()
@@ -103,7 +103,7 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) AuthorizedNetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) AuthorizedNetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizedNetworksInput",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatePathForGoogleCloudServices",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatePathForGoogleCloudServicesInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4Enabled",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4EnabledInput",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscConfigInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetAllocatedIpRange(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetAllocatedIpRange(val *string) {
 	if err := j.validateSetAllocatedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetCustomSubjectAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetCustomSubjectAlternativeNames(val *[]*string) {
 	if err := j.validateSetCustomSubjectAlternativeNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetEnablePrivatePathForGoogleCloudServices(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetEnablePrivatePathForGoogleCloudServices(val any) {
 	if err := j.validateSetEnablePrivatePathForGoogleCloudServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsIpConfiguration) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsIpConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetIpv4Enabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetIpv4Enabled(val any) {
 	if err := j.validateSetIpv4EnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetPrivateNetwork(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetPrivateNetwork(val *string) {
 	if err := j.validateSetPrivateNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetServerCaMode(val *string) {
 	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaPool(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetServerCaPool(val *string) {
 	if err := j.validateSetServerCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetSslMode(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetSslMode(val *string) {
 	if err := j.validateSetSslModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,16 +569,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,32 +735,32 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutAuthorizedNetworks(value interface{}) {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutAuthorizedNetworks(value any) {
 	if err := g.validatePutAuthorizedNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthorizedNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value interface{}) {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value any) {
 	if err := g.validatePutPscConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPscConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 
 	return returns
 }
-

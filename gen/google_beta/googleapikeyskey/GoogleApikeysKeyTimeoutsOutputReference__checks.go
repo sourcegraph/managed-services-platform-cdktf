@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApikeysKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleApikeysKeyTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

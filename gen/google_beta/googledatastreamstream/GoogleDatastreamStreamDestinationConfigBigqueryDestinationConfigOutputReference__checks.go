@@ -153,7 +153,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleDatastreamStreamDestinationConfigBigqueryDestinationConfig
 
 	return nil
 }
-

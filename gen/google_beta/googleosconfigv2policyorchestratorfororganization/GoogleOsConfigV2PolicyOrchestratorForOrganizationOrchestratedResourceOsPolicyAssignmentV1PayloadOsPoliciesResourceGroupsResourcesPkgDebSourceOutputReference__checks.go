@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestrated
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference) validateSetAllowInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference) validateSetAllowInsecureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestrated
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewGoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedRes
 
 	return nil
 }
-

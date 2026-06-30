@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleBillingProjectInfoTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

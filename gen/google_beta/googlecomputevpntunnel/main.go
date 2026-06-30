@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
-		reflect.TypeOf((*GoogleComputeVpnTunnel)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayInterface", GoGetter: "VpnGatewayInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayInterfaceInput", GoGetter: "VpnGatewayInterfaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeVpnTunnel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuite",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuite)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuiteOutputReference",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeVpnTunnelCipherSuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,11 +173,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuitePhase1",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuitePhase1)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuitePhase1](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuitePhase1OutputReference",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuitePhase1OutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuitePhase1OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeVpnTunnelCipherSuitePhase1OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuitePhase2",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuitePhase2)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuitePhase2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelCipherSuitePhase2OutputReference",
-		reflect.TypeOf((*GoogleComputeVpnTunnelCipherSuitePhase2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelCipherSuitePhase2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeVpnTunnelCipherSuitePhase2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,15 +266,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelConfig",
-		reflect.TypeOf((*GoogleComputeVpnTunnelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts",
-		reflect.TypeOf((*GoogleComputeVpnTunnelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeVpnTunnelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeVpnTunnelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeVpnTunnelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

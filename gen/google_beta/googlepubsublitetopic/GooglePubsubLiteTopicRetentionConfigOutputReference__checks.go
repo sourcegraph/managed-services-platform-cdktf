@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopicRetentionConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopicRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubLiteTopicRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGooglePubsubLiteTopicRetentionConfigOutputReferenceParameters(te
 
 	return nil
 }
-

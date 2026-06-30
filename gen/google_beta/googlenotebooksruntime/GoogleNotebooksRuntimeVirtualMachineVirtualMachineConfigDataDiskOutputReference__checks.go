@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk
 
 	return nil
 }
-

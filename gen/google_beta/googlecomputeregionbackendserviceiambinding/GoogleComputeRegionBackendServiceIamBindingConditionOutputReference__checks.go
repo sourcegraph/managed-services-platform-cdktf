@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceIamBindingConditionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeRegionBackendServiceIamBindingConditionOutputRefere
 
 	return nil
 }
-

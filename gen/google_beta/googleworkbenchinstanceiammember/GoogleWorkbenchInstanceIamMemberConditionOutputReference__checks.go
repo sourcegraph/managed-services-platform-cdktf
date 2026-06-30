@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceIamMemberConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleWorkbenchInstanceIamMemberConditionOutputReferenceParamete
 
 	return nil
 }
-

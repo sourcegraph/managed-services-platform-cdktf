@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceBackendOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -349,4 +349,3 @@ func validateNewGoogleComputeBackendServiceBackendOutputReferenceParameters(terr
 
 	return nil
 }
-

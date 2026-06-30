@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersionInput", GoGetter: "ActiveKeyVersionInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectAccessApprovalSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsConfig",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsEnrolledServices",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsEnrolledServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsEnrolledServicesList",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsEnrolledServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectAccessApprovalSettingsEnrolledServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudProductInput", GoGetter: "CloudProductInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectAccessApprovalSettingsEnrolledServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsTimeouts",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleProjectAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectAccessApprovalSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectAccessApprovalSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

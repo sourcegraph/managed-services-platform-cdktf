@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleSqlDatabaseInstanceReplicationClusterOutputReferenceParame
 
 	return nil
 }
-

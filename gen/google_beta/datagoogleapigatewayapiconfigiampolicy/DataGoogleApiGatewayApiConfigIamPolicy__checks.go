@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleApiGatewayApiConfigIamPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataGoogleApiGatewayApiConfigIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleApiGatewayApiConfigIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleApiGatewayApiConfigIamPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataGoogleApiGatewayApiConfigIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleApiGatewayApiConfigIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleApiGatewayApiConfigIamPolicy_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataGoogleApiGatewayApiConfigIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleApiGatewayApiConfigIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy) validateSetApiConfigP
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleApiGatewayApiConfigIamPolicyParameters(scope construct
 
 	return nil
 }
-

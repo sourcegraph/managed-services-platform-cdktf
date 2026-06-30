@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLoggingProjectBucketConfigIndexConfigsListParameters(terra
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlecloudrunv2job
 
-
 type GoogleCloudRunV2JobTemplateTemplateVpcAccess struct {
 	// VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 	//
@@ -13,6 +12,5 @@ type GoogleCloudRunV2JobTemplateTemplateVpcAccess struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#network_interfaces GoogleCloudRunV2Job#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 }
-

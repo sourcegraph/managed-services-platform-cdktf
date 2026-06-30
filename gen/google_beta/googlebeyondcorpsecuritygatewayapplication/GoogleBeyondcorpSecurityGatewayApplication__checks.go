@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateOverrideL
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validatePutEndpointMatchersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validatePutEndpointMatchersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validatePutTimeou
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validatePutUpstreamsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validatePutUpstreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleBeyondcorpSecurityGatewayApplication_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleBeyondcorpSecurityGatewayApplication_IsConstructParameters(x interface{}) error {
+func validateGoogleBeyondcorpSecurityGatewayApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleBeyondcorpSecurityGatewayApplication_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBeyondcorpSecurityGatewayApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetApplic
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewGoogleBeyondcorpSecurityGatewayApplicationParameters(scope const
 
 	return nil
 }
-

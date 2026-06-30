@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
-		reflect.TypeOf((*GoogleComputeProjectMetadataItem)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectMetadataItem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeProjectMetadataItem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig",
-		reflect.TypeOf((*GoogleComputeProjectMetadataItemConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectMetadataItemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts",
-		reflect.TypeOf((*GoogleComputeProjectMetadataItemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectMetadataItemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeProjectMetadataItemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeProjectMetadataItemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeProjectMetadataItemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

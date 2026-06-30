@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomation) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployAutomation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomation) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployAutomation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomation) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomation) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployAutomation) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleClouddeployAutomation_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleClouddeployAutomation_IsConstructParameters(x interface{}) error {
+func validateGoogleClouddeployAutomation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleClouddeployAutomation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleClouddeployAutomation_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleClouddeployAutomation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleClouddeployAutomation_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleClouddeployAutomation_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleClouddeployAutomation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetAnnotationsParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,7 +513,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetServiceAccountParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomation) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -551,4 +551,3 @@ func validateNewGoogleClouddeployAutomationParameters(scope constructs.Construct
 
 	return nil
 }
-

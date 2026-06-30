@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubCurationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleApihubCurationTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

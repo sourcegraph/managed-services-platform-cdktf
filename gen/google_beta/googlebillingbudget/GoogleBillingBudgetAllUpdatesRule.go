@@ -1,6 +1,5 @@
 package googlebillingbudget
 
-
 type GoogleBillingBudgetAllUpdatesRule struct {
 	// Boolean.
 	//
@@ -10,7 +9,7 @@ type GoogleBillingBudgetAllUpdatesRule struct {
 	// Account Users IAM roles for the target account.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_billing_budget#disable_default_iam_recipients GoogleBillingBudget#disable_default_iam_recipients}
-	DisableDefaultIamRecipients interface{} `field:"optional" json:"disableDefaultIamRecipients" yaml:"disableDefaultIamRecipients"`
+	DisableDefaultIamRecipients any `field:"optional" json:"disableDefaultIamRecipients" yaml:"disableDefaultIamRecipients"`
 	// When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project.
 	//
 	// This field will be ignored if the budget has multiple or no project configured.
@@ -18,7 +17,7 @@ type GoogleBillingBudgetAllUpdatesRule struct {
 	// Currently, project level recipients are the users with Owner role on a cloud project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_billing_budget#enable_project_level_recipients GoogleBillingBudget#enable_project_level_recipients}
-	EnableProjectLevelRecipients interface{} `field:"optional" json:"enableProjectLevelRecipients" yaml:"enableProjectLevelRecipients"`
+	EnableProjectLevelRecipients any `field:"optional" json:"enableProjectLevelRecipients" yaml:"enableProjectLevelRecipients"`
 	// The full resource name of a monitoring notification channel in the form projects/{project_id}/notificationChannels/{channel_id}. A maximum of 5 channels are allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_billing_budget#monitoring_notification_channels GoogleBillingBudget#monitoring_notification_channels}
@@ -35,4 +34,3 @@ type GoogleBillingBudgetAllUpdatesRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_billing_budget#schema_version GoogleBillingBudget#schema_version}
 	SchemaVersion *string `field:"optional" json:"schemaVersion" yaml:"schemaVersion"`
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputeRegionCommitmentLicenseResourceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCommitmentLicenseResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionCommitmentLicenseResourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeRegionCommitmentLicenseResourceOutputReferenceParam
 
 	return nil
 }
-

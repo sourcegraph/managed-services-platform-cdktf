@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleOsConfigPatchDeploymentRolloutOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -10,17 +10,17 @@ import (
 
 type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference interface {
 	cdktf.ComplexObject
-	ClientAuth() interface{}
-	SetClientAuth(val interface{})
-	ClientAuthInput() interface{}
-	CodeSigning() interface{}
-	SetCodeSigning(val interface{})
-	CodeSigningInput() interface{}
+	ClientAuth() any
+	SetClientAuth(val any)
+	ClientAuthInput() any
+	CodeSigning() any
+	SetCodeSigning(val any)
+	CodeSigningInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,19 +31,19 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageO
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EmailProtection() interface{}
-	SetEmailProtection(val interface{})
-	EmailProtectionInput() interface{}
+	EmailProtection() any
+	SetEmailProtection(val any)
+	EmailProtectionInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage
 	SetInternalValue(val *GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage)
-	OcspSigning() interface{}
-	SetOcspSigning(val interface{})
-	OcspSigningInput() interface{}
-	ServerAuth() interface{}
-	SetServerAuth(val interface{})
-	ServerAuthInput() interface{}
+	OcspSigning() any
+	SetOcspSigning(val any)
+	OcspSigningInput() any
+	ServerAuth() any
+	SetServerAuth(val any)
+	ServerAuthInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,13 +52,13 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageO
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TimeStamping() interface{}
-	SetTimeStamping(val interface{})
-	TimeStampingInput() interface{}
+	TimeStamping() any
+	SetTimeStamping(val any)
+	TimeStampingInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageO
 	ResetTimeStamping()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtende
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ClientAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ClientAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientAuth",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ClientAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ClientAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientAuthInput",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) CodeSigning() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) CodeSigning() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"codeSigning",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) CodeSigningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) CodeSigningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"codeSigningInput",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) EmailProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) EmailProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailProtection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) EmailProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) EmailProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"emailProtectionInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) OcspSigning() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) OcspSigning() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ocspSigning",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) OcspSigningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) OcspSigningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ocspSigningInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ServerAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ServerAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serverAuth",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ServerAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) ServerAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serverAuthInput",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) TimeStamping() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) TimeStamping() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeStamping",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) TimeStampingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) TimeStampingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeStampingInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 	return returns
 }
-
 
 func NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference {
 	_init_.Initialize()
@@ -301,7 +300,7 @@ func NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsa
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsa
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetClientAuth(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetClientAuth(val any) {
 	if err := j.validateSetClientAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetCodeSigning(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetCodeSigning(val any) {
 	if err := j.validateSetCodeSigningParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetEmailProtection(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetEmailProtection(val any) {
 	if err := j.validateSetEmailProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetInternalValue(val *GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetInternalValue(val *GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetOcspSigning(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetOcspSigning(val any) {
 	if err := j.validateSetOcspSigningParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetServerAuth(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetServerAuth(val any) {
 	if err := j.validateSetServerAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference)SetTimeStamping(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) SetTimeStamping(val any) {
 	if err := j.validateSetTimeStampingParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExt
 
 	return returns
 }
-

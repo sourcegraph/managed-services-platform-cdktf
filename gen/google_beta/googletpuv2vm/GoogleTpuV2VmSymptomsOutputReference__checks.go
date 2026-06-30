@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleTpuV2VmSymptomsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

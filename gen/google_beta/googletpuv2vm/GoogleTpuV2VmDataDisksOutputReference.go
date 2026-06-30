@@ -12,9 +12,9 @@ type GoogleTpuV2VmDataDisksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type GoogleTpuV2VmDataDisksOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -46,7 +46,7 @@ type GoogleTpuV2VmDataDisksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleTpuV2VmDataDisksOutputReference interface {
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleTpuV2VmDataDisksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewGoogleTpuV2VmDataDisksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleTpuV2VmDataDisksOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleTpuV2VmDataDisksOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleTpuV2VmDataDisksOutputReference_Override(g GoogleTpuV2VmDataDisksO
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetSourceDisk(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetSourceDisk(val *string) {
 	if err := j.validateSetSourceDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetSourceDisk(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) ResetMode() {
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
-		reflect.TypeOf((*GoogleComputeTargetInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetInstance.GoogleComputeTargetInstanceConfig",
-		reflect.TypeOf((*GoogleComputeTargetInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeouts",
-		reflect.TypeOf((*GoogleComputeTargetInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeTargetInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeTargetInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeTargetInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -14,12 +14,12 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	SetAllocatedIpRangeOverride(val *string)
 	AllocatedIpRangeOverrideInput() *string
 	AuthorizedExternalNetworks() GoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
-	AuthorizedExternalNetworksInput() interface{}
+	AuthorizedExternalNetworksInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,12 +30,12 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableOutboundPublicIp() interface{}
-	SetEnableOutboundPublicIp(val interface{})
-	EnableOutboundPublicIpInput() interface{}
-	EnablePublicIp() interface{}
-	SetEnablePublicIp(val interface{})
-	EnablePublicIpInput() interface{}
+	EnableOutboundPublicIp() any
+	SetEnableOutboundPublicIp(val any)
+	EnableOutboundPublicIpInput() any
+	EnablePublicIp() any
+	SetEnablePublicIp(val any)
+	EnablePublicIpInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleAlloydbInstanceNetworkConfig
@@ -51,7 +51,7 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthorizedExternalNetworks(value interface{})
+	PutAuthorizedExternalNetworks(value any)
 	ResetAllocatedIpRangeOverride()
 	ResetAuthorizedExternalNetworks()
 	ResetEnableOutboundPublicIp()
 	ResetEnablePublicIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) Authorized
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizedExternalNetworksInput",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) Authorized
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOutboundPublicIp",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutb
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOutboundPublicIpInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutb
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIp",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnablePubl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIpInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceNetworkConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleAlloydbInstanceNetworkConfigOutputReference_Override(g GoogleAlloy
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetAllocatedIpRangeOverride(val *string) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetAllocatedIpRangeOverride(val *string) {
 	if err := j.validateSetAllocatedIpRangeOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetAllocate
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetEnableOutboundPublicIp(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetEnableOutboundPublicIp(val any) {
 	if err := j.validateSetEnableOutboundPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetEnableOu
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetEnablePublicIp(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetEnablePublicIp(val any) {
 	if err := j.validateSetEnablePublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetEnablePu
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetInternalValue(val *GoogleAlloydbInstanceNetworkConfig) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetInternalValue(val *GoogleAlloydbInstanceNetworkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) PutAuthorizedExternalNetworks(value interface{}) {
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) PutAuthorizedExternalNetworks(value any) {
 	if err := g.validatePutAuthorizedExternalNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthorizedExternalNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ResetEnabl
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ToString()
 
 	return returns
 }
-

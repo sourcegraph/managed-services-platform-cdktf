@@ -12,9 +12,9 @@ type GoogleGkeonpremVmwareClusterStorageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,13 +37,13 @@ type GoogleGkeonpremVmwareClusterStorageOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VsphereCsiDisabled() interface{}
-	SetVsphereCsiDisabled(val interface{})
-	VsphereCsiDisabledInput() interface{}
+	VsphereCsiDisabled() any
+	SetVsphereCsiDisabled(val any)
+	VsphereCsiDisabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleGkeonpremVmwareClusterStorageOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCsiDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCsiDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vsphereCsiDisabled",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCs
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCsiDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCsiDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vsphereCsiDisabledInput",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) VsphereCs
 	)
 	return returns
 }
-
 
 func NewGoogleGkeonpremVmwareClusterStorageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareClusterStorageOutputReference {
 	_init_.Initialize()
@@ -180,7 +179,7 @@ func NewGoogleGkeonpremVmwareClusterStorageOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewGoogleGkeonpremVmwareClusterStorageOutputReference_Override(g GoogleGkeo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetInternalValue(val *GoogleGkeonpremVmwareClusterStorage) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetInternalValue(val *GoogleGkeonpremVmwareClusterStorage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference)SetVsphereCsiDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) SetVsphereCsiDisabled(val any) {
 	if err := j.validateSetVsphereCsiDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference) ToString(
 
 	return returns
 }
-

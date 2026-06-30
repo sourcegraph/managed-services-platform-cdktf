@@ -1,6 +1,5 @@
 package googlecomputesecuritypolicy
 
-
 type GoogleComputeSecurityPolicyRule struct {
 	// Action to take when match matches the request.
 	//
@@ -33,7 +32,7 @@ type GoogleComputeSecurityPolicyRule struct {
 	// Stackdriver logs for requests that trigger a preview action are annotated as such.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_security_policy#preview GoogleComputeSecurityPolicy#preview}
-	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
+	Preview any `field:"optional" json:"preview" yaml:"preview"`
 	// rate_limit_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_security_policy#rate_limit_options GoogleComputeSecurityPolicy#rate_limit_options}
@@ -43,4 +42,3 @@ type GoogleComputeSecurityPolicyRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_security_policy#redirect_options GoogleComputeSecurityPolicy#redirect_options}
 	RedirectOptions *GoogleComputeSecurityPolicyRuleRedirectOptions `field:"optional" json:"redirectOptions" yaml:"redirectOptions"`
 }
-

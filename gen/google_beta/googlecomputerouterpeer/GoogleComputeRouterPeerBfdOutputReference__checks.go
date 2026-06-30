@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerBfdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeRouterPeerBfdOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

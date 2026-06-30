@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateReque
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateReque
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference) validateSetValidateOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference) validateSetValidateOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,4 +253,3 @@ func validateNewGoogleDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestO
 
 	return nil
 }
-

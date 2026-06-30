@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRulesetSourceFilesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleFirebaserulesRulesetSourceFilesOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudRunServiceTemplateSpecContainersVolumeMountsListParam
 
 	return nil
 }
-

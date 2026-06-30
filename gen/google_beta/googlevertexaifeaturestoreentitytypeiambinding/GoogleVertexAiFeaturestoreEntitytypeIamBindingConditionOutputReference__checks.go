@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputRef
 
 	return nil
 }
-

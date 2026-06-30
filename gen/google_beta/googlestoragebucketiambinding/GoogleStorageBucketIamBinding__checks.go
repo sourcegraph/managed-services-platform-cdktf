@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucketIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleStorageBucketIamBinding_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleStorageBucketIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleStorageBucketIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleStorageBucketIamBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleStorageBucketIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleStorageBucketIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleStorageBucketIamBinding_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleStorageBucketIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleStorageBucketIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetBucketParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetMembersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleStorageBucketIamBindingParameters(scope constructs.Constru
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildSourceOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleCloudbuildTriggerBuildSourceOutputReferenceParameters(terr
 
 	return nil
 }
-

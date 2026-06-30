@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefault
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultCon
 
 	return nil
 }
-

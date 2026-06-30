@@ -12,9 +12,9 @@ type GoogleSpannerInstanceTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleSpannerInstanceTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleSpannerInstanceTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleSpannerInstanceTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) UpdateInput() *
 	return returns
 }
 
-
 func NewGoogleSpannerInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSpannerInstanceTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleSpannerInstanceTimeoutsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleSpannerInstanceTimeoutsOutputReference_Override(g GoogleSpannerIns
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetCreate(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetDelete(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference) ToString() *str
 
 	return returns
 }
-

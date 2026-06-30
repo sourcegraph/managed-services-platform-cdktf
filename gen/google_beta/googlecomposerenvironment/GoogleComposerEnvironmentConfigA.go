@@ -1,6 +1,5 @@
 package googlecomposerenvironment
 
-
 type GoogleComposerEnvironmentConfigA struct {
 	// database_config block.
 	//
@@ -15,11 +14,11 @@ type GoogleComposerEnvironmentConfigA struct {
 	// If true, builds performed during operations that install Python packages have only private connectivity to Google services. If false, the builds also have access to the internet.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#enable_private_builds_only GoogleComposerEnvironment#enable_private_builds_only}
-	EnablePrivateBuildsOnly interface{} `field:"optional" json:"enablePrivateBuildsOnly" yaml:"enablePrivateBuildsOnly"`
+	EnablePrivateBuildsOnly any `field:"optional" json:"enablePrivateBuildsOnly" yaml:"enablePrivateBuildsOnly"`
 	// Optional. If true, a private Composer environment will be created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#enable_private_environment GoogleComposerEnvironment#enable_private_environment}
-	EnablePrivateEnvironment interface{} `field:"optional" json:"enablePrivateEnvironment" yaml:"enablePrivateEnvironment"`
+	EnablePrivateEnvironment any `field:"optional" json:"enablePrivateEnvironment" yaml:"enablePrivateEnvironment"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#encryption_config GoogleComposerEnvironment#encryption_config}
@@ -79,4 +78,3 @@ type GoogleComposerEnvironmentConfigA struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#workloads_config GoogleComposerEnvironment#workloads_config}
 	WorkloadsConfig *GoogleComposerEnvironmentConfigWorkloadsConfig `field:"optional" json:"workloadsConfig" yaml:"workloadsConfig"`
 }
-

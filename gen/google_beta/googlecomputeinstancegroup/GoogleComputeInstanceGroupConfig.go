@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeInstanceGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeInstanceGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the instance group.
 	//
 	// Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
@@ -43,7 +43,7 @@ type GoogleComputeInstanceGroupConfig struct {
 	// named_port block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group#named_port GoogleComputeInstanceGroup#named_port}
-	NamedPort interface{} `field:"optional" json:"namedPort" yaml:"namedPort"`
+	NamedPort any `field:"optional" json:"namedPort" yaml:"namedPort"`
 	// The URL of the network the instance group is in.
 	//
 	// If this is different from the network where the instances are in, the creation fails. Defaults to the network where the instances are in (if neither network nor instances is specified, this field will be blank).
@@ -65,4 +65,3 @@ type GoogleComputeInstanceGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group#zone GoogleComputeInstanceGroup#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

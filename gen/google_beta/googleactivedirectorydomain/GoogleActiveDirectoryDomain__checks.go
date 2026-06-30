@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleActiveDirectoryDomain_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleActiveDirectoryDomain_IsConstructParameters(x interface{}) error {
+func validateGoogleActiveDirectoryDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleActiveDirectoryDomain_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleActiveDirectoryDomain_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleActiveDirectoryDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleActiveDirectoryDomain_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleActiveDirectoryDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleActiveDirectoryDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetAuthorizedNetworksPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewGoogleActiveDirectoryDomainParameters(scope constructs.Construct
 
 	return nil
 }
-

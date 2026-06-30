@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleListParameters(terraformRe
 
 	return nil
 }
-

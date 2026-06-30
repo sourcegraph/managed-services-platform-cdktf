@@ -24,22 +24,22 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	SetCidr(val *string)
 	CidrInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,27 +86,27 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleOracleDatabaseAutonomousDatabaseTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -155,17 +155,17 @@ type GoogleOracleDatabaseAutonomousDatabase interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleOracleDatabaseAutonomousDatabase
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) CidrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Connection() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DatabaseInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DeletionProtection() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Provisioners() *[]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TerraformLabels() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) Timeouts() GoogleOrac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -642,7 +642,6 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) TimeoutsInput() inter
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string, config *GoogleOracleDatabaseAutonomousDatabaseConfig) GoogleOracleDatabaseAutonomousDatabase {
@@ -655,7 +654,7 @@ func NewGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -668,12 +667,12 @@ func NewGoogleOracleDatabaseAutonomousDatabase_Override(g GoogleOracleDatabaseAu
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetAdminPassword(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetAdminPassword(val *string) {
 	if err := j.validateSetAdminPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetAdminPassword(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetAutonomousDatabaseId(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetAutonomousDatabaseId(val *string) {
 	if err := j.validateSetAutonomousDatabaseIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetAutonomousDatabaseI
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetCidr(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDatabase(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDatabase(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDeletionProtection(
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -758,7 +757,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetDisplayName(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetId(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLabels(val *map[str
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetLocation(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetNetwork(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetProject(val *string) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetProject(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -851,7 +850,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func GoogleOracleDatabaseAutonomousDatabase_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func GoogleOracleDatabaseAutonomousDatabase_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleOracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
+func GoogleOracleDatabaseAutonomousDatabase_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOracleDatabaseAutonomousDatabase_IsConstructParameters(x); err != nil {
@@ -909,7 +908,7 @@ func GoogleOracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func GoogleOracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleOracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *bool {
+func GoogleOracleDatabaseAutonomousDatabase_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOracleDatabaseAutonomousDatabase_IsTerraformElementParameters(x); err != nil {
@@ -928,7 +927,7 @@ func GoogleOracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func GoogleOracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *b
 }
 
 // Experimental.
-func GoogleOracleDatabaseAutonomousDatabase_IsTerraformResource(x interface{}) *bool {
+func GoogleOracleDatabaseAutonomousDatabase_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleOracleDatabaseAutonomousDatabase_IsTerraformResourceParameters(x); err != nil {
@@ -947,7 +946,7 @@ func GoogleOracleDatabaseAutonomousDatabase_IsTerraformResource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleOracleDatabaseAutonomousDatabase.GoogleOracleDatabaseAutonomousDatabase",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -972,31 +971,31 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) AddMoveTarget(moveTar
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetNumberAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetNumberListAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetNumberMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetStringAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,15 +1123,15 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) GetStringMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1151,7 +1150,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ImportFrom(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) InterpolationForAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1178,18 +1177,18 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) MoveFromId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1200,7 +1199,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) MoveToId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1222,7 +1221,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PutProperties(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1233,7 +1232,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) PutTimeouts(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,8 +1300,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1314,8 +1313,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1327,8 +1326,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) SynthesizeHclAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1340,8 +1339,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToHclTerraform() inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1366,8 +1365,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1378,4 +1377,3 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) ToTerraform() interfa
 
 	return returns
 }
-

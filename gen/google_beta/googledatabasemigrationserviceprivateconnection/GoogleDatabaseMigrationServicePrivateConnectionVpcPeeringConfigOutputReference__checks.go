@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigO
 
 	return nil
 }
-

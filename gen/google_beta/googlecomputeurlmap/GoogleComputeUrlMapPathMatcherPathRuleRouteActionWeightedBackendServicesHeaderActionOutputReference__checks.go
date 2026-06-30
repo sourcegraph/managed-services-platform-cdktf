@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBack
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBack
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBack
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackend
 
 	return nil
 }
-

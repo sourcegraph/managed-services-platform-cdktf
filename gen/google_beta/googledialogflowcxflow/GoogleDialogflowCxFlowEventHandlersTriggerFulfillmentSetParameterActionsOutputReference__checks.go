@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParamete
 
 	return nil
 }
-

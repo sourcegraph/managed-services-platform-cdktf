@@ -12,9 +12,9 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -24,7 +24,7 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	SetContainerConcurrency(val *float64)
 	ContainerConcurrencyInput() *float64
 	Containers() GoogleCloudRunServiceTemplateSpecContainersList
-	ContainersInput() interface{}
+	ContainersInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -53,11 +53,11 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
 	Volumes() GoogleCloudRunServiceTemplateSpecVolumesList
-	VolumesInput() interface{}
+	VolumesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,8 +78,8 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutContainers(value interface{})
-	PutVolumes(value interface{})
+	PutContainers(value any)
+	PutVolumes(value any)
 	ResetContainerConcurrency()
 	ResetContainers()
 	ResetNodeSelector()
@@ -88,7 +88,7 @@ type GoogleCloudRunServiceTemplateSpecOutputReference interface {
 	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ type jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) Containers(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ContainersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ContainersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containersInput",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) Volumes() G
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) VolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) VolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumesInput",
@@ -300,7 +300,6 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) VolumesInpu
 	)
 	return returns
 }
-
 
 func NewGoogleCloudRunServiceTemplateSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunServiceTemplateSpecOutputReference {
 	_init_.Initialize()
@@ -312,7 +311,7 @@ func NewGoogleCloudRunServiceTemplateSpecOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -324,12 +323,12 @@ func NewGoogleCloudRunServiceTemplateSpecOutputReference_Override(g GoogleCloudR
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetContainerConcurrency(val *float64) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetContainerConcurrency(val *float64) {
 	if err := j.validateSetContainerConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetContainer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetInternalValue(val *GoogleCloudRunServiceTemplateSpec) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetInternalValue(val *GoogleCloudRunServiceTemplateSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetNodeSelector(val *map[string]*string) {
 	if err := j.validateSetNodeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetNodeSelec
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetServiceAc
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,32 +606,32 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) PutContainers(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) PutContainers(value any) {
 	if err := g.validatePutContainersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putContainers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) PutVolumes(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) PutVolumes(value any) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -684,16 +683,16 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ResetVolume
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -712,4 +711,3 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecOutputReference) ToString() 
 
 	return returns
 }
-

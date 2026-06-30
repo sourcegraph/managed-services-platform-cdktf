@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
-		reflect.TypeOf((*GoogleNetworkServicesMesh)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesMesh](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesMesh{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshConfig",
-		reflect.TypeOf((*GoogleNetworkServicesMeshConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesMeshConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeouts",
-		reflect.TypeOf((*GoogleNetworkServicesMeshTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesMeshTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkServicesMeshTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesMeshTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

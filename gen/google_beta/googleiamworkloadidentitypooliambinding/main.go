@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolIamBinding.GoogleIamWorkloadIdentityPoolIamBinding",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolId", GoGetter: "WorkloadIdentityPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolIdInput", GoGetter: "WorkloadIdentityPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolIamBinding.GoogleIamWorkloadIdentityPoolIamBindingCondition",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolIamBinding.GoogleIamWorkloadIdentityPoolIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolIamBinding.GoogleIamWorkloadIdentityPoolIamBindingConfig",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolIamBindingConfig](),
 	)
 }

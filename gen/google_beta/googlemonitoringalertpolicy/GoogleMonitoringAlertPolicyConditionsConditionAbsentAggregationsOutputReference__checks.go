@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations
 
 	return nil
 }
-

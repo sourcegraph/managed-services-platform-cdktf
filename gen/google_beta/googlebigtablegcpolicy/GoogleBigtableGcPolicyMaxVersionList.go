@@ -17,8 +17,8 @@ type GoogleBigtableGcPolicyMaxVersionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleBigtableGcPolicyMaxVersionList interface {
 	Get(index *float64) GoogleBigtableGcPolicyMaxVersionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleBigtableGcPolicyMaxVersionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigtableGcPolicyMaxVersionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleBigtableGcPolicyMaxVersionList(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleBigtableGcPolicyMaxVersionList_Override(g GoogleBigtableGcPolicyMa
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) AllWithMapKey(mapKeyAtt
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) Get(index *float64) Goo
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) ToString() *string {
 
 	return returns
 }
-

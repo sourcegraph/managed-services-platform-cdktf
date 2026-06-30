@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSccV2FolderMuteConfigTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

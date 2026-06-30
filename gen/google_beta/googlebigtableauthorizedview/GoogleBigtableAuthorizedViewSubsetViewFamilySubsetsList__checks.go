@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBigtableAuthorizedViewSubsetViewFamilySubsetsListParameter
 
 	return nil
 }
-

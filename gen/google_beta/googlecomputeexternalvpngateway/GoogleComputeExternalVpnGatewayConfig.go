@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeExternalVpnGatewayConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeExternalVpnGatewayConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -43,7 +43,7 @@ type GoogleComputeExternalVpnGatewayConfig struct {
 	// interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_external_vpn_gateway#interface GoogleComputeExternalVpnGateway#interface}
-	Interface interface{} `field:"optional" json:"interface" yaml:"interface"`
+	Interface any `field:"optional" json:"interface" yaml:"interface"`
 	// Labels for the external VPN gateway resource.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -62,4 +62,3 @@ type GoogleComputeExternalVpnGatewayConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_external_vpn_gateway#timeouts GoogleComputeExternalVpnGateway#timeouts}
 	Timeouts *GoogleComputeExternalVpnGatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

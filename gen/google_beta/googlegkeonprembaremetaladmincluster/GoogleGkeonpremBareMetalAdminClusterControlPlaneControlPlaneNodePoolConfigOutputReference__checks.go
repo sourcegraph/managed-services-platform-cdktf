@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneN
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNode
 
 	return nil
 }
-

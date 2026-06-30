@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
-		reflect.TypeOf((*GoogleNotebooksRuntimeIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition",
-		reflect.TypeOf((*GoogleNotebooksRuntimeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeIamMemberConfig](),
 	)
 }

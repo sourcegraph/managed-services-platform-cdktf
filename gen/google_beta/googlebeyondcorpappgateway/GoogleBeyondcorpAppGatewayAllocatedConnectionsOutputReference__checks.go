@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReferencePar
 
 	return nil
 }
-

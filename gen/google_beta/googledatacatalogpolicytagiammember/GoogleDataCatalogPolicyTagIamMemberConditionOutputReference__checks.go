@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMemberConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataCatalogPolicyTagIamMemberConditionOutputReferenceParam
 
 	return nil
 }
-

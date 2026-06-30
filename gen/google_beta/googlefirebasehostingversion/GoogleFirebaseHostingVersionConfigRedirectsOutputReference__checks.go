@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRedirectsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleFirebaseHostingVersionConfigRedirectsOutputReferenceParame
 
 	return nil
 }
-

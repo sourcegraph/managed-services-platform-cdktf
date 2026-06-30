@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeBackendBucketSignedUrlKey_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleComputeBackendBucketSignedUrlKey_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketSignedUrlKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeBackendBucketSignedUrlKey_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetBackendBuc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleComputeBackendBucketSignedUrlKeyParameters(scope construct
 
 	return nil
 }
-

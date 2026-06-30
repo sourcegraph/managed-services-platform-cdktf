@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksInstanceIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleNotebooksInstanceIamBindingConditionOutputReferenceParamet
 
 	return nil
 }
-

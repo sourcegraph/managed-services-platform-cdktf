@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringCollectorIlbOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroringCollectorIlbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePacketMirroringCollectorIlbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputePacketMirroringCollectorIlbOutputReferenceParameter
 
 	return nil
 }
-

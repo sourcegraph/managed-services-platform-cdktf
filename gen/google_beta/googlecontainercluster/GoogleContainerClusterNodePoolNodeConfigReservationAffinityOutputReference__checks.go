@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigReservationAffinityOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutpu
 
 	return nil
 }
-

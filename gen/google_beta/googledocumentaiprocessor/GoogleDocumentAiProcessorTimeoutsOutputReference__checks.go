@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDocumentAiProcessorTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

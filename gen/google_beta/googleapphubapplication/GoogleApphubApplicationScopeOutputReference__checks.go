@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApphubApplicationScopeOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubApplicationScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubApplicationScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApphubApplicationScopeOutputReferenceParameters(terraformR
 
 	return nil
 }
-

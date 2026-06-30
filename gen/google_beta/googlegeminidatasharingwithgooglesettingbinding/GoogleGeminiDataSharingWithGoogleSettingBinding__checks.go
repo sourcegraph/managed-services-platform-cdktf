@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateAddM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGeminiDataSharingWithGoogleSettingBinding_GenerateConfigForIm
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsConstructParamete
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformElementP
 	return nil
 }
 
-func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleGeminiDataSharingWithGoogleSettingBinding_IsTerraformResource
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewGoogleGeminiDataSharingWithGoogleSettingBindingParameters(scope 
 
 	return nil
 }
-

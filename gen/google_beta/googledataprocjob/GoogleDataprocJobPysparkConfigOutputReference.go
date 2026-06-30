@@ -18,9 +18,9 @@ type GoogleDataprocJobPysparkConfigOutputReference interface {
 	ArgsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -63,7 +63,7 @@ type GoogleDataprocJobPysparkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type GoogleDataprocJobPysparkConfigOutputReference interface {
 	ResetPythonFileUris()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ArgsInput() *[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewGoogleDataprocJobPysparkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocJobPysparkConfigOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewGoogleDataprocJobPysparkConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJob.GoogleDataprocJobPysparkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewGoogleDataprocJobPysparkConfigOutputReference_Override(g GoogleDataprocJ
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJob.GoogleDataprocJobPysparkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetArchiveUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetArchiveUris(val *[]*string) {
 	if err := j.validateSetArchiveUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetArchiveUris(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetArgs(val *[]
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetFileUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetFileUris(val *[]*string) {
 	if err := j.validateSetFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetFileUris(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetInternalValue(val *GoogleDataprocJobPysparkConfig) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetInternalValue(val *GoogleDataprocJobPysparkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetJarFileUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetJarFileUris(val *[]*string) {
 	if err := j.validateSetJarFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetJarFileUris(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetMainPythonFileUri(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetMainPythonFileUri(val *string) {
 	if err := j.validateSetMainPythonFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetMainPythonFi
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetProperties(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetPythonFileUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetPythonFileUris(val *[]*string) {
 	if err := j.validateSetPythonFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetPythonFileUr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,16 +509,16 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) PutLoggingConf
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ResetPythonFil
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) ToString() *st
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMlEngineModelDefaultVersionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMlEngineModelDefaultVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMlEngineModelDefaultVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMlEngineModelDefaultVersionOutputReferenceParameters(terra
 
 	return nil
 }
-

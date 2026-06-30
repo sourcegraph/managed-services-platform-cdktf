@@ -164,7 +164,7 @@ func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,4 +272,3 @@ func validateNewGoogleIapSettingsAccessSettingsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

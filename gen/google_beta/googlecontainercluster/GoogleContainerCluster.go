@@ -14,9 +14,9 @@ type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *GoogleContainerClusterAddonsConfig
-	AllowNetAdmin() interface{}
-	SetAllowNetAdmin(val interface{})
-	AllowNetAdminInput() interface{}
+	AllowNetAdmin() any
+	SetAllowNetAdmin(val any)
+	AllowNetAdminInput() any
 	AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
 	AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
@@ -35,19 +35,19 @@ type GoogleContainerCluster interface {
 	ConfidentialNodes() GoogleContainerClusterConfidentialNodesOutputReference
 	ConfidentialNodesInput() *GoogleContainerClusterConfidentialNodes
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlaneEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigOutputReference
 	ControlPlaneEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfig
 	CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference
 	CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseEncryption() GoogleContainerClusterDatabaseEncryptionOutputReference
 	DatabaseEncryptionInput() *GoogleContainerClusterDatabaseEncryption
 	DatapathProvider() *string
@@ -58,9 +58,9 @@ type GoogleContainerCluster interface {
 	DefaultMaxPodsPerNodeInput() *float64
 	DefaultSnatStatus() GoogleContainerClusterDefaultSnatStatusOutputReference
 	DefaultSnatStatusInput() *GoogleContainerClusterDefaultSnatStatus
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,44 +68,44 @@ type GoogleContainerCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableL4LbFirewallReconciliation() interface{}
-	SetDisableL4LbFirewallReconciliation(val interface{})
-	DisableL4LbFirewallReconciliationInput() interface{}
+	DisableL4LbFirewallReconciliation() any
+	SetDisableL4LbFirewallReconciliation(val any)
+	DisableL4LbFirewallReconciliationInput() any
 	DnsConfig() GoogleContainerClusterDnsConfigOutputReference
 	DnsConfigInput() *GoogleContainerClusterDnsConfig
 	EffectiveLabels() cdktf.StringMap
-	EnableAutopilot() interface{}
-	SetEnableAutopilot(val interface{})
-	EnableAutopilotInput() interface{}
-	EnableCiliumClusterwideNetworkPolicy() interface{}
-	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
-	EnableCiliumClusterwideNetworkPolicyInput() interface{}
-	EnableFqdnNetworkPolicy() interface{}
-	SetEnableFqdnNetworkPolicy(val interface{})
-	EnableFqdnNetworkPolicyInput() interface{}
-	EnableIntranodeVisibility() interface{}
-	SetEnableIntranodeVisibility(val interface{})
-	EnableIntranodeVisibilityInput() interface{}
+	EnableAutopilot() any
+	SetEnableAutopilot(val any)
+	EnableAutopilotInput() any
+	EnableCiliumClusterwideNetworkPolicy() any
+	SetEnableCiliumClusterwideNetworkPolicy(val any)
+	EnableCiliumClusterwideNetworkPolicyInput() any
+	EnableFqdnNetworkPolicy() any
+	SetEnableFqdnNetworkPolicy(val any)
+	EnableFqdnNetworkPolicyInput() any
+	EnableIntranodeVisibility() any
+	SetEnableIntranodeVisibility(val any)
+	EnableIntranodeVisibilityInput() any
 	EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference
 	EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis
-	EnableKubernetesAlpha() interface{}
-	SetEnableKubernetesAlpha(val interface{})
-	EnableKubernetesAlphaInput() interface{}
-	EnableL4IlbSubsetting() interface{}
-	SetEnableL4IlbSubsetting(val interface{})
-	EnableL4IlbSubsettingInput() interface{}
-	EnableLegacyAbac() interface{}
-	SetEnableLegacyAbac(val interface{})
-	EnableLegacyAbacInput() interface{}
-	EnableMultiNetworking() interface{}
-	SetEnableMultiNetworking(val interface{})
-	EnableMultiNetworkingInput() interface{}
-	EnableShieldedNodes() interface{}
-	SetEnableShieldedNodes(val interface{})
-	EnableShieldedNodesInput() interface{}
-	EnableTpu() interface{}
-	SetEnableTpu(val interface{})
-	EnableTpuInput() interface{}
+	EnableKubernetesAlpha() any
+	SetEnableKubernetesAlpha(val any)
+	EnableKubernetesAlphaInput() any
+	EnableL4IlbSubsetting() any
+	SetEnableL4IlbSubsetting(val any)
+	EnableL4IlbSubsettingInput() any
+	EnableLegacyAbac() any
+	SetEnableLegacyAbac(val any)
+	EnableLegacyAbacInput() any
+	EnableMultiNetworking() any
+	SetEnableMultiNetworking(val any)
+	EnableMultiNetworkingInput() any
+	EnableShieldedNodes() any
+	SetEnableShieldedNodes(val any)
+	EnableShieldedNodesInput() any
+	EnableTpu() any
+	SetEnableTpu(val any)
+	EnableTpuInput() any
 	Endpoint() *string
 	EnterpriseConfig() GoogleContainerClusterEnterpriseConfigOutputReference
 	EnterpriseConfigInput() *GoogleContainerClusterEnterpriseConfig
@@ -191,7 +191,7 @@ type GoogleContainerCluster interface {
 	NodePoolAutoConfigInput() *GoogleContainerClusterNodePoolAutoConfig
 	NodePoolDefaults() GoogleContainerClusterNodePoolDefaultsOutputReference
 	NodePoolDefaultsInput() *GoogleContainerClusterNodePoolDefaults
-	NodePoolInput() interface{}
+	NodePoolInput() any
 	NodeVersion() *string
 	SetNodeVersion(val *string)
 	NodeVersionInput() *string
@@ -217,16 +217,16 @@ type GoogleContainerCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() GoogleContainerClusterReleaseChannelOutputReference
 	ReleaseChannelInput() *GoogleContainerClusterReleaseChannel
-	RemoveDefaultNodePool() interface{}
-	SetRemoveDefaultNodePool(val interface{})
-	RemoveDefaultNodePoolInput() interface{}
+	RemoveDefaultNodePool() any
+	SetRemoveDefaultNodePool(val any)
+	RemoveDefaultNodePoolInput() any
 	ResourceLabels() *map[string]*string
 	SetResourceLabels(val *map[string]*string)
 	ResourceLabelsInput() *map[string]*string
@@ -247,11 +247,11 @@ type GoogleContainerCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleContainerClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TpuConfig() GoogleContainerClusterTpuConfigOutputReference
 	TpuConfigInput() *GoogleContainerClusterTpuConfig
 	TpuIpv4CidrBlock() *string
@@ -267,9 +267,9 @@ type GoogleContainerCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -287,7 +287,7 @@ type GoogleContainerCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -299,7 +299,7 @@ type GoogleContainerCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -334,7 +334,7 @@ type GoogleContainerCluster interface {
 	PutNetworkPerformanceConfig(value *GoogleContainerClusterNetworkPerformanceConfig)
 	PutNetworkPolicy(value *GoogleContainerClusterNetworkPolicy)
 	PutNodeConfig(value *GoogleContainerClusterNodeConfig)
-	PutNodePool(value interface{})
+	PutNodePool(value any)
 	PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
@@ -436,17 +436,17 @@ type GoogleContainerCluster interface {
 	ResetVerticalPodAutoscaling()
 	ResetWorkloadAltsConfig()
 	ResetWorkloadIdentityConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleContainerCluster
@@ -474,8 +474,8 @@ func (j *jsiiProxy_GoogleContainerCluster) AddonsConfigInput() *GoogleContainerC
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNetAdmin",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNetAdminInput",
@@ -644,8 +644,8 @@ func (j *jsiiProxy_GoogleContainerCluster) ConfidentialNodesInput() *GoogleConta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -654,8 +654,8 @@ func (j *jsiiProxy_GoogleContainerCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -704,8 +704,8 @@ func (j *jsiiProxy_GoogleContainerCluster) CostManagementConfigInput() *GoogleCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -794,8 +794,8 @@ func (j *jsiiProxy_GoogleContainerCluster) DefaultSnatStatusInput() *GoogleConta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_GoogleContainerCluster) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -844,8 +844,8 @@ func (j *jsiiProxy_GoogleContainerCluster) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableL4LbFirewallReconciliation",
@@ -854,8 +854,8 @@ func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliation() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableL4LbFirewallReconciliationInput",
@@ -894,8 +894,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutopilot",
@@ -904,8 +904,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutopilotInput",
@@ -914,8 +914,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCiliumClusterwideNetworkPolicy",
@@ -924,8 +924,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicy(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCiliumClusterwideNetworkPolicyInput",
@@ -934,8 +934,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicyI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFqdnNetworkPolicy",
@@ -944,8 +944,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFqdnNetworkPolicyInput",
@@ -954,8 +954,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibility() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibility() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibility",
@@ -964,8 +964,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibility() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibilityInput",
@@ -994,8 +994,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApisInput() *GoogleConta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlpha() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlpha() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlpha",
@@ -1004,8 +1004,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlpha() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlphaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlphaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlphaInput",
@@ -1014,8 +1014,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlphaInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsetting() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsetting() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableL4IlbSubsetting",
@@ -1024,8 +1024,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsetting() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsettingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsettingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableL4IlbSubsettingInput",
@@ -1034,8 +1034,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsettingInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbac() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbac() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyAbac",
@@ -1044,8 +1044,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbac() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyAbacInput",
@@ -1054,8 +1054,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMultiNetworking",
@@ -1064,8 +1064,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMultiNetworkingInput",
@@ -1074,8 +1074,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableShieldedNodes",
@@ -1084,8 +1084,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodes() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableShieldedNodesInput",
@@ -1094,8 +1094,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodesInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableTpu() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableTpu() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTpu",
@@ -1104,8 +1104,8 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableTpu() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableTpuInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) EnableTpuInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTpuInput",
@@ -1764,8 +1764,8 @@ func (j *jsiiProxy_GoogleContainerCluster) NodePoolDefaultsInput() *GoogleContai
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) NodePoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodePoolInput",
@@ -1954,8 +1954,8 @@ func (j *jsiiProxy_GoogleContainerCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleContainerCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1964,8 +1964,8 @@ func (j *jsiiProxy_GoogleContainerCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1994,8 +1994,8 @@ func (j *jsiiProxy_GoogleContainerCluster) ReleaseChannelInput() *GoogleContaine
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePool() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePool() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeDefaultNodePool",
@@ -2004,8 +2004,8 @@ func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePool() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePoolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeDefaultNodePoolInput",
@@ -2174,8 +2174,8 @@ func (j *jsiiProxy_GoogleContainerCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -2204,8 +2204,8 @@ func (j *jsiiProxy_GoogleContainerCluster) Timeouts() GoogleContainerClusterTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -2324,7 +2324,6 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
@@ -2336,7 +2335,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -2349,12 +2348,12 @@ func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetAllowNetAdmin(val any) {
 	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
 		panic(err)
 	}
@@ -2365,7 +2364,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetClusterIpv4Cidr(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetClusterIpv4Cidr(val *string) {
 	if err := j.validateSetClusterIpv4CidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2376,7 +2375,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetClusterIpv4Cidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2387,7 +2386,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -2398,7 +2397,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDatapathProvider(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDatapathProvider(val *string) {
 	if err := j.validateSetDatapathProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -2409,7 +2408,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDatapathProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDefaultMaxPodsPerNode(val *float64) {
 	if err := j.validateSetDefaultMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2420,7 +2419,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDefaultMaxPodsPerNode(val *float64)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2431,7 +2430,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDeletionProtection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -2439,7 +2438,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2450,7 +2449,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetDisableL4LbFirewallReconciliation(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetDisableL4LbFirewallReconciliation(val any) {
 	if err := j.validateSetDisableL4LbFirewallReconciliationParameters(val); err != nil {
 		panic(err)
 	}
@@ -2461,7 +2460,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDisableL4LbFirewallReconciliation(v
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableAutopilot(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableAutopilot(val any) {
 	if err := j.validateSetEnableAutopilotParameters(val); err != nil {
 		panic(err)
 	}
@@ -2472,7 +2471,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableAutopilot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableCiliumClusterwideNetworkPolicy(val any) {
 	if err := j.validateSetEnableCiliumClusterwideNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2483,7 +2482,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableCiliumClusterwideNetworkPolic
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableFqdnNetworkPolicy(val any) {
 	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2494,7 +2493,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableFqdnNetworkPolicy(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableIntranodeVisibility(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableIntranodeVisibility(val any) {
 	if err := j.validateSetEnableIntranodeVisibilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -2505,7 +2504,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableIntranodeVisibility(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableKubernetesAlpha(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableKubernetesAlpha(val any) {
 	if err := j.validateSetEnableKubernetesAlphaParameters(val); err != nil {
 		panic(err)
 	}
@@ -2516,7 +2515,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableKubernetesAlpha(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableL4IlbSubsetting(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableL4IlbSubsetting(val any) {
 	if err := j.validateSetEnableL4IlbSubsettingParameters(val); err != nil {
 		panic(err)
 	}
@@ -2527,7 +2526,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableL4IlbSubsetting(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableLegacyAbac(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableLegacyAbac(val any) {
 	if err := j.validateSetEnableLegacyAbacParameters(val); err != nil {
 		panic(err)
 	}
@@ -2538,7 +2537,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableLegacyAbac(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableMultiNetworking(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableMultiNetworking(val any) {
 	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -2549,7 +2548,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableMultiNetworking(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableShieldedNodes(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableShieldedNodes(val any) {
 	if err := j.validateSetEnableShieldedNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -2560,7 +2559,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableShieldedNodes(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableTpu(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetEnableTpu(val any) {
 	if err := j.validateSetEnableTpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -2571,7 +2570,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableTpu(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleContainerCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2579,7 +2578,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetId(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2590,7 +2589,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetInitialNodeCount(val *float64) {
+func (j *jsiiProxy_GoogleContainerCluster) SetInitialNodeCount(val *float64) {
 	if err := j.validateSetInitialNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -2601,7 +2600,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetInitialNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetInTransitEncryptionConfig(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetInTransitEncryptionConfig(val *string) {
 	if err := j.validateSetInTransitEncryptionConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -2612,7 +2611,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetInTransitEncryptionConfig(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleContainerCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2623,7 +2622,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -2634,7 +2633,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetLoggingService(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetLoggingService(val *string) {
 	if err := j.validateSetLoggingServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -2645,7 +2644,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetLoggingService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetMinMasterVersion(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetMinMasterVersion(val *string) {
 	if err := j.validateSetMinMasterVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2656,7 +2655,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetMinMasterVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetMonitoringService(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetMonitoringService(val *string) {
 	if err := j.validateSetMonitoringServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -2667,7 +2666,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetMonitoringService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetName(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2678,7 +2677,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -2689,7 +2688,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetNetworkingMode(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetNetworkingMode(val *string) {
 	if err := j.validateSetNetworkingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2700,7 +2699,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetNetworkingMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetNodeLocations(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetNodeLocations(val *[]*string) {
 	if err := j.validateSetNodeLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2711,7 +2710,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetNodeLocations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetNodeVersion(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetNodeVersion(val *string) {
 	if err := j.validateSetNodeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2722,7 +2721,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetNodeVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetPrivateIpv6GoogleAccess(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetPrivateIpv6GoogleAccess(val *string) {
 	if err := j.validateSetPrivateIpv6GoogleAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -2733,7 +2732,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetPrivateIpv6GoogleAccess(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetProject(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -2744,7 +2743,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleContainerCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2752,7 +2751,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2763,7 +2762,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetRemoveDefaultNodePool(val interface{}) {
+func (j *jsiiProxy_GoogleContainerCluster) SetRemoveDefaultNodePool(val any) {
 	if err := j.validateSetRemoveDefaultNodePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -2774,7 +2773,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetRemoveDefaultNodePool(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetResourceLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetResourceLabels(val *map[string]*string) {
 	if err := j.validateSetResourceLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2785,7 +2784,7 @@ func (j *jsiiProxy_GoogleContainerCluster)SetResourceLabels(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleContainerCluster) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -2808,7 +2807,7 @@ func GoogleContainerCluster_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -2832,7 +2831,7 @@ func GoogleContainerCluster_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleContainerCluster_IsConstruct(x interface{}) *bool {
+func GoogleContainerCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerCluster_IsConstructParameters(x); err != nil {
@@ -2843,7 +2842,7 @@ func GoogleContainerCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2851,7 +2850,7 @@ func GoogleContainerCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
+func GoogleContainerCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerCluster_IsTerraformElementParameters(x); err != nil {
@@ -2862,7 +2861,7 @@ func GoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2870,7 +2869,7 @@ func GoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerCluster_IsTerraformResource(x interface{}) *bool {
+func GoogleContainerCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerCluster_IsTerraformResourceParameters(x); err != nil {
@@ -2881,7 +2880,7 @@ func GoogleContainerCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2906,31 +2905,31 @@ func (g *jsiiProxy_GoogleContainerCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleContainerCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2946,7 +2945,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2962,7 +2961,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2978,7 +2977,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2994,7 +2993,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -3010,7 +3009,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -3026,7 +3025,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -3042,7 +3041,7 @@ func (g *jsiiProxy_GoogleContainerCluster) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -3058,15 +3057,15 @@ func (g *jsiiProxy_GoogleContainerCluster) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -3085,7 +3084,7 @@ func (g *jsiiProxy_GoogleContainerCluster) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -3098,7 +3097,7 @@ func (g *jsiiProxy_GoogleContainerCluster) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -3112,18 +3111,18 @@ func (g *jsiiProxy_GoogleContainerCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleContainerCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -3134,7 +3133,7 @@ func (g *jsiiProxy_GoogleContainerCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -3145,7 +3144,7 @@ func (g *jsiiProxy_GoogleContainerCluster) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -3156,7 +3155,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAddonsConfig(value *GoogleContaine
 	_jsii_.InvokeVoid(
 		g,
 		"putAddonsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3167,7 +3166,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAnonymousAuthenticationConfig(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putAnonymousAuthenticationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3178,7 +3177,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAuthenticatorGroupsConfig(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthenticatorGroupsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3189,7 +3188,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutBinaryAuthorization(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putBinaryAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3200,7 +3199,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutClusterAutoscaling(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putClusterAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3211,7 +3210,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutClusterTelemetry(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putClusterTelemetry",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3222,7 +3221,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutConfidentialNodes(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putConfidentialNodes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3233,7 +3232,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutControlPlaneEndpointsConfig(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putControlPlaneEndpointsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3244,7 +3243,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutCostManagementConfig(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putCostManagementConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3255,7 +3254,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDatabaseEncryption(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putDatabaseEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3266,7 +3265,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDefaultSnatStatus(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultSnatStatus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3277,7 +3276,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDnsConfig(value *GoogleContainerCl
 	_jsii_.InvokeVoid(
 		g,
 		"putDnsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3288,7 +3287,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putEnableK8SBetaApis",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3299,7 +3298,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutEnterpriseConfig(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putEnterpriseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3310,7 +3309,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutFleet(value *GoogleContainerCluste
 	_jsii_.InvokeVoid(
 		g,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3321,7 +3320,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putGatewayApiConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3332,7 +3331,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutGkeAutoUpgradeConfig(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putGkeAutoUpgradeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3343,7 +3342,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutIdentityServiceConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putIdentityServiceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3354,7 +3353,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutIpAllocationPolicy(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putIpAllocationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3365,7 +3364,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutLoggingConfig(value *GoogleContain
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3376,7 +3375,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMaintenancePolicy(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3387,7 +3386,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMasterAuth(value *GoogleContainerC
 	_jsii_.InvokeVoid(
 		g,
 		"putMasterAuth",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3398,7 +3397,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMasterAuthorizedNetworksConfig(val
 	_jsii_.InvokeVoid(
 		g,
 		"putMasterAuthorizedNetworksConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3409,7 +3408,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMeshCertificates(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putMeshCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3420,7 +3419,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMonitoringConfig(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putMonitoringConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3431,7 +3430,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNetworkPerformanceConfig(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3442,7 +3441,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNetworkPolicy(value *GoogleContain
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3453,18 +3452,18 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNodeConfig(value *GoogleContainerC
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) PutNodePool(value interface{}) {
+func (g *jsiiProxy_GoogleContainerCluster) PutNodePool(value any) {
 	if err := g.validatePutNodePoolParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNodePool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3475,7 +3474,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolAutoConfig(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putNodePoolAutoConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3486,7 +3485,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolDefaults(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putNodePoolDefaults",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3497,7 +3496,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNotificationConfig(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putNotificationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3508,7 +3507,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutPodAutoscaling(value *GoogleContai
 	_jsii_.InvokeVoid(
 		g,
 		"putPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3519,7 +3518,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutPodSecurityPolicyConfig(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putPodSecurityPolicyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3530,7 +3529,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutPrivateClusterConfig(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putPrivateClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3541,7 +3540,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutProtectConfig(value *GoogleContain
 	_jsii_.InvokeVoid(
 		g,
 		"putProtectConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3552,7 +3551,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutReleaseChannel(value *GoogleContai
 	_jsii_.InvokeVoid(
 		g,
 		"putReleaseChannel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3563,7 +3562,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutResourceUsageExportConfig(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putResourceUsageExportConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3574,7 +3573,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutSecretManagerConfig(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putSecretManagerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3585,7 +3584,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutSecurityPostureConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putSecurityPostureConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3596,7 +3595,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutServiceExternalIpsConfig(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceExternalIpsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3607,7 +3606,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutTimeouts(value *GoogleContainerClu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3618,7 +3617,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutTpuConfig(value *GoogleContainerCl
 	_jsii_.InvokeVoid(
 		g,
 		"putTpuConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3629,7 +3628,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutUserManagedKeysConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putUserManagedKeysConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3640,7 +3639,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutVerticalPodAutoscaling(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putVerticalPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3651,7 +3650,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadAltsConfig(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putWorkloadAltsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3662,7 +3661,7 @@ func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadIdentityConfig(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putWorkloadIdentityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -4314,8 +4313,8 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetWorkloadIdentityConfig() {
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -4327,8 +4326,8 @@ func (g *jsiiProxy_GoogleContainerCluster) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -4340,8 +4339,8 @@ func (g *jsiiProxy_GoogleContainerCluster) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -4353,8 +4352,8 @@ func (g *jsiiProxy_GoogleContainerCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -4379,8 +4378,8 @@ func (g *jsiiProxy_GoogleContainerCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -4391,4 +4390,3 @@ func (g *jsiiProxy_GoogleContainerCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

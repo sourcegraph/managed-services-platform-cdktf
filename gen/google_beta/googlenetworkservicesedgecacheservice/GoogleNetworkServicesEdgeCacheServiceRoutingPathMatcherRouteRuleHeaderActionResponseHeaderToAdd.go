@@ -1,6 +1,5 @@
 package googlenetworkservicesedgecacheservice
 
-
 type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAdd struct {
 	// The name of the header to add.
 	//
@@ -13,6 +12,5 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActio
 	// Whether to replace all existing headers with the same name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_edge_cache_service#replace GoogleNetworkServicesEdgeCacheService#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReferenc
 
 	return nil
 }
-

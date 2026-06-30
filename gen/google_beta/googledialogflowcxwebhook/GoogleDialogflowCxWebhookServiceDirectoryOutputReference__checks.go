@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleDialogflowCxWebhookServiceDirectoryOutputReferenceParamete
 
 	return nil
 }
-

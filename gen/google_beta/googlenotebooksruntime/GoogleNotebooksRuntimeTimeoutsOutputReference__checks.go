@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNotebooksRuntimeTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

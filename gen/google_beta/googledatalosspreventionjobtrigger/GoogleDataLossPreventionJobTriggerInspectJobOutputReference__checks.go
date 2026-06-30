@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validatePutActionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validatePutActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewGoogleDataLossPreventionJobTriggerInspectJobOutputReferenceParam
 
 	return nil
 }
-

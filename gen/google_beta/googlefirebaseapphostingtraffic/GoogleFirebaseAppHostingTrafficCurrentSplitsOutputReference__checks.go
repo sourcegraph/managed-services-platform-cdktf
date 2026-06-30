@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentSplitsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentSplitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentSplitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaseAppHostingTrafficCurrentSplitsOutputReferenceParam
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceQueryInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewGoogleAlloydbInstanceQueryInsightsConfigOutputReferenceParameter
 
 	return nil
 }
-

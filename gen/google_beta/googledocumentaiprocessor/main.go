@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
-		reflect.TypeOf((*GoogleDocumentAiProcessor)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDocumentAiProcessor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorConfig",
-		reflect.TypeOf((*GoogleDocumentAiProcessorConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeouts",
-		reflect.TypeOf((*GoogleDocumentAiProcessorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDocumentAiProcessorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

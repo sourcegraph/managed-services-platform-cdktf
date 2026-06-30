@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleComputeFutureReservationAggregateReservationReservedResour
 
 	return nil
 }
-

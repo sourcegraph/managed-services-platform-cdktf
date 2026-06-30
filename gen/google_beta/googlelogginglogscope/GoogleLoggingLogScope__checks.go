@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingLogScope) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingLogScope) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingLogScope) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingLogScope) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingLogScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingLogScope) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleLoggingLogScope_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateGoogleLoggingLogScope_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingLogScope_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleLoggingLogScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleLoggingLogScope_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingLogScope_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleLoggingLogScope_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleLoggingLogScope_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingLogScope_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleLoggingLogScope_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScope) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogScope) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleLoggingLogScope) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScope) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogScope) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleLoggingLogScope) validateSetParentParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScope) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogScope) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleLoggingLogScopeParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

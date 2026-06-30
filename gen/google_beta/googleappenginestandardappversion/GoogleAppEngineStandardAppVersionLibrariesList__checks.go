@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAppEngineStandardAppVersionLibrariesListParameters(terrafo
 
 	return nil
 }
-

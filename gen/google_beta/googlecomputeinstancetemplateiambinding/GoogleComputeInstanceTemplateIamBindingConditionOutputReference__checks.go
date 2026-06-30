@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBindingConditionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeInstanceTemplateIamBindingConditionOutputReferenceP
 
 	return nil
 }
-

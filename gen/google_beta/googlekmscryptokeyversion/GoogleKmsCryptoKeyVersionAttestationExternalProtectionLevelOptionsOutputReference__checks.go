@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleKmsCryptoKeyVersionAttestationExternalProtectionLevelOptio
 
 	return nil
 }
-

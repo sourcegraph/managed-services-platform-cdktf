@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRule
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validatePutInfoTypesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validatePutInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRule
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRule
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRule
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewGoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSet
 
 	return nil
 }
-

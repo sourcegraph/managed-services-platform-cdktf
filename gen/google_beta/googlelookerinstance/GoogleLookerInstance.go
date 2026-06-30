@@ -17,18 +17,18 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerNetwork() *string
 	SetConsumerNetwork(val *string)
 	ConsumerNetworkInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CustomDomain() GoogleLookerInstanceCustomDomainOutputReference
 	CustomDomainInput() *GoogleLookerInstanceCustomDomain
@@ -44,9 +44,9 @@ type GoogleLookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() GoogleLookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleLookerInstanceEncryptionConfig
-	FipsEnabled() interface{}
-	SetFipsEnabled(val interface{})
-	FipsEnabledInput() interface{}
+	FipsEnabled() any
+	SetFipsEnabled(val any)
+	FipsEnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -78,9 +78,9 @@ type GoogleLookerInstance interface {
 	PlatformEdition() *string
 	SetPlatformEdition(val *string)
 	PlatformEditionInput() *string
-	PrivateIpEnabled() interface{}
-	SetPrivateIpEnabled(val interface{})
-	PrivateIpEnabledInput() interface{}
+	PrivateIpEnabled() any
+	SetPrivateIpEnabled(val any)
+	PrivateIpEnabledInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -89,19 +89,19 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConfig() GoogleLookerInstancePscConfigOutputReference
 	PscConfigInput() *GoogleLookerInstancePscConfig
-	PscEnabled() interface{}
-	SetPscEnabled(val interface{})
-	PscEnabledInput() interface{}
-	PublicIpEnabled() interface{}
-	SetPublicIpEnabled(val interface{})
-	PublicIpEnabledInput() interface{}
+	PscEnabled() any
+	SetPscEnabled(val any)
+	PscEnabledInput() any
+	PublicIpEnabled() any
+	SetPublicIpEnabled(val any)
+	PublicIpEnabledInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -111,11 +111,11 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleLookerInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	UserMetadata() GoogleLookerInstanceUserMetadataOutputReference
 	UserMetadataInput() *GoogleLookerInstanceUserMetadata
@@ -123,9 +123,9 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type GoogleLookerInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -193,17 +193,17 @@ type GoogleLookerInstance interface {
 	ResetReservedRange()
 	ResetTimeouts()
 	ResetUserMetadata()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLookerInstance
@@ -241,8 +241,8 @@ func (j *jsiiProxy_GoogleLookerInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_GoogleLookerInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLookerInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_GoogleLookerInstance) ConsumerNetworkInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_GoogleLookerInstance) EncryptionConfigInput() *GoogleLookerIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) FipsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fipsEnabled",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_GoogleLookerInstance) FipsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) FipsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fipsEnabledInput",
@@ -611,8 +611,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PlatformEditionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PrivateIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PrivateIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpEnabled",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PrivateIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PrivateIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PrivateIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpEnabledInput",
@@ -661,8 +661,8 @@ func (j *jsiiProxy_GoogleLookerInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLookerInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -691,8 +691,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PscConfigInput() *GoogleLookerInstanceP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PscEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PscEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabled",
@@ -701,8 +701,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PscEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PscEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PscEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabledInput",
@@ -711,8 +711,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PscEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicIpEnabled",
@@ -721,8 +721,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicIpEnabledInput",
@@ -731,8 +731,8 @@ func (j *jsiiProxy_GoogleLookerInstance) PublicIpEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -791,8 +791,8 @@ func (j *jsiiProxy_GoogleLookerInstance) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLookerInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -821,8 +821,8 @@ func (j *jsiiProxy_GoogleLookerInstance) Timeouts() GoogleLookerInstanceTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -861,7 +861,6 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
@@ -873,7 +872,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -886,12 +885,12 @@ func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetConsumerNetwork(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetConsumerNetwork(val *string) {
 	if err := j.validateSetConsumerNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetConsumerNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -943,7 +942,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetFipsEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetFipsEnabled(val any) {
 	if err := j.validateSetFipsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetFipsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLookerInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -962,7 +961,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetId(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLookerInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetName(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetPlatformEdition(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetPlatformEdition(val *string) {
 	if err := j.validateSetPlatformEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetPlatformEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetPrivateIpEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetPrivateIpEnabled(val any) {
 	if err := j.validateSetPrivateIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1016,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetPrivateIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetProject(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1027,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLookerInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetPscEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetPscEnabled(val any) {
 	if err := j.validateSetPscEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetPscEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetPublicIpEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstance) SetPublicIpEnabled(val any) {
 	if err := j.validateSetPublicIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetPublicIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_GoogleLookerInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstance)SetReservedRange(val *string) {
+func (j *jsiiProxy_GoogleLookerInstance) SetReservedRange(val *string) {
 	if err := j.validateSetReservedRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +1102,7 @@ func GoogleLookerInstance_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func GoogleLookerInstance_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLookerInstance_IsConstruct(x interface{}) *bool {
+func GoogleLookerInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLookerInstance_IsConstructParameters(x); err != nil {
@@ -1138,7 +1137,7 @@ func GoogleLookerInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1146,7 +1145,7 @@ func GoogleLookerInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLookerInstance_IsTerraformElement(x interface{}) *bool {
+func GoogleLookerInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLookerInstance_IsTerraformElementParameters(x); err != nil {
@@ -1157,7 +1156,7 @@ func GoogleLookerInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func GoogleLookerInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLookerInstance_IsTerraformResource(x interface{}) *bool {
+func GoogleLookerInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLookerInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1176,7 +1175,7 @@ func GoogleLookerInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1201,31 +1200,31 @@ func (g *jsiiProxy_GoogleLookerInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLookerInstance) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLookerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1241,7 +1240,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1257,7 +1256,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1273,7 +1272,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1289,7 +1288,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1305,7 +1304,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1321,7 +1320,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1337,7 +1336,7 @@ func (g *jsiiProxy_GoogleLookerInstance) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1353,15 +1352,15 @@ func (g *jsiiProxy_GoogleLookerInstance) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLookerInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1380,7 +1379,7 @@ func (g *jsiiProxy_GoogleLookerInstance) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1393,7 +1392,7 @@ func (g *jsiiProxy_GoogleLookerInstance) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1407,18 +1406,18 @@ func (g *jsiiProxy_GoogleLookerInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLookerInstance) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1429,7 +1428,7 @@ func (g *jsiiProxy_GoogleLookerInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1440,7 +1439,7 @@ func (g *jsiiProxy_GoogleLookerInstance) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1451,7 +1450,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutAdminSettings(value *GoogleLookerIns
 	_jsii_.InvokeVoid(
 		g,
 		"putAdminSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1462,7 +1461,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutCustomDomain(value *GoogleLookerInst
 	_jsii_.InvokeVoid(
 		g,
 		"putCustomDomain",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1473,7 +1472,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutDenyMaintenancePeriod(value *GoogleL
 	_jsii_.InvokeVoid(
 		g,
 		"putDenyMaintenancePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1484,7 +1483,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutEncryptionConfig(value *GoogleLooker
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1495,7 +1494,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutMaintenanceWindow(value *GoogleLooke
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1506,7 +1505,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutOauthConfig(value *GoogleLookerInsta
 	_jsii_.InvokeVoid(
 		g,
 		"putOauthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1517,7 +1516,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutPscConfig(value *GoogleLookerInstanc
 	_jsii_.InvokeVoid(
 		g,
 		"putPscConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1528,7 +1527,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutTimeouts(value *GoogleLookerInstance
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1539,7 +1538,7 @@ func (g *jsiiProxy_GoogleLookerInstance) PutUserMetadata(value *GoogleLookerInst
 	_jsii_.InvokeVoid(
 		g,
 		"putUserMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1703,8 +1702,8 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetUserMetadata() {
 	)
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLookerInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1716,8 +1715,8 @@ func (g *jsiiProxy_GoogleLookerInstance) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLookerInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1729,8 +1728,8 @@ func (g *jsiiProxy_GoogleLookerInstance) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLookerInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1742,8 +1741,8 @@ func (g *jsiiProxy_GoogleLookerInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLookerInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1768,8 +1767,8 @@ func (g *jsiiProxy_GoogleLookerInstance) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLookerInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1780,4 +1779,3 @@ func (g *jsiiProxy_GoogleLookerInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

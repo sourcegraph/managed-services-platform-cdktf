@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCust
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomI
 
 	return nil
 }
-

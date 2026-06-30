@@ -14,34 +14,34 @@ type GoogleComputeInstanceFromMachineImage interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures
-	AllowStoppingForUpdate() interface{}
-	SetAllowStoppingForUpdate(val interface{})
-	AllowStoppingForUpdateInput() interface{}
+	AllowStoppingForUpdate() any
+	SetAllowStoppingForUpdate(val any)
+	AllowStoppingForUpdateInput() any
 	AttachedDisk() GoogleComputeInstanceFromMachineImageAttachedDiskList
 	BootDisk() GoogleComputeInstanceFromMachineImageBootDiskList
-	CanIpForward() interface{}
-	SetCanIpForward(val interface{})
-	CanIpForwardInput() interface{}
+	CanIpForward() any
+	SetCanIpForward(val any)
+	CanIpForwardInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfidentialInstanceConfig() GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference
 	ConfidentialInstanceConfigInput() *GoogleComputeInstanceFromMachineImageConfidentialInstanceConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CpuPlatform() *string
 	CreationTimestamp() *string
 	CurrentStatus() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,9 +53,9 @@ type GoogleComputeInstanceFromMachineImage interface {
 	SetDesiredStatus(val *string)
 	DesiredStatusInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EnableDisplay() interface{}
-	SetEnableDisplay(val interface{})
-	EnableDisplayInput() interface{}
+	EnableDisplay() any
+	SetEnableDisplay(val any)
+	EnableDisplayInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,7 +65,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GuestAccelerator() GoogleComputeInstanceFromMachineImageGuestAcceleratorList
-	GuestAcceleratorInput() interface{}
+	GuestAcceleratorInput() any
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
@@ -103,7 +103,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	SetName(val *string)
 	NameInput() *string
 	NetworkInterface() GoogleComputeInstanceFromMachineImageNetworkInterfaceList
-	NetworkInterfaceInput() interface{}
+	NetworkInterfaceInput() any
 	NetworkPerformanceConfig() GoogleComputeInstanceFromMachineImageNetworkPerformanceConfigOutputReference
 	NetworkPerformanceConfigInput() *GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig
 	// The tree node.
@@ -121,11 +121,11 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReservationAffinity() GoogleComputeInstanceFromMachineImageReservationAffinityOutputReference
 	ReservationAffinityInput() *GoogleComputeInstanceFromMachineImageReservationAffinity
 	ResourcePolicies() *[]*string
@@ -152,11 +152,11 @@ type GoogleComputeInstanceFromMachineImage interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeInstanceFromMachineImageTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -164,9 +164,9 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -184,7 +184,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -196,7 +196,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -205,9 +205,9 @@ type GoogleComputeInstanceFromMachineImage interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedMachineFeatures(value *GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures)
 	PutConfidentialInstanceConfig(value *GoogleComputeInstanceFromMachineImageConfidentialInstanceConfig)
-	PutGuestAccelerator(value interface{})
+	PutGuestAccelerator(value any)
 	PutInstanceEncryptionKey(value *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey)
-	PutNetworkInterface(value interface{})
+	PutNetworkInterface(value any)
 	PutNetworkPerformanceConfig(value *GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig)
 	PutParams(value *GoogleComputeInstanceFromMachineImageParams)
 	PutReservationAffinity(value *GoogleComputeInstanceFromMachineImageReservationAffinity)
@@ -251,17 +251,17 @@ type GoogleComputeInstanceFromMachineImage interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeInstanceFromMachineImage
@@ -289,8 +289,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AdvancedMachineFeature
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AllowStoppingForUpdate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AllowStoppingForUpdate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStoppingForUpdate",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AllowStoppingForUpdate
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AllowStoppingForUpdateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) AllowStoppingForUpdateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStoppingForUpdateInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) BootDisk() GoogleCompu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CanIpForward() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CanIpForward() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForward",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CanIpForward() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CanIpForwardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CanIpForwardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForwardInput",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ConfidentialInstanceCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) CurrentStatus() *strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) DeletionProtection() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EffectiveLabels() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EnableDisplay() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EnableDisplay() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDisplay",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EnableDisplay() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EnableDisplayInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) EnableDisplayInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDisplayInput",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) GuestAccelerator() Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) GuestAcceleratorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) GuestAcceleratorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestAcceleratorInput",
@@ -839,8 +839,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) NetworkInterface() Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) NetworkInterfaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) NetworkInterfaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkInterfaceInput",
@@ -949,8 +949,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -959,8 +959,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1179,8 +1179,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) TerraformLabels() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1209,8 +1209,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Timeouts() GoogleCompu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1239,7 +1239,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) GoogleComputeInstanceFromMachineImage {
 	_init_.Initialize()
@@ -1251,7 +1250,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1264,12 +1263,12 @@ func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetAllowStoppingForUpdate(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetAllowStoppingForUpdate(val any) {
 	if err := j.validateSetAllowStoppingForUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetAllowStoppingForUpda
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetCanIpForward(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetCanIpForward(val any) {
 	if err := j.validateSetCanIpForwardParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetCanIpForward(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDeletionProtection(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1332,7 +1331,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1343,7 +1342,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDesiredStatus(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetDesiredStatus(val *string) {
 	if err := j.validateSetDesiredStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1354,7 +1353,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetDesiredStatus(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetEnableDisplay(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetEnableDisplay(val any) {
 	if err := j.validateSetEnableDisplayParameters(val); err != nil {
 		panic(err)
 	}
@@ -1365,7 +1364,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetEnableDisplay(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1373,7 +1372,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetHostname(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1384,7 +1383,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetHostname(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1395,7 +1394,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetKeyRevocationActionType(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetKeyRevocationActionType(val *string) {
 	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1406,7 +1405,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetKeyRevocationActionT
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1417,7 +1416,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetLabels(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1428,7 +1427,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMachineType(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1439,7 +1438,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMachineType(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1450,7 +1449,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMetadata(val *map[st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMetadataStartupScript(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetMetadataStartupScript(val *string) {
 	if err := j.validateSetMetadataStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -1461,7 +1460,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMetadataStartupScrip
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMinCpuPlatform(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetMinCpuPlatform(val *string) {
 	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -1472,7 +1471,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetMinCpuPlatform(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1483,7 +1482,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetPartnerMetadata(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetPartnerMetadata(val *map[string]*string) {
 	if err := j.validateSetPartnerMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1494,7 +1493,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetPartnerMetadata(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1505,7 +1504,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1513,7 +1512,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1524,7 +1523,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetResourcePolicies(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetResourcePolicies(val *[]*string) {
 	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1535,7 +1534,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetResourcePolicies(val
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetSourceMachineImage(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetSourceMachineImage(val *string) {
 	if err := j.validateSetSourceMachineImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1546,7 +1545,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetSourceMachineImage(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetTags(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1557,7 +1556,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetTags(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage)SetZone(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1580,7 +1579,7 @@ func GoogleComputeInstanceFromMachineImage_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1604,7 +1603,7 @@ func GoogleComputeInstanceFromMachineImage_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeInstanceFromMachineImage_IsConstruct(x interface{}) *bool {
+func GoogleComputeInstanceFromMachineImage_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceFromMachineImage_IsConstructParameters(x); err != nil {
@@ -1615,7 +1614,7 @@ func GoogleComputeInstanceFromMachineImage_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1623,7 +1622,7 @@ func GoogleComputeInstanceFromMachineImage_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeInstanceFromMachineImage_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeInstanceFromMachineImage_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceFromMachineImage_IsTerraformElementParameters(x); err != nil {
@@ -1634,7 +1633,7 @@ func GoogleComputeInstanceFromMachineImage_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1642,7 +1641,7 @@ func GoogleComputeInstanceFromMachineImage_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func GoogleComputeInstanceFromMachineImage_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeInstanceFromMachineImage_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInstanceFromMachineImage_IsTerraformResourceParameters(x); err != nil {
@@ -1653,7 +1652,7 @@ func GoogleComputeInstanceFromMachineImage_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1678,31 +1677,31 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1718,7 +1717,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1734,7 +1733,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1750,7 +1749,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1766,7 +1765,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1782,7 +1781,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetNumberListAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1798,7 +1797,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1814,7 +1813,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetStringAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1830,15 +1829,15 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) GetStringMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1857,7 +1856,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1870,7 +1869,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) InterpolationForAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1884,18 +1883,18 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1906,7 +1905,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1917,7 +1916,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1928,7 +1927,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutAdvancedMachineFeat
 	_jsii_.InvokeVoid(
 		g,
 		"putAdvancedMachineFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1939,18 +1938,18 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutConfidentialInstanc
 	_jsii_.InvokeVoid(
 		g,
 		"putConfidentialInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutGuestAccelerator(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutGuestAccelerator(value any) {
 	if err := g.validatePutGuestAcceleratorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putGuestAccelerator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1961,18 +1960,18 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutInstanceEncryptionK
 	_jsii_.InvokeVoid(
 		g,
 		"putInstanceEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutNetworkInterface(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutNetworkInterface(value any) {
 	if err := g.validatePutNetworkInterfaceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkInterface",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1983,7 +1982,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutNetworkPerformanceC
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1994,7 +1993,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutParams(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2005,7 +2004,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutReservationAffinity
 	_jsii_.InvokeVoid(
 		g,
 		"putReservationAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2016,7 +2015,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutScheduling(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putScheduling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2027,7 +2026,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutServiceAccount(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceAccount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2038,7 +2037,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutShieldedInstanceCon
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2049,7 +2048,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutSourceMachineImageE
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceMachineImageEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2060,7 +2059,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutTimeouts(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2328,8 +2327,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2341,8 +2340,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeAttributes()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2354,8 +2353,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) SynthesizeHclAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2367,8 +2366,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToHclTerraform() inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2393,8 +2392,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2405,4 +2404,3 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ToTerraform() interfac
 
 	return returns
 }
-

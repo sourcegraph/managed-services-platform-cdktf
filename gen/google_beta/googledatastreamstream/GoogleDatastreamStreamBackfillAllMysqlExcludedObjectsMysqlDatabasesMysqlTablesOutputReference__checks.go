@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validatePutMysqlColumnsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validatePutMysqlColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDataba
 
 	return nil
 }
-

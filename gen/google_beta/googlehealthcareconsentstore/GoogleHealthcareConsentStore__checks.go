@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareConsentStore) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareConsentStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleHealthcareConsentStore_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleHealthcareConsentStore_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareConsentStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleHealthcareConsentStore_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleHealthcareConsentStore_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareConsentStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleHealthcareConsentStore_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleHealthcareConsentStore_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareConsentStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleHealthcareConsentStore_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetDefaultConsentTtlPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetEnableConsentCreateOnUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetEnableConsentCreateOnUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewGoogleHealthcareConsentStoreParameters(scope constructs.Construc
 
 	return nil
 }
-

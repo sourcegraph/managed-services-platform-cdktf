@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamMemberConditionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocMetastoreDatabaseIamMemberConditionOutputReference
 
 	return nil
 }
-

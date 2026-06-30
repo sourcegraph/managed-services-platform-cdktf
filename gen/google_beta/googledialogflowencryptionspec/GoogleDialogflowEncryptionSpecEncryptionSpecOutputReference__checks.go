@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowEncryptionSpecEncryptionSpecOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEncryptionSpecEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEncryptionSpecEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowEncryptionSpecEncryptionSpecOutputReferenceParam
 
 	return nil
 }
-

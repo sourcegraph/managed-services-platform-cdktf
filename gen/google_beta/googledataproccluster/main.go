@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
-		reflect.TypeOf((*GoogleDataprocCluster)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualClusterConfig", GoGetter: "VirtualClusterConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualClusterConfigInput", GoGetter: "VirtualClusterConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAutoscalingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAutoscalingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,11 +134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroups",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroups)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,7 +300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,7 +350,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,7 +389,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,15 +427,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigDataprocMetricConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigDataprocMetricConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetrics",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigDataprocMetricConfigMetrics)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigDataprocMetricConfigMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -449,7 +449,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -457,7 +457,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -494,7 +494,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigDataprocMetricConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigDataprocMetricConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigDataprocMetricConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -529,11 +529,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -567,11 +567,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigEndpointConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigEndpointConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigEndpointConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -598,7 +598,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -606,15 +606,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -641,7 +641,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -649,11 +649,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -679,7 +679,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -687,7 +687,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -751,7 +751,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -759,11 +759,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -796,7 +796,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -804,11 +804,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -841,7 +841,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -849,11 +849,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigInitializationAction)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigInitializationAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigInitializationActionList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigInitializationActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -867,7 +867,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -875,7 +875,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigInitializationActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigInitializationActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -904,7 +904,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecInput", GoGetter: "TimeoutSecInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -912,11 +912,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigLifecycleConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigLifecycleConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteTime", GoGetter: "AutoDeleteTime"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteTimeInput", GoGetter: "AutoDeleteTimeInput"},
@@ -947,7 +947,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -955,15 +955,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -977,7 +977,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -985,7 +985,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -1013,7 +1013,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1021,11 +1021,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -1061,7 +1061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1069,7 +1069,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMasterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMasterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -1114,7 +1114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1122,11 +1122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMetastoreConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMetastoreConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1152,7 +1152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1160,7 +1160,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfigInput", GoGetter: "AutoscalingConfigInput"},
@@ -1247,7 +1247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerConfig", GoGetter: "WorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigInput", GoGetter: "WorkerConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1255,15 +1255,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -1299,7 +1299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1307,15 +1307,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1329,7 +1329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1337,7 +1337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1367,7 +1367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1375,11 +1375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1392,7 +1392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1400,7 +1400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1426,7 +1426,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vmCount", GoGetter: "VmCount"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1434,7 +1434,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1467,7 +1467,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1475,11 +1475,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1509,7 +1509,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1517,7 +1517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1556,7 +1556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1564,15 +1564,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1598,7 +1598,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userServiceAccountMapping", GoGetter: "UserServiceAccountMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "userServiceAccountMappingInput", GoGetter: "UserServiceAccountMappingInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1606,11 +1606,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1677,7 +1677,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "truststoreUri", GoGetter: "TruststoreUri"},
 			_jsii_.MemberProperty{JsiiProperty: "truststoreUriInput", GoGetter: "TruststoreUriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1685,7 +1685,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSecurityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSecurityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1717,7 +1717,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1725,11 +1725,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSoftwareConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1763,7 +1763,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1771,15 +1771,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1793,7 +1793,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1801,7 +1801,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -1829,7 +1829,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1837,11 +1837,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -1877,7 +1877,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1885,7 +1885,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterClusterConfigWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterClusterConfigWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -1933,7 +1933,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1941,15 +1941,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterTimeouts",
-		reflect.TypeOf((*GoogleDataprocClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1982,7 +1982,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1990,19 +1990,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2029,7 +2029,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2037,7 +2037,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2069,7 +2069,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2077,11 +2077,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2108,7 +2108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2116,19 +2116,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2142,7 +2142,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2150,15 +2150,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2188,7 +2188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2196,11 +2196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2239,7 +2239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2247,7 +2247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingInput", GoGetter: "AutoscalingInput"},
@@ -2281,7 +2281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2289,7 +2289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2321,7 +2321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2329,7 +2329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2360,7 +2360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2368,11 +2368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2401,7 +2401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2409,7 +2409,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2442,7 +2442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2450,7 +2450,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference",
-		reflect.TypeOf((*GoogleDataprocClusterVirtualClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocClusterVirtualClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auxiliaryServicesConfig", GoGetter: "AuxiliaryServicesConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "auxiliaryServicesConfigInput", GoGetter: "AuxiliaryServicesConfigInput"},
@@ -2485,7 +2485,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

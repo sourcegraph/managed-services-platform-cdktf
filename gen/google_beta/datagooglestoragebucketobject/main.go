@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObject",
-		reflect.TypeOf((*DataGoogleStorageBucketObject)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketObject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectConfig",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryption",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryption)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectCustomerEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionList",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryptionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectCustomerEncryptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketObjectCustomerEncryptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionOutputReference",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectCustomerEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketObjectCustomerEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectRetention",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectRetention)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectRetention](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectRetentionList",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectRetentionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectRetentionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketObjectRetentionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectRetentionOutputReference",
-		reflect.TypeOf((*DataGoogleStorageBucketObjectRetentionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketObjectRetentionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketObjectRetentionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

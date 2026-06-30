@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
-		reflect.TypeOf((*GoogleContainerAnalysisNote)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNote](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNote{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthority",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteAttestationAuthority)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteAttestationAuthority](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHint",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteAttestationAuthorityHint)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteAttestationAuthorityHint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,7 +137,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityOutputReference",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteAttestationAuthorityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteAttestationAuthorityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,15 +172,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteConfig",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrl",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteRelatedUrl)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteRelatedUrl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlList",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteRelatedUrlList)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteRelatedUrlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlOutputReference",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteRelatedUrlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteRelatedUrlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -239,11 +239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeouts",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleContainerAnalysisNoteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAnalysisNoteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAnalysisNoteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

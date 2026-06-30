@@ -15,15 +15,15 @@ type GoogleIamWorkloadIdentityPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type GoogleIamWorkloadIdentityPool interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -70,20 +70,20 @@ type GoogleIamWorkloadIdentityPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIamWorkloadIdentityPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WorkloadIdentityPoolId() *string
 	SetWorkloadIdentityPoolId(val *string)
 	WorkloadIdentityPoolIdInput() *string
@@ -91,9 +91,9 @@ type GoogleIamWorkloadIdentityPool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleIamWorkloadIdentityPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleIamWorkloadIdentityPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type GoogleIamWorkloadIdentityPool interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIamWorkloadIdentityPool
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) Timeouts() GoogleIamWorkloadId
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -543,7 +543,6 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) WorkloadIdentityPoolIdInput() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolConfig) GoogleIamWorkloadIdentityPool {
 	_init_.Initialize()
@@ -555,7 +554,7 @@ func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -568,12 +567,12 @@ func NewGoogleIamWorkloadIdentityPool_Override(g GoogleIamWorkloadIdentityPool, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetId(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetMode(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProject(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPool)SetWorkloadIdentityPoolId(val *string) {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) SetWorkloadIdentityPoolId(val *string) {
 	if err := j.validateSetWorkloadIdentityPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func GoogleIamWorkloadIdentityPool_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func GoogleIamWorkloadIdentityPool_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
+func GoogleIamWorkloadIdentityPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamWorkloadIdentityPool_IsConstructParameters(x); err != nil {
@@ -765,7 +764,7 @@ func GoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func GoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
+func GoogleIamWorkloadIdentityPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamWorkloadIdentityPool_IsTerraformElementParameters(x); err != nil {
@@ -784,7 +783,7 @@ func GoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func GoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamWorkloadIdentityPool_IsTerraformResource(x interface{}) *bool {
+func GoogleIamWorkloadIdentityPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamWorkloadIdentityPool_IsTerraformResourceParameters(x); err != nil {
@@ -803,7 +802,7 @@ func GoogleIamWorkloadIdentityPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -828,31 +827,31 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,15 +979,15 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1007,7 +1006,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,18 +1033,18 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1056,7 +1055,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1067,7 +1066,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutInlineCertificateIssuanceCo
 	_jsii_.InvokeVoid(
 		g,
 		"putInlineCertificateIssuanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutInlineTrustConfig(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putInlineTrustConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) PutTimeouts(value *GoogleIamWo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1184,8 +1183,8 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1197,8 +1196,8 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1210,8 +1209,8 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1223,8 +1222,8 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1249,8 +1248,8 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1261,4 +1260,3 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) ToTerraform() interface{} {
 
 	return returns
 }
-

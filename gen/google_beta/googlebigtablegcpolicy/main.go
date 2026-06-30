@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
-		reflect.TypeOf((*GoogleBigtableGcPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableGcPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyConfig",
-		reflect.TypeOf((*GoogleBigtableGcPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAge",
-		reflect.TypeOf((*GoogleBigtableGcPolicyMaxAge)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyMaxAge](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAgeOutputReference",
-		reflect.TypeOf((*GoogleBigtableGcPolicyMaxAgeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyMaxAgeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableGcPolicyMaxAgeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersion",
-		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyMaxVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
-		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersionList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyMaxVersionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableGcPolicyMaxVersionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionOutputReference",
-		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyMaxVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableGcPolicyMaxVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,11 +203,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyTimeouts",
-		reflect.TypeOf((*GoogleBigtableGcPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigtableGcPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableGcPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableGcPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

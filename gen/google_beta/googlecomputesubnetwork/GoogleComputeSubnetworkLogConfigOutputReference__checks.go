@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkLogConfigOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSubnetworkLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeSubnetworkLogConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

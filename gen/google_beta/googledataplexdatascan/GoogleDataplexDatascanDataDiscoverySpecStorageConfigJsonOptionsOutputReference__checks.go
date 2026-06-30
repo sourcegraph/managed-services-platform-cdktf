@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateSetTypeInferenceDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateSetTypeInferenceDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsO
 
 	return nil
 }
-

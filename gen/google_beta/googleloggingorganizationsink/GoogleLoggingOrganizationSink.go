@@ -17,15 +17,15 @@ type GoogleLoggingOrganizationSink interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,11 +36,11 @@ type GoogleLoggingOrganizationSink interface {
 	Destination() *string
 	SetDestination(val *string)
 	DestinationInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Exclusions() GoogleLoggingOrganizationSinkExclusionsList
-	ExclusionsInput() interface{}
+	ExclusionsInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -55,12 +55,12 @@ type GoogleLoggingOrganizationSink interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeChildren() interface{}
-	SetIncludeChildren(val interface{})
-	IncludeChildrenInput() interface{}
-	InterceptChildren() interface{}
-	SetInterceptChildren(val interface{})
-	InterceptChildrenInput() interface{}
+	IncludeChildren() any
+	SetIncludeChildren(val any)
+	IncludeChildrenInput() any
+	InterceptChildren() any
+	SetInterceptChildren(val any)
+	InterceptChildrenInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -78,15 +78,15 @@ type GoogleLoggingOrganizationSink interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WriterIdentity() *string
@@ -94,9 +94,9 @@ type GoogleLoggingOrganizationSink interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleLoggingOrganizationSink interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleLoggingOrganizationSink interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,7 +134,7 @@ type GoogleLoggingOrganizationSink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigqueryOptions(value *GoogleLoggingOrganizationSinkBigqueryOptions)
-	PutExclusions(value interface{})
+	PutExclusions(value any)
 	ResetBigqueryOptions()
 	ResetDescription()
 	ResetDisabled()
@@ -146,17 +146,17 @@ type GoogleLoggingOrganizationSink interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLoggingOrganizationSink
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) DestinationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) Exclusions() GoogleLoggingOrga
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) ExclusionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) ExclusionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exclusionsInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildren() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildren() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeChildren",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildren() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildrenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildrenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeChildrenInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildrenInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildren() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildren() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"interceptChildren",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildren() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildrenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildrenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"interceptChildrenInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -524,8 +524,8 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) WriterIdentity() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_organization_sink google_logging_organization_sink} Resource.
 func NewGoogleLoggingOrganizationSink(scope constructs.Construct, id *string, config *GoogleLoggingOrganizationSinkConfig) GoogleLoggingOrganizationSink {
 	_init_.Initialize()
@@ -566,7 +565,7 @@ func NewGoogleLoggingOrganizationSink(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -579,12 +578,12 @@ func NewGoogleLoggingOrganizationSink_Override(g GoogleLoggingOrganizationSink, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDestination(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetId(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetIncludeChildren(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetIncludeChildren(val any) {
 	if err := j.validateSetIncludeChildrenParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetIncludeChildren(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetInterceptChildren(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetInterceptChildren(val any) {
 	if err := j.validateSetInterceptChildrenParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetInterceptChildren(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetName(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetOrgId(val *string) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func GoogleLoggingOrganizationSink_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func GoogleLoggingOrganizationSink_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLoggingOrganizationSink_IsConstruct(x interface{}) *bool {
+func GoogleLoggingOrganizationSink_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationSink_IsConstructParameters(x); err != nil {
@@ -798,7 +797,7 @@ func GoogleLoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func GoogleLoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
+func GoogleLoggingOrganizationSink_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationSink_IsTerraformElementParameters(x); err != nil {
@@ -817,7 +816,7 @@ func GoogleLoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func GoogleLoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
+func GoogleLoggingOrganizationSink_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingOrganizationSink_IsTerraformResourceParameters(x); err != nil {
@@ -836,7 +835,7 @@ func GoogleLoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,31 +860,31 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,15 +1012,15 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,18 +1066,18 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1111,18 +1110,18 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) PutBigqueryOptions(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putBigqueryOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) PutExclusions(value interface{}) {
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) PutExclusions(value any) {
 	if err := g.validatePutExclusionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putExclusions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1198,8 +1197,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ResetOverrideLogicalId() {
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1211,8 +1210,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1224,8 +1223,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1237,8 +1236,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1263,8 +1262,8 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1275,4 +1274,3 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ToTerraform() interface{} {
 
 	return returns
 }
-

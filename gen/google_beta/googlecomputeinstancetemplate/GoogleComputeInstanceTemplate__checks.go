@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutConfidentialInstanc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutDiskParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutDiskParameters(valu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutGuestAcceleratorParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutGuestAcceleratorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutGuestAcceleratorPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutNetworkInterfaceParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplate) validatePutNetworkInterfaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func validateGoogleComputeInstanceTemplate_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplate_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -409,7 +409,7 @@ func validateGoogleComputeInstanceTemplate_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -417,7 +417,7 @@ func validateGoogleComputeInstanceTemplate_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleComputeInstanceTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInstanceTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -425,7 +425,7 @@ func validateGoogleComputeInstanceTemplate_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCanIpForwardParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCanIpForwardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCanIpForwardParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -478,7 +478,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -543,7 +543,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetDescriptionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetEnableDisplayParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetEnableDisplayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -667,7 +667,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -763,4 +763,3 @@ func validateNewGoogleComputeInstanceTemplateParameters(scope constructs.Constru
 
 	return nil
 }
-

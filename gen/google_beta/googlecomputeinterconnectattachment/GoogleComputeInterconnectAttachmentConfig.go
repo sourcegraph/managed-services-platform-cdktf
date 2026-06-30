@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeInterconnectAttachmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeInterconnectAttachmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is created. The
@@ -42,7 +42,7 @@ type GoogleComputeInterconnectAttachmentConfig struct {
 	// Whether the VLAN attachment is enabled or disabled.  When using PARTNER type this will Pre-Activate the interconnect attachment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment#admin_enabled GoogleComputeInterconnectAttachment#admin_enabled}
-	AdminEnabled interface{} `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
+	AdminEnabled any `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
 	// Provisioned bandwidth capacity for the interconnect attachment.
 	//
 	// For attachments of type DEDICATED, the user can set the bandwidth.
@@ -192,4 +192,3 @@ type GoogleComputeInterconnectAttachmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment#vlan_tag8021q GoogleComputeInterconnectAttachment#vlan_tag8021q}
 	VlanTag8021Q *float64 `field:"optional" json:"vlanTag8021Q" yaml:"vlanTag8021Q"`
 }
-

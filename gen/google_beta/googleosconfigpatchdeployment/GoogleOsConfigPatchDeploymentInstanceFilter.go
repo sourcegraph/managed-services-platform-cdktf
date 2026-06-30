@@ -1,15 +1,14 @@
 package googleosconfigpatchdeployment
 
-
 type GoogleOsConfigPatchDeploymentInstanceFilter struct {
 	// Target all VM instances in the project. If true, no other criteria is permitted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#all GoogleOsConfigPatchDeployment#all}
-	All interface{} `field:"optional" json:"all" yaml:"all"`
+	All any `field:"optional" json:"all" yaml:"all"`
 	// group_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#group_labels GoogleOsConfigPatchDeployment#group_labels}
-	GroupLabels interface{} `field:"optional" json:"groupLabels" yaml:"groupLabels"`
+	GroupLabels any `field:"optional" json:"groupLabels" yaml:"groupLabels"`
 	// Targets VMs whose name starts with one of these prefixes.
 	//
 	// Similar to labels, this is another way to group
@@ -26,4 +25,3 @@ type GoogleOsConfigPatchDeploymentInstanceFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#zones GoogleOsConfigPatchDeployment#zones}
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }
-

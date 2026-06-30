@@ -15,15 +15,15 @@ type GoogleKmsKeyHandle interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,29 +60,29 @@ type GoogleKmsKeyHandle interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceTypeSelector() *string
 	SetResourceTypeSelector(val *string)
 	ResourceTypeSelectorInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleKmsKeyHandleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleKmsKeyHandle interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleKmsKeyHandle interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GoogleKmsKeyHandle interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleKmsKeyHandle
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) Timeouts() GoogleKmsKeyHandleTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsKeyHandle) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_GoogleKmsKeyHandle) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_key_handle google_kms_key_handle} Resource.
 func NewGoogleKmsKeyHandle(scope constructs.Construct, id *string, config *GoogleKmsKeyHandleConfig) GoogleKmsKeyHandle {
@@ -446,7 +445,7 @@ func NewGoogleKmsKeyHandle(scope constructs.Construct, id *string, config *Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewGoogleKmsKeyHandle_Override(g GoogleKmsKeyHandle, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetId(val *string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetName(val *string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetProject(val *string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleKmsKeyHandle)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsKeyHandle)SetResourceTypeSelector(val *string) {
+func (j *jsiiProxy_GoogleKmsKeyHandle) SetResourceTypeSelector(val *string) {
 	if err := j.validateSetResourceTypeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GoogleKmsKeyHandle_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GoogleKmsKeyHandle_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleKmsKeyHandle_IsConstruct(x interface{}) *bool {
+func GoogleKmsKeyHandle_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsKeyHandle_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GoogleKmsKeyHandle_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GoogleKmsKeyHandle_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsKeyHandle_IsTerraformElement(x interface{}) *bool {
+func GoogleKmsKeyHandle_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsKeyHandle_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GoogleKmsKeyHandle_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GoogleKmsKeyHandle_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsKeyHandle_IsTerraformResource(x interface{}) *bool {
+func GoogleKmsKeyHandle_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsKeyHandle_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GoogleKmsKeyHandle_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleKmsKeyHandle) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleKmsKeyHandle) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleKmsKeyHandle) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) PutTimeouts(value *GoogleKmsKeyHandleTime
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsKeyHandle) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsKeyHandle) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1060,4 +1059,3 @@ func (g *jsiiProxy_GoogleKmsKeyHandle) ToTerraform() interface{} {
 
 	return returns
 }
-

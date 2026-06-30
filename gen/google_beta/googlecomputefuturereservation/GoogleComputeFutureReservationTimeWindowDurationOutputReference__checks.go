@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowDurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationTimeWindowDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationTimeWindowDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeFutureReservationTimeWindowDurationOutputReferenceP
 
 	return nil
 }
-

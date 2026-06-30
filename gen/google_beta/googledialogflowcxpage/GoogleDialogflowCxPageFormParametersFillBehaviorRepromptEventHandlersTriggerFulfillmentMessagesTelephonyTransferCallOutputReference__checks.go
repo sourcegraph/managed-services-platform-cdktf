@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEvent
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHan
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutPrincipalsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutPrincipalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutResourcesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validatePutResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesOutputRef
 
 	return nil
 }
-

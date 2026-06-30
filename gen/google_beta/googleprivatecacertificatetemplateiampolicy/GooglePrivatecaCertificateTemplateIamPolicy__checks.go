@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateAddMoveT
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateMoveFrom
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGooglePrivatecaCertificateTemplateIamPolicy_GenerateConfigForImport
 	return nil
 }
 
-func validateGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x
 	return nil
 }
 
-func validateGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParam
 	return nil
 }
 
-func validateGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetCerti
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGooglePrivatecaCertificateTemplateIamPolicyParameters(scope cons
 
 	return nil
 }
-

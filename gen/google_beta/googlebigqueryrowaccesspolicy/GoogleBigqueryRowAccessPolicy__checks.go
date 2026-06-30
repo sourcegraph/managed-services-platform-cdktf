@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleBigqueryRowAccessPolicy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleBigqueryRowAccessPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryRowAccessPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleBigqueryRowAccessPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleBigqueryRowAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryRowAccessPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleBigqueryRowAccessPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleBigqueryRowAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryRowAccessPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleBigqueryRowAccessPolicy_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleBigqueryRowAccessPolicyParameters(scope constructs.Constru
 
 	return nil
 }
-

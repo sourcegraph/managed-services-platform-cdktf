@@ -15,11 +15,11 @@ type DataGoogleTpuV2RuntimeVersions interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,11 +49,11 @@ type DataGoogleTpuV2RuntimeVersions interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Versions() *[]*string
@@ -61,9 +61,9 @@ type DataGoogleTpuV2RuntimeVersions interface {
 	SetZone(val *string)
 	ZoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataGoogleTpuV2RuntimeVersions interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleTpuV2RuntimeVersions
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -320,7 +320,6 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions} Data Source.
 func NewDataGoogleTpuV2RuntimeVersions(scope constructs.Construct, id *string, config *DataGoogleTpuV2RuntimeVersionsConfig) DataGoogleTpuV2RuntimeVersions {
 	_init_.Initialize()
@@ -332,7 +331,7 @@ func NewDataGoogleTpuV2RuntimeVersions(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -345,12 +344,12 @@ func NewDataGoogleTpuV2RuntimeVersions_Override(d DataGoogleTpuV2RuntimeVersions
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions)SetZone(val *string) {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func DataGoogleTpuV2RuntimeVersions_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func DataGoogleTpuV2RuntimeVersions_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleTpuV2RuntimeVersions_IsConstruct(x interface{}) *bool {
+func DataGoogleTpuV2RuntimeVersions_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTpuV2RuntimeVersions_IsConstructParameters(x); err != nil {
@@ -476,7 +475,7 @@ func DataGoogleTpuV2RuntimeVersions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataGoogleTpuV2RuntimeVersions_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleTpuV2RuntimeVersions_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleTpuV2RuntimeVersions_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTpuV2RuntimeVersions_IsTerraformDataSourceParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataGoogleTpuV2RuntimeVersions_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataGoogleTpuV2RuntimeVersions_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleTpuV2RuntimeVersions_IsTerraformElement(x interface{}) *bool {
+func DataGoogleTpuV2RuntimeVersions_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTpuV2RuntimeVersions_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataGoogleTpuV2RuntimeVersions_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,27 +531,27 @@ func DataGoogleTpuV2RuntimeVersions_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -746,8 +745,8 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ResetZone() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -823,4 +822,3 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ToTerraform() interface{} {
 
 	return returns
 }
-

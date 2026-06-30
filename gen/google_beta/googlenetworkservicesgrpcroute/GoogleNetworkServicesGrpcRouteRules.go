@@ -1,6 +1,5 @@
 package googlenetworkservicesgrpcroute
 
-
 type GoogleNetworkServicesGrpcRouteRules struct {
 	// action block.
 	//
@@ -9,6 +8,5 @@ type GoogleNetworkServicesGrpcRouteRules struct {
 	// matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_grpc_route#matches GoogleNetworkServicesGrpcRoute#matches}
-	Matches interface{} `field:"optional" json:"matches" yaml:"matches"`
+	Matches any `field:"optional" json:"matches" yaml:"matches"`
 }
-

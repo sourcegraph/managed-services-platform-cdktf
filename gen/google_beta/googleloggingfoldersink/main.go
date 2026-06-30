@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
-		reflect.TypeOf((*GoogleLoggingFolderSink)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,11 +94,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptions",
-		reflect.TypeOf((*GoogleLoggingFolderSinkBigqueryOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkBigqueryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptionsOutputReference",
-		reflect.TypeOf((*GoogleLoggingFolderSinkBigqueryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkBigqueryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTables", GoGetter: "UsePartitionedTables"},
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTablesInput", GoGetter: "UsePartitionedTablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSinkBigqueryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,15 +132,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkConfig",
-		reflect.TypeOf((*GoogleLoggingFolderSinkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions",
-		reflect.TypeOf((*GoogleLoggingFolderSinkExclusions)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkExclusions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsList",
-		reflect.TypeOf((*GoogleLoggingFolderSinkExclusionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkExclusionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSinkExclusionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,7 +162,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference",
-		reflect.TypeOf((*GoogleLoggingFolderSinkExclusionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSinkExclusionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

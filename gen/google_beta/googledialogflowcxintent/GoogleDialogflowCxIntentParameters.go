@@ -1,6 +1,5 @@
 package googledialogflowcxintent
 
-
 type GoogleDialogflowCxIntentParameters struct {
 	// The entity type of the parameter.
 	//
@@ -18,13 +17,12 @@ type GoogleDialogflowCxIntentParameters struct {
 	// Indicates whether the parameter represents a list of values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_intent#is_list GoogleDialogflowCxIntent#is_list}
-	IsList interface{} `field:"optional" json:"isList" yaml:"isList"`
+	IsList any `field:"optional" json:"isList" yaml:"isList"`
 	// Indicates whether the parameter content should be redacted in log.
 	//
 	// If redaction is enabled, the parameter content will be replaced by parameter name during logging.
 	// Note: the parameter content is subject to redaction if either parameter level redaction or entity type level redaction is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_intent#redact GoogleDialogflowCxIntent#redact}
-	Redact interface{} `field:"optional" json:"redact" yaml:"redact"`
+	Redact any `field:"optional" json:"redact" yaml:"redact"`
 }
-

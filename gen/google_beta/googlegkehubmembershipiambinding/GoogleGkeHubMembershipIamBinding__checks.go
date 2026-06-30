@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGkeHubMembershipIamBinding_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleGkeHubMembershipIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGkeHubMembershipIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleGkeHubMembershipIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGkeHubMembershipIamBinding_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleGkeHubMembershipIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeHubMembershipIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleGkeHubMembershipIamBinding_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleGkeHubMembershipIamBindingParameters(scope constructs.Cons
 
 	return nil
 }
-

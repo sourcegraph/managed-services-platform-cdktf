@@ -164,7 +164,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,7 +237,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -296,4 +296,3 @@ func validateNewGoogleMonitoringAlertPolicyConditionsOutputReferenceParameters(t
 
 	return nil
 }
-

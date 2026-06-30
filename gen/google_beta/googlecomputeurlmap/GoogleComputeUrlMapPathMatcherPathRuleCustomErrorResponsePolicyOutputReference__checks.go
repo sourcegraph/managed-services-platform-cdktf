@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePoli
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference) validatePutErrorResponseRuleParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference) validatePutErrorResponseRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePoli
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyO
 
 	return nil
 }
-

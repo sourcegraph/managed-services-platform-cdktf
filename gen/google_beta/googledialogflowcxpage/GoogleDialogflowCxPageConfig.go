@@ -6,9 +6,9 @@ import (
 
 type GoogleDialogflowCxPageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDialogflowCxPageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the page, unique within the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#display_name GoogleDialogflowCxPage#display_name}
@@ -34,7 +34,7 @@ type GoogleDialogflowCxPageConfig struct {
 	// event_handlers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#event_handlers GoogleDialogflowCxPage#event_handlers}
-	EventHandlers interface{} `field:"optional" json:"eventHandlers" yaml:"eventHandlers"`
+	EventHandlers any `field:"optional" json:"eventHandlers" yaml:"eventHandlers"`
 	// form block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#form GoogleDialogflowCxPage#form}
@@ -84,6 +84,5 @@ type GoogleDialogflowCxPageConfig struct {
 	// transition_routes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_page#transition_routes GoogleDialogflowCxPage#transition_routes}
-	TransitionRoutes interface{} `field:"optional" json:"transitionRoutes" yaml:"transitionRoutes"`
+	TransitionRoutes any `field:"optional" json:"transitionRoutes" yaml:"transitionRoutes"`
 }
-

@@ -18,15 +18,15 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,12 +34,12 @@ type GoogleComputeRouterNat interface {
 	DrainNatIps() *[]*string
 	SetDrainNatIps(val *[]*string)
 	DrainNatIpsInput() *[]*string
-	EnableDynamicPortAllocation() interface{}
-	SetEnableDynamicPortAllocation(val interface{})
-	EnableDynamicPortAllocationInput() interface{}
-	EnableEndpointIndependentMapping() interface{}
-	SetEnableEndpointIndependentMapping(val interface{})
-	EnableEndpointIndependentMappingInput() interface{}
+	EnableDynamicPortAllocation() any
+	SetEnableDynamicPortAllocation(val any)
+	EnableDynamicPortAllocationInput() any
+	EnableEndpointIndependentMapping() any
+	SetEnableEndpointIndependentMapping(val any)
+	EnableEndpointIndependentMappingInput() any
 	EndpointTypes() *[]*string
 	SetEndpointTypes(val *[]*string)
 	EndpointTypesInput() *[]*string
@@ -76,7 +76,7 @@ type GoogleComputeRouterNat interface {
 	SetName(val *string)
 	NameInput() *string
 	Nat64Subnetwork() GoogleComputeRouterNatNat64SubnetworkList
-	Nat64SubnetworkInput() interface{}
+	Nat64SubnetworkInput() any
 	NatIpAllocateOption() *string
 	SetNatIpAllocateOption(val *string)
 	NatIpAllocateOptionInput() *string
@@ -93,11 +93,11 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -105,7 +105,7 @@ type GoogleComputeRouterNat interface {
 	SetRouter(val *string)
 	RouterInput() *string
 	Rules() GoogleComputeRouterNatRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	SourceSubnetworkIpRangesToNat() *string
 	SetSourceSubnetworkIpRangesToNat(val *string)
 	SourceSubnetworkIpRangesToNat64() *string
@@ -113,7 +113,7 @@ type GoogleComputeRouterNat interface {
 	SourceSubnetworkIpRangesToNat64Input() *string
 	SourceSubnetworkIpRangesToNatInput() *string
 	Subnetwork() GoogleComputeRouterNatSubnetworkList
-	SubnetworkInput() interface{}
+	SubnetworkInput() any
 	TcpEstablishedIdleTimeoutSec() *float64
 	SetTcpEstablishedIdleTimeoutSec(val *float64)
 	TcpEstablishedIdleTimeoutSecInput() *float64
@@ -126,11 +126,11 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRouterNatTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -141,9 +141,9 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -161,7 +161,7 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -173,7 +173,7 @@ type GoogleComputeRouterNat interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -181,9 +181,9 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *GoogleComputeRouterNatLogConfig)
-	PutNat64Subnetwork(value interface{})
-	PutRules(value interface{})
-	PutSubnetwork(value interface{})
+	PutNat64Subnetwork(value any)
+	PutRules(value any)
+	PutSubnetwork(value any)
 	PutTimeouts(value *GoogleComputeRouterNatTimeouts)
 	ResetAutoNetworkTier()
 	ResetDrainNatIps()
@@ -213,17 +213,17 @@ type GoogleComputeRouterNat interface {
 	ResetTimeouts()
 	ResetType()
 	ResetUdpIdleTimeoutSec()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeRouterNat
@@ -261,8 +261,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) DrainNatIpsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDynamicPortAllocation",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocation() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDynamicPortAllocationInput",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) EnableDynamicPortAllocationInput() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMapping() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMapping() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEndpointIndependentMapping",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMapping() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMappingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMappingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEndpointIndependentMappingInput",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Nat64Subnetwork() GoogleComputeRouter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) Nat64SubnetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) Nat64SubnetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nat64SubnetworkInput",
@@ -661,8 +661,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -671,8 +671,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -731,8 +731,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Rules() GoogleComputeRouterNatRulesLi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -791,8 +791,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Subnetwork() GoogleComputeRouterNatSu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) SubnetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) SubnetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subnetworkInput",
@@ -871,8 +871,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -901,8 +901,8 @@ func (j *jsiiProxy_GoogleComputeRouterNat) Timeouts() GoogleComputeRouterNatTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNat) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -951,7 +951,6 @@ func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) GoogleComputeRouterNat {
 	_init_.Initialize()
@@ -963,7 +962,7 @@ func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -976,12 +975,12 @@ func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetAutoNetworkTier(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetAutoNetworkTier(val *string) {
 	if err := j.validateSetAutoNetworkTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetAutoNetworkTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetDrainNatIps(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetDrainNatIps(val *[]*string) {
 	if err := j.validateSetDrainNatIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetDrainNatIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableDynamicPortAllocation(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetEnableDynamicPortAllocation(val any) {
 	if err := j.validateSetEnableDynamicPortAllocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableDynamicPortAllocation(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableEndpointIndependentMapping(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetEnableEndpointIndependentMapping(val any) {
 	if err := j.validateSetEnableEndpointIndependentMappingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableEndpointIndependentMapping(va
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetEndpointTypes(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetEndpointTypes(val *[]*string) {
 	if err := j.validateSetEndpointTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetEndpointTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetIcmpIdleTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetIcmpIdleTimeoutSec(val *float64) {
 	if err := j.validateSetIcmpIdleTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetIcmpIdleTimeoutSec(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetInitialNatIps(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetInitialNatIps(val *[]*string) {
 	if err := j.validateSetInitialNatIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetInitialNatIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetMaxPortsPerVm(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetMaxPortsPerVm(val *float64) {
 	if err := j.validateSetMaxPortsPerVmParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetMaxPortsPerVm(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetMinPortsPerVm(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetMinPortsPerVm(val *float64) {
 	if err := j.validateSetMinPortsPerVmParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetMinPortsPerVm(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetNatIpAllocateOption(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetNatIpAllocateOption(val *string) {
 	if err := j.validateSetNatIpAllocateOptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetNatIpAllocateOption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetNatIps(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetNatIps(val *[]*string) {
 	if err := j.validateSetNatIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1172,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetNatIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1184,7 +1183,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1214,7 +1213,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetRouter(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetRouter(val *string) {
 	if err := j.validateSetRouterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1225,7 +1224,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetRouter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetSourceSubnetworkIpRangesToNat(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetSourceSubnetworkIpRangesToNat(val *string) {
 	if err := j.validateSetSourceSubnetworkIpRangesToNatParameters(val); err != nil {
 		panic(err)
 	}
@@ -1236,7 +1235,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetSourceSubnetworkIpRangesToNat(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetSourceSubnetworkIpRangesToNat64(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetSourceSubnetworkIpRangesToNat64(val *string) {
 	if err := j.validateSetSourceSubnetworkIpRangesToNat64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1247,7 +1246,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetSourceSubnetworkIpRangesToNat64(val
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpEstablishedIdleTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetTcpEstablishedIdleTimeoutSec(val *float64) {
 	if err := j.validateSetTcpEstablishedIdleTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -1258,7 +1257,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpEstablishedIdleTimeoutSec(val *f
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTimeWaitTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetTcpTimeWaitTimeoutSec(val *float64) {
 	if err := j.validateSetTcpTimeWaitTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTimeWaitTimeoutSec(val *float64)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTransitoryIdleTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetTcpTransitoryIdleTimeoutSec(val *float64) {
 	if err := j.validateSetTcpTransitoryIdleTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTransitoryIdleTimeoutSec(val *fl
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetType(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNat)SetUdpIdleTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRouterNat) SetUdpIdleTimeoutSec(val *float64) {
 	if err := j.validateSetUdpIdleTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -1314,7 +1313,7 @@ func GoogleComputeRouterNat_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1338,7 +1337,7 @@ func GoogleComputeRouterNat_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeRouterNat_IsConstruct(x interface{}) *bool {
+func GoogleComputeRouterNat_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeRouterNat_IsConstructParameters(x); err != nil {
@@ -1349,7 +1348,7 @@ func GoogleComputeRouterNat_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1357,7 +1356,7 @@ func GoogleComputeRouterNat_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeRouterNat_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeRouterNat_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeRouterNat_IsTerraformElementParameters(x); err != nil {
@@ -1368,7 +1367,7 @@ func GoogleComputeRouterNat_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1376,7 +1375,7 @@ func GoogleComputeRouterNat_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeRouterNat_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeRouterNat_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeRouterNat_IsTerraformResourceParameters(x); err != nil {
@@ -1387,7 +1386,7 @@ func GoogleComputeRouterNat_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1412,31 +1411,31 @@ func (g *jsiiProxy_GoogleComputeRouterNat) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeRouterNat) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeRouterNat) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1452,7 +1451,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1468,7 +1467,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1484,7 +1483,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1500,7 +1499,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1516,7 +1515,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1532,7 +1531,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1548,7 +1547,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1564,15 +1563,15 @@ func (g *jsiiProxy_GoogleComputeRouterNat) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1591,7 +1590,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1604,7 +1603,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1618,18 +1617,18 @@ func (g *jsiiProxy_GoogleComputeRouterNat) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeRouterNat) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1640,7 +1639,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1651,7 +1650,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1662,40 +1661,40 @@ func (g *jsiiProxy_GoogleComputeRouterNat) PutLogConfig(value *GoogleComputeRout
 	_jsii_.InvokeVoid(
 		g,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) PutNat64Subnetwork(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRouterNat) PutNat64Subnetwork(value any) {
 	if err := g.validatePutNat64SubnetworkParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNat64Subnetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) PutRules(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRouterNat) PutRules(value any) {
 	if err := g.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) PutSubnetwork(value interface{}) {
+func (g *jsiiProxy_GoogleComputeRouterNat) PutSubnetwork(value any) {
 	if err := g.validatePutSubnetworkParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSubnetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1706,7 +1705,7 @@ func (g *jsiiProxy_GoogleComputeRouterNat) PutTimeouts(value *GoogleComputeRoute
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1918,8 +1917,8 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetUdpIdleTimeoutSec() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1931,8 +1930,8 @@ func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1944,8 +1943,8 @@ func (g *jsiiProxy_GoogleComputeRouterNat) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1957,8 +1956,8 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1983,8 +1982,8 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNat) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeRouterNat) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1995,4 +1994,3 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsListParame
 
 	return nil
 }
-

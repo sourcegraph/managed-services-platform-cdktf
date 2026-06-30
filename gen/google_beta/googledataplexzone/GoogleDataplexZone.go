@@ -16,15 +16,15 @@ type GoogleDataplexZone interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -76,11 +76,11 @@ type GoogleDataplexZone interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceSpec() GoogleDataplexZoneResourceSpecOutputReference
 	ResourceSpecInput() *GoogleDataplexZoneResourceSpec
 	State() *string
@@ -88,11 +88,11 @@ type GoogleDataplexZone interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataplexZoneTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -102,9 +102,9 @@ type GoogleDataplexZone interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleDataplexZone interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type GoogleDataplexZone interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type GoogleDataplexZone interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataplexZone
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleDataplexZone) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexZone) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_GoogleDataplexZone) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexZone) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GoogleDataplexZone) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexZone) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_GoogleDataplexZone) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataplexZone) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_GoogleDataplexZone) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexZone) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_GoogleDataplexZone) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexZone) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_GoogleDataplexZone) Timeouts() GoogleDataplexZoneTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexZone) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexZone) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -641,7 +641,6 @@ func (j *jsiiProxy_GoogleDataplexZone) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) GoogleDataplexZone {
 	_init_.Initialize()
@@ -653,7 +652,7 @@ func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -666,12 +665,12 @@ func NewGoogleDataplexZone_Override(g GoogleDataplexZone, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexZone) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexZone) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataplexZone) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetLake(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetLake(val *string) {
 	if err := j.validateSetLakeParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataplexZone) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetName(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataplexZone) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -816,7 +815,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataplexZone) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_GoogleDataplexZone)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexZone)SetType(val *string) {
+func (j *jsiiProxy_GoogleDataplexZone) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func GoogleDataplexZone_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func GoogleDataplexZone_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataplexZone_IsConstruct(x interface{}) *bool {
+func GoogleDataplexZone_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexZone_IsConstructParameters(x); err != nil {
@@ -885,7 +884,7 @@ func GoogleDataplexZone_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func GoogleDataplexZone_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexZone_IsTerraformElement(x interface{}) *bool {
+func GoogleDataplexZone_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexZone_IsTerraformElementParameters(x); err != nil {
@@ -904,7 +903,7 @@ func GoogleDataplexZone_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func GoogleDataplexZone_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexZone_IsTerraformResource(x interface{}) *bool {
+func GoogleDataplexZone_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexZone_IsTerraformResourceParameters(x); err != nil {
@@ -923,7 +922,7 @@ func GoogleDataplexZone_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexZone.GoogleDataplexZone",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -948,31 +947,31 @@ func (g *jsiiProxy_GoogleDataplexZone) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataplexZone) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexZone) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (g *jsiiProxy_GoogleDataplexZone) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,15 +1099,15 @@ func (g *jsiiProxy_GoogleDataplexZone) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexZone) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1127,7 +1126,7 @@ func (g *jsiiProxy_GoogleDataplexZone) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1140,7 +1139,7 @@ func (g *jsiiProxy_GoogleDataplexZone) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1154,18 +1153,18 @@ func (g *jsiiProxy_GoogleDataplexZone) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataplexZone) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1176,7 +1175,7 @@ func (g *jsiiProxy_GoogleDataplexZone) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1187,7 +1186,7 @@ func (g *jsiiProxy_GoogleDataplexZone) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1198,7 +1197,7 @@ func (g *jsiiProxy_GoogleDataplexZone) PutDiscoverySpec(value *GoogleDataplexZon
 	_jsii_.InvokeVoid(
 		g,
 		"putDiscoverySpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,7 +1208,7 @@ func (g *jsiiProxy_GoogleDataplexZone) PutResourceSpec(value *GoogleDataplexZone
 	_jsii_.InvokeVoid(
 		g,
 		"putResourceSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1220,7 +1219,7 @@ func (g *jsiiProxy_GoogleDataplexZone) PutTimeouts(value *GoogleDataplexZoneTime
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1280,8 +1279,8 @@ func (g *jsiiProxy_GoogleDataplexZone) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexZone) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1293,8 +1292,8 @@ func (g *jsiiProxy_GoogleDataplexZone) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexZone) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1306,8 +1305,8 @@ func (g *jsiiProxy_GoogleDataplexZone) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexZone) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1319,8 +1318,8 @@ func (g *jsiiProxy_GoogleDataplexZone) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexZone) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1345,8 +1344,8 @@ func (g *jsiiProxy_GoogleDataplexZone) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexZone) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexZone) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1357,4 +1356,3 @@ func (g *jsiiProxy_GoogleDataplexZone) ToTerraform() interface{} {
 
 	return returns
 }
-

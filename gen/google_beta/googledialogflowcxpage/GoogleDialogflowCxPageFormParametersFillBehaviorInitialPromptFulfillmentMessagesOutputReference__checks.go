@@ -172,7 +172,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPrompt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,7 +237,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPrompt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,4 +304,3 @@ func validateNewGoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFul
 
 	return nil
 }
-

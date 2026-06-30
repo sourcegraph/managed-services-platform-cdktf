@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleProjectIamCustomRole) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamCustomRole) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleProjectIamCustomRole) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleProjectIamCustomRole) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamCustomRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleProjectIamCustomRole) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleProjectIamCustomRole_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleProjectIamCustomRole_IsConstructParameters(x interface{}) error {
+func validateGoogleProjectIamCustomRole_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleProjectIamCustomRole_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleProjectIamCustomRole_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleProjectIamCustomRole_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleProjectIamCustomRole_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleProjectIamCustomRole_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleProjectIamCustomRole_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleProjectIamCustomRole_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewGoogleProjectIamCustomRoleParameters(scope constructs.Construct,
 
 	return nil
 }
-

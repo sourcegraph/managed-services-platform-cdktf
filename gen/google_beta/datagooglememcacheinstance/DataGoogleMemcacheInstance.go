@@ -16,11 +16,11 @@ type DataGoogleMemcacheInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -66,7 +66,7 @@ type DataGoogleMemcacheInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -75,14 +75,14 @@ type DataGoogleMemcacheInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zones() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,18 +110,18 @@ type DataGoogleMemcacheInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleMemcacheInstance
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleMemcacheInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleMemcacheInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleMemcacheInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleMemcacheInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -519,7 +519,6 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) Zones() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_memcache_instance google_memcache_instance} Data Source.
 func NewDataGoogleMemcacheInstance(scope constructs.Construct, id *string, config *DataGoogleMemcacheInstanceConfig) DataGoogleMemcacheInstance {
 	_init_.Initialize()
@@ -531,7 +530,7 @@ func NewDataGoogleMemcacheInstance(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -544,12 +543,12 @@ func NewDataGoogleMemcacheInstance_Override(d DataGoogleMemcacheInstance, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -628,7 +627,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstance)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleMemcacheInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func DataGoogleMemcacheInstance_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func DataGoogleMemcacheInstance_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleMemcacheInstance_IsConstruct(x interface{}) *bool {
+func DataGoogleMemcacheInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMemcacheInstance_IsConstructParameters(x); err != nil {
@@ -686,7 +685,7 @@ func DataGoogleMemcacheInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func DataGoogleMemcacheInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleMemcacheInstance_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleMemcacheInstance_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMemcacheInstance_IsTerraformDataSourceParameters(x); err != nil {
@@ -705,7 +704,7 @@ func DataGoogleMemcacheInstance_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func DataGoogleMemcacheInstance_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleMemcacheInstance_IsTerraformElement(x interface{}) *bool {
+func DataGoogleMemcacheInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMemcacheInstance_IsTerraformElementParameters(x); err != nil {
@@ -724,7 +723,7 @@ func DataGoogleMemcacheInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,27 +741,27 @@ func DataGoogleMemcacheInstance_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleMemcacheInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleMemcacheInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -956,8 +955,8 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -969,8 +968,8 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -982,8 +981,8 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMemcacheInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -995,8 +994,8 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMemcacheInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1021,8 +1020,8 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMemcacheInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1033,4 +1032,3 @@ func (d *jsiiProxy_DataGoogleMemcacheInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

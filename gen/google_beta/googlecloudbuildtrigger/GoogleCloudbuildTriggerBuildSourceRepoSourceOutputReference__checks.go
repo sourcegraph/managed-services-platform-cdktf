@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReferenceParam
 
 	return nil
 }
-

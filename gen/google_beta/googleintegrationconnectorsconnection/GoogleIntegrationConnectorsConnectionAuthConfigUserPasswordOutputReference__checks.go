@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutpu
 
 	return nil
 }
-

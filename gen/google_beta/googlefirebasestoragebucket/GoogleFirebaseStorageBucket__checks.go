@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaseStorageBucket_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleFirebaseStorageBucket_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseStorageBucket_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaseStorageBucket_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleFirebaseStorageBucket_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseStorageBucket_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaseStorageBucket_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleFirebaseStorageBucket_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseStorageBucket_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetBucketIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleFirebaseStorageBucketParameters(scope constructs.Construct
 
 	return nil
 }
-

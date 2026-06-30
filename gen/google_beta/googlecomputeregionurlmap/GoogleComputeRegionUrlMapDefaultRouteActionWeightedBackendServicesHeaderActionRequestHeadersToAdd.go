@@ -1,6 +1,5 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd struct {
 	// The name of the header.
 	//
@@ -16,6 +15,5 @@ type GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAct
 	// The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#replace GoogleComputeRegionUrlMap#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

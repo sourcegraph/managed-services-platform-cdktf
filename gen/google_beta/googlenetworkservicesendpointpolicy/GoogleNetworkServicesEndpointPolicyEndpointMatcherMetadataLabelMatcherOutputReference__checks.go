@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLab
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validatePutMetadataLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validatePutMetadataLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLab
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelM
 
 	return nil
 }
-

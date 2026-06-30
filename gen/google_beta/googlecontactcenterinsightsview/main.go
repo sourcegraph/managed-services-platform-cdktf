@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsView.GoogleContactCenterInsightsView",
-		reflect.TypeOf((*GoogleContactCenterInsightsView)(nil)).Elem(),
+		reflect.TypeFor[GoogleContactCenterInsightsView](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContactCenterInsightsView{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsView.GoogleContactCenterInsightsViewConfig",
-		reflect.TypeOf((*GoogleContactCenterInsightsViewConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContactCenterInsightsViewConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsView.GoogleContactCenterInsightsViewTimeouts",
-		reflect.TypeOf((*GoogleContactCenterInsightsViewTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleContactCenterInsightsViewTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsView.GoogleContactCenterInsightsViewTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleContactCenterInsightsViewTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContactCenterInsightsViewTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

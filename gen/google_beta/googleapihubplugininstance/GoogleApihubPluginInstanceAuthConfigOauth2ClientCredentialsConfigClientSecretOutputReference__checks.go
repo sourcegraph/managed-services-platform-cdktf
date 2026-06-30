@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceAuthConfigOauth2ClientCredentialsCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfi
 
 	return nil
 }
-

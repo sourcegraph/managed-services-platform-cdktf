@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeDiskIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeDiskIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeDiskIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

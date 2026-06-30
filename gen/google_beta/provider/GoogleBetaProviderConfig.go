@@ -1,6 +1,5 @@
 package provider
 
-
 type GoogleBetaProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#access_approval_custom_endpoint GoogleBetaProvider#access_approval_custom_endpoint}.
 	AccessApprovalCustomEndpoint *string `field:"optional" json:"accessApprovalCustomEndpoint" yaml:"accessApprovalCustomEndpoint"`
@@ -11,7 +10,7 @@ type GoogleBetaProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#active_directory_custom_endpoint GoogleBetaProvider#active_directory_custom_endpoint}.
 	ActiveDirectoryCustomEndpoint *string `field:"optional" json:"activeDirectoryCustomEndpoint" yaml:"activeDirectoryCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#add_terraform_attribution_label GoogleBetaProvider#add_terraform_attribution_label}.
-	AddTerraformAttributionLabel interface{} `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
+	AddTerraformAttributionLabel any `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
 	// Alias name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#alias GoogleBetaProvider#alias}
@@ -39,7 +38,7 @@ type GoogleBetaProviderConfig struct {
 	// batching block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#batching GoogleBetaProvider#batching}
-	Batching interface{} `field:"optional" json:"batching" yaml:"batching"`
+	Batching any `field:"optional" json:"batching" yaml:"batching"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#beyondcorp_custom_endpoint GoogleBetaProvider#beyondcorp_custom_endpoint}.
 	BeyondcorpCustomEndpoint *string `field:"optional" json:"beyondcorpCustomEndpoint" yaml:"beyondcorpCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#biglake_custom_endpoint GoogleBetaProvider#biglake_custom_endpoint}.
@@ -179,7 +178,7 @@ type GoogleBetaProviderConfig struct {
 	// external_credentials block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#external_credentials GoogleBetaProvider#external_credentials}
-	ExternalCredentials interface{} `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
+	ExternalCredentials any `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#filestore_custom_endpoint GoogleBetaProvider#filestore_custom_endpoint}.
 	FilestoreCustomEndpoint *string `field:"optional" json:"filestoreCustomEndpoint" yaml:"filestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#firebase_app_check_custom_endpoint GoogleBetaProvider#firebase_app_check_custom_endpoint}.
@@ -383,7 +382,7 @@ type GoogleBetaProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#universe_domain GoogleBetaProvider#universe_domain}.
 	UniverseDomain *string `field:"optional" json:"universeDomain" yaml:"universeDomain"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#user_project_override GoogleBetaProvider#user_project_override}.
-	UserProjectOverride interface{} `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
+	UserProjectOverride any `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#vertex_ai_custom_endpoint GoogleBetaProvider#vertex_ai_custom_endpoint}.
 	VertexAiCustomEndpoint *string `field:"optional" json:"vertexAiCustomEndpoint" yaml:"vertexAiCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#vmwareengine_custom_endpoint GoogleBetaProvider#vmwareengine_custom_endpoint}.
@@ -399,4 +398,3 @@ type GoogleBetaProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs#zone GoogleBetaProvider#zone}.
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

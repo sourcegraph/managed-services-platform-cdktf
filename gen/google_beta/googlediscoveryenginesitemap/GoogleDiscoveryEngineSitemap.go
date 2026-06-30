@@ -15,15 +15,15 @@ type GoogleDiscoveryEngineSitemap interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataStoreId() *string
 	SetDataStoreId(val *string)
@@ -61,20 +61,20 @@ type GoogleDiscoveryEngineSitemap interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SitemapId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDiscoveryEngineSitemapTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
@@ -82,9 +82,9 @@ type GoogleDiscoveryEngineSitemap interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleDiscoveryEngineSitemap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleDiscoveryEngineSitemap interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type GoogleDiscoveryEngineSitemap interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetUri()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDiscoveryEngineSitemap
@@ -157,8 +157,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) Timeouts() GoogleDiscoveryEngin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) UriInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_sitemap google_discovery_engine_sitemap} Resource.
 func NewGoogleDiscoveryEngineSitemap(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineSitemapConfig) GoogleDiscoveryEngineSitemap {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewGoogleDiscoveryEngineSitemap(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewGoogleDiscoveryEngineSitemap_Override(g GoogleDiscoveryEngineSitemap, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetDataStoreId(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetDataStoreId(val *string) {
 	if err := j.validateSetDataStoreIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetDataStoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetId(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap)SetUri(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func GoogleDiscoveryEngineSitemap_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func GoogleDiscoveryEngineSitemap_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDiscoveryEngineSitemap_IsConstruct(x interface{}) *bool {
+func GoogleDiscoveryEngineSitemap_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineSitemap_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func GoogleDiscoveryEngineSitemap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func GoogleDiscoveryEngineSitemap_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDiscoveryEngineSitemap_IsTerraformElement(x interface{}) *bool {
+func GoogleDiscoveryEngineSitemap_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineSitemap_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func GoogleDiscoveryEngineSitemap_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func GoogleDiscoveryEngineSitemap_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDiscoveryEngineSitemap_IsTerraformResource(x interface{}) *bool {
+func GoogleDiscoveryEngineSitemap_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineSitemap_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func GoogleDiscoveryEngineSitemap_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineSitemap.GoogleDiscoveryEngineSitemap",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) PutTimeouts(value *GoogleDiscov
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1014,8 +1013,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ResetUri() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1027,8 +1026,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1040,8 +1039,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1053,8 +1052,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1079,8 +1078,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,4 +1090,3 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) ToTerraform() interface{} {
 
 	return returns
 }
-

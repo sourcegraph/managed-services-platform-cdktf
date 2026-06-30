@@ -15,11 +15,11 @@ type DataGoogleRuntimeconfigConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,17 +53,17 @@ type DataGoogleRuntimeconfigConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataGoogleRuntimeconfigConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleRuntimeconfigConfig
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -319,7 +319,6 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config} Data Source.
 func NewDataGoogleRuntimeconfigConfig(scope constructs.Construct, id *string, config *DataGoogleRuntimeconfigConfigConfig) DataGoogleRuntimeconfigConfig {
 	_init_.Initialize()
@@ -331,7 +330,7 @@ func NewDataGoogleRuntimeconfigConfig(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -344,12 +343,12 @@ func NewDataGoogleRuntimeconfigConfig_Override(d DataGoogleRuntimeconfigConfig, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -368,7 +367,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -376,7 +375,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -440,7 +439,7 @@ func DataGoogleRuntimeconfigConfig_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func DataGoogleRuntimeconfigConfig_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleRuntimeconfigConfig_IsConstruct(x interface{}) *bool {
+func DataGoogleRuntimeconfigConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRuntimeconfigConfig_IsConstructParameters(x); err != nil {
@@ -475,7 +474,7 @@ func DataGoogleRuntimeconfigConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func DataGoogleRuntimeconfigConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleRuntimeconfigConfig_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleRuntimeconfigConfig_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRuntimeconfigConfig_IsTerraformDataSourceParameters(x); err != nil {
@@ -494,7 +493,7 @@ func DataGoogleRuntimeconfigConfig_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func DataGoogleRuntimeconfigConfig_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleRuntimeconfigConfig_IsTerraformElement(x interface{}) *bool {
+func DataGoogleRuntimeconfigConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRuntimeconfigConfig_IsTerraformElementParameters(x); err != nil {
@@ -513,7 +512,7 @@ func DataGoogleRuntimeconfigConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -531,27 +530,27 @@ func DataGoogleRuntimeconfigConfig_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -737,8 +736,8 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -763,8 +762,8 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -776,8 +775,8 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -814,4 +813,3 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

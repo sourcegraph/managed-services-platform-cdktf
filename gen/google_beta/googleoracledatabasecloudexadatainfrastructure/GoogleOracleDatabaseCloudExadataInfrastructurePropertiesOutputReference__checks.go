@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validatePutCustomerContactsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validatePutCustomerContactsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,4 +272,3 @@ func validateNewGoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputRe
 
 	return nil
 }
-

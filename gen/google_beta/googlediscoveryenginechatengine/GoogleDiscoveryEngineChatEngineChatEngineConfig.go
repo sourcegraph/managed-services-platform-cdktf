@@ -1,6 +1,5 @@
 package googlediscoveryenginechatengine
 
-
 type GoogleDiscoveryEngineChatEngineChatEngineConfig struct {
 	// agent_creation_config block.
 	//
@@ -15,7 +14,7 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfig struct {
 	// creation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_chat_engine#allow_cross_region GoogleDiscoveryEngineChatEngine#allow_cross_region}
-	AllowCrossRegion interface{} `field:"optional" json:"allowCrossRegion" yaml:"allowCrossRegion"`
+	AllowCrossRegion any `field:"optional" json:"allowCrossRegion" yaml:"allowCrossRegion"`
 	// The resource name of an existing Dialogflow agent to link to this Chat Engine.
 	//
 	// Format: 'projects/<Project_ID>/locations/<Location_ID>/agents/<Agent_ID>'.
@@ -24,4 +23,3 @@ type GoogleDiscoveryEngineChatEngineChatEngineConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_chat_engine#dialogflow_agent_to_link GoogleDiscoveryEngineChatEngine#dialogflow_agent_to_link}
 	DialogflowAgentToLink *string `field:"optional" json:"dialogflowAgentToLink" yaml:"dialogflowAgentToLink"`
 }
-

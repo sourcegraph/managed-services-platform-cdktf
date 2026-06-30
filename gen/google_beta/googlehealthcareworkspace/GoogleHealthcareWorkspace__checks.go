@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareWorkspace) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareWorkspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareWorkspace) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareWorkspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleHealthcareWorkspace_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleHealthcareWorkspace_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleHealthcareWorkspace_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleHealthcareWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleHealthcareWorkspace_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleHealthcareWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleHealthcareWorkspace_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareWorkspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewGoogleHealthcareWorkspaceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

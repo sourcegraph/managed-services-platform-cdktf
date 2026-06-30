@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeInterconnectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeInterconnectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Type of interconnect.
 	//
 	// Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
@@ -59,7 +59,7 @@ type GoogleComputeInterconnectConfig struct {
 	// Enable or disable the Application Aware Interconnect(AAI) feature on this interconnect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#aai_enabled GoogleComputeInterconnect#aai_enabled}
-	AaiEnabled interface{} `field:"optional" json:"aaiEnabled" yaml:"aaiEnabled"`
+	AaiEnabled any `field:"optional" json:"aaiEnabled" yaml:"aaiEnabled"`
 	// Administrative status of the interconnect.
 	//
 	// When this is set to true, the Interconnect is
@@ -67,7 +67,7 @@ type GoogleComputeInterconnectConfig struct {
 	// interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#admin_enabled GoogleComputeInterconnect#admin_enabled}
-	AdminEnabled interface{} `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
+	AdminEnabled any `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
 	// application_aware_interconnect block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#application_aware_interconnect GoogleComputeInterconnect#application_aware_interconnect}
@@ -106,7 +106,7 @@ type GoogleComputeInterconnectConfig struct {
 	// Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#macsec_enabled GoogleComputeInterconnect#macsec_enabled}
-	MacsecEnabled interface{} `field:"optional" json:"macsecEnabled" yaml:"macsecEnabled"`
+	MacsecEnabled any `field:"optional" json:"macsecEnabled" yaml:"macsecEnabled"`
 	// Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect.
 	//
 	// If specified, this will be used for notifications in addition to
@@ -134,4 +134,3 @@ type GoogleComputeInterconnectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#timeouts GoogleComputeInterconnect#timeouts}
 	Timeouts *GoogleComputeInterconnectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

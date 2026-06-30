@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeade
 
 	return nil
 }
-

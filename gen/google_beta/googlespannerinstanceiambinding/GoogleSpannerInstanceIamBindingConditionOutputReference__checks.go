@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceIamBindingConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleSpannerInstanceIamBindingConditionOutputReferenceParameter
 
 	return nil
 }
-

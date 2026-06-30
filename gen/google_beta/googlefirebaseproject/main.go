@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseProject.GoogleFirebaseProject",
-		reflect.TypeOf((*GoogleFirebaseProject)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseProject.GoogleFirebaseProjectConfig",
-		reflect.TypeOf((*GoogleFirebaseProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts",
-		reflect.TypeOf((*GoogleFirebaseProjectTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseProjectTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseProjectTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseProjectTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseProjectTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

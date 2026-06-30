@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkSecuritySecurityProfileThreatPreventionProfileSever
 
 	return nil
 }
-

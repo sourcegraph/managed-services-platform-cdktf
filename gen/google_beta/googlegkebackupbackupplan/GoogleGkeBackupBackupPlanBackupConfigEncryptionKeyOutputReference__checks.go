@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReferenc
 
 	return nil
 }
-

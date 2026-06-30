@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBru
 
 	return nil
 }
-

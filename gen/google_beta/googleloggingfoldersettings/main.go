@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSettings.GoogleLoggingFolderSettings",
-		reflect.TypeOf((*GoogleLoggingFolderSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderSettings.GoogleLoggingFolderSettingsConfig",
-		reflect.TypeOf((*GoogleLoggingFolderSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderSettings.GoogleLoggingFolderSettingsTimeouts",
-		reflect.TypeOf((*GoogleLoggingFolderSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderSettings.GoogleLoggingFolderSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleLoggingFolderSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

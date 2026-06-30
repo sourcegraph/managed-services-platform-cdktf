@@ -36,7 +36,7 @@ type GoogleBigqueryJobStatusList interface {
 	Get(index *float64) GoogleBigqueryJobStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_GoogleBigqueryJobStatusList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleBigqueryJobStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigqueryJobStatusList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewGoogleBigqueryJobStatusList(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewGoogleBigqueryJobStatusList_Override(g GoogleBigqueryJobStatusList, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobStatusList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobStatusList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_GoogleBigqueryJobStatusList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_GoogleBigqueryJobStatusList)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobStatusList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryJobStatusList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (g *jsiiProxy_GoogleBigqueryJobStatusList) AllWithMapKey(mapKeyAttributeNam
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (g *jsiiProxy_GoogleBigqueryJobStatusList) Get(index *float64) GoogleBigque
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobStatusList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (g *jsiiProxy_GoogleBigqueryJobStatusList) ToString() *string {
 
 	return returns
 }
-

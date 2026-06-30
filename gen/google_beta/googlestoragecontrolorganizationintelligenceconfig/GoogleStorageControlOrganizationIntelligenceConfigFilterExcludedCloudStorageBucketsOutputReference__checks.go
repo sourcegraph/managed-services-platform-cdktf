@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterExclu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageControlOrganizationIntelligenceConfigFilterExcluded
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type GoogleNetworkServicesTcpRouteRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleNetworkServicesTcpRouteRulesList interface {
 	Get(index *float64) GoogleNetworkServicesTcpRouteRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleNetworkServicesTcpRouteRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesTcpRouteRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleNetworkServicesTcpRouteRulesList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleNetworkServicesTcpRouteRulesList_Override(g GoogleNetworkServicesT
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) Get(index *float64) G
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesList) ToString() *string {
 
 	return returns
 }
-

@@ -112,7 +112,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference) validatePutUnknownExtendedKeyUsagesParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference) validatePutUnknownExtendedKeyUsagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewGooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReferenc
 
 	return nil
 }
-

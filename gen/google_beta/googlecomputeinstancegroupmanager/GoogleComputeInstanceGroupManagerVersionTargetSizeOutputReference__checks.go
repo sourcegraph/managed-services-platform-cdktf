@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerVersionTargetSizeOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReferenc
 
 	return nil
 }
-

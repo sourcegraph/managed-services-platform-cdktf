@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbUser.GoogleAlloydbUser",
-		reflect.TypeOf((*GoogleAlloydbUser)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeInput", GoGetter: "UserTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbUser.GoogleAlloydbUserConfig",
-		reflect.TypeOf((*GoogleAlloydbUserConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbUser.GoogleAlloydbUserTimeouts",
-		reflect.TypeOf((*GoogleAlloydbUserTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbUserTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbUser.GoogleAlloydbUserTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAlloydbUserTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbUserTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbUserTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

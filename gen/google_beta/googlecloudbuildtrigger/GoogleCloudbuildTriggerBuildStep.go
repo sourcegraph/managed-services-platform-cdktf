@@ -1,6 +1,5 @@
 package googlecloudbuildtrigger
 
-
 type GoogleCloudbuildTriggerBuildStep struct {
 	// The name of the container image that will run this particular build step.
 	//
@@ -36,7 +35,7 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// 'allowExitCodes' takes precedence over this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#allow_failure GoogleCloudbuildTrigger#allow_failure}
-	AllowFailure interface{} `field:"optional" json:"allowFailure" yaml:"allowFailure"`
+	AllowFailure any `field:"optional" json:"allowFailure" yaml:"allowFailure"`
 	// A list of arguments that will be presented to the step when it is started.
 	//
 	// If the image used to run the step's container has an entrypoint, the args
@@ -107,7 +106,7 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#volumes GoogleCloudbuildTrigger#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 	// The ID(s) of the step(s) that this build step depends on.
 	//
 	// This build step will not start until all the build steps in 'wait_for'
@@ -118,4 +117,3 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#wait_for GoogleCloudbuildTrigger#wait_for}
 	WaitFor *[]*string `field:"optional" json:"waitFor" yaml:"waitFor"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleColabNotebookExecutionGcsNotebookSourceOutputReferencePara
 
 	return nil
 }
-

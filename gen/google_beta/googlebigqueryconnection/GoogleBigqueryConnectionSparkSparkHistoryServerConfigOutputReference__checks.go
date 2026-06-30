@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionSparkSparkHistoryServerConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionSparkSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionSparkSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryConnectionSparkSparkHistoryServerConfigOutputRefer
 
 	return nil
 }
-

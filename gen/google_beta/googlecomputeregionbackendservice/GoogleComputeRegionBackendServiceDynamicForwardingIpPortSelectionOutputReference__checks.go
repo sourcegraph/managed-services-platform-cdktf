@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectio
 
 	return nil
 }
-

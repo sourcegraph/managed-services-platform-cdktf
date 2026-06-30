@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxEnvironmentVersionConfigsListParameters(terraf
 
 	return nil
 }
-

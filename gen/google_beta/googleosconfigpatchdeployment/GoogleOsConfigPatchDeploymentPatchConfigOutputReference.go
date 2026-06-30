@@ -14,9 +14,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	AptInput() *GoogleOsConfigPatchDeploymentPatchConfigApt
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,9 +33,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	GooInput() *GoogleOsConfigPatchDeploymentPatchConfigGoo
 	InternalValue() *GoogleOsConfigPatchDeploymentPatchConfig
 	SetInternalValue(val *GoogleOsConfigPatchDeploymentPatchConfig)
-	MigInstancesAllowed() interface{}
-	SetMigInstancesAllowed(val interface{})
-	MigInstancesAllowedInput() interface{}
+	MigInstancesAllowed() any
+	SetMigInstancesAllowed(val any)
+	MigInstancesAllowedInput() any
 	PostStep() GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference
 	PostStepInput() *GoogleOsConfigPatchDeploymentPatchConfigPostStep
 	PreStep() GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference
@@ -60,7 +60,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigOutputReference interface {
 	ResetZypper()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) AptI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migInstancesAllowed",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) MigI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migInstancesAllowedInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Zypp
 	return returns
 }
 
-
 func NewGoogleOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetInternalValue(val *GoogleOsConfigPatchDeploymentPatchConfig) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetInternalValue(val *GoogleOsConfigPatchDeploymentPatchConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetMigInstancesAllowed(val interface{}) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetMigInstancesAllowed(val any) {
 	if err := j.validateSetMigInstancesAllowedParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetMi
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetRebootConfig(val *string) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetRebootConfig(val *string) {
 	if err := j.validateSetRebootConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,16 +479,16 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutA
 	_jsii_.InvokeVoid(
 		g,
 		"putApt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -671,7 +670,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutG
 	_jsii_.InvokeVoid(
 		g,
 		"putGoo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -682,7 +681,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutP
 	_jsii_.InvokeVoid(
 		g,
 		"putPostStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -693,7 +692,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutP
 	_jsii_.InvokeVoid(
 		g,
 		"putPreStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -704,7 +703,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutW
 	_jsii_.InvokeVoid(
 		g,
 		"putWindowsUpdate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -715,7 +714,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutY
 	_jsii_.InvokeVoid(
 		g,
 		"putYum",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -726,7 +725,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) PutZ
 	_jsii_.InvokeVoid(
 		g,
 		"putZypper",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) ToSt
 
 	return returns
 }
-

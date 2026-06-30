@@ -6,9 +6,9 @@ import (
 
 type GoogleNetworkServicesTcpRouteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetworkServicesTcpRouteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the TcpRoute resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_tcp_route#name GoogleNetworkServicesTcpRoute#name}
@@ -26,7 +26,7 @@ type GoogleNetworkServicesTcpRouteConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_tcp_route#rules GoogleNetworkServicesTcpRoute#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_tcp_route#description GoogleNetworkServicesTcpRoute#description}
@@ -67,4 +67,3 @@ type GoogleNetworkServicesTcpRouteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_tcp_route#timeouts GoogleNetworkServicesTcpRoute#timeouts}
 	Timeouts *GoogleNetworkServicesTcpRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

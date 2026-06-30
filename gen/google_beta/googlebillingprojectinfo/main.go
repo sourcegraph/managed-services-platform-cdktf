@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBillingProjectInfo.GoogleBillingProjectInfo",
-		reflect.TypeOf((*GoogleBillingProjectInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleBillingProjectInfo](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBillingProjectInfo{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBillingProjectInfo.GoogleBillingProjectInfoConfig",
-		reflect.TypeOf((*GoogleBillingProjectInfoConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBillingProjectInfoConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBillingProjectInfo.GoogleBillingProjectInfoTimeouts",
-		reflect.TypeOf((*GoogleBillingProjectInfoTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBillingProjectInfoTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBillingProjectInfo.GoogleBillingProjectInfoTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBillingProjectInfoTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBillingProjectInfoTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBillingProjectInfoTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,9 +12,9 @@ type GoogleDeploymentManagerDeploymentTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type GoogleDeploymentManagerDeploymentTargetOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Imports() GoogleDeploymentManagerDeploymentTargetImportsList
-	ImportsInput() interface{}
+	ImportsInput() any
 	InternalValue() *GoogleDeploymentManagerDeploymentTarget
 	SetInternalValue(val *GoogleDeploymentManagerDeploymentTarget)
 	// Experimental.
@@ -44,7 +44,7 @@ type GoogleDeploymentManagerDeploymentTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type GoogleDeploymentManagerDeploymentTargetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *GoogleDeploymentManagerDeploymentTargetConfig)
-	PutImports(value interface{})
+	PutImports(value any)
 	ResetImports()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Impor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) ImportsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) ImportsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"importsInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleDeploymentManagerDeploymentTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDeploymentManagerDeploymentTargetOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleDeploymentManagerDeploymentTargetOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleDeploymentManagerDeploymentTargetOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetInternalValue(val *GoogleDeploymentManagerDeploymentTarget) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) SetInternalValue(val *GoogleDeploymentManagerDeploymentTarget) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,16 +288,16 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -314,7 +313,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -330,7 +329,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -469,18 +468,18 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) PutCo
 	_jsii_.InvokeVoid(
 		g,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) PutImports(value interface{}) {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) PutImports(value any) {
 	if err := g.validatePutImportsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putImports",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) ToStr
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsL
 
 	return nil
 }
-

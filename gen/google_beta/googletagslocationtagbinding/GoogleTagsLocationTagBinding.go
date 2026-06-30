@@ -15,15 +15,15 @@ type GoogleTagsLocationTagBinding interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,29 +57,29 @@ type GoogleTagsLocationTagBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TagValue() *string
 	SetTagValue(val *string)
 	TagValueInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleTagsLocationTagBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleTagsLocationTagBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleTagsLocationTagBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type GoogleTagsLocationTagBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleTagsLocationTagBinding
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) Timeouts() GoogleTagsLocationTa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_tags_location_tag_binding google_tags_location_tag_binding} Resource.
 func NewGoogleTagsLocationTagBinding(scope constructs.Construct, id *string, config *GoogleTagsLocationTagBindingConfig) GoogleTagsLocationTagBinding {
@@ -423,7 +422,7 @@ func NewGoogleTagsLocationTagBinding(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewGoogleTagsLocationTagBinding_Override(g GoogleTagsLocationTagBinding, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetParent(val *string) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding)SetTagValue(val *string) {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) SetTagValue(val *string) {
 	if err := j.validateSetTagValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func GoogleTagsLocationTagBinding_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func GoogleTagsLocationTagBinding_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleTagsLocationTagBinding_IsConstruct(x interface{}) *bool {
+func GoogleTagsLocationTagBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTagsLocationTagBinding_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func GoogleTagsLocationTagBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func GoogleTagsLocationTagBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleTagsLocationTagBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleTagsLocationTagBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTagsLocationTagBinding_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func GoogleTagsLocationTagBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func GoogleTagsLocationTagBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleTagsLocationTagBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleTagsLocationTagBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleTagsLocationTagBinding_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func GoogleTagsLocationTagBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -842,7 +841,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) PutTimeouts(value *GoogleTagsLo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -962,8 +961,8 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -975,8 +974,8 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -988,8 +987,8 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1014,8 +1013,8 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1026,4 +1025,3 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

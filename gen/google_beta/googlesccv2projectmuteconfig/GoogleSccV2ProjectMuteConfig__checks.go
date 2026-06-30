@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSccV2ProjectMuteConfig_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleSccV2ProjectMuteConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleSccV2ProjectMuteConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSccV2ProjectMuteConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleSccV2ProjectMuteConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSccV2ProjectMuteConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSccV2ProjectMuteConfig_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleSccV2ProjectMuteConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSccV2ProjectMuteConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSccV2ProjectMuteConfig_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSccV2ProjectMuteConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleSccV2ProjectMuteConfigParameters(scope constructs.Construc
 
 	return nil
 }
-

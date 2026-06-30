@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBillingBudgetThresholdRulesListParameters(terraformResourc
 
 	return nil
 }
-

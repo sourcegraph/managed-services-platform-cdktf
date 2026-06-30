@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContai
 
 	return nil
 }
-

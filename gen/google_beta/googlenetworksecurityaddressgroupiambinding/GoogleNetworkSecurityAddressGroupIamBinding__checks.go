@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateAddMoveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateMoveFrom
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkSecurityAddressGroupIamBinding_GenerateConfigForImport
 	return nil
 }
 
-func validateGoogleNetworkSecurityAddressGroupIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkSecurityAddressGroupIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkSecurityAddressGroupIamBinding_IsConstructParameters(x
 	return nil
 }
 
-func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformElementParam
 	return nil
 }
 
-func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleNetworkSecurityAddressGroupIamBinding_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleNetworkSecurityAddressGroupIamBindingParameters(scope cons
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
-		reflect.TypeOf((*GoogleComputeHaVpnGateway)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGateway](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnInterfaces", GoGetter: "VpnInterfaces"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnInterfacesInput", GoGetter: "VpnInterfacesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeHaVpnGateway{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayConfig",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeHaVpnGatewayTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfaces",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfaces)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayVpnInterfaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfacesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayVpnInterfacesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeHaVpnGatewayVpnInterfacesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
-		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeHaVpnGatewayVpnInterfacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeHaVpnGatewayVpnInterfacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

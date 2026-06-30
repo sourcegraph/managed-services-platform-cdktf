@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSou
 
 	return nil
 }
-

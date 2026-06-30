@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentity",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentity)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentity](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolNamespaceId", GoGetter: "WorkloadIdentityPoolNamespaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolNamespaceIdInput", GoGetter: "WorkloadIdentityPoolNamespaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentity{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,11 +89,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRules",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,15 +149,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityConfig",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPoolManagedIdentity.GoogleIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

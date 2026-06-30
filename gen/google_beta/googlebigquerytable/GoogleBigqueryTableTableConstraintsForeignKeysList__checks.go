@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBigqueryTableTableConstraintsForeignKeysListParameters(ter
 
 	return nil
 }
-

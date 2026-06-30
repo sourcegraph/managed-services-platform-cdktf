@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterPodSecurityPolicyConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterPodSecurityPolicyConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterPodSecurityPolicyConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterPodSecurityPolicyConfigOutputReference
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type GoogleTranscoderJobConfigEditListStructList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleTranscoderJobConfigEditListStructList interface {
 	Get(index *float64) GoogleTranscoderJobConfigEditListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewGoogleTranscoderJobConfigEditListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobConfigEditListStructList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleTranscoderJobConfigEditListStructList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigEditListStructList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleTranscoderJobConfigEditListStructList_Override(g GoogleTranscoderJ
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigEditListStructList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) Get(index *float
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEditListStructList) ToString() *stri
 
 	return returns
 }
-

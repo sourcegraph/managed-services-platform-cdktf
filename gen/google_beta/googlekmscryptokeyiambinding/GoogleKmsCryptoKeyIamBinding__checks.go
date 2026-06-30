@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleKmsCryptoKeyIamBinding_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleKmsCryptoKeyIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleKmsCryptoKeyIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleKmsCryptoKeyIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleKmsCryptoKeyIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleKmsCryptoKeyIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleKmsCryptoKeyIamBinding_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetMembersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleKmsCryptoKeyIamBindingParameters(scope constructs.Construc
 
 	return nil
 }
-

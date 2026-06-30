@@ -1,6 +1,5 @@
 package googledataprocmetastoreservice
 
-
 type GoogleDataprocMetastoreServiceHiveMetastoreConfig struct {
 	// The Hive metastore schema version.
 	//
@@ -9,7 +8,7 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfig struct {
 	// auxiliary_versions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_service#auxiliary_versions GoogleDataprocMetastoreService#auxiliary_versions}
-	AuxiliaryVersions interface{} `field:"optional" json:"auxiliaryVersions" yaml:"auxiliaryVersions"`
+	AuxiliaryVersions any `field:"optional" json:"auxiliaryVersions" yaml:"auxiliaryVersions"`
 	// A mapping of Hive metastore configuration key-value pairs to apply to the Hive metastore (configured in hive-site.xml). The mappings override system defaults (some keys cannot be overridden).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
@@ -25,4 +24,3 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_service#kerberos_config GoogleDataprocMetastoreService#kerberos_config}
 	KerberosConfig *GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig `field:"optional" json:"kerberosConfig" yaml:"kerberosConfig"`
 }
-

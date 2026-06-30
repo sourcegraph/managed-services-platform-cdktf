@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlement",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlement)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlement](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalNotificationTargets", GoGetter: "AdditionalNotificationTargets"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalNotificationTargetsInput", GoGetter: "AdditionalNotificationTargetsInput"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlement{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,11 +98,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminEmailRecipients", GoGetter: "AdminEmailRecipients"},
 			_jsii_.MemberProperty{JsiiProperty: "adminEmailRecipientsInput", GoGetter: "AdminEmailRecipientsInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflow",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflow)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflow](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -250,7 +250,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approvalsNeeded", GoGetter: "ApprovalsNeeded"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalsNeededInput", GoGetter: "ApprovalsNeededInput"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,7 +291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -326,15 +326,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementConfig",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementConfig)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementEligibleUsers",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementEligibleUsers)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementEligibleUsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementEligibleUsersList",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementEligibleUsersList)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementEligibleUsersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -356,7 +356,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -390,15 +390,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccess",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccess)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccess](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -437,11 +437,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -455,7 +455,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -463,7 +463,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -492,7 +492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -500,7 +500,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -527,7 +527,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -535,15 +535,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -567,7 +567,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -575,7 +575,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -607,7 +607,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unstructured", GoGetter: "Unstructured"},
 			_jsii_.MemberProperty{JsiiProperty: "unstructuredInput", GoGetter: "UnstructuredInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -615,11 +615,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -643,7 +643,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -651,11 +651,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementTimeouts",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementTimeoutsOutputReference",
-		reflect.TypeOf((*GooglePrivilegedAccessManagerEntitlementTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePrivilegedAccessManagerEntitlementTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -688,7 +688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

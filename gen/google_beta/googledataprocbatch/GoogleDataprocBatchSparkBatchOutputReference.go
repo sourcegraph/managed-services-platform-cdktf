@@ -18,9 +18,9 @@ type GoogleDataprocBatchSparkBatchOutputReference interface {
 	ArgsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type GoogleDataprocBatchSparkBatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type GoogleDataprocBatchSparkBatchOutputReference interface {
 	ResetMainJarFileUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ArgsInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewGoogleDataprocBatchSparkBatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchSparkBatchOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewGoogleDataprocBatchSparkBatchOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocBatch.GoogleDataprocBatchSparkBatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGoogleDataprocBatchSparkBatchOutputReference_Override(g GoogleDataprocBa
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocBatch.GoogleDataprocBatchSparkBatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetArchiveUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetArchiveUris(val *[]*string) {
 	if err := j.validateSetArchiveUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetArchiveUris(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetArgs(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetFileUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetFileUris(val *[]*string) {
 	if err := j.validateSetFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetFileUris(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetInternalValue(val *GoogleDataprocBatchSparkBatch) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetInternalValue(val *GoogleDataprocBatchSparkBatch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetJarFileUris(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetJarFileUris(val *[]*string) {
 	if err := j.validateSetJarFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetJarFileUris(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetMainClass(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetMainClass(val *string) {
 	if err := j.validateSetMainClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetMainClass(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetMainJarFileUri(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetMainJarFileUri(val *string) {
 	if err := j.validateSetMainJarFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetMainJarFileUr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ResetMainJarFil
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkBatchOutputReference) ToString() *str
 
 	return returns
 }
-

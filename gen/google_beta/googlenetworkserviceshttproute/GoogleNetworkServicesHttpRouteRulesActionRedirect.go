@@ -1,6 +1,5 @@
 package googlenetworkserviceshttproute
 
-
 type GoogleNetworkServicesHttpRouteRulesActionRedirect struct {
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -9,7 +8,7 @@ type GoogleNetworkServicesHttpRouteRulesActionRedirect struct {
 	// If set to true, the URL scheme in the redirected request is set to https.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#https_redirect GoogleNetworkServicesHttpRoute#https_redirect}
-	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
+	HttpsRedirect any `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// pathRedirect can not be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
@@ -31,6 +30,5 @@ type GoogleNetworkServicesHttpRouteRulesActionRedirect struct {
 	// If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#strip_query GoogleNetworkServicesHttpRoute#strip_query}
-	StripQuery interface{} `field:"optional" json:"stripQuery" yaml:"stripQuery"`
+	StripQuery any `field:"optional" json:"stripQuery" yaml:"stripQuery"`
 }
-

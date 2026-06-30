@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validatePutSourceParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validatePutSourceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewGoogleApiGatewayApiConfigGrpcServicesOutputReferenceParameters(t
 
 	return nil
 }
-

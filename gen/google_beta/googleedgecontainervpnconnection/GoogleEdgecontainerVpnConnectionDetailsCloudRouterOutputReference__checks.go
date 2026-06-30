@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerVpnConnectionDetailsCloudRouterOutputReferenc
 
 	return nil
 }
-

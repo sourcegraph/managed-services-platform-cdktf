@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineDestinationsAuthenticationConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineDestinationsAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcPipelineDestinationsAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleEventarcPipelineDestinationsAuthenticationConfigOutputRefe
 
 	return nil
 }
-

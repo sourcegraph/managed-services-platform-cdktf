@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIamOauthClientCredential) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIamOauthClientCredential) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleIamOauthClientCredential_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleIamOauthClientCredential_IsConstructParameters(x interface{}) error {
+func validateGoogleIamOauthClientCredential_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleIamOauthClientCredential_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleIamOauthClientCredential_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIamOauthClientCredential_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleIamOauthClientCredential_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleIamOauthClientCredential_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIamOauthClientCredential_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleIamOauthClientCredential_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewGoogleIamOauthClientCredentialParameters(scope constructs.Constr
 
 	return nil
 }
-

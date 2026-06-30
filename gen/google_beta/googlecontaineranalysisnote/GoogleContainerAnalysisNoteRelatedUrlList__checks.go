@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerAnalysisNoteRelatedUrlListParameters(terraformRes
 
 	return nil
 }
-

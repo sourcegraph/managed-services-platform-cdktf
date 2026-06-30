@@ -15,11 +15,11 @@ type DataGoogleFolder interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
@@ -47,9 +47,9 @@ type DataGoogleFolder interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecycleState() *string
-	LookupOrganization() interface{}
-	SetLookupOrganization(val interface{})
-	LookupOrganizationInput() interface{}
+	LookupOrganization() any
+	SetLookupOrganization(val any)
+	LookupOrganizationInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -60,17 +60,17 @@ type DataGoogleFolder interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataGoogleFolder interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleFolder
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataGoogleFolder) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFolder) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataGoogleFolder) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolder) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataGoogleFolder) LifecycleState() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) LookupOrganization() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolder) LookupOrganization() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lookupOrganization",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DataGoogleFolder) LookupOrganization() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) LookupOrganizationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolder) LookupOrganizationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lookupOrganizationInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DataGoogleFolder) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolder) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_DataGoogleFolder) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolder) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFolder) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -396,7 +396,6 @@ func (j *jsiiProxy_DataGoogleFolder) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_folder google_folder} Data Source.
 func NewDataGoogleFolder(scope constructs.Construct, id *string, config *DataGoogleFolderConfig) DataGoogleFolder {
 	_init_.Initialize()
@@ -408,7 +407,7 @@ func NewDataGoogleFolder(scope constructs.Construct, id *string, config *DataGoo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -421,12 +420,12 @@ func NewDataGoogleFolder_Override(d DataGoogleFolder, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleFolder) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleFolder) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetFolder(val *string) {
+func (j *jsiiProxy_DataGoogleFolder) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleFolder) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleFolder) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleFolder) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetLookupOrganization(val interface{}) {
+func (j *jsiiProxy_DataGoogleFolder) SetLookupOrganization(val any) {
 	if err := j.validateSetLookupOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataGoogleFolder)SetLookupOrganization(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolder)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleFolder) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -517,7 +516,7 @@ func DataGoogleFolder_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func DataGoogleFolder_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleFolder_IsConstruct(x interface{}) *bool {
+func DataGoogleFolder_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolder_IsConstructParameters(x); err != nil {
@@ -552,7 +551,7 @@ func DataGoogleFolder_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func DataGoogleFolder_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleFolder_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolder_IsTerraformDataSourceParameters(x); err != nil {
@@ -571,7 +570,7 @@ func DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleFolder_IsTerraformElement(x interface{}) *bool {
+func DataGoogleFolder_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolder_IsTerraformElementParameters(x); err != nil {
@@ -590,7 +589,7 @@ func DataGoogleFolder_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFolder.DataGoogleFolder",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,27 +607,27 @@ func DataGoogleFolder_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolder) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleFolder) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFolder) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleFolder) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (d *jsiiProxy_DataGoogleFolder) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DataGoogleFolder) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataGoogleFolder) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -814,8 +813,8 @@ func (d *jsiiProxy_DataGoogleFolder) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFolder) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFolder) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -827,8 +826,8 @@ func (d *jsiiProxy_DataGoogleFolder) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolder) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFolder) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -840,8 +839,8 @@ func (d *jsiiProxy_DataGoogleFolder) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolder) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolder) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -853,8 +852,8 @@ func (d *jsiiProxy_DataGoogleFolder) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolder) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolder) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataGoogleFolder) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolder) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolder) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -891,4 +890,3 @@ func (d *jsiiProxy_DataGoogleFolder) ToTerraform() interface{} {
 
 	return returns
 }
-

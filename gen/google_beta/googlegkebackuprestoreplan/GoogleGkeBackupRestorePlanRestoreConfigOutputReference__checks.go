@@ -145,7 +145,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutTransformationRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutTransformationRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutVolumeDataRestorePolicyBindingsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validatePutVolumeDataRestorePolicyBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetAllNamespacesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetAllNamespacesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -324,7 +324,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetNoNamespacesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference) validateSetNoNamespacesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -379,4 +379,3 @@ func validateNewGoogleGkeBackupRestorePlanRestoreConfigOutputReferenceParameters
 
 	return nil
 }
-

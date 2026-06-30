@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRouterRoutePolicyTermsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterRoutePolicyTermsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterRoutePolicyTermsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRouterRoutePolicyTermsListParameters(terraformResou
 
 	return nil
 }
-

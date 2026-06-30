@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigPeripheralsConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocSessionTemplateEnvironmentConfigPeripheralsConfigS
 
 	return nil
 }
-

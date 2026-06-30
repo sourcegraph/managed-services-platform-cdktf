@@ -20,15 +20,15 @@ type GoogleLoggingFolderBucketConfig interface {
 	CmekSettings() GoogleLoggingFolderBucketConfigCmekSettingsOutputReference
 	CmekSettingsInput() *GoogleLoggingFolderBucketConfigCmekSettings
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,7 +51,7 @@ type GoogleLoggingFolderBucketConfig interface {
 	SetId(val *string)
 	IdInput() *string
 	IndexConfigs() GoogleLoggingFolderBucketConfigIndexConfigsList
-	IndexConfigsInput() interface{}
+	IndexConfigsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,27 +68,27 @@ type GoogleLoggingFolderBucketConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionDays() *float64
 	SetRetentionDays(val *float64)
 	RetentionDaysInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleLoggingFolderBucketConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleLoggingFolderBucketConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,7 +126,7 @@ type GoogleLoggingFolderBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *GoogleLoggingFolderBucketConfigCmekSettings)
-	PutIndexConfigs(value interface{})
+	PutIndexConfigs(value any)
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
@@ -135,17 +135,17 @@ type GoogleLoggingFolderBucketConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionDays()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLoggingFolderBucketConfig
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) CmekSettingsInput() *GoogleL
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IndexConfigs() GoogleLogging
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IndexConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IndexConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"indexConfigsInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
 func NewGoogleLoggingFolderBucketConfig(scope constructs.Construct, id *string, config *GoogleLoggingFolderBucketConfigConfig) GoogleLoggingFolderBucketConfig {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewGoogleLoggingFolderBucketConfig(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewGoogleLoggingFolderBucketConfig_Override(g GoogleLoggingFolderBucketConf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetBucketId(val *string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetBucketId(val *string) {
 	if err := j.validateSetBucketIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetBucketId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetFolder(val *string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig)SetRetentionDays(val *float64) {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) SetRetentionDays(val *float64) {
 	if err := j.validateSetRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func GoogleLoggingFolderBucketConfig_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func GoogleLoggingFolderBucketConfig_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLoggingFolderBucketConfig_IsConstruct(x interface{}) *bool {
+func GoogleLoggingFolderBucketConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingFolderBucketConfig_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func GoogleLoggingFolderBucketConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func GoogleLoggingFolderBucketConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleLoggingFolderBucketConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingFolderBucketConfig_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func GoogleLoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func GoogleLoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleLoggingFolderBucketConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingFolderBucketConfig_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func GoogleLoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1017,18 +1016,18 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) PutCmekSettings(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putCmekSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) PutIndexConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) PutIndexConfigs(value any) {
 	if err := g.validatePutIndexConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putIndexConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1080,8 +1079,8 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ResetRetentionDays() {
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1093,8 +1092,8 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1106,8 +1105,8 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1119,8 +1118,8 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToHclTerraform() interface{}
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1145,8 +1144,8 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1157,4 +1156,3 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

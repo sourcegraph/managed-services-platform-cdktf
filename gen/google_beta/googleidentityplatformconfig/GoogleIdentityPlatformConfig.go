@@ -15,9 +15,9 @@ type GoogleIdentityPlatformConfig interface {
 	AuthorizedDomains() *[]*string
 	SetAuthorizedDomains(val *[]*string)
 	AuthorizedDomainsInput() *[]*string
-	AutodeleteAnonymousUsers() interface{}
-	SetAutodeleteAnonymousUsers(val interface{})
-	AutodeleteAnonymousUsersInput() interface{}
+	AutodeleteAnonymousUsers() any
+	SetAutodeleteAnonymousUsers(val any)
+	AutodeleteAnonymousUsersInput() any
 	BlockingFunctions() GoogleIdentityPlatformConfigBlockingFunctionsOutputReference
 	BlockingFunctionsInput() *GoogleIdentityPlatformConfigBlockingFunctions
 	// Experimental.
@@ -25,15 +25,15 @@ type GoogleIdentityPlatformConfig interface {
 	Client() GoogleIdentityPlatformConfigClientOutputReference
 	ClientInput() *GoogleIdentityPlatformConfigClient
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,13 +70,13 @@ type GoogleIdentityPlatformConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Quota() GoogleIdentityPlatformConfigQuotaOutputReference
 	QuotaInput() *GoogleIdentityPlatformConfigQuota
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SignIn() GoogleIdentityPlatformConfigSignInOutputReference
 	SignInInput() *GoogleIdentityPlatformConfigSignIn
 	SmsRegionConfig() GoogleIdentityPlatformConfigSmsRegionConfigOutputReference
@@ -84,18 +84,18 @@ type GoogleIdentityPlatformConfig interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIdentityPlatformConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleIdentityPlatformConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleIdentityPlatformConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,17 +157,17 @@ type GoogleIdentityPlatformConfig interface {
 	ResetSignIn()
 	ResetSmsRegionConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIdentityPlatformConfig
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) AuthorizedDomainsInput() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsers() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsers() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autodeleteAnonymousUsers",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsers() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autodeleteAnonymousUsersInput",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) ClientInput() *GoogleIdentityPl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) QuotaInput() *GoogleIdentityPla
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) Timeouts() GoogleIdentityPlatfo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -604,7 +604,6 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig {
@@ -617,7 +616,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -630,12 +629,12 @@ func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetAuthorizedDomains(val *[]*string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetAuthorizedDomains(val *[]*string) {
 	if err := j.validateSetAuthorizedDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetAuthorizedDomains(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetAutodeleteAnonymousUsers(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetAutodeleteAnonymousUsers(val any) {
 	if err := j.validateSetAutodeleteAnonymousUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetAutodeleteAnonymousUsers(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetProject(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func GoogleIdentityPlatformConfig_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func GoogleIdentityPlatformConfig_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIdentityPlatformConfig_IsConstruct(x interface{}) *bool {
+func GoogleIdentityPlatformConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIdentityPlatformConfig_IsConstructParameters(x); err != nil {
@@ -794,7 +793,7 @@ func GoogleIdentityPlatformConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func GoogleIdentityPlatformConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIdentityPlatformConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleIdentityPlatformConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIdentityPlatformConfig_IsTerraformElementParameters(x); err != nil {
@@ -813,7 +812,7 @@ func GoogleIdentityPlatformConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func GoogleIdentityPlatformConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIdentityPlatformConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleIdentityPlatformConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIdentityPlatformConfig_IsTerraformResourceParameters(x); err != nil {
@@ -832,7 +831,7 @@ func GoogleIdentityPlatformConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,31 +856,31 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,15 +1008,15 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1036,7 +1035,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,18 +1062,18 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1107,7 +1106,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutBlockingFunctions(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putBlockingFunctions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1118,7 +1117,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutClient(value *GoogleIdentity
 	_jsii_.InvokeVoid(
 		g,
 		"putClient",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1129,7 +1128,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMfa(value *GoogleIdentityPla
 	_jsii_.InvokeVoid(
 		g,
 		"putMfa",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1140,7 +1139,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMonitoring(value *GoogleIden
 	_jsii_.InvokeVoid(
 		g,
 		"putMonitoring",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1151,7 +1150,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMultiTenant(value *GoogleIde
 	_jsii_.InvokeVoid(
 		g,
 		"putMultiTenant",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1162,7 +1161,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityP
 	_jsii_.InvokeVoid(
 		g,
 		"putQuota",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1173,7 +1172,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSignIn(value *GoogleIdentity
 	_jsii_.InvokeVoid(
 		g,
 		"putSignIn",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1184,7 +1183,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSmsRegionConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putSmsRegionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1195,7 +1194,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutTimeouts(value *GoogleIdenti
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1311,8 +1310,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1324,8 +1323,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1337,8 +1336,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1350,8 +1349,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1376,8 +1375,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1388,4 +1387,3 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

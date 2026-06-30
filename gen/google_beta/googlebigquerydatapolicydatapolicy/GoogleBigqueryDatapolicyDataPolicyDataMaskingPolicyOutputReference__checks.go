@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReferen
 
 	return nil
 }
-

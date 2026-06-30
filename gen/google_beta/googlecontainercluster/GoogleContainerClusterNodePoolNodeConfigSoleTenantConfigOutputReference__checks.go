@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) validatePutNodeAffinityParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) validatePutNodeAffinityParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputRe
 
 	return nil
 }
-

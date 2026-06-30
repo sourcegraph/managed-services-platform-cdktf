@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReferencePa
 
 	return nil
 }
-

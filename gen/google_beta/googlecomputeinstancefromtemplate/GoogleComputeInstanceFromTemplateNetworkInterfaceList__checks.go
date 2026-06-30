@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceFromTemplateNetworkInterfaceListParameters(
 
 	return nil
 }
-

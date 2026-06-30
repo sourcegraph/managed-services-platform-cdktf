@@ -21,18 +21,18 @@ type GoogleActiveDirectoryDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	SetCount(val any)
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,11 +74,11 @@ type GoogleActiveDirectoryDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReservedIpRange() *string
 	SetReservedIpRange(val *string)
 	ReservedIpRangeInput() *string
@@ -86,18 +86,18 @@ type GoogleActiveDirectoryDomain interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleActiveDirectoryDomainTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleActiveDirectoryDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleActiveDirectoryDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type GoogleActiveDirectoryDomain interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleActiveDirectoryDomain
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Timeouts() GoogleActiveDirectory
 	return returns
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -562,7 +562,6 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
 func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, config *GoogleActiveDirectoryDomainConfig) GoogleActiveDirectoryDomain {
@@ -575,7 +574,7 @@ func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -588,12 +587,12 @@ func NewGoogleActiveDirectoryDomain_Override(g GoogleActiveDirectoryDomain, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetAdmin(val *string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetAdmin(val *string) {
 	if err := j.validateSetAdminParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetAdmin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetAuthorizedNetworks(val *[]*string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetAuthorizedNetworks(val *[]*string) {
 	if err := j.validateSetAuthorizedNetworksParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetAuthorizedNetworks(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDeletionProtection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDomainName(val *string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetId(val *string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLocations(val *[]*string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetLocations(val *[]*string) {
 	if err := j.validateSetLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetLocations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProject(val *string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetReservedIpRange(val *string) {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) SetReservedIpRange(val *string) {
 	if err := j.validateSetReservedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func GoogleActiveDirectoryDomain_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func GoogleActiveDirectoryDomain_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleActiveDirectoryDomain_IsConstruct(x interface{}) *bool {
+func GoogleActiveDirectoryDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleActiveDirectoryDomain_IsConstructParameters(x); err != nil {
@@ -807,7 +806,7 @@ func GoogleActiveDirectoryDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func GoogleActiveDirectoryDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleActiveDirectoryDomain_IsTerraformElement(x interface{}) *bool {
+func GoogleActiveDirectoryDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleActiveDirectoryDomain_IsTerraformElementParameters(x); err != nil {
@@ -826,7 +825,7 @@ func GoogleActiveDirectoryDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func GoogleActiveDirectoryDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleActiveDirectoryDomain_IsTerraformResource(x interface{}) *bool {
+func GoogleActiveDirectoryDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleActiveDirectoryDomain_IsTerraformResourceParameters(x); err != nil {
@@ -845,7 +844,7 @@ func GoogleActiveDirectoryDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -870,31 +869,31 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,15 +1021,15 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1049,7 +1048,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,18 +1075,18 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1109,7 +1108,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1120,7 +1119,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) PutTimeouts(value *GoogleActiveD
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1188,8 +1187,8 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1201,8 +1200,8 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1214,8 +1213,8 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1227,8 +1226,8 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1253,8 +1252,8 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1265,4 +1264,3 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

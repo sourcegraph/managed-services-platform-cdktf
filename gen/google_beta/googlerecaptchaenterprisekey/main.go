@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webSettings", GoGetter: "WebSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "webSettingsInput", GoGetter: "WebSettingsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,11 +100,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettings",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyAndroidSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyAndroidSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllPackageNames", GoGetter: "AllowAllPackageNames"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAllPackageNamesInput", GoGetter: "AllowAllPackageNamesInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyConfig",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettings",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyIosSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyIosSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllBundleIds", GoGetter: "AllowAllBundleIds"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAllBundleIdsInput", GoGetter: "AllowAllBundleIdsInput"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,11 +188,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptions",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTestingOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyTestingOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testingScoreInput", GoGetter: "TestingScoreInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeouts",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,11 +275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWafSettings",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWafSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyWafSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wafService", GoGetter: "WafService"},
 			_jsii_.MemberProperty{JsiiProperty: "wafServiceInput", GoGetter: "WafServiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,11 +315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettings",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWebSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyWebSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference",
-		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllDomains", GoGetter: "AllowAllDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAllDomainsInput", GoGetter: "AllowAllDomainsInput"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

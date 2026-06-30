@@ -6,9 +6,9 @@ import (
 
 type GoogleAlloydbClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleAlloydbClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the alloydb cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#cluster_id GoogleAlloydbCluster#cluster_id}
@@ -122,7 +122,7 @@ type GoogleAlloydbClusterConfig struct {
 	// Set to true to skip awaiting on the major version upgrade of the cluster. Possible values: true, false Default value: "true".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#skip_await_major_version_upgrade GoogleAlloydbCluster#skip_await_major_version_upgrade}
-	SkipAwaitMajorVersionUpgrade interface{} `field:"optional" json:"skipAwaitMajorVersionUpgrade" yaml:"skipAwaitMajorVersionUpgrade"`
+	SkipAwaitMajorVersionUpgrade any `field:"optional" json:"skipAwaitMajorVersionUpgrade" yaml:"skipAwaitMajorVersionUpgrade"`
 	// The subscrition type of cluster. Possible values: ["TRIAL", "STANDARD"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#subscription_type GoogleAlloydbCluster#subscription_type}
@@ -132,4 +132,3 @@ type GoogleAlloydbClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_cluster#timeouts GoogleAlloydbCluster#timeouts}
 	Timeouts *GoogleAlloydbClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

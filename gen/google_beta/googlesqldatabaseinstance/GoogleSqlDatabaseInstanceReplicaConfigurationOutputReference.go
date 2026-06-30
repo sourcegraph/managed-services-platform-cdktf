@@ -13,9 +13,9 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	CaCertificate() *string
 	SetCaCertificate(val *string)
 	CaCertificateInput() *string
-	CascadableReplica() interface{}
-	SetCascadableReplica(val interface{})
-	CascadableReplicaInput() interface{}
+	CascadableReplica() any
+	SetCascadableReplica(val any)
+	CascadableReplicaInput() any
 	ClientCertificate() *string
 	SetClientCertificate(val *string)
 	ClientCertificateInput() *string
@@ -24,9 +24,9 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	ClientKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,9 +43,9 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	DumpFilePath() *string
 	SetDumpFilePath(val *string)
 	DumpFilePathInput() *string
-	FailoverTarget() interface{}
-	SetFailoverTarget(val interface{})
-	FailoverTargetInput() interface{}
+	FailoverTarget() any
+	SetFailoverTarget(val any)
+	FailoverTargetInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceReplicaConfiguration
@@ -70,13 +70,13 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
-	VerifyServerCertificate() interface{}
-	SetVerifyServerCertificate(val interface{})
-	VerifyServerCertificateInput() interface{}
+	VerifyServerCertificate() any
+	SetVerifyServerCertificate(val any)
+	VerifyServerCertificateInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	ResetVerifyServerCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplica() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplica() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cascadableReplica",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplicaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplicaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cascadableReplicaInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) FailoverTarget() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) FailoverTarget() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failoverTarget",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) FailoverTargetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) FailoverTargetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failoverTargetInput",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) VerifyServerCertificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) VerifyServerCertificate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyServerCertificate",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) VerifyServerCertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) VerifyServerCertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyServerCertificateInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 	return returns
 }
-
 
 func NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference_Override(g 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetCaCertificate(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetCaCertificate(val *string) {
 	if err := j.validateSetCaCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetCascadableReplica(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetCascadableReplica(val any) {
 	if err := j.validateSetCascadableReplicaParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetClientCertificate(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetClientCertificate(val *string) {
 	if err := j.validateSetClientCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetClientKey(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetClientKey(val *string) {
 	if err := j.validateSetClientKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetConnectRetryInterval(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetConnectRetryInterval(val *float64) {
 	if err := j.validateSetConnectRetryIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetDumpFilePath(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetDumpFilePath(val *string) {
 	if err := j.validateSetDumpFilePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetFailoverTarget(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetFailoverTarget(val any) {
 	if err := j.validateSetFailoverTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceReplicaConfiguration) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceReplicaConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetMasterHeartbeatPeriod(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetMasterHeartbeatPeriod(val *float64) {
 	if err := j.validateSetMasterHeartbeatPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetPassword(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetSslCipher(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetSslCipher(val *string) {
 	if err := j.validateSetSslCipherParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetUsername(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetVerifyServerCertificate(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) SetVerifyServerCertificate(val any) {
 	if err := j.validateSetVerifyServerCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,16 +661,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -931,16 +930,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 
 	return returns
 }
-

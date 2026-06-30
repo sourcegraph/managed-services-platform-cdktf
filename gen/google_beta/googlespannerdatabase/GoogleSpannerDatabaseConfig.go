@@ -6,9 +6,9 @@ import (
 
 type GoogleSpannerDatabaseConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleSpannerDatabaseConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The instance to create the database on.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_database#instance GoogleSpannerDatabase#instance}
@@ -62,7 +62,7 @@ type GoogleSpannerDatabaseConfig struct {
 	// When the field is set to false, deleting the database is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Whether drop protection is enabled for this database.
 	//
 	// Defaults to false.
@@ -74,7 +74,7 @@ type GoogleSpannerDatabaseConfig struct {
 	// "deletion_protection" attribute does not provide protection against the deletion of the parent instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_database#enable_drop_protection GoogleSpannerDatabase#enable_drop_protection}
-	EnableDropProtection interface{} `field:"optional" json:"enableDropProtection" yaml:"enableDropProtection"`
+	EnableDropProtection any `field:"optional" json:"enableDropProtection" yaml:"enableDropProtection"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_database#encryption_config GoogleSpannerDatabase#encryption_config}
@@ -101,4 +101,3 @@ type GoogleSpannerDatabaseConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_database#version_retention_period GoogleSpannerDatabase#version_retention_period}
 	VersionRetentionPeriod *string `field:"optional" json:"versionRetentionPeriod" yaml:"versionRetentionPeriod"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappBackup.GoogleNetappBackup",
-		reflect.TypeOf((*GoogleNetappBackup)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeRegion", GoGetter: "VolumeRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeUsageBytes", GoGetter: "VolumeUsageBytes"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappBackup.GoogleNetappBackupConfig",
-		reflect.TypeOf((*GoogleNetappBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappBackup.GoogleNetappBackupTimeouts",
-		reflect.TypeOf((*GoogleNetappBackupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappBackup.GoogleNetappBackupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetappBackupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappBackupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

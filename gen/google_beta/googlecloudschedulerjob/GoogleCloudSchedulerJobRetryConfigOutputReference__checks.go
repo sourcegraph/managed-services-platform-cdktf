@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudSchedulerJobRetryConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJobRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJobRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleCloudSchedulerJobRetryConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
-		reflect.TypeOf((*GoogleApiGatewayApiIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingCondition",
-		reflect.TypeOf((*GoogleApiGatewayApiIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConfig",
-		reflect.TypeOf((*GoogleApiGatewayApiIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiIamBindingConfig](),
 	)
 }

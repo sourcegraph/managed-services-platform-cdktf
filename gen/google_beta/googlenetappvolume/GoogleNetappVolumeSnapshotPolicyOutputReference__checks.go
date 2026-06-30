@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewGoogleNetappVolumeSnapshotPolicyOutputReferenceParameters(terraf
 
 	return nil
 }
-

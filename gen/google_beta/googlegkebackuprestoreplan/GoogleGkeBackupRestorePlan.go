@@ -21,15 +21,15 @@ type GoogleGkeBackupRestorePlan interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,11 +72,11 @@ type GoogleGkeBackupRestorePlan interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestoreConfig() GoogleGkeBackupRestorePlanRestoreConfigOutputReference
 	RestoreConfigInput() *GoogleGkeBackupRestorePlanRestoreConfig
 	State() *string
@@ -85,19 +85,19 @@ type GoogleGkeBackupRestorePlan interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleGkeBackupRestorePlanTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleGkeBackupRestorePlan interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleGkeBackupRestorePlan interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type GoogleGkeBackupRestorePlan interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleGkeBackupRestorePlan
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Timeouts() GoogleGkeBackupRestore
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -572,7 +572,6 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Uid() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource.
 func NewGoogleGkeBackupRestorePlan(scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanConfig) GoogleGkeBackupRestorePlan {
 	_init_.Initialize()
@@ -584,7 +583,7 @@ func NewGoogleGkeBackupRestorePlan(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -597,12 +596,12 @@ func NewGoogleGkeBackupRestorePlan_Override(g GoogleGkeBackupRestorePlan, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetBackupPlan(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetBackupPlan(val *string) {
 	if err := j.validateSetBackupPlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetBackupPlan(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetCluster(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetId(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetName(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetProject(val *string) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -747,7 +746,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlan)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func GoogleGkeBackupRestorePlan_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func GoogleGkeBackupRestorePlan_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleGkeBackupRestorePlan_IsConstruct(x interface{}) *bool {
+func GoogleGkeBackupRestorePlan_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeBackupRestorePlan_IsConstructParameters(x); err != nil {
@@ -805,7 +804,7 @@ func GoogleGkeBackupRestorePlan_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func GoogleGkeBackupRestorePlan_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGkeBackupRestorePlan_IsTerraformElement(x interface{}) *bool {
+func GoogleGkeBackupRestorePlan_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeBackupRestorePlan_IsTerraformElementParameters(x); err != nil {
@@ -824,7 +823,7 @@ func GoogleGkeBackupRestorePlan_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func GoogleGkeBackupRestorePlan_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGkeBackupRestorePlan_IsTerraformResource(x interface{}) *bool {
+func GoogleGkeBackupRestorePlan_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGkeBackupRestorePlan_IsTerraformResourceParameters(x); err != nil {
@@ -843,7 +842,7 @@ func GoogleGkeBackupRestorePlan_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,31 +867,31 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,15 +1019,15 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1047,7 +1046,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1060,7 +1059,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,18 +1073,18 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1107,7 +1106,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1118,7 +1117,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) PutRestoreConfig(value *GoogleGke
 	_jsii_.InvokeVoid(
 		g,
 		"putRestoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1129,7 +1128,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) PutTimeouts(value *GoogleGkeBacku
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1181,8 +1180,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1194,8 +1193,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1207,8 +1206,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1220,8 +1219,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1246,8 +1245,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1258,4 +1257,3 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) ToTerraform() interface{} {
 
 	return returns
 }
-

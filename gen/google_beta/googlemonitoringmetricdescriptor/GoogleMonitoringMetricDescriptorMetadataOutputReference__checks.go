@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptorMetadataOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptorMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptorMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMonitoringMetricDescriptorMetadataOutputReferenceParameter
 
 	return nil
 }
-

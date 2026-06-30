@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceZoneDistributionConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMemorystoreInstanceZoneDistributionConfigOutputReferencePa
 
 	return nil
 }
-

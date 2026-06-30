@@ -16,9 +16,9 @@ type GoogleIapSettingsApplicationSettingsOutputReference interface {
 	AttributePropagationSettingsInput() *GoogleIapSettingsApplicationSettingsAttributePropagationSettings
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleIapSettingsApplicationSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleIapSettingsApplicationSettingsOutputReference interface {
 	ResetCsmSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) Attribut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) Terrafor
 	return returns
 }
 
-
 func NewGoogleIapSettingsApplicationSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIapSettingsApplicationSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleIapSettingsApplicationSettingsOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIapSettings.GoogleIapSettingsApplicationSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleIapSettingsApplicationSettingsOutputReference_Override(g GoogleIap
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIapSettings.GoogleIapSettingsApplicationSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetCookieDomain(val *string) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetCookieDomain(val *string) {
 	if err := j.validateSetCookieDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetCookie
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetInternalValue(val *GoogleIapSettingsApplicationSettings) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetInternalValue(val *GoogleIapSettingsApplicationSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) PutAcces
 	_jsii_.InvokeVoid(
 		g,
 		"putAccessDeniedPageSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) PutAttri
 	_jsii_.InvokeVoid(
 		g,
 		"putAttributePropagationSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) PutCsmSe
 	_jsii_.InvokeVoid(
 		g,
 		"putCsmSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) ResetCsm
 	)
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsOutputReference) ToString
 
 	return returns
 }
-

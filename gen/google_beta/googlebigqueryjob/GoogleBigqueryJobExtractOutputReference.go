@@ -12,9 +12,9 @@ type GoogleBigqueryJobExtractOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type GoogleBigqueryJobExtractOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleBigqueryJobExtract
 	SetInternalValue(val *GoogleBigqueryJobExtract)
-	PrintHeader() interface{}
-	SetPrintHeader(val interface{})
-	PrintHeaderInput() interface{}
+	PrintHeader() any
+	SetPrintHeader(val any)
+	PrintHeaderInput() any
 	SourceModel() GoogleBigqueryJobExtractSourceModelOutputReference
 	SourceModelInput() *GoogleBigqueryJobExtractSourceModel
 	SourceTable() GoogleBigqueryJobExtractSourceTableOutputReference
@@ -56,13 +56,13 @@ type GoogleBigqueryJobExtractOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseAvroLogicalTypes() interface{}
-	SetUseAvroLogicalTypes(val interface{})
-	UseAvroLogicalTypesInput() interface{}
+	UseAvroLogicalTypes() any
+	SetUseAvroLogicalTypes(val any)
+	UseAvroLogicalTypesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type GoogleBigqueryJobExtractOutputReference interface {
 	ResetUseAvroLogicalTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ type jsiiProxy_GoogleBigqueryJobExtractOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) InternalValue() *Goo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PrintHeader() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PrintHeader() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"printHeader",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PrintHeader() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PrintHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PrintHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"printHeaderInput",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) TerraformResource() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useAvroLogicalTypes",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypes(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useAvroLogicalTypesInput",
@@ -336,7 +336,6 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) UseAvroLogicalTypesI
 	)
 	return returns
 }
-
 
 func NewGoogleBigqueryJobExtractOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryJobExtractOutputReference {
 	_init_.Initialize()
@@ -348,7 +347,7 @@ func NewGoogleBigqueryJobExtractOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobExtractOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewGoogleBigqueryJobExtractOutputReference_Override(g GoogleBigqueryJobExtr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobExtractOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetCompression(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetCompression(val *string) {
 	if err := j.validateSetCompressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetCompression(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetDestinationFormat(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetDestinationFormat(val *string) {
 	if err := j.validateSetDestinationFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetDestinationFormat(
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetDestinationUris(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetDestinationUris(val *[]*string) {
 	if err := j.validateSetDestinationUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetDestinationUris(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetFieldDelimiter(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetFieldDelimiter(val *string) {
 	if err := j.validateSetFieldDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetFieldDelimiter(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetInternalValue(val *GoogleBigqueryJobExtract) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetInternalValue(val *GoogleBigqueryJobExtract) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetPrintHeader(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetPrintHeader(val any) {
 	if err := j.validateSetPrintHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetPrintHeader(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference)SetUseAvroLogicalTypes(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) SetUseAvroLogicalTypes(val any) {
 	if err := j.validateSetUseAvroLogicalTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,16 +498,16 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PutSourceModel(value
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceModel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -690,7 +689,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) PutSourceTable(value
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceTable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) ResetUseAvroLogicalT
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) ToString() *string {
 
 	return returns
 }
-

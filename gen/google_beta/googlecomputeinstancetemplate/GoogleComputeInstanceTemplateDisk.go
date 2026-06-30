@@ -1,6 +1,5 @@
 package googlecomputeinstancetemplate
 
-
 type GoogleComputeInstanceTemplateDisk struct {
 	// The architecture of the image. Allowed values are ARM64 or X86_64.
 	//
@@ -9,11 +8,11 @@ type GoogleComputeInstanceTemplateDisk struct {
 	// Whether or not the disk should be auto-deleted. This defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_template#auto_delete GoogleComputeInstanceTemplate#auto_delete}
-	AutoDelete interface{} `field:"optional" json:"autoDelete" yaml:"autoDelete"`
+	AutoDelete any `field:"optional" json:"autoDelete" yaml:"autoDelete"`
 	// Indicates that this is a boot disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_template#boot GoogleComputeInstanceTemplate#boot}
-	Boot interface{} `field:"optional" json:"boot" yaml:"boot"`
+	Boot any `field:"optional" json:"boot" yaml:"boot"`
 	// A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
 	//
 	// If not specified, the server chooses a default device name to apply to this disk.
@@ -114,4 +113,3 @@ type GoogleComputeInstanceTemplateDisk struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_template#type GoogleComputeInstanceTemplate#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

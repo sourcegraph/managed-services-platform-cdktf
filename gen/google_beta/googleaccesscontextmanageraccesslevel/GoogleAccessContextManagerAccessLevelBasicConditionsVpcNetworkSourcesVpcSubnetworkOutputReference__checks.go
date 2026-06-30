@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsVpcNetwor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAccessContextManagerAccessLevelBasicConditionsVpcNetworkSo
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGooglePrivatecaCertificateAuthority_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGooglePrivatecaCertificateAuthority_IsConstructParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateAuthority_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGooglePrivatecaCertificateAuthority_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGooglePrivatecaCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateAuthority_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGooglePrivatecaCertificateAuthority_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGooglePrivatecaCertificateAuthority_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePrivatecaCertificateAuthority_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCertificateAu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -340,7 +340,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCountParamete
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetIgnoreActiveCertificatesOnDeletionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetIgnoreActiveCertificatesOnDeletionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,7 +517,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -563,7 +563,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetProvisionersP
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetSkipGracePeriodParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetSkipGracePeriodParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -609,4 +609,3 @@ func validateNewGooglePrivatecaCertificateAuthorityParameters(scope constructs.C
 
 	return nil
 }
-

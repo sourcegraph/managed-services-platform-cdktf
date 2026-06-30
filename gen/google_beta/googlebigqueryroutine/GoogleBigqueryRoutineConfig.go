@@ -6,9 +6,9 @@ import (
 
 type GoogleBigqueryRoutineConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBigqueryRoutineConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the dataset containing this routine.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_routine#dataset_id GoogleBigqueryRoutine#dataset_id}
@@ -43,7 +43,7 @@ type GoogleBigqueryRoutineConfig struct {
 	// arguments block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_routine#arguments GoogleBigqueryRoutine#arguments}
-	Arguments interface{} `field:"optional" json:"arguments" yaml:"arguments"`
+	Arguments any `field:"optional" json:"arguments" yaml:"arguments"`
 	// If set to DATA_MASKING, the function is validated and made available as a masking function.
 	//
 	// For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
@@ -114,4 +114,3 @@ type GoogleBigqueryRoutineConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_routine#timeouts GoogleBigqueryRoutine#timeouts}
 	Timeouts *GoogleBigqueryRoutineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestCookieParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestCookieParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestHeaderParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestQueryParamParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestQueryParamParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestUriParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validatePutRequestUriParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -362,4 +362,3 @@ func validateNewGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExcl
 
 	return nil
 }
-

@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputRefe
 
 	return nil
 }
-

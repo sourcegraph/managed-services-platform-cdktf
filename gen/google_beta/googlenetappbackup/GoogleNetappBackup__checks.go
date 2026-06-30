@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetappBackup) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappBackup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetappBackup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetappBackup) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappBackup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetappBackup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetappBackup_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleNetappBackup_IsConstructParameters(x interface{}) error {
+func validateGoogleNetappBackup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetappBackup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleNetappBackup_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetappBackup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetappBackup_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleNetappBackup_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetappBackup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleNetappBackup_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappBackup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappBackup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNetappBackup) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappBackup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappBackup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleNetappBackup) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappBackup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetappBackup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewGoogleNetappBackupParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

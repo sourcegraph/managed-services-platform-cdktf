@@ -12,9 +12,9 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference 
 	CreationStack() *[]*string
 	DedicatedResources() GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference
 	DedicatedResourcesInput() *GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources
-	FastTryoutEnabled() interface{}
-	SetFastTryoutEnabled(val interface{})
-	FastTryoutEnabledInput() interface{}
+	FastTryoutEnabled() any
+	SetFastTryoutEnabled(val any)
+	FastTryoutEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfig
@@ -48,7 +48,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference 
 	ResetSystemLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutput
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) FastTryoutEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) FastTryoutEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fastTryoutEnabled",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) FastTryoutEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) FastTryoutEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fastTryoutEnabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return returns
 }
 
-
 func NewGoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiEndpointWithModelGardenDeployment.GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiEndpointWithModelGardenDeployment.GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetFastTryoutEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetFastTryoutEnabled(val any) {
 	if err := j.validateSetFastTryoutEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetInternalValue(val *GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfig) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetInternalValue(val *GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetSystemLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetSystemLabels(val *map[string]*string) {
 	if err := j.validateSetSystemLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	_jsii_.InvokeVoid(
 		g,
 		"putDedicatedResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 
 	return returns
 }
-

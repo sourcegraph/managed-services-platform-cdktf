@@ -1,11 +1,10 @@
 package googleaccesscontextmanagerserviceperimeteringresspolicy
 
-
 type GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo struct {
 	// operations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter_ingress_policy#operations GoogleAccessContextManagerServicePerimeterIngressPolicy#operations}
-	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
+	Operations any `field:"optional" json:"operations" yaml:"operations"`
 	// A list of resources, currently only projects in the form 'projects/<projectnumber>', protected by this 'ServicePerimeter' that are allowed to be accessed by sources defined in the corresponding 'IngressFrom'.
 	//
 	// A request matches if it contains
@@ -21,4 +20,3 @@ type GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter_ingress_policy#roles GoogleAccessContextManagerServicePerimeterIngressPolicy#roles}
 	Roles *[]*string `field:"optional" json:"roles" yaml:"roles"`
 }
-

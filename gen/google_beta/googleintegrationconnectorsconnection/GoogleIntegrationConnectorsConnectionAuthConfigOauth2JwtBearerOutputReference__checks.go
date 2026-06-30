@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBeare
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOu
 
 	return nil
 }
-

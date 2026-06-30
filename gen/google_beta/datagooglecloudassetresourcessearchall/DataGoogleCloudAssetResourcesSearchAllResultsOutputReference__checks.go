@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudAssetResourcesSearchAllResultsOutputReferencePara
 
 	return nil
 }
-

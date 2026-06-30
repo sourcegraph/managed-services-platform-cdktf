@@ -21,29 +21,29 @@ type GoogleMemorystoreInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CrossInstanceReplicationConfig() GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference
 	CrossInstanceReplicationConfigInput() *GoogleMemorystoreInstanceCrossInstanceReplicationConfig
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DesiredAutoCreatedEndpoints() GoogleMemorystoreInstanceDesiredAutoCreatedEndpointsList
-	DesiredAutoCreatedEndpointsInput() interface{}
+	DesiredAutoCreatedEndpointsInput() any
 	DesiredPscAutoConnections() GoogleMemorystoreInstanceDesiredPscAutoConnectionsList
-	DesiredPscAutoConnectionsInput() interface{}
+	DesiredPscAutoConnectionsInput() any
 	DiscoveryEndpoints() GoogleMemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
 	Endpoints() GoogleMemorystoreInstanceEndpointsList
@@ -108,13 +108,13 @@ type GoogleMemorystoreInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscAttachmentDetails() GoogleMemorystoreInstancePscAttachmentDetailsList
 	PscAutoConnections() GoogleMemorystoreInstancePscAutoConnectionsList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
@@ -127,11 +127,11 @@ type GoogleMemorystoreInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleMemorystoreInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitEncryptionMode() *string
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
@@ -143,9 +143,9 @@ type GoogleMemorystoreInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -163,7 +163,7 @@ type GoogleMemorystoreInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -175,7 +175,7 @@ type GoogleMemorystoreInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -184,8 +184,8 @@ type GoogleMemorystoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupConfig(value *GoogleMemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig)
-	PutDesiredAutoCreatedEndpoints(value interface{})
-	PutDesiredPscAutoConnections(value interface{})
+	PutDesiredAutoCreatedEndpoints(value any)
+	PutDesiredPscAutoConnections(value any)
 	PutGcsSource(value *GoogleMemorystoreInstanceGcsSource)
 	PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy)
 	PutManagedBackupSource(value *GoogleMemorystoreInstanceManagedBackupSource)
@@ -217,17 +217,17 @@ type GoogleMemorystoreInstance interface {
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleMemorystoreInstance
@@ -295,8 +295,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) CrossInstanceReplicationConfigInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) DeletionProtectionEnabled() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredAutoCreatedEndpoints() Goog
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredAutoCreatedEndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredAutoCreatedEndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"desiredAutoCreatedEndpointsInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredPscAutoConnections() Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredPscAutoConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) DesiredPscAutoConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"desiredPscAutoConnectionsInput",
@@ -835,8 +835,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -865,8 +865,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) PscAutoConnections() GoogleMemorys
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -955,8 +955,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) TerraformLabels() cdktf.StringMap 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -985,8 +985,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) Timeouts() GoogleMemorystoreInstan
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1055,7 +1055,6 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
@@ -1067,7 +1066,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1080,12 +1079,12 @@ func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetAuthorizationMode(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetAuthorizationMode(val *string) {
 	if err := j.validateSetAuthorizationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetAuthorizationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetDeletionProtectionEnabled(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetEngineConfigs(val *map[string]*string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetEngineConfigs(val *map[string]*string) {
 	if err := j.validateSetEngineConfigsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetEngineConfigs(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetId(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetInstanceId(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetKmsKey(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetLabels(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetMode(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetNodeType(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetProject(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1274,7 +1273,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1285,7 +1284,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetReplicaCount(val *float64) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetReplicaCount(val *float64) {
 	if err := j.validateSetReplicaCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1296,7 +1295,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetReplicaCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetShardCount(val *float64) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetShardCount(val *float64) {
 	if err := j.validateSetShardCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1307,7 +1306,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetShardCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance)SetTransitEncryptionMode(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstance) SetTransitEncryptionMode(val *string) {
 	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1330,7 +1329,7 @@ func GoogleMemorystoreInstance_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1354,7 +1353,7 @@ func GoogleMemorystoreInstance_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleMemorystoreInstance_IsConstruct(x interface{}) *bool {
+func GoogleMemorystoreInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstance_IsConstructParameters(x); err != nil {
@@ -1365,7 +1364,7 @@ func GoogleMemorystoreInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1373,7 +1372,7 @@ func GoogleMemorystoreInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMemorystoreInstance_IsTerraformElement(x interface{}) *bool {
+func GoogleMemorystoreInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstance_IsTerraformElementParameters(x); err != nil {
@@ -1384,7 +1383,7 @@ func GoogleMemorystoreInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1392,7 +1391,7 @@ func GoogleMemorystoreInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMemorystoreInstance_IsTerraformResource(x interface{}) *bool {
+func GoogleMemorystoreInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1403,7 +1402,7 @@ func GoogleMemorystoreInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1428,31 +1427,31 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstance) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMemorystoreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1468,7 +1467,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1484,7 +1483,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1500,7 +1499,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1516,7 +1515,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1532,7 +1531,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1548,7 +1547,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1564,7 +1563,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1580,15 +1579,15 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1607,7 +1606,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1620,7 +1619,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1634,18 +1633,18 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstance) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1656,7 +1655,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1667,7 +1666,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1678,7 +1677,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutAutomatedBackupConfig(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putAutomatedBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1689,29 +1688,29 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutCrossInstanceReplicationConfig(
 	_jsii_.InvokeVoid(
 		g,
 		"putCrossInstanceReplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredAutoCreatedEndpoints(value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredAutoCreatedEndpoints(value any) {
 	if err := g.validatePutDesiredAutoCreatedEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDesiredAutoCreatedEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredPscAutoConnections(value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredPscAutoConnections(value any) {
 	if err := g.validatePutDesiredPscAutoConnectionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDesiredPscAutoConnections",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1722,7 +1721,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutGcsSource(value *GoogleMemoryst
 	_jsii_.InvokeVoid(
 		g,
 		"putGcsSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1733,7 +1732,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutMaintenancePolicy(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1744,7 +1743,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutManagedBackupSource(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putManagedBackupSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1755,7 +1754,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutPersistenceConfig(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putPersistenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1766,7 +1765,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutTimeouts(value *GoogleMemorysto
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1777,7 +1776,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutZoneDistributionConfig(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putZoneDistributionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1965,8 +1964,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetZoneDistributionConfig() {
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1978,8 +1977,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1991,8 +1990,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2004,8 +2003,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2030,8 +2029,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2042,4 +2041,3 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

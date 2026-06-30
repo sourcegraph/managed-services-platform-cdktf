@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validatePutCustomerContactsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validatePutCustomerContactsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetIsAutoScalingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetIsAutoScalingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetIsStorageAutoScalingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetIsStorageAutoScalingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetMtlsConnectionRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) validateSetMtlsConnectionRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,4 +401,3 @@ func validateNewGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferenceP
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DataGoogleDataformRepositoryIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataGoogleDataformRepositoryIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_dataform_repository_iam_policy#repository DataGoogleDataformRepositoryIamPolicy#repository}.
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_dataform_repository_iam_policy#id DataGoogleDataformRepositoryIamPolicy#id}.
@@ -31,4 +31,3 @@ type DataGoogleDataformRepositoryIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_dataform_repository_iam_policy#region DataGoogleDataformRepositoryIamPolicy#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
-

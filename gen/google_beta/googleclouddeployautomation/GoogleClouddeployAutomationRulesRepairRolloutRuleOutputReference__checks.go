@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference) validatePutRepairPhasesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference) validatePutRepairPhasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference
 
 	return nil
 }
-

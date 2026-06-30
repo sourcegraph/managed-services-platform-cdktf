@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadPolicy", GoGetter: "WorkloadPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadPolicyInput", GoGetter: "WorkloadPolicyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyConfig",
-		reflect.TypeOf((*GoogleComputeResourcePolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyDiskConsistencyGroupPolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicyDiskConsistencyGroupPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyDiskConsistencyGroupPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicyGroupPlacementPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyGroupPlacementPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityDomainCount", GoGetter: "AvailabilityDomainCount"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityDomainCountInput", GoGetter: "AvailabilityDomainCountInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmCount", GoGetter: "VmCount"},
 			_jsii_.MemberProperty{JsiiProperty: "vmCountInput", GoGetter: "VmCountInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmStopSchedule", GoGetter: "VmStopSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "vmStopScheduleInput", GoGetter: "VmStopScheduleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,11 +248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -286,11 +286,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -371,11 +371,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -404,7 +404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -412,15 +412,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicySchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicySchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicySchedule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,11 +456,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,7 +496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -532,7 +532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklySchedule", GoGetter: "WeeklySchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyScheduleInput", GoGetter: "WeeklyScheduleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -540,15 +540,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -562,7 +562,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -570,7 +570,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -598,7 +598,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -606,7 +606,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -633,7 +633,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -641,11 +641,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chainName", GoGetter: "ChainName"},
 			_jsii_.MemberProperty{JsiiProperty: "chainNameInput", GoGetter: "ChainNameInput"},
@@ -681,7 +681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -689,11 +689,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyTimeouts",
-		reflect.TypeOf((*GoogleComputeResourcePolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -734,11 +734,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyWorkloadPolicy",
-		reflect.TypeOf((*GoogleComputeResourcePolicyWorkloadPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyWorkloadPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyWorkloadPolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeResourcePolicyWorkloadPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeResourcePolicyWorkloadPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopology", GoGetter: "AcceleratorTopology"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTopologyInput", GoGetter: "AcceleratorTopologyInput"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

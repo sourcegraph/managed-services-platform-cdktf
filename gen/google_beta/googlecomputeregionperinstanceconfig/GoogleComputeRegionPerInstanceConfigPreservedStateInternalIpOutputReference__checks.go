@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutp
 
 	return nil
 }
-

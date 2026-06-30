@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleOrganizationAccessApprovalSettingsTimeoutsOutputReferenceP
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamBinding.GoogleWorkstationsWorkstationConfigIamBinding",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigId", GoGetter: "WorkstationConfigId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigIdInput", GoGetter: "WorkstationConfigIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkstationsWorkstationConfigIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamBinding.GoogleWorkstationsWorkstationConfigIamBindingCondition",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamBinding.GoogleWorkstationsWorkstationConfigIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkstationsWorkstationConfigIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,6 +126,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationConfigIamBinding.GoogleWorkstationsWorkstationConfigIamBindingConfig",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationConfigIamBindingConfig](),
 	)
 }

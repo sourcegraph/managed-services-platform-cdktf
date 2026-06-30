@@ -12,9 +12,9 @@ type GoogleCloudbuildTriggerPubsubConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type GoogleCloudbuildTriggerPubsubConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type GoogleCloudbuildTriggerPubsubConfigOutputReference interface {
 	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) TopicInpu
 	return returns
 }
 
-
 func NewGoogleCloudbuildTriggerPubsubConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildTriggerPubsubConfigOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewGoogleCloudbuildTriggerPubsubConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerPubsubConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewGoogleCloudbuildTriggerPubsubConfigOutputReference_Override(g GoogleClou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerPubsubConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetInternalValue(val *GoogleCloudbuildTriggerPubsubConfig) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetInternalValue(val *GoogleCloudbuildTriggerPubsubConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetService
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -514,16 +513,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) ResetServ
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -542,4 +541,3 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerPubsubConfigOutputReference) ToString(
 
 	return returns
 }
-

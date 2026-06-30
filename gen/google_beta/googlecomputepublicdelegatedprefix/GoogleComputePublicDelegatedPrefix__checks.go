@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputePublicDelegatedPrefix_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleComputePublicDelegatedPrefix_IsConstructParameters(x interface{}) error {
+func validateGoogleComputePublicDelegatedPrefix_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputePublicDelegatedPrefix_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleComputePublicDelegatedPrefix_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputePublicDelegatedPrefix_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputePublicDelegatedPrefix_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleComputePublicDelegatedPrefix_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputePublicDelegatedPrefix_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetAllocatablePre
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetIpCidrRangePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetIsLiveMigrationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetIsLiveMigrationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewGoogleComputePublicDelegatedPrefixParameters(scope constructs.Co
 
 	return nil
 }
-

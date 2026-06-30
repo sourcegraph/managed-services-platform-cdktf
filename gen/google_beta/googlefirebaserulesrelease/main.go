@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
-		reflect.TypeOf((*GoogleFirebaserulesRelease)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesRelease](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesRelease{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseConfig",
-		reflect.TypeOf((*GoogleFirebaserulesReleaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesReleaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeouts",
-		reflect.TypeOf((*GoogleFirebaserulesReleaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesReleaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaserulesReleaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaserulesReleaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaserulesReleaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

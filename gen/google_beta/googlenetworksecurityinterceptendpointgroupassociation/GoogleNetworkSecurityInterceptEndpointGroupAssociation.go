@@ -15,15 +15,15 @@ type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,30 +73,30 @@ type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkSecurityInterceptEndpointGroupAssociation
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Conne
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Const
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Provi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Provi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Timeo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -570,7 +570,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Updat
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupAssociationConfig) GoogleNetworkSecurityInterceptEndpointGroupAssociation {
 	_init_.Initialize()
@@ -582,7 +581,7 @@ func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation(scope constructs.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -595,12 +594,12 @@ func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetCon
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetCou
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetDep
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetFor
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetId(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetInterceptEndpointGroup(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetInterceptEndpointGroup(val *string) {
 	if err := j.validateSetInterceptEndpointGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetInterceptEndpointGroupAssociationId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetInterceptEndpointGroupAssociationId(val *string) {
 	if err := j.validateSetInterceptEndpointGroupAssociationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLab
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLif
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetLoc
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetNet
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetPro
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetPro
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_GenerateConfigForImp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_GenerateConfigForImp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsConstruct(x interface{}) *bool {
+func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityInterceptEndpointGroupAssociation_IsConstructParameters(x); err != nil {
@@ -792,7 +791,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsConstruct(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsConstruct(x interf
 }
 
 // Experimental.
-func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformElementParameters(x); err != nil {
@@ -811,7 +810,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformElement(x
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformElement(x
 }
 
 // Experimental.
-func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -830,7 +829,7 @@ func GoogleNetworkSecurityInterceptEndpointGroupAssociation_IsTerraformResource(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityInterceptEndpointGroupAssociation.GoogleNetworkSecurityInterceptEndpointGroupAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -855,31 +854,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) AddMo
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,15 +1006,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1034,7 +1033,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Impor
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1047,7 +1046,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,18 +1060,18 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) MoveF
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) MoveT
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Overr
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1105,7 +1104,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) PutTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,8 +1156,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1170,8 +1169,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Synth
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1183,8 +1182,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Synth
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1196,8 +1195,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToHcl
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1222,8 +1221,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1234,4 +1233,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) ToTer
 
 	return returns
 }
-

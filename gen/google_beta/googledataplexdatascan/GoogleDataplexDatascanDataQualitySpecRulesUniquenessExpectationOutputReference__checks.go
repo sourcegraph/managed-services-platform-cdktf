@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationO
 
 	return nil
 }
-

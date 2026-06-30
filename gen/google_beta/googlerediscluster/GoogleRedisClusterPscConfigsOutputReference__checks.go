@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterPscConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleRedisClusterPscConfigsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

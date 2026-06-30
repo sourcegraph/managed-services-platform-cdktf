@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfig",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigConfig",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigCsvOptions",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigCsvOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigCsvOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigCsvOptionsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigCsvOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigCsvOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptions",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptionsEndDate",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptionsEndDate)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptionsEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,7 +188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptionsStartDate",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptionsStartDate)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptionsStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptions",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,11 +315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -356,11 +356,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -395,11 +395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigParquetOptions",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigParquetOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigParquetOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigParquetOptionsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigParquetOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigParquetOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigParquetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -431,11 +431,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigTimeouts",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleStorageInsightsReportConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageInsightsReportConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -468,7 +468,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

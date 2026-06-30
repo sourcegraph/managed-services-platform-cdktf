@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfi
 
 	return nil
 }
-

@@ -25,15 +25,15 @@ type GoogleAlloydbBackup interface {
 	ClusterNameInput() *string
 	ClusterUid() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteTime() *string
 	// Experimental.
@@ -86,11 +86,11 @@ type GoogleAlloydbBackup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	SizeBytes() *string
 	State() *string
@@ -98,11 +98,11 @@ type GoogleAlloydbBackup interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleAlloydbBackupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -112,9 +112,9 @@ type GoogleAlloydbBackup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,7 +132,7 @@ type GoogleAlloydbBackup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -144,7 +144,7 @@ type GoogleAlloydbBackup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -165,17 +165,17 @@ type GoogleAlloydbBackup interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleAlloydbBackup
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) ClusterUid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -693,8 +693,8 @@ func (j *jsiiProxy_GoogleAlloydbBackup) Timeouts() GoogleAlloydbBackupTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAlloydbBackup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -743,7 +743,6 @@ func (j *jsiiProxy_GoogleAlloydbBackup) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource.
 func NewGoogleAlloydbBackup(scope constructs.Construct, id *string, config *GoogleAlloydbBackupConfig) GoogleAlloydbBackup {
 	_init_.Initialize()
@@ -755,7 +754,7 @@ func NewGoogleAlloydbBackup(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -768,12 +767,12 @@ func NewGoogleAlloydbBackup_Override(g GoogleAlloydbBackup, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetBackupId(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetBackupId(val *string) {
 	if err := j.validateSetBackupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetClusterName(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -836,7 +835,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -866,7 +865,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetId(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetProject(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -929,7 +928,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbBackup)SetType(val *string) {
+func (j *jsiiProxy_GoogleAlloydbBackup) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func GoogleAlloydbBackup_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func GoogleAlloydbBackup_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleAlloydbBackup_IsConstruct(x interface{}) *bool {
+func GoogleAlloydbBackup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAlloydbBackup_IsConstructParameters(x); err != nil {
@@ -998,7 +997,7 @@ func GoogleAlloydbBackup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func GoogleAlloydbBackup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleAlloydbBackup_IsTerraformElement(x interface{}) *bool {
+func GoogleAlloydbBackup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAlloydbBackup_IsTerraformElementParameters(x); err != nil {
@@ -1017,7 +1016,7 @@ func GoogleAlloydbBackup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func GoogleAlloydbBackup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleAlloydbBackup_IsTerraformResource(x interface{}) *bool {
+func GoogleAlloydbBackup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAlloydbBackup_IsTerraformResourceParameters(x); err != nil {
@@ -1036,7 +1035,7 @@ func GoogleAlloydbBackup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAlloydbBackup.GoogleAlloydbBackup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1061,31 +1060,31 @@ func (g *jsiiProxy_GoogleAlloydbBackup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleAlloydbBackup) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAlloydbBackup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,7 +1132,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,7 +1180,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1197,7 +1196,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,15 +1212,15 @@ func (g *jsiiProxy_GoogleAlloydbBackup) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1240,7 +1239,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1253,7 +1252,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1267,18 +1266,18 @@ func (g *jsiiProxy_GoogleAlloydbBackup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleAlloydbBackup) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1289,7 +1288,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1300,7 +1299,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1311,7 +1310,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) PutEncryptionConfig(value *GoogleAlloydb
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1322,7 +1321,7 @@ func (g *jsiiProxy_GoogleAlloydbBackup) PutTimeouts(value *GoogleAlloydbBackupTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1406,8 +1405,8 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ResetType() {
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1419,8 +1418,8 @@ func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1432,8 +1431,8 @@ func (g *jsiiProxy_GoogleAlloydbBackup) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1445,8 +1444,8 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1471,8 +1470,8 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbBackup) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAlloydbBackup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1483,4 +1482,3 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ToTerraform() interface{} {
 
 	return returns
 }
-

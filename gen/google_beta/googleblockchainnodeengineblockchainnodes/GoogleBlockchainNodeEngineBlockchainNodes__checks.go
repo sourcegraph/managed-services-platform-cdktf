@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleBlockchainNodeEngineBlockchainNodes_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleBlockchainNodeEngineBlockchainNodes_IsConstructParameters(x interface{}) error {
+func validateGoogleBlockchainNodeEngineBlockchainNodes_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleBlockchainNodeEngineBlockchainNodes_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleBlockchainNodeEngineBlockchainNodes_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBlockchainNodeEngineBlockchainNodes_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleBlockchainNodeEngineBlockchainNodes_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleBlockchainNodeEngineBlockchainNodes_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBlockchainNodeEngineBlockchainNodes_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetBlockch
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodes) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleBlockchainNodeEngineBlockchainNodesParameters(scope constr
 
 	return nil
 }
-

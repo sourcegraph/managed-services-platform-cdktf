@@ -6,9 +6,9 @@ import (
 
 type GoogleChronicleReferenceListConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleChronicleReferenceListConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. A user-provided description of the reference list.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_reference_list#description GoogleChronicleReferenceList#description}
@@ -26,7 +26,7 @@ type GoogleChronicleReferenceListConfig struct {
 	// entries block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_reference_list#entries GoogleChronicleReferenceList#entries}
-	Entries interface{} `field:"required" json:"entries" yaml:"entries"`
+	Entries any `field:"required" json:"entries" yaml:"entries"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_reference_list#instance GoogleChronicleReferenceList#instance}
@@ -64,4 +64,3 @@ type GoogleChronicleReferenceListConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_reference_list#timeouts GoogleChronicleReferenceList#timeouts}
 	Timeouts *GoogleChronicleReferenceListTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

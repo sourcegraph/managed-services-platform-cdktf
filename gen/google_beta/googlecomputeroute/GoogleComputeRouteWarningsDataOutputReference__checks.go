@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRouteWarningsDataOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouteWarningsDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouteWarningsDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeRouteWarningsDataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

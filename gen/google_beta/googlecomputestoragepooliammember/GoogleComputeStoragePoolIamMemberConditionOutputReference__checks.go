@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamMemberConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeStoragePoolIamMemberConditionOutputReferenceParamet
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOpti
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleContainerClusterTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

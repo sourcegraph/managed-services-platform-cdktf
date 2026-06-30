@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLookerInstance) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLookerInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLookerInstance) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLookerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLookerInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleLookerInstance_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateGoogleLookerInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleLookerInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func validateGoogleLookerInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleLookerInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLookerInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateGoogleLookerInstance_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleLookerInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLookerInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func validateGoogleLookerInstance_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetConsumerNetworkParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -449,7 +449,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetDeletionPolicyParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetFipsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetPlatformEditionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetPrivateIpEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetPrivateIpEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -575,7 +575,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetPscEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetPscEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -595,7 +595,7 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetPscEnabledParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstance) validateSetPublicIpEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstance) validateSetPublicIpEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -649,4 +649,3 @@ func validateNewGoogleLookerInstanceParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

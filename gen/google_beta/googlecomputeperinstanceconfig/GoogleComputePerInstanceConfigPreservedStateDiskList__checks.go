@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateDiskList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputePerInstanceConfigPreservedStateDiskListParameters(t
 
 	return nil
 }
-

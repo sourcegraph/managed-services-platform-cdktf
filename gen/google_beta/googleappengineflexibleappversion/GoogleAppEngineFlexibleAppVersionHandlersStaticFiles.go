@@ -1,6 +1,5 @@
 package googleappengineflexibleappversion
 
-
 type GoogleAppEngineFlexibleAppVersionHandlersStaticFiles struct {
 	// Whether files should also be uploaded as code data.
 	//
@@ -9,7 +8,7 @@ type GoogleAppEngineFlexibleAppVersionHandlersStaticFiles struct {
 	// uploads are charged against both your code and static data storage resource quotas.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_app_engine_flexible_app_version#application_readable GoogleAppEngineFlexibleAppVersion#application_readable}
-	ApplicationReadable interface{} `field:"optional" json:"applicationReadable" yaml:"applicationReadable"`
+	ApplicationReadable any `field:"optional" json:"applicationReadable" yaml:"applicationReadable"`
 	// Time a static file served by this handler should be cached by web proxies and browsers.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
@@ -36,10 +35,9 @@ type GoogleAppEngineFlexibleAppVersionHandlersStaticFiles struct {
 	// Whether this handler should match the request if the file referenced by the handler does not exist.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_app_engine_flexible_app_version#require_matching_file GoogleAppEngineFlexibleAppVersion#require_matching_file}
-	RequireMatchingFile interface{} `field:"optional" json:"requireMatchingFile" yaml:"requireMatchingFile"`
+	RequireMatchingFile any `field:"optional" json:"requireMatchingFile" yaml:"requireMatchingFile"`
 	// Regular expression that matches the file paths for all files that should be referenced by this handler.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_app_engine_flexible_app_version#upload_path_regex GoogleAppEngineFlexibleAppVersion#upload_path_regex}
 	UploadPathRegex *string `field:"optional" json:"uploadPathRegex" yaml:"uploadPathRegex"`
 }
-

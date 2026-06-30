@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappStoragePool.GoogleNetappStoragePool",
-		reflect.TypeOf((*GoogleNetappStoragePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappStoragePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryInput", GoGetter: "ActiveDirectoryInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappStoragePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -125,15 +125,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig",
-		reflect.TypeOf((*GoogleNetappStoragePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappStoragePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts",
-		reflect.TypeOf((*GoogleNetappStoragePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappStoragePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetappStoragePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappStoragePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappStoragePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -17,8 +17,8 @@ type GoogleAppEngineFlexibleAppVersionHandlersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleAppEngineFlexibleAppVersionHandlersList interface {
 	Get(index *float64) GoogleAppEngineFlexibleAppVersionHandlersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewGoogleAppEngineFlexibleAppVersionHandlersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineFlexibleAppVersionHandlersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleAppEngineFlexibleAppVersionHandlersList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleAppEngineFlexibleAppVersionHandlersList_Override(g GoogleAppEngine
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) AllWithMapKey(
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) Get(index *flo
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList) ToString() *st
 
 	return returns
 }
-

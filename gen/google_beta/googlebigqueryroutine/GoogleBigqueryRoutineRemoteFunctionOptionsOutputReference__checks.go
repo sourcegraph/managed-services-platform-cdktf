@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleBigqueryRoutineRemoteFunctionOptionsOutputReferenceParamet
 
 	return nil
 }
-

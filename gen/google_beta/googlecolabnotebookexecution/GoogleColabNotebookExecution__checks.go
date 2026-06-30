@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleColabNotebookExecution) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabNotebookExecution) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleColabNotebookExecution) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleColabNotebookExecution) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabNotebookExecution) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleColabNotebookExecution) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleColabNotebookExecution_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleColabNotebookExecution_IsConstructParameters(x interface{}) error {
+func validateGoogleColabNotebookExecution_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleColabNotebookExecution_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleColabNotebookExecution_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleColabNotebookExecution_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleColabNotebookExecution_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleColabNotebookExecution_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleColabNotebookExecution_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateGoogleColabNotebookExecution_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -530,4 +530,3 @@ func validateNewGoogleColabNotebookExecutionParameters(scope constructs.Construc
 
 	return nil
 }
-

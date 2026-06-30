@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatch
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesR
 
 	return nil
 }
-

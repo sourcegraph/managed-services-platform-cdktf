@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerVersionList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerVersionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceGroupManagerVersionListParameters(terraform
 
 	return nil
 }
-

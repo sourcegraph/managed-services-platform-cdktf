@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeStoragePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeStoragePoolTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

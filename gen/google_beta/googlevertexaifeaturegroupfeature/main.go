@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroupFeature.GoogleVertexAiFeatureGroupFeature",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupFeature)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupFeature](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionColumnName", GoGetter: "VersionColumnName"},
 			_jsii_.MemberProperty{JsiiProperty: "versionColumnNameInput", GoGetter: "VersionColumnNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroupFeature{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroupFeature.GoogleVertexAiFeatureGroupFeatureConfig",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupFeatureConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupFeatureConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroupFeature.GoogleVertexAiFeatureGroupFeatureTimeouts",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupFeatureTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupFeatureTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroupFeature.GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

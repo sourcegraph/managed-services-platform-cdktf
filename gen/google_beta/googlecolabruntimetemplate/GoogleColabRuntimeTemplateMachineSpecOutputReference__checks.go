@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateMachineSpecOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleColabRuntimeTemplateMachineSpecOutputReferenceParameters(t
 
 	return nil
 }
-

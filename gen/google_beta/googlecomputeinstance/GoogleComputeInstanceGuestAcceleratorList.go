@@ -17,8 +17,8 @@ type GoogleComputeInstanceGuestAcceleratorList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleComputeInstanceGuestAcceleratorList interface {
 	Get(index *float64) GoogleComputeInstanceGuestAcceleratorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleComputeInstanceGuestAcceleratorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceGuestAcceleratorList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleComputeInstanceGuestAcceleratorList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleComputeInstanceGuestAcceleratorList_Override(g GoogleComputeInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) Get(index *float64
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleComputeInstanceGuestAcceleratorList) ToString() *string
 
 	return returns
 }
-

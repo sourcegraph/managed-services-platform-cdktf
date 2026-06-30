@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
-		reflect.TypeOf((*GoogleEndpointsServiceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleEndpointsServiceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEndpointsServiceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBindingCondition",
-		reflect.TypeOf((*GoogleEndpointsServiceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleEndpointsServiceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleEndpointsServiceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEndpointsServiceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEndpointsServiceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBindingConfig",
-		reflect.TypeOf((*GoogleEndpointsServiceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEndpointsServiceIamBindingConfig](),
 	)
 }

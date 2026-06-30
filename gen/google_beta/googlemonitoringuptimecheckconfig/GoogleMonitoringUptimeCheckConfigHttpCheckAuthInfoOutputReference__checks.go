@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReferenc
 
 	return nil
 }
-

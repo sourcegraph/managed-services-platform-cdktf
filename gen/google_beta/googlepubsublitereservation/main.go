@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
-		reflect.TypeOf((*GooglePubsubLiteReservation)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubLiteReservation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubLiteReservation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig",
-		reflect.TypeOf((*GooglePubsubLiteReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubLiteReservationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts",
-		reflect.TypeOf((*GooglePubsubLiteReservationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubLiteReservationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeoutsOutputReference",
-		reflect.TypeOf((*GooglePubsubLiteReservationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubLiteReservationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

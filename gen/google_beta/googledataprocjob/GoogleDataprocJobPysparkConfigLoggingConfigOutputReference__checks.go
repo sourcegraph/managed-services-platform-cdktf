@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocJobPysparkConfigLoggingConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocJobPysparkConfigLoggingConfigOutputReferenceParame
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package googlecomputebackendservice
 
-
 type GoogleComputeBackendServiceCustomMetrics struct {
 	// If true, the metric data is not used for load balancing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#dry_run GoogleComputeBackendService#dry_run}
-	DryRun interface{} `field:"required" json:"dryRun" yaml:"dryRun"`
+	DryRun any `field:"required" json:"dryRun" yaml:"dryRun"`
 	// Name of a custom utilization signal.
 	//
 	// The name must be 1-64 characters
@@ -21,4 +20,3 @@ type GoogleComputeBackendServiceCustomMetrics struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#name GoogleComputeBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
-

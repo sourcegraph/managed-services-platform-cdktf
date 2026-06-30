@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputRefere
 
 	return nil
 }
-

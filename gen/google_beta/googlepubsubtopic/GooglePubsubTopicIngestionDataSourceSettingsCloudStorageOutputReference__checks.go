@@ -139,7 +139,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputRe
 
 	return nil
 }
-

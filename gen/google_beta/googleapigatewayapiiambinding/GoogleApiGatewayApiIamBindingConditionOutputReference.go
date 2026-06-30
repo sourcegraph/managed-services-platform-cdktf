@@ -12,9 +12,9 @@ type GoogleApiGatewayApiIamBindingConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleApiGatewayApiIamBindingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleApiGatewayApiIamBindingConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) TitleI
 	return returns
 }
 
-
 func NewGoogleApiGatewayApiIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiIamBindingConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewGoogleApiGatewayApiIamBindingConditionOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewGoogleApiGatewayApiIamBindingConditionOutputReference_Override(g GoogleA
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetDesc
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetExpr
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetInternalValue(val *GoogleApiGatewayApiIamBindingCondition) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetInternalValue(val *GoogleApiGatewayApiIamBindingCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) ResetD
 	)
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (g *jsiiProxy_GoogleApiGatewayApiIamBindingConditionOutputReference) ToStri
 
 	return returns
 }
-

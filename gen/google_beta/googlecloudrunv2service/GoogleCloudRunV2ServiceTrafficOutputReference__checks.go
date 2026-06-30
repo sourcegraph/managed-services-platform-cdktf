@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleCloudRunV2ServiceTrafficOutputReferenceParameters(terrafor
 
 	return nil
 }
-

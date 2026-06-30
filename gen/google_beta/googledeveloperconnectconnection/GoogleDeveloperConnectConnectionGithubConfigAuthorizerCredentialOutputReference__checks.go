@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredent
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential
 
 	return nil
 }
-

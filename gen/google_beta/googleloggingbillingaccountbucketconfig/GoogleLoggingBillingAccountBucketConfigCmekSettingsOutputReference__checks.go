@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReferen
 
 	return nil
 }
-

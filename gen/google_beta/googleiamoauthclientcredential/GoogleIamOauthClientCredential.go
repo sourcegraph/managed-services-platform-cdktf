@@ -16,22 +16,22 @@ type GoogleIamOauthClientCredential interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientSecret() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -70,26 +70,26 @@ type GoogleIamOauthClientCredential interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIamOauthClientCredentialTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type GoogleIamOauthClientCredential interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleIamOauthClientCredential interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type GoogleIamOauthClientCredential interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIamOauthClientCredential
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) ClientSecret() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) Timeouts() GoogleIamOauthClie
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamOauthClientCredential) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -492,7 +492,6 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential} Resource.
 func NewGoogleIamOauthClientCredential(scope constructs.Construct, id *string, config *GoogleIamOauthClientCredentialConfig) GoogleIamOauthClientCredential {
@@ -505,7 +504,7 @@ func NewGoogleIamOauthClientCredential(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewGoogleIamOauthClientCredential_Override(g GoogleIamOauthClientCredential
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetId(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetOauthclient(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetOauthclient(val *string) {
 	if err := j.validateSetOauthclientParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetOauthclient(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetOauthClientCredentialId(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetOauthClientCredentialId(val *string) {
 	if err := j.validateSetOauthClientCredentialIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetOauthClientCredentialId(val
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetProject(val *string) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func GoogleIamOauthClientCredential_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func GoogleIamOauthClientCredential_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIamOauthClientCredential_IsConstruct(x interface{}) *bool {
+func GoogleIamOauthClientCredential_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamOauthClientCredential_IsConstructParameters(x); err != nil {
@@ -715,7 +714,7 @@ func GoogleIamOauthClientCredential_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func GoogleIamOauthClientCredential_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamOauthClientCredential_IsTerraformElement(x interface{}) *bool {
+func GoogleIamOauthClientCredential_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamOauthClientCredential_IsTerraformElementParameters(x); err != nil {
@@ -734,7 +733,7 @@ func GoogleIamOauthClientCredential_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func GoogleIamOauthClientCredential_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamOauthClientCredential_IsTerraformResource(x interface{}) *bool {
+func GoogleIamOauthClientCredential_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamOauthClientCredential_IsTerraformResourceParameters(x); err != nil {
@@ -753,7 +752,7 @@ func GoogleIamOauthClientCredential_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamOauthClientCredential.GoogleIamOauthClientCredential",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,31 +777,31 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIamOauthClientCredential) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIamOauthClientCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,15 +929,15 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -957,7 +956,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,18 +983,18 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIamOauthClientCredential) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) PutTimeouts(value *GoogleIamO
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1080,8 +1079,8 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1093,8 +1092,8 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1106,8 +1105,8 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1119,8 +1118,8 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1145,8 +1144,8 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamOauthClientCredential) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamOauthClientCredential) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1157,4 +1156,3 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) ToTerraform() interface{} {
 
 	return returns
 }
-

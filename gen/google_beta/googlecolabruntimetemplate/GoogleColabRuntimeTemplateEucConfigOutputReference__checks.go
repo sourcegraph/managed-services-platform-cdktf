@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateSetEucDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) validateSetEucDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleColabRuntimeTemplateEucConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

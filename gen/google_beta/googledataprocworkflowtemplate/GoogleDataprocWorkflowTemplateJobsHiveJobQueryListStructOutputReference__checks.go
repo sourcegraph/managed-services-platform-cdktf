@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputRe
 
 	return nil
 }
-

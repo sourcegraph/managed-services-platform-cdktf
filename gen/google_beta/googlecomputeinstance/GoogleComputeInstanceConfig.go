@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// boot_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#boot_disk GoogleComputeInstance#boot_disk}
@@ -34,7 +34,7 @@ type GoogleComputeInstanceConfig struct {
 	// network_interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#network_interface GoogleComputeInstance#network_interface}
-	NetworkInterface interface{} `field:"required" json:"networkInterface" yaml:"networkInterface"`
+	NetworkInterface any `field:"required" json:"networkInterface" yaml:"networkInterface"`
 	// advanced_machine_features block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#advanced_machine_features GoogleComputeInstance#advanced_machine_features}
@@ -44,15 +44,15 @@ type GoogleComputeInstanceConfig struct {
 	// If you try to update a property that requires stopping the instance without setting this field, the update will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#allow_stopping_for_update GoogleComputeInstance#allow_stopping_for_update}
-	AllowStoppingForUpdate interface{} `field:"optional" json:"allowStoppingForUpdate" yaml:"allowStoppingForUpdate"`
+	AllowStoppingForUpdate any `field:"optional" json:"allowStoppingForUpdate" yaml:"allowStoppingForUpdate"`
 	// attached_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#attached_disk GoogleComputeInstance#attached_disk}
-	AttachedDisk interface{} `field:"optional" json:"attachedDisk" yaml:"attachedDisk"`
+	AttachedDisk any `field:"optional" json:"attachedDisk" yaml:"attachedDisk"`
 	// Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#can_ip_forward GoogleComputeInstance#can_ip_forward}
-	CanIpForward interface{} `field:"optional" json:"canIpForward" yaml:"canIpForward"`
+	CanIpForward any `field:"optional" json:"canIpForward" yaml:"canIpForward"`
 	// confidential_instance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#confidential_instance_config GoogleComputeInstance#confidential_instance_config}
@@ -60,7 +60,7 @@ type GoogleComputeInstanceConfig struct {
 	// Whether deletion protection is enabled on this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#deletion_protection GoogleComputeInstance#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// A brief description of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#description GoogleComputeInstance#description}
@@ -72,11 +72,11 @@ type GoogleComputeInstanceConfig struct {
 	// Whether the instance has virtual displays enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#enable_display GoogleComputeInstance#enable_display}
-	EnableDisplay interface{} `field:"optional" json:"enableDisplay" yaml:"enableDisplay"`
+	EnableDisplay any `field:"optional" json:"enableDisplay" yaml:"enableDisplay"`
 	// guest_accelerator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#guest_accelerator GoogleComputeInstance#guest_accelerator}
-	GuestAccelerator interface{} `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
+	GuestAccelerator any `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
 	// A custom hostname for the instance.
 	//
 	// Must be a fully qualified DNS name and RFC-1035-valid. Valid format is a series of labels 1-63 characters long matching the regular expression [a-z]([-a-z0-9]*[a-z0-9]), concatenated with periods. The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
@@ -152,7 +152,7 @@ type GoogleComputeInstanceConfig struct {
 	// scratch_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#scratch_disk GoogleComputeInstance#scratch_disk}
-	ScratchDisk interface{} `field:"optional" json:"scratchDisk" yaml:"scratchDisk"`
+	ScratchDisk any `field:"optional" json:"scratchDisk" yaml:"scratchDisk"`
 	// service_account block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#service_account GoogleComputeInstance#service_account}
@@ -176,4 +176,3 @@ type GoogleComputeInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#zone GoogleComputeInstance#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

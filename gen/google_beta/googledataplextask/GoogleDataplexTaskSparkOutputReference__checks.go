@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetArchiveUri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleDataplexTaskSparkOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

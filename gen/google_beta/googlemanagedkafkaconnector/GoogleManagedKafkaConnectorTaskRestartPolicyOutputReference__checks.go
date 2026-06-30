@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReferenceParam
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutContainersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutSe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -212,7 +212,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetAn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -293,7 +293,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetEx
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -408,4 +408,3 @@ func validateNewGoogleCloudRunV2ServiceTemplateOutputReferenceParameters(terrafo
 
 	return nil
 }
-

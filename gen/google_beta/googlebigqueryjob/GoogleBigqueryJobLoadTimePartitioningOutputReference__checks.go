@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBigqueryJobLoadTimePartitioningOutputReferenceParameters(t
 
 	return nil
 }
-

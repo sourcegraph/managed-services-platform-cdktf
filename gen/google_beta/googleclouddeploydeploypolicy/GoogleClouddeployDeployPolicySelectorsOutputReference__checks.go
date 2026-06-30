@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleClouddeployDeployPolicySelectorsOutputReferenceParameters(
 
 	return nil
 }
-

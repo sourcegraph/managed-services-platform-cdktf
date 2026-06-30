@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFirebaseAppleAppTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

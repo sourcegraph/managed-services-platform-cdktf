@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeDiskIamBindingConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeDiskIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeDiskIamBindingConditionOutputReferenceParameters(te
 
 	return nil
 }
-

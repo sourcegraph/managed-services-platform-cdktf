@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateAddMoveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateMoveFromIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSecretManagerRegionalSecretVersion_GenerateConfigForImportPar
 	return nil
 }
 
-func validateGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(x interface{}) error {
+func validateGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(x in
 	return nil
 }
 
-func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformElementParamete
 	return nil
 }
 
-func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSecretManagerRegionalSecretVersion_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetDeletion
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewGoogleSecretManagerRegionalSecretVersionParameters(scope constru
 
 	return nil
 }
-

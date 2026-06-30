@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkConnectivityHubRoutingVpcsOutputReferenceParameters
 
 	return nil
 }
-

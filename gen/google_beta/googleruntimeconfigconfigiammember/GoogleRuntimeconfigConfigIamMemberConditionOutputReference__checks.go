@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleRuntimeconfigConfigIamMemberConditionOutputReferenceParame
 
 	return nil
 }
-

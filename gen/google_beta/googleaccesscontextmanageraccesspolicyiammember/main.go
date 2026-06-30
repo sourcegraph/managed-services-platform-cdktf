@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember",
-		reflect.TypeOf((*GoogleAccessContextManagerAccessPolicyIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerAccessPolicyIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerAccessPolicyIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberCondition",
-		reflect.TypeOf((*GoogleAccessContextManagerAccessPolicyIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerAccessPolicyIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberConfig",
-		reflect.TypeOf((*GoogleAccessContextManagerAccessPolicyIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAccessContextManagerAccessPolicyIamMemberConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsHubInstanceActionLastExecuti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApihubPluginInstanceActionsHubInstanceActionLastExecutionO
 
 	return nil
 }
-

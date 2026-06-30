@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeRegionDiskAsyncPrimaryDiskOutputReferenceParameters
 
 	return nil
 }
-

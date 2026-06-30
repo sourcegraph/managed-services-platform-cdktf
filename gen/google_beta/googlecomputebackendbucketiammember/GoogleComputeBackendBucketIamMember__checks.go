@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendBucketIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeBackendBucketIamMember_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleComputeBackendBucketIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeBackendBucketIamMember_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleComputeBackendBucketIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeBackendBucketIamMember_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleComputeBackendBucketIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeBackendBucketIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleComputeBackendBucketIamMember_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleComputeBackendBucketIamMemberParameters(scope constructs.C
 
 	return nil
 }
-

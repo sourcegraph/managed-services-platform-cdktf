@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsSegmentSettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleTranscoderJobConfigMuxStreamsSegmentSettingsOutputReferenc
 
 	return nil
 }
-

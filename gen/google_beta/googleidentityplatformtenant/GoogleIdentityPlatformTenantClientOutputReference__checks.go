@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantClientOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantClientOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantClientOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleIdentityPlatformTenantClientOutputReferenceParameters(terr
 
 	return nil
 }
-

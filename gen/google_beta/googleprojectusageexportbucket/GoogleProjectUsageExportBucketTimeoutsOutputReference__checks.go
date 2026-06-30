@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleProjectUsageExportBucketTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

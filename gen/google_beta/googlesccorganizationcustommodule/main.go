@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModule",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModule)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,19 +81,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleConfig",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfig",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutput",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutput)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputProperties",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputProperties)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueExpression", GoGetter: "ValueExpression"},
 			_jsii_.MemberProperty{JsiiProperty: "valueExpressionInput", GoGetter: "ValueExpressionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpression",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpression)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpression](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -290,11 +290,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigPredicate",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigPredicate)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigPredicate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,11 +337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigResourceSelector",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigResourceSelector)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigResourceSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleCustomConfigResourceSelectorOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleCustomConfigResourceSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleCustomConfigResourceSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigResourceSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,11 +375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleTimeouts",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccOrganizationCustomModule.GoogleSccOrganizationCustomModuleTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSccOrganizationCustomModuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccOrganizationCustomModuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccOrganizationCustomModuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

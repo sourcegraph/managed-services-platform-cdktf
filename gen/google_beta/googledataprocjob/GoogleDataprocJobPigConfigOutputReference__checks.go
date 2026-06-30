@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateSetContinueOnFailureParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobPigConfigOutputReference) validateSetContinueOnFailureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewGoogleDataprocJobPigConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

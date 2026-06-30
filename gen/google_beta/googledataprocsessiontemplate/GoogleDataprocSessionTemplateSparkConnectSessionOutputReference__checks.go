@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateSparkConnectSessionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplateSparkConnectSessionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocSessionTemplateSparkConnectSessionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDataprocSessionTemplateSparkConnectSessionOutputReferenceP
 
 	return nil
 }
-

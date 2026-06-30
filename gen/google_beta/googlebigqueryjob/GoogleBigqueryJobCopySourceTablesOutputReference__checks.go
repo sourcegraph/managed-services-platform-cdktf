@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobCopySourceTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleBigqueryJobCopySourceTablesOutputReferenceParameters(terra
 
 	return nil
 }
-

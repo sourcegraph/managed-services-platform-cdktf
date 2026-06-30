@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -300,4 +300,3 @@ func validateNewGoogleComputeFutureReservationSpecificSkuPropertiesInstancePrope
 
 	return nil
 }
-

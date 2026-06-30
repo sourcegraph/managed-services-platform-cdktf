@@ -6,9 +6,9 @@ import (
 
 type GoogleNetworkServicesHttpRouteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#hostnames GoogleNetworkServicesHttpRoute#hostnames}
@@ -30,7 +30,7 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#rules GoogleNetworkServicesHttpRoute#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#description GoogleNetworkServicesHttpRoute#description}
@@ -71,4 +71,3 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_http_route#timeouts GoogleNetworkServicesHttpRoute#timeouts}
 	Timeouts *GoogleNetworkServicesHttpRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

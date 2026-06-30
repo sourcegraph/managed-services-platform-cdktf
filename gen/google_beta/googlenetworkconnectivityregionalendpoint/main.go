@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityRegionalEndpoint.GoogleNetworkConnectivityRegionalEndpoint",
-		reflect.TypeOf((*GoogleNetworkConnectivityRegionalEndpoint)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityRegionalEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessType", GoGetter: "AccessType"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTypeInput", GoGetter: "AccessTypeInput"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityRegionalEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityRegionalEndpoint.GoogleNetworkConnectivityRegionalEndpointConfig",
-		reflect.TypeOf((*GoogleNetworkConnectivityRegionalEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityRegionalEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityRegionalEndpoint.GoogleNetworkConnectivityRegionalEndpointTimeouts",
-		reflect.TypeOf((*GoogleNetworkConnectivityRegionalEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityRegionalEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityRegionalEndpoint.GoogleNetworkConnectivityRegionalEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkConnectivityRegionalEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityRegionalEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityRegionalEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

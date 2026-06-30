@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceGroupManagerStandbyPolicyOutputReferencePar
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputRe
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,12 +38,12 @@ type GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputRe
 	Statistic() *string
 	SetStatistic(val *string)
 	StatisticInput() *string
-	StrictMaxEnabled() interface{}
-	SetStrictMaxEnabled(val interface{})
-	StrictMaxEnabledInput() interface{}
-	StrictMinEnabled() interface{}
-	SetStrictMinEnabled(val interface{})
-	StrictMinEnabledInput() interface{}
+	StrictMaxEnabled() any
+	SetStrictMaxEnabled(val any)
+	StrictMaxEnabledInput() any
+	StrictMinEnabled() any
+	SetStrictMinEnabled(val any)
+	StrictMinEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputRe
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputRe
 	ResetStrictMinEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectati
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMaxEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMaxEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"strictMaxEnabled",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMaxEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMaxEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"strictMaxEnabledInput",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMinEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMinEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"strictMinEnabled",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMinEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) StrictMinEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"strictMinEnabledInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-
 func NewGoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetInternalValue(val *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetInternalValue(val *GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetMaxValue(val *string) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetMaxValue(val *string) {
 	if err := j.validateSetMaxValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetMinValue(val *string) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetMinValue(val *string) {
 	if err := j.validateSetMinValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetStatistic(val *string) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetStatistic(val *string) {
 	if err := j.validateSetStatisticParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetStrictMaxEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetStrictMaxEnabled(val any) {
 	if err := j.validateSetStrictMaxEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetStrictMinEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetStrictMinEnabled(val any) {
 	if err := j.validateSetStrictMinEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpec
 
 	return returns
 }
-

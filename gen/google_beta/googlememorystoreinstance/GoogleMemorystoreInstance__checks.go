@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleMemorystoreInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleMemorystoreInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -370,7 +370,7 @@ func validateGoogleMemorystoreInstance_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleMemorystoreInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleMemorystoreInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func validateGoogleMemorystoreInstance_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleMemorystoreInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleMemorystoreInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func validateGoogleMemorystoreInstance_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleMemorystoreInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleMemorystoreInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetAuthorizationModeParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -492,7 +492,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetDeletionProtectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -600,7 +600,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -688,4 +688,3 @@ func validateNewGoogleMemorystoreInstanceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

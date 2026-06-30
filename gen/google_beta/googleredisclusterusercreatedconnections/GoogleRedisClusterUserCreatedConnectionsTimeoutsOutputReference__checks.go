@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleRedisClusterUserCreatedConnectionsTimeoutsOutputReferenceP
 
 	return nil
 }
-

@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -306,4 +306,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference
 
 	return nil
 }
-

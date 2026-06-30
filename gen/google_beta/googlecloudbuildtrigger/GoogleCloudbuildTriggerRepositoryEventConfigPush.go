@@ -1,6 +1,5 @@
 package googlecloudbuildtrigger
 
-
 type GoogleCloudbuildTriggerRepositoryEventConfigPush struct {
 	// Regex of branches to match.
 	//
@@ -12,7 +11,7 @@ type GoogleCloudbuildTriggerRepositoryEventConfigPush struct {
 	// If true, only trigger a build if the revision regex does NOT match the git_ref regex.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#invert_regex GoogleCloudbuildTrigger#invert_regex}
-	InvertRegex interface{} `field:"optional" json:"invertRegex" yaml:"invertRegex"`
+	InvertRegex any `field:"optional" json:"invertRegex" yaml:"invertRegex"`
 	// Regex of tags to match.
 	//
 	// The syntax of the regular expressions accepted is the syntax accepted by
@@ -21,4 +20,3 @@ type GoogleCloudbuildTriggerRepositoryEventConfigPush struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#tag GoogleCloudbuildTrigger#tag}
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
-

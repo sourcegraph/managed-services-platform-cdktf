@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleIamDenyPolicyRulesDenyRuleOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamDenyPolicyRulesDenyRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamDenyPolicyRulesDenyRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleIamDenyPolicyRulesDenyRuleOutputReferenceParameters(terraf
 
 	return nil
 }
-

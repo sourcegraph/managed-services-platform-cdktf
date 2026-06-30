@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
 
 	return nil
 }
-

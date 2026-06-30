@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewGoogleComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutpu
 
 	return nil
 }
-

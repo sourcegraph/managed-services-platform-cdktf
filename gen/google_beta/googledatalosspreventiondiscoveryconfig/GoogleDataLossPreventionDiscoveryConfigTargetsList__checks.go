@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigTargetsListParameters(ter
 
 	return nil
 }
-

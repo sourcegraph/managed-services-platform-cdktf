@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePubsubSchemaIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGooglePubsubSchemaIamMember_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGooglePubsubSchemaIamMember_IsConstructParameters(x interface{}) error {
+func validateGooglePubsubSchemaIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGooglePubsubSchemaIamMember_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGooglePubsubSchemaIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePubsubSchemaIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGooglePubsubSchemaIamMember_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGooglePubsubSchemaIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePubsubSchemaIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGooglePubsubSchemaIamMember_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePubsubSchemaIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGooglePubsubSchemaIamMemberParameters(scope constructs.Construct
 
 	return nil
 }
-

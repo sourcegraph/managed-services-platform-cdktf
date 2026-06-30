@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSource",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcGoogleApiSource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSourceConfig",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSourceLoggingConfig",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSourceLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSourceLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSourceLoggingConfigOutputReference",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSourceLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSourceLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcGoogleApiSourceLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSourceTimeouts",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSourceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSourceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcGoogleApiSource.GoogleEventarcGoogleApiSourceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEventarcGoogleApiSourceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleApiSourceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcGoogleApiSourceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

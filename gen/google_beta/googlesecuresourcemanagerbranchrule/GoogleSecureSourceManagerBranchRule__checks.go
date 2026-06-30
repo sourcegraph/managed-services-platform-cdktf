@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSecureSourceManagerBranchRule_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleSecureSourceManagerBranchRule_IsConstructParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerBranchRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSecureSourceManagerBranchRule_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleSecureSourceManagerBranchRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerBranchRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSecureSourceManagerBranchRule_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleSecureSourceManagerBranchRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSecureSourceManagerBranchRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSecureSourceManagerBranchRule_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetAllowStaleReviewsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetAllowStaleReviewsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetBranchRuleIdP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetCountParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,7 +503,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRepositoryIdP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireCommentsResolvedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireCommentsResolvedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -523,7 +523,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireCommen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireLinearHistoryParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireLinearHistoryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -543,7 +543,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequireLinear
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequirePullRequestParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) validateSetRequirePullRequestParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -581,4 +581,3 @@ func validateNewGoogleSecureSourceManagerBranchRuleParameters(scope constructs.C
 
 	return nil
 }
-

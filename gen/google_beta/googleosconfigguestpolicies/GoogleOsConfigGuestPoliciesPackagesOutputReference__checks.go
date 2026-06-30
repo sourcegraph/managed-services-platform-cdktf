@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleOsConfigGuestPoliciesPackagesOutputReferenceParameters(ter
 
 	return nil
 }
-

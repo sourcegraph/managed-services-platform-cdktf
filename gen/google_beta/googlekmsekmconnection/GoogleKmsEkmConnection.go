@@ -15,15 +15,15 @@ type GoogleKmsEkmConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoSpacePath() *string
 	SetCryptoSpacePath(val *string)
@@ -69,28 +69,28 @@ type GoogleKmsEkmConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceResolvers() GoogleKmsEkmConnectionServiceResolversList
-	ServiceResolversInput() interface{}
+	ServiceResolversInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleKmsEkmConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type GoogleKmsEkmConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,14 +120,14 @@ type GoogleKmsEkmConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutServiceResolvers(value interface{})
+	PutServiceResolvers(value any)
 	PutTimeouts(value *GoogleKmsEkmConnectionTimeouts)
 	ResetCryptoSpacePath()
 	ResetEtag()
@@ -138,17 +138,17 @@ type GoogleKmsEkmConnection interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleKmsEkmConnection
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) ServiceResolvers() GoogleKmsEkmConnec
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) ServiceResolversInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) ServiceResolversInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceResolversInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) Timeouts() GoogleKmsEkmConnectionTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_ekm_connection google_kms_ekm_connection} Resource.
 func NewGoogleKmsEkmConnection(scope constructs.Construct, id *string, config *GoogleKmsEkmConnectionConfig) GoogleKmsEkmConnection {
@@ -518,7 +517,7 @@ func NewGoogleKmsEkmConnection(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewGoogleKmsEkmConnection_Override(g GoogleKmsEkmConnection, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetCryptoSpacePath(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetCryptoSpacePath(val *string) {
 	if err := j.validateSetCryptoSpacePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetCryptoSpacePath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetEtag(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetId(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetKeyManagementMode(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetKeyManagementMode(val *string) {
 	if err := j.validateSetKeyManagementModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetKeyManagementMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetName(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetProject(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleKmsEkmConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func GoogleKmsEkmConnection_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func GoogleKmsEkmConnection_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleKmsEkmConnection_IsConstruct(x interface{}) *bool {
+func GoogleKmsEkmConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsEkmConnection_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func GoogleKmsEkmConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func GoogleKmsEkmConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsEkmConnection_IsTerraformElement(x interface{}) *bool {
+func GoogleKmsEkmConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsEkmConnection_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func GoogleKmsEkmConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func GoogleKmsEkmConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsEkmConnection_IsTerraformResource(x interface{}) *bool {
+func GoogleKmsEkmConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsEkmConnection_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func GoogleKmsEkmConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleKmsEkmConnection) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleKmsEkmConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleKmsEkmConnection) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,18 +1029,18 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) PutServiceResolvers(value interface{}) {
+func (g *jsiiProxy_GoogleKmsEkmConnection) PutServiceResolvers(value any) {
 	if err := g.validatePutServiceResolversParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceResolvers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) PutTimeouts(value *GoogleKmsEkmConnec
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,8 +1111,8 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1125,8 +1124,8 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1138,8 +1137,8 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1151,8 +1150,8 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1177,8 +1176,8 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsEkmConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1189,4 +1188,3 @@ func (g *jsiiProxy_GoogleKmsEkmConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

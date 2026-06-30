@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdown
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdown
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewGoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownOut
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerCustomLearnedIpRangesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerCustomLearnedIpRangesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerCustomLearnedIpRangesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRouterPeerCustomLearnedIpRangesListParameters(terra
 
 	return nil
 }
-

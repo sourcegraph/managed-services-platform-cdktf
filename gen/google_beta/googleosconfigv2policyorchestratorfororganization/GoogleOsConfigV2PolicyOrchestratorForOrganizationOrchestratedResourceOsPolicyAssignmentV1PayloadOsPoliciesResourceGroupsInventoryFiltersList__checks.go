@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestrated
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOsConfigV2PolicyOrchestratorForOrganizationOrchestratedRes
 
 	return nil
 }
-

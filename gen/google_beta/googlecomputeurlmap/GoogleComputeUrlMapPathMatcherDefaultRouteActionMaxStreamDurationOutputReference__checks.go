@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDura
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDuratio
 
 	return nil
 }
-

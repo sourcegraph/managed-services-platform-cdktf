@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputRefe
 
 	return nil
 }
-

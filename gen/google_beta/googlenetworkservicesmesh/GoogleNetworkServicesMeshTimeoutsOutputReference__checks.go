@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNetworkServicesMeshTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

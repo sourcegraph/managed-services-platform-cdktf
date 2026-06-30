@@ -12,9 +12,9 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,15 +26,15 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dbs() GoogleComputeImageShieldedInstanceInitialStateDbsList
-	DbsInput() interface{}
+	DbsInput() any
 	Dbxs() GoogleComputeImageShieldedInstanceInitialStateDbxsList
-	DbxsInput() interface{}
+	DbxsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeImageShieldedInstanceInitialState
 	SetInternalValue(val *GoogleComputeImageShieldedInstanceInitialState)
 	Keks() GoogleComputeImageShieldedInstanceInitialStateKeksList
-	KeksInput() interface{}
+	KeksInput() any
 	Pk() GoogleComputeImageShieldedInstanceInitialStatePkOutputReference
 	PkInput() *GoogleComputeImageShieldedInstanceInitialStatePk
 	// Experimental.
@@ -48,7 +48,7 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDbs(value interface{})
-	PutDbxs(value interface{})
-	PutKeks(value interface{})
+	PutDbs(value any)
+	PutDbxs(value any)
+	PutKeks(value any)
 	PutPk(value *GoogleComputeImageShieldedInstanceInitialStatePk)
 	ResetDbs()
 	ResetDbxs()
@@ -79,7 +79,7 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	ResetPk()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) DbsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) DbsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dbsInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) DbxsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) DbxsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dbxsInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) KeksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) KeksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keksInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-
 func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeImageShieldedInstanceInitialStateOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference_Override(g
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetInternalValue(val *GoogleComputeImageShieldedInstanceInitialState) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) SetInternalValue(val *GoogleComputeImageShieldedInstanceInitialState) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,43 +503,43 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutDbs(value interface{}) {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutDbs(value any) {
 	if err := g.validatePutDbsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDbs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutDbxs(value interface{}) {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutDbxs(value any) {
 	if err := g.validatePutDbxsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDbxs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutKeks(value interface{}) {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) PutKeks(value any) {
 	if err := g.validatePutKeksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putKeks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"putPk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 
 	return returns
 }
-

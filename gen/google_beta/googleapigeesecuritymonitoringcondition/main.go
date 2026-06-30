@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringCondition",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringCondition](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityMonitoringCondition{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringConditionConfig",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringConditionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringConditionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringConditionIncludeAllResources",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringConditionIncludeAllResources)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringConditionIncludeAllResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringConditionTimeouts",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringConditionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringConditionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityMonitoringCondition.GoogleApigeeSecurityMonitoringConditionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeSecurityMonitoringConditionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityMonitoringConditionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityMonitoringConditionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

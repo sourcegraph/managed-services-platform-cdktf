@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimi
 
 	return nil
 }
-

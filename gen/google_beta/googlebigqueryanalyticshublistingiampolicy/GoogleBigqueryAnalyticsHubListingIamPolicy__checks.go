@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleBigqueryAnalyticsHubListingIamPolicy_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewGoogleBigqueryAnalyticsHubListingIamPolicyParameters(scope const
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googledataproccluster
 
-
 type GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig struct {
 	// The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 	//
@@ -21,10 +20,9 @@ type GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterC
 	// Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
-	Preemptible interface{} `field:"optional" json:"preemptible" yaml:"preemptible"`
+	Preemptible any `field:"optional" json:"preemptible" yaml:"preemptible"`
 	// Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
-	Spot interface{} `field:"optional" json:"spot" yaml:"spot"`
+	Spot any `field:"optional" json:"spot" yaml:"spot"`
 }
-

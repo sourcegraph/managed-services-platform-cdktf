@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
 type GoogleComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
-	AdminEnabled() interface{}
-	SetAdminEnabled(val interface{})
-	AdminEnabledInput() interface{}
+	AdminEnabled() any
+	SetAdminEnabled(val any)
+	AdminEnabledInput() any
 	AttachmentGroup() *string
 	Bandwidth() *string
 	SetBandwidth(val *string)
@@ -39,15 +39,15 @@ type GoogleComputeInterconnectAttachment interface {
 	CloudRouterIpAddress() *string
 	CloudRouterIpv6Address() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CustomerRouterIpAddress() *string
 	CustomerRouterIpv6Address() *string
@@ -110,11 +110,11 @@ type GoogleComputeInterconnectAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -133,11 +133,11 @@ type GoogleComputeInterconnectAttachment interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeInterconnectAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -148,9 +148,9 @@ type GoogleComputeInterconnectAttachment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -168,7 +168,7 @@ type GoogleComputeInterconnectAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -180,7 +180,7 @@ type GoogleComputeInterconnectAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -213,17 +213,17 @@ type GoogleComputeInterconnectAttachment interface {
 	ResetTimeouts()
 	ResetType()
 	ResetVlanTag8021Q()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeInterconnectAttachment
@@ -231,8 +231,8 @@ type jsiiProxy_GoogleComputeInterconnectAttachment struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminEnabled",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabled() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) AdminEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminEnabledInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CloudRouterIpv6Address()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -801,8 +801,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -811,8 +811,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -941,8 +941,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) TerraformLabels() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -971,8 +971,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Timeouts() GoogleCompute
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1021,7 +1021,6 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) VlanTag8021QInput() *flo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) GoogleComputeInterconnectAttachment {
 	_init_.Initialize()
@@ -1033,7 +1032,7 @@ func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1046,12 +1045,12 @@ func NewGoogleComputeInterconnectAttachment_Override(g GoogleComputeInterconnect
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetAdminEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetAdminEnabled(val any) {
 	if err := j.validateSetAdminEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetAdminEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetBandwidth(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetBandwidth(val *string) {
 	if err := j.validateSetBandwidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetBandwidth(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIpAddress(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCandidateCloudRouterIpAddress(val *string) {
 	if err := j.validateSetCandidateCloudRouterIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIpv6Address(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCandidateCloudRouterIpv6Address(val *string) {
 	if err := j.validateSetCandidateCloudRouterIpv6AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCloudRouterIp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRouterIpAddress(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCandidateCustomerRouterIpAddress(val *string) {
 	if err := j.validateSetCandidateCustomerRouterIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRoute
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRouterIpv6Address(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCandidateCustomerRouterIpv6Address(val *string) {
 	if err := j.validateSetCandidateCustomerRouterIpv6AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateCustomerRoute
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateSubnets(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCandidateSubnets(val *[]*string) {
 	if err := j.validateSetCandidateSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCandidateSubnets(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetDescription(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetEdgeAvailabilityDomain(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetEdgeAvailabilityDomain(val *string) {
 	if err := j.validateSetEdgeAvailabilityDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetEdgeAvailabilityDomain
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetEncryption(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetEncryption(val *string) {
 	if err := j.validateSetEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetEncryption(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetInterconnect(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetInterconnect(val *string) {
 	if err := j.validateSetInterconnectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetInterconnect(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetIpsecInternalAddresses(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetIpsecInternalAddresses(val *[]*string) {
 	if err := j.validateSetIpsecInternalAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetIpsecInternalAddresses
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetLabels(val *map[string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetMtu(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetMtu(val *string) {
 	if err := j.validateSetMtuParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetMtu(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1295,7 +1294,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1306,7 +1305,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1317,7 +1316,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetRouter(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetRouter(val *string) {
 	if err := j.validateSetRouterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1328,7 +1327,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetRouter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetStackType(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetStackType(val *string) {
 	if err := j.validateSetStackTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1339,7 +1338,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetStackType(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetSubnetLength(val *float64) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetSubnetLength(val *float64) {
 	if err := j.validateSetSubnetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1350,7 +1349,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetSubnetLength(val *floa
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetType(val *string) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1361,7 +1360,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachment)SetVlanTag8021Q(val *float64) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) SetVlanTag8021Q(val *float64) {
 	if err := j.validateSetVlanTag8021QParameters(val); err != nil {
 		panic(err)
 	}
@@ -1384,7 +1383,7 @@ func GoogleComputeInterconnectAttachment_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1408,7 +1407,7 @@ func GoogleComputeInterconnectAttachment_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeInterconnectAttachment_IsConstruct(x interface{}) *bool {
+func GoogleComputeInterconnectAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInterconnectAttachment_IsConstructParameters(x); err != nil {
@@ -1419,7 +1418,7 @@ func GoogleComputeInterconnectAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1427,7 +1426,7 @@ func GoogleComputeInterconnectAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeInterconnectAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInterconnectAttachment_IsTerraformElementParameters(x); err != nil {
@@ -1438,7 +1437,7 @@ func GoogleComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1446,7 +1445,7 @@ func GoogleComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleComputeInterconnectAttachment_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeInterconnectAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeInterconnectAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -1457,7 +1456,7 @@ func GoogleComputeInterconnectAttachment_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1482,31 +1481,31 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1522,7 +1521,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1538,7 +1537,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1554,7 +1553,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1570,7 +1569,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1586,7 +1585,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1602,7 +1601,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1618,7 +1617,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetStringAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1634,15 +1633,15 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1661,7 +1660,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1674,7 +1673,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) InterpolationForAttribut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1688,18 +1687,18 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1710,7 +1709,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1721,7 +1720,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1732,7 +1731,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) PutTimeouts(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1920,8 +1919,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetVlanTag8021Q() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1933,8 +1932,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1946,8 +1945,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) SynthesizeHclAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1959,8 +1958,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToHclTerraform() interfa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1985,8 +1984,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1997,4 +1996,3 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ToTerraform() interface{
 
 	return returns
 }
-

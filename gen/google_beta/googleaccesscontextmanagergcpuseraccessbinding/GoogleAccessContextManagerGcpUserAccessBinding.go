@@ -18,15 +18,15 @@ type GoogleAccessContextManagerGcpUserAccessBinding interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,30 +60,30 @@ type GoogleAccessContextManagerGcpUserAccessBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScopedAccessSettings() GoogleAccessContextManagerGcpUserAccessBindingScopedAccessSettingsList
-	ScopedAccessSettingsInput() interface{}
+	ScopedAccessSettingsInput() any
 	SessionSettings() GoogleAccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference
 	SessionSettingsInput() *GoogleAccessContextManagerGcpUserAccessBindingSessionSettings
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleAccessContextManagerGcpUserAccessBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type GoogleAccessContextManagerGcpUserAccessBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,14 +113,14 @@ type GoogleAccessContextManagerGcpUserAccessBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutScopedAccessSettings(value interface{})
+	PutScopedAccessSettings(value any)
 	PutSessionSettings(value *GoogleAccessContextManagerGcpUserAccessBindingSessionSettings)
 	PutTimeouts(value *GoogleAccessContextManagerGcpUserAccessBindingTimeouts)
 	ResetAccessLevels()
@@ -131,17 +131,17 @@ type GoogleAccessContextManagerGcpUserAccessBinding interface {
 	ResetScopedAccessSettings()
 	ResetSessionSettings()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleAccessContextManagerGcpUserAccessBinding
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Connection() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Provisioners(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ScopedAccessS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ScopedAccessSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ScopedAccessSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scopedAccessSettingsInput",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Timeouts() Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) TimeoutsInput
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource.
 func NewGoogleAccessContextManagerGcpUserAccessBinding(scope constructs.Construct, id *string, config *GoogleAccessContextManagerGcpUserAccessBindingConfig) GoogleAccessContextManagerGcpUserAccessBinding {
@@ -471,7 +470,7 @@ func NewGoogleAccessContextManagerGcpUserAccessBinding(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewGoogleAccessContextManagerGcpUserAccessBinding_Override(g GoogleAccessCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetAccessLevels(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetAccessLevels(val *[]*string) {
 	if err := j.validateSetAccessLevelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetAccessLevel
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetConnection(
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetGroupKey(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetGroupKey(val *string) {
 	if err := j.validateSetGroupKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetGroupKey(va
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetOrganizationId(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetOrganizationId(val *string) {
 	if err := j.validateSetOrganizationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetOrganizatio
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleAccessContextManagerGcpUserAccessBinding_IsConstruct(x interface{}) *bool {
+func GoogleAccessContextManagerGcpUserAccessBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x); err != nil {
@@ -648,7 +647,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x); err != nil {
@@ -667,7 +666,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElement(x interfa
 }
 
 // Experimental.
-func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x); err != nil {
@@ -686,7 +685,7 @@ func GoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerGcpUserAccessBinding.GoogleAccessContextManagerGcpUserAccessBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,31 +710,31 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) AddMoveTarget
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,15 +862,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ImportFrom(id
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,18 +916,18 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) MoveFromId(id
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -939,7 +938,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) MoveToId(id *
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -950,18 +949,18 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) OverrideLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) PutScopedAccessSettings(value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) PutScopedAccessSettings(value any) {
 	if err := g.validatePutScopedAccessSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putScopedAccessSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) PutSessionSet
 	_jsii_.InvokeVoid(
 		g,
 		"putSessionSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) PutTimeouts(v
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ResetTimeouts
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeAtt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1061,8 +1060,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) SynthesizeHcl
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1074,8 +1073,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToHclTerrafor
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1100,8 +1099,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToString() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1112,4 +1111,3 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) ToTerraform()
 
 	return returns
 }
-

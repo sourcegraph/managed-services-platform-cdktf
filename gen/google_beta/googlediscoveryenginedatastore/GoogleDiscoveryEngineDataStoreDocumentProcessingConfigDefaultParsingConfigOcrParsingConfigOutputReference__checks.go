@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference) validateSetUseNativeTextParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference) validateSetUseNativeTextParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultPar
 
 	return nil
 }
-

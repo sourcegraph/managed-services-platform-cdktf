@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureviewIamMember.GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureviewIamMember.GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberCondition",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureviewIamMember.GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,6 +126,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureviewIamMember.GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConfig",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberConfig](),
 	)
 }

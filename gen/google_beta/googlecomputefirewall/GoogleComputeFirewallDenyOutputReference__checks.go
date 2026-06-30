@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallDenyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeFirewallDenyOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

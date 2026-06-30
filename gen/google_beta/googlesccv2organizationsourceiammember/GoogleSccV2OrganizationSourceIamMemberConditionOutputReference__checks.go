@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamMemberConditionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleSccV2OrganizationSourceIamMemberConditionOutputReferencePa
 
 	return nil
 }
-

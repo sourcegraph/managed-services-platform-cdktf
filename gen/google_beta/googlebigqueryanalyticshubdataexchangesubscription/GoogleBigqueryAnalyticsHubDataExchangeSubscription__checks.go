@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateA
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_GenerateConfigFo
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsConstructParam
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformEleme
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeSubscription_IsTerraformResou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewGoogleBigqueryAnalyticsHubDataExchangeSubscriptionParameters(sco
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandle",
-		reflect.TypeOf((*GoogleKmsKeyHandle)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyHandle](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsKeyHandle{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandleConfig",
-		reflect.TypeOf((*GoogleKmsKeyHandleConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyHandleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandleTimeouts",
-		reflect.TypeOf((*GoogleKmsKeyHandleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyHandleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsKeyHandle.GoogleKmsKeyHandleTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleKmsKeyHandleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyHandleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsKeyHandleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

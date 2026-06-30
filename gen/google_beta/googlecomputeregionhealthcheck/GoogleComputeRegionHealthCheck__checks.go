@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleComputeRegionHealthCheck_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleComputeRegionHealthCheck_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionHealthCheck_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func validateGoogleComputeRegionHealthCheck_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleComputeRegionHealthCheck_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionHealthCheck_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateGoogleComputeRegionHealthCheck_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleComputeRegionHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionHealthCheck_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetCheckIntervalSecPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -489,7 +489,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -577,4 +577,3 @@ func validateNewGoogleComputeRegionHealthCheckParameters(scope constructs.Constr
 
 	return nil
 }
-

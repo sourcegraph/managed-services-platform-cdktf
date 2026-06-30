@@ -20,15 +20,15 @@ type GoogleBinaryAuthorizationAttestorIamMember interface {
 	Condition() GoogleBinaryAuthorizationAttestorIamMemberConditionOutputReference
 	ConditionInput() *GoogleBinaryAuthorizationAttestorIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type GoogleBinaryAuthorizationAttestorIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleBinaryAuthorizationAttestorIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleBinaryAuthorizationAttestorIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GoogleBinaryAuthorizationAttestorIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBinaryAuthorizationAttestorIamMember
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ConditionInput() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Connection() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) Provisioners() *[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) TerraformResource
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member} Resource.
 func NewGoogleBinaryAuthorizationAttestorIamMember(scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorIamMemberConfig) GoogleBinaryAuthorizationAttestorIamMember {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewGoogleBinaryAuthorizationAttestorIamMember(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewGoogleBinaryAuthorizationAttestorIamMember_Override(g GoogleBinaryAuthor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetAttestor(val *string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetAttestor(val *string) {
 	if err := j.validateSetAttestorParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetAttestor(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetMember(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProject(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetProvisioners(va
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBinaryAuthorizationAttestorIamMember_IsConstruct(x interface{}) *bool {
+func GoogleBinaryAuthorizationAttestorIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBinaryAuthorizationAttestorIamMember_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBinaryAuthorizationAttestorIamMember_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformElement(x interface{}
 }
 
 // Experimental.
-func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBinaryAuthorizationAttestorIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformResource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) AddMoveTarget(mov
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ImportFrom(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) MoveFromId(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) MoveToId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) PutCondition(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) SynthesizeHclAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToHclTerraform() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToString() *strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1060,4 +1059,3 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) ToTerraform() int
 
 	return returns
 }
-

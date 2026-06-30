@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleLookerInstanceAdminSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceAdminSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceAdminSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleLookerInstanceAdminSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

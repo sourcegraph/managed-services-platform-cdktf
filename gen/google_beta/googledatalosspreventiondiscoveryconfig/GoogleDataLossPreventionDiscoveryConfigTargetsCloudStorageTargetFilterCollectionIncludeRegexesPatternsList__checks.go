@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudStorageTar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCollectionIncludeRegexesPatternsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigTargetsCloudStorageTarget
 
 	return nil
 }
-

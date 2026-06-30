@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApigeeSyncAuthorization_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleApigeeSyncAuthorization_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeSyncAuthorization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApigeeSyncAuthorization_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleApigeeSyncAuthorization_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeSyncAuthorization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApigeeSyncAuthorization_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleApigeeSyncAuthorization_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeSyncAuthorization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleApigeeSyncAuthorization_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleApigeeSyncAuthorizationParameters(scope constructs.Constru
 
 	return nil
 }
-

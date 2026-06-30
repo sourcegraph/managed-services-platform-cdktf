@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validatePutEnforceOnKeyConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validatePutEnforceOnKeyConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -302,4 +302,3 @@ func validateNewGoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReferenceP
 
 	return nil
 }
-

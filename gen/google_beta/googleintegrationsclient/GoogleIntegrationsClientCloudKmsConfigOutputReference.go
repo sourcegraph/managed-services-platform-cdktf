@@ -12,9 +12,9 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 	ResetKmsProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ type jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationsClientCloudKmsConfigOutputReference {
 	_init_.Initialize()
 
@@ -274,7 +273,7 @@ func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -286,12 +285,12 @@ func NewGoogleIntegrationsClientCloudKmsConfigOutputReference_Override(g GoogleI
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetInternalValue(val *GoogleIntegrationsClientCloudKmsConfig) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetInternalValue(val *GoogleIntegrationsClientCloudKmsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKey(
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKeyVersion(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetKeyVersion(val *string) {
 	if err := j.validateSetKeyVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKeyV
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsLocation(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetKmsLocation(val *string) {
 	if err := j.validateSetKmsLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsL
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsProjectId(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetKmsProjectId(val *string) {
 	if err := j.validateSetKmsProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsP
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsRing(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetKmsRing(val *string) {
 	if err := j.validateSetKmsRingParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,7 +378,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetKmsR
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,16 +413,16 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -603,16 +602,16 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ResetK
 	)
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -631,4 +630,3 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ToStri
 
 	return returns
 }
-

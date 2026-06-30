@@ -12,9 +12,9 @@ type GoogleContainerClusterPrivateClusterConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type GoogleContainerClusterPrivateClusterConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnablePrivateEndpoint() interface{}
-	SetEnablePrivateEndpoint(val interface{})
-	EnablePrivateEndpointInput() interface{}
-	EnablePrivateNodes() interface{}
-	SetEnablePrivateNodes(val interface{})
-	EnablePrivateNodesInput() interface{}
+	EnablePrivateEndpoint() any
+	SetEnablePrivateEndpoint(val any)
+	EnablePrivateEndpointInput() any
+	EnablePrivateNodes() any
+	SetEnablePrivateNodes(val any)
+	EnablePrivateNodesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterPrivateClusterConfig
@@ -57,7 +57,7 @@ type GoogleContainerClusterPrivateClusterConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type GoogleContainerClusterPrivateClusterConfigOutputReference interface {
 	ResetPrivateEndpointSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEndpoint",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEndpointInput",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateNodes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateNodes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateNodes",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateNodesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) EnablePrivateNodesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateNodesInput",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Te
 	return returns
 }
 
-
 func NewGoogleContainerClusterPrivateClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterPrivateClusterConfigOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewGoogleContainerClusterPrivateClusterConfigOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewGoogleContainerClusterPrivateClusterConfigOutputReference_Override(g Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetEnablePrivateEndpoint(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetEnablePrivateEndpoint(val any) {
 	if err := j.validateSetEnablePrivateEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetEnablePrivateNodes(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetEnablePrivateNodes(val any) {
 	if err := j.validateSetEnablePrivateNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetInternalValue(val *GoogleContainerClusterPrivateClusterConfig) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetInternalValue(val *GoogleContainerClusterPrivateClusterConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetMasterIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetMasterIpv4CidrBlock(val *string) {
 	if err := j.validateSetMasterIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetPrivateEndpointSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetPrivateEndpointSubnetwork(val *string) {
 	if err := j.validateSetPrivateEndpointSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,16 +438,16 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Pu
 	_jsii_.InvokeVoid(
 		g,
 		"putMasterGlobalAccessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -663,16 +662,16 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) To
 
 	return returns
 }
-

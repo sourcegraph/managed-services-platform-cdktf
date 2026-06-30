@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleCloudbuildv2ConnectionGithubConfigOutputReferenceParameter
 
 	return nil
 }
-

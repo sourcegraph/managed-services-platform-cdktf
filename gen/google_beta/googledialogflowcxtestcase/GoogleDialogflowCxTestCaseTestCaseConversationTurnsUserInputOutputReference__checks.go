@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetEnableSentimentAnalysisParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetEnableSentimentAnalysisParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetIsWebhookEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) validateSetIsWebhookEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewGoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutp
 
 	return nil
 }
-

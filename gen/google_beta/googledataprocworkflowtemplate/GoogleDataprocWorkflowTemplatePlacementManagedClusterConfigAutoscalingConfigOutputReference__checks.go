@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutos
 
 	return nil
 }
-

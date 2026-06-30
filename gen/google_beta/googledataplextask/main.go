@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTask",
-		reflect.TypeOf((*GoogleDataplexTask)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -111,15 +111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskConfig",
-		reflect.TypeOf((*GoogleDataplexTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionSpec",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionSpecOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,15 +165,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatus",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatusLatestJob",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatusLatestJob)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatusLatestJob](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatusLatestJobList",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatusLatestJobList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatusLatestJobList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatusLatestJobOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatusLatestJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatusLatestJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatusList",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskExecutionStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionStatusOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskExecutionStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskExecutionStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskExecutionStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -290,19 +290,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebook",
-		reflect.TypeOf((*GoogleDataplexTaskNotebook)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebook](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpec",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecBatch",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecBatch)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecBatchOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,11 +340,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecContainerImage",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecContainerImage)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecContainerImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecContainerImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -388,7 +388,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batch", GoGetter: "Batch"},
 			_jsii_.MemberProperty{JsiiProperty: "batchInput", GoGetter: "BatchInput"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetwork", GoGetter: "VpcNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetworkInput", GoGetter: "VpcNetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,11 +432,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecVpcNetwork",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecVpcNetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecVpcNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -469,7 +469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -477,7 +477,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskNotebookOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskNotebookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskNotebookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskNotebookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -521,19 +521,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSpark",
-		reflect.TypeOf((*GoogleDataplexTaskSpark)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSpark](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpec",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecBatch",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecBatch)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -563,7 +563,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -571,11 +571,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecContainerImage",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecContainerImage)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecContainerImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecContainerImageOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecContainerImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecContainerImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -611,7 +611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecContainerImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -619,7 +619,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batch", GoGetter: "Batch"},
 			_jsii_.MemberProperty{JsiiProperty: "batchInput", GoGetter: "BatchInput"},
@@ -655,7 +655,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetwork", GoGetter: "VpcNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetworkInput", GoGetter: "VpcNetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -663,11 +663,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetwork",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecVpcNetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecVpcNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -700,7 +700,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -708,7 +708,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskSparkOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskSparkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskSparkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -757,7 +757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskSparkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -765,11 +765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskTimeouts",
-		reflect.TypeOf((*GoogleDataplexTaskTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -802,7 +802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -810,11 +810,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskTriggerSpec",
-		reflect.TypeOf((*GoogleDataplexTaskTriggerSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskTriggerSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskTriggerSpecOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskTriggerSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskTriggerSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -852,7 +852,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskTriggerSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

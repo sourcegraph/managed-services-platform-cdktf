@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutput
 
 	return nil
 }
-

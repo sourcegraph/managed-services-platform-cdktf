@@ -17,15 +17,15 @@ type GoogleHealthcareDicomStoreIamMember interface {
 	Condition() GoogleHealthcareDicomStoreIamMemberConditionOutputReference
 	ConditionInput() *GoogleHealthcareDicomStoreIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type GoogleHealthcareDicomStoreIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleHealthcareDicomStoreIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleHealthcareDicomStoreIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type GoogleHealthcareDicomStoreIamMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleHealthcareDicomStoreIamMember
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ConditionInput() *Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member} Resource.
 func NewGoogleHealthcareDicomStoreIamMember(scope constructs.Construct, id *string, config *GoogleHealthcareDicomStoreIamMemberConfig) GoogleHealthcareDicomStoreIamMember {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewGoogleHealthcareDicomStoreIamMember(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewGoogleHealthcareDicomStoreIamMember_Override(g GoogleHealthcareDicomStor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetDicomStoreId(val *string) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetDicomStoreId(val *string) {
 	if err := j.validateSetDicomStoreIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetDicomStoreId(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func GoogleHealthcareDicomStoreIamMember_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func GoogleHealthcareDicomStoreIamMember_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleHealthcareDicomStoreIamMember_IsConstruct(x interface{}) *bool {
+func GoogleHealthcareDicomStoreIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcareDicomStoreIamMember_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func GoogleHealthcareDicomStoreIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func GoogleHealthcareDicomStoreIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleHealthcareDicomStoreIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleHealthcareDicomStoreIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcareDicomStoreIamMember_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func GoogleHealthcareDicomStoreIamMember_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func GoogleHealthcareDicomStoreIamMember_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleHealthcareDicomStoreIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleHealthcareDicomStoreIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleHealthcareDicomStoreIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func GoogleHealthcareDicomStoreIamMember_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetStringAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) InterpolationForAttribut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) PutCondition(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ResetOverrideLogicalId()
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -953,8 +952,8 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -966,8 +965,8 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) SynthesizeHclAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -979,8 +978,8 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToHclTerraform() interfa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1005,8 +1004,8 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1017,4 +1016,3 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) ToTerraform() interface{
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,33 +37,33 @@ type GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference int
 	PhraseMatchersInput() *[]*string
 	QaConfig() GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference
 	QaConfigInput() *GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig
-	RunEntityAnnotator() interface{}
-	SetRunEntityAnnotator(val interface{})
-	RunEntityAnnotatorInput() interface{}
-	RunIntentAnnotator() interface{}
-	SetRunIntentAnnotator(val interface{})
-	RunIntentAnnotatorInput() interface{}
-	RunInterruptionAnnotator() interface{}
-	SetRunInterruptionAnnotator(val interface{})
-	RunInterruptionAnnotatorInput() interface{}
-	RunIssueModelAnnotator() interface{}
-	SetRunIssueModelAnnotator(val interface{})
-	RunIssueModelAnnotatorInput() interface{}
-	RunPhraseMatcherAnnotator() interface{}
-	SetRunPhraseMatcherAnnotator(val interface{})
-	RunPhraseMatcherAnnotatorInput() interface{}
-	RunQaAnnotator() interface{}
-	SetRunQaAnnotator(val interface{})
-	RunQaAnnotatorInput() interface{}
-	RunSentimentAnnotator() interface{}
-	SetRunSentimentAnnotator(val interface{})
-	RunSentimentAnnotatorInput() interface{}
-	RunSilenceAnnotator() interface{}
-	SetRunSilenceAnnotator(val interface{})
-	RunSilenceAnnotatorInput() interface{}
-	RunSummarizationAnnotator() interface{}
-	SetRunSummarizationAnnotator(val interface{})
-	RunSummarizationAnnotatorInput() interface{}
+	RunEntityAnnotator() any
+	SetRunEntityAnnotator(val any)
+	RunEntityAnnotatorInput() any
+	RunIntentAnnotator() any
+	SetRunIntentAnnotator(val any)
+	RunIntentAnnotatorInput() any
+	RunInterruptionAnnotator() any
+	SetRunInterruptionAnnotator(val any)
+	RunInterruptionAnnotatorInput() any
+	RunIssueModelAnnotator() any
+	SetRunIssueModelAnnotator(val any)
+	RunIssueModelAnnotatorInput() any
+	RunPhraseMatcherAnnotator() any
+	SetRunPhraseMatcherAnnotator(val any)
+	RunPhraseMatcherAnnotatorInput() any
+	RunQaAnnotator() any
+	SetRunQaAnnotator(val any)
+	RunQaAnnotatorInput() any
+	RunSentimentAnnotator() any
+	SetRunSentimentAnnotator(val any)
+	RunSentimentAnnotatorInput() any
+	RunSilenceAnnotator() any
+	SetRunSilenceAnnotator(val any)
+	RunSilenceAnnotatorInput() any
+	RunSummarizationAnnotator() any
+	SetRunSummarizationAnnotator(val any)
+	RunSummarizationAnnotatorInput() any
 	SummarizationConfig() GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference
 	SummarizationConfigInput() *GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfig
 	// Experimental.
@@ -77,7 +77,7 @@ type GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference int
 	ResetSummarizationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ type jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runEntityAnnotator",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runEntityAnnotatorInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIntentAnnotator",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIntentAnnotatorInput",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runInterruptionAnnotator",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runInterruptionAnnotatorInput",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIssueModelAnnotator",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIssueModelAnnotatorInput",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runPhraseMatcherAnnotator",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runPhraseMatcherAnnotatorInput",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runQaAnnotator",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runQaAnnotatorInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSentimentAnnotator",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSentimentAnnotatorInput",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSilenceAnnotator",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSilenceAnnotatorInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSummarizationAnnotator",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSummarizationAnnotatorInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-
 func NewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsAnalysisRule.GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContactCenterInsightsAnalysisRule.GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetInternalValue(val *GoogleContactCenterInsightsAnalysisRuleAnnotatorSelector) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetInternalValue(val *GoogleContactCenterInsightsAnalysisRuleAnnotatorSelector) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetIssueModels(val *[]*string) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetIssueModels(val *[]*string) {
 	if err := j.validateSetIssueModelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetPhraseMatchers(val *[]*string) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetPhraseMatchers(val *[]*string) {
 	if err := j.validateSetPhraseMatchersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunEntityAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunEntityAnnotator(val any) {
 	if err := j.validateSetRunEntityAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunIntentAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunIntentAnnotator(val any) {
 	if err := j.validateSetRunIntentAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunInterruptionAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunInterruptionAnnotator(val any) {
 	if err := j.validateSetRunInterruptionAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunIssueModelAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunIssueModelAnnotator(val any) {
 	if err := j.validateSetRunIssueModelAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunPhraseMatcherAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunPhraseMatcherAnnotator(val any) {
 	if err := j.validateSetRunPhraseMatcherAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunQaAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunQaAnnotator(val any) {
 	if err := j.validateSetRunQaAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSentimentAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSentimentAnnotator(val any) {
 	if err := j.validateSetRunSentimentAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSilenceAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSilenceAnnotator(val any) {
 	if err := j.validateSetRunSilenceAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSummarizationAnnotator(val interface{}) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSummarizationAnnotator(val any) {
 	if err := j.validateSetRunSummarizationAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,16 +674,16 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"putQaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"putSummarizationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,16 +973,16 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeRouterPeerAdvertisedIpRangesOutputReferenceParamete
 
 	return nil
 }
-

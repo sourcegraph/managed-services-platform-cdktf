@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigInclud
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeOb
 
 	return nil
 }
-

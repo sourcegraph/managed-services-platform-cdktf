@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance",
-		reflect.TypeOf((*GoogleFirebaseDatabaseInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseDatabaseInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseDatabaseInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceConfig",
-		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseDatabaseInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts",
-		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseDatabaseInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseDatabaseInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseDatabaseInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

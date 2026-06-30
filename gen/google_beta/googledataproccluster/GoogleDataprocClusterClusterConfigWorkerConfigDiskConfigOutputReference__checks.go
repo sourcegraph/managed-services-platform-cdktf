@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputRe
 
 	return nil
 }
-

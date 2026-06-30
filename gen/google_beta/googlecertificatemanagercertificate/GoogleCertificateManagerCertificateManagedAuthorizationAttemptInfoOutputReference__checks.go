@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateManagedAuthorizationAttemp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCertificateManagerCertificateManagedAuthorizationAttemptIn
 
 	return nil
 }
-

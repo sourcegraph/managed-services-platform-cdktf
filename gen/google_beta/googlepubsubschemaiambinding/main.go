@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBinding",
-		reflect.TypeOf((*GooglePubsubSchemaIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubSchemaIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubSchemaIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition",
-		reflect.TypeOf((*GooglePubsubSchemaIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubSchemaIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConditionOutputReference",
-		reflect.TypeOf((*GooglePubsubSchemaIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubSchemaIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GooglePubsubSchemaIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig",
-		reflect.TypeOf((*GooglePubsubSchemaIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GooglePubsubSchemaIamBindingConfig](),
 	)
 }

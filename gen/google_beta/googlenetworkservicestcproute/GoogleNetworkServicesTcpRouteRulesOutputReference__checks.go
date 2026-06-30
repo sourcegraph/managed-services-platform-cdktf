@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validatePutMatchesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validatePutMatchesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewGoogleNetworkServicesTcpRouteRulesOutputReferenceParameters(terr
 
 	return nil
 }
-

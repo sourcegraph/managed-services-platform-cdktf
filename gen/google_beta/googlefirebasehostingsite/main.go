@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
-		reflect.TypeOf((*GoogleFirebaseHostingSite)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingSite](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingSite{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteConfig",
-		reflect.TypeOf((*GoogleFirebaseHostingSiteConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingSiteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeouts",
-		reflect.TypeOf((*GoogleFirebaseHostingSiteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingSiteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseHostingSiteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingSiteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingSiteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

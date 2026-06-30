@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerAwsClusterAuthorizationAdminUsersListParameters(t
 
 	return nil
 }
-

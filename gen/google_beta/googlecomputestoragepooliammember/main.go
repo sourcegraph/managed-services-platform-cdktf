@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamMember.GoogleComputeStoragePoolIamMember",
-		reflect.TypeOf((*GoogleComputeStoragePoolIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamMember.GoogleComputeStoragePoolIamMemberCondition",
-		reflect.TypeOf((*GoogleComputeStoragePoolIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamMember.GoogleComputeStoragePoolIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleComputeStoragePoolIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeStoragePoolIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamMember.GoogleComputeStoragePoolIamMemberConfig",
-		reflect.TypeOf((*GoogleComputeStoragePoolIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeStoragePoolIamMemberConfig](),
 	)
 }

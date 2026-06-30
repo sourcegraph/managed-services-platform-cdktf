@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetGenerateTroubleshootingUriParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetGenerateTroubleshootingUriParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetRemediationTokenGenerationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetRemediationTokenGenerationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutp
 
 	return nil
 }
-

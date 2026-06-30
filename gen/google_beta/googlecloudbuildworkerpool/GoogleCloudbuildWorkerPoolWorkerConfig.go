@@ -1,6 +1,5 @@
 package googlecloudbuildworkerpool
 
-
 type GoogleCloudbuildWorkerPoolWorkerConfig struct {
 	// Size of the disk attached to the worker, in GB.
 	//
@@ -17,6 +16,5 @@ type GoogleCloudbuildWorkerPoolWorkerConfig struct {
 	// If true, workers are created without any public address, which prevents network egress to public IPs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_worker_pool#no_external_ip GoogleCloudbuildWorkerPool#no_external_ip}
-	NoExternalIp interface{} `field:"optional" json:"noExternalIp" yaml:"noExternalIp"`
+	NoExternalIp any `field:"optional" json:"noExternalIp" yaml:"noExternalIp"`
 }
-

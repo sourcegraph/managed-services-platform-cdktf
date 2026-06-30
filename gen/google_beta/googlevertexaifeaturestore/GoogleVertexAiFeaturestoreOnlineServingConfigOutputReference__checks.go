@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleVertexAiFeaturestoreOnlineServingConfigOutputReferencePara
 
 	return nil
 }
-

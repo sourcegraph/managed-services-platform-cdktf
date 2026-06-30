@@ -6,9 +6,9 @@ import (
 
 type GoogleApiGatewayGatewayConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleApiGatewayGatewayConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource name of the API Config for this Gateway.
 	//
 	// Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}.
@@ -58,4 +58,3 @@ type GoogleApiGatewayGatewayConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
 	Timeouts *GoogleApiGatewayGatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleIdentityPlatformTenantOauthIdpConfig_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetClient
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetDispla
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewGoogleIdentityPlatformTenantOauthIdpConfigParameters(scope const
 
 	return nil
 }
-

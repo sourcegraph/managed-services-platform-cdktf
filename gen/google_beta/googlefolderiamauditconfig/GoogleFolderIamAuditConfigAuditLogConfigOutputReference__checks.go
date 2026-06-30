@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFolderIamAuditConfigAuditLogConfigOutputReferenceParameter
 
 	return nil
 }
-

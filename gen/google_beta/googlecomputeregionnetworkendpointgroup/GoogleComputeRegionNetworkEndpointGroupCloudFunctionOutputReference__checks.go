@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputRefere
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsAes128OutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsAes128OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsAes128OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleTranscoderJobConfigEncryptionsAes128OutputReferenceParamet
 
 	return nil
 }
-

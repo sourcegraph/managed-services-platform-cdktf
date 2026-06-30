@@ -1,6 +1,5 @@
 package googlecomputeregionbackendservice
 
-
 type GoogleComputeRegionBackendServiceCdnPolicy struct {
 	// cache_key_policy block.
 	//
@@ -27,11 +26,11 @@ type GoogleComputeRegionBackendServiceCdnPolicy struct {
 	// Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#negative_caching GoogleComputeRegionBackendService#negative_caching}
-	NegativeCaching interface{} `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
+	NegativeCaching any `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
 	// negative_caching_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#negative_caching_policy GoogleComputeRegionBackendService#negative_caching_policy}
-	NegativeCachingPolicy interface{} `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
+	NegativeCachingPolicy any `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
 	// Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#serve_while_stale GoogleComputeRegionBackendService#serve_while_stale}
@@ -51,4 +50,3 @@ type GoogleComputeRegionBackendServiceCdnPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#signed_url_cache_max_age_sec GoogleComputeRegionBackendService#signed_url_cache_max_age_sec}
 	SignedUrlCacheMaxAgeSec *float64 `field:"optional" json:"signedUrlCacheMaxAgeSec" yaml:"signedUrlCacheMaxAgeSec"`
 }
-

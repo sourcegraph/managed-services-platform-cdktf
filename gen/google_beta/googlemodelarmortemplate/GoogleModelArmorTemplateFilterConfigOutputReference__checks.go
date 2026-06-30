@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleModelArmorTemplateFilterConfigOutputReferenceParameters(te
 
 	return nil
 }
-

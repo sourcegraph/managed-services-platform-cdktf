@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscription",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscription)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,19 +102,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionConfig",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDataset",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDataset)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDataset](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReference](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReferenceOutputReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetDatasetReferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,7 +150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetOutputReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionDestinationDatasetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMap",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMap)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapList",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapOutputReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedDatasetMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResources",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResources)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesList",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesOutputReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionLinkedResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,11 +316,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeouts",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryAnalyticsHubDataExchangeSubscription.GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscriptionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

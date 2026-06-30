@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleCloudAssetFolderFeedTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type GoogleNetworkConnectivitySpoke interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -83,31 +83,31 @@ type GoogleNetworkConnectivitySpoke interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reasons() GoogleNetworkConnectivitySpokeReasonsList
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkConnectivitySpokeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UniqueId() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleNetworkConnectivitySpoke interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type GoogleNetworkConnectivitySpoke interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type GoogleNetworkConnectivitySpoke interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkConnectivitySpoke
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) TerraformLabels() cdktf.Strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) Timeouts() GoogleNetworkConne
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -692,7 +692,6 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *GoogleNetworkConnectivitySpokeConfig) GoogleNetworkConnectivitySpoke {
 	_init_.Initialize()
@@ -704,7 +703,7 @@ func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -717,12 +716,12 @@ func NewGoogleNetworkConnectivitySpoke_Override(g GoogleNetworkConnectivitySpoke
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -771,7 +770,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetGroup(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetHub(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetHub(val *string) {
 	if err := j.validateSetHubParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetHub(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLabels(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -867,7 +866,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpoke)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func GoogleNetworkConnectivitySpoke_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func GoogleNetworkConnectivitySpoke_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
+func GoogleNetworkConnectivitySpoke_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivitySpoke_IsConstructParameters(x); err != nil {
@@ -925,7 +924,7 @@ func GoogleNetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func GoogleNetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkConnectivitySpoke_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivitySpoke_IsTerraformElementParameters(x); err != nil {
@@ -944,7 +943,7 @@ func GoogleNetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func GoogleNetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkConnectivitySpoke_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivitySpoke_IsTerraformResourceParameters(x); err != nil {
@@ -963,7 +962,7 @@ func GoogleNetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -988,31 +987,31 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,15 +1139,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1167,7 +1166,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1194,18 +1193,18 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedInterconnectAttachme
 	_jsii_.InvokeVoid(
 		g,
 		"putLinkedInterconnectAttachments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,7 +1248,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedProducerVpcNetwork(v
 	_jsii_.InvokeVoid(
 		g,
 		"putLinkedProducerVpcNetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,7 +1259,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedRouterApplianceInsta
 	_jsii_.InvokeVoid(
 		g,
 		"putLinkedRouterApplianceInstances",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1271,7 +1270,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedVpcNetwork(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putLinkedVpcNetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1282,7 +1281,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutLinkedVpnTunnels(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putLinkedVpnTunnels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1293,7 +1292,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) PutTimeouts(value *GoogleNetw
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1393,8 +1392,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1406,8 +1405,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1419,8 +1418,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1432,8 +1431,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1458,8 +1457,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1470,4 +1469,3 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) ToTerraform() interface{} {
 
 	return returns
 }
-

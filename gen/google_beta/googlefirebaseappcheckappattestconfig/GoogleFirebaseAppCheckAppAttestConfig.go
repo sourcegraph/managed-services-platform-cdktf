@@ -18,15 +18,15 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,19 +57,19 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleFirebaseAppCheckAppAttestConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TokenTtl() *string
 	SetTokenTtl(val *string)
 	TokenTtlInput() *string
@@ -77,9 +77,9 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type GoogleFirebaseAppCheckAppAttestConfig interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTokenTtl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleFirebaseAppCheckAppAttestConfig
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) Timeouts() GoogleFireb
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TokenTtlInput() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
 func NewGoogleFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckAppAttestConfigConfig) GoogleFirebaseAppCheckAppAttestConfig {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewGoogleFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewGoogleFirebaseAppCheckAppAttestConfig_Override(g GoogleFirebaseAppCheckA
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetAppId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -491,7 +490,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProject(val *string) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig)SetTokenTtl(val *string) {
+func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SetTokenTtl(val *string) {
 	if err := j.validateSetTokenTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleFirebaseAppCheckAppAttestConfig_IsConstruct(x interface{}) *bool {
+func GoogleFirebaseAppCheckAppAttestConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseAppCheckAppAttestConfig_IsConstructParameters(x); err != nil {
@@ -601,7 +600,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseAppCheckAppAttestConfig_IsTerraformElementParameters(x); err != nil {
@@ -620,7 +619,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFirebaseAppCheckAppAttestConfig_IsTerraformResourceParameters(x); err != nil {
@@ -639,7 +638,7 @@ func GoogleFirebaseAppCheckAppAttestConfig_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckAppAttestConfig.GoogleFirebaseAppCheckAppAttestConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,31 +663,31 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetNumberListAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetStringAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,15 +815,15 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) GetStringMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) InterpolationForAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,18 +869,18 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -892,7 +891,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) PutTimeouts(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -958,8 +957,8 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ResetTokenTtl() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -971,8 +970,8 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeAttributes()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -984,8 +983,8 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) SynthesizeHclAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -997,8 +996,8 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToHclTerraform() inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1023,8 +1022,8 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1035,4 +1034,3 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) ToTerraform() interfac
 
 	return returns
 }
-

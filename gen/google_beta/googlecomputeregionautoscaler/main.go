@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscaler",
-		reflect.TypeOf((*GoogleComputeRegionAutoscaler)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscaler](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscaler{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicy",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilization",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilization)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilization",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilization)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyMetric",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyMetric)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,15 +307,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControl",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControl)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicas",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicas)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicasOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -384,7 +384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeWindowSecInput", GoGetter: "TimeWindowSecInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -392,15 +392,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControl",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControl)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -430,7 +430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -438,7 +438,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -469,7 +469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeWindowSecInput", GoGetter: "TimeWindowSecInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScaleInControlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -477,11 +477,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -503,7 +503,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -544,7 +544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -552,15 +552,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerConfig",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerTimeouts",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionAutoscaler.GoogleComputeRegionAutoscalerTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionAutoscalerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionAutoscalerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionAutoscalerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

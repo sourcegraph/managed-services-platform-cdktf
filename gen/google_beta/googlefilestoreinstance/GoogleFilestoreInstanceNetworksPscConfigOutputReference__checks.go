@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksPscConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFilestoreInstanceNetworksPscConfigOutputReferenceParameter
 
 	return nil
 }
-

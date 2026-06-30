@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySl
 
 	return nil
 }
-

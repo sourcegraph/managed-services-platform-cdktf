@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAge
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentO
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkEdgeSecurityService.GoogleComputeNetworkEdgeSecurityService",
-		reflect.TypeOf((*GoogleComputeNetworkEdgeSecurityService)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkEdgeSecurityService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkEdgeSecurityService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkEdgeSecurityService.GoogleComputeNetworkEdgeSecurityServiceConfig",
-		reflect.TypeOf((*GoogleComputeNetworkEdgeSecurityServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkEdgeSecurityServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeNetworkEdgeSecurityService.GoogleComputeNetworkEdgeSecurityServiceTimeouts",
-		reflect.TypeOf((*GoogleComputeNetworkEdgeSecurityServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkEdgeSecurityServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeNetworkEdgeSecurityService.GoogleComputeNetworkEdgeSecurityServiceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeNetworkEdgeSecurityServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeNetworkEdgeSecurityServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeNetworkEdgeSecurityServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

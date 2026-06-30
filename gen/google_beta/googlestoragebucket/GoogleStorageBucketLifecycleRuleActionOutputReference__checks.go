@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleStorageBucketLifecycleRuleActionOutputReferenceParameters(
 
 	return nil
 }
-

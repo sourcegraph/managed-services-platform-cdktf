@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
-		reflect.TypeOf((*GoogleVertexAiMetadataStore)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiMetadataStore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreConfig",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpec",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiMetadataStoreEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreState",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreState)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreStateList)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiMetadataStoreStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiMetadataStoreStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,11 +188,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeouts",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleVertexAiMetadataStoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiMetadataStoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiMetadataStoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

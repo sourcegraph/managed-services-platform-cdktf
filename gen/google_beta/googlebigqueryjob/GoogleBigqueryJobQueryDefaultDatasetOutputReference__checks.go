@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryDefaultDatasetOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryDefaultDatasetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryDefaultDatasetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBigqueryJobQueryDefaultDatasetOutputReferenceParameters(te
 
 	return nil
 }
-

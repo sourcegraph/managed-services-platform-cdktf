@@ -19,15 +19,15 @@ type GoogleComputeSslCertificate interface {
 	CertificateId() *float64
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,27 +71,27 @@ type GoogleComputeSslCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeSslCertificateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleComputeSslCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleComputeSslCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type GoogleComputeSslCertificate interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeSslCertificate
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) CertificateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) Timeouts() GoogleComputeSslCerti
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSslCertificate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -515,7 +515,6 @@ func (j *jsiiProxy_GoogleComputeSslCertificate) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_ssl_certificate google_compute_ssl_certificate} Resource.
 func NewGoogleComputeSslCertificate(scope constructs.Construct, id *string, config *GoogleComputeSslCertificateConfig) GoogleComputeSslCertificate {
@@ -528,7 +527,7 @@ func NewGoogleComputeSslCertificate(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -541,12 +540,12 @@ func NewGoogleComputeSslCertificate_Override(g GoogleComputeSslCertificate, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetCertificate(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetNamePrefix(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetPrivateKey(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetPrivateKey(val *string) {
 	if err := j.validateSetPrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_GoogleComputeSslCertificate)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSslCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeSslCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func GoogleComputeSslCertificate_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func GoogleComputeSslCertificate_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeSslCertificate_IsConstruct(x interface{}) *bool {
+func GoogleComputeSslCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeSslCertificate_IsConstructParameters(x); err != nil {
@@ -738,7 +737,7 @@ func GoogleComputeSslCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func GoogleComputeSslCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeSslCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeSslCertificate_IsTerraformElementParameters(x); err != nil {
@@ -757,7 +756,7 @@ func GoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func GoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeSslCertificate_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeSslCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeSslCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -776,7 +775,7 @@ func GoogleComputeSslCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,31 +800,31 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeSslCertificate) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeSslCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,15 +952,15 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -980,7 +979,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -993,7 +992,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,18 +1006,18 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeSslCertificate) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) PutTimeouts(value *GoogleCompute
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,8 +1110,8 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1124,8 +1123,8 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1137,8 +1136,8 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1150,8 +1149,8 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1176,8 +1175,8 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSslCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeSslCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1188,4 +1187,3 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

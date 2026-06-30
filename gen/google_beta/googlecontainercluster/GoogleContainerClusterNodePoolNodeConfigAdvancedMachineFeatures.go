@@ -1,6 +1,5 @@
 package googlecontainercluster
 
-
 type GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures struct {
 	// The number of threads per physical core.
 	//
@@ -11,10 +10,9 @@ type GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures struct {
 	// Whether the node should have nested virtualization enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#enable_nested_virtualization GoogleContainerCluster#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#performance_monitoring_unit GoogleContainerCluster#performance_monitoring_unit}
 	PerformanceMonitoringUnit *string `field:"optional" json:"performanceMonitoringUnit" yaml:"performanceMonitoringUnit"`
 }
-

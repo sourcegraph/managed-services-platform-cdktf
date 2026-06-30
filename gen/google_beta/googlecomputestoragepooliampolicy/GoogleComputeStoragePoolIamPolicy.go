@@ -15,15 +15,15 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,15 +60,15 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zone() *string
@@ -78,9 +78,9 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type GoogleComputeStoragePoolIamPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeStoragePoolIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_storage_pool_iam_policy google_compute_storage_pool_iam_policy} Resource.
 func NewGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeStoragePoolIamPolicyConfig) GoogleComputeStoragePoolIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewGoogleComputeStoragePoolIamPolicy(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewGoogleComputeStoragePoolIamPolicy_Override(g GoogleComputeStoragePoolIam
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetPolicyData(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy)SetZone(val *string) {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func GoogleComputeStoragePoolIamPolicy_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func GoogleComputeStoragePoolIamPolicy_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeStoragePoolIamPolicy_IsConstruct(x interface{}) *bool {
+func GoogleComputeStoragePoolIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeStoragePoolIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func GoogleComputeStoragePoolIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func GoogleComputeStoragePoolIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeStoragePoolIamPolicy_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeStoragePoolIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeStoragePoolIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func GoogleComputeStoragePoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func GoogleComputeStoragePoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeStoragePoolIamPolicy_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeStoragePoolIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeStoragePoolIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func GoogleComputeStoragePoolIamPolicy_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeStoragePoolIamPolicy.GoogleComputeStoragePoolIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -853,7 +852,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -962,8 +961,8 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -975,8 +974,8 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -988,8 +987,8 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1014,8 +1013,8 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1026,4 +1025,3 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamPolicy) ToTerraform() interface{} 
 
 	return returns
 }
-

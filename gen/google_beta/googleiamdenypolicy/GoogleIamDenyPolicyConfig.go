@@ -6,9 +6,9 @@ import (
 
 type GoogleIamDenyPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleIamDenyPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_deny_policy#name GoogleIamDenyPolicy#name}
@@ -30,7 +30,7 @@ type GoogleIamDenyPolicyConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_deny_policy#rules GoogleIamDenyPolicy#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// The display name of the rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_deny_policy#display_name GoogleIamDenyPolicy#display_name}
@@ -45,4 +45,3 @@ type GoogleIamDenyPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_deny_policy#timeouts GoogleIamDenyPolicy#timeouts}
 	Timeouts *GoogleIamDenyPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

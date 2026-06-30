@@ -18,9 +18,9 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	AdditionalUserLabelsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableStreamingEngine() interface{}
-	SetEnableStreamingEngine(val interface{})
-	EnableStreamingEngineInput() interface{}
+	EnableStreamingEngine() any
+	SetEnableStreamingEngine(val any)
+	EnableStreamingEngineInput() any
 	FlexrsGoal() *string
 	SetFlexrsGoal(val *string)
 	FlexrsGoalInput() *string
@@ -88,7 +88,7 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) EnableStreamingEngine() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) EnableStreamingEngine() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStreamingEngine",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) EnableStreamingEngineInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) EnableStreamingEngineInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStreamingEngineInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	return returns
 }
 
-
 func NewGoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference {
 	_init_.Initialize()
 
@@ -541,7 +540,7 @@ func NewGoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParam
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataPipelinePipeline.GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewGoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParam
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataPipelinePipeline.GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetAdditionalExperiments(val *[]*string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetAdditionalExperiments(val *[]*string) {
 	if err := j.validateSetAdditionalExperimentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetAdditionalUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetAdditionalUserLabels(val *map[string]*string) {
 	if err := j.validateSetAdditionalUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetEnableStreamingEngine(val interface{}) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetEnableStreamingEngine(val any) {
 	if err := j.validateSetEnableStreamingEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetFlexrsGoal(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetFlexrsGoal(val *string) {
 	if err := j.validateSetFlexrsGoalParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetInternalValue(val *GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetInternalValue(val *GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetIpConfiguration(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetIpConfiguration(val *string) {
 	if err := j.validateSetIpConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetMaxWorkers(val *float64) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetMaxWorkers(val *float64) {
 	if err := j.validateSetMaxWorkersParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetNumWorkers(val *float64) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetNumWorkers(val *float64) {
 	if err := j.validateSetNumWorkersParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetTempLocation(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetTempLocation(val *string) {
 	if err := j.validateSetTempLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetWorkerRegion(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetWorkerRegion(val *string) {
 	if err := j.validateSetWorkerRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetWorkerZone(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetWorkerZone(val *string) {
 	if err := j.validateSetWorkerZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)SetZone(val *string) {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,16 +801,16 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1103,16 +1102,16 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 	)
 }
 
-func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1131,4 +1130,3 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest
 
 	return returns
 }
-

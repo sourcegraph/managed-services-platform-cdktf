@@ -12,9 +12,9 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,11 +26,11 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference interfa
 	// Experimental.
 	CreationStack() *[]*string
 	Extensions() GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList
-	ExtensionsInput() interface{}
+	ExtensionsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MatchCondition() GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference
 	MatchConditionInput() *GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCondition
 	Name() *string
@@ -47,7 +47,7 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,11 +68,11 @@ type GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExtensions(value interface{})
+	PutExtensions(value any)
 	PutMatchCondition(value *GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCondition)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) ExtensionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) ExtensionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"extensionsInput",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	return returns
 }
 
-
 func NewGoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewGoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewGoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,16 +321,16 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,21 +487,21 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) PutExtensions(value interface{}) {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) PutExtensions(value any) {
 	if err := g.validatePutExtensionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putExtensions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -513,20 +512,20 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"putMatchCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (g *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputRef
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOut
 
 	return nil
 }
-

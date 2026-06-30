@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubWorkloadTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleApphubWorkloadTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

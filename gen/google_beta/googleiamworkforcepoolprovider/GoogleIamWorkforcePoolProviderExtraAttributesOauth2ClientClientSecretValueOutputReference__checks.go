@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClie
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientS
 
 	return nil
 }
-

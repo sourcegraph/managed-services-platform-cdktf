@@ -1,6 +1,5 @@
 package googlecloudrunv2workerpool
 
-
 type GoogleCloudRunV2WorkerPoolTemplate struct {
 	// Unstructured key value map that may be set by external tools to store and arbitrary metadata.
 	//
@@ -16,7 +15,7 @@ type GoogleCloudRunV2WorkerPoolTemplate struct {
 	// containers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#containers GoogleCloudRunV2WorkerPool#containers}
-	Containers interface{} `field:"optional" json:"containers" yaml:"containers"`
+	Containers any `field:"optional" json:"containers" yaml:"containers"`
 	// A reference to a customer managed encryption key (CMEK) to use to encrypt this container image.
 	//
 	// For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
@@ -36,7 +35,7 @@ type GoogleCloudRunV2WorkerPoolTemplate struct {
 	// True if GPU zonal redundancy is disabled on this revision.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled GoogleCloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
-	GpuZonalRedundancyDisabled interface{} `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
+	GpuZonalRedundancyDisabled any `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
 	// Unstructured key value map that can be used to organize and categorize objects.
 	//
 	// User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
@@ -66,10 +65,9 @@ type GoogleCloudRunV2WorkerPoolTemplate struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#volumes GoogleCloudRunV2WorkerPool#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 	// vpc_access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_worker_pool#vpc_access GoogleCloudRunV2WorkerPool#vpc_access}
 	VpcAccess *GoogleCloudRunV2WorkerPoolTemplateVpcAccess `field:"optional" json:"vpcAccess" yaml:"vpcAccess"`
 }
-

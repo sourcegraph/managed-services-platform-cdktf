@@ -15,9 +15,9 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	ArchitectureInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableConfidentialCompute() interface{}
-	SetEnableConfidentialCompute(val interface{})
-	EnableConfidentialComputeInput() interface{}
+	EnableConfidentialCompute() any
+	SetEnableConfidentialCompute(val any)
+	EnableConfidentialComputeInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -80,7 +80,7 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference in
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) EnableConfidentialCompute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) EnableConfidentialCompute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) EnableConfidentialComputeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) EnableConfidentialComputeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialComputeInput",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
-
 func NewGoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference {
 	_init_.Initialize()
 
@@ -493,7 +492,7 @@ func NewGoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewGoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetArchitecture(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetEnableConfidentialCompute(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetEnableConfidentialCompute(val any) {
 	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetInternalValue(val *GoogleComputeInstanceFromTemplateBootDiskInitializeParams) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetInternalValue(val *GoogleComputeInstanceFromTemplateBootDiskInitializeParams) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetProvisionedIops(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetProvisionedIops(val *float64) {
 	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetProvisionedThroughput(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetProvisionedThroughput(val *float64) {
 	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetResourceManagerTags(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetResourceManagerTags(val *map[string]*string) {
 	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetResourcePolicies(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetResourcePolicies(val *[]*string) {
 	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetSize(val *float64) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetSnapshot(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetSnapshot(val *string) {
 	if err := j.validateSetSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetStoragePool(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetStoragePool(val *string) {
 	if err := j.validateSetStoragePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,16 +709,16 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceImageEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceSnapshotEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,16 +1016,16 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutp
 
 	return returns
 }
-

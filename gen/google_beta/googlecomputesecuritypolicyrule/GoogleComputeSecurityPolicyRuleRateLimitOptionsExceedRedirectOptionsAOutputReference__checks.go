@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOpt
 
 	return nil
 }
-

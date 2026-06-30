@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceScratchDiskList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceScratchDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceScratchDiskListParameters(terraformResource
 
 	return nil
 }
-

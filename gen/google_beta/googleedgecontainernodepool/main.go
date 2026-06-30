@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePool",
-		reflect.TypeOf((*GoogleEdgecontainerNodePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerNodePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolConfig",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolLocalDiskEncryption",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolLocalDiskEncryption)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolLocalDiskEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerNodePoolLocalDiskEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolNodeConfig",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolNodeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolNodeConfigOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolNodeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolNodeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerNodePoolNodeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,11 +184,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolTimeouts",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEdgecontainerNodePool.GoogleEdgecontainerNodePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEdgecontainerNodePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEdgecontainerNodePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEdgecontainerNodePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

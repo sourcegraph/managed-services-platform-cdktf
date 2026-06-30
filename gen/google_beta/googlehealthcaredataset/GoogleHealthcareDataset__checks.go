@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareDataset) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareDataset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareDataset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareDataset) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareDataset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleHealthcareDataset_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleHealthcareDataset_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareDataset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleHealthcareDataset_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleHealthcareDataset_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareDataset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleHealthcareDataset_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleHealthcareDataset_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareDataset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleHealthcareDataset_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDataset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDataset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleHealthcareDataset) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDataset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDataset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleHealthcareDataset) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDataset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDataset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewGoogleHealthcareDatasetParameters(scope constructs.Construct, id
 
 	return nil
 }
-

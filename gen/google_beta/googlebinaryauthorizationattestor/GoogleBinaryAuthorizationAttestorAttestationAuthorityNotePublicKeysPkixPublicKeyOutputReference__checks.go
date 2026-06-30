@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePubl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicK
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigActionsPubSubNotification
 
 	return nil
 }
-

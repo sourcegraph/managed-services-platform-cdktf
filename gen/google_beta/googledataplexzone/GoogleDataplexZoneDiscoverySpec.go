@@ -1,11 +1,10 @@
 package googledataplexzone
 
-
 type GoogleDataplexZoneDiscoverySpec struct {
 	// Required. Whether discovery is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_zone#enabled GoogleDataplexZone#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// csv_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_zone#csv_options GoogleDataplexZone#csv_options}
@@ -33,4 +32,3 @@ type GoogleDataplexZoneDiscoverySpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_zone#schedule GoogleDataplexZone#schedule}
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 }
-

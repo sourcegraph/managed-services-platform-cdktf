@@ -12,9 +12,9 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,19 +46,19 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseDataBoost() interface{}
-	SetUseDataBoost(val interface{})
-	UseDataBoostInput() interface{}
-	UseParallelism() interface{}
-	SetUseParallelism(val interface{})
-	UseParallelismInput() interface{}
-	UseServerlessAnalytics() interface{}
-	SetUseServerlessAnalytics(val interface{})
-	UseServerlessAnalyticsInput() interface{}
+	UseDataBoost() any
+	SetUseDataBoost(val any)
+	UseDataBoostInput() any
+	UseParallelism() any
+	SetUseParallelism(val any)
+	UseParallelismInput() any
+	UseServerlessAnalytics() any
+	SetUseServerlessAnalytics(val any)
+	UseServerlessAnalyticsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	ResetUseServerlessAnalytics()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoost() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoost() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDataBoost",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataB
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoostInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoostInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDataBoostInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataB
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParallelism() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParallelism() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useParallelism",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParal
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParallelismInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParallelismInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useParallelismInput",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseParal
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalytics() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalytics() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useServerlessAnalytics",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalyticsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalyticsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useServerlessAnalyticsInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseServe
 	)
 	return returns
 }
-
 
 func NewGoogleBigqueryConnectionCloudSpannerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryConnectionCloudSpannerOutputReference {
 	_init_.Initialize()
@@ -300,7 +299,7 @@ func NewGoogleBigqueryConnectionCloudSpannerOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewGoogleBigqueryConnectionCloudSpannerOutputReference_Override(g GoogleBig
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDatabase(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDataba
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDatabaseRole(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetDatabaseRole(val *string) {
 	if err := j.validateSetDatabaseRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDataba
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetInternalValue(val *GoogleBigqueryConnectionCloudSpanner) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetInternalValue(val *GoogleBigqueryConnectionCloudSpanner) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetMaxParallelism(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetMaxParallelism(val *float64) {
 	if err := j.validateSetMaxParallelismParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetMaxPar
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUseDataBoost(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetUseDataBoost(val any) {
 	if err := j.validateSetUseDataBoostParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUseDat
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUseParallelism(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetUseParallelism(val any) {
 	if err := j.validateSetUseParallelismParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUsePar
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUseServerlessAnalytics(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) SetUseServerlessAnalytics(val any) {
 	if err := j.validateSetUseServerlessAnalyticsParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ResetUse
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ToString
 
 	return returns
 }
-

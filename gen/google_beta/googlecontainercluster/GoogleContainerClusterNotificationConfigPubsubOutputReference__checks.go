@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewGoogleContainerClusterNotificationConfigPubsubOutputReferencePar
 
 	return nil
 }
-

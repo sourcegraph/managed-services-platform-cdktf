@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutInitializationActionParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutInitializationActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -408,4 +408,3 @@ func validateNewGoogleDataprocClusterClusterConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

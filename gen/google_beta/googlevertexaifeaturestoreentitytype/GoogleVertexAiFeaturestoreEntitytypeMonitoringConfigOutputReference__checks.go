@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRefere
 
 	return nil
 }
-

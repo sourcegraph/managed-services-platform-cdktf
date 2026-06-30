@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleLoggingBillingAccountExclusion_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountExclusion_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountExclusion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleLoggingBillingAccountExclusion_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountExclusion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleLoggingBillingAccountExclusion_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountExclusion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetBillingAccou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetDescriptionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewGoogleLoggingBillingAccountExclusionParameters(scope constructs.
 
 	return nil
 }
-

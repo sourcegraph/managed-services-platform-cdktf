@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validatePutVersionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validatePutVersionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputRef
 
 	return nil
 }
-

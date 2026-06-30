@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueRetryConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleCloudTasksQueueRetryConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

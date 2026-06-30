@@ -1,6 +1,5 @@
 package googlemonitoringalertpolicy
 
-
 type GoogleMonitoringAlertPolicyDocumentation struct {
 	// The text of the documentation, interpreted according to mimeType.
 	//
@@ -13,7 +12,7 @@ type GoogleMonitoringAlertPolicyDocumentation struct {
 	// links block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_alert_policy#links GoogleMonitoringAlertPolicy#links}
-	Links interface{} `field:"optional" json:"links" yaml:"links"`
+	Links any `field:"optional" json:"links" yaml:"links"`
 	// The format of the content field. Presently, only the value "text/markdown" is supported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
@@ -28,4 +27,3 @@ type GoogleMonitoringAlertPolicyDocumentation struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_monitoring_alert_policy#subject GoogleMonitoringAlertPolicy#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
-

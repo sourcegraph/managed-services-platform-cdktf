@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeploy
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployCon
 
 	return nil
 }
-

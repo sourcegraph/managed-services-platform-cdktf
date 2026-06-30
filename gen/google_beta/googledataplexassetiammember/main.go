@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
-		reflect.TypeOf((*GoogleDataplexAssetIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexAssetIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexAssetIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberCondition",
-		reflect.TypeOf((*GoogleDataplexAssetIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexAssetIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleDataplexAssetIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexAssetIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexAssetIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,6 +128,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberConfig",
-		reflect.TypeOf((*GoogleDataplexAssetIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexAssetIamMemberConfig](),
 	)
 }

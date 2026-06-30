@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputRe
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFilestoreInstanceFileSharesNfsExportOptionsListParameters(
 
 	return nil
 }
-

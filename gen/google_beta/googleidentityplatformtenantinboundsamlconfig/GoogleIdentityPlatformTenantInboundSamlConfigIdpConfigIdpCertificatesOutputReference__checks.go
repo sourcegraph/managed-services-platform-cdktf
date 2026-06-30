@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCert
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCert
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertifi
 
 	return nil
 }
-

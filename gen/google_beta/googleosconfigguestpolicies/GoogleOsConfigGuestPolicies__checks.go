@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutAssignmentParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackageRepositoriesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackageRepositoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackageRepositoriesPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutPackagesParameters(va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutRecipesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutRecipesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateGoogleOsConfigGuestPolicies_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleOsConfigGuestPolicies_IsConstructParameters(x interface{}) error {
+func validateGoogleOsConfigGuestPolicies_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func validateGoogleOsConfigGuestPolicies_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleOsConfigGuestPolicies_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleOsConfigGuestPolicies_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func validateGoogleOsConfigGuestPolicies_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleOsConfigGuestPolicies_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleOsConfigGuestPolicies_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func validateGoogleOsConfigGuestPolicies_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -497,7 +497,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -561,4 +561,3 @@ func validateNewGoogleOsConfigGuestPoliciesParameters(scope constructs.Construct
 
 	return nil
 }
-

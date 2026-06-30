@@ -6,9 +6,9 @@ import (
 
 type GoogleDnsManagedZoneConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDnsManagedZoneConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The DNS name of this managed zone, for instance "example.com.".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#dns_name GoogleDnsManagedZone#dns_name}
@@ -42,7 +42,7 @@ type GoogleDnsManagedZoneConfig struct {
 	// Set this true to delete all records in the zone.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// forwarding_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#forwarding_config GoogleDnsManagedZone#forwarding_config}
@@ -76,7 +76,7 @@ type GoogleDnsManagedZoneConfig struct {
 	// to networks listed under 'private_visibility_config'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#reverse_lookup GoogleDnsManagedZone#reverse_lookup}
-	ReverseLookup interface{} `field:"optional" json:"reverseLookup" yaml:"reverseLookup"`
+	ReverseLookup any `field:"optional" json:"reverseLookup" yaml:"reverseLookup"`
 	// service_directory_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#service_directory_config GoogleDnsManagedZone#service_directory_config}
@@ -92,4 +92,3 @@ type GoogleDnsManagedZoneConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone#visibility GoogleDnsManagedZone#visibility}
 	Visibility *string `field:"optional" json:"visibility" yaml:"visibility"`
 }
-

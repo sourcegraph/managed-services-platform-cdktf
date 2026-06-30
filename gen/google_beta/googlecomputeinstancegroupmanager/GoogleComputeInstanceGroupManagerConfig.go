@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeInstanceGroupManagerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The base instance name to use for instances in this group.
 	//
 	// The value must be a valid RFC1035 name. Supported characters are lowercase letters, numbers, and hyphens (-). Instances are named by appending a hyphen and a random four-character string to the base instance name.
@@ -34,7 +34,7 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// version block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#version GoogleComputeInstanceGroupManager#version}
-	Version interface{} `field:"required" json:"version" yaml:"version"`
+	Version any `field:"required" json:"version" yaml:"version"`
 	// all_instances_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#all_instances_config GoogleComputeInstanceGroupManager#all_instances_config}
@@ -65,7 +65,7 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// named_port block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#named_port GoogleComputeInstanceGroupManager#named_port}
-	NamedPort interface{} `field:"optional" json:"namedPort" yaml:"namedPort"`
+	NamedPort any `field:"optional" json:"namedPort" yaml:"namedPort"`
 	// params block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#params GoogleComputeInstanceGroupManager#params}
@@ -87,15 +87,15 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// stateful_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#stateful_disk GoogleComputeInstanceGroupManager#stateful_disk}
-	StatefulDisk interface{} `field:"optional" json:"statefulDisk" yaml:"statefulDisk"`
+	StatefulDisk any `field:"optional" json:"statefulDisk" yaml:"statefulDisk"`
 	// stateful_external_ip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#stateful_external_ip GoogleComputeInstanceGroupManager#stateful_external_ip}
-	StatefulExternalIp interface{} `field:"optional" json:"statefulExternalIp" yaml:"statefulExternalIp"`
+	StatefulExternalIp any `field:"optional" json:"statefulExternalIp" yaml:"statefulExternalIp"`
 	// stateful_internal_ip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#stateful_internal_ip GoogleComputeInstanceGroupManager#stateful_internal_ip}
-	StatefulInternalIp interface{} `field:"optional" json:"statefulInternalIp" yaml:"statefulInternalIp"`
+	StatefulInternalIp any `field:"optional" json:"statefulInternalIp" yaml:"statefulInternalIp"`
 	// The full URL of all target pools to which new instances in the group are added.
 	//
 	// Updating the target pools attribute does not affect existing instances.
@@ -129,7 +129,7 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// Note that if this is set to true and the operation does not succeed, Terraform will continue trying until it times out.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#wait_for_instances GoogleComputeInstanceGroupManager#wait_for_instances}
-	WaitForInstances interface{} `field:"optional" json:"waitForInstances" yaml:"waitForInstances"`
+	WaitForInstances any `field:"optional" json:"waitForInstances" yaml:"waitForInstances"`
 	// When used with wait_for_instances specifies the status to wait for.
 	//
 	// When STABLE is specified this resource will wait until the instances are stable before returning. When UPDATED is set, it will wait for the version target to be reached and any per instance configs to be effective and all instances configs to be effective as well as all instances to be stable before returning.
@@ -141,4 +141,3 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance_group_manager#zone GoogleComputeInstanceGroupManager#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

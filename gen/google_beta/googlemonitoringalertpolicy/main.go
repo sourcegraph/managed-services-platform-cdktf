@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategy",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategy)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,11 +168,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyAlertStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyAlertStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoClose", GoGetter: "AutoClose"},
 			_jsii_.MemberProperty{JsiiProperty: "autoCloseInput", GoGetter: "AutoCloseInput"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,19 +253,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditions",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditions)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsent",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsent)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsent](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -287,7 +287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,7 +331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationsInput", GoGetter: "AggregationsInput"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -376,11 +376,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,11 +418,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLog",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMatchedLog)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMatchedLog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,11 +459,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,11 +506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -540,7 +540,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -548,11 +548,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertRule", GoGetter: "AlertRule"},
 			_jsii_.MemberProperty{JsiiProperty: "alertRuleInput", GoGetter: "AlertRuleInput"},
@@ -596,7 +596,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -604,15 +604,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSql",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSql)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSql](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -646,15 +646,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDaily",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlDaily)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlDaily](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -690,7 +690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -698,7 +698,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -728,7 +728,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -736,11 +736,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourly",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlHourly)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlHourly](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -769,7 +769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -777,11 +777,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlMinutes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -807,7 +807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -815,7 +815,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanTest", GoGetter: "BooleanTest"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanTestInput", GoGetter: "BooleanTestInput"},
@@ -861,7 +861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -869,11 +869,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -901,7 +901,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -909,15 +909,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThreshold",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThreshold)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThreshold](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -931,7 +931,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -939,7 +939,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
@@ -975,7 +975,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -983,11 +983,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1001,7 +1001,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1009,7 +1009,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriodInput", GoGetter: "AlignmentPeriodInput"},
@@ -1045,7 +1045,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1053,11 +1053,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1083,7 +1083,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1091,7 +1091,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationsInput", GoGetter: "AggregationsInput"},
@@ -1147,7 +1147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1155,11 +1155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1189,7 +1189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1197,7 +1197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1211,7 +1211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1219,7 +1219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1270,7 +1270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1278,15 +1278,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConfig",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecord",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecord)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyCreationRecord](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecordList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyCreationRecordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1299,7 +1299,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1307,7 +1307,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyCreationRecordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyCreationRecordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1333,7 +1333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1341,15 +1341,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentation",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentation)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyDocumentation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinks",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinks)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyDocumentationLinks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksList",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinksList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyDocumentationLinksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1363,7 +1363,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1371,7 +1371,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationLinksOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationLinksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyDocumentationLinksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1401,7 +1401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1409,7 +1409,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyDocumentationOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyDocumentationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyDocumentationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1446,7 +1446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1454,11 +1454,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeouts",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringAlertPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringAlertPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1491,7 +1491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringAlertPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

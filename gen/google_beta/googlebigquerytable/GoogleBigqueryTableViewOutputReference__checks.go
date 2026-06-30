@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateSetTerraformR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateSetUseLegacySqlParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) validateSetUseLegacySqlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleBigqueryTableViewOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

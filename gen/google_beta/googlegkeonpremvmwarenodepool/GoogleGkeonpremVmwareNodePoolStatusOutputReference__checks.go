@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolStatusOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeonpremVmwareNodePoolStatusOutputReferenceParameters(ter
 
 	return nil
 }
-

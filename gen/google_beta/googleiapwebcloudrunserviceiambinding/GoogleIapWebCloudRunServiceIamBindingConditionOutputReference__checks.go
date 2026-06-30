@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapWebCloudRunServiceIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

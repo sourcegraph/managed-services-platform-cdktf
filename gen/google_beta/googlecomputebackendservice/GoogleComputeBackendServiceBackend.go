@@ -1,6 +1,5 @@
 package googlecomputebackendservice
 
-
 type GoogleComputeBackendServiceBackend struct {
 	// The fully-qualified URL of an Instance Group or Network Endpoint Group resource.
 	//
@@ -46,7 +45,7 @@ type GoogleComputeBackendServiceBackend struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#custom_metrics GoogleComputeBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#description GoogleComputeBackendService#description}
@@ -121,4 +120,3 @@ type GoogleComputeBackendServiceBackend struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#preference GoogleComputeBackendService#preference}
 	Preference *string `field:"optional" json:"preference" yaml:"preference"`
 }
-

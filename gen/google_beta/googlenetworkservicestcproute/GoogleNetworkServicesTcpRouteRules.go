@@ -1,6 +1,5 @@
 package googlenetworkservicestcproute
 
-
 type GoogleNetworkServicesTcpRouteRules struct {
 	// action block.
 	//
@@ -9,6 +8,5 @@ type GoogleNetworkServicesTcpRouteRules struct {
 	// matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_tcp_route#matches GoogleNetworkServicesTcpRoute#matches}
-	Matches interface{} `field:"optional" json:"matches" yaml:"matches"`
+	Matches any `field:"optional" json:"matches" yaml:"matches"`
 }
-

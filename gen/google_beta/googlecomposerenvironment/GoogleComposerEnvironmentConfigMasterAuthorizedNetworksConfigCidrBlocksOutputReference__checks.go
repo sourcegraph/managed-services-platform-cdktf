@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCid
 
 	return nil
 }
-

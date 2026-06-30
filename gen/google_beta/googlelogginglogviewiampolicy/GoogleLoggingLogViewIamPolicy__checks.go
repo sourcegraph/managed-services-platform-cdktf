@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleLoggingLogViewIamPolicy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleLoggingLogViewIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingLogViewIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleLoggingLogViewIamPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleLoggingLogViewIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingLogViewIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleLoggingLogViewIamPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleLoggingLogViewIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingLogViewIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetBucketParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetPolicyDataParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLogViewIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewGoogleLoggingLogViewIamPolicyParameters(scope constructs.Constru
 
 	return nil
 }
-

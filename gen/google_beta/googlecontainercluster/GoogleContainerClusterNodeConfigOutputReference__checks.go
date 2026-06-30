@@ -167,7 +167,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutGuestAcceleratorParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutGuestAcceleratorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutTaintParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutTaintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -478,7 +478,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetFlexStartParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -614,7 +614,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -658,7 +658,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetSpotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -721,4 +721,3 @@ func validateNewGoogleContainerClusterNodeConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

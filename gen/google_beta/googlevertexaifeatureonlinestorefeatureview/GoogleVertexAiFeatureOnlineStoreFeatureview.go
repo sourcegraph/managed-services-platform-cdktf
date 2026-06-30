@@ -17,15 +17,15 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -68,11 +68,11 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -82,11 +82,11 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	VectorSearchConfig() GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference
 	VectorSearchConfigInput() *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig
@@ -94,9 +94,9 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	ResetSyncConfig()
 	ResetTimeouts()
 	ResetVectorSearchConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleVertexAiFeatureOnlineStoreFeatureview
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Connection() int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Provisioners() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) TerraformLabels(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) Timeouts() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -589,7 +589,6 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) VectorSearchConf
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) GoogleVertexAiFeatureOnlineStoreFeatureview {
 	_init_.Initialize()
@@ -601,7 +600,7 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -614,12 +613,12 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureview_Override(g GoogleVertexAiFea
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetFeatureOnlineStore(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetFeatureOnlineStore(val *string) {
 	if err := j.validateSetFeatureOnlineStoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetFeatureOnlineS
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetId(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetLabels(val *ma
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetName(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetName(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProject(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProject(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetProvisioners(v
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleVertexAiFeatureOnlineStoreFeatureview_IsConstruct(x interface{}) *bool {
+func GoogleVertexAiFeatureOnlineStoreFeatureview_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeatureOnlineStoreFeatureview_IsConstructParameters(x); err != nil {
@@ -800,7 +799,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElement(x interface{}) *bool {
+func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElementParameters(x); err != nil {
@@ -819,7 +818,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElement(x interface{
 }
 
 // Experimental.
-func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformResource(x interface{}) *bool {
+func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformResourceParameters(x); err != nil {
@@ -838,7 +837,7 @@ func GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformResource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -863,31 +862,31 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) AddMoveTarget(mo
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetBooleanAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetBooleanMapAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetListAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetNumberAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetNumberListAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetNumberMapAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetStringAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,15 +1014,15 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) GetStringMapAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ImportFrom(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) InterpolationFor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,18 +1068,18 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) MoveFromId(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) MoveToId(id *str
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutBigQuerySourc
 	_jsii_.InvokeVoid(
 		g,
 		"putBigQuerySource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutFeatureRegist
 	_jsii_.InvokeVoid(
 		g,
 		"putFeatureRegistrySource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutSyncConfig(va
 	_jsii_.InvokeVoid(
 		g,
 		"putSyncConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutTimeouts(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutVectorSearchC
 	_jsii_.InvokeVoid(
 		g,
 		"putVectorSearchConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,8 +1248,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ResetVectorSearc
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1262,8 +1261,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1275,8 +1274,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) SynthesizeHclAtt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1288,8 +1287,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToHclTerraform()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1314,8 +1313,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToString() *stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1326,4 +1325,3 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ToTerraform() in
 
 	return returns
 }
-

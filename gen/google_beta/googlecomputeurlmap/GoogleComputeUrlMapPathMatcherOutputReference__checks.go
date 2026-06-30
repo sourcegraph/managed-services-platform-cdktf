@@ -134,7 +134,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutHea
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutPathRuleParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutPathRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutPat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutRouteRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validatePutRouteRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateSetDes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -352,4 +352,3 @@ func validateNewGoogleComputeUrlMapPathMatcherOutputReferenceParameters(terrafor
 
 	return nil
 }
-

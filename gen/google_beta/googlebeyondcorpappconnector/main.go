@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnector)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBeyondcorpAppConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorConfig",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfo",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorPrincipalInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeouts",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBeyondcorpAppConnectorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBeyondcorpAppConnectorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBeyondcorpAppConnectorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

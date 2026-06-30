@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamFoldersPolicyBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingCondition",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamFoldersPolicyBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingConfig",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingTarget",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingTargetOutputReference",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamFoldersPolicyBindingTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingTimeouts",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBindingTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamFoldersPolicyBindingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamFoldersPolicyBindingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

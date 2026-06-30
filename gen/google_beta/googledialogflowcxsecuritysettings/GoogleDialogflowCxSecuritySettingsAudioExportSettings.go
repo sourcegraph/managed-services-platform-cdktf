@@ -1,6 +1,5 @@
 package googledialogflowcxsecuritysettings
 
-
 type GoogleDialogflowCxSecuritySettingsAudioExportSettings struct {
 	// Filename pattern for exported audio.
 	//
@@ -18,7 +17,7 @@ type GoogleDialogflowCxSecuritySettingsAudioExportSettings struct {
 	// Enable audio redaction if it is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_security_settings#enable_audio_redaction GoogleDialogflowCxSecuritySettings#enable_audio_redaction}
-	EnableAudioRedaction interface{} `field:"optional" json:"enableAudioRedaction" yaml:"enableAudioRedaction"`
+	EnableAudioRedaction any `field:"optional" json:"enableAudioRedaction" yaml:"enableAudioRedaction"`
 	// Cloud Storage bucket to export audio record to.
 	//
 	// Setting this field would grant the Storage Object Creator role to the Dialogflow Service Agent. API caller that tries to modify this field should have the permission of storage.buckets.setIamPolicy.
@@ -26,4 +25,3 @@ type GoogleDialogflowCxSecuritySettingsAudioExportSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_security_settings#gcs_bucket GoogleDialogflowCxSecuritySettings#gcs_bucket}
 	GcsBucket *string `field:"optional" json:"gcsBucket" yaml:"gcsBucket"`
 }
-

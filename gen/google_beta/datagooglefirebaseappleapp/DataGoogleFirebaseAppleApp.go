@@ -21,11 +21,11 @@ type DataGoogleFirebaseAppleApp interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,18 +58,18 @@ type DataGoogleFirebaseAppleApp interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TeamId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataGoogleFirebaseAppleApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleFirebaseAppleApp
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
 func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *DataGoogleFirebaseAppleAppConfig) DataGoogleFirebaseAppleApp {
 	_init_.Initialize()
@@ -397,7 +396,7 @@ func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -410,12 +409,12 @@ func NewDataGoogleFirebaseAppleApp_Override(d DataGoogleFirebaseAppleApp, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetAppId(val *string) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleApp)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func DataGoogleFirebaseAppleApp_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func DataGoogleFirebaseAppleApp_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool {
+func DataGoogleFirebaseAppleApp_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFirebaseAppleApp_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func DataGoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func DataGoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleFirebaseAppleApp_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleFirebaseAppleApp_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFirebaseAppleApp_IsTerraformDataSourceParameters(x); err != nil {
@@ -560,7 +559,7 @@ func DataGoogleFirebaseAppleApp_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func DataGoogleFirebaseAppleApp_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleFirebaseAppleApp_IsTerraformElement(x interface{}) *bool {
+func DataGoogleFirebaseAppleApp_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFirebaseAppleApp_IsTerraformElementParameters(x); err != nil {
@@ -579,7 +578,7 @@ func DataGoogleFirebaseAppleApp_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,27 +596,27 @@ func DataGoogleFirebaseAppleApp_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -816,8 +815,8 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -829,8 +828,8 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -842,8 +841,8 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -880,4 +879,3 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleApp) ToTerraform() interface{} {
 
 	return returns
 }
-

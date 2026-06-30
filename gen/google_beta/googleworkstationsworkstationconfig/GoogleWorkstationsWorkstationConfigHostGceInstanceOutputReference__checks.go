@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutAcceleratorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,4 +398,3 @@ func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReferenc
 
 	return nil
 }
-

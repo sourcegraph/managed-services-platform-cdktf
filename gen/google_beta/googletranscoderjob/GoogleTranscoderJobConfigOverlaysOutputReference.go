@@ -11,12 +11,12 @@ import (
 type GoogleTranscoderJobConfigOverlaysOutputReference interface {
 	cdktf.ComplexObject
 	Animations() GoogleTranscoderJobConfigOverlaysAnimationsList
-	AnimationsInput() interface{}
+	AnimationsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type GoogleTranscoderJobConfigOverlaysOutputReference interface {
 	Fqn() *string
 	Image() GoogleTranscoderJobConfigOverlaysImageOutputReference
 	ImageInput() *GoogleTranscoderJobConfigOverlaysImage
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type GoogleTranscoderJobConfigOverlaysOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type GoogleTranscoderJobConfigOverlaysOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAnimations(value interface{})
+	PutAnimations(value any)
 	PutImage(value *GoogleTranscoderJobConfigOverlaysImage)
 	ResetAnimations()
 	ResetImage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) Animations(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) AnimationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) AnimationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"animationsInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) AnimationsI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ImageInput(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGoogleTranscoderJobConfigOverlaysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleTranscoderJobConfigOverlaysOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleTranscoderJobConfigOverlaysOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigOverlaysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleTranscoderJobConfigOverlaysOutputReference_Override(g GoogleTransc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigOverlaysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) PutAnimations(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) PutAnimations(value any) {
 	if err := g.validatePutAnimationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAnimations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) PutImage(va
 	_jsii_.InvokeVoid(
 		g,
 		"putImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ResetImage(
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysOutputReference) ToString() 
 
 	return returns
 }
-

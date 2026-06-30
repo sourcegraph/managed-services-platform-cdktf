@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreFederationIamMember.GoogleDataprocMetastoreFederationIamMember",
-		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreFederationIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocMetastoreFederationIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreFederationIamMember.GoogleDataprocMetastoreFederationIamMemberCondition",
-		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreFederationIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreFederationIamMember.GoogleDataprocMetastoreFederationIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreFederationIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataprocMetastoreFederationIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataprocMetastoreFederationIamMember.GoogleDataprocMetastoreFederationIamMemberConfig",
-		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataprocMetastoreFederationIamMemberConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetAllowTransactionalWritesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetAllowTransactionalWritesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewGoogleBigtableAppProfileSingleClusterRoutingOutputReferenceParam
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputR
 
 	return nil
 }
-

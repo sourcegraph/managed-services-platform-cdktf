@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapAppEngineVersionIamBindingConditionOutputReferenceParam
 
 	return nil
 }
-

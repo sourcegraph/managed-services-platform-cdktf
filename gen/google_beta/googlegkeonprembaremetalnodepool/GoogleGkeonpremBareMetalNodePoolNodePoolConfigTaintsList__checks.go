@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsListParamete
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVaria
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariable
 
 	return nil
 }
-

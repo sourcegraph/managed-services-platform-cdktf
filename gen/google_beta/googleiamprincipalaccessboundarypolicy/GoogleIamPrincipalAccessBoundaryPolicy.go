@@ -18,15 +18,15 @@ type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,28 +71,28 @@ type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIamPrincipalAccessBoundaryPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIamPrincipalAccessBoundaryPolicy
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Connection() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Provisioners() *[]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) Timeouts() GoogleIamP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -537,7 +537,6 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) UpdateTime() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
 func NewGoogleIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *string, config *GoogleIamPrincipalAccessBoundaryPolicyConfig) GoogleIamPrincipalAccessBoundaryPolicy {
 	_init_.Initialize()
@@ -549,7 +548,7 @@ func NewGoogleIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -562,12 +561,12 @@ func NewGoogleIamPrincipalAccessBoundaryPolicy_Override(g GoogleIamPrincipalAcce
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetAnnotations(val *ma
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetDisplayName(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetId(val *string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetLocation(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetOrganization(val *string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetOrganization(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetPrincipalAccessBoundaryPolicyId(val *string) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetPrincipalAccessBoundaryPolicyId(val *string) {
 	if err := j.validateSetPrincipalAccessBoundaryPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetPrincipalAccessBoun
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIamPrincipalAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
+func GoogleIamPrincipalAccessBoundaryPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamPrincipalAccessBoundaryPolicy_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
+func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformElement(x interface{}) *b
 }
 
 // Experimental.
-func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool {
+func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func GoogleIamPrincipalAccessBoundaryPolicy_IsTerraformResource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamPrincipalAccessBoundaryPolicy.GoogleIamPrincipalAccessBoundaryPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) AddMoveTarget(moveTar
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetNumberAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetNumberListAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetNumberMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetStringAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) GetStringMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -990,7 +989,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ImportFrom(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) InterpolationForAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) MoveFromId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) MoveToId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) PutDetails(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) PutTimeouts(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,8 +1123,8 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1137,8 +1136,8 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1150,8 +1149,8 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) SynthesizeHclAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1163,8 +1162,8 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToHclTerraform() inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1189,8 +1188,8 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1201,4 +1200,3 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) ToTerraform() interfa
 
 	return returns
 }
-

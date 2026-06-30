@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionRequestMirro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPo
 
 	return nil
 }
-

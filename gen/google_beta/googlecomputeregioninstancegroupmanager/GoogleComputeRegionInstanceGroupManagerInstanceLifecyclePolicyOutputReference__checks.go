@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolic
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOu
 
 	return nil
 }
-

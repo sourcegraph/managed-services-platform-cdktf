@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
-		reflect.TypeOf((*GoogleAppEngineDomainMapping)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMapping](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineDomainMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingConfig",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecords",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingResourceRecords)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingResourceRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsList",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingResourceRecordsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingResourceRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingResourceRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingResourceRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettings",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingSslSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingSslSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettingsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingSslSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingSslSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateIdInput", GoGetter: "CertificateIdInput"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,11 +188,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeouts",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineDomainMappingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineDomainMappingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineDomainMappingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

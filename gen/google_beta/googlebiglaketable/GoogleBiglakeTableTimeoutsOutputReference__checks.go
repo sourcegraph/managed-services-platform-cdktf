@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBiglakeTableTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleBiglakeTableTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

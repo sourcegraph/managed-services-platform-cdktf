@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntime",
-		reflect.TypeOf((*GoogleNotebooksRuntime)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntime](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "accessConfigInput", GoGetter: "AccessConfigInput"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachine", GoGetter: "VirtualMachine"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineInput", GoGetter: "VirtualMachineInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntime{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeAccessConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeAccessConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeAccessConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessType", GoGetter: "AccessType"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTypeInput", GoGetter: "AccessTypeInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeAccessConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,15 +138,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetrics",
-		reflect.TypeOf((*GoogleNotebooksRuntimeMetrics)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsList",
-		reflect.TypeOf((*GoogleNotebooksRuntimeMetricsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,15 +200,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeSoftwareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernels",
-		reflect.TypeOf((*GoogleNotebooksRuntimeSoftwareConfigKernels)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeSoftwareConfigKernels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsList",
-		reflect.TypeOf((*GoogleNotebooksRuntimeSoftwareConfigKernelsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeSoftwareConfigKernelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,7 +267,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "upgradeable", GoGetter: "Upgradeable"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,11 +328,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeTimeouts",
-		reflect.TypeOf((*GoogleNotebooksRuntimeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,11 +373,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachine",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachine)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachine](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineConfig", GoGetter: "VirtualMachineConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineConfigInput", GoGetter: "VirtualMachineConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,15 +415,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -487,7 +487,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -516,7 +516,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -524,15 +524,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,7 +579,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "boot", GoGetter: "Boot"},
@@ -626,7 +626,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -634,11 +634,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -665,7 +665,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -673,7 +673,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigInput", GoGetter: "AcceleratorConfigInput"},
@@ -744,7 +744,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -752,11 +752,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -789,7 +789,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

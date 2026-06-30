@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApiGatewayGateway) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApiGatewayGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApiGatewayGateway) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApiGatewayGateway) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApiGatewayGateway_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleApiGatewayGateway_IsConstructParameters(x interface{}) error {
+func validateGoogleApiGatewayGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApiGatewayGateway_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleApiGatewayGateway_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApiGatewayGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApiGatewayGateway_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleApiGatewayGateway_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApiGatewayGateway_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetApiConfigParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayGateway) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleApiGatewayGatewayParameters(scope constructs.Construct, id
 
 	return nil
 }
-

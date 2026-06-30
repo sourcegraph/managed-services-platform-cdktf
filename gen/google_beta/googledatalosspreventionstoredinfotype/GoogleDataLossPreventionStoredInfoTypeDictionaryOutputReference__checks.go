@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferenceP
 
 	return nil
 }
-

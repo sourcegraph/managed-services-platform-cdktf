@@ -23,15 +23,15 @@ type GoogleDiscoveryEngineChatEngine interface {
 	CommonConfig() GoogleDiscoveryEngineChatEngineCommonConfigOutputReference
 	CommonConfigInput() *GoogleDiscoveryEngineChatEngineCommonConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataStoreIds() *[]*string
 	SetDataStoreIds(val *[]*string)
@@ -78,27 +78,27 @@ type GoogleDiscoveryEngineChatEngine interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDiscoveryEngineChatEngineTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type GoogleDiscoveryEngineChatEngine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type GoogleDiscoveryEngineChatEngine interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,17 +146,17 @@ type GoogleDiscoveryEngineChatEngine interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDiscoveryEngineChatEngine
@@ -244,8 +244,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) CommonConfigInput() *GoogleD
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) Timeouts() GoogleDiscoveryEn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -584,7 +584,6 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
 func NewGoogleDiscoveryEngineChatEngine(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineChatEngineConfig) GoogleDiscoveryEngineChatEngine {
 	_init_.Initialize()
@@ -596,7 +595,7 @@ func NewGoogleDiscoveryEngineChatEngine(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -609,12 +608,12 @@ func NewGoogleDiscoveryEngineChatEngine_Override(g GoogleDiscoveryEngineChatEngi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetCollectionId(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetCollectionId(val *string) {
 	if err := j.validateSetCollectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetCollectionId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDataStoreIds(val *[]*string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetDataStoreIds(val *[]*string) {
 	if err := j.validateSetDataStoreIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDataStoreIds(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetEngineId(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetEngineId(val *string) {
 	if err := j.validateSetEngineIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetEngineId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetId(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetIndustryVertical(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetIndustryVertical(val *string) {
 	if err := j.validateSetIndustryVerticalParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetIndustryVertical(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func GoogleDiscoveryEngineChatEngine_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func GoogleDiscoveryEngineChatEngine_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDiscoveryEngineChatEngine_IsConstruct(x interface{}) *bool {
+func GoogleDiscoveryEngineChatEngine_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineChatEngine_IsConstructParameters(x); err != nil {
@@ -817,7 +816,7 @@ func GoogleDiscoveryEngineChatEngine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func GoogleDiscoveryEngineChatEngine_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDiscoveryEngineChatEngine_IsTerraformElement(x interface{}) *bool {
+func GoogleDiscoveryEngineChatEngine_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineChatEngine_IsTerraformElementParameters(x); err != nil {
@@ -836,7 +835,7 @@ func GoogleDiscoveryEngineChatEngine_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func GoogleDiscoveryEngineChatEngine_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDiscoveryEngineChatEngine_IsTerraformResource(x interface{}) *bool {
+func GoogleDiscoveryEngineChatEngine_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDiscoveryEngineChatEngine_IsTerraformResourceParameters(x); err != nil {
@@ -855,7 +854,7 @@ func GoogleDiscoveryEngineChatEngine_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDiscoveryEngineChatEngine.GoogleDiscoveryEngineChatEngine",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -880,31 +879,31 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,15 +1031,15 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1059,7 +1058,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,18 +1085,18 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) PutChatEngineConfig(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putChatEngineConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) PutCommonConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putCommonConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) PutTimeouts(value *GoogleDis
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1204,8 +1203,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1217,8 +1216,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1230,8 +1229,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1243,8 +1242,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToHclTerraform() interface{}
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1269,8 +1268,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1281,4 +1280,3 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) ToTerraform() interface{} {
 
 	return returns
 }
-

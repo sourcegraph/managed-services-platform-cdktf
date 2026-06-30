@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReferen
 
 	return nil
 }
-

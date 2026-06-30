@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDialogflowCxToolOpenApiSpecTlsConfigCaCertsOutputReference
 
 	return nil
 }
-

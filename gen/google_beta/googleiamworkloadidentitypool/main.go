@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPool)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolId", GoGetter: "WorkloadIdentityPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolIdInput", GoGetter: "WorkloadIdentityPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolConfig",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caPools", GoGetter: "CaPools"},
 			_jsii_.MemberProperty{JsiiProperty: "caPoolsInput", GoGetter: "CaPoolsInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,15 +146,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfig",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -176,7 +176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustDomain", GoGetter: "TrustDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "trustDomainInput", GoGetter: "TrustDomainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -239,7 +239,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,7 +273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalTrustBundles", GoGetter: "AdditionalTrustBundles"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalTrustBundlesInput", GoGetter: "AdditionalTrustBundlesInput"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,11 +309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeouts",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkloadIdentityPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -346,7 +346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package googleosconfigpatchdeployment
 
-
 type GoogleOsConfigPatchDeploymentPatchConfig struct {
 	// apt block.
 	//
@@ -13,7 +12,7 @@ type GoogleOsConfigPatchDeploymentPatchConfig struct {
 	// Allows the patch job to run on Managed instance groups (MIGs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#mig_instances_allowed GoogleOsConfigPatchDeployment#mig_instances_allowed}
-	MigInstancesAllowed interface{} `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
+	MigInstancesAllowed any `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
 	// post_step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#post_step GoogleOsConfigPatchDeployment#post_step}
@@ -39,4 +38,3 @@ type GoogleOsConfigPatchDeploymentPatchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#zypper GoogleOsConfigPatchDeployment#zypper}
 	Zypper *GoogleOsConfigPatchDeploymentPatchConfigZypper `field:"optional" json:"zypper" yaml:"zypper"`
 }
-

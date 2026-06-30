@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDocumentAiWarehouseLocation_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleDocumentAiWarehouseLocation_IsConstructParameters(x interface{}) error {
+func validateGoogleDocumentAiWarehouseLocation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDocumentAiWarehouseLocation_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleDocumentAiWarehouseLocation_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDocumentAiWarehouseLocation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDocumentAiWarehouseLocation_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleDocumentAiWarehouseLocation_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDocumentAiWarehouseLocation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetAccessControlMo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetProjectNumberPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleDocumentAiWarehouseLocationParameters(scope constructs.Con
 
 	return nil
 }
-

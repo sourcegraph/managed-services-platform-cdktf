@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNetappVolumeTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

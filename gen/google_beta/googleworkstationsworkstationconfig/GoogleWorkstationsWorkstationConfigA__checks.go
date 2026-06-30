@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateOverrideLogical
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutAllowedPortsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutAllowedPortsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEncryptionKe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEphemeralDirectoriesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEphemeralDirectoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutHostParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDirectoriesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDirectoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -330,7 +330,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutReadinessChecksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutReadinessChecksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func validateGoogleWorkstationsWorkstationConfigA_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigA_IsConstructParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func validateGoogleWorkstationsWorkstationConfigA_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigA_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func validateGoogleWorkstationsWorkstationConfigA_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigA_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -420,7 +420,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetAnnotationsP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetCountParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisableTcpConnectionsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisableTcpConnectionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -538,7 +538,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisplayNameP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetEnableAuditAgentParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetEnableAuditAgentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -614,7 +614,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -710,4 +710,3 @@ func validateNewGoogleWorkstationsWorkstationConfigAParameters(scope constructs.
 
 	return nil
 }
-

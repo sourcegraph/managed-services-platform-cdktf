@@ -12,9 +12,9 @@ type GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,17 +25,17 @@ type GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableCloudLogging() interface{}
-	SetEnableCloudLogging(val interface{})
-	EnableCloudLoggingInput() interface{}
+	EnableCloudLogging() any
+	SetEnableCloudLogging(val any)
+	EnableCloudLoggingInput() any
 	// Experimental.
 	Fqn() *string
-	InspectAndBlock() interface{}
-	SetInspectAndBlock(val interface{})
-	InspectAndBlockInput() interface{}
-	InspectOnly() interface{}
-	SetInspectOnly(val interface{})
-	InspectOnlyInput() interface{}
+	InspectAndBlock() any
+	SetInspectAndBlock(val any)
+	InspectAndBlockInput() any
+	InspectOnly() any
+	SetInspectOnly(val any)
+	InspectOnlyInput() any
 	InternalValue() *GoogleModelArmorFloorsettingAiPlatformFloorSetting
 	SetInternalValue(val *GoogleModelArmorFloorsettingAiPlatformFloorSetting)
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference interface
 	ResetInspectOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) EnableCloudLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) EnableCloudLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCloudLogging",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) EnableCloudLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) EnableCloudLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCloudLoggingInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectAndBlock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectAndBlock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inspectAndBlock",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectAndBlockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectAndBlockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inspectAndBlockInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inspectOnly",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) InspectOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inspectOnlyInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-
 func NewGoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleModelArmorFloorsetting.GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetEnableCloudLogging(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetEnableCloudLogging(val any) {
 	if err := j.validateSetEnableCloudLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetInspectAndBlock(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetInspectAndBlock(val any) {
 	if err := j.validateSetInspectAndBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetInspectOnly(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetInspectOnly(val any) {
 	if err := j.validateSetInspectOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetInternalValue(val *GoogleModelArmorFloorsettingAiPlatformFloorSetting) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetInternalValue(val *GoogleModelArmorFloorsettingAiPlatformFloorSetting) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 
 	return returns
 }
-

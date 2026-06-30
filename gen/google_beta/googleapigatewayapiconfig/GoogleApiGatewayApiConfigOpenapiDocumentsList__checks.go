@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApiGatewayApiConfigOpenapiDocumentsListParameters(terrafor
 
 	return nil
 }
-

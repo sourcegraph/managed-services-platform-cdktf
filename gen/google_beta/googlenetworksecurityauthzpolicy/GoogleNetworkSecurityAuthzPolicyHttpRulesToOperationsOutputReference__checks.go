@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutHostsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutHostsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutPathsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validatePutPathsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,7 +236,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -303,4 +303,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsOutputRefer
 
 	return nil
 }
-

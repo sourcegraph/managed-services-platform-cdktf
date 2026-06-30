@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersListParameters(t
 
 	return nil
 }
-

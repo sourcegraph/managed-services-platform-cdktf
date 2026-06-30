@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetNoExternalIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetNoExternalIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleCloudbuildWorkerPoolWorkerConfigOutputReferenceParameters(
 
 	return nil
 }
-

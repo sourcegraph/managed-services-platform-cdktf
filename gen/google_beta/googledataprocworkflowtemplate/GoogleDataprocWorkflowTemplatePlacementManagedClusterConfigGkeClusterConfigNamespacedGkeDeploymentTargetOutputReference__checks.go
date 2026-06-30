@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGk
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigNamespacedGkeDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigNamespacedGkeDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeCl
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleIamWorkforcePoolProviderOidcClientSecretOutputReferencePar
 
 	return nil
 }
-

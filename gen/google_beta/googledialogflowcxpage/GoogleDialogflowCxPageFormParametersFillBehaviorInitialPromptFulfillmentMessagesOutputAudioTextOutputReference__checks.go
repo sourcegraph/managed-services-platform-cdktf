@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPrompt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFul
 
 	return nil
 }
-

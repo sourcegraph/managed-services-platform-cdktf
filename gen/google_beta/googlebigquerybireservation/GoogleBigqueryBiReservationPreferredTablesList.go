@@ -17,8 +17,8 @@ type GoogleBigqueryBiReservationPreferredTablesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleBigqueryBiReservationPreferredTablesList interface {
 	Get(index *float64) GoogleBigqueryBiReservationPreferredTablesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) WrapsSet() *b
 	return returns
 }
 
-
 func NewGoogleBigqueryBiReservationPreferredTablesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigqueryBiReservationPreferredTablesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleBigqueryBiReservationPreferredTablesList(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleBigqueryBiReservationPreferredTablesList_Override(g GoogleBigquery
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) AllWithMapKey
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) Get(index *fl
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList) ToString() *s
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
 
 	return nil
 }
-

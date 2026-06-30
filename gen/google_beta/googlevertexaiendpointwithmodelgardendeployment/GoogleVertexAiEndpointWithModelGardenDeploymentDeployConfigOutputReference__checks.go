@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) validateSetFastTryoutEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference) validateSetFastTryoutEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewGoogleVertexAiEndpointWithModelGardenDeploymentDeployConfigOutpu
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeade
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeade
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValueOutputReference) validateSetIgnoreCaseParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValueOutputReference) validateSetIgnoreCaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSe
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataplexLakeIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataplexLakeIamBinding_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleDataplexLakeIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleDataplexLakeIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataplexLakeIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleDataplexLakeIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataplexLakeIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataplexLakeIamBinding_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleDataplexLakeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataplexLakeIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDataplexLakeIamBinding_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleDataplexLakeIamBindingParameters(scope constructs.Construc
 
 	return nil
 }
-

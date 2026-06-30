@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
-		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAll)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudAssetResourcesSearchAll](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "assetTypes", GoGetter: "AssetTypes"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAll{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllConfig",
-		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudAssetResourcesSearchAllConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResults",
-		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResults)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudAssetResourcesSearchAllResults](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
-		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResultsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudAssetResourcesSearchAllResultsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -94,7 +94,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResultsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudAssetResourcesSearchAllResultsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAttributes", GoGetter: "AdditionalAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "assetType", GoGetter: "AssetType"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

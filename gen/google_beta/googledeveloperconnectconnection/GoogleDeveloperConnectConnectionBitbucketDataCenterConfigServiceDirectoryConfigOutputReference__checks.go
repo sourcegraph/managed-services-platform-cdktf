@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketDataCenterConfigServ
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDeveloperConnectConnectionBitbucketDataCenterConfigService
 
 	return nil
 }
-

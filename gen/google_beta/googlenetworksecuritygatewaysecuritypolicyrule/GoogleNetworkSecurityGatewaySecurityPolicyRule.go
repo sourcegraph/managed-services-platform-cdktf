@@ -21,15 +21,15 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -38,9 +38,9 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -78,11 +78,11 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	SessionMatcher() *string
 	SetSessionMatcher(val *string)
@@ -90,22 +90,22 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TlsInspectionEnabled() interface{}
-	SetTlsInspectionEnabled(val interface{})
-	TlsInspectionEnabledInput() interface{}
+	TimeoutsInput() any
+	TlsInspectionEnabled() any
+	SetTlsInspectionEnabled(val any)
+	TlsInspectionEnabledInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTlsInspectionEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkSecurityGatewaySecurityPolicyRule
@@ -220,8 +220,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Connection() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) DescriptionIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Enabled() int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Provisioners(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -580,8 +580,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Timeouts() Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -590,8 +590,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TimeoutsInput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TlsInspectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TlsInspectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsInspectionEnabled",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TlsInspection
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TlsInspectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) TlsInspectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsInspectionEnabledInput",
@@ -620,7 +620,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) UpdateTime() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewGoogleNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig) GoogleNetworkSecurityGatewaySecurityPolicyRule {
 	_init_.Initialize()
@@ -632,7 +631,7 @@ func NewGoogleNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -645,12 +644,12 @@ func NewGoogleNetworkSecurityGatewaySecurityPolicyRule_Override(g GoogleNetworkS
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetApplicationMatcher(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetApplicationMatcher(val *string) {
 	if err := j.validateSetApplicationMatcherParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetApplication
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetBasicProfile(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetBasicProfile(val *string) {
 	if err := j.validateSetBasicProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetBasicProfil
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetConnection(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -702,7 +701,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetDescription
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetEnabled(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -732,7 +731,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetGatewaySecurityPolicy(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetGatewaySecurityPolicy(val *string) {
 	if err := j.validateSetGatewaySecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetGatewaySecu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetLocation(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetName(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetPriority(val *float64) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetPriority(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProject(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -817,7 +816,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetProvisioner
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetSessionMatcher(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetSessionMatcher(val *string) {
 	if err := j.validateSetSessionMatcherParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetSessionMatc
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetTlsInspectionEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SetTlsInspectionEnabled(val any) {
 	if err := j.validateSetTlsInspectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x interface{}) *bool {
+func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstructParameters(x); err != nil {
@@ -897,7 +896,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElementParameters(x); err != nil {
@@ -916,7 +915,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x interfa
 }
 
 // Experimental.
-func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResourceParameters(x); err != nil {
@@ -935,7 +934,7 @@ func GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -960,31 +959,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) AddMoveTarget
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,15 +1111,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1139,7 +1138,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ImportFrom(id
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,18 +1165,18 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) MoveFromId(id
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) MoveToId(id *
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) OverrideLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1210,7 +1209,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) PutTimeouts(v
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1270,8 +1269,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ResetTlsInspe
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1283,8 +1282,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeAtt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1296,8 +1295,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) SynthesizeHcl
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1309,8 +1308,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToHclTerrafor
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1335,8 +1334,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToString() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1347,4 +1346,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ToTerraform()
 
 	return returns
 }
-

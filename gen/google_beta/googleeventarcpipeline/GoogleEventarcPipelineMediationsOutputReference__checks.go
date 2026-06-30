@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleEventarcPipelineMediationsOutputReferenceParameters(terraf
 
 	return nil
 }
-

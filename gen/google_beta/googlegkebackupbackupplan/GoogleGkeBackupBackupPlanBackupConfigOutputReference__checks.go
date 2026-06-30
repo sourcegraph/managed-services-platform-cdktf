@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetAllNamespacesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetAllNamespacesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetIncludeSecretsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetIncludeSecretsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetIncludeVolumeDataParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetIncludeVolumeDataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetPermissiveModeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference) validateSetPermissiveModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,4 +311,3 @@ func validateNewGoogleGkeBackupBackupPlanBackupConfigOutputReferenceParameters(t
 
 	return nil
 }
-

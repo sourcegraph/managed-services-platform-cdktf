@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRang
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleApigeeControlPlaneAccessTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlecloudbuildtrigger
 
-
 type GoogleCloudbuildTriggerBuildArtifacts struct {
 	// A list of images to be pushed upon the successful completion of all build steps.
 	//
@@ -15,11 +14,11 @@ type GoogleCloudbuildTriggerBuildArtifacts struct {
 	// maven_artifacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#maven_artifacts GoogleCloudbuildTrigger#maven_artifacts}
-	MavenArtifacts interface{} `field:"optional" json:"mavenArtifacts" yaml:"mavenArtifacts"`
+	MavenArtifacts any `field:"optional" json:"mavenArtifacts" yaml:"mavenArtifacts"`
 	// npm_packages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#npm_packages GoogleCloudbuildTrigger#npm_packages}
-	NpmPackages interface{} `field:"optional" json:"npmPackages" yaml:"npmPackages"`
+	NpmPackages any `field:"optional" json:"npmPackages" yaml:"npmPackages"`
 	// objects block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#objects GoogleCloudbuildTrigger#objects}
@@ -27,6 +26,5 @@ type GoogleCloudbuildTriggerBuildArtifacts struct {
 	// python_packages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#python_packages GoogleCloudbuildTrigger#python_packages}
-	PythonPackages interface{} `field:"optional" json:"pythonPackages" yaml:"pythonPackages"`
+	PythonPackages any `field:"optional" json:"pythonPackages" yaml:"pythonPackages"`
 }
-

@@ -1,6 +1,5 @@
 package googledataprocmetastoreservice
 
-
 type GoogleDataprocMetastoreServiceScheduledBackup struct {
 	// A Cloud Storage URI of a folder, in the format gs://<bucket_name>/<path_inside_bucket>.
 	//
@@ -15,7 +14,7 @@ type GoogleDataprocMetastoreServiceScheduledBackup struct {
 	// Defines whether the scheduled backup is enabled. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_service#enabled GoogleDataprocMetastoreService#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Specifies the time zone to be used when interpreting cronSchedule.
 	//
 	// Must be a time zone name from the time zone database (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. America/Los_Angeles or Africa/Abidjan. If left unspecified, the default is UTC.
@@ -23,4 +22,3 @@ type GoogleDataprocMetastoreServiceScheduledBackup struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_service#time_zone GoogleDataprocMetastoreService#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

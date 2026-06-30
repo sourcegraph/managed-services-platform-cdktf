@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerNamedPortList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerNamedPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerNamedPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionInstanceGroupManagerNamedPortListParameters(t
 
 	return nil
 }
-

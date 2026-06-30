@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateAd
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleCertificateManagerCertificateIssuanceConfig_GenerateConfigFor
 	return nil
 }
 
-func validateGoogleCertificateManagerCertificateIssuanceConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleCertificateManagerCertificateIssuanceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleCertificateManagerCertificateIssuanceConfig_IsConstructParame
 	return nil
 }
 
-func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformElemen
 	return nil
 }
 
-func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleCertificateManagerCertificateIssuanceConfig_IsTerraformResour
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewGoogleCertificateManagerCertificateIssuanceConfigParameters(scop
 
 	return nil
 }
-

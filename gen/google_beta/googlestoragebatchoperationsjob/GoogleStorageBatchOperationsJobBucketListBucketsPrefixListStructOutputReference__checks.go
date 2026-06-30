@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsPrefixListStr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageBatchOperationsJobBucketListBucketsPrefixListStruct
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateSetCreat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceAccountTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleServiceAccountTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

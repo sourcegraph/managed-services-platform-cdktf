@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validatePutThresholdConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validatePutThresholdConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewGoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDef
 
 	return nil
 }
-

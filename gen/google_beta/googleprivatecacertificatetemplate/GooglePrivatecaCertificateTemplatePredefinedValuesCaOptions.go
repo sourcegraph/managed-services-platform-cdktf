@@ -1,13 +1,12 @@
 package googleprivatecacertificatetemplate
 
-
 type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions struct {
 	// Optional.
 	//
 	// Refers to the "CA" X.509 extension, which is a boolean value. When this value is true, the "CA" in Basic Constraints extension will be set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#is_ca GooglePrivatecaCertificateTemplate#is_ca}
-	IsCa interface{} `field:"optional" json:"isCa" yaml:"isCa"`
+	IsCa any `field:"optional" json:"isCa" yaml:"isCa"`
 	// Optional.
 	//
 	// Refers to the "path length constraint" in Basic Constraints extension. For a CA certificate, this value describes the depth of
@@ -22,7 +21,7 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions struct {
 	// Note that the behavior when 'is_ca = false' for this resource is different from the behavior in the Certificate Authority, Certificate and CaPool resources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#null_ca GooglePrivatecaCertificateTemplate#null_ca}
-	NullCa interface{} `field:"optional" json:"nullCa" yaml:"nullCa"`
+	NullCa any `field:"optional" json:"nullCa" yaml:"nullCa"`
 	// Optional.
 	//
 	// When true, the "path length constraint" in Basic Constraints extension will be set to 0.
@@ -30,6 +29,5 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions struct {
 	// the max path length will be omitted from the CA certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#zero_max_issuer_path_length GooglePrivatecaCertificateTemplate#zero_max_issuer_path_length}
-	ZeroMaxIssuerPathLength interface{} `field:"optional" json:"zeroMaxIssuerPathLength" yaml:"zeroMaxIssuerPathLength"`
+	ZeroMaxIssuerPathLength any `field:"optional" json:"zeroMaxIssuerPathLength" yaml:"zeroMaxIssuerPathLength"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPool)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerConfig", GoGetter: "WorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigInput", GoGetter: "WorkerConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildWorkerPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolConfig",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfig",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolPrivateServiceConnect",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolPrivateServiceConnect)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolPrivateServiceConnect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,11 +185,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeouts",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildWorkerPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfig",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolWorkerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildWorkerPoolWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildWorkerPoolWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

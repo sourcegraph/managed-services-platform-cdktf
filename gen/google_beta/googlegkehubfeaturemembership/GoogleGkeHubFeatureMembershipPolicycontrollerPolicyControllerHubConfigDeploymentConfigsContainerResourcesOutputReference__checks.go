@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyController
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHub
 
 	return nil
 }
-

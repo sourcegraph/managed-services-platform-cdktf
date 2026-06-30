@@ -6,9 +6,9 @@ import (
 
 type GoogleIntegrationsClientConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleIntegrationsClientConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Location in which client needs to be provisioned.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integrations_client#location GoogleIntegrationsClient#location}
@@ -30,7 +30,7 @@ type GoogleIntegrationsClientConfig struct {
 	// Indicates if sample integrations should be created along with provisioning.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integrations_client#create_sample_integrations GoogleIntegrationsClient#create_sample_integrations}
-	CreateSampleIntegrations interface{} `field:"optional" json:"createSampleIntegrations" yaml:"createSampleIntegrations"`
+	CreateSampleIntegrations any `field:"optional" json:"createSampleIntegrations" yaml:"createSampleIntegrations"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -47,4 +47,3 @@ type GoogleIntegrationsClientConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integrations_client#timeouts GoogleIntegrationsClient#timeouts}
 	Timeouts *GoogleIntegrationsClientTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

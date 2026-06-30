@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesConnectionInfoEndpoi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBlockchainNodeEngineBlockchainNodesConnectionInfoEndpointI
 
 	return nil
 }
-

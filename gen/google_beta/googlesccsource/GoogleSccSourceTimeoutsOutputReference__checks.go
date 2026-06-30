@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccSourceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSccSourceTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

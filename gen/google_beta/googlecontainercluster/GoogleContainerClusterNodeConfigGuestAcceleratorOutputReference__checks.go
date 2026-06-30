@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -268,4 +268,3 @@ func validateNewGoogleContainerClusterNodeConfigGuestAcceleratorOutputReferenceP
 
 	return nil
 }
-

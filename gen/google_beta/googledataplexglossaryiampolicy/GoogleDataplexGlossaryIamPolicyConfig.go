@@ -6,9 +6,9 @@ import (
 
 type GoogleDataplexGlossaryIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDataplexGlossaryIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_policy#glossary_id GoogleDataplexGlossaryIamPolicy#glossary_id}.
 	GlossaryId *string `field:"required" json:"glossaryId" yaml:"glossaryId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_policy#policy_data GoogleDataplexGlossaryIamPolicy#policy_data}.
@@ -33,4 +33,3 @@ type GoogleDataplexGlossaryIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_policy#project GoogleDataplexGlossaryIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

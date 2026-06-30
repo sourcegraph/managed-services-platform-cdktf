@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSet",
-		reflect.TypeOf((*GoogleDnsRecordSet)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,27 +83,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetConfig",
-		reflect.TypeOf((*GoogleDnsRecordSetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicy",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeo",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeo)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyGeoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyGeoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -317,7 +317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrr", GoGetter: "Wrr"},
 			_jsii_.MemberProperty{JsiiProperty: "wrrInput", GoGetter: "WrrInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -325,23 +325,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackup",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackup)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackup](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -363,7 +363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -403,7 +403,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -411,7 +411,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -450,7 +450,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -464,7 +464,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -472,7 +472,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -505,7 +505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -513,7 +513,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupGeo", GoGetter: "BackupGeo"},
 			_jsii_.MemberProperty{JsiiProperty: "backupGeoInput", GoGetter: "BackupGeoInput"},
@@ -549,7 +549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trickleRatio", GoGetter: "TrickleRatio"},
 			_jsii_.MemberProperty{JsiiProperty: "trickleRatioInput", GoGetter: "TrickleRatioInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -557,15 +557,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -587,7 +587,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,7 +635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -674,19 +674,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrr",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrr)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrr](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -700,7 +700,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -708,7 +708,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,7 +756,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -787,7 +787,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -795,7 +795,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrList",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -809,7 +809,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -817,7 +817,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrOutputReference",
-		reflect.TypeOf((*GoogleDnsRecordSetRoutingPolicyWrrOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDnsRecordSetRoutingPolicyWrrOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -850,7 +850,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

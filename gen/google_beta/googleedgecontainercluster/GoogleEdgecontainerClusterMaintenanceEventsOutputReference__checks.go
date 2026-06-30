@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerClusterMaintenanceEventsOutputReferenceParame
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
-		reflect.TypeOf((*GoogleAppEngineFirewallRule)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineFirewallRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineFirewallRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleConfig",
-		reflect.TypeOf((*GoogleAppEngineFirewallRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineFirewallRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts",
-		reflect.TypeOf((*GoogleAppEngineFirewallRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineFirewallRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineFirewallRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineFirewallRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineFirewallRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateSetDis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNodeTemplateDisksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeNodeTemplateDisksOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSchema) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDiscoveryEngineSchema_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSchema_IsConstructParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSchema_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDiscoveryEngineSchema_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSchema_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSchema_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDiscoveryEngineSchema_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSchema_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSchema_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDiscoveryEngineSchema_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSchema) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleDiscoveryEngineSchemaParameters(scope constructs.Construct
 
 	return nil
 }
-

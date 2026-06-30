@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateParamsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeInstanceFromTemplateParamsOutputReferenceParameters
 
 	return nil
 }
-

@@ -12,32 +12,32 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secure_source_manager_branch_rule google_secure_source_manager_branch_rule}.
 type GoogleSecureSourceManagerBranchRule interface {
 	cdktf.TerraformResource
-	AllowStaleReviews() interface{}
-	SetAllowStaleReviews(val interface{})
-	AllowStaleReviewsInput() interface{}
+	AllowStaleReviews() any
+	SetAllowStaleReviews(val any)
+	AllowStaleReviewsInput() any
 	BranchRuleId() *string
 	SetBranchRuleId(val *string)
 	BranchRuleIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,40 +76,40 @@ type GoogleSecureSourceManagerBranchRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
-	RequireCommentsResolved() interface{}
-	SetRequireCommentsResolved(val interface{})
-	RequireCommentsResolvedInput() interface{}
-	RequireLinearHistory() interface{}
-	SetRequireLinearHistory(val interface{})
-	RequireLinearHistoryInput() interface{}
-	RequirePullRequest() interface{}
-	SetRequirePullRequest(val interface{})
-	RequirePullRequestInput() interface{}
+	RequireCommentsResolved() any
+	SetRequireCommentsResolved(val any)
+	RequireCommentsResolvedInput() any
+	RequireLinearHistory() any
+	SetRequireLinearHistory(val any)
+	RequireLinearHistoryInput() any
+	RequirePullRequest() any
+	SetRequirePullRequest(val any)
+	RequirePullRequestInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleSecureSourceManagerBranchRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleSecureSourceManagerBranchRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type GoogleSecureSourceManagerBranchRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type GoogleSecureSourceManagerBranchRule interface {
 	ResetRequireLinearHistory()
 	ResetRequirePullRequest()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSecureSourceManagerBranchRule
@@ -178,8 +178,8 @@ type jsiiProxy_GoogleSecureSourceManagerBranchRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) AllowStaleReviews() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) AllowStaleReviews() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStaleReviews",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) AllowStaleReviews() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) AllowStaleReviewsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) AllowStaleReviewsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStaleReviewsInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RepositoryIdInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolved() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolved() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCommentsResolved",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolved(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolvedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolvedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCommentsResolvedInput",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireCommentsResolvedI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistory() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistory() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLinearHistory",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistory() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistoryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistoryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLinearHistoryInput",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequireLinearHistoryInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequirePullRequest() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequirePullRequest() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requirePullRequest",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequirePullRequest() int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequirePullRequestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) RequirePullRequestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requirePullRequestInput",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -628,8 +628,8 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) Timeouts() GoogleSecureS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -658,7 +658,6 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secure_source_manager_branch_rule google_secure_source_manager_branch_rule} Resource.
 func NewGoogleSecureSourceManagerBranchRule(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerBranchRuleConfig) GoogleSecureSourceManagerBranchRule {
 	_init_.Initialize()
@@ -670,7 +669,7 @@ func NewGoogleSecureSourceManagerBranchRule(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -683,12 +682,12 @@ func NewGoogleSecureSourceManagerBranchRule_Override(g GoogleSecureSourceManager
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetAllowStaleReviews(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetAllowStaleReviews(val any) {
 	if err := j.validateSetAllowStaleReviewsParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetAllowStaleReviews(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetBranchRuleId(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetBranchRuleId(val *string) {
 	if err := j.validateSetBranchRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetBranchRuleId(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetDisabled(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetId(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetIncludePattern(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetIncludePattern(val *string) {
 	if err := j.validateSetIncludePatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetIncludePattern(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetLocation(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetMinimumApprovalsCount(val *float64) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetMinimumApprovalsCount(val *float64) {
 	if err := j.validateSetMinimumApprovalsCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetMinimumApprovalsCount(
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetMinimumReviewsCount(val *float64) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetMinimumReviewsCount(val *float64) {
 	if err := j.validateSetMinimumReviewsCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetMinimumReviewsCount(va
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProject(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRepositoryId(val *string) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRepositoryId(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRequireCommentsResolved(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetRequireCommentsResolved(val any) {
 	if err := j.validateSetRequireCommentsResolvedParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRequireCommentsResolve
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRequireLinearHistory(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetRequireLinearHistory(val any) {
 	if err := j.validateSetRequireLinearHistoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRequireLinearHistory(v
 	)
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule)SetRequirePullRequest(val interface{}) {
+func (j *jsiiProxy_GoogleSecureSourceManagerBranchRule) SetRequirePullRequest(val any) {
 	if err := j.validateSetRequirePullRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -911,7 +910,7 @@ func GoogleSecureSourceManagerBranchRule_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func GoogleSecureSourceManagerBranchRule_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
+func GoogleSecureSourceManagerBranchRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSecureSourceManagerBranchRule_IsConstructParameters(x); err != nil {
@@ -946,7 +945,7 @@ func GoogleSecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func GoogleSecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool {
+func GoogleSecureSourceManagerBranchRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSecureSourceManagerBranchRule_IsTerraformElementParameters(x); err != nil {
@@ -965,7 +964,7 @@ func GoogleSecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func GoogleSecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleSecureSourceManagerBranchRule_IsTerraformResource(x interface{}) *bool {
+func GoogleSecureSourceManagerBranchRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSecureSourceManagerBranchRule_IsTerraformResourceParameters(x); err != nil {
@@ -984,7 +983,7 @@ func GoogleSecureSourceManagerBranchRule_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSecureSourceManagerBranchRule.GoogleSecureSourceManagerBranchRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1009,31 +1008,31 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetStringAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,15 +1160,15 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1188,7 +1187,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) InterpolationForAttribut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1215,18 +1214,18 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1259,7 +1258,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) PutTimeouts(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1351,8 +1350,8 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1364,8 +1363,8 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1377,8 +1376,8 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) SynthesizeHclAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1390,8 +1389,8 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToHclTerraform() interfa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1416,8 +1415,8 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1428,4 +1427,3 @@ func (g *jsiiProxy_GoogleSecureSourceManagerBranchRule) ToTerraform() interface{
 
 	return returns
 }
-

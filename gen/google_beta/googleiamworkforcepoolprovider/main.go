@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProvider)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,19 +103,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderConfig",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thumbprint", GoGetter: "Thumbprint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributesType", GoGetter: "AttributesType"},
 			_jsii_.MemberProperty{JsiiProperty: "attributesTypeInput", GoGetter: "AttributesTypeInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,11 +235,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,15 +274,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidc",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidc)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidc](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcClientSecret",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcClientSecret)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcClientSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -318,11 +318,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcClientSecretValue",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcClientSecretValue)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcClientSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thumbprint", GoGetter: "Thumbprint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,7 +357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webSsoConfig", GoGetter: "WebSsoConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "webSsoConfigInput", GoGetter: "WebSsoConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,11 +404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfig",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcWebSsoConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcWebSsoConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalScopes", GoGetter: "AdditionalScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalScopesInput", GoGetter: "AdditionalScopesInput"},
@@ -439,7 +439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -447,11 +447,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderSaml",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderSaml)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderSamlOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,11 +485,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderTimeouts",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolProviderTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolProviderTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -522,7 +522,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolProviderTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

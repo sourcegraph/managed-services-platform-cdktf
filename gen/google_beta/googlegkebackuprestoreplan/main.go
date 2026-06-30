@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlan)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlan](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,23 +93,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allGroupKinds", GoGetter: "AllGroupKinds"},
 			_jsii_.MemberProperty{JsiiProperty: "allGroupKindsInput", GoGetter: "AllGroupKindsInput"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,11 +215,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allNamespaces", GoGetter: "AllNamespaces"},
 			_jsii_.MemberProperty{JsiiProperty: "allNamespacesInput", GoGetter: "AllNamespacesInput"},
@@ -384,7 +384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeDataRestorePolicyBindingsInput", GoGetter: "VolumeDataRestorePolicyBindingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeDataRestorePolicyInput", GoGetter: "VolumeDataRestorePolicyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -392,15 +392,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -422,7 +422,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -460,11 +460,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -494,7 +494,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -502,11 +502,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -536,7 +536,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -544,7 +544,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,15 +579,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -601,7 +601,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -609,7 +609,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -637,7 +637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -645,7 +645,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -672,7 +672,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -680,11 +680,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -710,7 +710,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -718,15 +718,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRules",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -748,7 +748,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -783,7 +783,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -791,7 +791,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -805,7 +805,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -813,7 +813,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,15 +855,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -877,7 +877,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -885,7 +885,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -915,7 +915,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -923,7 +923,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -957,7 +957,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -965,11 +965,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -983,7 +983,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -991,7 +991,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1019,7 +1019,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1027,11 +1027,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleGkeBackupRestorePlanTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeBackupRestorePlanTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1064,7 +1064,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeBackupRestorePlanTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

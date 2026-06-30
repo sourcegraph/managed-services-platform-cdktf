@@ -22,15 +22,15 @@ type GoogleNetappVolume interface {
 	CdktfStack() cdktf.TerraformStack
 	ColdTierSizeGib() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
@@ -60,16 +60,16 @@ type GoogleNetappVolume interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	KerberosEnabled() interface{}
-	SetKerberosEnabled(val interface{})
-	KerberosEnabledInput() interface{}
+	KerberosEnabled() any
+	SetKerberosEnabled(val any)
+	KerberosEnabledInput() any
 	KmsConfig() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
-	LargeCapacity() interface{}
-	SetLargeCapacity(val interface{})
-	LargeCapacityInput() interface{}
+	LargeCapacity() any
+	SetLargeCapacity(val any)
+	LargeCapacityInput() any
 	LdapEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -79,9 +79,9 @@ type GoogleNetappVolume interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MountOptions() GoogleNetappVolumeMountOptionsList
-	MultipleEndpoints() interface{}
-	SetMultipleEndpoints(val interface{})
-	MultipleEndpointsInput() interface{}
+	MultipleEndpoints() any
+	SetMultipleEndpoints(val any)
+	MultipleEndpointsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -99,12 +99,12 @@ type GoogleNetappVolume interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PsaRange() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicaZone() *string
 	RestoreParameters() GoogleNetappVolumeRestoreParametersOutputReference
 	RestoreParametersInput() *GoogleNetappVolumeRestoreParameters
@@ -121,9 +121,9 @@ type GoogleNetappVolume interface {
 	SmbSettings() *[]*string
 	SetSmbSettings(val *[]*string)
 	SmbSettingsInput() *[]*string
-	SnapshotDirectory() interface{}
-	SetSnapshotDirectory(val interface{})
-	SnapshotDirectoryInput() interface{}
+	SnapshotDirectory() any
+	SetSnapshotDirectory(val any)
+	SnapshotDirectoryInput() any
 	SnapshotPolicy() GoogleNetappVolumeSnapshotPolicyOutputReference
 	SnapshotPolicyInput() *GoogleNetappVolumeSnapshotPolicy
 	State() *string
@@ -135,13 +135,13 @@ type GoogleNetappVolume interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TieringPolicy() GoogleNetappVolumeTieringPolicyOutputReference
 	TieringPolicyInput() *GoogleNetappVolumeTieringPolicy
 	Timeouts() GoogleNetappVolumeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UnixPermissions() *string
 	SetUnixPermissions(val *string)
 	UnixPermissionsInput() *string
@@ -151,9 +151,9 @@ type GoogleNetappVolume interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -171,7 +171,7 @@ type GoogleNetappVolume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -183,7 +183,7 @@ type GoogleNetappVolume interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -220,17 +220,17 @@ type GoogleNetappVolume interface {
 	ResetTieringPolicy()
 	ResetTimeouts()
 	ResetUnixPermissions()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetappVolume
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GoogleNetappVolume) ColdTierSizeGib() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_GoogleNetappVolume) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetappVolume) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_GoogleNetappVolume) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_GoogleNetappVolume) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) KerberosEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) KerberosEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberosEnabled",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_GoogleNetappVolume) KerberosEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) KerberosEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) KerberosEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kerberosEnabledInput",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_GoogleNetappVolume) LabelsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) LargeCapacity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) LargeCapacity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"largeCapacity",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_GoogleNetappVolume) LargeCapacity() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) LargeCapacityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) LargeCapacityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"largeCapacityInput",
@@ -638,8 +638,8 @@ func (j *jsiiProxy_GoogleNetappVolume) MountOptions() GoogleNetappVolumeMountOpt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpoints() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpoints() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multipleEndpoints",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpoints() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) MultipleEndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multipleEndpointsInput",
@@ -748,8 +748,8 @@ func (j *jsiiProxy_GoogleNetappVolume) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetappVolume) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -768,8 +768,8 @@ func (j *jsiiProxy_GoogleNetappVolume) PsaRange() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -898,8 +898,8 @@ func (j *jsiiProxy_GoogleNetappVolume) SmbSettingsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) SnapshotDirectory() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) SnapshotDirectory() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"snapshotDirectory",
@@ -908,8 +908,8 @@ func (j *jsiiProxy_GoogleNetappVolume) SnapshotDirectory() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) SnapshotDirectoryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) SnapshotDirectoryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"snapshotDirectoryInput",
@@ -998,8 +998,8 @@ func (j *jsiiProxy_GoogleNetappVolume) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetappVolume) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1048,8 +1048,8 @@ func (j *jsiiProxy_GoogleNetappVolume) Timeouts() GoogleNetappVolumeTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolume) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1098,7 +1098,6 @@ func (j *jsiiProxy_GoogleNetappVolume) Zone() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) GoogleNetappVolume {
 	_init_.Initialize()
@@ -1110,7 +1109,7 @@ func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1123,12 +1122,12 @@ func NewGoogleNetappVolume_Override(g GoogleNetappVolume, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetCapacityGib(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetCapacityGib(val *string) {
 	if err := j.validateSetCapacityGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetCapacityGib(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1172,7 +1171,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetappVolume) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetKerberosEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetKerberosEnabled(val any) {
 	if err := j.validateSetKerberosEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetKerberosEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetLargeCapacity(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetLargeCapacity(val any) {
 	if err := j.validateSetLargeCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLargeCapacity(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetappVolume) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetMultipleEndpoints(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetMultipleEndpoints(val any) {
 	if err := j.validateSetMultipleEndpointsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetMultipleEndpoints(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetProtocols(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetProtocols(val *[]*string) {
 	if err := j.validateSetProtocolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetProtocols(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetappVolume) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1317,7 +1316,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1328,7 +1327,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetRestrictedActions(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetRestrictedActions(val *[]*string) {
 	if err := j.validateSetRestrictedActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1339,7 +1338,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetRestrictedActions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetSecurityStyle(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetSecurityStyle(val *string) {
 	if err := j.validateSetSecurityStyleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1350,7 +1349,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetSecurityStyle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetShareName(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetShareName(val *string) {
 	if err := j.validateSetShareNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1361,7 +1360,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetShareName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetSmbSettings(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetSmbSettings(val *[]*string) {
 	if err := j.validateSetSmbSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1372,7 +1371,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetSmbSettings(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetSnapshotDirectory(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolume) SetSnapshotDirectory(val any) {
 	if err := j.validateSetSnapshotDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1382,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetSnapshotDirectory(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetStoragePool(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetStoragePool(val *string) {
 	if err := j.validateSetStoragePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1394,7 +1393,7 @@ func (j *jsiiProxy_GoogleNetappVolume)SetStoragePool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolume)SetUnixPermissions(val *string) {
+func (j *jsiiProxy_GoogleNetappVolume) SetUnixPermissions(val *string) {
 	if err := j.validateSetUnixPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1417,7 +1416,7 @@ func GoogleNetappVolume_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1441,7 +1440,7 @@ func GoogleNetappVolume_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetappVolume_IsConstruct(x interface{}) *bool {
+func GoogleNetappVolume_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappVolume_IsConstructParameters(x); err != nil {
@@ -1452,7 +1451,7 @@ func GoogleNetappVolume_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1460,7 +1459,7 @@ func GoogleNetappVolume_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetappVolume_IsTerraformElement(x interface{}) *bool {
+func GoogleNetappVolume_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappVolume_IsTerraformElementParameters(x); err != nil {
@@ -1471,7 +1470,7 @@ func GoogleNetappVolume_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1479,7 +1478,7 @@ func GoogleNetappVolume_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetappVolume_IsTerraformResource(x interface{}) *bool {
+func GoogleNetappVolume_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappVolume_IsTerraformResourceParameters(x); err != nil {
@@ -1490,7 +1489,7 @@ func GoogleNetappVolume_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolume",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1515,31 +1514,31 @@ func (g *jsiiProxy_GoogleNetappVolume) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetappVolume) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetappVolume) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1555,7 +1554,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1571,7 +1570,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1587,7 +1586,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1603,7 +1602,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1619,7 +1618,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1635,7 +1634,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1651,7 +1650,7 @@ func (g *jsiiProxy_GoogleNetappVolume) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1667,15 +1666,15 @@ func (g *jsiiProxy_GoogleNetappVolume) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappVolume) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1694,7 +1693,7 @@ func (g *jsiiProxy_GoogleNetappVolume) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1707,7 +1706,7 @@ func (g *jsiiProxy_GoogleNetappVolume) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1721,18 +1720,18 @@ func (g *jsiiProxy_GoogleNetappVolume) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetappVolume) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1743,7 +1742,7 @@ func (g *jsiiProxy_GoogleNetappVolume) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1754,7 +1753,7 @@ func (g *jsiiProxy_GoogleNetappVolume) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1765,7 +1764,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutBackupConfig(value *GoogleNetappVolume
 	_jsii_.InvokeVoid(
 		g,
 		"putBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1776,7 +1775,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutExportPolicy(value *GoogleNetappVolume
 	_jsii_.InvokeVoid(
 		g,
 		"putExportPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1787,7 +1786,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutHybridReplicationParameters(value *Goo
 	_jsii_.InvokeVoid(
 		g,
 		"putHybridReplicationParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1798,7 +1797,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutRestoreParameters(value *GoogleNetappV
 	_jsii_.InvokeVoid(
 		g,
 		"putRestoreParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1809,7 +1808,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutSnapshotPolicy(value *GoogleNetappVolu
 	_jsii_.InvokeVoid(
 		g,
 		"putSnapshotPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1820,7 +1819,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutTieringPolicy(value *GoogleNetappVolum
 	_jsii_.InvokeVoid(
 		g,
 		"putTieringPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1831,7 +1830,7 @@ func (g *jsiiProxy_GoogleNetappVolume) PutTimeouts(value *GoogleNetappVolumeTime
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2003,8 +2002,8 @@ func (g *jsiiProxy_GoogleNetappVolume) ResetUnixPermissions() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetappVolume) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2016,8 +2015,8 @@ func (g *jsiiProxy_GoogleNetappVolume) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetappVolume) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2029,8 +2028,8 @@ func (g *jsiiProxy_GoogleNetappVolume) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappVolume) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2042,8 +2041,8 @@ func (g *jsiiProxy_GoogleNetappVolume) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappVolume) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2068,8 +2067,8 @@ func (g *jsiiProxy_GoogleNetappVolume) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappVolume) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2080,4 +2079,3 @@ func (g *jsiiProxy_GoogleNetappVolume) ToTerraform() interface{} {
 
 	return returns
 }
-

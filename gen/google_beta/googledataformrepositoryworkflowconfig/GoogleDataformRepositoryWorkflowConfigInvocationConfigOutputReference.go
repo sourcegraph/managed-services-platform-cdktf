@@ -12,9 +12,9 @@ type GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	FullyRefreshIncrementalTablesEnabled() interface{}
-	SetFullyRefreshIncrementalTablesEnabled(val interface{})
-	FullyRefreshIncrementalTablesEnabledInput() interface{}
+	FullyRefreshIncrementalTablesEnabled() any
+	SetFullyRefreshIncrementalTablesEnabled(val any)
+	FullyRefreshIncrementalTablesEnabledInput() any
 	IncludedTags() *[]*string
 	SetIncludedTags(val *[]*string)
 	IncludedTagsInput() *[]*string
 	IncludedTargets() GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList
-	IncludedTargetsInput() interface{}
+	IncludedTargetsInput() any
 	InternalValue() *GoogleDataformRepositoryWorkflowConfigInvocationConfig
 	SetInternalValue(val *GoogleDataformRepositoryWorkflowConfigInvocationConfig)
 	ServiceAccount() *string
@@ -48,16 +48,16 @@ type GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference inter
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TransitiveDependenciesIncluded() interface{}
-	SetTransitiveDependenciesIncluded(val interface{})
-	TransitiveDependenciesIncludedInput() interface{}
-	TransitiveDependentsIncluded() interface{}
-	SetTransitiveDependentsIncluded(val interface{})
-	TransitiveDependentsIncludedInput() interface{}
+	TransitiveDependenciesIncluded() any
+	SetTransitiveDependenciesIncluded(val any)
+	TransitiveDependenciesIncludedInput() any
+	TransitiveDependentsIncluded() any
+	SetTransitiveDependentsIncluded(val any)
+	TransitiveDependentsIncludedInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIncludedTargets(value interface{})
+	PutIncludedTargets(value any)
 	ResetFullyRefreshIncrementalTablesEnabled()
 	ResetIncludedTags()
 	ResetIncludedTargets()
@@ -87,7 +87,7 @@ type GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference inter
 	ResetTransitiveDependentsIncluded()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) FullyRefreshIncrementalTablesEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) FullyRefreshIncrementalTablesEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fullyRefreshIncrementalTablesEnabled",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) FullyRefreshIncrementalTablesEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) FullyRefreshIncrementalTablesEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fullyRefreshIncrementalTablesEnabledInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) IncludedTargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) IncludedTargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includedTargetsInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependenciesIncluded() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependenciesIncluded() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitiveDependenciesIncluded",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependenciesIncludedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependenciesIncludedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitiveDependenciesIncludedInput",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependentsIncluded() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependentsIncluded() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitiveDependentsIncluded",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependentsIncludedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) TransitiveDependentsIncludedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitiveDependentsIncludedInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 	return returns
 }
-
 
 func NewGoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference {
 	_init_.Initialize()
@@ -301,7 +300,7 @@ func NewGoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetFullyRefreshIncrementalTablesEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetFullyRefreshIncrementalTablesEnabled(val any) {
 	if err := j.validateSetFullyRefreshIncrementalTablesEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetIncludedTags(val *[]*string) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetIncludedTags(val *[]*string) {
 	if err := j.validateSetIncludedTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetInternalValue(val *GoogleDataformRepositoryWorkflowConfigInvocationConfig) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetInternalValue(val *GoogleDataformRepositoryWorkflowConfigInvocationConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetTransitiveDependenciesIncluded(val interface{}) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetTransitiveDependenciesIncluded(val any) {
 	if err := j.validateSetTransitiveDependenciesIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)SetTransitiveDependentsIncluded(val interface{}) {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) SetTransitiveDependentsIncluded(val any) {
 	if err := j.validateSetTransitiveDependentsIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,21 +606,21 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) PutIncludedTargets(value interface{}) {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) PutIncludedTargets(value any) {
 	if err := g.validatePutIncludedTargetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putIncludedTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputR
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package googleclouddeployautomation
 
-
 type GoogleClouddeployAutomationRulesRepairRolloutRule struct {
 	// Required.
 	//
@@ -26,6 +25,5 @@ type GoogleClouddeployAutomationRulesRepairRolloutRule struct {
 	// repair_phases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#repair_phases GoogleClouddeployAutomation#repair_phases}
-	RepairPhases interface{} `field:"optional" json:"repairPhases" yaml:"repairPhases"`
+	RepairPhases any `field:"optional" json:"repairPhases" yaml:"repairPhases"`
 }
-

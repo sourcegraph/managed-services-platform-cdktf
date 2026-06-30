@@ -12,9 +12,9 @@ type GoogleBigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GoogleBigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type GoogleBigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	ResetStorageTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	return returns
 }
 
-
 func NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigtableInstanceClusterAutoscalingConfigOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference_Override(g
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetCpuTarget(val *float64) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetCpuTarget(val *float64) {
 	if err := j.validateSetCpuTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetInternalValue(val *GoogleBigtableInstanceClusterAutoscalingConfig) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetInternalValue(val *GoogleBigtableInstanceClusterAutoscalingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetMaxNodes(val *float64) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetMaxNodes(val *float64) {
 	if err := j.validateSetMaxNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetMinNodes(val *float64) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetMinNodes(val *float64) {
 	if err := j.validateSetMinNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetStorageTarget(val *float64) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetStorageTarget(val *float64) {
 	if err := j.validateSetStorageTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 
 	return returns
 }
-

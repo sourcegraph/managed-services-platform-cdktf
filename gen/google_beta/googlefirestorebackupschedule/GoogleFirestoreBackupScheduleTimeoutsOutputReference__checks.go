@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreBackupScheduleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFirestoreBackupScheduleTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

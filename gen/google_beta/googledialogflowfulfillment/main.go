@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
-		reflect.TypeOf((*GoogleDialogflowFulfillment)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowFulfillment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentConfig",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeatures",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentFeatures)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesList",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentFeaturesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentFeaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowFulfillmentFeaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesOutputReference",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowFulfillmentFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentGenericWebService",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentGenericWebService)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentGenericWebService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentGenericWebServiceOutputReference",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentGenericWebServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentGenericWebServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowFulfillmentGenericWebServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeouts",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDialogflowFulfillmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowFulfillmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowFulfillmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

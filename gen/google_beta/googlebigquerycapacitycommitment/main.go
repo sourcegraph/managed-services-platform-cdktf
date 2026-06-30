@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
-		reflect.TypeOf((*GoogleBigqueryCapacityCommitment)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryCapacityCommitment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryCapacityCommitment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig",
-		reflect.TypeOf((*GoogleBigqueryCapacityCommitmentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryCapacityCommitmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentTimeouts",
-		reflect.TypeOf((*GoogleBigqueryCapacityCommitmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryCapacityCommitmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryCapacityCommitmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryCapacityCommitmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryCapacityCommitmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

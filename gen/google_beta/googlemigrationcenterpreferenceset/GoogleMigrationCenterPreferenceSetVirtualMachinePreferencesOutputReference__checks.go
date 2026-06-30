@@ -150,7 +150,7 @@ func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,4 +266,3 @@ func validateNewGoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutpu
 
 	return nil
 }
-

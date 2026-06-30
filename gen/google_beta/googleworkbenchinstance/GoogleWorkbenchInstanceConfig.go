@@ -6,9 +6,9 @@ import (
 
 type GoogleWorkbenchInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleWorkbenchInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance#location GoogleWorkbenchInstance#location}
@@ -36,11 +36,11 @@ type GoogleWorkbenchInstanceConfig struct {
 	// Optional. If true, the workbench instance will not register with the proxy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance#disable_proxy_access GoogleWorkbenchInstance#disable_proxy_access}
-	DisableProxyAccess interface{} `field:"optional" json:"disableProxyAccess" yaml:"disableProxyAccess"`
+	DisableProxyAccess any `field:"optional" json:"disableProxyAccess" yaml:"disableProxyAccess"`
 	// Flag that specifies that a notebook can be accessed with third party identity provider.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance#enable_third_party_identity GoogleWorkbenchInstance#enable_third_party_identity}
-	EnableThirdPartyIdentity interface{} `field:"optional" json:"enableThirdPartyIdentity" yaml:"enableThirdPartyIdentity"`
+	EnableThirdPartyIdentity any `field:"optional" json:"enableThirdPartyIdentity" yaml:"enableThirdPartyIdentity"`
 	// gce_setup block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance#gce_setup GoogleWorkbenchInstance#gce_setup}
@@ -78,4 +78,3 @@ type GoogleWorkbenchInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance#timeouts GoogleWorkbenchInstance#timeouts}
 	Timeouts *GoogleWorkbenchInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

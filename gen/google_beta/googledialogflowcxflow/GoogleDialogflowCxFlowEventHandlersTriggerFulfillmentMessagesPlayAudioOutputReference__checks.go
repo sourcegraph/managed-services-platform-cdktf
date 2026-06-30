@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPla
 
 	return nil
 }
-

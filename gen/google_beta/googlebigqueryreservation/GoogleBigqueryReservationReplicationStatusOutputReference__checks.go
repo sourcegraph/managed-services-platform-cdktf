@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryReservationReplicationStatusOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservationReplicationStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryReservationReplicationStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryReservationReplicationStatusOutputReferenceParamet
 
 	return nil
 }
-

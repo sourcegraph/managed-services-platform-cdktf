@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessorDefaultVersion.GoogleDocumentAiProcessorDefaultVersion",
-		reflect.TypeOf((*GoogleDocumentAiProcessorDefaultVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorDefaultVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDocumentAiProcessorDefaultVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessorDefaultVersion.GoogleDocumentAiProcessorDefaultVersionConfig",
-		reflect.TypeOf((*GoogleDocumentAiProcessorDefaultVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorDefaultVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessorDefaultVersion.GoogleDocumentAiProcessorDefaultVersionTimeouts",
-		reflect.TypeOf((*GoogleDocumentAiProcessorDefaultVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorDefaultVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDocumentAiProcessorDefaultVersion.GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

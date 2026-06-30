@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleEndpointsServiceConsumersIamBinding_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleEndpointsServiceConsumersIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleEndpointsServiceConsumersIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleEndpointsServiceConsumersIamBinding_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleEndpointsServiceConsumersIamBinding_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetConsume
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetMembers
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleEndpointsServiceConsumersIamBindingParameters(scope constr
 
 	return nil
 }
-

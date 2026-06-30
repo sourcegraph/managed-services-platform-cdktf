@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateAddMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveFro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleWorkstationsWorkstationConfigIamPolicy_GenerateConfigForImpor
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElementPara
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformResourcePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetConn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetProj
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewGoogleWorkstationsWorkstationConfigIamPolicyParameters(scope con
 
 	return nil
 }
-

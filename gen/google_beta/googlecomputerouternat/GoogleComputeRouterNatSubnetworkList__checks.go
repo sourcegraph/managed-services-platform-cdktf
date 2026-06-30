@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatSubnetworkList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatSubnetworkList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNatSubnetworkList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRouterNatSubnetworkListParameters(terraformResource
 
 	return nil
 }
-

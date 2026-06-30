@@ -1,6 +1,5 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches struct {
 	// The name of the query parameter to match.
 	//
@@ -22,7 +21,7 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatch
 	// presentMatch, exactMatch and regexMatch must be set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#present_match GoogleComputeRegionUrlMap#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// The queryParameterMatch matches if the value of the parameter matches the regular expression specified by regexMatch.
 	//
 	// For the regular expression grammar,
@@ -32,4 +31,3 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatch
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#regex_match GoogleComputeRegionUrlMap#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 }
-

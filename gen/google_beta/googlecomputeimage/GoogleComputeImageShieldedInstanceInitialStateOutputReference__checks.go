@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutDbsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutDbsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutDbxsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutDbxsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutKeksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validatePutKeksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -302,4 +302,3 @@ func validateNewGoogleComputeImageShieldedInstanceInitialStateOutputReferencePar
 
 	return nil
 }
-

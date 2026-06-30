@@ -34,7 +34,7 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGooglePubsubTopicMessageTransformsListParameters(terraformResour
 
 	return nil
 }
-

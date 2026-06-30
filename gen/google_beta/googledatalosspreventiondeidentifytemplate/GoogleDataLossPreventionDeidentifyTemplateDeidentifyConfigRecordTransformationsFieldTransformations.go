@@ -1,11 +1,10 @@
 package googledatalosspreventiondeidentifytemplate
 
-
 type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformations struct {
 	// fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_deidentify_template#fields GoogleDataLossPreventionDeidentifyTemplate#fields}
-	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
+	Fields any `field:"required" json:"fields" yaml:"fields"`
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_deidentify_template#condition GoogleDataLossPreventionDeidentifyTemplate#condition}
@@ -19,4 +18,3 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformat
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_deidentify_template#primitive_transformation GoogleDataLossPreventionDeidentifyTemplate#primitive_transformation}
 	PrimitiveTransformation *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation `field:"optional" json:"primitiveTransformation" yaml:"primitiveTransformation"`
 }
-

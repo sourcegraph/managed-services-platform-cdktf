@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
-		reflect.TypeOf((*GoogleNetworkConnectivityHub)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHub](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityHub{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubConfig",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcs",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubRoutingVpcs)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubRoutingVpcs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsList",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubRoutingVpcsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubRoutingVpcsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsOutputReference",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubRoutingVpcsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubRoutingVpcsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeouts",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkConnectivityHubTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkConnectivityHubTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkConnectivityHubTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

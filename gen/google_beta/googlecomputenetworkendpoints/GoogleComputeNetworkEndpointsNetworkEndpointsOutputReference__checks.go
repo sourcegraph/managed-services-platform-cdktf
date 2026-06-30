@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNetworkEndpointsNetworkEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeNetworkEndpointsNetworkEndpointsOutputReferencePara
 
 	return nil
 }
-

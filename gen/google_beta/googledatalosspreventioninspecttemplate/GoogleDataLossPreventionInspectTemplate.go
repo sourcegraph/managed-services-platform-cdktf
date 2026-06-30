@@ -15,15 +15,15 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,29 +62,29 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TemplateId() *string
 	SetTemplateId(val *string)
 	TemplateIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataLossPreventionInspectTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type GoogleDataLossPreventionInspectTemplate interface {
 	ResetOverrideLogicalId()
 	ResetTemplateId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataLossPreventionInspectTemplate
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) Timeouts() GoogleDat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TimeoutsInput() inte
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *string, config *GoogleDataLossPreventionInspectTemplateConfig) GoogleDataLossPreventionInspectTemplate {
@@ -472,7 +471,7 @@ func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewGoogleDataLossPreventionInspectTemplate_Override(g GoogleDataLossPrevent
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetDisplayName(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetParent(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetParent(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate)SetTemplateId(val *string) {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SetTemplateId(val *string) {
 	if err := j.validateSetTemplateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func GoogleDataLossPreventionInspectTemplate_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func GoogleDataLossPreventionInspectTemplate_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataLossPreventionInspectTemplate_IsConstruct(x interface{}) *bool {
+func GoogleDataLossPreventionInspectTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionInspectTemplate_IsConstructParameters(x); err != nil {
@@ -660,7 +659,7 @@ func GoogleDataLossPreventionInspectTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func GoogleDataLossPreventionInspectTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataLossPreventionInspectTemplate_IsTerraformElement(x interface{}) *bool {
+func GoogleDataLossPreventionInspectTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionInspectTemplate_IsTerraformElementParameters(x); err != nil {
@@ -679,7 +678,7 @@ func GoogleDataLossPreventionInspectTemplate_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func GoogleDataLossPreventionInspectTemplate_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func GoogleDataLossPreventionInspectTemplate_IsTerraformResource(x interface{}) *bool {
+func GoogleDataLossPreventionInspectTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataLossPreventionInspectTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -698,7 +697,7 @@ func GoogleDataLossPreventionInspectTemplate_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,31 +722,31 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetBooleanAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetNumberAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetNumberListAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetNumberMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetStringAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,15 +874,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) GetStringMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) InterpolationForAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,18 +928,18 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -973,7 +972,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) PutInspectConfig(val
 	_jsii_.InvokeVoid(
 		g,
 		"putInspectConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -984,7 +983,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) PutTimeouts(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1057,8 +1056,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1070,8 +1069,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) SynthesizeHclAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1083,8 +1082,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToHclTerraform() int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1109,8 +1108,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1121,4 +1120,3 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplate) ToTerraform() interf
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamBindingConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGooglePrivatecaCaPoolIamBindingConditionOutputReferenceParameter
 
 	return nil
 }
-

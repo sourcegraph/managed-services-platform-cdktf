@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBeyondcorpApplicationIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBeyondcorpApplicationIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

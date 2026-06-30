@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
-		reflect.TypeOf((*GoogleLoggingProjectExclusion)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingProjectExclusion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingProjectExclusion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig",
-		reflect.TypeOf((*GoogleLoggingProjectExclusionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingProjectExclusionConfig](),
 	)
 }

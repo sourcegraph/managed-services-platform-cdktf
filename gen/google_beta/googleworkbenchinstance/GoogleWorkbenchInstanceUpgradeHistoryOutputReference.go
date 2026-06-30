@@ -13,9 +13,9 @@ type GoogleWorkbenchInstanceUpgradeHistoryOutputReference interface {
 	Action() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleWorkbenchInstanceUpgradeHistoryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type GoogleWorkbenchInstanceUpgradeHistoryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) Action(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -245,7 +245,6 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) VmImage
 	return returns
 }
 
-
 func NewGoogleWorkbenchInstanceUpgradeHistoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleWorkbenchInstanceUpgradeHistoryOutputReference {
 	_init_.Initialize()
 
@@ -256,7 +255,7 @@ func NewGoogleWorkbenchInstanceUpgradeHistoryOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -268,12 +267,12 @@ func NewGoogleWorkbenchInstanceUpgradeHistoryOutputReference_Override(g GoogleWo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleWorkbenchInstance.GoogleWorkbenchInstanceUpgradeHistoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetInternalValue(val *GoogleWorkbenchInstanceUpgradeHistory) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) SetInternalValue(val *GoogleWorkbenchInstanceUpgradeHistory) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,7 +316,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,16 +340,16 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,23 +506,23 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -542,4 +541,3 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) ToStrin
 
 	return returns
 }
-

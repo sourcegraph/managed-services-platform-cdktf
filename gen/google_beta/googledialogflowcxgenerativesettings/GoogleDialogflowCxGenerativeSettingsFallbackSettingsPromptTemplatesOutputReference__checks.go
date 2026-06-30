@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetFrozenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetFrozenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewGoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTempla
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReferen
 
 	return nil
 }
-

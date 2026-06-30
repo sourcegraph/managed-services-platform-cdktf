@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
 
 	return nil
 }
-

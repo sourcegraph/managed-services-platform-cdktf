@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfig",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trialConfig", GoGetter: "TrialConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigConfig",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,15 +143,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilter",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilter)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketIdRegexes", GoGetter: "BucketIdRegexes"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketIdRegexesInput", GoGetter: "BucketIdRegexesInput"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,11 +185,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,11 +223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketIdRegexes", GoGetter: "BucketIdRegexes"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketIdRegexesInput", GoGetter: "BucketIdRegexesInput"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -261,11 +261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,7 +299,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,11 +347,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeouts",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -384,7 +384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -392,11 +392,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfig",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigTrialConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigTrialConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -409,7 +409,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigTrialConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -417,7 +417,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleStorageControlOrganizationIntelligenceConfig.GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference",
-		reflect.TypeOf((*GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

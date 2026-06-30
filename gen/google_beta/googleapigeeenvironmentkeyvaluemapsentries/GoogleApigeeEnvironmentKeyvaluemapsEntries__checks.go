@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleApigeeEnvironmentKeyvaluemapsEntries_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetNamePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentKeyvaluemapsEntries) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleApigeeEnvironmentKeyvaluemapsEntriesParameters(scope const
 
 	return nil
 }
-

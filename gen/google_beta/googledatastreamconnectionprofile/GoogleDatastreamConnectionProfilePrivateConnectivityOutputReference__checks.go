@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfilePrivateConnectivityOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDatastreamConnectionProfilePrivateConnectivityOutputRefere
 
 	return nil
 }
-

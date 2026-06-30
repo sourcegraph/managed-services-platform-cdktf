@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleDataformRepositoryReleaseConfig_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleDataformRepositoryReleaseConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleDataformRepositoryReleaseConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleDataformRepositoryReleaseConfig_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleDataformRepositoryReleaseConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataformRepositoryReleaseConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleDataformRepositoryReleaseConfig_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleDataformRepositoryReleaseConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataformRepositoryReleaseConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleDataformRepositoryReleaseConfig_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,4 +492,3 @@ func validateNewGoogleDataformRepositoryReleaseConfigParameters(scope constructs
 
 	return nil
 }
-

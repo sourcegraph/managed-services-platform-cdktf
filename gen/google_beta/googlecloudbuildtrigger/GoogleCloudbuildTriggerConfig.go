@@ -6,9 +6,9 @@ import (
 
 type GoogleCloudbuildTriggerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleCloudbuildTriggerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// approval_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#approval_config GoogleCloudbuildTrigger#approval_config}
@@ -38,7 +38,7 @@ type GoogleCloudbuildTriggerConfig struct {
 	// Whether the trigger is disabled or not. If true, the trigger will never result in a build.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#disabled GoogleCloudbuildTrigger#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Path, from the source root, to a file whose contents is used for the template.
 	//
 	// Either a filename or build template must be provided. Set this only when using trigger_template or github.
@@ -146,4 +146,3 @@ type GoogleCloudbuildTriggerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuild_trigger#webhook_config GoogleCloudbuildTrigger#webhook_config}
 	WebhookConfig *GoogleCloudbuildTriggerWebhookConfig `field:"optional" json:"webhookConfig" yaml:"webhookConfig"`
 }
-

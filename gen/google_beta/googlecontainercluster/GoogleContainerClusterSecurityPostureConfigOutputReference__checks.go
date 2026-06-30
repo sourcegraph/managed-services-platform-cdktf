@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterSecurityPostureConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterSecurityPostureConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterSecurityPostureConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerClusterSecurityPostureConfigOutputReferenceParame
 
 	return nil
 }
-

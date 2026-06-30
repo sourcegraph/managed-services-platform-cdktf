@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityProfileV2{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2Config",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2Config)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2ProfileAssessmentConfigs",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2ProfileAssessmentConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2ProfileAssessmentConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsList",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assessment", GoGetter: "Assessment"},
 			_jsii_.MemberProperty{JsiiProperty: "assessmentInput", GoGetter: "AssessmentInput"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2Timeouts",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2Timeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSecurityProfileV2.GoogleApigeeSecurityProfileV2TimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeSecurityProfileV2TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSecurityProfileV2TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSecurityProfileV2TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

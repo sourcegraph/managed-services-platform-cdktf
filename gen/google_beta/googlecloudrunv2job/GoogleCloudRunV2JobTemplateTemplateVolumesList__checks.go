@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudRunV2JobTemplateTemplateVolumesListParameters(terrafo
 
 	return nil
 }
-

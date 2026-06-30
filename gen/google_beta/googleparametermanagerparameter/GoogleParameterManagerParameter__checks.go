@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleParameterManagerParameter) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerParameter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleParameterManagerParameter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleParameterManagerParameter) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerParameter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleParameterManagerParameter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleParameterManagerParameter_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleParameterManagerParameter_IsConstructParameters(x interface{}) error {
+func validateGoogleParameterManagerParameter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleParameterManagerParameter_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleParameterManagerParameter_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleParameterManagerParameter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleParameterManagerParameter_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleParameterManagerParameter_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleParameterManagerParameter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleParameterManagerParameter_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleParameterManagerParameter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleParameterManagerParameterParameters(scope constructs.Const
 
 	return nil
 }
-

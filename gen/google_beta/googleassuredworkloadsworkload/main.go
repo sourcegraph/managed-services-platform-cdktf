@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkload)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkload](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadOptions", GoGetter: "WorkloadOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadOptionsInput", GoGetter: "WorkloadOptionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkload{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -123,11 +123,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatus",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadComplianceStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadComplianceStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusList",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadComplianceStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadComplianceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -148,7 +148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acknowledgedViolationCount", GoGetter: "AcknowledgedViolationCount"},
 			_jsii_.MemberProperty{JsiiProperty: "activeViolationCount", GoGetter: "ActiveViolationCount"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadConfig",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadEkmProvisioningResponse",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadEkmProvisioningResponse)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadEkmProvisioningResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadKmsSettings",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadKmsSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadKmsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -286,11 +286,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadPartnerPermissions",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadPartnerPermissions)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadPartnerPermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assuredWorkloadsMonitoring", GoGetter: "AssuredWorkloadsMonitoring"},
 			_jsii_.MemberProperty{JsiiProperty: "assuredWorkloadsMonitoringInput", GoGetter: "AssuredWorkloadsMonitoringInput"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettings",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResourceSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResourceSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsList",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResourceSettingsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResourceSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -357,7 +357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -390,7 +390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -398,11 +398,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResources",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResources)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourcesList",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResourcesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -423,7 +423,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourcesOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -449,7 +449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -457,11 +457,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponse",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponse)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -482,7 +482,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -516,11 +516,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeouts",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -561,11 +561,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadWorkloadOptions",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadWorkloadOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadWorkloadOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference",
-		reflect.TypeOf((*GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -592,7 +592,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAssuredWorkloadsWorkloadWorkloadOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

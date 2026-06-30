@@ -161,7 +161,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetAc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -234,7 +234,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,7 +258,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -321,4 +321,3 @@ func validateNewGoogleComputeSecurityPolicyRuleOutputReferenceParameters(terrafo
 
 	return nil
 }
-

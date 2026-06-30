@@ -12,9 +12,9 @@ type GoogleTpuV2QueuedResourceTpuOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type GoogleTpuV2QueuedResourceTpuOutputReference interface {
 	InternalValue() *GoogleTpuV2QueuedResourceTpu
 	SetInternalValue(val *GoogleTpuV2QueuedResourceTpu)
 	NodeSpec() GoogleTpuV2QueuedResourceTpuNodeSpecList
-	NodeSpecInput() interface{}
+	NodeSpecInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type GoogleTpuV2QueuedResourceTpuOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type GoogleTpuV2QueuedResourceTpuOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNodeSpec(value interface{})
+	PutNodeSpec(value any)
 	ResetNodeSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) NodeSpec() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) NodeSpecInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) NodeSpecInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodeSpecInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewGoogleTpuV2QueuedResourceTpuOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleTpuV2QueuedResourceTpuOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGoogleTpuV2QueuedResourceTpuOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGoogleTpuV2QueuedResourceTpuOutputReference_Override(g GoogleTpuV2Queued
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetInternalValue(val *GoogleTpuV2QueuedResourceTpu) {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) SetInternalValue(val *GoogleTpuV2QueuedResourceTpu) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) PutNodeSpec(value interface{}) {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) PutNodeSpec(value any) {
 	if err := g.validatePutNodeSpecParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) ResetNodeSpec() 
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) ToString() *stri
 
 	return returns
 }
-

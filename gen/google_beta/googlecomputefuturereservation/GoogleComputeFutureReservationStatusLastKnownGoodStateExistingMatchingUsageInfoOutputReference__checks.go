@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateExistin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateExistingMatchingUsageInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationStatusLastKnownGoodStateExistingMatchingUsageInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeFutureReservationStatusLastKnownGoodStateExistingMa
 
 	return nil
 }
-

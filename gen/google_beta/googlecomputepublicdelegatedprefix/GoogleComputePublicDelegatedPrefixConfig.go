@@ -6,9 +6,9 @@ import (
 
 type GoogleComputePublicDelegatedPrefixConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputePublicDelegatedPrefixConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The IP address range, in CIDR format, represented by this public delegated prefix.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_public_delegated_prefix#ip_cidr_range GoogleComputePublicDelegatedPrefix#ip_cidr_range}
@@ -60,7 +60,7 @@ type GoogleComputePublicDelegatedPrefixConfig struct {
 	// If true, the prefix will be live migrated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_public_delegated_prefix#is_live_migration GoogleComputePublicDelegatedPrefix#is_live_migration}
-	IsLiveMigration interface{} `field:"optional" json:"isLiveMigration" yaml:"isLiveMigration"`
+	IsLiveMigration any `field:"optional" json:"isLiveMigration" yaml:"isLiveMigration"`
 	// Specifies the mode of this IPv6 PDP.
 	//
 	// MODE must be one of: DELEGATION,
@@ -75,4 +75,3 @@ type GoogleComputePublicDelegatedPrefixConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_public_delegated_prefix#timeouts GoogleComputePublicDelegatedPrefix#timeouts}
 	Timeouts *GoogleComputePublicDelegatedPrefixTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

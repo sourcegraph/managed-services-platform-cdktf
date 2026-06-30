@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreIamBinding.GoogleVertexAiFeatureOnlineStoreIamBinding",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreIamBinding.GoogleVertexAiFeatureOnlineStoreIamBindingCondition",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreIamBinding.GoogleVertexAiFeatureOnlineStoreIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureOnlineStoreIamBinding.GoogleVertexAiFeatureOnlineStoreIamBindingConfig",
-		reflect.TypeOf((*GoogleVertexAiFeatureOnlineStoreIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureOnlineStoreIamBindingConfig](),
 	)
 }

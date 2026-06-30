@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleIamWorkforcePool_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGoogleIamWorkforcePool_IsConstructParameters(x interface{}) error {
+func validateGoogleIamWorkforcePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleIamWorkforcePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleIamWorkforcePool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIamWorkforcePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleIamWorkforcePool_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleIamWorkforcePool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIamWorkforcePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleIamWorkforcePool_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetDescriptionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetParentParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewGoogleIamWorkforcePoolParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

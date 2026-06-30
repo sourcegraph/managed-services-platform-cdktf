@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTable",
-		reflect.TypeOf((*GoogleBigtableTable)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicy",
-		reflect.TypeOf((*GoogleBigtableTableAutomatedBackupPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableAutomatedBackupPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicyOutputReference",
-		reflect.TypeOf((*GoogleBigtableTableAutomatedBackupPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableAutomatedBackupPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableColumnFamily",
-		reflect.TypeOf((*GoogleBigtableTableColumnFamily)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableColumnFamily](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
-		reflect.TypeOf((*GoogleBigtableTableColumnFamilyList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableColumnFamilyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableTableColumnFamilyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableColumnFamilyOutputReference",
-		reflect.TypeOf((*GoogleBigtableTableColumnFamilyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableColumnFamilyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,15 +200,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableConfig",
-		reflect.TypeOf((*GoogleBigtableTableConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableTimeouts",
-		reflect.TypeOf((*GoogleBigtableTableTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigtableTableTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigtableTableTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigtableTableTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -164,7 +164,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,4 +264,3 @@ func validateNewGooglePubsubTopicIngestionDataSourceSettingsOutputReferenceParam
 
 	return nil
 }
-

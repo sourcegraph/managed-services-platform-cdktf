@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolConfig",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfig",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,11 +212,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaints",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaints)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,15 +279,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatus",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditions",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatusConditions)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatusConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditionsList",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatusConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatusConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolStatusConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -345,7 +345,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -366,7 +366,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,11 +400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeouts",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -437,7 +437,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

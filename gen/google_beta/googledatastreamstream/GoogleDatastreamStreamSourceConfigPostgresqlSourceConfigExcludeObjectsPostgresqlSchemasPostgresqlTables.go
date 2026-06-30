@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables struct {
 	// Table name.
 	//
@@ -9,6 +8,5 @@ type GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostg
 	// postgresql_columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
-	PostgresqlColumns interface{} `field:"optional" json:"postgresqlColumns" yaml:"postgresqlColumns"`
+	PostgresqlColumns any `field:"optional" json:"postgresqlColumns" yaml:"postgresqlColumns"`
 }
-

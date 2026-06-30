@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplate)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeatures", GoGetter: "AdvancedMachineFeatures"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -104,11 +104,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeatures",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateAdvancedMachineFeatures)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateAdvancedMachineFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "turboMode", GoGetter: "TurboMode"},
 			_jsii_.MemberProperty{JsiiProperty: "visibleCoreCount", GoGetter: "VisibleCoreCount"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateConfidentialInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateConfidentialInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -192,7 +192,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateConfidentialInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateConfidentialInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateConfidentialInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,19 +226,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDisk",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDisk)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDisk](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskDiskEncryptionKey",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskDiskEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskDiskEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -259,7 +259,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -314,7 +314,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -368,11 +368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKey",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -393,7 +393,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -429,11 +429,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -454,7 +454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,11 +490,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateGuestAccelerator",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateGuestAccelerator)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateGuestAccelerator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateGuestAcceleratorList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateGuestAcceleratorList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateGuestAcceleratorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateGuestAcceleratorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -515,7 +515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateGuestAcceleratorOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateGuestAcceleratorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateGuestAcceleratorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -541,7 +541,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateGuestAcceleratorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -549,15 +549,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterface",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterface](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -570,7 +570,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -578,7 +578,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -605,7 +605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -613,11 +613,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRange",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRange)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -630,7 +630,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -638,7 +638,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,11 +672,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -689,7 +689,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -697,7 +697,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -734,7 +734,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -747,7 +747,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -755,7 +755,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasIpRange", GoGetter: "AliasIpRange"},
@@ -794,7 +794,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -802,11 +802,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkPerformanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkPerformanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -819,7 +819,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -827,7 +827,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -852,7 +852,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalEgressBandwidthTier", GoGetter: "TotalEgressBandwidthTier"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -860,11 +860,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinity",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinity)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinityList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -877,7 +877,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -885,7 +885,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -911,7 +911,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -919,11 +919,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservation",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservation)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -936,7 +936,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -944,7 +944,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -970,7 +970,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -978,15 +978,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateScheduling",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateScheduling)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateScheduling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdown",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdown)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdown](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -999,7 +999,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1007,11 +1007,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDuration",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1024,7 +1024,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1032,7 +1032,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1058,7 +1058,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1066,7 +1066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1092,7 +1092,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingGracefulShutdownOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1100,7 +1100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1113,7 +1113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1121,11 +1121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeout",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeout)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1138,7 +1138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1146,7 +1146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1172,7 +1172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1180,11 +1180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1197,7 +1197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1205,7 +1205,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1231,7 +1231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1239,11 +1239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingNodeAffinities",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingNodeAffinities)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingNodeAffinities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1256,7 +1256,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1264,7 +1264,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1291,7 +1291,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1299,11 +1299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopAction",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopAction)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1316,7 +1316,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1324,7 +1324,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1349,7 +1349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1357,7 +1357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateSchedulingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateSchedulingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticRestart", GoGetter: "AutomaticRestart"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityDomain", GoGetter: "AvailabilityDomain"},
@@ -1396,7 +1396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1404,11 +1404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccount",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateServiceAccount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateServiceAccountList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateServiceAccountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1421,7 +1421,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateServiceAccountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1429,7 +1429,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateServiceAccountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateServiceAccountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1455,7 +1455,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateServiceAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1463,11 +1463,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateShieldedInstanceConfig",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateShieldedInstanceConfigList",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateShieldedInstanceConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateShieldedInstanceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1480,7 +1480,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateShieldedInstanceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1488,7 +1488,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*DataGoogleComputeInstanceTemplateShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeInstanceTemplateShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1515,7 +1515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

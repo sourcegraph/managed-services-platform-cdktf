@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetAnnota
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleCloudRunV2JobTemplateOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionRetryPolicyOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGooglePubsubSubscriptionRetryPolicyOutputReferenceParameters(ter
 
 	return nil
 }
-

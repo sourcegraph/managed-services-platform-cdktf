@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedIns
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedIns
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedIns
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedIns
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstan
 
 	return nil
 }
-

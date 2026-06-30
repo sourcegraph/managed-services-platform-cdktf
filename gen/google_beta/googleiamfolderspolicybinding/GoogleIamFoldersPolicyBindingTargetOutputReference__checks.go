@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTargetOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIamFoldersPolicyBindingTargetOutputReferenceParameters(ter
 
 	return nil
 }
-

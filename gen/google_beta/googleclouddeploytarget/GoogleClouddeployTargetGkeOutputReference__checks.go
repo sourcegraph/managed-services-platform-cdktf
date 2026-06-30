@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetCluster
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetDnsEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetDnsEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetDnsEndp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetInternalIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) validateSetInternalIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewGoogleClouddeployTargetGkeOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

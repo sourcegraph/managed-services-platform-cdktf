@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterBinaryAuthorizationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAwsClusterBinaryAuthorizationOutputReferenceParam
 
 	return nil
 }
-

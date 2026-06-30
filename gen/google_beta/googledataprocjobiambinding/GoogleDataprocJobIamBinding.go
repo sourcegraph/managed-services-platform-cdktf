@@ -17,15 +17,15 @@ type GoogleDataprocJobIamBinding interface {
 	Condition() GoogleDataprocJobIamBindingConditionOutputReference
 	ConditionInput() *GoogleDataprocJobIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type GoogleDataprocJobIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -76,16 +76,16 @@ type GoogleDataprocJobIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GoogleDataprocJobIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleDataprocJobIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type GoogleDataprocJobIamBinding interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataprocJobIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) ConditionInput() *GoogleDataproc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
 func NewGoogleDataprocJobIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocJobIamBindingConfig) GoogleDataprocJobIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewGoogleDataprocJobIamBinding(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewGoogleDataprocJobIamBinding_Override(g GoogleDataprocJobIamBinding, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetJobId(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetJobId(val *string) {
 	if err := j.validateSetJobIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetJobId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func GoogleDataprocJobIamBinding_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func GoogleDataprocJobIamBinding_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleDataprocJobIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocJobIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleDataprocJobIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocJobIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocJobIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleDataprocJobIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocJobIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func GoogleDataprocJobIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) PutCondition(value *GoogleDatapr
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) ResetRegion() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1052,8 +1051,8 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1065,8 +1064,8 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,8 +1090,8 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1103,4 +1102,3 @@ func (g *jsiiProxy_GoogleDataprocJobIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

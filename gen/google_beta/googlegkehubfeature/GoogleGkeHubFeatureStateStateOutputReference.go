@@ -13,9 +13,9 @@ type GoogleGkeHubFeatureStateStateOutputReference interface {
 	Code() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type GoogleGkeHubFeatureStateStateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleGkeHubFeatureStateStateOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) Code() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,7 +179,6 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) UpdateTime() *s
 	return returns
 }
 
-
 func NewGoogleGkeHubFeatureStateStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleGkeHubFeatureStateStateOutputReference {
 	_init_.Initialize()
 
@@ -190,7 +189,7 @@ func NewGoogleGkeHubFeatureStateStateOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -202,12 +201,12 @@ func NewGoogleGkeHubFeatureStateStateOutputReference_Override(g GoogleGkeHubFeat
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetInternalValue(val *GoogleGkeHubFeatureStateState) {
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) SetInternalValue(val *GoogleGkeHubFeatureStateState) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,16 +274,16 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -300,7 +299,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -316,7 +315,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -332,7 +331,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,23 +440,23 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -476,4 +475,3 @@ func (g *jsiiProxy_GoogleGkeHubFeatureStateStateOutputReference) ToString() *str
 
 	return returns
 }
-

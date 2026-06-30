@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetenti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionO
 
 	return nil
 }
-

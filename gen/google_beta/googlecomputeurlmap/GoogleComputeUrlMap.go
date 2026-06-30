@@ -15,15 +15,15 @@ type GoogleComputeUrlMap interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	DefaultCustomErrorResponsePolicy() GoogleComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference
 	DefaultCustomErrorResponsePolicyInput() *GoogleComputeUrlMapDefaultCustomErrorResponsePolicy
@@ -53,7 +53,7 @@ type GoogleComputeUrlMap interface {
 	HeaderAction() GoogleComputeUrlMapHeaderActionOutputReference
 	HeaderActionInput() *GoogleComputeUrlMapHeaderAction
 	HostRule() GoogleComputeUrlMapHostRuleList
-	HostRuleInput() interface{}
+	HostRuleInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -68,7 +68,7 @@ type GoogleComputeUrlMap interface {
 	// The tree node.
 	Node() constructs.Node
 	PathMatcher() GoogleComputeUrlMapPathMatcherList
-	PathMatcherInput() interface{}
+	PathMatcherInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -77,29 +77,29 @@ type GoogleComputeUrlMap interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Test() GoogleComputeUrlMapTestList
-	TestInput() interface{}
+	TestInput() any
 	Timeouts() GoogleComputeUrlMapTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type GoogleComputeUrlMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type GoogleComputeUrlMap interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,9 +140,9 @@ type GoogleComputeUrlMap interface {
 	PutDefaultRouteAction(value *GoogleComputeUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *GoogleComputeUrlMapDefaultUrlRedirect)
 	PutHeaderAction(value *GoogleComputeUrlMapHeaderAction)
-	PutHostRule(value interface{})
-	PutPathMatcher(value interface{})
-	PutTest(value interface{})
+	PutHostRule(value any)
+	PutPathMatcher(value any)
+	PutTest(value any)
 	PutTimeouts(value *GoogleComputeUrlMapTimeouts)
 	ResetDefaultCustomErrorResponsePolicy()
 	ResetDefaultRouteAction()
@@ -159,17 +159,17 @@ type GoogleComputeUrlMap interface {
 	ResetProject()
 	ResetTest()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeUrlMap
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) HostRule() GoogleComputeUrlMapHostRuleLi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) HostRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) HostRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostRuleInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) PathMatcher() GoogleComputeUrlMapPathMat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) PathMatcherInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) PathMatcherInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pathMatcherInput",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) Test() GoogleComputeUrlMapTestList {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) TestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) TestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"testInput",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_GoogleComputeUrlMap) Timeouts() GoogleComputeUrlMapTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeUrlMap) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -636,7 +636,6 @@ func (j *jsiiProxy_GoogleComputeUrlMap) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map google_compute_url_map} Resource.
 func NewGoogleComputeUrlMap(scope constructs.Construct, id *string, config *GoogleComputeUrlMapConfig) GoogleComputeUrlMap {
@@ -649,7 +648,7 @@ func NewGoogleComputeUrlMap(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -662,12 +661,12 @@ func NewGoogleComputeUrlMap_Override(g GoogleComputeUrlMap, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetDefaultService(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetDefaultService(val *string) {
 	if err := j.validateSetDefaultServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetDefaultService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -727,7 +726,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeUrlMap) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func GoogleComputeUrlMap_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func GoogleComputeUrlMap_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeUrlMap_IsConstruct(x interface{}) *bool {
+func GoogleComputeUrlMap_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeUrlMap_IsConstructParameters(x); err != nil {
@@ -837,7 +836,7 @@ func GoogleComputeUrlMap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func GoogleComputeUrlMap_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeUrlMap_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeUrlMap_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeUrlMap_IsTerraformElementParameters(x); err != nil {
@@ -856,7 +855,7 @@ func GoogleComputeUrlMap_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func GoogleComputeUrlMap_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeUrlMap_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeUrlMap_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeUrlMap_IsTerraformResourceParameters(x); err != nil {
@@ -875,7 +874,7 @@ func GoogleComputeUrlMap_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -900,31 +899,31 @@ func (g *jsiiProxy_GoogleComputeUrlMap) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMap) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeUrlMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,15 +1051,15 @@ func (g *jsiiProxy_GoogleComputeUrlMap) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1079,7 +1078,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1092,7 +1091,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,18 +1105,18 @@ func (g *jsiiProxy_GoogleComputeUrlMap) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMap) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1128,7 +1127,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1150,7 +1149,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutDefaultCustomErrorResponsePolicy(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultCustomErrorResponsePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1161,7 +1160,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutDefaultRouteAction(value *GoogleCompu
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultRouteAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutDefaultUrlRedirect(value *GoogleCompu
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultUrlRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1183,40 +1182,40 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutHeaderAction(value *GoogleComputeUrlM
 	_jsii_.InvokeVoid(
 		g,
 		"putHeaderAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) PutHostRule(value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMap) PutHostRule(value any) {
 	if err := g.validatePutHostRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putHostRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) PutPathMatcher(value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMap) PutPathMatcher(value any) {
 	if err := g.validatePutPathMatcherParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putPathMatcher",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) PutTest(value interface{}) {
+func (g *jsiiProxy_GoogleComputeUrlMap) PutTest(value any) {
 	if err := g.validatePutTestParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (g *jsiiProxy_GoogleComputeUrlMap) PutTimeouts(value *GoogleComputeUrlMapTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1335,8 +1334,8 @@ func (g *jsiiProxy_GoogleComputeUrlMap) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1348,8 +1347,8 @@ func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1361,8 +1360,8 @@ func (g *jsiiProxy_GoogleComputeUrlMap) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1374,8 +1373,8 @@ func (g *jsiiProxy_GoogleComputeUrlMap) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1400,8 +1399,8 @@ func (g *jsiiProxy_GoogleComputeUrlMap) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMap) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeUrlMap) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1412,4 +1411,3 @@ func (g *jsiiProxy_GoogleComputeUrlMap) ToTerraform() interface{} {
 
 	return returns
 }
-

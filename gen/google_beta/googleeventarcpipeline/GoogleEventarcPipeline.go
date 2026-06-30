@@ -18,15 +18,15 @@ type GoogleEventarcPipeline interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
@@ -36,7 +36,7 @@ type GoogleEventarcPipeline interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Destinations() GoogleEventarcPipelineDestinationsList
-	DestinationsInput() interface{}
+	DestinationsInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -69,7 +69,7 @@ type GoogleEventarcPipeline interface {
 	LoggingConfig() GoogleEventarcPipelineLoggingConfigOutputReference
 	LoggingConfigInput() *GoogleEventarcPipelineLoggingConfig
 	Mediations() GoogleEventarcPipelineMediationsList
-	MediationsInput() interface{}
+	MediationsInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -84,31 +84,31 @@ type GoogleEventarcPipeline interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetryPolicy() GoogleEventarcPipelineRetryPolicyOutputReference
 	RetryPolicyInput() *GoogleEventarcPipelineRetryPolicy
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleEventarcPipelineTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleEventarcPipeline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,17 +138,17 @@ type GoogleEventarcPipeline interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDestinations(value interface{})
+	PutDestinations(value any)
 	PutInputPayloadFormat(value *GoogleEventarcPipelineInputPayloadFormat)
 	PutLoggingConfig(value *GoogleEventarcPipelineLoggingConfig)
-	PutMediations(value interface{})
+	PutMediations(value any)
 	PutRetryPolicy(value *GoogleEventarcPipelineRetryPolicy)
 	PutTimeouts(value *GoogleEventarcPipelineTimeouts)
 	ResetAnnotations()
@@ -165,17 +165,17 @@ type GoogleEventarcPipeline interface {
 	ResetProject()
 	ResetRetryPolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleEventarcPipeline
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Destinations() GoogleEventarcPipeline
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) DestinationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) DestinationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"destinationsInput",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Mediations() GoogleEventarcPipelineMe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) MediationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) MediationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mediationsInput",
@@ -583,8 +583,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -643,8 +643,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -673,8 +673,8 @@ func (j *jsiiProxy_GoogleEventarcPipeline) Timeouts() GoogleEventarcPipelineTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcPipeline) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -703,7 +703,6 @@ func (j *jsiiProxy_GoogleEventarcPipeline) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource.
 func NewGoogleEventarcPipeline(scope constructs.Construct, id *string, config *GoogleEventarcPipelineConfig) GoogleEventarcPipeline {
 	_init_.Initialize()
@@ -715,7 +714,7 @@ func NewGoogleEventarcPipeline(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -728,12 +727,12 @@ func NewGoogleEventarcPipeline_Override(g GoogleEventarcPipeline, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetAnnotations(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -785,7 +784,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -804,7 +803,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetId(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetPipelineId(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetPipelineId(val *string) {
 	if err := j.validateSetPipelineIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetPipelineId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetProject(val *string) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -878,7 +877,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcPipeline)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleEventarcPipeline) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func GoogleEventarcPipeline_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func GoogleEventarcPipeline_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleEventarcPipeline_IsConstruct(x interface{}) *bool {
+func GoogleEventarcPipeline_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcPipeline_IsConstructParameters(x); err != nil {
@@ -936,7 +935,7 @@ func GoogleEventarcPipeline_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func GoogleEventarcPipeline_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcPipeline_IsTerraformElement(x interface{}) *bool {
+func GoogleEventarcPipeline_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcPipeline_IsTerraformElementParameters(x); err != nil {
@@ -955,7 +954,7 @@ func GoogleEventarcPipeline_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func GoogleEventarcPipeline_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcPipeline_IsTerraformResource(x interface{}) *bool {
+func GoogleEventarcPipeline_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcPipeline_IsTerraformResourceParameters(x); err != nil {
@@ -974,7 +973,7 @@ func GoogleEventarcPipeline_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcPipeline.GoogleEventarcPipeline",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -999,31 +998,31 @@ func (g *jsiiProxy_GoogleEventarcPipeline) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleEventarcPipeline) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEventarcPipeline) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1135,7 +1134,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1151,15 +1150,15 @@ func (g *jsiiProxy_GoogleEventarcPipeline) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1178,7 +1177,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1205,18 +1204,18 @@ func (g *jsiiProxy_GoogleEventarcPipeline) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleEventarcPipeline) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1238,18 +1237,18 @@ func (g *jsiiProxy_GoogleEventarcPipeline) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) PutDestinations(value interface{}) {
+func (g *jsiiProxy_GoogleEventarcPipeline) PutDestinations(value any) {
 	if err := g.validatePutDestinationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDestinations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,7 +1259,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) PutInputPayloadFormat(value *GoogleEv
 	_jsii_.InvokeVoid(
 		g,
 		"putInputPayloadFormat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1271,18 +1270,18 @@ func (g *jsiiProxy_GoogleEventarcPipeline) PutLoggingConfig(value *GoogleEventar
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) PutMediations(value interface{}) {
+func (g *jsiiProxy_GoogleEventarcPipeline) PutMediations(value any) {
 	if err := g.validatePutMediationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMediations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1293,7 +1292,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) PutRetryPolicy(value *GoogleEventarcP
 	_jsii_.InvokeVoid(
 		g,
 		"putRetryPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1304,7 +1303,7 @@ func (g *jsiiProxy_GoogleEventarcPipeline) PutTimeouts(value *GoogleEventarcPipe
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1404,8 +1403,8 @@ func (g *jsiiProxy_GoogleEventarcPipeline) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1417,8 +1416,8 @@ func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1430,8 +1429,8 @@ func (g *jsiiProxy_GoogleEventarcPipeline) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1443,8 +1442,8 @@ func (g *jsiiProxy_GoogleEventarcPipeline) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1469,8 +1468,8 @@ func (g *jsiiProxy_GoogleEventarcPipeline) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcPipeline) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcPipeline) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1481,4 +1480,3 @@ func (g *jsiiProxy_GoogleEventarcPipeline) ToTerraform() interface{} {
 
 	return returns
 }
-

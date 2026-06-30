@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationId", GoGetter: "WorkstationId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationIdInput", GoGetter: "WorkstationIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkstationsWorkstationIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMemberCondition",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkstationsWorkstationIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,6 +128,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMemberConfig",
-		reflect.TypeOf((*GoogleWorkstationsWorkstationIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkstationsWorkstationIamMemberConfig](),
 	)
 }

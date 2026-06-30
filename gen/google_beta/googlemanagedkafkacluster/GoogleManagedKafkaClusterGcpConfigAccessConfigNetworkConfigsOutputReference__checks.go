@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutp
 
 	return nil
 }
-

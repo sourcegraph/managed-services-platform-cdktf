@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeRegionPerInstanceConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeRegionPerInstanceConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name for this per-instance config and its corresponding instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_per_instance_config#name GoogleComputeRegionPerInstanceConfig#name}
@@ -67,17 +67,16 @@ type GoogleComputeRegionPerInstanceConfigConfig struct {
 	// When false, deleting this config will use the behavior as determined by remove_instance_on_destroy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_per_instance_config#remove_instance_on_destroy GoogleComputeRegionPerInstanceConfig#remove_instance_on_destroy}
-	RemoveInstanceOnDestroy interface{} `field:"optional" json:"removeInstanceOnDestroy" yaml:"removeInstanceOnDestroy"`
+	RemoveInstanceOnDestroy any `field:"optional" json:"removeInstanceOnDestroy" yaml:"removeInstanceOnDestroy"`
 	// When true, deleting this config will immediately remove any specified state from the underlying instance.
 	//
 	// When false, deleting this config will *not* immediately remove any state from the underlying instance.
 	// State will be removed on the next instance recreation or update.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_per_instance_config#remove_instance_state_on_destroy GoogleComputeRegionPerInstanceConfig#remove_instance_state_on_destroy}
-	RemoveInstanceStateOnDestroy interface{} `field:"optional" json:"removeInstanceStateOnDestroy" yaml:"removeInstanceStateOnDestroy"`
+	RemoveInstanceStateOnDestroy any `field:"optional" json:"removeInstanceStateOnDestroy" yaml:"removeInstanceStateOnDestroy"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_per_instance_config#timeouts GoogleComputeRegionPerInstanceConfig#timeouts}
 	Timeouts *GoogleComputeRegionPerInstanceConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

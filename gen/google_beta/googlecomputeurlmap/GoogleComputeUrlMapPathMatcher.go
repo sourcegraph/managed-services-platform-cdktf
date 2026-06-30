@@ -1,6 +1,5 @@
 package googlecomputeurlmap
 
-
 type GoogleComputeUrlMapPathMatcher struct {
 	// The name to which this PathMatcher is referred by the HostRule.
 	//
@@ -33,10 +32,9 @@ type GoogleComputeUrlMapPathMatcher struct {
 	// path_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#path_rule GoogleComputeUrlMap#path_rule}
-	PathRule interface{} `field:"optional" json:"pathRule" yaml:"pathRule"`
+	PathRule any `field:"optional" json:"pathRule" yaml:"pathRule"`
 	// route_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_url_map#route_rules GoogleComputeUrlMap#route_rules}
-	RouteRules interface{} `field:"optional" json:"routeRules" yaml:"routeRules"`
+	RouteRules any `field:"optional" json:"routeRules" yaml:"routeRules"`
 }
-

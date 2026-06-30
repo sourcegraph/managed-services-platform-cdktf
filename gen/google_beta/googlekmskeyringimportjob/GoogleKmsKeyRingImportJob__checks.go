@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleKmsKeyRingImportJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleKmsKeyRingImportJob_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleKmsKeyRingImportJob_IsConstructParameters(x interface{}) error {
+func validateGoogleKmsKeyRingImportJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleKmsKeyRingImportJob_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleKmsKeyRingImportJob_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleKmsKeyRingImportJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleKmsKeyRingImportJob_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleKmsKeyRingImportJob_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleKmsKeyRingImportJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleKmsKeyRingImportJob_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetProtectionLevelParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleKmsKeyRingImportJobParameters(scope constructs.Construct, 
 
 	return nil
 }
-

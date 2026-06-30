@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineInputPayloadFormatProtobufOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineInputPayloadFormatProtobufOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcPipelineInputPayloadFormatProtobufOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEventarcPipelineInputPayloadFormatProtobufOutputReferenceP
 
 	return nil
 }
-

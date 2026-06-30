@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleTranscoderJobTemplateTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

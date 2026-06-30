@@ -1,6 +1,5 @@
 package googlecloudrunv2service
 
-
 type GoogleCloudRunV2ServiceTemplateVolumesSecret struct {
 	// The name of the secret in Cloud Secret Manager.
 	//
@@ -17,6 +16,5 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecret struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_service#items GoogleCloudRunV2Service#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleDialogflowCxPageTransitionRoutesOutputReferenceParameters(
 
 	return nil
 }
-

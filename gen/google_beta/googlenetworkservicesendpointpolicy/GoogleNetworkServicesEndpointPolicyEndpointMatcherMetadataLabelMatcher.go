@@ -1,6 +1,5 @@
 package googlenetworkservicesendpointpolicy
 
-
 type GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher struct {
 	// Specifies how matching should be done. Possible values: ["MATCH_ANY", "MATCH_ALL"].
 	//
@@ -9,6 +8,5 @@ type GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher stru
 	// metadata_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_endpoint_policy#metadata_labels GoogleNetworkServicesEndpointPolicy#metadata_labels}
-	MetadataLabels interface{} `field:"optional" json:"metadataLabels" yaml:"metadataLabels"`
+	MetadataLabels any `field:"optional" json:"metadataLabels" yaml:"metadataLabels"`
 }
-

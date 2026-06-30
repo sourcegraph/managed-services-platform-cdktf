@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
-		reflect.TypeOf((*GoogleMlEngineModel)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMlEngineModel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModelConfig",
-		reflect.TypeOf((*GoogleMlEngineModelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion",
-		reflect.TypeOf((*GoogleMlEngineModelDefaultVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModelDefaultVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference",
-		reflect.TypeOf((*GoogleMlEngineModelDefaultVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModelDefaultVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMlEngineModelDefaultVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModelTimeouts",
-		reflect.TypeOf((*GoogleMlEngineModelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMlEngineModelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMlEngineModelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMlEngineModelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

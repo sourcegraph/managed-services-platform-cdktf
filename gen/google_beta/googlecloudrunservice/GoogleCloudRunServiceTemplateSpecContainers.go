@@ -1,6 +1,5 @@
 package googlecloudrunservice
 
-
 type GoogleCloudRunServiceTemplateSpecContainers struct {
 	// Docker image name. This is most often a reference to a container located in the container registry, such as gcr.io/cloudrun/hello.
 	//
@@ -17,11 +16,11 @@ type GoogleCloudRunServiceTemplateSpecContainers struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#env GoogleCloudRunService#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// env_from block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#env_from GoogleCloudRunService#env_from}
-	EnvFrom interface{} `field:"optional" json:"envFrom" yaml:"envFrom"`
+	EnvFrom any `field:"optional" json:"envFrom" yaml:"envFrom"`
 	// liveness_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#liveness_probe GoogleCloudRunService#liveness_probe}
@@ -33,7 +32,7 @@ type GoogleCloudRunServiceTemplateSpecContainers struct {
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#ports GoogleCloudRunService#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#resources GoogleCloudRunService#resources}
@@ -45,10 +44,9 @@ type GoogleCloudRunServiceTemplateSpecContainers struct {
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#volume_mounts GoogleCloudRunService#volume_mounts}
-	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
+	VolumeMounts any `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 	// Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_service#working_dir GoogleCloudRunService#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

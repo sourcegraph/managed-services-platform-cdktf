@@ -12,9 +12,9 @@ type GoogleResourceManagerCapabilityTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleResourceManagerCapabilityTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleResourceManagerCapabilityTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleResourceManagerCapabilityTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Updat
 	return returns
 }
 
-
 func NewGoogleResourceManagerCapabilityTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleResourceManagerCapabilityTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleResourceManagerCapabilityTimeoutsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapabilityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleResourceManagerCapabilityTimeoutsOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleResourceManagerCapability.GoogleResourceManagerCapabilityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetCre
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetDel
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleResourceManagerCapabilityTimeoutsOutputReference) ToStr
 
 	return returns
 }
-

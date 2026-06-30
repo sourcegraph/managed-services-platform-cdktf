@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGooglePubsubLiteTopicPartitionConfigCapacityOutputReferenceParam
 
 	return nil
 }
-

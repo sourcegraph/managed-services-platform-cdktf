@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validatePutAutoscalingMetricSpecsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validatePutAutoscalingMetricSpecsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,4 +256,3 @@ func validateNewGoogleVertexAiDeploymentResourcePoolDedicatedResourcesOutputRefe
 
 	return nil
 }
-

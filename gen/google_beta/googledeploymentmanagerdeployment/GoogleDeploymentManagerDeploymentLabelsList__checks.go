@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDeploymentManagerDeploymentLabelsListParameters(terraformR
 
 	return nil
 }
-

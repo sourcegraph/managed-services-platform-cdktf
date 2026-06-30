@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecListParameters(terraformReso
 
 	return nil
 }
-

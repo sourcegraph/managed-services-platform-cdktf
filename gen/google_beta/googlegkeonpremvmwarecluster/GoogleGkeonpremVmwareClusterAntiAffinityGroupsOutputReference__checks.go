@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference) validateSetAagConfigDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference) validateSetAagConfigDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewGoogleGkeonpremVmwareClusterAntiAffinityGroupsOutputReferencePar
 
 	return nil
 }
-

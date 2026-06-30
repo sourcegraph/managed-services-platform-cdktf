@@ -12,9 +12,9 @@ type GoogleKmsEkmConnectionServiceResolversOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,10 +33,10 @@ type GoogleKmsEkmConnectionServiceResolversOutputReference interface {
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ServerCertificates() GoogleKmsEkmConnectionServiceResolversServerCertificatesList
-	ServerCertificatesInput() interface{}
+	ServerCertificatesInput() any
 	ServiceDirectoryService() *string
 	SetServiceDirectoryService(val *string)
 	ServiceDirectoryServiceInput() *string
@@ -51,7 +51,7 @@ type GoogleKmsEkmConnectionServiceResolversOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,11 +72,11 @@ type GoogleKmsEkmConnectionServiceResolversOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutServerCertificates(value interface{})
+	PutServerCertificates(value any)
 	ResetEndpointFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Hostna
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Server
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ServerCertificatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ServerCertificatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serverCertificatesInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Terraf
 	return returns
 }
 
-
 func NewGoogleKmsEkmConnectionServiceResolversOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleKmsEkmConnectionServiceResolversOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewGoogleKmsEkmConnectionServiceResolversOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewGoogleKmsEkmConnectionServiceResolversOutputReference_Override(g GoogleK
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetEndpointFilter(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetEndpointFilter(val *string) {
 	if err := j.validateSetEndpointFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetEndp
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetHost
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetServiceDirectoryService(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetServiceDirectoryService(val *string) {
 	if err := j.validateSetServiceDirectoryServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetServ
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,21 +533,21 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) PutServerCertificates(value interface{}) {
+func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) PutServerCertificates(value any) {
 	if err := g.validatePutServerCertificatesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putServerCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -560,16 +559,16 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ResetE
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference) ToStri
 
 	return returns
 }
-

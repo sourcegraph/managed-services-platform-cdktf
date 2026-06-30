@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpG
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetH
 
 	return nil
 }
-

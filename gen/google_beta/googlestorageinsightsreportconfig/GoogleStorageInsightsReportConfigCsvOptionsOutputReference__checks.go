@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) validateSetHeaderRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) validateSetHeaderRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleStorageInsightsReportConfigCsvOptionsOutputReferenceParame
 
 	return nil
 }
-

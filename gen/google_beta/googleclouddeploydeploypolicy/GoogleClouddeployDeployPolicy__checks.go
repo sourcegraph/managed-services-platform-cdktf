@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutRulesParameters(val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutSelectorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutSelectorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleClouddeployDeployPolicy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleClouddeployDeployPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleClouddeployDeployPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleClouddeployDeployPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleClouddeployDeployPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleClouddeployDeployPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleClouddeployDeployPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleClouddeployDeployPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleClouddeployDeployPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetAnnotationsParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,7 +517,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetProvisionersParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,4 +555,3 @@ func validateNewGoogleClouddeployDeployPolicyParameters(scope constructs.Constru
 
 	return nil
 }
-

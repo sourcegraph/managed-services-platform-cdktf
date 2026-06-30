@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetRestrictQueryResultParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) validateSetRestrictQueryResultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewGoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputRef
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetAllowAllParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetAllowAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetDenyAllParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetDenyAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -225,7 +225,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetEnforceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetEnforceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,4 +304,3 @@ func validateNewGoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolic
 
 	return nil
 }
-

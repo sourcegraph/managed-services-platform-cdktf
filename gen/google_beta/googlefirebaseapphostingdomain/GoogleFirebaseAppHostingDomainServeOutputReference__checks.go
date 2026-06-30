@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingDomainServeOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingDomainServeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingDomainServeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleFirebaseAppHostingDomainServeOutputReferenceParameters(ter
 
 	return nil
 }
-

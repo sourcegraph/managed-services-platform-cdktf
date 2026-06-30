@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccess",
-		reflect.TypeOf((*GoogleApigeeControlPlaneAccess)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeControlPlaneAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeControlPlaneAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessConfig",
-		reflect.TypeOf((*GoogleApigeeControlPlaneAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeControlPlaneAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeouts",
-		reflect.TypeOf((*GoogleApigeeControlPlaneAccessTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeControlPlaneAccessTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeControlPlaneAccess.GoogleApigeeControlPlaneAccessTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeControlPlaneAccessTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeControlPlaneAccessTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeControlPlaneAccessTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

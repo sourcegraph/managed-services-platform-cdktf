@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetIgnoreCaseParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetIgnoreCaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -274,4 +274,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutput
 
 	return nil
 }
-

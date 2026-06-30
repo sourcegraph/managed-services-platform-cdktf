@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validatePutAllowedApplicationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validatePutAllowedApplicationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReferenc
 
 	return nil
 }
-

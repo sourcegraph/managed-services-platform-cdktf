@@ -12,9 +12,9 @@ type GoogleStorageBatchOperationsJobTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleStorageBatchOperationsJobTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleStorageBatchOperationsJobTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleStorageBatchOperationsJobTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Updat
 	return returns
 }
 
-
 func NewGoogleStorageBatchOperationsJobTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageBatchOperationsJobTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleStorageBatchOperationsJobTimeoutsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBatchOperationsJob.GoogleStorageBatchOperationsJobTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleStorageBatchOperationsJobTimeoutsOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageBatchOperationsJob.GoogleStorageBatchOperationsJobTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetCre
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetDel
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobTimeoutsOutputReference) ToStr
 
 	return returns
 }
-

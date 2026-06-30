@@ -12,9 +12,9 @@ type GoogleNetappVolumeSnapshotPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type GoogleNetappVolumeSnapshotPolicyOutputReference interface {
 	CreationStack() *[]*string
 	DailySchedule() GoogleNetappVolumeSnapshotPolicyDailyScheduleOutputReference
 	DailyScheduleInput() *GoogleNetappVolumeSnapshotPolicyDailySchedule
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	HourlySchedule() GoogleNetappVolumeSnapshotPolicyHourlyScheduleOutputReference
@@ -51,7 +51,7 @@ type GoogleNetappVolumeSnapshotPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleNetappVolumeSnapshotPolicyOutputReference interface {
 	ResetWeeklySchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) DailySchedul
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Enabled() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) WeeklySchedu
 	return returns
 }
 
-
 func NewGoogleNetappVolumeSnapshotPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetappVolumeSnapshotPolicyOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleNetappVolumeSnapshotPolicyOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolumeSnapshotPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleNetappVolumeSnapshotPolicyOutputReference_Override(g GoogleNetappV
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappVolume.GoogleNetappVolumeSnapshotPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetEnabled(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetInternalValue(val *GoogleNetappVolumeSnapshotPolicy) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetInternalValue(val *GoogleNetappVolumeSnapshotPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,16 +372,16 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) ComputeFqn()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) PutDailySche
 	_jsii_.InvokeVoid(
 		g,
 		"putDailySchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -564,7 +563,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) PutHourlySch
 	_jsii_.InvokeVoid(
 		g,
 		"putHourlySchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) PutMonthlySc
 	_jsii_.InvokeVoid(
 		g,
 		"putMonthlySchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) PutWeeklySch
 	_jsii_.InvokeVoid(
 		g,
 		"putWeeklySchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) ResetWeeklyS
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyOutputReference) ToString() *
 
 	return returns
 }
-

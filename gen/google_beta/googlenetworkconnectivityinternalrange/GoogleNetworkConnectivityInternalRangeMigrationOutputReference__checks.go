@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeMigrationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeMigrationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeMigrationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleNetworkConnectivityInternalRangeMigrationOutputReferencePa
 
 	return nil
 }
-

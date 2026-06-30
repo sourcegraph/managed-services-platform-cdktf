@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleEventarcEnrollment) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcEnrollment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleEventarcEnrollment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleEventarcEnrollment) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcEnrollment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleEventarcEnrollment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleEventarcEnrollment_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGoogleEventarcEnrollment_IsConstructParameters(x interface{}) error {
+func validateGoogleEventarcEnrollment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleEventarcEnrollment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleEventarcEnrollment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleEventarcEnrollment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleEventarcEnrollment_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGoogleEventarcEnrollment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleEventarcEnrollment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetCelMatchParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewGoogleEventarcEnrollmentParameters(scope constructs.Construct, i
 
 	return nil
 }
-

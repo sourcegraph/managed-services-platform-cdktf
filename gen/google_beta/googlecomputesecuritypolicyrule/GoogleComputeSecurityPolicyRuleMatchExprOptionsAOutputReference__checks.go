@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleComputeSecurityPolicyRuleMatchExprOptionsAOutputReferenceP
 
 	return nil
 }
-

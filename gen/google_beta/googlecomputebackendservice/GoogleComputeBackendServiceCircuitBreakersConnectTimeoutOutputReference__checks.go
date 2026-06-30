@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputRe
 
 	return nil
 }
-

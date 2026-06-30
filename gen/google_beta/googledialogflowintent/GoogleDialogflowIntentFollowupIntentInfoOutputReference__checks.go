@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowIntentFollowupIntentInfoOutputReferenceParameter
 
 	return nil
 }
-

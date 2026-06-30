@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNat",
-		reflect.TypeOf((*GoogleComputeRouterNat)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNat](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "udpIdleTimeoutSec", GoGetter: "UdpIdleTimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "udpIdleTimeoutSecInput", GoGetter: "UdpIdleTimeoutSecInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNat{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatConfig",
-		reflect.TypeOf((*GoogleComputeRouterNatConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfig",
-		reflect.TypeOf((*GoogleComputeRouterNatLogConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatNat64Subnetwork",
-		reflect.TypeOf((*GoogleComputeRouterNatNat64Subnetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatNat64Subnetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatNat64SubnetworkList",
-		reflect.TypeOf((*GoogleComputeRouterNatNat64SubnetworkList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatNat64SubnetworkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatNat64SubnetworkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -217,7 +217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatNat64SubnetworkOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatNat64SubnetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatNat64SubnetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -243,7 +243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatNat64SubnetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -251,15 +251,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatRules",
-		reflect.TypeOf((*GoogleComputeRouterNatRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction",
-		reflect.TypeOf((*GoogleComputeRouterNatRulesAction)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatRulesAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatRulesActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatRulesActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,7 +303,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatRulesList",
-		reflect.TypeOf((*GoogleComputeRouterNatRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -317,7 +317,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -325,7 +325,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatRulesOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -368,11 +368,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetwork",
-		reflect.TypeOf((*GoogleComputeRouterNatSubnetwork)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatSubnetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList",
-		reflect.TypeOf((*GoogleComputeRouterNatSubnetworkList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatSubnetworkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -386,7 +386,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatSubnetworkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -394,7 +394,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatSubnetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatSubnetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -425,7 +425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatSubnetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -433,11 +433,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts",
-		reflect.TypeOf((*GoogleComputeRouterNatTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRouterNatTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRouterNatTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -470,7 +470,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRouterNatTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

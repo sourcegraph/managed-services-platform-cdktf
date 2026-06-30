@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSccManagementOrganizationEventThreatDetectionCustomModuleT
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateGoogleGkeBackupBackupPlan_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleGkeBackupBackupPlan_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeBackupBackupPlan_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateGoogleGkeBackupBackupPlan_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleGkeBackupBackupPlan_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeBackupBackupPlan_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateGoogleGkeBackupBackupPlan_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleGkeBackupBackupPlan_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeBackupBackupPlan_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetClusterParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -386,7 +386,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetDeactivatedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetDeactivatedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlan) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -526,4 +526,3 @@ func validateNewGoogleGkeBackupBackupPlanParameters(scope constructs.Construct, 
 
 	return nil
 }
-

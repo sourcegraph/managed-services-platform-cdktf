@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutp
 
 	return nil
 }
-

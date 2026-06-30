@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleVmwareengineExternalAccessRuleDestinationIpRangesListParam
 
 	return nil
 }
-

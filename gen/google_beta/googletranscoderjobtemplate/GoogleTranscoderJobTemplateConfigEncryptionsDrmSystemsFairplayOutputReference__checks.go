@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairpla
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOu
 
 	return nil
 }
-

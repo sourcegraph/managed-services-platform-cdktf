@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterSpecEgressPoliciesOutp
 
 	return nil
 }
-

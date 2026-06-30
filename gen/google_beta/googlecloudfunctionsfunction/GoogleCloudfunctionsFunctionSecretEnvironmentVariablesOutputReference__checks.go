@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputRefe
 
 	return nil
 }
-

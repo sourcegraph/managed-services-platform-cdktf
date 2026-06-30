@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroup",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupBigQuery",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupBigQuery)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupBigQuery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupBigQueryBigQuerySource",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupBigQueryBigQuerySource)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupBigQueryBigQuerySource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupBigQueryOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupBigQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupBigQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigQuerySource", GoGetter: "BigQuerySource"},
 			_jsii_.MemberProperty{JsiiProperty: "bigQuerySourceInput", GoGetter: "BigQuerySourceInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroupBigQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,15 +172,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupConfig",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupTimeouts",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVertexAiFeatureGroup.GoogleVertexAiFeatureGroupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleVertexAiFeatureGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVertexAiFeatureGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVertexAiFeatureGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

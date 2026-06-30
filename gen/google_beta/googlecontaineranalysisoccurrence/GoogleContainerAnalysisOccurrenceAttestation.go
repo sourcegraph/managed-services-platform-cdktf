@@ -1,6 +1,5 @@
 package googlecontaineranalysisoccurrence
 
-
 type GoogleContainerAnalysisOccurrenceAttestation struct {
 	// The serialized payload that is verified by one or more signatures. A base64-encoded string.
 	//
@@ -9,6 +8,5 @@ type GoogleContainerAnalysisOccurrenceAttestation struct {
 	// signatures block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_occurrence#signatures GoogleContainerAnalysisOccurrence#signatures}
-	Signatures interface{} `field:"required" json:"signatures" yaml:"signatures"`
+	Signatures any `field:"required" json:"signatures" yaml:"signatures"`
 }
-

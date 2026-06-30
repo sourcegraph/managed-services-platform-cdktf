@@ -19,15 +19,15 @@ type GoogleChronicleRule interface {
 	CompilationDiagnostics() GoogleChronicleRuleCompilationDiagnosticsList
 	CompilationState() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataTables() *[]*string
 	DeletionPolicy() *string
@@ -75,11 +75,11 @@ type GoogleChronicleRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReferenceLists() *[]*string
 	RevisionCreateTime() *string
 	RevisionId() *string
@@ -93,22 +93,22 @@ type GoogleChronicleRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Text() *string
 	SetText(val *string)
 	TextInput() *string
 	Timeouts() GoogleChronicleRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleChronicleRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type GoogleChronicleRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,17 +157,17 @@ type GoogleChronicleRule interface {
 	ResetScope()
 	ResetText()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleChronicleRule
@@ -225,8 +225,8 @@ func (j *jsiiProxy_GoogleChronicleRule) CompilationState() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleChronicleRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleChronicleRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_GoogleChronicleRule) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_GoogleChronicleRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleChronicleRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_GoogleChronicleRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -615,8 +615,8 @@ func (j *jsiiProxy_GoogleChronicleRule) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleChronicleRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -665,8 +665,8 @@ func (j *jsiiProxy_GoogleChronicleRule) Timeouts() GoogleChronicleRuleTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -685,7 +685,6 @@ func (j *jsiiProxy_GoogleChronicleRule) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource.
 func NewGoogleChronicleRule(scope constructs.Construct, id *string, config *GoogleChronicleRuleConfig) GoogleChronicleRule {
 	_init_.Initialize()
@@ -697,7 +696,7 @@ func NewGoogleChronicleRule(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -710,12 +709,12 @@ func NewGoogleChronicleRule_Override(g GoogleChronicleRule, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -756,7 +755,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetEtag(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleChronicleRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetId(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetInstance(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleChronicleRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetProject(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleChronicleRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -838,7 +837,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleChronicleRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetRuleId(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetRuleId(val *string) {
 	if err := j.validateSetRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetRuleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetScope(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_GoogleChronicleRule)SetScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleRule)SetText(val *string) {
+func (j *jsiiProxy_GoogleChronicleRule) SetText(val *string) {
 	if err := j.validateSetTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -894,7 +893,7 @@ func GoogleChronicleRule_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func GoogleChronicleRule_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleChronicleRule_IsConstruct(x interface{}) *bool {
+func GoogleChronicleRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleRule_IsConstructParameters(x); err != nil {
@@ -929,7 +928,7 @@ func GoogleChronicleRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func GoogleChronicleRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleChronicleRule_IsTerraformElement(x interface{}) *bool {
+func GoogleChronicleRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleRule_IsTerraformElementParameters(x); err != nil {
@@ -948,7 +947,7 @@ func GoogleChronicleRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func GoogleChronicleRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleChronicleRule_IsTerraformResource(x interface{}) *bool {
+func GoogleChronicleRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleChronicleRule_IsTerraformResourceParameters(x); err != nil {
@@ -967,7 +966,7 @@ func GoogleChronicleRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleChronicleRule.GoogleChronicleRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -992,31 +991,31 @@ func (g *jsiiProxy_GoogleChronicleRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleChronicleRule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleChronicleRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (g *jsiiProxy_GoogleChronicleRule) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,15 +1143,15 @@ func (g *jsiiProxy_GoogleChronicleRule) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1171,7 +1170,7 @@ func (g *jsiiProxy_GoogleChronicleRule) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1184,7 +1183,7 @@ func (g *jsiiProxy_GoogleChronicleRule) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,18 +1197,18 @@ func (g *jsiiProxy_GoogleChronicleRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleChronicleRule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1220,7 +1219,7 @@ func (g *jsiiProxy_GoogleChronicleRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1231,7 +1230,7 @@ func (g *jsiiProxy_GoogleChronicleRule) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1242,7 +1241,7 @@ func (g *jsiiProxy_GoogleChronicleRule) PutTimeouts(value *GoogleChronicleRuleTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1318,8 +1317,8 @@ func (g *jsiiProxy_GoogleChronicleRule) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleChronicleRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1331,8 +1330,8 @@ func (g *jsiiProxy_GoogleChronicleRule) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleChronicleRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1344,8 +1343,8 @@ func (g *jsiiProxy_GoogleChronicleRule) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1357,8 +1356,8 @@ func (g *jsiiProxy_GoogleChronicleRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1383,8 +1382,8 @@ func (g *jsiiProxy_GoogleChronicleRule) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleRule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleChronicleRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1395,4 +1394,3 @@ func (g *jsiiProxy_GoogleChronicleRule) ToTerraform() interface{} {
 
 	return returns
 }
-

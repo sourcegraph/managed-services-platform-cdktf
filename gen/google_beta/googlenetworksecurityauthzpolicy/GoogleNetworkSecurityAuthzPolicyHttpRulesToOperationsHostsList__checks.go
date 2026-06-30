@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsHostsLis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsHostsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsHostsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsHostsListPa
 
 	return nil
 }
-

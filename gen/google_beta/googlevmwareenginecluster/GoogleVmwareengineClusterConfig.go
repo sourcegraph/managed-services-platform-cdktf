@@ -6,9 +6,9 @@ import (
 
 type GoogleVmwareengineClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleVmwareengineClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_cluster#name GoogleVmwareengineCluster#name}
@@ -42,10 +42,9 @@ type GoogleVmwareengineClusterConfig struct {
 	// node_type_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_cluster#node_type_configs GoogleVmwareengineCluster#node_type_configs}
-	NodeTypeConfigs interface{} `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
+	NodeTypeConfigs any `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_cluster#timeouts GoogleVmwareengineCluster#timeouts}
 	Timeouts *GoogleVmwareengineClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

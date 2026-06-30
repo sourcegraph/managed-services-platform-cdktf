@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEventarcMessageBusLoggingConfigOutputReferenceParameters(t
 
 	return nil
 }
-

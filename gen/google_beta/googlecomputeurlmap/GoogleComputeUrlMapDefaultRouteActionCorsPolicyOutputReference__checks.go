@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -150,7 +150,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewGoogleComputeUrlMapDefaultRouteActionCorsPolicyOutputReferencePa
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -221,7 +221,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetPreventDriftParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetPreventDriftParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,4 +276,3 @@ func validateNewGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfi
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceMaintenanceWindowOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataprocMetastoreServiceMaintenanceWindowOutputReferencePa
 
 	return nil
 }
-

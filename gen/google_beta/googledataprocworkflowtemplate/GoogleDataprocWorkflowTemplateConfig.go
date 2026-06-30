@@ -6,9 +6,9 @@ import (
 
 type GoogleDataprocWorkflowTemplateConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type GoogleDataprocWorkflowTemplateConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// jobs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#jobs GoogleDataprocWorkflowTemplate#jobs}
-	Jobs interface{} `field:"required" json:"jobs" yaml:"jobs"`
+	Jobs any `field:"required" json:"jobs" yaml:"jobs"`
 	// The location for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#location GoogleDataprocWorkflowTemplate#location}
@@ -64,7 +64,7 @@ type GoogleDataprocWorkflowTemplateConfig struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#parameters GoogleDataprocWorkflowTemplate#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 	// The project for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#project GoogleDataprocWorkflowTemplate#project}
@@ -78,4 +78,3 @@ type GoogleDataprocWorkflowTemplateConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#version GoogleDataprocWorkflowTemplate#version}
 	Version *float64 `field:"optional" json:"version" yaml:"version"`
 }
-

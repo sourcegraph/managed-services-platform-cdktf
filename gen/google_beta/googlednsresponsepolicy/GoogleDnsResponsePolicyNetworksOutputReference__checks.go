@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDnsResponsePolicyNetworksOutputReferenceParameters(terrafo
 
 	return nil
 }
-

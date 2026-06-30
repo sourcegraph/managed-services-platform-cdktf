@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQu
 
 	return nil
 }
-

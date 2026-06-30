@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleFilestoreInstancePerformanceConfigOutputReferenceParameter
 
 	return nil
 }
-

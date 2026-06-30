@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleApigeeEnvironmentClientIpResolutionConfigOutputReferencePa
 
 	return nil
 }
-

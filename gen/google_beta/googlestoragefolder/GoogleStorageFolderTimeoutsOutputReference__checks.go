@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageFolderTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleStorageFolderTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

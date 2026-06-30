@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferencePa
 
 	return nil
 }
-

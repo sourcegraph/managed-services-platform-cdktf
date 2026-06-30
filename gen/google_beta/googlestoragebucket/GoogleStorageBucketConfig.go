@@ -6,9 +6,9 @@ import (
 
 type GoogleStorageBucketConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleStorageBucketConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Google Cloud Storage location or region.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#location GoogleStorageBucket#location}
@@ -34,7 +34,7 @@ type GoogleStorageBucketConfig struct {
 	// cors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#cors GoogleStorageBucket#cors}
-	Cors interface{} `field:"optional" json:"cors" yaml:"cors"`
+	Cors any `field:"optional" json:"cors" yaml:"cors"`
 	// custom_placement_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#custom_placement_config GoogleStorageBucket#custom_placement_config}
@@ -42,11 +42,11 @@ type GoogleStorageBucketConfig struct {
 	// Whether or not to automatically apply an eventBasedHold to new objects added to the bucket.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#default_event_based_hold GoogleStorageBucket#default_event_based_hold}
-	DefaultEventBasedHold interface{} `field:"optional" json:"defaultEventBasedHold" yaml:"defaultEventBasedHold"`
+	DefaultEventBasedHold any `field:"optional" json:"defaultEventBasedHold" yaml:"defaultEventBasedHold"`
 	// Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#enable_object_retention GoogleStorageBucket#enable_object_retention}
-	EnableObjectRetention interface{} `field:"optional" json:"enableObjectRetention" yaml:"enableObjectRetention"`
+	EnableObjectRetention any `field:"optional" json:"enableObjectRetention" yaml:"enableObjectRetention"`
 	// encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#encryption GoogleStorageBucket#encryption}
@@ -56,7 +56,7 @@ type GoogleStorageBucketConfig struct {
 	// If you try to delete a bucket that contains objects or anywhereCaches, Terraform will fail that run, deleting anywhereCaches may take 80 minutes to complete.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#force_destroy GoogleStorageBucket#force_destroy}
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// hierarchical_namespace block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#hierarchical_namespace GoogleStorageBucket#hierarchical_namespace}
@@ -77,7 +77,7 @@ type GoogleStorageBucketConfig struct {
 	// lifecycle_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#lifecycle_rule GoogleStorageBucket#lifecycle_rule}
-	LifecycleRule interface{} `field:"optional" json:"lifecycleRule" yaml:"lifecycleRule"`
+	LifecycleRule any `field:"optional" json:"lifecycleRule" yaml:"lifecycleRule"`
 	// logging block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#logging GoogleStorageBucket#logging}
@@ -95,7 +95,7 @@ type GoogleStorageBucketConfig struct {
 	// Enables Requester Pays on a storage bucket.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#requester_pays GoogleStorageBucket#requester_pays}
-	RequesterPays interface{} `field:"optional" json:"requesterPays" yaml:"requesterPays"`
+	RequesterPays any `field:"optional" json:"requesterPays" yaml:"requesterPays"`
 	// retention_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#retention_policy GoogleStorageBucket#retention_policy}
@@ -121,7 +121,7 @@ type GoogleStorageBucketConfig struct {
 	// Enables uniform bucket-level access on a bucket.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#uniform_bucket_level_access GoogleStorageBucket#uniform_bucket_level_access}
-	UniformBucketLevelAccess interface{} `field:"optional" json:"uniformBucketLevelAccess" yaml:"uniformBucketLevelAccess"`
+	UniformBucketLevelAccess any `field:"optional" json:"uniformBucketLevelAccess" yaml:"uniformBucketLevelAccess"`
 	// versioning block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#versioning GoogleStorageBucket#versioning}
@@ -131,4 +131,3 @@ type GoogleStorageBucketConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_bucket#website GoogleStorageBucket#website}
 	Website *GoogleStorageBucketWebsite `field:"optional" json:"website" yaml:"website"`
 }
-

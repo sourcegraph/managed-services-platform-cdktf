@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSource.GoogleSccV2OrganizationSource",
-		reflect.TypeOf((*GoogleSccV2OrganizationSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2OrganizationSource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSource.GoogleSccV2OrganizationSourceConfig",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSource.GoogleSccV2OrganizationSourceTimeouts",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSource.GoogleSccV2OrganizationSourceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

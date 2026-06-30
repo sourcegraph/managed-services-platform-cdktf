@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWind
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWind
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetDailyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetDailyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -224,7 +224,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWind
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -283,4 +283,3 @@ func validateNewGoogleGkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputePreviewFeatureRolloutOperationRolloutInputOutputRef
 
 	return nil
 }
-

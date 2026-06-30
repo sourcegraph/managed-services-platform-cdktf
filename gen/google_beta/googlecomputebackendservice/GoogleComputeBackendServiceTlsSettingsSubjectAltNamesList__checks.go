@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceTlsSettingsSubjectAltNamesList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceTlsSettingsSubjectAltNamesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceTlsSettingsSubjectAltNamesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeBackendServiceTlsSettingsSubjectAltNamesListParamet
 
 	return nil
 }
-

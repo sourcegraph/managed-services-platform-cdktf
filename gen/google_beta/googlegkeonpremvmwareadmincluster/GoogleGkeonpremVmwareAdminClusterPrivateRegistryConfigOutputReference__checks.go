@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputRefe
 
 	return nil
 }
-

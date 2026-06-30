@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIng
 
 	return nil
 }
-

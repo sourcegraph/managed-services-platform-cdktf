@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFolderAccessApprovalSettingsEnrolledServicesOutputReferenc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseDataBoostParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseDataBoostParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseParallelismParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseParallelismParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseServerlessAnalyticsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseServerlessAnalyticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewGoogleBigqueryConnectionCloudSpannerOutputReferenceParameters(te
 
 	return nil
 }
-

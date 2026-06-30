@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtension",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtension)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtension](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtension{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionConfig",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChains",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChains)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChains](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authority", GoGetter: "Authority"},
 			_jsii_.MemberProperty{JsiiProperty: "authorityInput", GoGetter: "AuthorityInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,7 +172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsList",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCondition",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "celExpression", GoGetter: "CelExpression"},
 			_jsii_.MemberProperty{JsiiProperty: "celExpressionInput", GoGetter: "CelExpressionInput"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,11 +272,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionTimeouts",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkServicesLbRouteExtension.GoogleNetworkServicesLbRouteExtensionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkServicesLbRouteExtensionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkServicesLbRouteExtensionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkServicesLbRouteExtensionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

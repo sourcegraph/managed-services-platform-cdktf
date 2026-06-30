@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleColabRuntimeTemplateSoftwareConfigEnvOutputReferenceParame
 
 	return nil
 }
-

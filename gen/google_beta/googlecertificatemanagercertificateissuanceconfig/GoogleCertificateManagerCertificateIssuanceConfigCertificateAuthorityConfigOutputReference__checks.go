@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfigCertificateA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleCertificateManagerCertificateIssuanceConfigCertificateAuth
 
 	return nil
 }
-

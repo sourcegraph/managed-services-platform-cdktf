@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleRedisInstanceTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

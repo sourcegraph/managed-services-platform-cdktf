@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleColabScheduleCreateNotebookExecutionJobRequestNotebookE
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -268,4 +268,3 @@ func validateNewGoogleColabScheduleCreateNotebookExecutionJobRequestNotebookExec
 
 	return nil
 }
-

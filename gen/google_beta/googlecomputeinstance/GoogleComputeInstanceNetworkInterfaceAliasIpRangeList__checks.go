@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceAliasIpRangeList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceAliasIpRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceAliasIpRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceNetworkInterfaceAliasIpRangeListParameters(
 
 	return nil
 }
-

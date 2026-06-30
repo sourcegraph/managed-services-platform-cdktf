@@ -18,11 +18,11 @@ type DataGooglePubsubSubscription interface {
 	CdktfStack() cdktf.TerraformStack
 	CloudStorageConfig() DataGooglePubsubSubscriptionCloudStorageConfigList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeadLetterPolicy() DataGooglePubsubSubscriptionDeadLetterPolicyList
 	// Experimental.
 	DependsOn() *[]*string
@@ -65,21 +65,21 @@ type DataGooglePubsubSubscription interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PushConfig() DataGooglePubsubSubscriptionPushConfigList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetainAckedMessages() cdktf.IResolvable
 	RetryPolicy() DataGooglePubsubSubscriptionRetryPolicyList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Topic() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,18 +106,18 @@ type DataGooglePubsubSubscription interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGooglePubsubSubscription
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) CloudStorageConfig() DataGoogle
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGooglePubsubSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGooglePubsubSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) PushConfig() DataGooglePubsubSu
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGooglePubsubSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGooglePubsubSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,7 +495,6 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) Topic() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription} Data Source.
 func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionConfig) DataGooglePubsubSubscription {
 	_init_.Initialize()
@@ -507,7 +506,7 @@ func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -520,12 +519,12 @@ func NewDataGooglePubsubSubscription_Override(d DataGooglePubsubSubscription, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetId(val *string) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetName(val *string) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetProject(val *string) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGooglePubsubSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -616,7 +615,7 @@ func DataGooglePubsubSubscription_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func DataGooglePubsubSubscription_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGooglePubsubSubscription_IsConstruct(x interface{}) *bool {
+func DataGooglePubsubSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePubsubSubscription_IsConstructParameters(x); err != nil {
@@ -651,7 +650,7 @@ func DataGooglePubsubSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func DataGooglePubsubSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGooglePubsubSubscription_IsTerraformDataSource(x interface{}) *bool {
+func DataGooglePubsubSubscription_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePubsubSubscription_IsTerraformDataSourceParameters(x); err != nil {
@@ -670,7 +669,7 @@ func DataGooglePubsubSubscription_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func DataGooglePubsubSubscription_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGooglePubsubSubscription_IsTerraformElement(x interface{}) *bool {
+func DataGooglePubsubSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePubsubSubscription_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func DataGooglePubsubSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,27 +706,27 @@ func DataGooglePubsubSubscription_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGooglePubsubSubscription) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGooglePubsubSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,8 +912,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -926,8 +925,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -939,8 +938,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePubsubSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -952,8 +951,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePubsubSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -978,8 +977,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePubsubSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -990,4 +989,3 @@ func (d *jsiiProxy_DataGooglePubsubSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

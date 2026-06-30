@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewGoogleContainerAwsClusterNetworkingOutputReferenceParameters(ter
 
 	return nil
 }
-

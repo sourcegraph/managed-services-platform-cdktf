@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
-		reflect.TypeOf((*GoogleOsConfigPatchDeployment)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,19 +102,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilter",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentInstanceFilter)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentInstanceFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -136,7 +136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentInstanceFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentInstanceFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
 			_jsii_.MemberProperty{JsiiProperty: "allInput", GoGetter: "AllInput"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeSchedule",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentOneTimeSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentOneTimeSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,15 +256,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigApt",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigApt)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigApt](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGoo",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigGoo)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigGoo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,7 +343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apt", GoGetter: "Apt"},
 			_jsii_.MemberProperty{JsiiProperty: "aptInput", GoGetter: "AptInput"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zypper", GoGetter: "Zypper"},
 			_jsii_.MemberProperty{JsiiProperty: "zypperInput", GoGetter: "ZypperInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,19 +409,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStep",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStep)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStep](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,7 +459,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodesInput", GoGetter: "AllowedSuccessCodesInput"},
@@ -496,7 +496,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -504,7 +504,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -536,7 +536,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowsExecStepConfig", GoGetter: "WindowsExecStepConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsExecStepConfigInput", GoGetter: "WindowsExecStepConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -544,15 +544,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,7 +590,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodesInput", GoGetter: "AllowedSuccessCodesInput"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,19 +635,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStep",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStep)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStep](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -677,7 +677,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -685,7 +685,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodesInput", GoGetter: "AllowedSuccessCodesInput"},
@@ -722,7 +722,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -730,7 +730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -762,7 +762,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowsExecStepConfig", GoGetter: "WindowsExecStepConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsExecStepConfigInput", GoGetter: "WindowsExecStepConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -770,15 +770,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -808,7 +808,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -816,7 +816,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodesInput", GoGetter: "AllowedSuccessCodesInput"},
@@ -853,7 +853,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -861,11 +861,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classifications", GoGetter: "Classifications"},
 			_jsii_.MemberProperty{JsiiProperty: "classificationsInput", GoGetter: "ClassificationsInput"},
@@ -898,7 +898,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -906,11 +906,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYum",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigYum)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigYum](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -946,7 +946,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -954,11 +954,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypper",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigZypper)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigZypper](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "categories", GoGetter: "Categories"},
 			_jsii_.MemberProperty{JsiiProperty: "categoriesInput", GoGetter: "CategoriesInput"},
@@ -1000,7 +1000,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "withUpdate", GoGetter: "WithUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "withUpdateInput", GoGetter: "WithUpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1008,15 +1008,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringSchedule",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringSchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringSchedule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthly",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleMonthly)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleMonthly](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1047,7 +1047,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekDayOfMonth", GoGetter: "WeekDayOfMonth"},
 			_jsii_.MemberProperty{JsiiProperty: "weekDayOfMonthInput", GoGetter: "WeekDayOfMonthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1055,11 +1055,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1090,7 +1090,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekOrdinal", GoGetter: "WeekOrdinal"},
 			_jsii_.MemberProperty{JsiiProperty: "weekOrdinalInput", GoGetter: "WeekOrdinalInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1098,7 +1098,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1144,7 +1144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekly", GoGetter: "Weekly"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyInput", GoGetter: "WeeklyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1152,11 +1152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1192,7 +1192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1200,11 +1200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1233,7 +1233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1241,11 +1241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeekly",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleWeekly)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleWeekly](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1271,7 +1271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1279,15 +1279,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRollout",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRollout)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRollout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudget",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRolloutDisruptionBudget)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRolloutDisruptionBudget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1317,7 +1317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1325,7 +1325,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentRolloutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentRolloutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1354,7 +1354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1362,11 +1362,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeouts",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigPatchDeploymentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigPatchDeploymentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1396,7 +1396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigPatchDeploymentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,9 +12,9 @@ type GoogleColabRuntimeTemplateEucConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleColabRuntimeTemplateEucConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EucDisabled() interface{}
-	SetEucDisabled(val interface{})
-	EucDisabledInput() interface{}
+	EucDisabled() any
+	SetEucDisabled(val any)
+	EucDisabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleColabRuntimeTemplateEucConfig
@@ -43,7 +43,7 @@ type GoogleColabRuntimeTemplateEucConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GoogleColabRuntimeTemplateEucConfigOutputReference interface {
 	ResetEucDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) EucDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) EucDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eucDisabled",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) EucDisabl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) EucDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) EucDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eucDisabledInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleColabRuntimeTemplateEucConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleColabRuntimeTemplateEucConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGoogleColabRuntimeTemplateEucConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEucConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGoogleColabRuntimeTemplateEucConfigOutputReference_Override(g GoogleCola
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEucConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetEucDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetEucDisabled(val any) {
 	if err := j.validateSetEucDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetEucDisa
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetInternalValue(val *GoogleColabRuntimeTemplateEucConfig) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetInternalValue(val *GoogleColabRuntimeTemplateEucConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) ResetEucD
 	)
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference) ToString(
 
 	return returns
 }
-

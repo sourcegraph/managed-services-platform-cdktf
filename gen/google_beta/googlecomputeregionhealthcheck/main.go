@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheck](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheck{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckGrpcHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckGrpcHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcTlsHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckGrpcTlsHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckGrpcTlsHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,11 +224,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttp2HealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttp2HealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -281,11 +281,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttpHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttpHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,11 +338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttpsHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttpsHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -395,11 +395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckLogConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -434,11 +434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckSslHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckSslHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckSslHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckSslHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -480,7 +480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckSslHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -488,11 +488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckTcpHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckTcpHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -542,11 +542,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeRegionHealthCheckTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeRegionHealthCheckTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeRegionHealthCheckTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

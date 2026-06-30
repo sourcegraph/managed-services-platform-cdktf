@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation",
-		reflect.TypeOf((*GoogleBigqueryBiReservation)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryBiReservation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationConfig",
-		reflect.TypeOf((*GoogleBigqueryBiReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTables",
-		reflect.TypeOf((*GoogleBigqueryBiReservationPreferredTables)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationPreferredTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesList",
-		reflect.TypeOf((*GoogleBigqueryBiReservationPreferredTablesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationPreferredTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryBiReservationPreferredTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesOutputReference",
-		reflect.TypeOf((*GoogleBigqueryBiReservationPreferredTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationPreferredTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryBiReservationPreferredTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeouts",
-		reflect.TypeOf((*GoogleBigqueryBiReservationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryBiReservationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryBiReservationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryBiReservationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

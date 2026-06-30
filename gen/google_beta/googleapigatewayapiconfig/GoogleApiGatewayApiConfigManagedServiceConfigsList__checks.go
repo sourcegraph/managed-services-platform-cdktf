@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApiGatewayApiConfigManagedServiceConfigsListParameters(ter
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleSpannerBackupScheduleSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingBuildErrorOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingBuildErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingBuildErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaseAppHostingBuildErrorOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleColabRuntimeTemplateSoftwareConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type GoogleColabRuntimeTemplateSoftwareConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Env() GoogleColabRuntimeTemplateSoftwareConfigEnvList
-	EnvInput() interface{}
+	EnvInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleColabRuntimeTemplateSoftwareConfig
@@ -44,7 +44,7 @@ type GoogleColabRuntimeTemplateSoftwareConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type GoogleColabRuntimeTemplateSoftwareConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnv(value interface{})
+	PutEnv(value any)
 	PutPostStartupScriptConfig(value *GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig)
 	ResetEnv()
 	ResetPostStartupScriptConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Env(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) EnvInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) EnvInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewGoogleColabRuntimeTemplateSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleColabRuntimeTemplateSoftwareConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleColabRuntimeTemplateSoftwareConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleColabRuntimeTemplateSoftwareConfigOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetInternalValue(val *GoogleColabRuntimeTemplateSoftwareConfig) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) SetInternalValue(val *GoogleColabRuntimeTemplateSoftwareConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) PutEnv(value interface{}) {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) PutEnv(value any) {
 	if err := g.validatePutEnvParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEnv",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) PutP
 	_jsii_.InvokeVoid(
 		g,
 		"putPostStartupScriptConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference) ToSt
 
 	return returns
 }
-

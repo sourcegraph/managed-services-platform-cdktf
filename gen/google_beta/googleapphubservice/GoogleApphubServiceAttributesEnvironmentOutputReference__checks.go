@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApphubServiceAttributesEnvironmentOutputReferenceParameter
 
 	return nil
 }
-

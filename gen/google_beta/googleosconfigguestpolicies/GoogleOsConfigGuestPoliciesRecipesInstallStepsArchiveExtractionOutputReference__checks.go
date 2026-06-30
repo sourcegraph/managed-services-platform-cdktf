@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtracti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionO
 
 	return nil
 }
-

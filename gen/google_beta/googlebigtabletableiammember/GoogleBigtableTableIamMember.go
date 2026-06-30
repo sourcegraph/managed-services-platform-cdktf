@@ -17,15 +17,15 @@ type GoogleBigtableTableIamMember interface {
 	Condition() GoogleBigtableTableIamMemberConditionOutputReference
 	ConditionInput() *GoogleBigtableTableIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type GoogleBigtableTableIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -76,16 +76,16 @@ type GoogleBigtableTableIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GoogleBigtableTableIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleBigtableTableIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type GoogleBigtableTableIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBigtableTableIamMember
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) ConditionInput() *GoogleBigtabl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
 func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, config *GoogleBigtableTableIamMemberConfig) GoogleBigtableTableIamMember {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewGoogleBigtableTableIamMember_Override(g GoogleBigtableTableIamMember, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetInstance(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetTable(val *string) {
+func (j *jsiiProxy_GoogleBigtableTableIamMember) SetTable(val *string) {
 	if err := j.validateSetTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func GoogleBigtableTableIamMember_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func GoogleBigtableTableIamMember_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBigtableTableIamMember_IsConstruct(x interface{}) *bool {
+func GoogleBigtableTableIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigtableTableIamMember_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func GoogleBigtableTableIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func GoogleBigtableTableIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigtableTableIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleBigtableTableIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigtableTableIamMember_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func GoogleBigtableTableIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func GoogleBigtableTableIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigtableTableIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleBigtableTableIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigtableTableIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func GoogleBigtableTableIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBigtableTableIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigtableTableIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -910,7 +909,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBigtableTableIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -981,7 +980,7 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) PutCondition(value *GoogleBigta
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1030,8 +1029,8 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1043,8 +1042,8 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1056,8 +1055,8 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1082,8 +1081,8 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigtableTableIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigtableTableIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1094,4 +1093,3 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

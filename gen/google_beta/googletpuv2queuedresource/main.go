@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResource",
-		reflect.TypeOf((*GoogleTpuV2QueuedResource)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceConfig",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTimeouts",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,15 +126,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpu",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpu)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpu](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpec",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecList",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecList)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -156,15 +156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecNode",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecNode)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecNode](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canIpForward", GoGetter: "CanIpForward"},
 			_jsii_.MemberProperty{JsiiProperty: "canIpForwardInput", GoGetter: "CanIpForwardInput"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypeInput", GoGetter: "AcceleratorTypeInput"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -255,7 +255,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,7 +295,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleTpuV2QueuedResource.GoogleTpuV2QueuedResourceTpuOutputReference",
-		reflect.TypeOf((*GoogleTpuV2QueuedResourceTpuOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleTpuV2QueuedResourceTpuOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

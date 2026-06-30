@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeResizeRequestRequestedRunDurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeResizeRequestRequestedRunDurationOutputReferencePar
 
 	return nil
 }
-

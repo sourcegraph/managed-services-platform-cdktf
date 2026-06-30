@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionDestinationDatas
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionDestinationDatasetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleBigqueryAnalyticsHubListingSubscriptionDestinationDatasetO
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentCondi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditio
 
 	return nil
 }
-

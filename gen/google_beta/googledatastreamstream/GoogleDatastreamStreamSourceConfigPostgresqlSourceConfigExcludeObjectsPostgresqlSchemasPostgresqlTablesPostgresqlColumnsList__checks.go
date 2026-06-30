@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExclu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeO
 
 	return nil
 }
-

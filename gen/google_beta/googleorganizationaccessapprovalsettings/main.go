@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersionInput", GoGetter: "ActiveKeyVersionInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOrganizationAccessApprovalSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsConfig",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsEnrolledServices",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsEnrolledServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsEnrolledServicesList",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsEnrolledServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOrganizationAccessApprovalSettingsEnrolledServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsEnrolledServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudProductInput", GoGetter: "CloudProductInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOrganizationAccessApprovalSettingsEnrolledServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsTimeouts",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOrganizationAccessApprovalSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

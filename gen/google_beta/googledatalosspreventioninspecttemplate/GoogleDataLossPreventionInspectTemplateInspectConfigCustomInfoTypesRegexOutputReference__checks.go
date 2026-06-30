@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTy
 
 	return nil
 }
-

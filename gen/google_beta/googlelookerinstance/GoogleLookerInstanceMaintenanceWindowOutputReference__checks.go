@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleLookerInstanceMaintenanceWindowOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleLookerInstanceMaintenanceWindowOutputReferenceParameters(t
 
 	return nil
 }
-

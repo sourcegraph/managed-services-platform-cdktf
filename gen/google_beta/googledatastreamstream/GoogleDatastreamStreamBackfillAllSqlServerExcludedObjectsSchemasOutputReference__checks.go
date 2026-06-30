@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validatePutTablesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validatePutTablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas
 
 	return nil
 }
-

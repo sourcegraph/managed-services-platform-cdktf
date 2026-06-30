@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistry
 
 	return nil
 }
-

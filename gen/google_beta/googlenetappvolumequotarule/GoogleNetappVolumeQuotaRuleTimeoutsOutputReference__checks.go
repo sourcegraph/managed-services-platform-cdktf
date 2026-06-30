@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeQuotaRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleNetappVolumeQuotaRuleTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

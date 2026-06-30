@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterFleetOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerClusterFleetOutputReferenceParameters(terrafo
 
 	return nil
 }
-

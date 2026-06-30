@@ -6,9 +6,9 @@ import (
 
 type GoogleClouddeployAutomationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleClouddeployAutomationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The delivery_pipeline for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#delivery_pipeline GoogleClouddeployAutomation#delivery_pipeline}
@@ -34,7 +34,7 @@ type GoogleClouddeployAutomationConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#rules GoogleClouddeployAutomation#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#selector GoogleClouddeployAutomation#selector}
@@ -75,10 +75,9 @@ type GoogleClouddeployAutomationConfig struct {
 	// Optional. When Suspended, automation is deactivated from execution.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#suspended GoogleClouddeployAutomation#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_automation#timeouts GoogleClouddeployAutomation#timeouts}
 	Timeouts *GoogleClouddeployAutomationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

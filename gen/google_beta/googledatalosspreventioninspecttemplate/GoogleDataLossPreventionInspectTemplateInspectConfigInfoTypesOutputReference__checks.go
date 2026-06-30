@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOut
 
 	return nil
 }
-

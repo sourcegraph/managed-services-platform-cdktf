@@ -1,11 +1,10 @@
 package googlecomputeglobalforwardingrule
 
-
 type GoogleComputeGlobalForwardingRuleMetadataFilters struct {
 	// filter_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_global_forwarding_rule#filter_labels GoogleComputeGlobalForwardingRule#filter_labels}
-	FilterLabels interface{} `field:"required" json:"filterLabels" yaml:"filterLabels"`
+	FilterLabels any `field:"required" json:"filterLabels" yaml:"filterLabels"`
 	// Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match.
 	//
 	// MATCH_ANY - At least one of the filterLabels must have a matching
@@ -16,4 +15,3 @@ type GoogleComputeGlobalForwardingRuleMetadataFilters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_global_forwarding_rule#filter_match_criteria GoogleComputeGlobalForwardingRule#filter_match_criteria}
 	FilterMatchCriteria *string `field:"required" json:"filterMatchCriteria" yaml:"filterMatchCriteria"`
 }
-

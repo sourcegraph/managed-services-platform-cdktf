@@ -12,9 +12,9 @@ type GoogleCloudRunV2ServiceTrafficOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type GoogleCloudRunV2ServiceTrafficOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Percent() *float64
 	SetPercent(val *float64)
 	PercentInput() *float64
@@ -52,7 +52,7 @@ type GoogleCloudRunV2ServiceTrafficOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleCloudRunV2ServiceTrafficOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) TypeInput() *s
 	return returns
 }
 
-
 func NewGoogleCloudRunV2ServiceTrafficOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTrafficOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleCloudRunV2ServiceTrafficOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleCloudRunV2ServiceTrafficOutputReference_Override(g GoogleCloudRunV
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetPercent(val *float64) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetPercent(val *float64) {
 	if err := j.validateSetPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetPercent(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetRevision(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetRevision(val *string) {
 	if err := j.validateSetRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetRevision(val
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTag(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetTag(val *string) {
 	if err := j.validateSetTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTag(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference)SetType(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) ResetType() {
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTrafficOutputReference) ToString() *st
 
 	return returns
 }
-

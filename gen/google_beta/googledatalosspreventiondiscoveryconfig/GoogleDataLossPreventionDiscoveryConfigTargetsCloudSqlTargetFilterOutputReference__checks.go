@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetF
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilt
 
 	return nil
 }
-

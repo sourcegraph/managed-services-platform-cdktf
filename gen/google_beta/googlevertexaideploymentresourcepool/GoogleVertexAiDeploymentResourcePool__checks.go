@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleVertexAiDeploymentResourcePool_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleVertexAiDeploymentResourcePool_IsConstructParameters(x interface{}) error {
+func validateGoogleVertexAiDeploymentResourcePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleVertexAiDeploymentResourcePool_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleVertexAiDeploymentResourcePool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVertexAiDeploymentResourcePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleVertexAiDeploymentResourcePool_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleVertexAiDeploymentResourcePool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVertexAiDeploymentResourcePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleVertexAiDeploymentResourcePool_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiDeploymentResourcePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewGoogleVertexAiDeploymentResourcePoolParameters(scope constructs.
 
 	return nil
 }
-

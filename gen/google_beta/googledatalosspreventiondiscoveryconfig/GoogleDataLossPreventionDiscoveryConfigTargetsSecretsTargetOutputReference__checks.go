@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutpu
 
 	return nil
 }
-

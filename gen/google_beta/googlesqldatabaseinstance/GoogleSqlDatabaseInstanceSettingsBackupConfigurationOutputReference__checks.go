@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetBinaryLogEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetBinaryLogEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetPointInTimeRecoveryEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetPointInTimeRecoveryEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -293,4 +293,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRefere
 
 	return nil
 }
-

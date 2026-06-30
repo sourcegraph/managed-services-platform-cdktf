@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataprocBatch) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatch) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocBatch) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataprocBatch) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataprocBatch) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleDataprocBatch_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateGoogleDataprocBatch_IsConstructParameters(x interface{}) error {
+func validateGoogleDataprocBatch_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateGoogleDataprocBatch_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleDataprocBatch_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataprocBatch_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateGoogleDataprocBatch_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleDataprocBatch_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataprocBatch_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleDataprocBatch) validateSetBatchIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatch) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatch) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_GoogleDataprocBatch) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatch) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatch) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDataprocBatch) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatch) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatch) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewGoogleDataprocBatchParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

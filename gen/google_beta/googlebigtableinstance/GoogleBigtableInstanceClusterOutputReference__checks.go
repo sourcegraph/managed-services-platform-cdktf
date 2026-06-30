@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetClus
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -281,4 +281,3 @@ func validateNewGoogleBigtableInstanceClusterOutputReferenceParameters(terraform
 
 	return nil
 }
-

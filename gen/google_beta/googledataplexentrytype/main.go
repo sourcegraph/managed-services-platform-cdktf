@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
-		reflect.TypeOf((*GoogleDataplexEntryType)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeConfig",
-		reflect.TypeOf((*GoogleDataplexEntryTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeRequiredAspects",
-		reflect.TypeOf((*GoogleDataplexEntryTypeRequiredAspects)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeRequiredAspects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeRequiredAspectsList",
-		reflect.TypeOf((*GoogleDataplexEntryTypeRequiredAspectsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeRequiredAspectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTypeRequiredAspectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -135,7 +135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeRequiredAspectsOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryTypeRequiredAspectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeRequiredAspectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTypeRequiredAspectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeTimeouts",
-		reflect.TypeOf((*GoogleDataplexEntryTypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryTypeTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryTypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

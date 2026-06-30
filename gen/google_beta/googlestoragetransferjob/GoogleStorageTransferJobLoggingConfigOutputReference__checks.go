@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validateSetEnableOnPremGcsTransferLogsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) validateSetEnableOnPremGcsTransferLogsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleStorageTransferJobLoggingConfigOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateAddMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveF
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutTi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutVpcNetworkSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleAccessContextManagerAccessLevelCondition_GenerateConfigForImp
 	return nil
 }
 
-func validateGoogleAccessContextManagerAccessLevelCondition_IsConstructParameters(x interface{}) error {
+func validateGoogleAccessContextManagerAccessLevelCondition_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleAccessContextManagerAccessLevelCondition_IsConstructParameter
 	return nil
 }
 
-func validateGoogleAccessContextManagerAccessLevelCondition_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAccessContextManagerAccessLevelCondition_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleAccessContextManagerAccessLevelCondition_IsTerraformElementPa
 	return nil
 }
 
-func validateGoogleAccessContextManagerAccessLevelCondition_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAccessContextManagerAccessLevelCondition_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetAc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetMe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetNegateParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetNegateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetNe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -527,4 +527,3 @@ func validateNewGoogleAccessContextManagerAccessLevelConditionParameters(scope c
 
 	return nil
 }
-

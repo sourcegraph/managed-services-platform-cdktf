@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAccessContextManagerServicePerimetersServicePerimetersStat
 
 	return nil
 }
-

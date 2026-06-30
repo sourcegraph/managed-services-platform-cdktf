@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutput
 
 	return nil
 }
-

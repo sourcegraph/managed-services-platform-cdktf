@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetHttpsRedirectParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetHttpsRedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetStripQueryParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference) validateSetStripQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewGoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference
 
 	return nil
 }
-

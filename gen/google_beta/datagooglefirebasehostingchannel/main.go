@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
-		reflect.TypeOf((*DataGoogleFirebaseHostingChannel)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirebaseHostingChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleFirebaseHostingChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannelConfig",
-		reflect.TypeOf((*DataGoogleFirebaseHostingChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirebaseHostingChannelConfig](),
 	)
 }

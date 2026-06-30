@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisInstanceServerCaCertsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceServerCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstanceServerCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleRedisInstanceServerCaCertsOutputReferenceParameters(terraf
 
 	return nil
 }
-

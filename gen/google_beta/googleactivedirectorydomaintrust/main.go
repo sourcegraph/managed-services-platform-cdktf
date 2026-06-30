@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTrust)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTrust](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustType", GoGetter: "TrustType"},
 			_jsii_.MemberProperty{JsiiProperty: "trustTypeInput", GoGetter: "TrustTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryDomainTrust{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustConfig",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTrustConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTrustConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTrustTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTrustTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleActiveDirectoryDomainTrustTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryDomainTrustTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryDomainTrustTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

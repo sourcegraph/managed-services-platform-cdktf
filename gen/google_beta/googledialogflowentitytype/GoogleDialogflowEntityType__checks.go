@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDialogflowEntityType) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowEntityType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDialogflowEntityType) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowEntityType) validatePutEntitiesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowEntityType) validatePutEntitiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleDialogflowEntityType_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleDialogflowEntityType_IsConstructParameters(x interface{}) error {
+func validateGoogleDialogflowEntityType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleDialogflowEntityType_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleDialogflowEntityType_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDialogflowEntityType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleDialogflowEntityType_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleDialogflowEntityType_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDialogflowEntityType_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleDialogflowEntityType_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetDisplayNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetEnableFuzzyExtractionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetEnableFuzzyExtractionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityType) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewGoogleDialogflowEntityTypeParameters(scope constructs.Construct,
 
 	return nil
 }
-

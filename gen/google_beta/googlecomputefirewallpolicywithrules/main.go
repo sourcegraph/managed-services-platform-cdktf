@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRules",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRules](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRules{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesConfig",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRules",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRules)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatch",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatch)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -143,7 +143,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchLayer4ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,7 +177,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -198,7 +198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,11 +242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -267,7 +267,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -301,7 +301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInspect", GoGetter: "TlsInspect"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -346,11 +346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTag",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTag)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -371,7 +371,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -397,7 +397,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -405,11 +405,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRule",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRule)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -431,15 +431,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatch",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatch)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4Config",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4Config)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -490,7 +490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchLayer4ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -498,7 +498,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,11 +576,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTag",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTag)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -594,7 +594,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -602,7 +602,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -630,7 +630,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -638,7 +638,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -700,7 +700,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInspectInput", GoGetter: "TlsInspectInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -708,11 +708,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTag",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTag)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagList",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagList)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -734,7 +734,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -762,7 +762,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -770,11 +770,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesTimeouts",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeFirewallPolicyWithRules.GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -807,7 +807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package googleintegrationconnectorsconnection
 
-
 type GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable struct {
 	// Key for the configVariable.
 	//
@@ -9,7 +8,7 @@ type GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVari
 	// Boolean Value of configVariable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#boolean_value GoogleIntegrationConnectorsConnection#boolean_value}
-	BooleanValue interface{} `field:"optional" json:"booleanValue" yaml:"booleanValue"`
+	BooleanValue any `field:"optional" json:"booleanValue" yaml:"booleanValue"`
 	// encryption_key_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#encryption_key_value GoogleIntegrationConnectorsConnection#encryption_key_value}
@@ -27,4 +26,3 @@ type GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVari
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#string_value GoogleIntegrationConnectorsConnection#string_value}
 	StringValue *string `field:"optional" json:"stringValue" yaml:"stringValue"`
 }
-

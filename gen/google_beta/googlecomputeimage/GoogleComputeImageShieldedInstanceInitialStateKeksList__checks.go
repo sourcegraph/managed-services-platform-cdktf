@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateKeksList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateKeksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateKeksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeImageShieldedInstanceInitialStateKeksListParameters
 
 	return nil
 }
-

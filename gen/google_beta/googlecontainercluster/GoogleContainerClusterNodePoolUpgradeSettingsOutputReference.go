@@ -14,9 +14,9 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	BlueGreenSettingsInput() *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	ResetStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return returns
 }
 
-
 func NewGoogleContainerClusterNodePoolUpgradeSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodePoolUpgradeSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleContainerClusterNodePoolUpgradeSettingsOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleContainerClusterNodePoolUpgradeSettingsOutputReference_Override(g 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetInternalValue(val *GoogleContainerClusterNodePoolUpgradeSettings) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetInternalValue(val *GoogleContainerClusterNodePoolUpgradeSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetMaxSurge(val *float64) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetMaxSurge(val *float64) {
 	if err := j.validateSetMaxSurgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetMaxUnavailable(val *float64) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetMaxUnavailable(val *float64) {
 	if err := j.validateSetMaxUnavailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetStrategy(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetStrategy(val *string) {
 	if err := j.validateSetStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"putBlueGreenSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 
 	return returns
 }
-

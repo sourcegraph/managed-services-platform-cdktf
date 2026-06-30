@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApihubPluginInstanceActionsListParameters(terraformResourc
 
 	return nil
 }
-

@@ -17,15 +17,15 @@ type GoogleDataprocCluster interface {
 	ClusterConfig() GoogleDataprocClusterClusterConfigOutputReference
 	ClusterConfigInput() *GoogleDataprocClusterClusterConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,11 +65,11 @@ type GoogleDataprocCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -77,20 +77,20 @@ type GoogleDataprocCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataprocClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VirtualClusterConfig() GoogleDataprocClusterVirtualClusterConfigOutputReference
 	VirtualClusterConfigInput() *GoogleDataprocClusterVirtualClusterConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type GoogleDataprocCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type GoogleDataprocCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type GoogleDataprocCluster interface {
 	ResetRegion()
 	ResetTimeouts()
 	ResetVirtualClusterConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataprocCluster
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) ClusterConfigInput() *GoogleDataprocCl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_GoogleDataprocCluster) Timeouts() GoogleDataprocClusterTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -519,7 +519,6 @@ func (j *jsiiProxy_GoogleDataprocCluster) VirtualClusterConfigInput() *GoogleDat
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
 func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *GoogleDataprocClusterConfig) GoogleDataprocCluster {
 	_init_.Initialize()
@@ -531,7 +530,7 @@ func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -544,12 +543,12 @@ func NewGoogleDataprocCluster_Override(g GoogleDataprocCluster, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -579,7 +578,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetGracefulDecommissionTimeout(val *string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetGracefulDecommissionTimeout(val *string) {
 	if err := j.validateSetGracefulDecommissionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetGracefulDecommissionTimeout(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetName(val *string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_GoogleDataprocCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocCluster)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleDataprocCluster) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func GoogleDataprocCluster_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func GoogleDataprocCluster_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataprocCluster_IsConstruct(x interface{}) *bool {
+func GoogleDataprocCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocCluster_IsConstructParameters(x); err != nil {
@@ -730,7 +729,7 @@ func GoogleDataprocCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func GoogleDataprocCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocCluster_IsTerraformElement(x interface{}) *bool {
+func GoogleDataprocCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocCluster_IsTerraformElementParameters(x); err != nil {
@@ -749,7 +748,7 @@ func GoogleDataprocCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func GoogleDataprocCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataprocCluster_IsTerraformResource(x interface{}) *bool {
+func GoogleDataprocCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataprocCluster_IsTerraformResourceParameters(x); err != nil {
@@ -768,7 +767,7 @@ func GoogleDataprocCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,31 +792,31 @@ func (g *jsiiProxy_GoogleDataprocCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataprocCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,15 +944,15 @@ func (g *jsiiProxy_GoogleDataprocCluster) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -985,7 +984,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,18 +998,18 @@ func (g *jsiiProxy_GoogleDataprocCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataprocCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) PutClusterConfig(value *GoogleDataproc
 	_jsii_.InvokeVoid(
 		g,
 		"putClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) PutTimeouts(value *GoogleDataprocClust
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleDataprocCluster) PutVirtualClusterConfig(value *GoogleD
 	_jsii_.InvokeVoid(
 		g,
 		"putVirtualClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1141,8 +1140,8 @@ func (g *jsiiProxy_GoogleDataprocCluster) ResetVirtualClusterConfig() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1154,8 +1153,8 @@ func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1167,8 +1166,8 @@ func (g *jsiiProxy_GoogleDataprocCluster) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1180,8 +1179,8 @@ func (g *jsiiProxy_GoogleDataprocCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1206,8 +1205,8 @@ func (g *jsiiProxy_GoogleDataprocCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataprocCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1218,4 +1217,3 @@ func (g *jsiiProxy_GoogleDataprocCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

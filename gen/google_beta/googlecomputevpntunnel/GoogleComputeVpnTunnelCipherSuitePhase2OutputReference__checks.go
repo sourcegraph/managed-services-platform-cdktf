@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeVpnTunnelCipherSuitePhase2OutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleComputeVpnTunnelCipherSuitePhase2OutputReferenceParameters
 
 	return nil
 }
-

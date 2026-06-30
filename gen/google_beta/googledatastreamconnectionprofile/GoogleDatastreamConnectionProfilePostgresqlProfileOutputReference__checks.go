@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleDatastreamConnectionProfilePostgresqlProfileOutputReferenc
 
 	return nil
 }
-

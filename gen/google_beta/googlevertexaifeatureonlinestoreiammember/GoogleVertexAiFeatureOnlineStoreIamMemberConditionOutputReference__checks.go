@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamMemberConditionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleVertexAiFeatureOnlineStoreIamMemberConditionOutputReferenc
 
 	return nil
 }
-

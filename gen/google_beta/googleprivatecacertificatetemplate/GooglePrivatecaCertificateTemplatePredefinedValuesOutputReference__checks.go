@@ -90,7 +90,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutAdditionalExtensionsParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutAdditionalExtensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutPolicyIdsParameters(value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutPolicyIdsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -301,4 +301,3 @@ func validateNewGooglePrivatecaCertificateTemplatePredefinedValuesOutputReferenc
 
 	return nil
 }
-

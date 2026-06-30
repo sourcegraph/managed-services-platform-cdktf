@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceHealthInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleWorkbenchInstanceHealthInfoOutputReferenceParameters(terra
 
 	return nil
 }
-

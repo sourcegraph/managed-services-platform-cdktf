@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeMetricsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNotebooksRuntimeMetricsOutputReferenceParameters(terraform
 
 	return nil
 }
-

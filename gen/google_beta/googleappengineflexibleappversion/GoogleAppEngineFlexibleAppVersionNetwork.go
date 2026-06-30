@@ -1,6 +1,5 @@
 package googleappengineflexibleappversion
 
-
 type GoogleAppEngineFlexibleAppVersionNetwork struct {
 	// Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.
 	//
@@ -21,7 +20,7 @@ type GoogleAppEngineFlexibleAppVersionNetwork struct {
 	// Enable session affinity.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_app_engine_flexible_app_version#session_affinity GoogleAppEngineFlexibleAppVersion#session_affinity}
-	SessionAffinity interface{} `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
+	SessionAffinity any `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
 	// Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.
 	//
 	// If the network that the instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
@@ -32,4 +31,3 @@ type GoogleAppEngineFlexibleAppVersionNetwork struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_app_engine_flexible_app_version#subnetwork GoogleAppEngineFlexibleAppVersion#subnetwork}
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 }
-

@@ -1,6 +1,5 @@
 package googlehealthcaredicomstore
 
-
 type GoogleHealthcareDicomStoreNotificationConfig struct {
 	// The Cloud Pub/Sub topic that notifications of changes are published on.
 	//
@@ -16,6 +15,5 @@ type GoogleHealthcareDicomStoreNotificationConfig struct {
 	// Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_dicom_store#send_for_bulk_import GoogleHealthcareDicomStore#send_for_bulk_import}
-	SendForBulkImport interface{} `field:"optional" json:"sendForBulkImport" yaml:"sendForBulkImport"`
+	SendForBulkImport any `field:"optional" json:"sendForBulkImport" yaml:"sendForBulkImport"`
 }
-

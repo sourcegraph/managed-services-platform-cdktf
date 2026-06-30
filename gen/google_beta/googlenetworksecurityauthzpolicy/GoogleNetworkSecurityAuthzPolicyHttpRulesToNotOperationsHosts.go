@@ -1,6 +1,5 @@
 package googlenetworksecurityauthzpolicy
 
-
 type GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts struct {
 	// The input string must have the substring specified here.
 	//
@@ -19,7 +18,7 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts struct {
 	// For example, the matcher data will match both input string Data and data if set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_authz_policy#ignore_case GoogleNetworkSecurityAuthzPolicy#ignore_case}
-	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
+	IgnoreCase any `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// The input string must have the prefix specified here.
 	//
 	// Note: empty prefix is not allowed, please use regex instead.
@@ -37,4 +36,3 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_authz_policy#suffix GoogleNetworkSecurityAuthzPolicy#suffix}
 	Suffix *string `field:"optional" json:"suffix" yaml:"suffix"`
 }
-

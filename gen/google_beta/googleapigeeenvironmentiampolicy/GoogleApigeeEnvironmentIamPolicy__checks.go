@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleApigeeEnvironmentIamPolicy_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleApigeeEnvironmentIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleApigeeEnvironmentIamPolicy_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetPolicyDataParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleApigeeEnvironmentIamPolicyParameters(scope constructs.Cons
 
 	return nil
 }
-

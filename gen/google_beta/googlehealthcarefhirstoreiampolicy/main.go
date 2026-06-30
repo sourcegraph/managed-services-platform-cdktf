@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleHealthcareFhirStoreIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig",
-		reflect.TypeOf((*GoogleHealthcareFhirStoreIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleHealthcareFhirStoreIamPolicyConfig](),
 	)
 }

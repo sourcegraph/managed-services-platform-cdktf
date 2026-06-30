@@ -117,7 +117,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewGooglePubsubSubscriptionCloudStorageConfigOutputReferenceParamet
 
 	return nil
 }
-

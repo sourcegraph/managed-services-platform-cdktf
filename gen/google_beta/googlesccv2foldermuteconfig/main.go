@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2FolderMuteConfig.GoogleSccV2FolderMuteConfig",
-		reflect.TypeOf((*GoogleSccV2FolderMuteConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2FolderMuteConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2FolderMuteConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2FolderMuteConfig.GoogleSccV2FolderMuteConfigConfig",
-		reflect.TypeOf((*GoogleSccV2FolderMuteConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2FolderMuteConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2FolderMuteConfig.GoogleSccV2FolderMuteConfigTimeouts",
-		reflect.TypeOf((*GoogleSccV2FolderMuteConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2FolderMuteConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2FolderMuteConfig.GoogleSccV2FolderMuteConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSccV2FolderMuteConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2FolderMuteConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2FolderMuteConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

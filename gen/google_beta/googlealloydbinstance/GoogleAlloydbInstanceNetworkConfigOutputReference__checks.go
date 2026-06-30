@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validatePutAuthorizedExternalNetworksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validatePutAuthorizedExternalNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnableOutboundPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnableOutboundPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnablePublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) validateSetEnablePublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -277,4 +277,3 @@ func validateNewGoogleAlloydbInstanceNetworkConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

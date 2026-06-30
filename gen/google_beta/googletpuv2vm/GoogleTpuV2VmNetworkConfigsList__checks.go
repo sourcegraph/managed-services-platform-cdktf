@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTpuV2VmNetworkConfigsListParameters(terraformResource cdkt
 
 	return nil
 }
-

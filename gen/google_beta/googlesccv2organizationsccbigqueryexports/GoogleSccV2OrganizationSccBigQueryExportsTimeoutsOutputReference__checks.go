@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference
 
 	return nil
 }
-

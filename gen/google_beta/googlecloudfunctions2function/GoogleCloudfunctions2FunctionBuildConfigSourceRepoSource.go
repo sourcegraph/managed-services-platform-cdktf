@@ -1,6 +1,5 @@
 package googlecloudfunctions2function
 
-
 type GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource struct {
 	// Regex matching branches to build.
 	//
@@ -17,7 +16,7 @@ type GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource struct {
 	// Only trigger a build if the revision regex does NOT match the revision regex.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#invert_regex GoogleCloudfunctions2Function#invert_regex}
-	InvertRegex interface{} `field:"optional" json:"invertRegex" yaml:"invertRegex"`
+	InvertRegex any `field:"optional" json:"invertRegex" yaml:"invertRegex"`
 	// ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#project_id GoogleCloudfunctions2Function#project_id}
@@ -31,4 +30,3 @@ type GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#tag_name GoogleCloudfunctions2Function#tag_name}
 	TagName *string `field:"optional" json:"tagName" yaml:"tagName"`
 }
-

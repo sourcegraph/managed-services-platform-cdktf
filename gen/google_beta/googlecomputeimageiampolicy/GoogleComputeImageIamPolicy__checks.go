@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeImageIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleComputeImageIamPolicy_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleComputeImageIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeImageIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleComputeImageIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleComputeImageIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeImageIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleComputeImageIamPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleComputeImageIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeImageIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleComputeImageIamPolicy_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeImageIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleComputeImageIamPolicyParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleDataCatalogEntryGcsFilesetSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type GoogleDataCatalogEntryGcsFilesetSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GoogleDataCatalogEntryGcsFilesetSpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) Terrafor
 	return returns
 }
 
-
 func NewGoogleDataCatalogEntryGcsFilesetSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataCatalogEntryGcsFilesetSpecOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewGoogleDataCatalogEntryGcsFilesetSpecOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewGoogleDataCatalogEntryGcsFilesetSpecOutputReference_Override(g GoogleDat
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetFilePatterns(val *[]*string) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetFilePatterns(val *[]*string) {
 	if err := j.validateSetFilePatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetFilePa
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetInternalValue(val *GoogleDataCatalogEntryGcsFilesetSpec) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetInternalValue(val *GoogleDataCatalogEntryGcsFilesetSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference) ToString
 
 	return returns
 }
-

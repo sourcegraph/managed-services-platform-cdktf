@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTranscoderJobConfigElementaryStreamsListParameters(terrafo
 
 	return nil
 }
-

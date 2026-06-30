@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingFolderSink) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderSink) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderSink) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleLoggingFolderSink) validatePutBigqueryOptionsParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingFolderSink) validatePutExclusionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingFolderSink) validatePutExclusionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleLoggingFolderSink_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleLoggingFolderSink_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingFolderSink_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleLoggingFolderSink_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleLoggingFolderSink_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingFolderSink_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleLoggingFolderSink_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleLoggingFolderSink_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingFolderSink_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleLoggingFolderSink_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetDestinationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetIncludeChildrenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetIncludeChildrenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetIncludeChildrenParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetInterceptChildrenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetInterceptChildrenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -492,7 +492,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSink) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -556,4 +556,3 @@ func validateNewGoogleLoggingFolderSinkParameters(scope constructs.Construct, id
 
 	return nil
 }
-

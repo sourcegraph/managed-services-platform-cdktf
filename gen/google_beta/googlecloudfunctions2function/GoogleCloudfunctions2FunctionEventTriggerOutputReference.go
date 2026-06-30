@@ -12,9 +12,9 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EventFilters() GoogleCloudfunctions2FunctionEventTriggerEventFiltersList
-	EventFiltersInput() interface{}
+	EventFiltersInput() any
 	EventType() *string
 	SetEventType(val *string)
 	EventTypeInput() *string
@@ -58,7 +58,7 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEventFilters(value interface{})
+	PutEventFilters(value any)
 	ResetEventFilters()
 	ResetEventType()
 	ResetPubsubTopic()
@@ -88,7 +88,7 @@ type GoogleCloudfunctions2FunctionEventTriggerOutputReference interface {
 	ResetTriggerRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ type jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Eve
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) EventFiltersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) EventFiltersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventFiltersInput",
@@ -301,7 +301,6 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Tri
 	return returns
 }
 
-
 func NewGoogleCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionEventTriggerOutputReference {
 	_init_.Initialize()
 
@@ -312,7 +311,7 @@ func NewGoogleCloudfunctions2FunctionEventTriggerOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -324,12 +323,12 @@ func NewGoogleCloudfunctions2FunctionEventTriggerOutputReference_Override(g Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetEventType(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetEventType(val *string) {
 	if err := j.validateSetEventTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetInternalValue(val *GoogleCloudfunctions2FunctionEventTrigger) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetInternalValue(val *GoogleCloudfunctions2FunctionEventTrigger) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetRetryPolicy(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetRetryPolicy(val *string) {
 	if err := j.validateSetRetryPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference)SetTriggerRegion(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) SetTriggerRegion(val *string) {
 	if err := j.validateSetTriggerRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Com
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Get
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,21 +617,21 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Int
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) PutEventFilters(value interface{}) {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) PutEventFilters(value any) {
 	if err := g.validatePutEventFiltersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEventFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -684,16 +683,16 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -712,4 +711,3 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) ToS
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageGuestAcceleratorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceFromMachineImageGuestAcceleratorListParamet
 
 	return nil
 }
-

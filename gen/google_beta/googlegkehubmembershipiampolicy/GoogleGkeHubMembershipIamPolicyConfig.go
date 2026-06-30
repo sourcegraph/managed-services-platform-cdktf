@@ -6,9 +6,9 @@ import (
 
 type GoogleGkeHubMembershipIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleGkeHubMembershipIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_membership_iam_policy#membership_id GoogleGkeHubMembershipIamPolicy#membership_id}.
 	MembershipId *string `field:"required" json:"membershipId" yaml:"membershipId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_membership_iam_policy#policy_data GoogleGkeHubMembershipIamPolicy#policy_data}.
@@ -33,4 +33,3 @@ type GoogleGkeHubMembershipIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_membership_iam_policy#project GoogleGkeHubMembershipIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

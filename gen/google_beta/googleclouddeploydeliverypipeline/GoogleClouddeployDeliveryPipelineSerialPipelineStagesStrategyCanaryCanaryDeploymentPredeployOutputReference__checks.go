@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentPredeployOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCan
 
 	return nil
 }
-

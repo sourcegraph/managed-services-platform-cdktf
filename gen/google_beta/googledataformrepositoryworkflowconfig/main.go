@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfig",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigConfig",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfig",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigInvocationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigInvocationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitiveDependentsIncluded", GoGetter: "TransitiveDependentsIncluded"},
 			_jsii_.MemberProperty{JsiiProperty: "transitiveDependentsIncludedInput", GoGetter: "TransitiveDependentsIncludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,15 +218,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -281,7 +281,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowInvocation", GoGetter: "WorkflowInvocation"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,11 +337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeouts",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

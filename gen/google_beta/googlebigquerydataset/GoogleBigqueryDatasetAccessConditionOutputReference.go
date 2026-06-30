@@ -12,9 +12,9 @@ type GoogleBigqueryDatasetAccessConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GoogleBigqueryDatasetAccessConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleBigqueryDatasetAccessConditionOutputReference interface {
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) TitleInp
 	return returns
 }
 
-
 func NewGoogleBigqueryDatasetAccessConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessConditionOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGoogleBigqueryDatasetAccessConditionOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGoogleBigqueryDatasetAccessConditionOutputReference_Override(g GoogleBig
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetDescri
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetExpres
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetInternalValue(val *GoogleBigqueryDatasetAccessCondition) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetInternalValue(val *GoogleBigqueryDatasetAccessCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetLocati
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) ResetTit
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessConditionOutputReference) ToString
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindo
 
 	return nil
 }
-

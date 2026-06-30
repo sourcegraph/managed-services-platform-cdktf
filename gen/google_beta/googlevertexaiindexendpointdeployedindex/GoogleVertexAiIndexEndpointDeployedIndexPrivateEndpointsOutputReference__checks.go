@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexPrivateEndpointsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexPrivateEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndexPrivateEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleVertexAiIndexEndpointDeployedIndexPrivateEndpointsOutputRe
 
 	return nil
 }
-

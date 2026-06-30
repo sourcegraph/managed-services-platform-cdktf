@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationSignaturesList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationSignaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationSignaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerAnalysisOccurrenceAttestationSignaturesListParame
 
 	return nil
 }
-

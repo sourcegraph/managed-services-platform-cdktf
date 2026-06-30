@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validateSetApprovalRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validateSetApprovalRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewGoogleCloudbuildTriggerApprovalConfigOutputReferenceParameters(t
 
 	return nil
 }
-

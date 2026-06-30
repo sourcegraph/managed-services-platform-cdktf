@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionIntervalOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionIntervalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeBackendServiceOutlierDetectionIntervalOutputReferen
 
 	return nil
 }
-

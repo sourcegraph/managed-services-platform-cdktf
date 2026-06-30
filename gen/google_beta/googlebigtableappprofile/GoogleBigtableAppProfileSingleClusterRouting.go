@@ -1,6 +1,5 @@
 package googlebigtableappprofile
 
-
 type GoogleBigtableAppProfileSingleClusterRouting struct {
 	// The cluster to which read/write requests should be routed.
 	//
@@ -11,6 +10,5 @@ type GoogleBigtableAppProfileSingleClusterRouting struct {
 	// It is unsafe to send these requests to the same table/row/column in multiple clusters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_app_profile#allow_transactional_writes GoogleBigtableAppProfile#allow_transactional_writes}
-	AllowTransactionalWrites interface{} `field:"optional" json:"allowTransactionalWrites" yaml:"allowTransactionalWrites"`
+	AllowTransactionalWrites any `field:"optional" json:"allowTransactionalWrites" yaml:"allowTransactionalWrites"`
 }
-

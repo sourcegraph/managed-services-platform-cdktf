@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleNetworkConnectivityServiceConnectionPolicyPscConfigOutputR
 
 	return nil
 }
-

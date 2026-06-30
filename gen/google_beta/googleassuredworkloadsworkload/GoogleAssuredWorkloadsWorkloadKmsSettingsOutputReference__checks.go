@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAssuredWorkloadsWorkloadKmsSettingsOutputReferenceParamete
 
 	return nil
 }
-

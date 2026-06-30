@@ -12,9 +12,9 @@ type GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference interface {
 	Delimiter() *string
 	SetDelimiter(val *string)
 	DelimiterInput() *string
-	DisableTypeInference() interface{}
-	SetDisableTypeInference(val interface{})
-	DisableTypeInferenceInput() interface{}
+	DisableTypeInference() any
+	SetDisableTypeInference(val any)
+	DisableTypeInferenceInput() any
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
@@ -52,7 +52,7 @@ type GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference interface {
 	ResetHeaderRows()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) De
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) DisableTypeInference() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) DisableTypeInference() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTypeInference",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Di
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) DisableTypeInferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) DisableTypeInferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTypeInferenceInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Te
 	return returns
 }
 
-
 func NewGoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference_Override(g Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetDelimiter(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetDelimiter(val *string) {
 	if err := j.validateSetDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetDisableTypeInference(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetDisableTypeInference(val any) {
 	if err := j.validateSetDisableTypeInferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetHeaderRows(val *float64) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetHeaderRows(val *float64) {
 	if err := j.validateSetHeaderRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetInternalValue(val *GoogleDataplexAssetDiscoverySpecCsvOptions) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetInternalValue(val *GoogleDataplexAssetDiscoverySpecCsvOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference) To
 
 	return returns
 }
-

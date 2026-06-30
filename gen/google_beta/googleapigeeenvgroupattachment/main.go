@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroupAttachment.GoogleApigeeEnvgroupAttachment",
-		reflect.TypeOf((*GoogleApigeeEnvgroupAttachment)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvgroupAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroupAttachment.GoogleApigeeEnvgroupAttachmentConfig",
-		reflect.TypeOf((*GoogleApigeeEnvgroupAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroupAttachment.GoogleApigeeEnvgroupAttachmentTimeouts",
-		reflect.TypeOf((*GoogleApigeeEnvgroupAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvgroupAttachment.GoogleApigeeEnvgroupAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeEnvgroupAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvgroupAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvgroupAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

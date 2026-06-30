@@ -1,6 +1,5 @@
 package googlecomputeinstance
 
-
 type GoogleComputeInstanceAttachedDisk struct {
 	// The name or self_link of the disk attached to this instance.
 	//
@@ -33,7 +32,7 @@ type GoogleComputeInstanceAttachedDisk struct {
 	// If you try to force attach a zonal disk to an instance, you will receive an error. Setting this parameter cause VM recreation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#force_attach GoogleComputeInstance#force_attach}
-	ForceAttach interface{} `field:"optional" json:"forceAttach" yaml:"forceAttach"`
+	ForceAttach any `field:"optional" json:"forceAttach" yaml:"forceAttach"`
 	// The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk.
 	//
 	// Only one of kms_key_self_link, disk_encryption_key_rsa and disk_encryption_key_raw may be set.
@@ -45,4 +44,3 @@ type GoogleComputeInstanceAttachedDisk struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#mode GoogleComputeInstance#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
-

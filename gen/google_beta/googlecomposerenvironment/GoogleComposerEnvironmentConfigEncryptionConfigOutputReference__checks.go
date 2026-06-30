@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigEncryptionConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComposerEnvironmentConfigEncryptionConfigOutputReferencePa
 
 	return nil
 }
-

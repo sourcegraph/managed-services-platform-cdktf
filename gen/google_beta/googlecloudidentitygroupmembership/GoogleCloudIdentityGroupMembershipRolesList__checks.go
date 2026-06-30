@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudIdentityGroupMembershipRolesListParameters(terraformR
 
 	return nil
 }
-

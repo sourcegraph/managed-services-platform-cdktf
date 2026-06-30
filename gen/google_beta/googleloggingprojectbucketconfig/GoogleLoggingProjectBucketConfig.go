@@ -20,15 +20,15 @@ type GoogleLoggingProjectBucketConfig interface {
 	CmekSettings() GoogleLoggingProjectBucketConfigCmekSettingsOutputReference
 	CmekSettingsInput() *GoogleLoggingProjectBucketConfigCmekSettings
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,9 +36,9 @@ type GoogleLoggingProjectBucketConfig interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EnableAnalytics() interface{}
-	SetEnableAnalytics(val interface{})
-	EnableAnalyticsInput() interface{}
+	EnableAnalytics() any
+	SetEnableAnalytics(val any)
+	EnableAnalyticsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,7 +51,7 @@ type GoogleLoggingProjectBucketConfig interface {
 	SetId(val *string)
 	IdInput() *string
 	IndexConfigs() GoogleLoggingProjectBucketConfigIndexConfigsList
-	IndexConfigsInput() interface{}
+	IndexConfigsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -60,9 +60,9 @@ type GoogleLoggingProjectBucketConfig interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	Locked() interface{}
-	SetLocked(val interface{})
-	LockedInput() interface{}
+	Locked() any
+	SetLocked(val any)
+	LockedInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -74,27 +74,27 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionDays() *float64
 	SetRetentionDays(val *float64)
 	RetentionDaysInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleLoggingProjectBucketConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,7 +132,7 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *GoogleLoggingProjectBucketConfigCmekSettings)
-	PutIndexConfigs(value interface{})
+	PutIndexConfigs(value any)
 	ResetCmekSettings()
 	ResetDescription()
 	ResetEnableAnalytics()
@@ -143,17 +143,17 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionDays()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleLoggingProjectBucketConfig
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) CmekSettingsInput() *Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) DescriptionInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalytics() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalytics() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAnalytics",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalytics() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalyticsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalyticsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAnalyticsInput",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IndexConfigs() GoogleLoggin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IndexConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IndexConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"indexConfigsInput",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) LocationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Locked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Locked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locked",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Locked() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) LockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) LockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lockedInput",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -541,7 +541,6 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewGoogleLoggingProjectBucketConfig(scope constructs.Construct, id *string, config *GoogleLoggingProjectBucketConfigConfig) GoogleLoggingProjectBucketConfig {
 	_init_.Initialize()
@@ -553,7 +552,7 @@ func NewGoogleLoggingProjectBucketConfig(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -566,12 +565,12 @@ func NewGoogleLoggingProjectBucketConfig_Override(g GoogleLoggingProjectBucketCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetBucketId(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetBucketId(val *string) {
 	if err := j.validateSetBucketIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetBucketId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetEnableAnalytics(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetEnableAnalytics(val any) {
 	if err := j.validateSetEnableAnalyticsParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetEnableAnalytics(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLocked(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetLocked(val any) {
 	if err := j.validateSetLockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetLocked(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProject(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -705,7 +704,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetRetentionDays(val *float64) {
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) SetRetentionDays(val *float64) {
 	if err := j.validateSetRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func GoogleLoggingProjectBucketConfig_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func GoogleLoggingProjectBucketConfig_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleLoggingProjectBucketConfig_IsConstruct(x interface{}) *bool {
+func GoogleLoggingProjectBucketConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x); err != nil {
@@ -774,7 +773,7 @@ func GoogleLoggingProjectBucketConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func GoogleLoggingProjectBucketConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingProjectBucketConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleLoggingProjectBucketConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingProjectBucketConfig_IsTerraformElementParameters(x); err != nil {
@@ -793,7 +792,7 @@ func GoogleLoggingProjectBucketConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func GoogleLoggingProjectBucketConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleLoggingProjectBucketConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleLoggingProjectBucketConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleLoggingProjectBucketConfig_IsTerraformResourceParameters(x); err != nil {
@@ -812,7 +811,7 @@ func GoogleLoggingProjectBucketConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,31 +836,31 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,15 +988,15 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,18 +1042,18 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1087,18 +1086,18 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutCmekSettings(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putCmekSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutIndexConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutIndexConfigs(value any) {
 	if err := g.validatePutIndexConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putIndexConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,8 +1165,8 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetRetentionDays() {
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1179,8 +1178,8 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1192,8 +1191,8 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1205,8 +1204,8 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToHclTerraform() interface{
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1231,8 +1230,8 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1243,4 +1242,3 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

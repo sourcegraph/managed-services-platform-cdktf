@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetCre
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleBigtableInstanceTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

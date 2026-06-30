@@ -12,9 +12,9 @@ type GoogleStorageInsightsReportConfigCsvOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type GoogleStorageInsightsReportConfigCsvOptionsOutputReference interface {
 	DelimiterInput() *string
 	// Experimental.
 	Fqn() *string
-	HeaderRequired() interface{}
-	SetHeaderRequired(val interface{})
-	HeaderRequiredInput() interface{}
+	HeaderRequired() any
+	SetHeaderRequired(val any)
+	HeaderRequiredInput() any
 	InternalValue() *GoogleStorageInsightsReportConfigCsvOptions
 	SetInternalValue(val *GoogleStorageInsightsReportConfigCsvOptions)
 	RecordSeparator() *string
@@ -49,7 +49,7 @@ type GoogleStorageInsightsReportConfigCsvOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleStorageInsightsReportConfigCsvOptionsOutputReference interface {
 	ResetRecordSeparator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) HeaderRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) HeaderRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerRequired",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) H
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) HeaderRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) HeaderRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerRequiredInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) T
 	return returns
 }
 
-
 func NewGoogleStorageInsightsReportConfigCsvOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageInsightsReportConfigCsvOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleStorageInsightsReportConfigCsvOptionsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleStorageInsightsReportConfigCsvOptionsOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageInsightsReportConfig.GoogleStorageInsightsReportConfigCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetDelimiter(val *string) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetDelimiter(val *string) {
 	if err := j.validateSetDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetHeaderRequired(val interface{}) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetHeaderRequired(val any) {
 	if err := j.validateSetHeaderRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetInternalValue(val *GoogleStorageInsightsReportConfigCsvOptions) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetInternalValue(val *GoogleStorageInsightsReportConfigCsvOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetRecordSeparator(val *string) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetRecordSeparator(val *string) {
 	if err := j.validateSetRecordSeparatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigCsvOptionsOutputReference) T
 
 	return returns
 }
-

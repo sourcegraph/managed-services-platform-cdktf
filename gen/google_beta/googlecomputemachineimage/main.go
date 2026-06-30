@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
-		reflect.TypeOf((*GoogleComputeMachineImage)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeMachineImage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImageConfig",
-		reflect.TypeOf((*GoogleComputeMachineImageConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKey",
-		reflect.TypeOf((*GoogleComputeMachineImageMachineImageEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageMachineImageEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
-		reflect.TypeOf((*GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImageTimeouts",
-		reflect.TypeOf((*GoogleComputeMachineImageTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImageTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputeMachineImageTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeMachineImageTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptio
 
 	return nil
 }
-

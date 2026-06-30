@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePool",
-		reflect.TypeOf((*GoogleIamWorkforcePool)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRestrictions", GoGetter: "AccessRestrictions"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRestrictionsInput", GoGetter: "AccessRestrictionsInput"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictions",
-		reflect.TypeOf((*GoogleIamWorkforcePoolAccessRestrictions)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolAccessRestrictions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServices",
-		reflect.TypeOf((*GoogleIamWorkforcePoolAccessRestrictionsAllowedServices)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolAccessRestrictionsAllowedServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList",
-		reflect.TypeOf((*GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolAccessRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolAccessRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedServices", GoGetter: "AllowedServices"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedServicesInput", GoGetter: "AllowedServicesInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,15 +196,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig",
-		reflect.TypeOf((*GoogleIamWorkforcePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts",
-		reflect.TypeOf((*GoogleIamWorkforcePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleIamWorkforcePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIamWorkforcePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

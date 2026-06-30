@@ -6,9 +6,9 @@ import (
 
 type GoogleDataFusionInstanceIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDataFusionInstanceIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_fusion_instance_iam_policy#name GoogleDataFusionInstanceIamPolicy#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_fusion_instance_iam_policy#policy_data GoogleDataFusionInstanceIamPolicy#policy_data}.
@@ -33,4 +33,3 @@ type GoogleDataFusionInstanceIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_fusion_instance_iam_policy#region GoogleDataFusionInstanceIamPolicy#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
-

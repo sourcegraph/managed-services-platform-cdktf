@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,4 +248,3 @@ func validateNewGoogleOrganizationPolicyListPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

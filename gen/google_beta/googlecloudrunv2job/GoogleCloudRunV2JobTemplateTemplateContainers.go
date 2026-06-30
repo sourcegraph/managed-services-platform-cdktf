@@ -1,6 +1,5 @@
 package googlecloudrunv2job
 
-
 type GoogleCloudRunV2JobTemplateTemplateContainers struct {
 	// URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 	//
@@ -25,7 +24,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainers struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#env GoogleCloudRunV2Job#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// Name of the container specified as a DNS_LABEL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#name GoogleCloudRunV2Job#name}
@@ -33,7 +32,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainers struct {
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#ports GoogleCloudRunV2Job#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#resources GoogleCloudRunV2Job#resources}
@@ -45,7 +44,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainers struct {
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#volume_mounts GoogleCloudRunV2Job#volume_mounts}
-	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
+	VolumeMounts any `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 	// Container's working directory.
 	//
 	// If not specified, the container runtime's default will be used, which might be configured in the container image.
@@ -53,4 +52,3 @@ type GoogleCloudRunV2JobTemplateTemplateContainers struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#working_dir GoogleCloudRunV2Job#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

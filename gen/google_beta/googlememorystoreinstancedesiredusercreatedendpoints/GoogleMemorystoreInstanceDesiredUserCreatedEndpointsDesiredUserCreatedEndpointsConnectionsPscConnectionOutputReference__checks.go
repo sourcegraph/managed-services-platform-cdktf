@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUs
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserC
 
 	return nil
 }
-

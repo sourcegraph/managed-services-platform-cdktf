@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validateOverrideLogicalI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validatePutEnrolledServicesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleProjectAccessApprovalSettings) validatePutEnrolledServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleProjectAccessApprovalSettings_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleProjectAccessApprovalSettings_IsConstructParameters(x interface{}) error {
+func validateGoogleProjectAccessApprovalSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleProjectAccessApprovalSettings_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleProjectAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleProjectAccessApprovalSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleProjectAccessApprovalSettings_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleProjectAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleProjectAccessApprovalSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetActiveKeyVers
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetProjectIdPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewGoogleProjectAccessApprovalSettingsParameters(scope constructs.C
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package googleidentityplatformconfig
 
-
 type GoogleIdentityPlatformConfigSignIn struct {
 	// Whether to allow more than one account to have the same email.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_identity_platform_config#allow_duplicate_emails GoogleIdentityPlatformConfig#allow_duplicate_emails}
-	AllowDuplicateEmails interface{} `field:"optional" json:"allowDuplicateEmails" yaml:"allowDuplicateEmails"`
+	AllowDuplicateEmails any `field:"optional" json:"allowDuplicateEmails" yaml:"allowDuplicateEmails"`
 	// anonymous block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_identity_platform_config#anonymous GoogleIdentityPlatformConfig#anonymous}
@@ -19,4 +18,3 @@ type GoogleIdentityPlatformConfigSignIn struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_identity_platform_config#phone_number GoogleIdentityPlatformConfig#phone_number}
 	PhoneNumber *GoogleIdentityPlatformConfigSignInPhoneNumber `field:"optional" json:"phoneNumber" yaml:"phoneNumber"`
 }
-

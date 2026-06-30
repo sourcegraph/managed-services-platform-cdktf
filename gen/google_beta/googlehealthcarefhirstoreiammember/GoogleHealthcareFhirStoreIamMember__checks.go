@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleHealthcareFhirStoreIamMember_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleHealthcareFhirStoreIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStoreIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleHealthcareFhirStoreIamMember_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleHealthcareFhirStoreIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStoreIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleHealthcareFhirStoreIamMember_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleHealthcareFhirStoreIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleHealthcareFhirStoreIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleHealthcareFhirStoreIamMember_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetMemberParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleHealthcareFhirStoreIamMemberParameters(scope constructs.Co
 
 	return nil
 }
-

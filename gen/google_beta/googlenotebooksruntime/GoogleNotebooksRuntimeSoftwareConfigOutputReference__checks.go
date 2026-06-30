@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validatePutKernelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validatePutKernelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetEnableHealthMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetEnableHealthMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetIdleShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetIdleShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetInstallGpuDriverParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) validateSetInstallGpuDriverParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,4 +329,3 @@ func validateNewGoogleNotebooksRuntimeSoftwareConfigOutputReferenceParameters(te
 
 	return nil
 }
-

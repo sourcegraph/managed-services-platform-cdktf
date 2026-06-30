@@ -12,9 +12,9 @@ type GoogleComputeSnapshotIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleComputeSnapshotIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleComputeSnapshotIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Title
 	return returns
 }
 
-
 func NewGoogleComputeSnapshotIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewGoogleComputeSnapshotIamMemberConditionOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewGoogleComputeSnapshotIamMemberConditionOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetDes
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetExp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetInternalValue(val *GoogleComputeSnapshotIamMemberCondition) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetInternalValue(val *GoogleComputeSnapshotIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (g *jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference) ToStr
 
 	return returns
 }
-

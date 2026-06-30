@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerConta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerConta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContacts
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleCloudTasksQueueIamPolicy_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleCloudTasksQueueIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudTasksQueueIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleCloudTasksQueueIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleCloudTasksQueueIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudTasksQueueIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleCloudTasksQueueIamPolicy_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGoogleCloudTasksQueueIamPolicyParameters(scope constructs.Constr
 
 	return nil
 }
-

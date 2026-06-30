@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateAddMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateMoveF
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateOverr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validatePutScopedAccessSettingsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validatePutScopedAccessSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleAccessContextManagerGcpUserAccessBinding_GenerateConfigForImp
 	return nil
 }
 
-func validateGoogleAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleAccessContextManagerGcpUserAccessBinding_IsConstructParameter
 	return nil
 }
 
-func validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformElementPa
 	return nil
 }
 
-func validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetAc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetOr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -491,4 +491,3 @@ func validateNewGoogleAccessContextManagerGcpUserAccessBindingParameters(scope c
 
 	return nil
 }
-

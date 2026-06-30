@@ -15,31 +15,31 @@ type GoogleDialogflowCxWebhook interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	EnableSpellCorrection() interface{}
-	SetEnableSpellCorrection(val interface{})
-	EnableSpellCorrectionInput() interface{}
-	EnableStackdriverLogging() interface{}
-	SetEnableStackdriverLogging(val interface{})
-	EnableStackdriverLoggingInput() interface{}
+	EnableSpellCorrection() any
+	SetEnableSpellCorrection(val any)
+	EnableSpellCorrectionInput() any
+	EnableStackdriverLogging() any
+	SetEnableStackdriverLogging(val any)
+	EnableStackdriverLoggingInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,11 +68,11 @@ type GoogleDialogflowCxWebhook interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecuritySettings() *string
 	SetSecuritySettings(val *string)
 	SecuritySettingsInput() *string
@@ -82,21 +82,21 @@ type GoogleDialogflowCxWebhook interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
 	Timeouts() GoogleDialogflowCxWebhookTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleDialogflowCxWebhook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type GoogleDialogflowCxWebhook interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type GoogleDialogflowCxWebhook interface {
 	ResetServiceDirectory()
 	ResetTimeout()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDialogflowCxWebhook
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpellCorrection",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSpellCorrectionInput",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableSpellCorrectionInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableStackdriverLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableStackdriverLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLogging",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableStackdriverLogging() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableStackdriverLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) EnableStackdriverLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLoggingInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) Timeouts() GoogleDialogflowCxWebho
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
 func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config *GoogleDialogflowCxWebhookConfig) GoogleDialogflowCxWebhook {
@@ -579,7 +578,7 @@ func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -592,12 +591,12 @@ func NewGoogleDialogflowCxWebhook_Override(g GoogleDialogflowCxWebhook, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetEnableSpellCorrection(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetEnableSpellCorrection(val any) {
 	if err := j.validateSetEnableSpellCorrectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetEnableSpellCorrection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetEnableStackdriverLogging(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetEnableStackdriverLogging(val any) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetEnableStackdriverLogging(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetId(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetParent(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetSecuritySettings(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetSecuritySettings(val *string) {
 	if err := j.validateSetSecuritySettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetSecuritySettings(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook)SetTimeout(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) SetTimeout(val *string) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func GoogleDialogflowCxWebhook_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func GoogleDialogflowCxWebhook_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDialogflowCxWebhook_IsConstruct(x interface{}) *bool {
+func GoogleDialogflowCxWebhook_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxWebhook_IsConstructParameters(x); err != nil {
@@ -800,7 +799,7 @@ func GoogleDialogflowCxWebhook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func GoogleDialogflowCxWebhook_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDialogflowCxWebhook_IsTerraformElement(x interface{}) *bool {
+func GoogleDialogflowCxWebhook_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxWebhook_IsTerraformElementParameters(x); err != nil {
@@ -819,7 +818,7 @@ func GoogleDialogflowCxWebhook_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func GoogleDialogflowCxWebhook_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDialogflowCxWebhook_IsTerraformResource(x interface{}) *bool {
+func GoogleDialogflowCxWebhook_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxWebhook_IsTerraformResourceParameters(x); err != nil {
@@ -838,7 +837,7 @@ func GoogleDialogflowCxWebhook_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -863,31 +862,31 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,15 +1014,15 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,18 +1068,18 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) PutGenericWebService(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putGenericWebService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) PutServiceDirectory(value *GoogleD
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceDirectory",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) PutTimeouts(value *GoogleDialogflo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,8 +1226,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1240,8 +1239,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1253,8 +1252,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1266,8 +1265,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1292,8 +1291,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1304,4 +1303,3 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) ToTerraform() interface{} {
 
 	return returns
 }
-

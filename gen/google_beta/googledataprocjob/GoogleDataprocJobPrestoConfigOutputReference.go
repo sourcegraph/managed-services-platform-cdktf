@@ -15,17 +15,17 @@ type GoogleDataprocJobPrestoConfigOutputReference interface {
 	ClientTagsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ContinueOnFailure() interface{}
-	SetContinueOnFailure(val interface{})
-	ContinueOnFailureInput() interface{}
+	ContinueOnFailure() any
+	SetContinueOnFailure(val any)
+	ContinueOnFailureInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -60,7 +60,7 @@ type GoogleDataprocJobPrestoConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type GoogleDataprocJobPrestoConfigOutputReference interface {
 	ResetQueryList()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ClientTagsInput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ComplexObjectIs
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ContinueOnFailure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ContinueOnFailure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnFailure",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ContinueOnFailu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ContinueOnFailureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ContinueOnFailureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnFailureInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewGoogleDataprocJobPrestoConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocJobPrestoConfigOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewGoogleDataprocJobPrestoConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJob.GoogleDataprocJobPrestoConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewGoogleDataprocJobPrestoConfigOutputReference_Override(g GoogleDataprocJo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocJob.GoogleDataprocJobPrestoConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetClientTags(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetClientTags(val *[]*string) {
 	if err := j.validateSetClientTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetClientTags(va
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetContinueOnFailure(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetContinueOnFailure(val any) {
 	if err := j.validateSetContinueOnFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetContinueOnFai
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetInternalValue(val *GoogleDataprocJobPrestoConfig) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetInternalValue(val *GoogleDataprocJobPrestoConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetOutputFormat(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetOutputFormat(val *string) {
 	if err := j.validateSetOutputFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetOutputFormat(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetProperties(va
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetQueryFileUri(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetQueryFileUri(val *string) {
 	if err := j.validateSetQueryFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetQueryFileUri(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetQueryList(val *[]*string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetQueryList(val *[]*string) {
 	if err := j.validateSetQueryListParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetQueryList(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) PutLoggingConfi
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ResetQueryList(
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (g *jsiiProxy_GoogleDataprocJobPrestoConfigOutputReference) ToString() *str
 
 	return returns
 }
-

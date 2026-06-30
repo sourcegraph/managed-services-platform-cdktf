@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVmwareengineSubnetDhcpAddressRangesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleVmwareengineSubnetDhcpAddressRangesOutputReferenceParamete
 
 	return nil
 }
-

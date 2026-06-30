@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataplexAspectTypeIamBinding_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataplexAspectTypeIamBinding_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataplexAspectTypeIamBinding_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetAspectTypeIdPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleDataplexAspectTypeIamBindingParameters(scope constructs.Co
 
 	return nil
 }
-

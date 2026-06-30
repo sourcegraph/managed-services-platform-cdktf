@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGeminiGeminiGcpEnablementSetting_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleGeminiGeminiGcpEnablementSetting_IsConstructParameters(x interface{}) error {
+func validateGoogleGeminiGeminiGcpEnablementSetting_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGeminiGeminiGcpEnablementSetting_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleGeminiGeminiGcpEnablementSetting_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetCountParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetDisableWebGroundingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetDisableWebGroundingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetDisableWeb
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetEnableCustomerDataSharingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetEnableCustomerDataSharingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -505,4 +505,3 @@ func validateNewGoogleGeminiGeminiGcpEnablementSettingParameters(scope construct
 
 	return nil
 }
-

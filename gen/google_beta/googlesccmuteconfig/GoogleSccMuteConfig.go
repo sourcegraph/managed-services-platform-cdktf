@@ -15,15 +15,15 @@ type GoogleSccMuteConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -68,19 +68,19 @@ type GoogleSccMuteConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleSccMuteConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -89,9 +89,9 @@ type GoogleSccMuteConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleSccMuteConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleSccMuteConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type GoogleSccMuteConfig interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSccMuteConfig
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_GoogleSccMuteConfig) Timeouts() GoogleSccMuteConfigTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccMuteConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -515,7 +515,6 @@ func (j *jsiiProxy_GoogleSccMuteConfig) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_scc_mute_config google_scc_mute_config} Resource.
 func NewGoogleSccMuteConfig(scope constructs.Construct, id *string, config *GoogleSccMuteConfigConfig) GoogleSccMuteConfig {
 	_init_.Initialize()
@@ -527,7 +526,7 @@ func NewGoogleSccMuteConfig(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -540,12 +539,12 @@ func NewGoogleSccMuteConfig_Override(g GoogleSccMuteConfig, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetExpiryTime(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetExpiryTime(val *string) {
 	if err := j.validateSetExpiryTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetExpiryTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetMuteConfigId(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetMuteConfigId(val *string) {
 	if err := j.validateSetMuteConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetMuteConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetParent(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleSccMuteConfig)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccMuteConfig)SetType(val *string) {
+func (j *jsiiProxy_GoogleSccMuteConfig) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func GoogleSccMuteConfig_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func GoogleSccMuteConfig_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSccMuteConfig_IsConstruct(x interface{}) *bool {
+func GoogleSccMuteConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccMuteConfig_IsConstructParameters(x); err != nil {
@@ -737,7 +736,7 @@ func GoogleSccMuteConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func GoogleSccMuteConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSccMuteConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleSccMuteConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccMuteConfig_IsTerraformElementParameters(x); err != nil {
@@ -756,7 +755,7 @@ func GoogleSccMuteConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func GoogleSccMuteConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSccMuteConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleSccMuteConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccMuteConfig_IsTerraformResourceParameters(x); err != nil {
@@ -775,7 +774,7 @@ func GoogleSccMuteConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,31 +799,31 @@ func (g *jsiiProxy_GoogleSccMuteConfig) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSccMuteConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSccMuteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,15 +951,15 @@ func (g *jsiiProxy_GoogleSccMuteConfig) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,18 +1005,18 @@ func (g *jsiiProxy_GoogleSccMuteConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSccMuteConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleSccMuteConfig) PutTimeouts(value *GoogleSccMuteConfigTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,8 +1101,8 @@ func (g *jsiiProxy_GoogleSccMuteConfig) ResetType() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1115,8 +1114,8 @@ func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1128,8 +1127,8 @@ func (g *jsiiProxy_GoogleSccMuteConfig) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1141,8 +1140,8 @@ func (g *jsiiProxy_GoogleSccMuteConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1167,8 +1166,8 @@ func (g *jsiiProxy_GoogleSccMuteConfig) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccMuteConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccMuteConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1179,4 +1178,3 @@ func (g *jsiiProxy_GoogleSccMuteConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

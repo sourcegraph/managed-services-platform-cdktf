@@ -14,9 +14,9 @@ type GoogleNetworkServicesTlsRouteRulesOutputReference interface {
 	ActionInput() *GoogleNetworkServicesTlsRouteRulesAction
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,10 +29,10 @@ type GoogleNetworkServicesTlsRouteRulesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Matches() GoogleNetworkServicesTlsRouteRulesMatchesList
-	MatchesInput() interface{}
+	MatchesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type GoogleNetworkServicesTlsRouteRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,10 +66,10 @@ type GoogleNetworkServicesTlsRouteRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *GoogleNetworkServicesTlsRouteRulesAction)
-	PutMatches(value interface{})
+	PutMatches(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) ActionInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) Matches() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) MatchesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) MatchesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchesInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) TerraformR
 	return returns
 }
 
-
 func NewGoogleNetworkServicesTlsRouteRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleNetworkServicesTlsRouteRulesOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewGoogleNetworkServicesTlsRouteRulesOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewGoogleNetworkServicesTlsRouteRulesOutputReference_Override(g GoogleNetwo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -468,31 +467,31 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) PutAction(
 	_jsii_.InvokeVoid(
 		g,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) PutMatches(value interface{}) {
+func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) PutMatches(value any) {
 	if err := g.validatePutMatchesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMatches",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) ToString()
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetUseTopicSchemaParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetUseTopicSchemaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetWriteMetadataParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateSetWriteMetadataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputRefere
 
 	return nil
 }
-

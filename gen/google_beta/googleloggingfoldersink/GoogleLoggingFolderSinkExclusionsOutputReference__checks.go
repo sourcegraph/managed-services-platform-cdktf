@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewGoogleLoggingFolderSinkExclusionsOutputReferenceParameters(terra
 
 	return nil
 }
-

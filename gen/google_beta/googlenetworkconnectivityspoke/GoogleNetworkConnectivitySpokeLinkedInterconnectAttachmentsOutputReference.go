@@ -12,9 +12,9 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	IncludeImportRangesInput() *[]*string
 	InternalValue() *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments
 	SetInternalValue(val *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments)
-	SiteToSiteDataTransfer() interface{}
-	SetSiteToSiteDataTransfer(val interface{})
-	SiteToSiteDataTransferInput() interface{}
+	SiteToSiteDataTransfer() any
+	SetSiteToSiteDataTransfer(val any)
+	SiteToSiteDataTransferInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference 
 	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutput
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SiteToSiteDataTransfer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SiteToSiteDataTransfer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransfer",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SiteToSiteDataTransferInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SiteToSiteDataTransferInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransferInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	return returns
 }
 
-
 func NewGoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewGoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewGoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetIncludeImportRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetIncludeImportRanges(val *[]*string) {
 	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetInternalValue(val *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetInternalValue(val *GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetSiteToSiteDataTransfer(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetSiteToSiteDataTransfer(val any) {
 	if err := j.validateSetSiteToSiteDataTransferParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)SetUris(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) SetUris(val *[]*string) {
 	if err := j.validateSetUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedInterconnectAttachmentsOu
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdForeca
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMonitoringAlertPolicyConditionsConditionThresholdForecastO
 
 	return nil
 }
-

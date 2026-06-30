@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffin
 
 	return nil
 }
-

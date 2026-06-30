@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityType",
-		reflect.TypeOf((*GoogleDialogflowEntityType)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowEntityType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntities",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeEntities)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeEntities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesList",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeEntitiesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeEntitiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowEntityTypeEntitiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeEntitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeEntitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDialogflowEntityTypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowEntityTypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowEntityTypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

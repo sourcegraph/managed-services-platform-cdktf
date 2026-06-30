@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleAppEngineStandardAppVersionDeploymentFilesOutputReferenceP
 
 	return nil
 }
-

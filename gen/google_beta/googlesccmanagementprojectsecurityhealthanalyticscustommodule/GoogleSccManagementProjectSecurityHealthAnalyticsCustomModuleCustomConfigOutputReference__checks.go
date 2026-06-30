@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewGoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleCus
 
 	return nil
 }
-

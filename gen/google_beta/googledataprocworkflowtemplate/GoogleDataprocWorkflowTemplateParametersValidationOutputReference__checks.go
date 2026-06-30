@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataprocWorkflowTemplateParametersValidationOutputReferenc
 
 	return nil
 }
-

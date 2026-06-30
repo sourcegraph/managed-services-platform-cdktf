@@ -15,15 +15,15 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -83,11 +83,11 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReverseSshConnectivity() GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference
 	ReverseSshConnectivityInput() *GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivity
 	Source() *string
@@ -100,11 +100,11 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDatabaseMigrationServiceMigrationJobTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -114,9 +114,9 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -146,7 +146,7 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -175,17 +175,17 @@ type GoogleDatabaseMigrationServiceMigrationJob interface {
 	ResetStaticIpConnectivity()
 	ResetTimeouts()
 	ResetVpcPeeringConnectivity()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDatabaseMigrationServiceMigrationJob
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Connection() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -583,8 +583,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Provisioners() *[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -683,8 +683,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) TerraformLabels()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -713,8 +713,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) Timeouts() Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -763,7 +763,6 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) VpcPeeringConnect
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
 func NewGoogleDatabaseMigrationServiceMigrationJob(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceMigrationJobConfig) GoogleDatabaseMigrationServiceMigrationJob {
 	_init_.Initialize()
@@ -775,7 +774,7 @@ func NewGoogleDatabaseMigrationServiceMigrationJob(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -788,12 +787,12 @@ func NewGoogleDatabaseMigrationServiceMigrationJob_Override(g GoogleDatabaseMigr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -823,7 +822,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDestination(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDestination(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDisplayName(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDumpPath(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetDumpPath(val *string) {
 	if err := j.validateSetDumpPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDumpPath(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDumpType(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetDumpType(val *string) {
 	if err := j.validateSetDumpTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetDumpType(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -875,7 +874,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetId(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLabels(val *map
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetLocation(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetMigrationJobId(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetMigrationJobId(val *string) {
 	if err := j.validateSetMigrationJobIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetMigrationJobId(
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProject(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -949,7 +948,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +959,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetProvisioners(va
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetSource(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -971,7 +970,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetSource(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob)SetType(val *string) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDatabaseMigrationServiceMigrationJob_IsConstruct(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceMigrationJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceMigrationJob_IsConstructParameters(x); err != nil {
@@ -1029,7 +1028,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1037,7 +1036,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformElement(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceMigrationJob_IsTerraformElementParameters(x); err != nil {
@@ -1048,7 +1047,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformElement(x interface{}
 }
 
 // Experimental.
-func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformResource(x interface{}) *bool {
+func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatabaseMigrationServiceMigrationJob_IsTerraformResourceParameters(x); err != nil {
@@ -1067,7 +1066,7 @@ func GoogleDatabaseMigrationServiceMigrationJob_IsTerraformResource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1092,31 +1091,31 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) AddMoveTarget(mov
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,7 +1131,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,7 +1147,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1180,7 +1179,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1196,7 +1195,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1212,7 +1211,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1228,7 +1227,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1244,15 +1243,15 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1271,7 +1270,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ImportFrom(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1284,7 +1283,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1298,18 +1297,18 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) MoveFromId(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1320,7 +1319,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) MoveToId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1331,7 +1330,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1342,7 +1341,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutDumpFlags(valu
 	_jsii_.InvokeVoid(
 		g,
 		"putDumpFlags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1353,7 +1352,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutPerformanceCon
 	_jsii_.InvokeVoid(
 		g,
 		"putPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1364,7 +1363,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutReverseSshConn
 	_jsii_.InvokeVoid(
 		g,
 		"putReverseSshConnectivity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1375,7 +1374,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutStaticIpConnec
 	_jsii_.InvokeVoid(
 		g,
 		"putStaticIpConnectivity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1386,7 +1385,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutTimeouts(value
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1397,7 +1396,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) PutVpcPeeringConn
 	_jsii_.InvokeVoid(
 		g,
 		"putVpcPeeringConnectivity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1513,8 +1512,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ResetVpcPeeringCo
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1526,8 +1525,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1539,8 +1538,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) SynthesizeHclAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1552,8 +1551,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToHclTerraform() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1578,8 +1577,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToString() *strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1590,4 +1589,3 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJob) ToTerraform() int
 
 	return returns
 }
-

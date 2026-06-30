@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForFolderOrchestrationScope
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForFolderOrchestrationScopeSelectorsResourceHierarchySelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigV2PolicyOrchestratorForFolderOrchestrationScopeSelectorsResourceHierarchySelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleOsConfigV2PolicyOrchestratorForFolderOrchestrationScopeSel
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleFirestoreIndexTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleFirestoreIndexTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type GoogleFirestoreIndexTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleFirestoreIndexTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewGoogleFirestoreIndexTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleFirestoreIndexTimeoutsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleFirestoreIndexTimeoutsOutputReference_Override(g GoogleFirestoreIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetDelete(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) ResetDelete() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference) ToString() *stri
 
 	return returns
 }
-

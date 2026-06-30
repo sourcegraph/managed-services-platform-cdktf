@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleEndpointsServiceIamMember_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleEndpointsServiceIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleEndpointsServiceIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleEndpointsServiceIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleEndpointsServiceIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleEndpointsServiceIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleEndpointsServiceIamMember_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleEndpointsServiceIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleEndpointsServiceIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleEndpointsServiceIamMember_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetMemberParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleEndpointsServiceIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleEndpointsServiceIamMemberParameters(scope constructs.Const
 
 	return nil
 }
-

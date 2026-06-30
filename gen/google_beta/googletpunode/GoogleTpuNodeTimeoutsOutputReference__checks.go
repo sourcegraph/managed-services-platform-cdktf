@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateSetDeleteParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuNodeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleTpuNodeTimeoutsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

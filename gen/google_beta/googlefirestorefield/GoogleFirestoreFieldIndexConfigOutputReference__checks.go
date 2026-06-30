@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validatePutIndexesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validatePutIndexesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreFieldIndexConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleFirestoreFieldIndexConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-
