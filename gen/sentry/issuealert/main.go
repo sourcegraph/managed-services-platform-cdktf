@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
-		reflect.TypeOf((*IssueAlert)(nil)).Elem(),
+		reflect.TypeFor[IssueAlert](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionMatch", GoGetter: "ActionMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "actionMatchInput", GoGetter: "ActionMatchInput"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlert{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2",
-		reflect.TypeOf((*IssueAlertActionsV2)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2AzureDevopsCreateTicket",
-		reflect.TypeOf((*IssueAlertActionsV2AzureDevopsCreateTicket)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2AzureDevopsCreateTicket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2AzureDevopsCreateTicketOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2AzureDevopsCreateTicketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2AzureDevopsCreateTicketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workItemType", GoGetter: "WorkItemType"},
 			_jsii_.MemberProperty{JsiiProperty: "workItemTypeInput", GoGetter: "WorkItemTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2DiscordNotifyService",
-		reflect.TypeOf((*IssueAlertActionsV2DiscordNotifyService)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2DiscordNotifyService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2DiscordNotifyServiceOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2DiscordNotifyServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2DiscordNotifyServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelId", GoGetter: "ChannelId"},
 			_jsii_.MemberProperty{JsiiProperty: "channelIdInput", GoGetter: "ChannelIdInput"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2GithubCreateTicket",
-		reflect.TypeOf((*IssueAlertActionsV2GithubCreateTicket)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2GithubCreateTicket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2GithubCreateTicketOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2GithubCreateTicketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2GithubCreateTicketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignee", GoGetter: "Assignee"},
 			_jsii_.MemberProperty{JsiiProperty: "assigneeInput", GoGetter: "AssigneeInput"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,11 +240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2GithubEnterpriseCreateTicket",
-		reflect.TypeOf((*IssueAlertActionsV2GithubEnterpriseCreateTicket)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2GithubEnterpriseCreateTicket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignee", GoGetter: "Assignee"},
 			_jsii_.MemberProperty{JsiiProperty: "assigneeInput", GoGetter: "AssigneeInput"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -287,11 +287,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2JiraCreateTicket",
-		reflect.TypeOf((*IssueAlertActionsV2JiraCreateTicket)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2JiraCreateTicket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2JiraCreateTicketOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2JiraCreateTicketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2JiraCreateTicketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2JiraCreateTicketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,11 +330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2JiraServerCreateTicket",
-		reflect.TypeOf((*IssueAlertActionsV2JiraServerCreateTicket)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2JiraServerCreateTicket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2JiraServerCreateTicketOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2JiraServerCreateTicketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2JiraServerCreateTicketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2JiraServerCreateTicketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,7 +373,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2List",
-		reflect.TypeOf((*IssueAlertActionsV2List)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -395,11 +395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2MsteamsNotifyService",
-		reflect.TypeOf((*IssueAlertActionsV2MsteamsNotifyService)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2MsteamsNotifyService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2MsteamsNotifyServiceOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2MsteamsNotifyServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2MsteamsNotifyServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
 			_jsii_.MemberProperty{JsiiProperty: "channelId", GoGetter: "ChannelId"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2MsteamsNotifyServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -437,11 +437,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEmail",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEmail)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEmailOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -482,11 +482,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEvent",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEvent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -511,7 +511,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2NotifyEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -519,11 +519,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventSentryApp",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEventSentryApp)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEventSentryApp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventSentryAppOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEventSentryAppOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEventSentryAppOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -561,11 +561,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventService",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEventService)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEventService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventServiceOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2NotifyEventServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2NotifyEventServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -592,7 +592,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -600,11 +600,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2OpsgenieNotifyTeam",
-		reflect.TypeOf((*IssueAlertActionsV2OpsgenieNotifyTeam)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2OpsgenieNotifyTeam](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2OpsgenieNotifyTeamOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2OpsgenieNotifyTeamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2OpsgenieNotifyTeamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -635,7 +635,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -643,7 +643,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2OutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureDevopsCreateTicket", GoGetter: "AzureDevopsCreateTicket"},
 			_jsii_.MemberProperty{JsiiProperty: "azureDevopsCreateTicketInput", GoGetter: "AzureDevopsCreateTicketInput"},
@@ -723,7 +723,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -731,11 +731,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2PagerdutyNotifyService",
-		reflect.TypeOf((*IssueAlertActionsV2PagerdutyNotifyService)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2PagerdutyNotifyService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2PagerdutyNotifyServiceOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2PagerdutyNotifyServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2PagerdutyNotifyServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -766,7 +766,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2PagerdutyNotifyServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -774,11 +774,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2SlackNotifyService",
-		reflect.TypeOf((*IssueAlertActionsV2SlackNotifyService)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2SlackNotifyService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2SlackNotifyServiceOutputReference",
-		reflect.TypeOf((*IssueAlertActionsV2SlackNotifyServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertActionsV2SlackNotifyServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
 			_jsii_.MemberProperty{JsiiProperty: "channelId", GoGetter: "ChannelId"},
@@ -814,7 +814,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -822,15 +822,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2",
-		reflect.TypeOf((*IssueAlertConditionsV2)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventFrequency",
-		reflect.TypeOf((*IssueAlertConditionsV2EventFrequency)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventFrequency](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventFrequencyOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2EventFrequencyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventFrequencyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInterval", GoGetter: "ComparisonInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonIntervalInput", GoGetter: "ComparisonIntervalInput"},
@@ -865,7 +865,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2EventFrequencyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -873,11 +873,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventFrequencyPercent",
-		reflect.TypeOf((*IssueAlertConditionsV2EventFrequencyPercent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventFrequencyPercent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventFrequencyPercentOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2EventFrequencyPercentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventFrequencyPercentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInterval", GoGetter: "ComparisonInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonIntervalInput", GoGetter: "ComparisonIntervalInput"},
@@ -911,7 +911,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -919,11 +919,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventUniqueUserFrequency",
-		reflect.TypeOf((*IssueAlertConditionsV2EventUniqueUserFrequency)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventUniqueUserFrequency](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInterval", GoGetter: "ComparisonInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonIntervalInput", GoGetter: "ComparisonIntervalInput"},
@@ -958,7 +958,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -966,11 +966,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2ExistingHighPriorityIssue",
-		reflect.TypeOf((*IssueAlertConditionsV2ExistingHighPriorityIssue)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2ExistingHighPriorityIssue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2ExistingHighPriorityIssueOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2ExistingHighPriorityIssueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2ExistingHighPriorityIssueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -995,7 +995,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2ExistingHighPriorityIssueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1003,11 +1003,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2FirstSeenEvent",
-		reflect.TypeOf((*IssueAlertConditionsV2FirstSeenEvent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2FirstSeenEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2FirstSeenEventOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2FirstSeenEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2FirstSeenEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1032,7 +1032,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2FirstSeenEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1040,7 +1040,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2List",
-		reflect.TypeOf((*IssueAlertConditionsV2List)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1054,7 +1054,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1062,11 +1062,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2NewHighPriorityIssue",
-		reflect.TypeOf((*IssueAlertConditionsV2NewHighPriorityIssue)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2NewHighPriorityIssue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2NewHighPriorityIssueOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2NewHighPriorityIssueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2NewHighPriorityIssueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1091,7 +1091,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2NewHighPriorityIssueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1099,7 +1099,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2OutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1155,7 +1155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1163,11 +1163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2ReappearedEvent",
-		reflect.TypeOf((*IssueAlertConditionsV2ReappearedEvent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2ReappearedEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2ReappearedEventOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2ReappearedEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2ReappearedEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1192,7 +1192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2ReappearedEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1200,11 +1200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2RegressionEvent",
-		reflect.TypeOf((*IssueAlertConditionsV2RegressionEvent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2RegressionEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2RegressionEventOutputReference",
-		reflect.TypeOf((*IssueAlertConditionsV2RegressionEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConditionsV2RegressionEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1229,7 +1229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertConditionsV2RegressionEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1237,19 +1237,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConfig",
-		reflect.TypeOf((*IssueAlertConfig)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2",
-		reflect.TypeOf((*IssueAlertFiltersV2)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2AgeComparison",
-		reflect.TypeOf((*IssueAlertFiltersV2AgeComparison)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2AgeComparison](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2AgeComparisonOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2AgeComparisonOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2AgeComparisonOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonType", GoGetter: "ComparisonType"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonTypeInput", GoGetter: "ComparisonTypeInput"},
@@ -1280,7 +1280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2AgeComparisonOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1288,11 +1288,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2AssignedTo",
-		reflect.TypeOf((*IssueAlertFiltersV2AssignedTo)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2AssignedTo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2AssignedToOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2AssignedToOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2AssignedToOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1322,7 +1322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1330,11 +1330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2EventAttribute",
-		reflect.TypeOf((*IssueAlertFiltersV2EventAttribute)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2EventAttribute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2EventAttributeOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2EventAttributeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2EventAttributeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -1366,7 +1366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2EventAttributeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1374,11 +1374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2IssueCategory",
-		reflect.TypeOf((*IssueAlertFiltersV2IssueCategory)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2IssueCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2IssueCategoryOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2IssueCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2IssueCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1405,7 +1405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1413,11 +1413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2IssueOccurrences",
-		reflect.TypeOf((*IssueAlertFiltersV2IssueOccurrences)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2IssueOccurrences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2IssueOccurrencesOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2IssueOccurrencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2IssueOccurrencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1444,7 +1444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2IssueOccurrencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1452,11 +1452,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2LatestAdoptedRelease",
-		reflect.TypeOf((*IssueAlertFiltersV2LatestAdoptedRelease)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2LatestAdoptedRelease](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2LatestAdoptedReleaseOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2LatestAdoptedReleaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2LatestAdoptedReleaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1487,7 +1487,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2LatestAdoptedReleaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1495,11 +1495,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2LatestRelease",
-		reflect.TypeOf((*IssueAlertFiltersV2LatestRelease)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2LatestRelease](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2LatestReleaseOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2LatestReleaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2LatestReleaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1524,7 +1524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2LatestReleaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1532,11 +1532,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2Level",
-		reflect.TypeOf((*IssueAlertFiltersV2Level)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2Level](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2LevelOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2LevelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2LevelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1565,7 +1565,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2LevelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1573,7 +1573,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2List",
-		reflect.TypeOf((*IssueAlertFiltersV2List)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1587,7 +1587,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1595,7 +1595,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2OutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ageComparison", GoGetter: "AgeComparison"},
 			_jsii_.MemberProperty{JsiiProperty: "ageComparisonInput", GoGetter: "AgeComparisonInput"},
@@ -1655,7 +1655,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1663,11 +1663,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2TaggedEvent",
-		reflect.TypeOf((*IssueAlertFiltersV2TaggedEvent)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2TaggedEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertFiltersV2TaggedEventOutputReference",
-		reflect.TypeOf((*IssueAlertFiltersV2TaggedEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IssueAlertFiltersV2TaggedEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1699,7 +1699,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IssueAlertFiltersV2TaggedEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

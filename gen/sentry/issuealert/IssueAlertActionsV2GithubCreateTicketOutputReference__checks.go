@@ -106,7 +106,7 @@ func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2GithubCreateTicketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIssueAlertActionsV2GithubCreateTicketOutputReferenceParameters(t
 
 	return nil
 }
-

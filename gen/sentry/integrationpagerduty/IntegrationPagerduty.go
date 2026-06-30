@@ -15,15 +15,15 @@ type IntegrationPagerduty interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,27 +57,27 @@ type IntegrationPagerduty interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type IntegrationPagerduty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type IntegrationPagerduty interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type IntegrationPagerduty interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IntegrationPagerduty
@@ -145,8 +145,8 @@ func (j *jsiiProxy_IntegrationPagerduty) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationPagerduty) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_IntegrationPagerduty) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationPagerduty) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_IntegrationPagerduty) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationPagerduty) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_IntegrationPagerduty) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IntegrationPagerduty) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_IntegrationPagerduty) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationPagerduty) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_IntegrationPagerduty) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationPagerduty) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationPagerduty) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_IntegrationPagerduty) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/integration_pagerduty sentry_integration_pagerduty} Resource.
 func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) IntegrationPagerduty {
 	_init_.Initialize()
@@ -397,7 +396,7 @@ func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *Int
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -410,12 +409,12 @@ func NewIntegrationPagerduty_Override(i IntegrationPagerduty, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationPagerduty) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetCount(val interface{}) {
+func (j *jsiiProxy_IntegrationPagerduty) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationPagerduty) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationPagerduty) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -453,7 +452,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetIntegrationId(val *string) {
+func (j *jsiiProxy_IntegrationPagerduty) SetIntegrationId(val *string) {
 	if err := j.validateSetIntegrationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetIntegrationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetIntegrationKey(val *string) {
+func (j *jsiiProxy_IntegrationPagerduty) SetIntegrationKey(val *string) {
 	if err := j.validateSetIntegrationKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetIntegrationKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationPagerduty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetOrganization(val *string) {
+func (j *jsiiProxy_IntegrationPagerduty) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationPagerduty) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationPagerduty) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_IntegrationPagerduty)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationPagerduty)SetService(val *string) {
+func (j *jsiiProxy_IntegrationPagerduty) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func IntegrationPagerduty_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func IntegrationPagerduty_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IntegrationPagerduty_IsConstruct(x interface{}) *bool {
+func IntegrationPagerduty_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationPagerduty_IsConstructParameters(x); err != nil {
@@ -574,7 +573,7 @@ func IntegrationPagerduty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func IntegrationPagerduty_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IntegrationPagerduty_IsTerraformElement(x interface{}) *bool {
+func IntegrationPagerduty_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationPagerduty_IsTerraformElementParameters(x); err != nil {
@@ -593,7 +592,7 @@ func IntegrationPagerduty_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func IntegrationPagerduty_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IntegrationPagerduty_IsTerraformResource(x interface{}) *bool {
+func IntegrationPagerduty_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationPagerduty_IsTerraformResourceParameters(x); err != nil {
@@ -612,7 +611,7 @@ func IntegrationPagerduty_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.integrationPagerduty.IntegrationPagerduty",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,31 +636,31 @@ func (i *jsiiProxy_IntegrationPagerduty) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IntegrationPagerduty) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationPagerduty) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (i *jsiiProxy_IntegrationPagerduty) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,15 +788,15 @@ func (i *jsiiProxy_IntegrationPagerduty) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationPagerduty) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -816,7 +815,7 @@ func (i *jsiiProxy_IntegrationPagerduty) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -829,7 +828,7 @@ func (i *jsiiProxy_IntegrationPagerduty) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,18 +842,18 @@ func (i *jsiiProxy_IntegrationPagerduty) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IntegrationPagerduty) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -865,7 +864,7 @@ func (i *jsiiProxy_IntegrationPagerduty) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IntegrationPagerduty) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -888,8 +887,8 @@ func (i *jsiiProxy_IntegrationPagerduty) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationPagerduty) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -901,8 +900,8 @@ func (i *jsiiProxy_IntegrationPagerduty) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationPagerduty) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -914,8 +913,8 @@ func (i *jsiiProxy_IntegrationPagerduty) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationPagerduty) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -927,8 +926,8 @@ func (i *jsiiProxy_IntegrationPagerduty) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationPagerduty) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -953,8 +952,8 @@ func (i *jsiiProxy_IntegrationPagerduty) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationPagerduty) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationPagerduty) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -965,4 +964,3 @@ func (i *jsiiProxy_IntegrationPagerduty) ToTerraform() interface{} {
 
 	return returns
 }
-

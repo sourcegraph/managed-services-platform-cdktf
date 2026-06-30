@@ -106,7 +106,7 @@ func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIssueAlertActionsV2DiscordNotifyServiceOutputReferenceParameters
 
 	return nil
 }
-

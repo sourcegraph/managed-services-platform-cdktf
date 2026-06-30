@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryAllKeysKeysJavascriptLoaderScriptOutputReferenceParame
 
 	return nil
 }
-

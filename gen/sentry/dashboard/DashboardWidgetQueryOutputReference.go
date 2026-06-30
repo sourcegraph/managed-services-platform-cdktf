@@ -18,9 +18,9 @@ type DashboardWidgetQueryOutputReference interface {
 	ColumnsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,8 +43,8 @@ type DashboardWidgetQueryOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -62,7 +62,7 @@ type DashboardWidgetQueryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type DashboardWidgetQueryOutputReference interface {
 	ResetOrderBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference) ColumnsInput() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -325,7 +325,6 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewDashboardWidgetQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetQueryOutputReference {
 	_init_.Initialize()
 
@@ -336,7 +335,7 @@ func NewDashboardWidgetQueryOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dashboard.DashboardWidgetQueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -348,12 +347,12 @@ func NewDashboardWidgetQueryOutputReference_Override(d DashboardWidgetQueryOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dashboard.DashboardWidgetQueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetAggregates(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetAggregates(val *[]*string) {
 	if err := j.validateSetAggregatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetAggregates(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetColumns(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetColumns(val *[]*string) {
 	if err := j.validateSetColumnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetColumns(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetConditions(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetConditions(val *string) {
 	if err := j.validateSetConditionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetConditions(val *string
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetFieldAliases(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetFieldAliases(val *[]*string) {
 	if err := j.validateSetFieldAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetFieldAliases(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetFields(val *[]*string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetFields(val *[]*string) {
 	if err := j.validateSetFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetFields(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetOrderBy(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetOrderBy(val *string) {
 	if err := j.validateSetOrderByParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetOrderBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,16 +497,16 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -727,16 +726,16 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) ResetOrderBy() {
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetQueryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -755,4 +754,3 @@ func (d *jsiiProxy_DashboardWidgetQueryOutputReference) ToString() *string {
 
 	return returns
 }
-

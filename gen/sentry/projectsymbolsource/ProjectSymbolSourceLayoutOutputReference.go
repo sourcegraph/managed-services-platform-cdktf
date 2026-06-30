@@ -15,9 +15,9 @@ type ProjectSymbolSourceLayoutOutputReference interface {
 	CasingInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ProjectSymbolSourceLayoutOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ProjectSymbolSourceLayoutOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ProjectSymbolSourceLayoutOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) CasingInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) TypeInput() *string
 	return returns
 }
 
-
 func NewProjectSymbolSourceLayoutOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectSymbolSourceLayoutOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewProjectSymbolSourceLayoutOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSourceLayoutOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewProjectSymbolSourceLayoutOutputReference_Override(p ProjectSymbolSourceL
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSourceLayoutOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetCasing(val *string) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetCasing(val *string) {
 	if err := j.validateSetCasingParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetCasing(val *strin
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (p *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) ToString() *string 
 
 	return returns
 }
-

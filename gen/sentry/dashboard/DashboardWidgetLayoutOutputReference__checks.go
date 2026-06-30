@@ -98,7 +98,7 @@ func (d *jsiiProxy_DashboardWidgetLayoutOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetLayoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetLayoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDashboardWidgetLayoutOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

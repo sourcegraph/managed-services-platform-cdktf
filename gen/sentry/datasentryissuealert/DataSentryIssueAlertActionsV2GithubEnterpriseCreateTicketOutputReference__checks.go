@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertActionsV2GithubEnterpriseCreateTicketOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryIssueAlertActionsV2GithubEnterpriseCreateTicketOutputR
 
 	return nil
 }
-

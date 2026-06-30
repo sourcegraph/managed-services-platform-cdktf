@@ -98,7 +98,7 @@ func (i *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2AzureDevopsCreateTicketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIssueAlertActionsV2AzureDevopsCreateTicketOutputReferenceParamet
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertActionsV2DiscordNotifyServiceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertActionsV2DiscordNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryIssueAlertActionsV2DiscordNotifyServiceOutputReference
 
 	return nil
 }
-

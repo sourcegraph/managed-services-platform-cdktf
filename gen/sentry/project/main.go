@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.project.Project",
-		reflect.TypeOf((*Project)(nil)).Elem(),
+		reflect.TypeFor[Project](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Project{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,11 +105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.project.ProjectClientSecurity",
-		reflect.TypeOf((*ProjectClientSecurity)(nil)).Elem(),
+		reflect.TypeFor[ProjectClientSecurity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.project.ProjectClientSecurityOutputReference",
-		reflect.TypeOf((*ProjectClientSecurityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ProjectClientSecurityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedDomains", GoGetter: "AllowedDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedDomainsInput", GoGetter: "AllowedDomainsInput"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verifyTlsSsl", GoGetter: "VerifyTlsSsl"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyTlsSslInput", GoGetter: "VerifyTlsSslInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectClientSecurityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,15 +156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.project.ProjectConfig",
-		reflect.TypeOf((*ProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[ProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.project.ProjectFilters",
-		reflect.TypeOf((*ProjectFilters)(nil)).Elem(),
+		reflect.TypeFor[ProjectFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.project.ProjectFiltersOutputReference",
-		reflect.TypeOf((*ProjectFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ProjectFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blacklistedIps", GoGetter: "BlacklistedIps"},
 			_jsii_.MemberProperty{JsiiProperty: "blacklistedIpsInput", GoGetter: "BlacklistedIpsInput"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

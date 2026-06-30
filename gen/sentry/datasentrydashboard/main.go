@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboard",
-		reflect.TypeOf((*DataSentryDashboard)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboard](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "widget", GoGetter: "Widget"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboard{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,19 +62,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardConfig",
-		reflect.TypeOf((*DataSentryDashboardConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidget",
-		reflect.TypeOf((*DataSentryDashboardWidget)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetLayout",
-		reflect.TypeOf((*DataSentryDashboardWidgetLayout)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetLayout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetLayoutList",
-		reflect.TypeOf((*DataSentryDashboardWidgetLayoutList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetLayoutList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetLayoutList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetLayoutOutputReference",
-		reflect.TypeOf((*DataSentryDashboardWidgetLayoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetLayoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x", GoGetter: "X"},
 			_jsii_.MemberProperty{JsiiProperty: "y", GoGetter: "Y"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetLayoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetList",
-		reflect.TypeOf((*DataSentryDashboardWidgetList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -153,7 +153,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetOutputReference",
-		reflect.TypeOf((*DataSentryDashboardWidgetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetType", GoGetter: "WidgetType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetQuery",
-		reflect.TypeOf((*DataSentryDashboardWidgetQuery)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetQueryList",
-		reflect.TypeOf((*DataSentryDashboardWidgetQueryList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetQueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetQueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -218,7 +218,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryDashboard.DataSentryDashboardWidgetQueryOutputReference",
-		reflect.TypeOf((*DataSentryDashboardWidgetQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryDashboardWidgetQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregates", GoGetter: "Aggregates"},
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryDashboardWidgetQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

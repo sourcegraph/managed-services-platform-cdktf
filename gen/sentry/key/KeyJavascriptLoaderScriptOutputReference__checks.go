@@ -106,7 +106,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetBrowserS
 	return nil
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetDebugEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetDebugEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetDebugEna
 	return nil
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetPerformanceMonitoringEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetPerformanceMonitoringEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetPerforma
 	return nil
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetSessionReplayEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) validateSetSessionReplayEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewKeyJavascriptLoaderScriptOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

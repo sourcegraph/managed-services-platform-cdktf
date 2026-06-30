@@ -106,7 +106,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetCasingPa
 	return nil
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectSymbolSourceLayoutOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewProjectSymbolSourceLayoutOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

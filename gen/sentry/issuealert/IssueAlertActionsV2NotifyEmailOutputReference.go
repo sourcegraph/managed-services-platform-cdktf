@@ -12,9 +12,9 @@ type IssueAlertActionsV2NotifyEmailOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type IssueAlertActionsV2NotifyEmailOutputReference interface {
 	FallthroughTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	TargetIdentifier() *string
 	SetTargetIdentifier(val *string)
@@ -50,7 +50,7 @@ type IssueAlertActionsV2NotifyEmailOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type IssueAlertActionsV2NotifyEmailOutputReference interface {
 	ResetTargetIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -228,7 +228,6 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewIssueAlertActionsV2NotifyEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IssueAlertActionsV2NotifyEmailOutputReference {
 	_init_.Initialize()
 
@@ -239,7 +238,7 @@ func NewIssueAlertActionsV2NotifyEmailOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -251,12 +250,12 @@ func NewIssueAlertActionsV2NotifyEmailOutputReference_Override(i IssueAlertActio
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetFallthroughType(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetFallthroughType(val *string) {
 	if err := j.validateSetFallthroughTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetFallthroughT
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTargetIdentifier(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetTargetIdentifier(val *string) {
 	if err := j.validateSetTargetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTargetIdenti
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTargetType(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetTargetType(val *string) {
 	if err := j.validateSetTargetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTargetType(v
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,16 +356,16 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) InterpolationF
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -546,16 +545,16 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) ResetTargetIde
 	)
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -574,4 +573,3 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEmailOutputReference) ToString() *st
 
 	return returns
 }
-

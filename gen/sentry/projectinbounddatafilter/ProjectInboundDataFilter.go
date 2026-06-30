@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter}.
 type ProjectInboundDataFilter interface {
 	cdktf.TerraformResource
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
+	Active() any
+	SetActive(val any)
+	ActiveInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,27 +60,27 @@ type ProjectInboundDataFilter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Subfilters() *[]*string
 	SetSubfilters(val *[]*string)
 	SubfiltersInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type ProjectInboundDataFilter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type ProjectInboundDataFilter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type ProjectInboundDataFilter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSubfilters()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectInboundDataFilter
@@ -140,8 +140,8 @@ type jsiiProxy_ProjectInboundDataFilter struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) Active() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) Active() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"active",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) Active() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) ActiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) ActiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_ProjectInboundDataFilter) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectInboundDataFilter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ProjectInboundDataFilter) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_inbound_data_filter sentry_project_inbound_data_filter} Resource.
 func NewProjectInboundDataFilter(scope constructs.Construct, id *string, config *ProjectInboundDataFilterConfig) ProjectInboundDataFilter {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewProjectInboundDataFilter(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewProjectInboundDataFilter_Override(p ProjectInboundDataFilter, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetActive(val interface{}) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetActive(val any) {
 	if err := j.validateSetActiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetActive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetFilterId(val *string) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetFilterId(val *string) {
 	if err := j.validateSetFilterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetFilterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetOrganization(val *string) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetProject(val *string) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_ProjectInboundDataFilter)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ProjectInboundDataFilter)SetSubfilters(val *[]*string) {
+func (j *jsiiProxy_ProjectInboundDataFilter) SetSubfilters(val *[]*string) {
 	if err := j.validateSetSubfiltersParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func ProjectInboundDataFilter_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func ProjectInboundDataFilter_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectInboundDataFilter_IsConstruct(x interface{}) *bool {
+func ProjectInboundDataFilter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectInboundDataFilter_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func ProjectInboundDataFilter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func ProjectInboundDataFilter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectInboundDataFilter_IsTerraformElement(x interface{}) *bool {
+func ProjectInboundDataFilter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectInboundDataFilter_IsTerraformElementParameters(x); err != nil {
@@ -629,7 +628,7 @@ func ProjectInboundDataFilter_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func ProjectInboundDataFilter_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectInboundDataFilter_IsTerraformResource(x interface{}) *bool {
+func ProjectInboundDataFilter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectInboundDataFilter_IsTerraformResourceParameters(x); err != nil {
@@ -648,7 +647,7 @@ func ProjectInboundDataFilter_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,31 +672,31 @@ func (p *jsiiProxy_ProjectInboundDataFilter) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectInboundDataFilter) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectInboundDataFilter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,15 +824,15 @@ func (p *jsiiProxy_ProjectInboundDataFilter) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -852,7 +851,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -865,7 +864,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (p *jsiiProxy_ProjectInboundDataFilter) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectInboundDataFilter) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -901,7 +900,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -912,7 +911,7 @@ func (p *jsiiProxy_ProjectInboundDataFilter) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -940,8 +939,8 @@ func (p *jsiiProxy_ProjectInboundDataFilter) ResetSubfilters() {
 	)
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -953,8 +952,8 @@ func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -966,8 +965,8 @@ func (p *jsiiProxy_ProjectInboundDataFilter) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -979,8 +978,8 @@ func (p *jsiiProxy_ProjectInboundDataFilter) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1005,8 +1004,8 @@ func (p *jsiiProxy_ProjectInboundDataFilter) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectInboundDataFilter) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectInboundDataFilter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1017,4 +1016,3 @@ func (p *jsiiProxy_ProjectInboundDataFilter) ToTerraform() interface{} {
 
 	return returns
 }
-

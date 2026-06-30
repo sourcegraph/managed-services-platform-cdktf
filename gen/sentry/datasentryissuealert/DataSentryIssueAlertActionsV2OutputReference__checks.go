@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertActionsV2OutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertActionsV2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertActionsV2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataSentryIssueAlertActionsV2OutputReferenceParameters(terraform
 
 	return nil
 }
-

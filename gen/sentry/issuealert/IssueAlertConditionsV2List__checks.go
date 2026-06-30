@@ -34,7 +34,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2List) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2List) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertConditionsV2List) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIssueAlertConditionsV2ListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertFiltersV2IssueCategoryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIssueAlertFiltersV2IssueCategoryOutputReferenceParameters(terraf
 
 	return nil
 }
-

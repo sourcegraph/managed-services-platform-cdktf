@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertFiltersV2AssignedToOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertFiltersV2AssignedToOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertFiltersV2AssignedToOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryIssueAlertFiltersV2AssignedToOutputReferenceParameters
 
 	return nil
 }
-
