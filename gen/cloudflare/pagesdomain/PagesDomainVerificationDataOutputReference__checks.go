@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesDomainVerificationDataOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_PagesDomainVerificationDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesDomainVerificationDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewPagesDomainVerificationDataOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

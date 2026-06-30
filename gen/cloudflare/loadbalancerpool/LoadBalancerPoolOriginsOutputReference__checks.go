@@ -117,7 +117,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetAddressPar
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledPar
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -293,4 +293,3 @@ func validateNewLoadBalancerPoolOriginsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

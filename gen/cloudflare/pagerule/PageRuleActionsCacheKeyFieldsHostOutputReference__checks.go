@@ -98,7 +98,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetResolvedParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateSetResolvedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewPageRuleActionsCacheKeyFieldsHostOutputReferenceParameters(terra
 
 	return nil
 }
-

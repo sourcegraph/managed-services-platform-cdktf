@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
-		reflect.TypeOf((*AccountDnsSettingsInternalView)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsInternalView](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccountDnsSettingsInternalView{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig",
-		reflect.TypeOf((*AccountDnsSettingsInternalViewConfig)(nil)).Elem(),
+		reflect.TypeFor[AccountDnsSettingsInternalViewConfig](),
 	)
 }

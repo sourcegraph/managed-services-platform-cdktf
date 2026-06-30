@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -231,7 +231,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathInclu
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductio
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,4 +338,3 @@ func validateNewPagesProjectSourceConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

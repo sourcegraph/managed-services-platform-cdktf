@@ -6,9 +6,9 @@ import (
 
 type ImageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ImageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#account_id Image#account_id}
@@ -41,10 +41,9 @@ type ImageConfig struct {
 	// Indicates whether the image requires a signature token for the access.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#require_signed_urls Image#require_signed_urls}
-	RequireSignedUrls interface{} `field:"optional" json:"requireSignedUrls" yaml:"requireSignedUrls"`
+	RequireSignedUrls any `field:"optional" json:"requireSignedUrls" yaml:"requireSignedUrls"`
 	// A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#url Image#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpDatasets) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDatasets) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustDlpDatasets_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataCloudflareZeroTrustDlpDatasets_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustDlpDatasets_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustDlpDatasets_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataCloudflareZeroTrustDlpDatasets_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustDlpDatasets_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustDlpDatasets_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataCloudflareZeroTrustDlpDatasets_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustDlpDatasets_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpDatasets) validateSetAccountIdParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpDatasets) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpDatasets) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareZeroTrustDlpDatasetsParameters(scope constructs.Co
 
 	return nil
 }
-

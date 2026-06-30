@@ -1,6 +1,5 @@
 package magicwangretunnel
 
-
 type MagicWanGreTunnelHealthCheck struct {
 	// The direction of the flow of the healthcheck.
 	//
@@ -12,7 +11,7 @@ type MagicWanGreTunnelHealthCheck struct {
 	// Determines whether to run healthchecks for a tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// How frequent the health check is run. The default value is `mid`. Available values: "low", "mid", "high".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
@@ -28,4 +27,3 @@ type MagicWanGreTunnelHealthCheck struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

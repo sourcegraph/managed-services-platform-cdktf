@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest",
-		reflect.TypeOf((*ObservatoryScheduledTest)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTest](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig",
-		reflect.TypeOf((*ObservatoryScheduledTestConfig)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestSchedule",
-		reflect.TypeOf((*ObservatoryScheduledTestSchedule)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestScheduleOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -113,19 +113,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTest",
-		reflect.TypeOf((*ObservatoryScheduledTestTest)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReport",
-		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReport)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestDesktopReport](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportError",
-		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportError)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestDesktopReportError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportErrorOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestDesktopReportErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,7 +160,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestDesktopReportOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cls", GoGetter: "Cls"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttfb", GoGetter: "Ttfb"},
 			_jsii_.MemberProperty{JsiiProperty: "tti", GoGetter: "Tti"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestDesktopReportOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,15 +204,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReport",
-		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReport)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestMobileReport](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportError",
-		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportError)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestMobileReportError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportErrorOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestMobileReportErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestMobileReportErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestMobileReportOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cls", GoGetter: "Cls"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttfb", GoGetter: "Ttfb"},
 			_jsii_.MemberProperty{JsiiProperty: "tti", GoGetter: "Tti"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestMobileReportOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,7 +291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,11 +330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegion",
-		reflect.TypeOf((*ObservatoryScheduledTestTestRegion)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestRegion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegionOutputReference",
-		reflect.TypeOf((*ObservatoryScheduledTestTestRegionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservatoryScheduledTestTestRegionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

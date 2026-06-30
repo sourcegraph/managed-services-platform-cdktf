@@ -19,7 +19,7 @@ func (s *jsiiProxy_StreamAudioTrack) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (s *jsiiProxy_StreamAudioTrack) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StreamAudioTrack) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StreamAudioTrack) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (s *jsiiProxy_StreamAudioTrack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StreamAudioTrack) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateStreamAudioTrack_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateStreamAudioTrack_IsConstructParameters(x interface{}) error {
+func validateStreamAudioTrack_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateStreamAudioTrack_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStreamAudioTrack_IsTerraformElementParameters(x interface{}) error {
+func validateStreamAudioTrack_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateStreamAudioTrack_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateStreamAudioTrack_IsTerraformResourceParameters(x interface{}) error {
+func validateStreamAudioTrack_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_StreamAudioTrack) validateSetAudioIdentifierParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_StreamAudioTrack) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StreamAudioTrack) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_StreamAudioTrack) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_StreamAudioTrack) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StreamAudioTrack) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_StreamAudioTrack) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_StreamAudioTrack) validateSetDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_StreamAudioTrack) validateSetDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_StreamAudioTrack) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_StreamAudioTrack) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StreamAudioTrack) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewStreamAudioTrackParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

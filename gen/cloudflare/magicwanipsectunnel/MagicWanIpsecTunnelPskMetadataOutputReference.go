@@ -12,9 +12,9 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelPskMetadataOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewMagicWanIpsecTunnelPskMetadataOutputReference_Override(m MagicWanIpsecTu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetInternalValue(val *MagicWanIpsecTunnelPskMetadata) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) SetInternalValue(val *MagicWanIpsecTunnelPskMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationF
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) ToString() *st
 
 	return returns
 }
-

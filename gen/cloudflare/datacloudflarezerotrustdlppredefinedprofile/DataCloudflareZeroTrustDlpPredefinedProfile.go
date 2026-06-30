@@ -21,12 +21,12 @@ type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	CdktfStack() cdktf.TerraformStack
 	ConfidenceThreshold() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContextAwareness() DataCloudflareZeroTrustDlpPredefinedProfileContextAwarenessOutputReference
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -60,19 +60,19 @@ type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustDlpPredefinedProfile
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ConfidenceThresh
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ContextAwareness
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) TerraformGenerat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -426,7 +426,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) UpdatedAt() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedProfileConfig) DataCloudflareZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
@@ -438,7 +437,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedProfile(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -451,12 +450,12 @@ func NewDataCloudflareZeroTrustDlpPredefinedProfile_Override(d DataCloudflareZer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetAccountId(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetProfileId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetProfileId(val *string) {
 	if err := j.validateSetProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetProfileId(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -536,7 +535,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustDlpPredefinedProfile_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustDlpPredefinedProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDlpPredefinedProfile_IsConstructParameters(x); err != nil {
@@ -571,7 +570,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformDataSourceParameters(x); err != nil {
@@ -590,7 +589,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformDataSource(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformDataSource(x interfa
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformElementParameters(x); err != nil {
@@ -609,7 +608,7 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedProfile.DataCloudflareZeroTrustDlpPredefinedProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,27 +626,27 @@ func DataCloudflareZeroTrustDlpPredefinedProfile_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ResetOverrideLog
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -843,8 +842,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) SynthesizeHclAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToHclTerraform()
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToString() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,4 +893,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ToTerraform() in
 
 	return returns
 }
-

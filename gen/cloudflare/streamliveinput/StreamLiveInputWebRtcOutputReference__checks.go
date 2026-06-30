@@ -98,7 +98,7 @@ func (s *jsiiProxy_StreamLiveInputWebRtcOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_StreamLiveInputWebRtcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StreamLiveInputWebRtcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewStreamLiveInputWebRtcOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

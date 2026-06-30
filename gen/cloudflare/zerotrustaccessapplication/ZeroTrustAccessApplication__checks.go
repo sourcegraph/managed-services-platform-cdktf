@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutCorsHeadersParameters(
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutDestinationsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutDestinationsParameters
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutFooterLinksParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutFooterLinksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutLandingPageDesignParam
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutPoliciesParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutScimConfigParameters(v
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutTargetCriteriaParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutTargetCriteriaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func validateZeroTrustAccessApplication_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateZeroTrustAccessApplication_IsConstructParameters(x interface{}) error {
+func validateZeroTrustAccessApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func validateZeroTrustAccessApplication_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateZeroTrustAccessApplication_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustAccessApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func validateZeroTrustAccessApplication_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateZeroTrustAccessApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustAccessApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -420,7 +420,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAccountIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowAuthenticateViaWarpParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowAuthenticateViaWarpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowedIdpsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowIframeParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowIframeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAppLauncherLogoUrlPara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAppLauncherVisibleParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAppLauncherVisibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -496,7 +496,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAppLauncherVisiblePara
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAutoRedirectToIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -524,7 +524,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetBgColorParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -557,7 +557,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -654,7 +654,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetDomainParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetEnableBindingCookieParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetEnableBindingCookieParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -682,7 +682,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetHeaderBgColorParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetHttpOnlyCookieAttributeParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetHttpOnlyCookieAttributeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -726,7 +726,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetOptionsPreflightBypassParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetOptionsPreflightBypassParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -746,7 +746,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetOptionsPreflightBypass
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetPathCookieAttributeParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetPathCookieAttributeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -766,7 +766,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetPathCookieAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -836,7 +836,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSelfHostedDomainsParam
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetServiceAuth401RedirectParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetServiceAuth401RedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -864,7 +864,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSessionDurationParamet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSkipAppLauncherLoginPageParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSkipAppLauncherLoginPageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -884,7 +884,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSkipAppLauncherLoginPa
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSkipInterstitialParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSkipInterstitialParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -943,4 +943,3 @@ func validateNewZeroTrustAccessApplicationParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -241,7 +241,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -306,7 +306,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -357,4 +357,3 @@ func validateNewZeroTrustGatewaySettingsSettingsOutputReferenceParameters(terraf
 
 	return nil
 }
-

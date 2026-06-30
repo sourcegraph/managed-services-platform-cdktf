@@ -12,9 +12,9 @@ type ZeroTrustDlpDatasetDatasetUploadsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ZeroTrustDlpDatasetDatasetUploadsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ZeroTrustDlpDatasetDatasetUploadsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,7 +179,6 @@ func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) Version() *
 	return returns
 }
 
-
 func NewZeroTrustDlpDatasetDatasetUploadsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDlpDatasetDatasetUploadsOutputReference {
 	_init_.Initialize()
 
@@ -190,7 +189,7 @@ func NewZeroTrustDlpDatasetDatasetUploadsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDatasetDatasetUploadsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -202,12 +201,12 @@ func NewZeroTrustDlpDatasetDatasetUploadsOutputReference_Override(z ZeroTrustDlp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDatasetDatasetUploadsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetInternalValue(val *ZeroTrustDlpDatasetDatasetUploads) {
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) SetInternalValue(val *ZeroTrustDlpDatasetDatasetUploads) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,16 +274,16 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -300,7 +299,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -316,7 +315,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -332,7 +331,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,23 +440,23 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) Interpolati
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -476,4 +475,3 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) ToString() 
 
 	return returns
 }
-

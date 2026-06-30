@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutExcludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutExcludeParameters(value inte
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutIncludeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutIncludeParameters(value inte
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutRequireParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroup) validatePutRequireParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateZeroTrustAccessGroup_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateZeroTrustAccessGroup_IsConstructParameters(x interface{}) error {
+func validateZeroTrustAccessGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateZeroTrustAccessGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustAccessGroup_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustAccessGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateZeroTrustAccessGroup_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateZeroTrustAccessGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustAccessGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetAccountIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -435,7 +435,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetIsDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetIsDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -543,4 +543,3 @@ func validateNewZeroTrustAccessGroupParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type BotManagementConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BotManagementConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#zone_id BotManagement#zone_id}
@@ -33,7 +33,7 @@ type BotManagementConfig struct {
 	// Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
-	AutoUpdateModel interface{} `field:"optional" json:"autoUpdateModel" yaml:"autoUpdateModel"`
+	AutoUpdateModel any `field:"optional" json:"autoUpdateModel" yaml:"autoUpdateModel"`
 	// Enable rule to punish AI Scrapers and Crawlers via a link maze. Available values: "enabled", "disabled".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
@@ -41,15 +41,15 @@ type BotManagementConfig struct {
 	// Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#enable_js BotManagement#enable_js}
-	EnableJs interface{} `field:"optional" json:"enableJs" yaml:"enableJs"`
+	EnableJs any `field:"optional" json:"enableJs" yaml:"enableJs"`
 	// Whether to enable Bot Fight Mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
-	FightMode interface{} `field:"optional" json:"fightMode" yaml:"fightMode"`
+	FightMode any `field:"optional" json:"fightMode" yaml:"fightMode"`
 	// Whether to optimize Super Bot Fight Mode protections for Wordpress.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
-	OptimizeWordpress interface{} `field:"optional" json:"optimizeWordpress" yaml:"optimizeWordpress"`
+	OptimizeWordpress any `field:"optional" json:"optimizeWordpress" yaml:"optimizeWordpress"`
 	// Super Bot Fight Mode (SBFM) action to take on definitely automated requests. Available values: "allow", "block", "managed_challenge".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
@@ -64,7 +64,7 @@ type BotManagementConfig struct {
 	// Note: Static resource protection can also result in legitimate traffic being blocked.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
-	SbfmStaticResourceProtection interface{} `field:"optional" json:"sbfmStaticResourceProtection" yaml:"sbfmStaticResourceProtection"`
+	SbfmStaticResourceProtection any `field:"optional" json:"sbfmStaticResourceProtection" yaml:"sbfmStaticResourceProtection"`
 	// Super Bot Fight Mode (SBFM) action to take on verified bots requests. Available values: "allow", "block".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
@@ -72,6 +72,5 @@ type BotManagementConfig struct {
 	// Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
-	SuppressSessionScore interface{} `field:"optional" json:"suppressSessionScore" yaml:"suppressSessionScore"`
+	SuppressSessionScore any `field:"optional" json:"suppressSessionScore" yaml:"suppressSessionScore"`
 }
-

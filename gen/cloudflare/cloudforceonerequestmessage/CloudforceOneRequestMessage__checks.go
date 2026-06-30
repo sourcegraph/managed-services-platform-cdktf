@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudforceOneRequestMessage) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudforceOneRequestMessage) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_CloudforceOneRequestMessage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudforceOneRequestMessage) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCloudforceOneRequestMessage_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateCloudforceOneRequestMessage_IsConstructParameters(x interface{}) error {
+func validateCloudforceOneRequestMessage_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCloudforceOneRequestMessage_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateCloudforceOneRequestMessage_IsTerraformElementParameters(x interface{}) error {
+func validateCloudforceOneRequestMessage_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCloudforceOneRequestMessage_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateCloudforceOneRequestMessage_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudforceOneRequestMessage_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetAccountIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetContentParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewCloudforceOneRequestMessageParameters(scope constructs.Construct
 
 	return nil
 }
-

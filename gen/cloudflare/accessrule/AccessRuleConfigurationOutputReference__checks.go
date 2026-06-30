@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case *AccessRuleConfiguration:
 		val := val.(*AccessRuleConfiguration)
@@ -230,4 +230,3 @@ func validateNewAccessRuleConfigurationOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

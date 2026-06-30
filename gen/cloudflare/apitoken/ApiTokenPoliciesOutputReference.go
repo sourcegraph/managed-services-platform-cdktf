@@ -12,9 +12,9 @@ type ApiTokenPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,10 +31,10 @@ type ApiTokenPoliciesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PermissionGroups() ApiTokenPoliciesPermissionGroupsList
-	PermissionGroupsInput() interface{}
+	PermissionGroupsInput() any
 	Resources() *map[string]*string
 	SetResources(val *map[string]*string)
 	ResourcesInput() *map[string]*string
@@ -49,7 +49,7 @@ type ApiTokenPoliciesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,10 +70,10 @@ type ApiTokenPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPermissionGroups(value interface{})
+	PutPermissionGroups(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ApiTokenPoliciesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) PermissionGroups() ApiTokenP
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) PermissionGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) PermissionGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"permissionGroupsInput",
@@ -226,7 +226,6 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) TerraformResource() cdktf.II
 	return returns
 }
 
-
 func NewApiTokenPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiTokenPoliciesOutputReference {
 	_init_.Initialize()
 
@@ -237,7 +236,7 @@ func NewApiTokenPoliciesOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiTokenPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -249,12 +248,12 @@ func NewApiTokenPoliciesOutputReference_Override(a ApiTokenPoliciesOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiToken.ApiTokenPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetEffect(val *string) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetEffect(val *string) {
 	if err := j.validateSetEffectParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetEffect(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetResources(val *map[string]*string) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetResources(val *map[string]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetResources(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,34 +509,34 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) PutPermissionGroups(value interface{}) {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) PutPermissionGroups(value any) {
 	if err := a.validatePutPermissionGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPermissionGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -556,4 +555,3 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) ToString() *string {
 
 	return returns
 }
-

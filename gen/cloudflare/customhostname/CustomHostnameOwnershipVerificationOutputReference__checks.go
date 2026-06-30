@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewCustomHostnameOwnershipVerificationOutputReferenceParameters(ter
 
 	return nil
 }
-

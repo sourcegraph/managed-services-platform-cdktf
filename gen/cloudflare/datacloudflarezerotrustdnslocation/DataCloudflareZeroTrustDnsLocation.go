@@ -19,11 +19,11 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientDefault() cdktf.IResolvable
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,18 +62,18 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,18 +99,18 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustDnsLocation
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ClientDefault() cdktf.IRe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -438,7 +438,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) DataCloudflareZeroTrustDnsLocation {
 	_init_.Initialize()
@@ -450,7 +449,7 @@ func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -463,12 +462,12 @@ func NewDataCloudflareZeroTrustDnsLocation_Override(d DataCloudflareZeroTrustDns
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetAccountId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetLocationId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetLocationId(val *string) {
 	if err := j.validateSetLocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetLocationId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -548,7 +547,7 @@ func DataCloudflareZeroTrustDnsLocation_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func DataCloudflareZeroTrustDnsLocation_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustDnsLocation_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustDnsLocation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDnsLocation_IsConstructParameters(x); err != nil {
@@ -583,7 +582,7 @@ func DataCloudflareZeroTrustDnsLocation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func DataCloudflareZeroTrustDnsLocation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDnsLocation_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustDnsLocation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDnsLocation_IsTerraformDataSourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func DataCloudflareZeroTrustDnsLocation_IsTerraformDataSource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func DataCloudflareZeroTrustDnsLocation_IsTerraformDataSource(x interface{}) *bo
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDnsLocation_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustDnsLocation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDnsLocation_IsTerraformElementParameters(x); err != nil {
@@ -621,7 +620,7 @@ func DataCloudflareZeroTrustDnsLocation_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,27 +638,27 @@ func DataCloudflareZeroTrustDnsLocation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -837,8 +836,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ResetOverrideLogicalId() 
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -850,8 +849,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -863,8 +862,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) SynthesizeHclAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -876,8 +875,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToHclTerraform() interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -902,8 +901,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -914,4 +913,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ToTerraform() interface{}
 
 	return returns
 }
-

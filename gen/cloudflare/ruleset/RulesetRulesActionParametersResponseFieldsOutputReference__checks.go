@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetPreserveDuplicatesParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetPreserveDuplicatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewRulesetRulesActionParametersResponseFieldsOutputReferenceParamet
 
 	return nil
 }
-

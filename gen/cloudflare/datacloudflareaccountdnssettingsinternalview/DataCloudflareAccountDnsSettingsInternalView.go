@@ -18,18 +18,18 @@ type DataCloudflareAccountDnsSettingsInternalView interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,11 +52,11 @@ type DataCloudflareAccountDnsSettingsInternalView interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ViewId() *string
@@ -64,9 +64,9 @@ type DataCloudflareAccountDnsSettingsInternalView interface {
 	ViewIdInput() *string
 	Zones() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataCloudflareAccountDnsSettingsInternalView interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetViewId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareAccountDnsSettingsInternalView
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) CdktfStack() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Filter() DataCl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Provider() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) TerraformGenera
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Zones() *[]*str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalView(scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewConfig) DataCloudflareAccountDnsSettingsInternalView {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewDataCloudflareAccountDnsSettingsInternalView(scope constructs.Construct,
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewDataCloudflareAccountDnsSettingsInternalView_Override(d DataCloudflareAc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetAccountId(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetCount(val int
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetProvider(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView)SetViewId(val *string) {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SetViewId(val *string) {
 	if err := j.validateSetViewIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func DataCloudflareAccountDnsSettingsInternalView_GenerateConfigForImport(scope 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func DataCloudflareAccountDnsSettingsInternalView_GenerateConfigForImport(scope 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareAccountDnsSettingsInternalView_IsConstruct(x interface{}) *bool {
+func DataCloudflareAccountDnsSettingsInternalView_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountDnsSettingsInternalView_IsConstructParameters(x); err != nil {
@@ -508,7 +507,7 @@ func DataCloudflareAccountDnsSettingsInternalView_IsConstruct(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func DataCloudflareAccountDnsSettingsInternalView_IsConstruct(x interface{}) *bo
 }
 
 // Experimental.
-func DataCloudflareAccountDnsSettingsInternalView_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareAccountDnsSettingsInternalView_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountDnsSettingsInternalView_IsTerraformDataSourceParameters(x); err != nil {
@@ -527,7 +526,7 @@ func DataCloudflareAccountDnsSettingsInternalView_IsTerraformDataSource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func DataCloudflareAccountDnsSettingsInternalView_IsTerraformDataSource(x interf
 }
 
 // Experimental.
-func DataCloudflareAccountDnsSettingsInternalView_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareAccountDnsSettingsInternalView_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareAccountDnsSettingsInternalView_IsTerraformElementParameters(x); err != nil {
@@ -546,7 +545,7 @@ func DataCloudflareAccountDnsSettingsInternalView_IsTerraformElement(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareAccountDnsSettingsInternalView.DataCloudflareAccountDnsSettingsInternalView",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -564,27 +563,27 @@ func DataCloudflareAccountDnsSettingsInternalView_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) OverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) PutFilter(value
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -781,8 +780,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ResetViewId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) SynthesizeHclAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToHclTerraform(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,8 +845,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToString() *str
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,4 +857,3 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) ToTerraform() i
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MagicTransitSiteLan) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MagicTransitSiteLan) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) validatePutNatParameters(value *MagicTra
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) validatePutRoutedSubnetsParameters(value interface{}) error {
+func (m *jsiiProxy_MagicTransitSiteLan) validatePutRoutedSubnetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateMagicTransitSiteLan_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateMagicTransitSiteLan_IsConstructParameters(x interface{}) error {
+func validateMagicTransitSiteLan_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateMagicTransitSiteLan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMagicTransitSiteLan_IsTerraformElementParameters(x interface{}) error {
+func validateMagicTransitSiteLan_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateMagicTransitSiteLan_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateMagicTransitSiteLan_IsTerraformResourceParameters(x interface{}) error {
+func validateMagicTransitSiteLan_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -395,7 +395,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) validateSetHaLinkParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetHaLinkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -439,7 +439,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetPhysportParameters(val *float
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewMagicTransitSiteLanParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

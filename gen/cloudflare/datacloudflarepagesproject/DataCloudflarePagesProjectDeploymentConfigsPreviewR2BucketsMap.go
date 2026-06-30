@@ -30,7 +30,7 @@ type DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,6 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMa
 	return returns
 }
 
-
 func NewDataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap {
 	_init_.Initialize()
 
@@ -94,7 +93,7 @@ func NewDataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -106,12 +105,12 @@ func NewDataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -122,7 +121,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -155,7 +154,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMa
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -171,23 +170,23 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMa
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -206,4 +205,3 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMa
 
 	return returns
 }
-

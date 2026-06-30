@@ -15,11 +15,11 @@ type DataCloudflareZeroTrustDeviceDefaultProfileCertificates interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,20 +44,20 @@ type DataCloudflareZeroTrustDeviceDefaultProfileCertificates interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,18 +82,18 @@ type DataCloudflareZeroTrustDeviceDefaultProfileCertificates interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustDeviceDefaultProfileCertificates
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Cons
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Prov
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -271,7 +271,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Zone
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileCertificatesConfig) DataCloudflareZeroTrustDeviceDefaultProfileCertificates {
 	_init_.Initialize()
@@ -283,7 +282,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates(scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -296,12 +295,12 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates_Override(d DataC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -320,7 +319,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetDe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetFo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetLi
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetPr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_GenerateConfigForIm
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_GenerateConfigForIm
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x interface{}) *bool {
+func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsConstructParameters(x); err != nil {
@@ -405,7 +404,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsConstruct(x inter
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformDataSourceParameters(x); err != nil {
@@ -424,7 +423,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformDataSour
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformDataSour
 }
 
 // Experimental.
-func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformElementParameters(x); err != nil {
@@ -443,7 +442,7 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_IsTerraformElement(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileCertificates.DataCloudflareZeroTrustDeviceDefaultProfileCertificates",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -461,27 +460,27 @@ func DataCloudflareZeroTrustDeviceDefaultProfileCertificates_TfResourceType() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Over
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -651,8 +650,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Rese
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -664,8 +663,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Synt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -677,8 +676,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Synt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -690,8 +689,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToHc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToSt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -728,4 +727,3 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) ToTe
 
 	return returns
 }
-

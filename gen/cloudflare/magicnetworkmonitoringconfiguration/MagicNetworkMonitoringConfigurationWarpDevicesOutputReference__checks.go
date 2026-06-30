@@ -98,7 +98,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewMagicNetworkMonitoringConfigurationWarpDevicesOutputReferencePar
 
 	return nil
 }
-

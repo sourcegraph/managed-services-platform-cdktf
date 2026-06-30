@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationNetworksList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDnsLocationNetworksListParameters(terraformResource cdk
 
 	return nil
 }
-

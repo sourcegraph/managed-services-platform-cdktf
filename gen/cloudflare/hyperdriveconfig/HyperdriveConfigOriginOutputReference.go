@@ -18,9 +18,9 @@ type HyperdriveConfigOriginOutputReference interface {
 	AccessClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type HyperdriveConfigOriginOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -64,7 +64,7 @@ type HyperdriveConfigOriginOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type HyperdriveConfigOriginOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientSecretInpu
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) HostInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -333,7 +333,6 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) UserInput() *string {
 	return returns
 }
 
-
 func NewHyperdriveConfigOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HyperdriveConfigOriginOutputReference {
 	_init_.Initialize()
 
@@ -344,7 +343,7 @@ func NewHyperdriveConfigOriginOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -356,12 +355,12 @@ func NewHyperdriveConfigOriginOutputReference_Override(h HyperdriveConfigOriginO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientId(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetAccessClientId(val *string) {
 	if err := j.validateSetAccessClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientId(val *
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientSecret(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetAccessClientSecret(val *string) {
 	if err := j.validateSetAccessClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientSecret(v
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetDatabase(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetDatabase(val *string
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetPassword(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetPassword(val *string
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetScheme(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetScheme(val *string) {
 	if err := j.validateSetSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetScheme(val *string) 
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,16 +516,16 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -714,16 +713,16 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetPort() {
 	)
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -742,4 +741,3 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ToString() *string {
 
 	return returns
 }
-

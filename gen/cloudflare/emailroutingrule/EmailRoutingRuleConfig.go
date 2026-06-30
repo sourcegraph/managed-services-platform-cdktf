@@ -6,9 +6,9 @@ import (
 
 type EmailRoutingRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type EmailRoutingRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// List actions patterns.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
-	Actions interface{} `field:"required" json:"actions" yaml:"actions"`
+	Actions any `field:"required" json:"actions" yaml:"actions"`
 	// Matching patterns to forward to your actions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
-	Matchers interface{} `field:"required" json:"matchers" yaml:"matchers"`
+	Matchers any `field:"required" json:"matchers" yaml:"matchers"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
@@ -34,7 +34,7 @@ type EmailRoutingRuleConfig struct {
 	// Routing rule status.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Routing rule name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#name EmailRoutingRule#name}
@@ -44,4 +44,3 @@ type EmailRoutingRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 }
-

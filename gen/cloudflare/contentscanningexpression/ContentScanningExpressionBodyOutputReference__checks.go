@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContentScanningExpressionBodyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContentScanningExpressionBodyOutputReferenceParameters(terraform
 
 	return nil
 }
-

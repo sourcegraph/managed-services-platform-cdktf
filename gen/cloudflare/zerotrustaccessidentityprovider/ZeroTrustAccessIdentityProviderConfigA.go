@@ -1,6 +1,5 @@
 package zerotrustaccessidentityprovider
 
-
 type ZeroTrustAccessIdentityProviderConfigA struct {
 	// Your companies TLD.
 	//
@@ -45,7 +44,7 @@ type ZeroTrustAccessIdentityProviderConfigA struct {
 	// Should Cloudflare try to load authentication contexts from your account.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#conditional_access_enabled ZeroTrustAccessIdentityProvider#conditional_access_enabled}
-	ConditionalAccessEnabled interface{} `field:"optional" json:"conditionalAccessEnabled" yaml:"conditionalAccessEnabled"`
+	ConditionalAccessEnabled any `field:"optional" json:"conditionalAccessEnabled" yaml:"conditionalAccessEnabled"`
 	// Your Azure directory uuid.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#directory_id ZeroTrustAccessIdentityProvider#directory_id}
@@ -61,7 +60,7 @@ type ZeroTrustAccessIdentityProviderConfigA struct {
 	// Add a list of attribute names that will be returned in the response header from the Access callback.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#header_attributes ZeroTrustAccessIdentityProvider#header_attributes}
-	HeaderAttributes interface{} `field:"optional" json:"headerAttributes" yaml:"headerAttributes"`
+	HeaderAttributes any `field:"optional" json:"headerAttributes" yaml:"headerAttributes"`
 	// X509 certificate to verify the signature in the SAML authentication response.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#idp_public_certs ZeroTrustAccessIdentityProvider#idp_public_certs}
@@ -85,7 +84,7 @@ type ZeroTrustAccessIdentityProviderConfigA struct {
 	// Enable Proof Key for Code Exchange (PKCE).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#pkce_enabled ZeroTrustAccessIdentityProvider#pkce_enabled}
-	PkceEnabled interface{} `field:"optional" json:"pkceEnabled" yaml:"pkceEnabled"`
+	PkceEnabled any `field:"optional" json:"pkceEnabled" yaml:"pkceEnabled"`
 	// Indicates the type of user interaction that is required.
 	//
 	// prompt=login forces the user to enter their credentials on that request, negating single-sign on. prompt=none is the opposite. It ensures that the user isn't presented with any interactive prompt. If the request can't be completed silently by using single-sign on, the Microsoft identity platform returns an interaction_required error. prompt=select_account interrupts single sign-on providing account selection experience listing all the accounts either in session or any remembered account or an option to choose to use a different account altogether.
@@ -102,7 +101,7 @@ type ZeroTrustAccessIdentityProviderConfigA struct {
 	// To verify the signature, use the public key from the Access certs endpoints.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#sign_request ZeroTrustAccessIdentityProvider#sign_request}
-	SignRequest interface{} `field:"optional" json:"signRequest" yaml:"signRequest"`
+	SignRequest any `field:"optional" json:"signRequest" yaml:"signRequest"`
 	// URL to send the SAML authentication requests to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#sso_target_url ZeroTrustAccessIdentityProvider#sso_target_url}
@@ -110,10 +109,9 @@ type ZeroTrustAccessIdentityProviderConfigA struct {
 	// Should Cloudflare try to load groups from your account.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#support_groups ZeroTrustAccessIdentityProvider#support_groups}
-	SupportGroups interface{} `field:"optional" json:"supportGroups" yaml:"supportGroups"`
+	SupportGroups any `field:"optional" json:"supportGroups" yaml:"supportGroups"`
 	// The token_endpoint URL of your IdP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_access_identity_provider#token_url ZeroTrustAccessIdentityProvider#token_url}
 	TokenUrl *string `field:"optional" json:"tokenUrl" yaml:"tokenUrl"`
 }
-

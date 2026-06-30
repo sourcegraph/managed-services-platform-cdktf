@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateAddMoveTargetParamet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMoveFromIdParameters
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateZeroTrustRiskScoringIntegration_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateZeroTrustRiskScoringIntegration_IsConstructParameters(x interface{}) error {
+func validateZeroTrustRiskScoringIntegration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateZeroTrustRiskScoringIntegration_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateZeroTrustRiskScoringIntegration_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustRiskScoringIntegration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateZeroTrustRiskScoringIntegration_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateZeroTrustRiskScoringIntegration_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustRiskScoringIntegration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetAccountIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetActiveParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetActiveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -305,7 +305,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetLifecycleParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewZeroTrustRiskScoringIntegrationParameters(scope constructs.Const
 
 	return nil
 }
-

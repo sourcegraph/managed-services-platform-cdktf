@@ -17,19 +17,19 @@ type CertificatePack interface {
 	CertificateAuthority() *string
 	SetCertificateAuthority(val *string)
 	CertificateAuthorityInput() *string
-	CloudflareBranding() interface{}
-	SetCloudflareBranding(val interface{})
-	CloudflareBrandingInput() interface{}
+	CloudflareBranding() any
+	SetCloudflareBranding(val any)
+	CloudflareBrandingInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,16 +57,16 @@ type CertificatePack interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -85,9 +85,9 @@ type CertificatePack interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type CertificatePack interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type CertificatePack interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type CertificatePack interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CertificatePack
@@ -176,8 +176,8 @@ func (j *jsiiProxy_CertificatePack) CertificateAuthorityInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) CloudflareBranding() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificatePack) CloudflareBranding() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudflareBranding",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_CertificatePack) CloudflareBranding() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) CloudflareBrandingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificatePack) CloudflareBrandingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudflareBrandingInput",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_CertificatePack) CloudflareBrandingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificatePack) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_CertificatePack) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CertificatePack) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_CertificatePack) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificatePack) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_CertificatePack) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CertificatePack) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_CertificatePack) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificatePack) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_CertificatePack) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CertificatePack) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -466,7 +466,6 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
@@ -478,7 +477,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -491,12 +490,12 @@ func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetCertificateAuthority(val *string) {
+func (j *jsiiProxy_CertificatePack) SetCertificateAuthority(val *string) {
 	if err := j.validateSetCertificateAuthorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_CertificatePack)SetCertificateAuthority(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetCloudflareBranding(val interface{}) {
+func (j *jsiiProxy_CertificatePack) SetCloudflareBranding(val any) {
 	if err := j.validateSetCloudflareBrandingParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_CertificatePack)SetCloudflareBranding(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetConnection(val interface{}) {
+func (j *jsiiProxy_CertificatePack) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_CertificatePack)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetCount(val interface{}) {
+func (j *jsiiProxy_CertificatePack) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_CertificatePack)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CertificatePack) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -548,7 +547,7 @@ func (j *jsiiProxy_CertificatePack)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CertificatePack) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_CertificatePack)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetHosts(val *[]*string) {
+func (j *jsiiProxy_CertificatePack) SetHosts(val *[]*string) {
 	if err := j.validateSetHostsParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_CertificatePack)SetHosts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CertificatePack) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CertificatePack) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_CertificatePack)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CertificatePack) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_CertificatePack)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetType(val *string) {
+func (j *jsiiProxy_CertificatePack) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_CertificatePack)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetValidationMethod(val *string) {
+func (j *jsiiProxy_CertificatePack) SetValidationMethod(val *string) {
 	if err := j.validateSetValidationMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CertificatePack)SetValidationMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetValidityDays(val *float64) {
+func (j *jsiiProxy_CertificatePack) SetValidityDays(val *float64) {
 	if err := j.validateSetValidityDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CertificatePack)SetValidityDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetZoneId(val *string) {
+func (j *jsiiProxy_CertificatePack) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func CertificatePack_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func CertificatePack_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CertificatePack_IsConstruct(x interface{}) *bool {
+func CertificatePack_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificatePack_IsConstructParameters(x); err != nil {
@@ -688,7 +687,7 @@ func CertificatePack_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func CertificatePack_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CertificatePack_IsTerraformElement(x interface{}) *bool {
+func CertificatePack_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificatePack_IsTerraformElementParameters(x); err != nil {
@@ -707,7 +706,7 @@ func CertificatePack_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func CertificatePack_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CertificatePack_IsTerraformResource(x interface{}) *bool {
+func CertificatePack_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificatePack_IsTerraformResourceParameters(x); err != nil {
@@ -726,7 +725,7 @@ func CertificatePack_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -751,31 +750,31 @@ func (c *jsiiProxy_CertificatePack) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CertificatePack) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CertificatePack) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (c *jsiiProxy_CertificatePack) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (c *jsiiProxy_CertificatePack) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (c *jsiiProxy_CertificatePack) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (c *jsiiProxy_CertificatePack) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_CertificatePack) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (c *jsiiProxy_CertificatePack) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (c *jsiiProxy_CertificatePack) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,15 +902,15 @@ func (c *jsiiProxy_CertificatePack) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificatePack) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -930,7 +929,7 @@ func (c *jsiiProxy_CertificatePack) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -943,7 +942,7 @@ func (c *jsiiProxy_CertificatePack) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,18 +956,18 @@ func (c *jsiiProxy_CertificatePack) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CertificatePack) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -979,7 +978,7 @@ func (c *jsiiProxy_CertificatePack) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -990,7 +989,7 @@ func (c *jsiiProxy_CertificatePack) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1010,8 +1009,8 @@ func (c *jsiiProxy_CertificatePack) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CertificatePack) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1023,8 +1022,8 @@ func (c *jsiiProxy_CertificatePack) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CertificatePack) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1036,8 +1035,8 @@ func (c *jsiiProxy_CertificatePack) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificatePack) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1049,8 +1048,8 @@ func (c *jsiiProxy_CertificatePack) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificatePack) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1075,8 +1074,8 @@ func (c *jsiiProxy_CertificatePack) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificatePack) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1087,4 +1086,3 @@ func (c *jsiiProxy_CertificatePack) ToTerraform() interface{} {
 
 	return returns
 }
-

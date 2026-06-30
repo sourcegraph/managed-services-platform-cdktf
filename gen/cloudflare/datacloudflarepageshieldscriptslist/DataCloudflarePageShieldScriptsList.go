@@ -15,11 +15,11 @@ type DataCloudflarePageShieldScriptsList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -27,12 +27,12 @@ type DataCloudflarePageShieldScriptsList interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
-	ExcludeCdnCgi() interface{}
-	SetExcludeCdnCgi(val interface{})
-	ExcludeCdnCgiInput() interface{}
-	ExcludeDuplicates() interface{}
-	SetExcludeDuplicates(val interface{})
-	ExcludeDuplicatesInput() interface{}
+	ExcludeCdnCgi() any
+	SetExcludeCdnCgi(val any)
+	ExcludeCdnCgiInput() any
+	ExcludeDuplicates() any
+	SetExcludeDuplicates(val any)
+	ExcludeDuplicatesInput() any
 	ExcludeUrls() *string
 	SetExcludeUrls(val *string)
 	ExcludeUrlsInput() *string
@@ -71,15 +71,15 @@ type DataCloudflarePageShieldScriptsList interface {
 	PerPage() *float64
 	SetPerPage(val *float64)
 	PerPageInput() *float64
-	PrioritizeMalicious() interface{}
-	SetPrioritizeMalicious(val interface{})
-	PrioritizeMaliciousInput() interface{}
+	PrioritizeMalicious() any
+	SetPrioritizeMalicious(val any)
+	PrioritizeMaliciousInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() DataCloudflarePageShieldScriptsListResultList
 	Status() *string
 	SetStatus(val *string)
@@ -87,7 +87,7 @@ type DataCloudflarePageShieldScriptsList interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Urls() *string
@@ -97,9 +97,9 @@ type DataCloudflarePageShieldScriptsList interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,18 +138,18 @@ type DataCloudflarePageShieldScriptsList interface {
 	ResetPrioritizeMalicious()
 	ResetStatus()
 	ResetUrls()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflarePageShieldScriptsList
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) DirectionInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgi() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgi() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeCdnCgi",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgi() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgiInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgiInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeCdnCgiInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeCdnCgiInput() int
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeDuplicates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeDuplicates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeDuplicates",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeDuplicates() inte
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeDuplicatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ExcludeDuplicatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeDuplicatesInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PerPageInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PrioritizeMalicious() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PrioritizeMalicious() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"prioritizeMalicious",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PrioritizeMalicious() in
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PrioritizeMaliciousInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) PrioritizeMaliciousInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"prioritizeMaliciousInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -607,7 +607,6 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source.
 func NewDataCloudflarePageShieldScriptsList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldScriptsListConfig) DataCloudflarePageShieldScriptsList {
 	_init_.Initialize()
@@ -619,7 +618,7 @@ func NewDataCloudflarePageShieldScriptsList(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -632,12 +631,12 @@ func NewDataCloudflarePageShieldScriptsList_Override(d DataCloudflarePageShieldS
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetDirection(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeCdnCgi(val interface{}) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetExcludeCdnCgi(val any) {
 	if err := j.validateSetExcludeCdnCgiParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeCdnCgi(val inte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeDuplicates(val interface{}) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetExcludeDuplicates(val any) {
 	if err := j.validateSetExcludeDuplicatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeDuplicates(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeUrls(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetExcludeUrls(val *string) {
 	if err := j.validateSetExcludeUrlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExcludeUrls(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExport(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetExport(val *string) {
 	if err := j.validateSetExportParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetExport(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -719,7 +718,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetHosts(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetHosts(val *string) {
 	if err := j.validateSetHostsParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetHosts(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetMaxItems(val *float64) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetMaxItems(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetOrderBy(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetOrderBy(val *string) {
 	if err := j.validateSetOrderByParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetOrderBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPage(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetPage(val *string) {
 	if err := j.validateSetPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPageUrl(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetPageUrl(val *string) {
 	if err := j.validateSetPageUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPageUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPerPage(val *float64) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetPerPage(val *float64) {
 	if err := j.validateSetPerPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPerPage(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPrioritizeMalicious(val interface{}) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetPrioritizeMalicious(val any) {
 	if err := j.validateSetPrioritizeMaliciousParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetPrioritizeMalicious(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -815,7 +814,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetStatus(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetUrls(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetUrls(val *string) {
 	if err := j.validateSetUrlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetUrls(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsList)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsList) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func DataCloudflarePageShieldScriptsList_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func DataCloudflarePageShieldScriptsList_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflarePageShieldScriptsList_IsConstruct(x interface{}) *bool {
+func DataCloudflarePageShieldScriptsList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldScriptsList_IsConstructParameters(x); err != nil {
@@ -895,7 +894,7 @@ func DataCloudflarePageShieldScriptsList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func DataCloudflarePageShieldScriptsList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflarePageShieldScriptsList_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflarePageShieldScriptsList_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldScriptsList_IsTerraformDataSourceParameters(x); err != nil {
@@ -914,7 +913,7 @@ func DataCloudflarePageShieldScriptsList_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func DataCloudflarePageShieldScriptsList_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataCloudflarePageShieldScriptsList_IsTerraformElement(x interface{}) *bool {
+func DataCloudflarePageShieldScriptsList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldScriptsList_IsTerraformElementParameters(x); err != nil {
@@ -933,7 +932,7 @@ func DataCloudflarePageShieldScriptsList_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -951,27 +950,27 @@ func DataCloudflarePageShieldScriptsList_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,7 +1114,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1253,8 +1252,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ResetUrls() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1266,8 +1265,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1279,8 +1278,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1292,8 +1291,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1318,8 +1317,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1330,4 +1329,3 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsList) ToTerraform() interface{
 
 	return returns
 }
-

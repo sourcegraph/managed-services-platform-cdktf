@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareDnsZoneTransfersPeersResultOutputReferenceParamete
 
 	return nil
 }
-

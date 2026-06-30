@@ -1,6 +1,5 @@
 package logpushjob
 
-
 type LogpushJobOutputOptions struct {
 	// String to be prepended before each batch.
 	//
@@ -13,7 +12,7 @@ type LogpushJobOutputOptions struct {
 	// If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpush_job#cve_2021_44228 LogpushJob#cve_2021_44228}
-	Cve202144228 interface{} `field:"optional" json:"cve202144228" yaml:"cve202144228"`
+	Cve202144228 any `field:"optional" json:"cve202144228" yaml:"cve202144228"`
 	// String to join fields. This field be ignored when `record_template` is set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
@@ -60,4 +59,3 @@ type LogpushJobOutputOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
 	TimestampFormat *string `field:"optional" json:"timestampFormat" yaml:"timestampFormat"`
 }
-

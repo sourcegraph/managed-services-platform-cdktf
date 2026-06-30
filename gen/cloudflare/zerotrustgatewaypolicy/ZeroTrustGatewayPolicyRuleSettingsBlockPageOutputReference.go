@@ -12,9 +12,9 @@ type ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,11 +27,11 @@ type ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeContext() interface{}
-	SetIncludeContext(val interface{})
-	IncludeContextInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IncludeContext() any
+	SetIncludeContext(val any)
+	IncludeContextInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	TargetUri() *string
 	SetTargetUri(val *string)
 	TargetUriInput() *string
@@ -46,7 +46,7 @@ type ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference interface {
 	ResetIncludeContext()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) IncludeContext() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) IncludeContext() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContext",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) IncludeContextInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) IncludeContextInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContextInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) T
 	return returns
 }
 
-
 func NewZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference_Override(z Ze
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetIncludeContext(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetIncludeContext(val any) {
 	if err := j.validateSetIncludeContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetTargetUri(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetTargetUri(val *string) {
 	if err := j.validateSetTargetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) C
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) G
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) I
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) R
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference) T
 
 	return returns
 }
-

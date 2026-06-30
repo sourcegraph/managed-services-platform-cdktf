@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPolicies",
-		reflect.TypeOf((*DataCloudflarePageShieldPolicies)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldPolicies](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflarePageShieldPolicies{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesConfig",
-		reflect.TypeOf((*DataCloudflarePageShieldPoliciesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldPoliciesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResult",
-		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldPoliciesResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultList",
-		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldPoliciesResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflarePageShieldPoliciesResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultOutputReference",
-		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflarePageShieldPoliciesResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflarePageShieldPoliciesResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

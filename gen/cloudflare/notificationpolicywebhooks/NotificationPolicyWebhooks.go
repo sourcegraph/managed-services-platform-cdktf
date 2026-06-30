@@ -18,15 +18,15 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,18 +57,18 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	SetSecret(val *string)
 	SecretInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -79,9 +79,9 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type NotificationPolicyWebhooks interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecret()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NotificationPolicyWebhooks
@@ -170,8 +170,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotificationPolicyWebhooks) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -430,7 +430,6 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) UrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
 func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, config *NotificationPolicyWebhooksConfig) NotificationPolicyWebhooks {
 	_init_.Initialize()
@@ -442,7 +441,7 @@ func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -455,12 +454,12 @@ func NewNotificationPolicyWebhooks_Override(n NotificationPolicyWebhooks, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetAccountId(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetConnection(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetCount(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetName(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetSecret(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetSecret(val *string) {
 	if err := j.validateSetSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetUrl(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooks) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func NotificationPolicyWebhooks_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func NotificationPolicyWebhooks_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool {
+func NotificationPolicyWebhooks_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationPolicyWebhooks_IsConstructParameters(x); err != nil {
@@ -619,7 +618,7 @@ func NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool {
+func NotificationPolicyWebhooks_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationPolicyWebhooks_IsTerraformElementParameters(x); err != nil {
@@ -638,7 +637,7 @@ func NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NotificationPolicyWebhooks_IsTerraformResource(x interface{}) *bool {
+func NotificationPolicyWebhooks_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationPolicyWebhooks_IsTerraformResourceParameters(x); err != nil {
@@ -657,7 +656,7 @@ func NotificationPolicyWebhooks_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -682,31 +681,31 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NotificationPolicyWebhooks) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyWebhooks) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,15 +833,15 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -861,7 +860,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -874,7 +873,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,18 +887,18 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NotificationPolicyWebhooks) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -910,7 +909,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -921,7 +920,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -941,8 +940,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ResetSecret() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -954,8 +953,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -967,8 +966,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -980,8 +979,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1006,8 +1005,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationPolicyWebhooks) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1018,4 +1017,3 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ToTerraform() interface{} {
 
 	return returns
 }
-

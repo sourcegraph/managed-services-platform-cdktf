@@ -1,6 +1,5 @@
 package datacloudflarezerotrusttunnelcloudflaredroute
 
-
 type DataCloudflareZeroTrustTunnelCloudflaredRouteFilter struct {
 	// Optional remark describing the route.
 	//
@@ -13,7 +12,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilter struct {
 	// If `true`, only include deleted routes. If `false`, exclude deleted routes. If empty, all routes will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_route#is_deleted DataCloudflareZeroTrustTunnelCloudflaredRoute#is_deleted}
-	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
+	IsDeleted any `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// If set, only list routes that are contained within this IP range.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_route#network_subset DataCloudflareZeroTrustTunnelCloudflaredRoute#network_subset}
@@ -39,4 +38,3 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_route#virtual_network_id DataCloudflareZeroTrustTunnelCloudflaredRoute#virtual_network_id}
 	VirtualNetworkId *string `field:"optional" json:"virtualNetworkId" yaml:"virtualNetworkId"`
 }
-

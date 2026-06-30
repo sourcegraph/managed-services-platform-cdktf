@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataCloudflareTurnstileWidgetFilterOutputReferenceParameters(ter
 
 	return nil
 }
-

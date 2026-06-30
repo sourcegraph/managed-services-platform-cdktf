@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustDlpCustomEntryPatternOutputReferenceParameters(terrafor
 
 	return nil
 }
-

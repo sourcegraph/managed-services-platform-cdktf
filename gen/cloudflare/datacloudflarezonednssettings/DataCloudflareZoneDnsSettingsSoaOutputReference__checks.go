@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareZoneDnsSettingsSoaOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnsSettingsSoaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZoneDnsSettingsSoaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareZoneDnsSettingsSoaOutputReferenceParameters(terraf
 
 	return nil
 }
-

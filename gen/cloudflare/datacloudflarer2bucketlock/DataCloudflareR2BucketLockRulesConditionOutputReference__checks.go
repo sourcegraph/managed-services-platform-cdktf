@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketLockRulesConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLockRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketLockRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareR2BucketLockRulesConditionOutputReferenceParameter
 
 	return nil
 }
-

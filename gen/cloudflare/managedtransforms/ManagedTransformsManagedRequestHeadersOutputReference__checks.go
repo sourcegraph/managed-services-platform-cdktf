@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -250,4 +250,3 @@ func validateNewManagedTransformsManagedRequestHeadersOutputReferenceParameters(
 
 	return nil
 }
-

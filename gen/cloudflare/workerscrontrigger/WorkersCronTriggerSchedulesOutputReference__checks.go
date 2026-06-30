@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateSetCronPa
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkersCronTriggerSchedulesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

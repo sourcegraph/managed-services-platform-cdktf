@@ -17,8 +17,8 @@ type ZeroTrustDnsLocationEndpointsDotNetworksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ZeroTrustDnsLocationEndpointsDotNetworksList interface {
 	Get(index *float64) ZeroTrustDnsLocationEndpointsDotNetworksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewZeroTrustDnsLocationEndpointsDotNetworksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDnsLocationEndpointsDotNetworksList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewZeroTrustDnsLocationEndpointsDotNetworksList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDotNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewZeroTrustDnsLocationEndpointsDotNetworksList_Override(z ZeroTrustDnsLoca
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDotNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) AllWithMapKey(m
 	_jsii_.Invoke(
 		z,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) Get(index *floa
 	_jsii_.Invoke(
 		z,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotNetworksList) ToString() *str
 
 	return returns
 }
-

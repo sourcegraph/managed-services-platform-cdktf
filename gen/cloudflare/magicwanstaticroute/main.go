@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
-		reflect.TypeOf((*MagicWanStaticRoute)(nil)).Elem(),
+		reflect.TypeFor[MagicWanStaticRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanStaticRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig",
-		reflect.TypeOf((*MagicWanStaticRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[MagicWanStaticRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope",
-		reflect.TypeOf((*MagicWanStaticRouteScope)(nil)).Elem(),
+		reflect.TypeFor[MagicWanStaticRouteScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference",
-		reflect.TypeOf((*MagicWanStaticRouteScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicWanStaticRouteScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coloNames", GoGetter: "ColoNames"},
 			_jsii_.MemberProperty{JsiiProperty: "coloNamesInput", GoGetter: "ColoNamesInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanStaticRouteScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareBotManagementStaleZoneConfigurationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagementStaleZoneConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareBotManagementStaleZoneConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareBotManagementStaleZoneConfigurationOutputReference
 
 	return nil
 }
-

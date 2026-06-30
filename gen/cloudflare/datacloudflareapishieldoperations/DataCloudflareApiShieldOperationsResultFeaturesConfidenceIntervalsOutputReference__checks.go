@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesConfidenceInte
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesConfidenceIntervalsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesConfidenceIntervalsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareApiShieldOperationsResultFeaturesConfidenceInterva
 
 	return nil
 }
-

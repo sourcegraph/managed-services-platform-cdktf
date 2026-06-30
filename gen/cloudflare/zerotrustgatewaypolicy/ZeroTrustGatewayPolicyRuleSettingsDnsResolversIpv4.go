@@ -1,6 +1,5 @@
 package zerotrustgatewaypolicy
 
-
 type ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 struct {
 	// IPv4 address of upstream resolver.
 	//
@@ -13,10 +12,9 @@ type ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 struct {
 	// Whether to connect to this resolver over a private network. Must be set when vnet_id is set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
-	RouteThroughPrivateNetwork interface{} `field:"optional" json:"routeThroughPrivateNetwork" yaml:"routeThroughPrivateNetwork"`
+	RouteThroughPrivateNetwork any `field:"optional" json:"routeThroughPrivateNetwork" yaml:"routeThroughPrivateNetwork"`
 	// Optionally specify a virtual network for this resolver. Uses default virtual network id if omitted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
 	VnetId *string `field:"optional" json:"vnetId" yaml:"vnetId"`
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareApiShieldSchema) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareApiShieldSchema) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareApiShieldSchema_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataCloudflareApiShieldSchema_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareApiShieldSchema_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareApiShieldSchema_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataCloudflareApiShieldSchema_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareApiShieldSchema_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareApiShieldSchema_IsTerraformDataSourceParameters(x int
 	return nil
 }
 
-func validateDataCloudflareApiShieldSchema_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareApiShieldSchema_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareApiShieldSchema_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetOmitSourceParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetOmitSourceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewDataCloudflareApiShieldSchemaParameters(scope constructs.Constru
 
 	return nil
 }
-

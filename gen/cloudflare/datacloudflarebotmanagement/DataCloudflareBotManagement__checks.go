@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareBotManagement) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareBotManagement) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareBotManagement_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataCloudflareBotManagement_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareBotManagement_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareBotManagement_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataCloudflareBotManagement_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareBotManagement_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareBotManagement_IsTerraformDataSourceParameters(x inter
 	return nil
 }
 
-func validateDataCloudflareBotManagement_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareBotManagement_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareBotManagement_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareBotManagement) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDataCloudflareBotManagementParameters(scope constructs.Construct
 
 	return nil
 }
-

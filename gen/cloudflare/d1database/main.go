@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.d1Database.D1Database",
-		reflect.TypeOf((*D1Database)(nil)).Elem(),
+		reflect.TypeFor[D1Database](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_D1Database{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.d1Database.D1DatabaseConfig",
-		reflect.TypeOf((*D1DatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[D1DatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.d1Database.D1DatabaseReadReplication",
-		reflect.TypeOf((*D1DatabaseReadReplication)(nil)).Elem(),
+		reflect.TypeFor[D1DatabaseReadReplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.d1Database.D1DatabaseReadReplicationOutputReference",
-		reflect.TypeOf((*D1DatabaseReadReplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[D1DatabaseReadReplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_D1DatabaseReadReplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

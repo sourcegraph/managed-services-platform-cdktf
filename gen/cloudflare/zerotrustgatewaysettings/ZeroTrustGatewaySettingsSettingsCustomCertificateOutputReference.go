@@ -13,9 +13,9 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	BindingStatus() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,16 +26,16 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-
 func NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -514,16 +513,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -542,4 +541,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 
 	return returns
 }
-

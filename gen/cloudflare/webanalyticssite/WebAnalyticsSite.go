@@ -15,29 +15,29 @@ type WebAnalyticsSite interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AutoInstall() interface{}
-	SetAutoInstall(val interface{})
-	AutoInstallInput() interface{}
+	AutoInstall() any
+	SetAutoInstall(val any)
+	AutoInstallInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,9 +54,9 @@ type WebAnalyticsSite interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Lite() interface{}
-	SetLite(val interface{})
-	LiteInput() interface{}
+	Lite() any
+	SetLite(val any)
+	LiteInput() any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -64,11 +64,11 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() WebAnalyticsSiteRulesList
 	Ruleset() WebAnalyticsSiteRulesetOutputReference
 	SiteTag() *string
@@ -77,7 +77,7 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneTag() *string
@@ -87,9 +87,9 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type WebAnalyticsSite interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetZoneTag()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WebAnalyticsSite
@@ -172,8 +172,8 @@ func (j *jsiiProxy_WebAnalyticsSite) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) AutoInstall() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) AutoInstall() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoInstall",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_WebAnalyticsSite) AutoInstall() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) AutoInstallInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) AutoInstallInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoInstallInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_WebAnalyticsSite) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WebAnalyticsSite) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_WebAnalyticsSite) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_WebAnalyticsSite) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Lite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) Lite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lite",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Lite() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) LiteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) LiteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"liteInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WebAnalyticsSite) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_WebAnalyticsSite) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSite) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_WebAnalyticsSite) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WebAnalyticsSite) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -502,7 +502,6 @@ func (j *jsiiProxy_WebAnalyticsSite) ZoneTagInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) WebAnalyticsSite {
 	_init_.Initialize()
@@ -514,7 +513,7 @@ func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnal
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -527,12 +526,12 @@ func NewWebAnalyticsSite_Override(w WebAnalyticsSite, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetAccountId(val *string) {
+func (j *jsiiProxy_WebAnalyticsSite) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetAutoInstall(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetAutoInstall(val any) {
 	if err := j.validateSetAutoInstallParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetAutoInstall(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetConnection(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetCount(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WebAnalyticsSite) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -584,7 +583,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetEnabled(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WebAnalyticsSite) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetHost(val *string) {
+func (j *jsiiProxy_WebAnalyticsSite) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WebAnalyticsSite) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetLite(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetLite(val any) {
 	if err := j.validateSetLiteParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetLite(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WebAnalyticsSite) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WebAnalyticsSite) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_WebAnalyticsSite)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSite)SetZoneTag(val *string) {
+func (j *jsiiProxy_WebAnalyticsSite) SetZoneTag(val *string) {
 	if err := j.validateSetZoneTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func WebAnalyticsSite_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func WebAnalyticsSite_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WebAnalyticsSite_IsConstruct(x interface{}) *bool {
+func WebAnalyticsSite_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWebAnalyticsSite_IsConstructParameters(x); err != nil {
@@ -713,7 +712,7 @@ func WebAnalyticsSite_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func WebAnalyticsSite_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WebAnalyticsSite_IsTerraformElement(x interface{}) *bool {
+func WebAnalyticsSite_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWebAnalyticsSite_IsTerraformElementParameters(x); err != nil {
@@ -732,7 +731,7 @@ func WebAnalyticsSite_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func WebAnalyticsSite_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WebAnalyticsSite_IsTerraformResource(x interface{}) *bool {
+func WebAnalyticsSite_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWebAnalyticsSite_IsTerraformResourceParameters(x); err != nil {
@@ -751,7 +750,7 @@ func WebAnalyticsSite_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,31 +775,31 @@ func (w *jsiiProxy_WebAnalyticsSite) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WebAnalyticsSite) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WebAnalyticsSite) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (w *jsiiProxy_WebAnalyticsSite) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,15 +927,15 @@ func (w *jsiiProxy_WebAnalyticsSite) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WebAnalyticsSite) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -955,7 +954,7 @@ func (w *jsiiProxy_WebAnalyticsSite) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -968,7 +967,7 @@ func (w *jsiiProxy_WebAnalyticsSite) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,18 +981,18 @@ func (w *jsiiProxy_WebAnalyticsSite) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WebAnalyticsSite) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (w *jsiiProxy_WebAnalyticsSite) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (w *jsiiProxy_WebAnalyticsSite) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1067,8 +1066,8 @@ func (w *jsiiProxy_WebAnalyticsSite) ResetZoneTag() {
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WebAnalyticsSite) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1080,8 +1079,8 @@ func (w *jsiiProxy_WebAnalyticsSite) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WebAnalyticsSite) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1093,8 +1092,8 @@ func (w *jsiiProxy_WebAnalyticsSite) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WebAnalyticsSite) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1106,8 +1105,8 @@ func (w *jsiiProxy_WebAnalyticsSite) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WebAnalyticsSite) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1132,8 +1131,8 @@ func (w *jsiiProxy_WebAnalyticsSite) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WebAnalyticsSite) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1144,4 +1143,3 @@ func (w *jsiiProxy_WebAnalyticsSite) ToTerraform() interface{} {
 
 	return returns
 }
-

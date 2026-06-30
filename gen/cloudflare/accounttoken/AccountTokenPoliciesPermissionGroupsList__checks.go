@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccountTokenPoliciesPermissionGroupsListParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountMemberFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataCloudflareAccountMemberFilterOutputReferenceParameters(terra
 
 	return nil
 }
-

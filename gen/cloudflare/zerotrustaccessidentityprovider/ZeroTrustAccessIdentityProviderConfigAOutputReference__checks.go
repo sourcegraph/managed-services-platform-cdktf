@@ -90,7 +90,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validatePutHeaderAttributesParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validatePutHeaderAttributesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -209,7 +209,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -274,7 +274,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetConditionalAccessEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetConditionalAccessEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetSignRequestParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetSignRequestParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetSupportGroupsParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetSupportGroupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,4 +501,3 @@ func validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(
 
 	return nil
 }
-

@@ -154,7 +154,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTri
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,7 +299,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInsightC
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -550,4 +550,3 @@ func validateNewNotificationPolicyFiltersOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

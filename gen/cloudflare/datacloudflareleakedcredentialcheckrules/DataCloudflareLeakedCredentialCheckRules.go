@@ -15,11 +15,11 @@ type DataCloudflareLeakedCredentialCheckRules interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,21 +46,21 @@ type DataCloudflareLeakedCredentialCheckRules interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() DataCloudflareLeakedCredentialCheckRulesResultList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataCloudflareLeakedCredentialCheckRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareLeakedCredentialCheckRules
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ZoneIdInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules} Data Source.
 func NewDataCloudflareLeakedCredentialCheckRules(scope constructs.Construct, id *string, config *DataCloudflareLeakedCredentialCheckRulesConfig) DataCloudflareLeakedCredentialCheckRules {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataCloudflareLeakedCredentialCheckRules(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataCloudflareLeakedCredentialCheckRules_Override(d DataCloudflareLeaked
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -344,7 +343,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -352,7 +351,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetMaxItems(val *float64) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetMaxItems(val *flo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func DataCloudflareLeakedCredentialCheckRules_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataCloudflareLeakedCredentialCheckRules_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareLeakedCredentialCheckRules_IsConstruct(x interface{}) *bool {
+func DataCloudflareLeakedCredentialCheckRules_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLeakedCredentialCheckRules_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataCloudflareLeakedCredentialCheckRules_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataCloudflareLeakedCredentialCheckRules_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareLeakedCredentialCheckRules_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareLeakedCredentialCheckRules_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLeakedCredentialCheckRules_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataCloudflareLeakedCredentialCheckRules_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataCloudflareLeakedCredentialCheckRules_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataCloudflareLeakedCredentialCheckRules_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareLeakedCredentialCheckRules_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLeakedCredentialCheckRules_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataCloudflareLeakedCredentialCheckRules_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLeakedCredentialCheckRules.DataCloudflareLeakedCredentialCheckRules",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataCloudflareLeakedCredentialCheckRules_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ResetOverrideLogica
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToTerraform() inter
 
 	return returns
 }
-

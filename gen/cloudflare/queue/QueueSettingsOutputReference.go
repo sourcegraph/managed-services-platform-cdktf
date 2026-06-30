@@ -12,9 +12,9 @@ type QueueSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,13 +28,13 @@ type QueueSettingsOutputReference interface {
 	DeliveryDelay() *float64
 	SetDeliveryDelay(val *float64)
 	DeliveryDelayInput() *float64
-	DeliveryPaused() interface{}
-	SetDeliveryPaused(val interface{})
-	DeliveryPausedInput() interface{}
+	DeliveryPaused() any
+	SetDeliveryPaused(val any)
+	DeliveryPausedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MessageRetentionPeriod() *float64
 	SetMessageRetentionPeriod(val *float64)
 	MessageRetentionPeriodInput() *float64
@@ -49,7 +49,7 @@ type QueueSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type QueueSettingsOutputReference interface {
 	ResetMessageRetentionPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_QueueSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryDelayInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPaused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPaused() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deliveryPaused",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPaused() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPausedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPausedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deliveryPausedInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_QueueSettingsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_QueueSettingsOutputReference) TerraformResource() cdktf.IInte
 	return returns
 }
 
-
 func NewQueueSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QueueSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewQueueSettingsOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewQueueSettingsOutputReference_Override(q QueueSettingsOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryDelay(val *float64) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetDeliveryDelay(val *float64) {
 	if err := j.validateSetDeliveryDelayParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryDelay(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryPaused(val interface{}) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetDeliveryPaused(val any) {
 	if err := j.validateSetDeliveryPausedParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryPaused(val interface{
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetMessageRetentionPeriod(val *float64) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetMessageRetentionPeriod(val *float64) {
 	if err := j.validateSetMessageRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetMessageRetentionPeriod(val *f
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_QueueSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QueueSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (q *jsiiProxy_QueueSettingsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (q *jsiiProxy_QueueSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QueueSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (q *jsiiProxy_QueueSettingsOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (q *jsiiProxy_QueueSettingsOutputReference) ResetMessageRetentionPeriod() {
 	)
 }
 
-func (q *jsiiProxy_QueueSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QueueSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (q *jsiiProxy_QueueSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

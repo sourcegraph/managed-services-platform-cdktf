@@ -18,11 +18,11 @@ type DataCloudflareStreamCaptionLanguage interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,18 +54,18 @@ type DataCloudflareStreamCaptionLanguage interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataCloudflareStreamCaptionLanguage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareStreamCaptionLanguage
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
 func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *string, config *DataCloudflareStreamCaptionLanguageConfig) DataCloudflareStreamCaptionLanguage {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewDataCloudflareStreamCaptionLanguage_Override(d DataCloudflareStreamCapti
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetAccountId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetIdentifier(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetIdentifier(val *string
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetLanguage(val *string) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetLanguage(val *string) {
 	if err := j.validateSetLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetLanguage(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -460,7 +459,7 @@ func DataCloudflareStreamCaptionLanguage_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataCloudflareStreamCaptionLanguage_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareStreamCaptionLanguage_IsConstruct(x interface{}) *bool {
+func DataCloudflareStreamCaptionLanguage_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamCaptionLanguage_IsConstructParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataCloudflareStreamCaptionLanguage_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataCloudflareStreamCaptionLanguage_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareStreamCaptionLanguage_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareStreamCaptionLanguage_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamCaptionLanguage_IsTerraformDataSourceParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataCloudflareStreamCaptionLanguage_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func DataCloudflareStreamCaptionLanguage_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataCloudflareStreamCaptionLanguage_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareStreamCaptionLanguage_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamCaptionLanguage_IsTerraformElementParameters(x); err != nil {
@@ -533,7 +532,7 @@ func DataCloudflareStreamCaptionLanguage_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,27 +550,27 @@ func DataCloudflareStreamCaptionLanguage_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -741,8 +740,8 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ResetOverrideLogicalId()
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -754,8 +753,8 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -767,8 +766,8 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -818,4 +817,3 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ToTerraform() interface{
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MagicTransitSiteLocationOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MagicTransitSiteLocationOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLocationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicTransitSiteLocationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMagicTransitSiteLocationOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

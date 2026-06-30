@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
-		reflect.TypeOf((*LogpushJob)(nil)).Elem(),
+		reflect.TypeFor[LogpushJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LogpushJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,15 +110,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig",
-		reflect.TypeOf((*LogpushJobConfig)(nil)).Elem(),
+		reflect.TypeFor[LogpushJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions",
-		reflect.TypeOf((*LogpushJobOutputOptions)(nil)).Elem(),
+		reflect.TypeFor[LogpushJobOutputOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference",
-		reflect.TypeOf((*LogpushJobOutputOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LogpushJobOutputOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchPrefix", GoGetter: "BatchPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "batchPrefixInput", GoGetter: "BatchPrefixInput"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampFormatInput", GoGetter: "TimestampFormatInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LogpushJobOutputOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

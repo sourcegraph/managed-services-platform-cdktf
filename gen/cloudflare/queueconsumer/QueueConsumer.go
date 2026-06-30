@@ -18,18 +18,18 @@ type QueueConsumer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerId() *string
 	SetConsumerId(val *string)
 	ConsumerIdInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	DeadLetterQueue() *string
 	SetDeadLetterQueue(val *string)
@@ -57,24 +57,24 @@ type QueueConsumer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Script() *string
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
 	Settings() QueueConsumerSettingsOutputReference
-	SettingsInput() interface{}
+	SettingsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -84,9 +84,9 @@ type QueueConsumer interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type QueueConsumer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type QueueConsumer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type QueueConsumer interface {
 	ResetScriptName()
 	ResetSettings()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for QueueConsumer
@@ -180,8 +180,8 @@ func (j *jsiiProxy_QueueConsumer) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_QueueConsumer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QueueConsumer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_QueueConsumer) ConsumerIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_QueueConsumer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_QueueConsumer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_QueueConsumer) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_QueueConsumer) Settings() QueueConsumerSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) SettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) SettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"settingsInput",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_QueueConsumer) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_QueueConsumer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_QueueConsumer) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsumerConfig) QueueConsumer {
 	_init_.Initialize()
@@ -482,7 +481,7 @@ func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewQueueConsumer_Override(q QueueConsumer, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetAccountId(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_QueueConsumer)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetConnection(val interface{}) {
+func (j *jsiiProxy_QueueConsumer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_QueueConsumer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetConsumerId(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetConsumerId(val *string) {
 	if err := j.validateSetConsumerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_QueueConsumer)SetConsumerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetCount(val interface{}) {
+func (j *jsiiProxy_QueueConsumer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_QueueConsumer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetDeadLetterQueue(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetDeadLetterQueue(val *string) {
 	if err := j.validateSetDeadLetterQueueParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_QueueConsumer)SetDeadLetterQueue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_QueueConsumer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_QueueConsumer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_QueueConsumer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_QueueConsumer)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_QueueConsumer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_QueueConsumer)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_QueueConsumer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_QueueConsumer)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_QueueConsumer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_QueueConsumer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetQueueId(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetQueueId(val *string) {
 	if err := j.validateSetQueueIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_QueueConsumer)SetQueueId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetScriptName(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetScriptName(val *string) {
 	if err := j.validateSetScriptNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_QueueConsumer)SetScriptName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QueueConsumer)SetType(val *string) {
+func (j *jsiiProxy_QueueConsumer) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func QueueConsumer_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func QueueConsumer_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func QueueConsumer_IsConstruct(x interface{}) *bool {
+func QueueConsumer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQueueConsumer_IsConstructParameters(x); err != nil {
@@ -681,7 +680,7 @@ func QueueConsumer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func QueueConsumer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func QueueConsumer_IsTerraformElement(x interface{}) *bool {
+func QueueConsumer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQueueConsumer_IsTerraformElementParameters(x); err != nil {
@@ -700,7 +699,7 @@ func QueueConsumer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func QueueConsumer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func QueueConsumer_IsTerraformResource(x interface{}) *bool {
+func QueueConsumer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateQueueConsumer_IsTerraformResourceParameters(x); err != nil {
@@ -719,7 +718,7 @@ func QueueConsumer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,31 +743,31 @@ func (q *jsiiProxy_QueueConsumer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (q *jsiiProxy_QueueConsumer) AddOverride(path *string, value interface{}) {
+func (q *jsiiProxy_QueueConsumer) AddOverride(path *string, value any) {
 	if err := q.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (q *jsiiProxy_QueueConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QueueConsumer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (q *jsiiProxy_QueueConsumer) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (q *jsiiProxy_QueueConsumer) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (q *jsiiProxy_QueueConsumer) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (q *jsiiProxy_QueueConsumer) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (q *jsiiProxy_QueueConsumer) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (q *jsiiProxy_QueueConsumer) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (q *jsiiProxy_QueueConsumer) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,15 +895,15 @@ func (q *jsiiProxy_QueueConsumer) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumer) HasResourceMove() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QueueConsumer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -923,7 +922,7 @@ func (q *jsiiProxy_QueueConsumer) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		q,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -936,7 +935,7 @@ func (q *jsiiProxy_QueueConsumer) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,18 +949,18 @@ func (q *jsiiProxy_QueueConsumer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (q *jsiiProxy_QueueConsumer) MoveTo(moveTarget *string, index interface{}) {
+func (q *jsiiProxy_QueueConsumer) MoveTo(moveTarget *string, index any) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		q,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -972,7 +971,7 @@ func (q *jsiiProxy_QueueConsumer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -983,7 +982,7 @@ func (q *jsiiProxy_QueueConsumer) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		q,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -994,7 +993,7 @@ func (q *jsiiProxy_QueueConsumer) PutSettings(value *QueueConsumerSettings) {
 	_jsii_.InvokeVoid(
 		q,
 		"putSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1046,8 +1045,8 @@ func (q *jsiiProxy_QueueConsumer) ResetType() {
 	)
 }
 
-func (q *jsiiProxy_QueueConsumer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QueueConsumer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -1059,8 +1058,8 @@ func (q *jsiiProxy_QueueConsumer) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (q *jsiiProxy_QueueConsumer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
@@ -1072,8 +1071,8 @@ func (q *jsiiProxy_QueueConsumer) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QueueConsumer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1085,8 +1084,8 @@ func (q *jsiiProxy_QueueConsumer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumer) ToMetadata() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QueueConsumer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1111,8 +1110,8 @@ func (q *jsiiProxy_QueueConsumer) ToString() *string {
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumer) ToTerraform() interface{} {
-	var returns interface{}
+func (q *jsiiProxy_QueueConsumer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		q,
@@ -1123,4 +1122,3 @@ func (q *jsiiProxy_QueueConsumer) ToTerraform() interface{} {
 
 	return returns
 }
-

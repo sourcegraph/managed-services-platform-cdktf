@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingCatchAllMatchersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEmailRoutingCatchAllMatchersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

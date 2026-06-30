@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareAccountMembersResultPoliciesPermissionGroupsMet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMembersResultPoliciesPermissionGroupsMetaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountMembersResultPoliciesPermissionGroupsMetaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareAccountMembersResultPoliciesPermissionGroupsMetaOu
 
 	return nil
 }
-

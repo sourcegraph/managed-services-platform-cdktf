@@ -109,7 +109,7 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -245,4 +245,3 @@ func validateNewZeroTrustDlpPredefinedProfileContextAwarenessOutputReferencePara
 
 	return nil
 }
-

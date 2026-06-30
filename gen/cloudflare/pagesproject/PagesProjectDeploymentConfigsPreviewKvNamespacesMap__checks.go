@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesMap) validate
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewKvNamespacesMapParameters(te
 
 	return nil
 }
-

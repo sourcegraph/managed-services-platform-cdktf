@@ -15,15 +15,15 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,15 +50,15 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -71,9 +71,9 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ZoneCacheReserve interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValue()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZoneCacheReserve
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ZoneCacheReserve) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheReserve) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ZoneCacheReserve) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneCacheReserve) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZoneCacheReserve) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheReserve) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_ZoneCacheReserve) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZoneCacheReserve) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_ZoneCacheReserve) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheReserve) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_ZoneCacheReserve) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneCacheReserve) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_ZoneCacheReserve) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) ZoneCacheReserve {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCac
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewZoneCacheReserve_Override(z ZoneCacheReserve, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneCacheReserve) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetCount(val interface{}) {
+func (j *jsiiProxy_ZoneCacheReserve) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheReserve) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneCacheReserve) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -430,7 +429,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneCacheReserve) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneCacheReserve) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneCacheReserve) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetValue(val *string) {
+func (j *jsiiProxy_ZoneCacheReserve) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ZoneCacheReserve)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneCacheReserve) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func ZoneCacheReserve_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func ZoneCacheReserve_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZoneCacheReserve_IsConstruct(x interface{}) *bool {
+func ZoneCacheReserve_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneCacheReserve_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func ZoneCacheReserve_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func ZoneCacheReserve_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneCacheReserve_IsTerraformElement(x interface{}) *bool {
+func ZoneCacheReserve_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneCacheReserve_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func ZoneCacheReserve_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func ZoneCacheReserve_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneCacheReserve_IsTerraformResource(x interface{}) *bool {
+func ZoneCacheReserve_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneCacheReserve_IsTerraformResourceParameters(x); err != nil {
@@ -567,7 +566,7 @@ func ZoneCacheReserve_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,31 +591,31 @@ func (z *jsiiProxy_ZoneCacheReserve) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZoneCacheReserve) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneCacheReserve) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (z *jsiiProxy_ZoneCacheReserve) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,15 +743,15 @@ func (z *jsiiProxy_ZoneCacheReserve) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneCacheReserve) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -771,7 +770,7 @@ func (z *jsiiProxy_ZoneCacheReserve) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -784,7 +783,7 @@ func (z *jsiiProxy_ZoneCacheReserve) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,18 +797,18 @@ func (z *jsiiProxy_ZoneCacheReserve) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZoneCacheReserve) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -820,7 +819,7 @@ func (z *jsiiProxy_ZoneCacheReserve) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -831,7 +830,7 @@ func (z *jsiiProxy_ZoneCacheReserve) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -851,8 +850,8 @@ func (z *jsiiProxy_ZoneCacheReserve) ResetValue() {
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneCacheReserve) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -864,8 +863,8 @@ func (z *jsiiProxy_ZoneCacheReserve) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneCacheReserve) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -877,8 +876,8 @@ func (z *jsiiProxy_ZoneCacheReserve) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneCacheReserve) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -890,8 +889,8 @@ func (z *jsiiProxy_ZoneCacheReserve) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneCacheReserve) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -916,8 +915,8 @@ func (z *jsiiProxy_ZoneCacheReserve) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneCacheReserve) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -928,4 +927,3 @@ func (z *jsiiProxy_ZoneCacheReserve) ToTerraform() interface{} {
 
 	return returns
 }
-

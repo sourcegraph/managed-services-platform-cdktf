@@ -17,8 +17,8 @@ type ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList interface {
 	Get(index *float64) ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 	return returns
 }
 
-
 func NewZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileLocalDomainFallback.ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList_Override(z Z
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfileLocalDomainFallback.ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 	_jsii_.Invoke(
 		z,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 	_jsii_.Invoke(
 		z,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 
 	return returns
 }
-

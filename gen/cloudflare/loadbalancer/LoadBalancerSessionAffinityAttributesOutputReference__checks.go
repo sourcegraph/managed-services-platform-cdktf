@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetRequireAllHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetRequireAllHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewLoadBalancerSessionAffinityAttributesOutputReferenceParameters(t
 
 	return nil
 }
-

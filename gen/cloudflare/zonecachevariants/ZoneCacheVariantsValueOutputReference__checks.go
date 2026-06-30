@@ -114,7 +114,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetBmpParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetGifParamete
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -302,4 +302,3 @@ func validateNewZoneCacheVariantsValueOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

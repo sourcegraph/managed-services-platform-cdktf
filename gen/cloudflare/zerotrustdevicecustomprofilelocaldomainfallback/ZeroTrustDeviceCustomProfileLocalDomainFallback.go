@@ -18,21 +18,21 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Domains() ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList
-	DomainsInput() interface{}
+	DomainsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,24 +56,24 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,28 +103,28 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDomains(value interface{})
+	PutDomains(value any)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZeroTrustDeviceCustomProfileLocalDomainFallback
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Connection()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Domains() Ze
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) DomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) DomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"domainsInput",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Provisioners
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformGen
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformRes
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) ZeroTrustDeviceCustomProfileLocalDomainFallback {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewZeroTrustDeviceCustomProfileLocalDomainFallback_Override(z ZeroTrustDevi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetAccountId(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetAccountId(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetConnection
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetCount(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetPolicyId(val *string) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetPolicyId(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x interface{}) *bool {
+func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x interface{}) *bool {
+func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformElement(x interf
 }
 
 // Experimental.
-func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformResource(x interface{}) *bool {
+func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformResourceParameters(x); err != nil {
@@ -567,7 +566,7 @@ func ZeroTrustDeviceCustomProfileLocalDomainFallback_IsTerraformResource(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zeroTrustDeviceCustomProfileLocalDomainFallback.ZeroTrustDeviceCustomProfileLocalDomainFallback",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,31 +591,31 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) AddMoveTarge
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetBooleanAt
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetBooleanMa
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetListAttri
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetNumberAtt
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetNumberLis
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetNumberMap
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetStringAtt
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,15 +743,15 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) GetStringMap
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -771,7 +770,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ImportFrom(i
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -784,7 +783,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Interpolatio
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,18 +797,18 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) MoveFromId(i
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -820,7 +819,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) MoveToId(id 
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -831,18 +830,18 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) OverrideLogi
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) PutDomains(value interface{}) {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) PutDomains(value any) {
 	if err := z.validatePutDomainsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putDomains",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -854,8 +853,8 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ResetOverrid
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -867,8 +866,8 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeAt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -880,8 +879,8 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) SynthesizeHc
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -893,8 +892,8 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToHclTerrafo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -919,8 +918,8 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToString() *
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -931,4 +930,3 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ToTerraform(
 
 	return returns
 }
-

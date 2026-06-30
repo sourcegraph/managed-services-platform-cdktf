@@ -13,26 +13,26 @@ import (
 type FirewallRule interface {
 	cdktf.TerraformResource
 	Action() FirewallRuleActionOutputReference
-	ActionInput() interface{}
+	ActionInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Filter() FirewallRuleFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,16 +56,16 @@ type FirewallRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Ref() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -75,9 +75,9 @@ type FirewallRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type FirewallRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type FirewallRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type FirewallRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirewallRule
@@ -147,8 +147,8 @@ func (j *jsiiProxy_FirewallRule) Action() FirewallRuleActionOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_FirewallRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_FirewallRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirewallRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_FirewallRule) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_FirewallRule) Filter() FirewallRuleFilterOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_FirewallRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirewallRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_FirewallRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_FirewallRule) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirewallRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -417,7 +417,6 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
@@ -429,7 +428,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -442,12 +441,12 @@ func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirewallRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_FirewallRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetCount(val interface{}) {
+func (j *jsiiProxy_FirewallRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_FirewallRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirewallRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_FirewallRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirewallRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_FirewallRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirewallRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_FirewallRule)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirewallRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_FirewallRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirewallRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_FirewallRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetZoneId(val *string) {
+func (j *jsiiProxy_FirewallRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func FirewallRule_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func FirewallRule_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirewallRule_IsConstruct(x interface{}) *bool {
+func FirewallRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirewallRule_IsConstructParameters(x); err != nil {
@@ -573,7 +572,7 @@ func FirewallRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func FirewallRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirewallRule_IsTerraformElement(x interface{}) *bool {
+func FirewallRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirewallRule_IsTerraformElementParameters(x); err != nil {
@@ -592,7 +591,7 @@ func FirewallRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func FirewallRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirewallRule_IsTerraformResource(x interface{}) *bool {
+func FirewallRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirewallRule_IsTerraformResourceParameters(x); err != nil {
@@ -611,7 +610,7 @@ func FirewallRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -636,31 +635,31 @@ func (f *jsiiProxy_FirewallRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirewallRule) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirewallRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (f *jsiiProxy_FirewallRule) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (f *jsiiProxy_FirewallRule) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (f *jsiiProxy_FirewallRule) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (f *jsiiProxy_FirewallRule) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (f *jsiiProxy_FirewallRule) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (f *jsiiProxy_FirewallRule) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (f *jsiiProxy_FirewallRule) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,15 +787,15 @@ func (f *jsiiProxy_FirewallRule) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirewallRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -815,7 +814,7 @@ func (f *jsiiProxy_FirewallRule) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -828,7 +827,7 @@ func (f *jsiiProxy_FirewallRule) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,18 +841,18 @@ func (f *jsiiProxy_FirewallRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirewallRule) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -864,7 +863,7 @@ func (f *jsiiProxy_FirewallRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -875,7 +874,7 @@ func (f *jsiiProxy_FirewallRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,7 +885,7 @@ func (f *jsiiProxy_FirewallRule) PutAction(value *FirewallRuleAction) {
 	_jsii_.InvokeVoid(
 		f,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -897,7 +896,7 @@ func (f *jsiiProxy_FirewallRule) PutFilter(value *FirewallRuleFilter) {
 	_jsii_.InvokeVoid(
 		f,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -909,8 +908,8 @@ func (f *jsiiProxy_FirewallRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirewallRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -922,8 +921,8 @@ func (f *jsiiProxy_FirewallRule) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirewallRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -935,8 +934,8 @@ func (f *jsiiProxy_FirewallRule) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirewallRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -948,8 +947,8 @@ func (f *jsiiProxy_FirewallRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRule) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirewallRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -974,8 +973,8 @@ func (f *jsiiProxy_FirewallRule) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRule) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirewallRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -986,4 +985,3 @@ func (f *jsiiProxy_FirewallRule) ToTerraform() interface{} {
 
 	return returns
 }
-

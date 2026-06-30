@@ -15,15 +15,15 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,15 +50,15 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -71,9 +71,9 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ArgoTieredCaching interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -113,17 +113,17 @@ type ArgoTieredCaching interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ArgoTieredCaching
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ArgoTieredCaching) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoTieredCaching) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArgoTieredCaching) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ArgoTieredCaching) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoTieredCaching) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ArgoTieredCaching) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArgoTieredCaching) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_ArgoTieredCaching) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArgoTieredCaching) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_ArgoTieredCaching) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) ArgoTieredCaching {
 	_init_.Initialize()
@@ -373,7 +372,7 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -386,12 +385,12 @@ func NewArgoTieredCaching_Override(a ArgoTieredCaching, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetConnection(val interface{}) {
+func (j *jsiiProxy_ArgoTieredCaching) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetCount(val interface{}) {
+func (j *jsiiProxy_ArgoTieredCaching) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ArgoTieredCaching) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ArgoTieredCaching) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ArgoTieredCaching) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ArgoTieredCaching) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ArgoTieredCaching) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetValue(val *string) {
+func (j *jsiiProxy_ArgoTieredCaching) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetZoneId(val *string) {
+func (j *jsiiProxy_ArgoTieredCaching) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func ArgoTieredCaching_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func ArgoTieredCaching_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ArgoTieredCaching_IsConstruct(x interface{}) *bool {
+func ArgoTieredCaching_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoTieredCaching_IsConstructParameters(x); err != nil {
@@ -528,7 +527,7 @@ func ArgoTieredCaching_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func ArgoTieredCaching_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ArgoTieredCaching_IsTerraformElement(x interface{}) *bool {
+func ArgoTieredCaching_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoTieredCaching_IsTerraformElementParameters(x); err != nil {
@@ -547,7 +546,7 @@ func ArgoTieredCaching_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func ArgoTieredCaching_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ArgoTieredCaching_IsTerraformResource(x interface{}) *bool {
+func ArgoTieredCaching_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArgoTieredCaching_IsTerraformResourceParameters(x); err != nil {
@@ -566,7 +565,7 @@ func ArgoTieredCaching_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,31 +590,31 @@ func (a *jsiiProxy_ArgoTieredCaching) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ArgoTieredCaching) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ArgoTieredCaching) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (a *jsiiProxy_ArgoTieredCaching) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,15 +742,15 @@ func (a *jsiiProxy_ArgoTieredCaching) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoTieredCaching) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -770,7 +769,7 @@ func (a *jsiiProxy_ArgoTieredCaching) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -783,7 +782,7 @@ func (a *jsiiProxy_ArgoTieredCaching) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,18 +796,18 @@ func (a *jsiiProxy_ArgoTieredCaching) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ArgoTieredCaching) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_ArgoTieredCaching) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -830,7 +829,7 @@ func (a *jsiiProxy_ArgoTieredCaching) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -842,8 +841,8 @@ func (a *jsiiProxy_ArgoTieredCaching) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArgoTieredCaching) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -855,8 +854,8 @@ func (a *jsiiProxy_ArgoTieredCaching) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArgoTieredCaching) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -868,8 +867,8 @@ func (a *jsiiProxy_ArgoTieredCaching) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoTieredCaching) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -881,8 +880,8 @@ func (a *jsiiProxy_ArgoTieredCaching) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoTieredCaching) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -907,8 +906,8 @@ func (a *jsiiProxy_ArgoTieredCaching) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArgoTieredCaching) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -919,4 +918,3 @@ func (a *jsiiProxy_ArgoTieredCaching) ToTerraform() interface{} {
 
 	return returns
 }
-

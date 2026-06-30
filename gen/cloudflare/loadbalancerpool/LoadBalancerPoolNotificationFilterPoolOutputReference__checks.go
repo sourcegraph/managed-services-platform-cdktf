@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetDisableParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetDisableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetHealthyParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetHealthyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterPoolOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewLoadBalancerPoolNotificationFilterPoolOutputReferenceParameters(
 
 	return nil
 }
-

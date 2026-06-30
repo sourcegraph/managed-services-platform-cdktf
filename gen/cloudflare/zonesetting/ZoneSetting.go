@@ -15,23 +15,23 @@ type ZoneSetting interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Editable() cdktf.IResolvable
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,24 +53,24 @@ type ZoneSetting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SettingId() *string
 	SetSettingId(val *string)
 	SettingIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimeRemaining() *float64
-	Value() *map[string]interface{}
-	SetValue(val *map[string]interface{})
-	ValueInput() *map[string]interface{}
+	Value() *map[string]any
+	SetValue(val *map[string]any)
+	ValueInput() *map[string]any
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -78,9 +78,9 @@ type ZoneSetting interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type ZoneSetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type ZoneSetting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type ZoneSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ZoneSetting
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ZoneSetting) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSetting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ZoneSetting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneSetting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ZoneSetting) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSetting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ZoneSetting) Editable() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSetting) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ZoneSetting) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSetting) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_ZoneSetting) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ZoneSetting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_ZoneSetting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSetting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_ZoneSetting) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneSetting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_ZoneSetting) TimeRemaining() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) Value() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneSetting) Value() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"value",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_ZoneSetting) Value() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSetting) ValueInput() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ZoneSetting) ValueInput() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -419,7 +419,6 @@ func (j *jsiiProxy_ZoneSetting) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zone_setting cloudflare_zone_setting} Resource.
 func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingConfig) ZoneSetting {
 	_init_.Initialize()
@@ -431,7 +430,7 @@ func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -444,12 +443,12 @@ func NewZoneSetting_Override(z ZoneSetting, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneSetting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ZoneSetting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetCount(val interface{}) {
+func (j *jsiiProxy_ZoneSetting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ZoneSetting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneSetting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ZoneSetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZoneSetting) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ZoneSetting)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneSetting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ZoneSetting)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneSetting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_ZoneSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneSetting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_ZoneSetting)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneSetting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_ZoneSetting)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetSettingId(val *string) {
+func (j *jsiiProxy_ZoneSetting) SetSettingId(val *string) {
 	if err := j.validateSetSettingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ZoneSetting)SetSettingId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetValue(val *map[string]interface{}) {
+func (j *jsiiProxy_ZoneSetting) SetValue(val *map[string]any) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ZoneSetting)SetValue(val *map[string]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneSetting) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func ZoneSetting_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func ZoneSetting_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ZoneSetting_IsConstruct(x interface{}) *bool {
+func ZoneSetting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneSetting_IsConstructParameters(x); err != nil {
@@ -608,7 +607,7 @@ func ZoneSetting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func ZoneSetting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneSetting_IsTerraformElement(x interface{}) *bool {
+func ZoneSetting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneSetting_IsTerraformElementParameters(x); err != nil {
@@ -627,7 +626,7 @@ func ZoneSetting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func ZoneSetting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ZoneSetting_IsTerraformResource(x interface{}) *bool {
+func ZoneSetting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateZoneSetting_IsTerraformResourceParameters(x); err != nil {
@@ -646,7 +645,7 @@ func ZoneSetting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.zoneSetting.ZoneSetting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -671,31 +670,31 @@ func (z *jsiiProxy_ZoneSetting) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (z *jsiiProxy_ZoneSetting) AddOverride(path *string, value interface{}) {
+func (z *jsiiProxy_ZoneSetting) AddOverride(path *string, value any) {
 	if err := z.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (z *jsiiProxy_ZoneSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (z *jsiiProxy_ZoneSetting) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (z *jsiiProxy_ZoneSetting) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (z *jsiiProxy_ZoneSetting) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (z *jsiiProxy_ZoneSetting) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (z *jsiiProxy_ZoneSetting) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (z *jsiiProxy_ZoneSetting) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (z *jsiiProxy_ZoneSetting) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,15 +822,15 @@ func (z *jsiiProxy_ZoneSetting) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSetting) HasResourceMove() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneSetting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -850,7 +849,7 @@ func (z *jsiiProxy_ZoneSetting) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		z,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -863,7 +862,7 @@ func (z *jsiiProxy_ZoneSetting) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,18 +876,18 @@ func (z *jsiiProxy_ZoneSetting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (z *jsiiProxy_ZoneSetting) MoveTo(moveTarget *string, index interface{}) {
+func (z *jsiiProxy_ZoneSetting) MoveTo(moveTarget *string, index any) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -899,7 +898,7 @@ func (z *jsiiProxy_ZoneSetting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -910,7 +909,7 @@ func (z *jsiiProxy_ZoneSetting) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -930,8 +929,8 @@ func (z *jsiiProxy_ZoneSetting) ResetOverrideLogicalId() {
 	)
 }
 
-func (z *jsiiProxy_ZoneSetting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneSetting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -943,8 +942,8 @@ func (z *jsiiProxy_ZoneSetting) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSetting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (z *jsiiProxy_ZoneSetting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
@@ -956,8 +955,8 @@ func (z *jsiiProxy_ZoneSetting) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSetting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneSetting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -969,8 +968,8 @@ func (z *jsiiProxy_ZoneSetting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSetting) ToMetadata() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneSetting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -995,8 +994,8 @@ func (z *jsiiProxy_ZoneSetting) ToString() *string {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSetting) ToTerraform() interface{} {
-	var returns interface{}
+func (z *jsiiProxy_ZoneSetting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		z,
@@ -1007,4 +1006,3 @@ func (z *jsiiProxy_ZoneSetting) ToTerraform() interface{} {
 
 	return returns
 }
-

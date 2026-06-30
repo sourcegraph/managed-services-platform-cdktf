@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustTunnelCloudflaredConfigConfigIngressListParameters(terr
 
 	return nil
 }
-

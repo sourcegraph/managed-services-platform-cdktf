@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegration_GenerateConfigForImpo
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegration_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegration_IsConstructParameters
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegration_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegration_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareZeroTrustRiskScoringIntegration_IsTerraformDataSource
 	return nil
 }
 
-func validateDataCloudflareZeroTrustRiskScoringIntegration_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZeroTrustRiskScoringIntegration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) validateSetAcc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareZeroTrustRiskScoringIntegrationParameters(scope co
 
 	return nil
 }
-

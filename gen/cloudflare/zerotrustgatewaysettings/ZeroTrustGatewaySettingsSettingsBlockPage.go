@@ -1,6 +1,5 @@
 package zerotrustgatewaysettings
 
-
 type ZeroTrustGatewaySettingsSettingsBlockPage struct {
 	// If mode is customized_block_page: block page background color in #rrggbb format.
 	//
@@ -9,7 +8,7 @@ type ZeroTrustGatewaySettingsSettingsBlockPage struct {
 	// Enable only cipher suites and TLS versions compliant with FIPS 140-2.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// If mode is customized_block_page: block page footer text.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
@@ -21,7 +20,7 @@ type ZeroTrustGatewaySettingsSettingsBlockPage struct {
 	// If mode is redirect_uri: when enabled, context will be appended to target_uri as query parameters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
-	IncludeContext interface{} `field:"optional" json:"includeContext" yaml:"includeContext"`
+	IncludeContext any `field:"optional" json:"includeContext" yaml:"includeContext"`
 	// If mode is customized_block_page: full URL to the logo file.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
@@ -45,10 +44,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPage struct {
 	// If mode is customized_block_page: suppress detailed info at the bottom of the block page.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#suppress_footer ZeroTrustGatewaySettings#suppress_footer}
-	SuppressFooter interface{} `field:"optional" json:"suppressFooter" yaml:"suppressFooter"`
+	SuppressFooter any `field:"optional" json:"suppressFooter" yaml:"suppressFooter"`
 	// If mode is redirect_uri: URI to which the user should be redirected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_settings#target_uri ZeroTrustGatewaySettings#target_uri}
 	TargetUri *string `field:"optional" json:"targetUri" yaml:"targetUri"`
 }
-

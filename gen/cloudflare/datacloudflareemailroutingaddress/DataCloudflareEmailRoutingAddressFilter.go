@@ -1,6 +1,5 @@
 package datacloudflareemailroutingaddress
 
-
 type DataCloudflareEmailRoutingAddressFilter struct {
 	// Sorts results in an ascending or descending order. Available values: "asc", "desc".
 	//
@@ -9,6 +8,5 @@ type DataCloudflareEmailRoutingAddressFilter struct {
 	// Filter by verified destination addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/email_routing_address#verified DataCloudflareEmailRoutingAddress#verified}
-	Verified interface{} `field:"optional" json:"verified" yaml:"verified"`
+	Verified any `field:"optional" json:"verified" yaml:"verified"`
 }
-

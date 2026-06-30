@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationEdgeIpsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationEdgeIpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationEdgeIpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareSpectrumApplicationEdgeIpsOutputReferenceParameter
 
 	return nil
 }
-

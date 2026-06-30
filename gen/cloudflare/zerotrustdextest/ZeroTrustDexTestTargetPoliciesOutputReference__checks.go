@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetIdP
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewZeroTrustDexTestTargetPoliciesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

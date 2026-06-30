@@ -153,7 +153,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewPageRuleActionsCacheKeyFieldsOutputReferenceParameters(terraform
 
 	return nil
 }
-

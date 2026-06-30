@@ -12,9 +12,9 @@ type ApiShieldSchemaSchemaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type ApiShieldSchemaSchemaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ApiShieldSchemaSchemaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_ApiShieldSchemaSchemaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,7 +212,6 @@ func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) ValidationEnabled() cdk
 	return returns
 }
 
-
 func NewApiShieldSchemaSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiShieldSchemaSchemaOutputReference {
 	_init_.Initialize()
 
@@ -223,7 +222,7 @@ func NewApiShieldSchemaSchemaOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -235,12 +234,12 @@ func NewApiShieldSchemaSchemaOutputReference_Override(a ApiShieldSchemaSchemaOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetInternalValue(val *ApiShieldSchemaSchema) {
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) SetInternalValue(val *ApiShieldSchemaSchema) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetInternalValue(val *Ap
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiShieldSchemaSchemaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -308,16 +307,16 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,23 +473,23 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -509,4 +508,3 @@ func (a *jsiiProxy_ApiShieldSchemaSchemaOutputReference) ToString() *string {
 
 	return returns
 }
-

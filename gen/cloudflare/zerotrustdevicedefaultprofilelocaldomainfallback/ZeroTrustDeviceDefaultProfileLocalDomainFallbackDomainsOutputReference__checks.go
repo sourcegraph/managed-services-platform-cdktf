@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutput
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutput
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputRef
 
 	return nil
 }
-

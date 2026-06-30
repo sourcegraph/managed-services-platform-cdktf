@@ -15,9 +15,9 @@ type AccountSettingsOutputReference interface {
 	AbuseContactEmailInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,13 +28,13 @@ type AccountSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnforceTwofactor() interface{}
-	SetEnforceTwofactor(val interface{})
-	EnforceTwofactorInput() interface{}
+	EnforceTwofactor() any
+	SetEnforceTwofactor(val any)
+	EnforceTwofactorInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type AccountSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AccountSettingsOutputReference interface {
 	ResetEnforceTwofactor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_AccountSettingsOutputReference) AbuseContactEmailInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_AccountSettingsOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactor() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactor() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceTwofactor",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactor() interface{
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceTwofactorInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AccountSettingsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
-
 func NewAccountSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountSettingsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAccountSettingsOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.account.AccountSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAccountSettingsOutputReference_Override(a AccountSettingsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.account.AccountSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetAbuseContactEmail(val *string) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetAbuseContactEmail(val *string) {
 	if err := j.validateSetAbuseContactEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetAbuseContactEmail(val *stri
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetEnforceTwofactor(val interface{}) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetEnforceTwofactor(val any) {
 	if err := j.validateSetEnforceTwofactorParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetEnforceTwofactor(val interf
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (a *jsiiProxy_AccountSettingsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccountSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccountSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AccountSettingsOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AccountSettingsOutputReference) ResetEnforceTwofactor() {
 	)
 }
 
-func (a *jsiiProxy_AccountSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AccountSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareEmailRoutingAddresses_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataCloudflareEmailRoutingAddresses_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareEmailRoutingAddresses_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareEmailRoutingAddresses_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataCloudflareEmailRoutingAddresses_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareEmailRoutingAddresses_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareEmailRoutingAddresses_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataCloudflareEmailRoutingAddresses_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareEmailRoutingAddresses_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetAccountIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetMaxItemsParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetVerifiedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareEmailRoutingAddresses) validateSetVerifiedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDataCloudflareEmailRoutingAddressesParameters(scope constructs.C
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetCacheByDeviceTypeParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetCacheByDeviceTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetCacheDeceptionArmorParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetCacheDeceptionArmorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -149,7 +149,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,7 +214,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetIgnoreQueryStringsOrderParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetIgnoreQueryStringsOrderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,7 +234,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewRulesetRulesActionParametersCacheKeyOutputReferenceParameters(te
 
 	return nil
 }
-

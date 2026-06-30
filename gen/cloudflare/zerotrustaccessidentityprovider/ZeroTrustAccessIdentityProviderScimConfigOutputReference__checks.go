@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetSeatDeprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetSeatDeprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetUserDeprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetUserDeprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParamete
 
 	return nil
 }
-

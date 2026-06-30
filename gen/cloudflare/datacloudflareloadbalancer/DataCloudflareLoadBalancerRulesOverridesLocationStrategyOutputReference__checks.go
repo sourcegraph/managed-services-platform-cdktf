@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesLocationStrategyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareLoadBalancerRulesOverridesLocationStrategyOutputRe
 
 	return nil
 }
-

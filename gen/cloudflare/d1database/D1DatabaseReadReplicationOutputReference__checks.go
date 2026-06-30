@@ -98,7 +98,7 @@ func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewD1DatabaseReadReplicationOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

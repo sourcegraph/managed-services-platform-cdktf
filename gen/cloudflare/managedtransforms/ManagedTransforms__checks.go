@@ -19,7 +19,7 @@ func (m *jsiiProxy_ManagedTransforms) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransforms) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_ManagedTransforms) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_ManagedTransforms) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransforms) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_ManagedTransforms) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (m *jsiiProxy_ManagedTransforms) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransforms) validatePutManagedRequestHeadersParameters(value interface{}) error {
+func (m *jsiiProxy_ManagedTransforms) validatePutManagedRequestHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (m *jsiiProxy_ManagedTransforms) validatePutManagedRequestHeadersParameters
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransforms) validatePutManagedResponseHeadersParameters(value interface{}) error {
+func (m *jsiiProxy_ManagedTransforms) validatePutManagedResponseHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateManagedTransforms_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateManagedTransforms_IsConstructParameters(x interface{}) error {
+func validateManagedTransforms_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateManagedTransforms_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateManagedTransforms_IsTerraformElementParameters(x interface{}) error {
+func validateManagedTransforms_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateManagedTransforms_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateManagedTransforms_IsTerraformResourceParameters(x interface{}) error {
+func validateManagedTransforms_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateManagedTransforms_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransforms) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransforms) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_ManagedTransforms) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransforms) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedTransforms) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ManagedTransforms) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ManagedTransforms) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ManagedTransforms) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewManagedTransformsParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

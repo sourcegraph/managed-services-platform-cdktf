@@ -109,7 +109,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetDir
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetEna
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewMagicWanIpsecTunnelHealthCheckOutputReferenceParameters(terrafor
 
 	return nil
 }
-

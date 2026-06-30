@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneMetaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewZoneMetaOutputReferenceParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMagicNetworkMonitoringConfigurationWarpDevicesListParameters(ter
 
 	return nil
 }
-

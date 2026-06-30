@@ -19,17 +19,17 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	CheckDisks() *[]*string
 	SetCheckDisks(val *[]*string)
 	CheckDisksInput() *[]*string
-	CheckPrivateKey() interface{}
-	SetCheckPrivateKey(val interface{})
-	CheckPrivateKeyInput() interface{}
+	CheckPrivateKey() any
+	SetCheckPrivateKey(val any)
+	CheckPrivateKeyInput() any
 	Cn() *string
 	SetCn(val *string)
 	CnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,12 +55,12 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	EidLastSeen() *string
 	SetEidLastSeen(val *string)
 	EidLastSeenInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	Exists() interface{}
-	SetExists(val interface{})
-	ExistsInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	Exists() any
+	SetExists(val any)
+	ExistsInput() any
 	ExtendedKeyUsage() *[]*string
 	SetExtendedKeyUsage(val *[]*string)
 	ExtendedKeyUsageInput() *[]*string
@@ -69,14 +69,14 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Infected() interface{}
-	SetInfected(val interface{})
-	InfectedInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsActive() interface{}
-	SetIsActive(val interface{})
-	IsActiveInput() interface{}
+	Infected() any
+	SetInfected(val any)
+	InfectedInput() any
+	InternalValue() any
+	SetInternalValue(val any)
+	IsActive() any
+	SetIsActive(val any)
+	IsActiveInput() any
 	IssueCount() *string
 	SetIssueCount(val *string)
 	IssueCountInput() *string
@@ -84,7 +84,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	SetLastSeen(val *string)
 	LastSeenInput() *string
 	Locations() ZeroTrustDevicePostureRuleInputLocationsOutputReference
-	LocationsInput() interface{}
+	LocationsInput() any
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
@@ -115,9 +115,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	RequireAll() interface{}
-	SetRequireAll(val interface{})
-	RequireAllInput() interface{}
+	RequireAll() any
+	SetRequireAll(val any)
+	RequireAllInput() any
 	RiskLevel() *string
 	SetRiskLevel(val *string)
 	RiskLevelInput() *string
@@ -162,7 +162,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -227,7 +227,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -300,8 +300,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckDisksInp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckPrivateKey() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckPrivateKey() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"checkPrivateKey",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckPrivateK
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckPrivateKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CheckPrivateKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"checkPrivateKeyInput",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) CnInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) EidLastSeenIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Enabled() int
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) EnabledInput(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Exists() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Exists() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exists",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Exists() inte
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ExistsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ExistsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"existsInput",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Infected() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Infected() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"infected",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Infected() in
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InfectedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InfectedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"infectedInput",
@@ -580,8 +580,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InfectedInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -590,8 +590,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) InternalValue
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IsActive() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IsActive() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isActive",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IsActive() in
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IsActiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) IsActiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isActiveInput",
@@ -660,8 +660,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Locations() Z
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) LocationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) LocationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locationsInput",
@@ -870,8 +870,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) PathInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RequireAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RequireAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAll",
@@ -880,8 +880,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RequireAll() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RequireAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RequireAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAllInput",
@@ -1130,7 +1130,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) VersionOperat
 	return returns
 }
 
-
 func NewZeroTrustDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureRuleInputOutputReference {
 	_init_.Initialize()
 
@@ -1141,7 +1140,7 @@ func NewZeroTrustDevicePostureRuleInputOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -1153,12 +1152,12 @@ func NewZeroTrustDevicePostureRuleInputOutputReference_Override(z ZeroTrustDevic
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetActiveThreats(val *float64) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetActiveThreats(val *float64) {
 	if err := j.validateSetActiveThreatsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetActiveThrea
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCertificateId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetCertificateId(val *string) {
 	if err := j.validateSetCertificateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCertificate
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetCheckDisks(val *[]*string) {
 	if err := j.validateSetCheckDisksParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCheckDisks(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCheckPrivateKey(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetCheckPrivateKey(val any) {
 	if err := j.validateSetCheckPrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCheckPrivat
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCn(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetCn(val *string) {
 	if err := j.validateSetCnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCn(val *str
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplianceStatus(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetComplianceStatus(val *string) {
 	if err := j.validateSetComplianceStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetComplianceS
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetConnectionId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetConnectionI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCountOperator(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetCountOperator(val *string) {
 	if err := j.validateSetCountOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetCountOperat
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetDomain(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetDomain(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetEidLastSeen(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetEidLastSeen(val *string) {
 	if err := j.validateSetEidLastSeenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetEidLastSeen
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1301,7 +1300,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetEnabled(val
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetExists(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetExists(val any) {
 	if err := j.validateSetExistsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1312,7 +1311,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetExists(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetExtendedKeyUsage(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetExtendedKeyUsage(val *[]*string) {
 	if err := j.validateSetExtendedKeyUsageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1323,7 +1322,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetExtendedKey
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1334,7 +1333,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetInfected(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetInfected(val any) {
 	if err := j.validateSetInfectedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1345,7 +1344,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetInfected(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1356,7 +1355,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetIsActive(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetIsActive(val any) {
 	if err := j.validateSetIsActiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -1367,7 +1366,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetIsActive(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetIssueCount(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetIssueCount(val *string) {
 	if err := j.validateSetIssueCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1378,7 +1377,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetIssueCount(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetLastSeen(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetLastSeen(val *string) {
 	if err := j.validateSetLastSeenParameters(val); err != nil {
 		panic(err)
 	}
@@ -1389,7 +1388,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetLastSeen(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetNetworkStatus(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetNetworkStatus(val *string) {
 	if err := j.validateSetNetworkStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1400,7 +1399,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetNetworkStat
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperatingSystem(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOperatingSystem(val *string) {
 	if err := j.validateSetOperatingSystemParameters(val); err != nil {
 		panic(err)
 	}
@@ -1411,7 +1410,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperatingSy
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperationalState(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOperationalState(val *string) {
 	if err := j.validateSetOperationalStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1422,7 +1421,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperational
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperator(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOperator(val *string) {
 	if err := j.validateSetOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1433,7 +1432,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperator(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOs(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1444,7 +1443,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOs(val *str
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsDistroName(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOsDistroName(val *string) {
 	if err := j.validateSetOsDistroNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1455,7 +1454,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsDistroNam
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsDistroRevision(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOsDistroRevision(val *string) {
 	if err := j.validateSetOsDistroRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1466,7 +1465,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsDistroRev
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsVersionExtra(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOsVersionExtra(val *string) {
 	if err := j.validateSetOsVersionExtraParameters(val); err != nil {
 		panic(err)
 	}
@@ -1477,7 +1476,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOsVersionEx
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOverall(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetOverall(val *string) {
 	if err := j.validateSetOverallParameters(val); err != nil {
 		panic(err)
 	}
@@ -1488,7 +1487,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOverall(val
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1499,7 +1498,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetPath(val *s
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRequireAll(val interface{}) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetRequireAll(val any) {
 	if err := j.validateSetRequireAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1510,7 +1509,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRequireAll(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRiskLevel(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetRiskLevel(val *string) {
 	if err := j.validateSetRiskLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1521,7 +1520,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRiskLevel(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScore(val *float64) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetScore(val *float64) {
 	if err := j.validateSetScoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -1532,7 +1531,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScore(val *
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScoreOperator(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetScoreOperator(val *string) {
 	if err := j.validateSetScoreOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1543,7 +1542,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScoreOperat
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSensorConfig(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetSensorConfig(val *string) {
 	if err := j.validateSetSensorConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -1554,7 +1553,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSensorConfi
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSha256(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetSha256(val *string) {
 	if err := j.validateSetSha256Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1565,7 +1564,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSha256(val 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetState(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1576,7 +1575,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetState(val *
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSubjectAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetSubjectAlternativeNames(val *[]*string) {
 	if err := j.validateSetSubjectAlternativeNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1587,7 +1586,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSubjectAlte
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1598,7 +1597,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1609,7 +1608,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetThumbprint(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetThumbprint(val *string) {
 	if err := j.validateSetThumbprintParameters(val); err != nil {
 		panic(err)
 	}
@@ -1620,7 +1619,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetThumbprint(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTotalScore(val *float64) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetTotalScore(val *float64) {
 	if err := j.validateSetTotalScoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -1631,7 +1630,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTotalScore(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1642,7 +1641,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetVersion(val
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetVersionOperator(val *string) {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SetVersionOperator(val *string) {
 	if err := j.validateSetVersionOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1666,16 +1665,16 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1691,7 +1690,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1707,7 +1706,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1723,7 +1722,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1739,7 +1738,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1755,7 +1754,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetNumberList
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1771,7 +1770,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1787,7 +1786,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1803,7 +1802,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1832,7 +1831,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Interpolation
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1846,7 +1845,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) PutLocations(
 	_jsii_.InvokeVoid(
 		z,
 		"putLocations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2178,16 +2177,16 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetVersionO
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -2206,4 +2205,3 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ToString() *s
 
 	return returns
 }
-

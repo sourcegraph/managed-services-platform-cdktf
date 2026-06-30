@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
-		reflect.TypeOf((*HyperdriveConfig)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HyperdriveConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,11 +82,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching",
-		reflect.TypeOf((*HyperdriveConfigCaching)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigCaching](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference",
-		reflect.TypeOf((*HyperdriveConfigCachingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigCachingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HyperdriveConfigCachingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig",
-		reflect.TypeOf((*HyperdriveConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls",
-		reflect.TypeOf((*HyperdriveConfigMtls)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigMtls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtlsOutputReference",
-		reflect.TypeOf((*HyperdriveConfigMtlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigMtlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateId", GoGetter: "CaCertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateIdInput", GoGetter: "CaCertificateIdInput"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HyperdriveConfigMtlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin",
-		reflect.TypeOf((*HyperdriveConfigOrigin)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigOrigin](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
-		reflect.TypeOf((*HyperdriveConfigOriginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HyperdriveConfigOriginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessClientId", GoGetter: "AccessClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessClientIdInput", GoGetter: "AccessClientIdInput"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HyperdriveConfigOriginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

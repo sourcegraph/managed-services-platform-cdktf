@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReferenceP
 
 	return nil
 }
-

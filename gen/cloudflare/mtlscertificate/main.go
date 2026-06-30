@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
-		reflect.TypeOf((*MtlsCertificate)(nil)).Elem(),
+		reflect.TypeFor[MtlsCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadedOn", GoGetter: "UploadedOn"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MtlsCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,6 +80,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificateConfig",
-		reflect.TypeOf((*MtlsCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[MtlsCertificateConfig](),
 	)
 }

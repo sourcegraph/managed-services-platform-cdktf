@@ -1,17 +1,16 @@
 package accountdnssettings
 
-
 type AccountDnsSettingsZoneDefaults struct {
 	// Whether to flatten all CNAME records in the zone.
 	//
 	// Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
-	FlattenAllCnames interface{} `field:"optional" json:"flattenAllCnames" yaml:"flattenAllCnames"`
+	FlattenAllCnames any `field:"optional" json:"flattenAllCnames" yaml:"flattenAllCnames"`
 	// Whether to enable Foundation DNS Advanced Nameservers on the zone.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#foundation_dns AccountDnsSettings#foundation_dns}
-	FoundationDns interface{} `field:"optional" json:"foundationDns" yaml:"foundationDns"`
+	FoundationDns any `field:"optional" json:"foundationDns" yaml:"foundationDns"`
 	// Settings for this internal zone.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
@@ -19,7 +18,7 @@ type AccountDnsSettingsZoneDefaults struct {
 	// Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
-	MultiProvider interface{} `field:"optional" json:"multiProvider" yaml:"multiProvider"`
+	MultiProvider any `field:"optional" json:"multiProvider" yaml:"multiProvider"`
 	// Settings determining the nameservers through which the zone should be available.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
@@ -31,7 +30,7 @@ type AccountDnsSettingsZoneDefaults struct {
 	// Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
-	SecondaryOverrides interface{} `field:"optional" json:"secondaryOverrides" yaml:"secondaryOverrides"`
+	SecondaryOverrides any `field:"optional" json:"secondaryOverrides" yaml:"secondaryOverrides"`
 	// Components of the zone's SOA record.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
@@ -41,4 +40,3 @@ type AccountDnsSettingsZoneDefaults struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
 	ZoneMode *string `field:"optional" json:"zoneMode" yaml:"zoneMode"`
 }
-

@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustAccessPolicyRequireListParameters(terraformResource cdk
 
 	return nil
 }
-

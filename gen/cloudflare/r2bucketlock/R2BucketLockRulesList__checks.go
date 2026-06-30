@@ -34,7 +34,7 @@ func (r *jsiiProxy_R2BucketLockRulesList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_R2BucketLockRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewR2BucketLockRulesListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

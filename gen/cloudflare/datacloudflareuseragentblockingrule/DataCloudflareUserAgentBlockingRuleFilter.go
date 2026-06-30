@@ -1,6 +1,5 @@
 package datacloudflareuseragentblockingrule
 
-
 type DataCloudflareUserAgentBlockingRuleFilter struct {
 	// A string to search for in the description of existing rules.
 	//
@@ -9,10 +8,9 @@ type DataCloudflareUserAgentBlockingRuleFilter struct {
 	// When true, indicates that the rule is currently paused.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/user_agent_blocking_rule#paused DataCloudflareUserAgentBlockingRule#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// A string to search for in the user agent values of existing rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/user_agent_blocking_rule#user_agent DataCloudflareUserAgentBlockingRule#user_agent}
 	UserAgent *string `field:"optional" json:"userAgent" yaml:"userAgent"`
 }
-

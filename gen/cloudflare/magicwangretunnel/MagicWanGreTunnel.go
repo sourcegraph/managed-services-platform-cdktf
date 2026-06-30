@@ -21,15 +21,15 @@ type MagicWanGreTunnel interface {
 	SetCloudflareGreEndpoint(val *string)
 	CloudflareGreEndpointInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	CustomerGreEndpoint() *string
 	SetCustomerGreEndpoint(val *string)
@@ -50,7 +50,7 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HealthCheck() MagicWanGreTunnelHealthCheckOutputReference
-	HealthCheckInput() interface{}
+	HealthCheckInput() any
 	Id() *string
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
@@ -73,15 +73,15 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Ttl() *float64
@@ -91,9 +91,9 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type MagicWanGreTunnel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTtl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MagicWanGreTunnel
@@ -206,8 +206,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) CloudflareGreEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) HealthCheck() MagicWanGreTunnelHealthCheck
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthCheckInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicWanGreTunnel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -526,7 +526,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
@@ -538,7 +537,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetAccountId(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetCloudflareGreEndpoint(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetCloudflareGreEndpoint(val *string) {
 	if err := j.validateSetCloudflareGreEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetCloudflareGreEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetConnection(val interface{}) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetCount(val interface{}) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetCustomerGreEndpoint(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetCustomerGreEndpoint(val *string) {
 	if err := j.validateSetCustomerGreEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetCustomerGreEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetDescription(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetInterfaceAddress(val *string) {
 	if err := j.validateSetInterfaceAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetMtu(val *float64) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetMtu(val *float64) {
 	if err := j.validateSetMtuParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetMtu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetName(val *string) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetTtl(val *float64) {
+func (j *jsiiProxy_MagicWanGreTunnel) SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func MagicWanGreTunnel_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func MagicWanGreTunnel_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MagicWanGreTunnel_IsConstruct(x interface{}) *bool {
+func MagicWanGreTunnel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanGreTunnel_IsConstructParameters(x); err != nil {
@@ -759,7 +758,7 @@ func MagicWanGreTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func MagicWanGreTunnel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicWanGreTunnel_IsTerraformElement(x interface{}) *bool {
+func MagicWanGreTunnel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanGreTunnel_IsTerraformElementParameters(x); err != nil {
@@ -778,7 +777,7 @@ func MagicWanGreTunnel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func MagicWanGreTunnel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicWanGreTunnel_IsTerraformResource(x interface{}) *bool {
+func MagicWanGreTunnel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicWanGreTunnel_IsTerraformResourceParameters(x); err != nil {
@@ -797,7 +796,7 @@ func MagicWanGreTunnel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,31 +821,31 @@ func (m *jsiiProxy_MagicWanGreTunnel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MagicWanGreTunnel) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicWanGreTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,15 +973,15 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1001,7 +1000,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1014,7 +1013,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,18 +1027,18 @@ func (m *jsiiProxy_MagicWanGreTunnel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MagicWanGreTunnel) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHea
 	_jsii_.InvokeVoid(
 		m,
 		"putHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1116,8 +1115,8 @@ func (m *jsiiProxy_MagicWanGreTunnel) ResetTtl() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1129,8 +1128,8 @@ func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1142,8 +1141,8 @@ func (m *jsiiProxy_MagicWanGreTunnel) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1155,8 +1154,8 @@ func (m *jsiiProxy_MagicWanGreTunnel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1181,8 +1180,8 @@ func (m *jsiiProxy_MagicWanGreTunnel) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicWanGreTunnel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1193,4 +1192,3 @@ func (m *jsiiProxy_MagicWanGreTunnel) ToTerraform() interface{} {
 
 	return returns
 }
-

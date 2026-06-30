@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetIsDeletedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetIsDeletedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,4 +298,3 @@ func validateNewDataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReferen
 
 	return nil
 }
-

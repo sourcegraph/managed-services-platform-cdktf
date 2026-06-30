@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareFirewallRulesResultFilterOutputReferenceParameters
 
 	return nil
 }
-

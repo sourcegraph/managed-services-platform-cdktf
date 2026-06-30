@@ -18,11 +18,11 @@ type DataCloudflareLogpushDatasetJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Dataset() *string
 	DatasetId() *string
 	SetDatasetId(val *string)
@@ -64,20 +64,20 @@ type DataCloudflareLogpushDatasetJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,18 +105,18 @@ type DataCloudflareLogpushDatasetJob interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareLogpushDatasetJob
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,7 +474,6 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
 func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetJobConfig) DataCloudflareLogpushDatasetJob {
 	_init_.Initialize()
@@ -486,7 +485,7 @@ func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -499,12 +498,12 @@ func NewDataCloudflareLogpushDatasetJob_Override(d DataCloudflareLogpushDatasetJ
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetDatasetId(val *string) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetDatasetId(val *string) {
 	if err := j.validateSetDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetDatasetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJob)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func DataCloudflareLogpushDatasetJob_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func DataCloudflareLogpushDatasetJob_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareLogpushDatasetJob_IsConstruct(x interface{}) *bool {
+func DataCloudflareLogpushDatasetJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLogpushDatasetJob_IsConstructParameters(x); err != nil {
@@ -630,7 +629,7 @@ func DataCloudflareLogpushDatasetJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func DataCloudflareLogpushDatasetJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareLogpushDatasetJob_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareLogpushDatasetJob_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLogpushDatasetJob_IsTerraformDataSourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func DataCloudflareLogpushDatasetJob_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func DataCloudflareLogpushDatasetJob_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataCloudflareLogpushDatasetJob_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareLogpushDatasetJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLogpushDatasetJob_IsTerraformElementParameters(x); err != nil {
@@ -668,7 +667,7 @@ func DataCloudflareLogpushDatasetJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLogpushDatasetJob.DataCloudflareLogpushDatasetJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,27 +685,27 @@ func DataCloudflareLogpushDatasetJob_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -900,8 +899,8 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ResetZoneId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -913,8 +912,8 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -926,8 +925,8 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -939,8 +938,8 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -965,8 +964,8 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -977,4 +976,3 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetJob) ToTerraform() interface{} {
 
 	return returns
 }
-

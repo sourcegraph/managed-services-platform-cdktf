@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareCustomSslKeylessServerOutputReferenceParameters(te
 
 	return nil
 }
-

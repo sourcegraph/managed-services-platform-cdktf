@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetLogAllParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetLogAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetLogBlocksParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference) validateSetLogBlocksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReferenceParam
 
 	return nil
 }
-

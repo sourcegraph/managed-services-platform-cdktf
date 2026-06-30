@@ -6,9 +6,9 @@ import (
 
 type WaitingRoomConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WaitingRoomConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The host name to which the waiting room will be applied (no wildcards).
 	//
 	// Please do not include the scheme (http:// or https://). The host and path combination must be unique.
@@ -50,7 +50,7 @@ type WaitingRoomConfig struct {
 	// Additional hostname and path combinations to which this waiting room will be applied. There is an implied wildcard at the end of the path. The hostname and path combination must be unique to this and all other waiting rooms.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
-	AdditionalRoutes interface{} `field:"optional" json:"additionalRoutes" yaml:"additionalRoutes"`
+	AdditionalRoutes any `field:"optional" json:"additionalRoutes" yaml:"additionalRoutes"`
 	// Configures cookie attributes for the waiting room cookie.
 	//
 	// This encrypted cookie stores a user's status in the waiting room, such as queue position.
@@ -93,7 +93,7 @@ type WaitingRoomConfig struct {
 	// Disables automatic renewal of session cookies. If `true`, an accepted user will have session_duration minutes to browse the site. After that, they will have to go through the waiting room again. If `false`, a user's session cookie will be automatically renewed on every request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
-	DisableSessionRenewal interface{} `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
+	DisableSessionRenewal any `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
 	// A list of enabled origin commands.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#enabled_origin_commands WaitingRoom#enabled_origin_commands}
@@ -193,7 +193,7 @@ type WaitingRoomConfig struct {
 	// 	}
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
-	JsonResponseEnabled interface{} `field:"optional" json:"jsonResponseEnabled" yaml:"jsonResponseEnabled"`
+	JsonResponseEnabled any `field:"optional" json:"jsonResponseEnabled" yaml:"jsonResponseEnabled"`
 	// Sets the path within the host to enable the waiting room on.
 	//
 	// The waiting room will be enabled for all subpaths as well. If there are two waiting rooms on the same subpath, the waiting room for the most specific path will be chosen. Wildcards and query parameters are not supported.
@@ -205,7 +205,7 @@ type WaitingRoomConfig struct {
 	// No new traffic can get to the route once this field is set and estimated time will become unavailable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
-	QueueAll interface{} `field:"optional" json:"queueAll" yaml:"queueAll"`
+	QueueAll any `field:"optional" json:"queueAll" yaml:"queueAll"`
 	// Sets the queueing method used by the waiting room.
 	//
 	// Changing this parameter from the **default** queueing method is only available for the Waiting Room Advanced subscription. Regardless of the queueing method, if `queue_all` is enabled or an event is prequeueing, users in the waiting room will not be accepted to the origin. These users will always see a waiting room page that refreshes automatically. The valid queueing methods are:
@@ -232,7 +232,7 @@ type WaitingRoomConfig struct {
 	// If set to `true`, the traffic will not go to the waiting room.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#suspended WaitingRoom#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// Which action to take when a bot is detected using Turnstile.
 	//
 	// `log` will
@@ -256,4 +256,3 @@ type WaitingRoomConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/waiting_room#turnstile_mode WaitingRoom#turnstile_mode}
 	TurnstileMode *string `field:"optional" json:"turnstileMode" yaml:"turnstileMode"`
 }
-

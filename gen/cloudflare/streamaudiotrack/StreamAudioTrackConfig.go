@@ -6,9 +6,9 @@ import (
 
 type StreamAudioTrackConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StreamAudioTrackConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
@@ -34,10 +34,9 @@ type StreamAudioTrackConfig struct {
 	// Denotes whether the audio track will be played by default in a player.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_audio_track#default StreamAudioTrack#default}
-	Default interface{} `field:"optional" json:"default" yaml:"default"`
+	Default any `field:"optional" json:"default" yaml:"default"`
 	// A string to uniquely identify the track amongst other audio track labels for the specified video.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/stream_audio_track#label StreamAudioTrack#label}
 	Label *string `field:"optional" json:"label" yaml:"label"`
 }
-

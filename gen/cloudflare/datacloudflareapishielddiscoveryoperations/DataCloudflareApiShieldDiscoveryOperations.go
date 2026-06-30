@@ -15,18 +15,18 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Diff() interface{}
-	SetDiff(val interface{})
-	DiffInput() interface{}
+	Diff() any
+	SetDiff(val any)
+	DiffInput() any
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
@@ -67,7 +67,7 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() DataCloudflareApiShieldDiscoveryOperationsResultList
 	State() *string
 	SetState(val *string)
@@ -75,16 +75,16 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,18 +118,18 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetState()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareApiShieldDiscoveryOperations
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) DependsOn() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Diff() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Diff() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diff",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Diff() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) DiffInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) DiffInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diffInput",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -487,7 +487,6 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ZoneIdInput() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
 func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, id *string, config *DataCloudflareApiShieldDiscoveryOperationsConfig) DataCloudflareApiShieldDiscoveryOperations {
 	_init_.Initialize()
@@ -499,7 +498,7 @@ func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -512,12 +511,12 @@ func NewDataCloudflareApiShieldDiscoveryOperations_Override(d DataCloudflareApiS
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDiff(val interface{}) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetDiff(val any) {
 	if err := j.validateSetDiffParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDiff(val interf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDirection(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetDirection(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetEndpoint(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetEndpoint(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetHost(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetHost(val *[]*string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetHost(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetMaxItems(val *float64) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetMaxItems(val *f
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetMethod(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetMethod(val *[]*string) {
 	if err := j.validateSetMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetMethod(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetOrder(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetOrder(val *string) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetOrder(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetOrigin(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetOrigin(val *string) {
 	if err := j.validateSetOriginParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetOrigin(val *str
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetState(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetState(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func DataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func DataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x interface{}) *bool {
+func DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiShieldDiscoveryOperations_IsConstructParameters(x); err != nil {
@@ -720,7 +719,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSourceParameters(x); err != nil {
@@ -739,7 +738,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x interfac
 }
 
 // Experimental.
-func DataCloudflareApiShieldDiscoveryOperations_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareApiShieldDiscoveryOperations_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiShieldDiscoveryOperations_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,27 +775,27 @@ func DataCloudflareApiShieldDiscoveryOperations_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1038,8 +1037,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ResetState() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1051,8 +1050,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1064,8 +1063,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) SynthesizeHclAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1077,8 +1076,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToHclTerraform() 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1103,8 +1102,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToString() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1115,4 +1114,3 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ToTerraform() int
 
 	return returns
 }
-

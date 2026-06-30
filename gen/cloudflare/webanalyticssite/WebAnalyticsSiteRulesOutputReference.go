@@ -12,9 +12,9 @@ type WebAnalyticsSiteRulesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type WebAnalyticsSiteRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type WebAnalyticsSiteRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_WebAnalyticsSiteRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -223,7 +223,6 @@ func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewWebAnalyticsSiteRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WebAnalyticsSiteRulesOutputReference {
 	_init_.Initialize()
 
@@ -234,7 +233,7 @@ func NewWebAnalyticsSiteRulesOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -246,12 +245,12 @@ func NewWebAnalyticsSiteRulesOutputReference_Override(w WebAnalyticsSiteRulesOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetInternalValue(val *WebAnalyticsSiteRules) {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) SetInternalValue(val *WebAnalyticsSiteRules) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetInternalValue(val *We
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WebAnalyticsSiteRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,16 +318,16 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,23 +484,23 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesOutputReference) ToString() *string {
 
 	return returns
 }
-

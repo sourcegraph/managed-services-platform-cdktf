@@ -12,9 +12,9 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,20 +25,20 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	IdentityUpdateBehavior() *string
 	SetIdentityUpdateBehavior(val *string)
 	IdentityUpdateBehaviorInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ScimBaseUrl() *string
-	SeatDeprovision() interface{}
-	SetSeatDeprovision(val interface{})
-	SeatDeprovisionInput() interface{}
+	SeatDeprovision() any
+	SetSeatDeprovision(val any)
+	SeatDeprovisionInput() any
 	Secret() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -48,13 +48,13 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UserDeprovision() interface{}
-	SetUserDeprovision(val interface{})
-	UserDeprovisionInput() interface{}
+	UserDeprovision() any
+	SetUserDeprovision(val any)
+	UserDeprovisionInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	ResetUserDeprovision()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Ide
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Sci
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SeatDeprovision() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SeatDeprovision() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"seatDeprovision",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Sea
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SeatDeprovisionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SeatDeprovisionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"seatDeprovisionInput",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) UserDeprovision() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) UserDeprovision() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userDeprovision",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Use
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) UserDeprovisionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) UserDeprovisionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userDeprovisionInput",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Use
 	)
 	return returns
 }
-
 
 func NewZeroTrustAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessIdentityProviderScimConfigOutputReference {
 	_init_.Initialize()
@@ -275,7 +274,7 @@ func NewZeroTrustAccessIdentityProviderScimConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewZeroTrustAccessIdentityProviderScimConfigOutputReference_Override(z Zero
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetIdentityUpdateBehavior(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetIdentityUpdateBehavior(val *string) {
 	if err := j.validateSetIdentityUpdateBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetSeatDeprovision(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetSeatDeprovision(val any) {
 	if err := j.validateSetSeatDeprovisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetUserDeprovision(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) SetUserDeprovision(val any) {
 	if err := j.validateSetUserDeprovisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,16 +403,16 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Com
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Get
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Int
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -609,16 +608,16 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -637,4 +636,3 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ToS
 
 	return returns
 }
-

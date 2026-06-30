@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareNotificationPolicyMechanismsPagerdutyOutputReferen
 
 	return nil
 }
-

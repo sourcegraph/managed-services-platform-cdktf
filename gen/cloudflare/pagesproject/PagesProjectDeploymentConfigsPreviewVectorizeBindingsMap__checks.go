@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap) val
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsPreviewVectorizeBindingsMapParamete
 
 	return nil
 }
-

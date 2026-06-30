@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareLeakedCredentialCheckRules_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataCloudflareLeakedCredentialCheckRules_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareLeakedCredentialCheckRules_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareLeakedCredentialCheckRules_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareLeakedCredentialCheckRules_IsTerraformElementParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareLeakedCredentialCheckRulesParameters(scope constru
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type WorkersDeploymentDeploymentsAnnotationsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type WorkersDeploymentDeploymentsAnnotationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type WorkersDeploymentDeploymentsAnnotationsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) Worke
 	return returns
 }
 
-
 func NewWorkersDeploymentDeploymentsAnnotationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersDeploymentDeploymentsAnnotationsOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewWorkersDeploymentDeploymentsAnnotationsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewWorkersDeploymentDeploymentsAnnotationsOutputReference_Override(w Worker
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetInternalValue(val *WorkersDeploymentDeploymentsAnnotations) {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) SetInternalValue(val *WorkersDeploymentDeploymentsAnnotations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) Compu
 	return returns
 }
 
-func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetBo
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetBo
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetLi
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetSt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) GetSt
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) Inter
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsAnnotationsOutputReference) ToStr
 
 	return returns
 }
-

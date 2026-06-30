@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmailSecurityTrustedDomainsBodyListParameters(terraformResource 
 
 	return nil
 }
-

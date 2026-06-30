@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWan",
-		reflect.TypeOf((*MagicTransitSiteWan)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteWan](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag", GoGetter: "VlanTag"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTagInput", GoGetter: "VlanTagInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicTransitSiteWan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanConfig",
-		reflect.TypeOf((*MagicTransitSiteWanConfig)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteWanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressing",
-		reflect.TypeOf((*MagicTransitSiteWanStaticAddressing)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteWanStaticAddressing](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicTransitSiteWan.MagicTransitSiteWanStaticAddressingOutputReference",
-		reflect.TypeOf((*MagicTransitSiteWanStaticAddressingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteWanStaticAddressingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

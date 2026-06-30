@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateInterpol
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validatePutRenamedClassesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validatePutRenamedClassesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validatePutRenam
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validatePutTransferredClassesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validatePutTransferredClassesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -308,4 +308,3 @@ func validateNewWorkersScriptMigrationsStepsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

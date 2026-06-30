@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationOriginDnsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationOriginDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationOriginDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareSpectrumApplicationOriginDnsOutputReferenceParamet
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareByoIpPrefix) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareByoIpPrefix_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataCloudflareByoIpPrefix_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareByoIpPrefix_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareByoIpPrefix_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataCloudflareByoIpPrefix_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareByoIpPrefix_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareByoIpPrefix_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataCloudflareByoIpPrefix_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareByoIpPrefix_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareByoIpPrefixParameters(scope constructs.Construct, 
 
 	return nil
 }
-

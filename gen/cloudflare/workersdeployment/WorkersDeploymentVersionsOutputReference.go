@@ -12,9 +12,9 @@ type WorkersDeploymentVersionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type WorkersDeploymentVersionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Percentage() *float64
 	SetPercentage(val *float64)
 	PercentageInput() *float64
@@ -46,7 +46,7 @@ type WorkersDeploymentVersionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type WorkersDeploymentVersionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_WorkersDeploymentVersionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) VersionIdInput() *s
 	return returns
 }
 
-
 func NewWorkersDeploymentVersionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersDeploymentVersionsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewWorkersDeploymentVersionsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewWorkersDeploymentVersionsOutputReference_Override(w WorkersDeploymentVer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetPercentage(val *float64) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetPercentage(val *float64) {
 	if err := j.validateSetPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetPercentage(val *f
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference)SetVersionId(val *string) {
+func (j *jsiiProxy_WorkersDeploymentVersionsOutputReference) SetVersionId(val *string) {
 	if err := j.validateSetVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (w *jsiiProxy_WorkersDeploymentVersionsOutputReference) ToString() *string 
 
 	return returns
 }
-

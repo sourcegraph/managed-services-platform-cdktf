@@ -10,18 +10,18 @@ import (
 
 type ZeroTrustAccessApplicationCorsHeadersOutputReference interface {
 	cdktf.ComplexObject
-	AllowAllHeaders() interface{}
-	SetAllowAllHeaders(val interface{})
-	AllowAllHeadersInput() interface{}
-	AllowAllMethods() interface{}
-	SetAllowAllMethods(val interface{})
-	AllowAllMethodsInput() interface{}
-	AllowAllOrigins() interface{}
-	SetAllowAllOrigins(val interface{})
-	AllowAllOriginsInput() interface{}
-	AllowCredentials() interface{}
-	SetAllowCredentials(val interface{})
-	AllowCredentialsInput() interface{}
+	AllowAllHeaders() any
+	SetAllowAllHeaders(val any)
+	AllowAllHeadersInput() any
+	AllowAllMethods() any
+	SetAllowAllMethods(val any)
+	AllowAllMethodsInput() any
+	AllowAllOrigins() any
+	SetAllowAllOrigins(val any)
+	AllowAllOriginsInput() any
+	AllowCredentials() any
+	SetAllowCredentials(val any)
+	AllowCredentialsInput() any
 	AllowedHeaders() *[]*string
 	SetAllowedHeaders(val *[]*string)
 	AllowedHeadersInput() *[]*string
@@ -33,9 +33,9 @@ type ZeroTrustAccessApplicationCorsHeadersOutputReference interface {
 	AllowedOriginsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,8 +48,8 @@ type ZeroTrustAccessApplicationCorsHeadersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxAge() *float64
 	SetMaxAge(val *float64)
 	MaxAgeInput() *float64
@@ -64,7 +64,7 @@ type ZeroTrustAccessApplicationCorsHeadersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ZeroTrustAccessApplicationCorsHeadersOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeaders() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeaders() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllHeaders",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllHeadersInput",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethods() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethods() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllMethods",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethodsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethodsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllMethodsInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOrigins() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOrigins() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllOrigins",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOriginsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOriginsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllOriginsInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentials() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentials",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCr
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentialsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentialsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentialsInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Allowed
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Terrafo
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationCorsHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationCorsHeadersOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewZeroTrustAccessApplicationCorsHeadersOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewZeroTrustAccessApplicationCorsHeadersOutputReference_Override(z ZeroTrus
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeadersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowAllHeaders(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowAllHeaders(val any) {
 	if err := j.validateSetAllowAllHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowAllMethods(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowAllMethods(val any) {
 	if err := j.validateSetAllowAllMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowAllOrigins(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowAllOrigins(val any) {
 	if err := j.validateSetAllowAllOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowCredentials(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowCredentials(val any) {
 	if err := j.validateSetAllowCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowedHeaders(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowedHeaders(val *[]*string) {
 	if err := j.validateSetAllowedHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowedMethods(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowedMethods(val *[]*string) {
 	if err := j.validateSetAllowedMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllowedOrigins(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetAllowedOrigins(val *[]*string) {
 	if err := j.validateSetAllowedOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetMaxAge(val *float64) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetMaxAge(val *float64) {
 	if err := j.validateSetMaxAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetMaxAg
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Compute
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetBool
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetBool
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetList
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetNumb
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetStri
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) GetStri
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Interpo
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) ResetMa
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) ToStrin
 
 	return returns
 }
-

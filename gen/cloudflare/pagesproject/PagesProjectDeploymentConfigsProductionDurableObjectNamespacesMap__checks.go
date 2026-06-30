@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespace
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsProductionDurableObjectNamespacesMa
 
 	return nil
 }
-

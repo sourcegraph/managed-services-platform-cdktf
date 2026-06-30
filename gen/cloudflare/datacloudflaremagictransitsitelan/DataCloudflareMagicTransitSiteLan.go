@@ -18,11 +18,11 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,7 +54,7 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoutedSubnets() DataCloudflareMagicTransitSiteLanRoutedSubnetsList
 	SiteId() *string
 	SetSiteId(val *string)
@@ -63,14 +63,14 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VlanTag() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareMagicTransitSiteLan
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -395,7 +395,6 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) VlanTag() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) DataCloudflareMagicTransitSiteLan {
 	_init_.Initialize()
@@ -407,7 +406,7 @@ func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -420,12 +419,12 @@ func NewDataCloudflareMagicTransitSiteLan_Override(d DataCloudflareMagicTransitS
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetLanId(val *string) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetLanId(val *string) {
 	if err := j.validateSetLanIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetLanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan)SetSiteId(val *string) {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) SetSiteId(val *string) {
 	if err := j.validateSetSiteIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func DataCloudflareMagicTransitSiteLan_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func DataCloudflareMagicTransitSiteLan_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareMagicTransitSiteLan_IsConstruct(x interface{}) *bool {
+func DataCloudflareMagicTransitSiteLan_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicTransitSiteLan_IsConstructParameters(x); err != nil {
@@ -551,7 +550,7 @@ func DataCloudflareMagicTransitSiteLan_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func DataCloudflareMagicTransitSiteLan_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareMagicTransitSiteLan_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareMagicTransitSiteLan_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicTransitSiteLan_IsTerraformDataSourceParameters(x); err != nil {
@@ -570,7 +569,7 @@ func DataCloudflareMagicTransitSiteLan_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func DataCloudflareMagicTransitSiteLan_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataCloudflareMagicTransitSiteLan_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareMagicTransitSiteLan_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareMagicTransitSiteLan_IsTerraformElementParameters(x); err != nil {
@@ -589,7 +588,7 @@ func DataCloudflareMagicTransitSiteLan_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitSiteLan.DataCloudflareMagicTransitSiteLan",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,27 +606,27 @@ func DataCloudflareMagicTransitSiteLan_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -818,8 +817,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -831,8 +830,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -844,8 +843,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -882,4 +881,3 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ToTerraform() interface{} 
 
 	return returns
 }
-

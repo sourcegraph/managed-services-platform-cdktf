@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareKeylessCertificateTunnelOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareKeylessCertificateTunnelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareKeylessCertificateTunnelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareKeylessCertificateTunnelOutputReferenceParameters(
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
-		reflect.TypeOf((*RateLimit)(nil)).Elem(),
+		reflect.TypeFor[RateLimit](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimit{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitAction",
-		reflect.TypeOf((*RateLimitAction)(nil)).Elem(),
+		reflect.TypeFor[RateLimitAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
-		reflect.TypeOf((*RateLimitActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,11 +123,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponse",
-		reflect.TypeOf((*RateLimitActionResponse)(nil)).Elem(),
+		reflect.TypeFor[RateLimitActionResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponseOutputReference",
-		reflect.TypeOf((*RateLimitActionResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitActionResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitActionResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitBypass",
-		reflect.TypeOf((*RateLimitBypass)(nil)).Elem(),
+		reflect.TypeFor[RateLimitBypass](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitBypassList",
-		reflect.TypeOf((*RateLimitBypassList)(nil)).Elem(),
+		reflect.TypeFor[RateLimitBypassList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitBypassList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitBypassOutputReference",
-		reflect.TypeOf((*RateLimitBypassOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitBypassOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitBypassOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,19 +224,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitConfig",
-		reflect.TypeOf((*RateLimitConfig)(nil)).Elem(),
+		reflect.TypeFor[RateLimitConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatch",
-		reflect.TypeOf((*RateLimitMatch)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeaders",
-		reflect.TypeOf((*RateLimitMatchHeaders)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeadersList",
-		reflect.TypeOf((*RateLimitMatchHeadersList)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitMatchHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,7 +258,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeadersOutputReference",
-		reflect.TypeOf((*RateLimitMatchHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitMatchHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,7 +299,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchOutputReference",
-		reflect.TypeOf((*RateLimitMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,11 +343,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequest",
-		reflect.TypeOf((*RateLimitMatchRequest)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
-		reflect.TypeOf((*RateLimitMatchRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitMatchRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -388,11 +388,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponse",
-		reflect.TypeOf((*RateLimitMatchResponse)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponseOutputReference",
-		reflect.TypeOf((*RateLimitMatchResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RateLimitMatchResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RateLimitMatchResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

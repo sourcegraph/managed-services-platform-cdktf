@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareApiTokenPermissionGroupsListResultOutputReferenceP
 
 	return nil
 }
-

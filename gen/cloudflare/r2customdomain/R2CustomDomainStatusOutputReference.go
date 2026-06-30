@@ -12,9 +12,9 @@ type R2CustomDomainStatusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type R2CustomDomainStatusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type R2CustomDomainStatusOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_R2CustomDomainStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_R2CustomDomainStatusOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewR2CustomDomainStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) R2CustomDomainStatusOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewR2CustomDomainStatusOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewR2CustomDomainStatusOutputReference_Override(r R2CustomDomainStatusOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetInternalValue(val *R2CustomDomainStatus) {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) SetInternalValue(val *R2CustomDomainStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetInternalValue(val *R2C
 	)
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_R2CustomDomainStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2CustomDomainStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) ToString() *string {
 
 	return returns
 }
-

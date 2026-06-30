@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersMap) val
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersMap) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersMap) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -89,4 +89,3 @@ func validateNewPagesProjectDeploymentConfigsProductionQueueProducersMapParamete
 
 	return nil
 }
-

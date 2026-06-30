@@ -98,7 +98,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetDeviceTypeParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetDeviceTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetGeoParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetGeoParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetLangParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetLangParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewPageRuleActionsCacheKeyFieldsUserOutputReferenceParameters(terra
 
 	return nil
 }
-

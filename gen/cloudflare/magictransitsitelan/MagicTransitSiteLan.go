@@ -18,15 +18,15 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type MagicTransitSiteLan interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HaLink() interface{}
-	SetHaLink(val interface{})
-	HaLinkInput() interface{}
+	HaLink() any
+	SetHaLink(val any)
+	HaLinkInput() any
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -51,7 +51,7 @@ type MagicTransitSiteLan interface {
 	SetName(val *string)
 	NameInput() *string
 	Nat() MagicTransitSiteLanNatOutputReference
-	NatInput() interface{}
+	NatInput() any
 	// The tree node.
 	Node() constructs.Node
 	Physport() *float64
@@ -62,22 +62,22 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoutedSubnets() MagicTransitSiteLanRoutedSubnetsList
-	RoutedSubnetsInput() interface{}
+	RoutedSubnetsInput() any
 	SiteId() *string
 	SetSiteId(val *string)
 	SiteIdInput() *string
 	StaticAddressing() MagicTransitSiteLanStaticAddressingOutputReference
-	StaticAddressingInput() interface{}
+	StaticAddressingInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VlanTag() *float64
@@ -87,9 +87,9 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type MagicTransitSiteLan interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,7 +127,7 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNat(value *MagicTransitSiteLanNat)
-	PutRoutedSubnets(value interface{})
+	PutRoutedSubnets(value any)
 	PutStaticAddressing(value *MagicTransitSiteLanStaticAddressing)
 	ResetHaLink()
 	ResetName()
@@ -138,17 +138,17 @@ type MagicTransitSiteLan interface {
 	ResetRoutedSubnets()
 	ResetStaticAddressing()
 	ResetVlanTag()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MagicTransitSiteLan
@@ -186,8 +186,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) HaLink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) HaLink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"haLink",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) HaLink() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) HaLinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) HaLinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"haLinkInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) Nat() MagicTransitSiteLanNatOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) NatInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) NatInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"natInput",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) RoutedSubnets() MagicTransitSiteLanRoute
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) RoutedSubnetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) RoutedSubnetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"routedSubnetsInput",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) StaticAddressing() MagicTransitSiteLanSt
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) StaticAddressingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) StaticAddressingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticAddressingInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_MagicTransitSiteLan) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MagicTransitSiteLan) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_MagicTransitSiteLan) VlanTagInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) MagicTransitSiteLan {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *Magi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewMagicTransitSiteLan_Override(m MagicTransitSiteLan, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetAccountId(val *string) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetConnection(val interface{}) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetCount(val interface{}) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetHaLink(val interface{}) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetHaLink(val any) {
 	if err := j.validateSetHaLinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetHaLink(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetName(val *string) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetPhysport(val *float64) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetPhysport(val *float64) {
 	if err := j.validateSetPhysportParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetPhysport(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetSiteId(val *string) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetSiteId(val *string) {
 	if err := j.validateSetSiteIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetSiteId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan)SetVlanTag(val *float64) {
+func (j *jsiiProxy_MagicTransitSiteLan) SetVlanTag(val *float64) {
 	if err := j.validateSetVlanTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func MagicTransitSiteLan_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func MagicTransitSiteLan_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MagicTransitSiteLan_IsConstruct(x interface{}) *bool {
+func MagicTransitSiteLan_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSiteLan_IsConstructParameters(x); err != nil {
@@ -717,7 +716,7 @@ func MagicTransitSiteLan_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func MagicTransitSiteLan_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicTransitSiteLan_IsTerraformElement(x interface{}) *bool {
+func MagicTransitSiteLan_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSiteLan_IsTerraformElementParameters(x); err != nil {
@@ -736,7 +735,7 @@ func MagicTransitSiteLan_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func MagicTransitSiteLan_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MagicTransitSiteLan_IsTerraformResource(x interface{}) *bool {
+func MagicTransitSiteLan_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMagicTransitSiteLan_IsTerraformResourceParameters(x); err != nil {
@@ -755,7 +754,7 @@ func MagicTransitSiteLan_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,31 +779,31 @@ func (m *jsiiProxy_MagicTransitSiteLan) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MagicTransitSiteLan) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicTransitSiteLan) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,15 +931,15 @@ func (m *jsiiProxy_MagicTransitSiteLan) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -959,7 +958,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -972,7 +971,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,18 +985,18 @@ func (m *jsiiProxy_MagicTransitSiteLan) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MagicTransitSiteLan) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1030,18 +1029,18 @@ func (m *jsiiProxy_MagicTransitSiteLan) PutNat(value *MagicTransitSiteLanNat) {
 	_jsii_.InvokeVoid(
 		m,
 		"putNat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) PutRoutedSubnets(value interface{}) {
+func (m *jsiiProxy_MagicTransitSiteLan) PutRoutedSubnets(value any) {
 	if err := m.validatePutRoutedSubnetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putRoutedSubnets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (m *jsiiProxy_MagicTransitSiteLan) PutStaticAddressing(value *MagicTransitS
 	_jsii_.InvokeVoid(
 		m,
 		"putStaticAddressing",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,8 +1111,8 @@ func (m *jsiiProxy_MagicTransitSiteLan) ResetVlanTag() {
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1125,8 +1124,8 @@ func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1138,8 +1137,8 @@ func (m *jsiiProxy_MagicTransitSiteLan) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1151,8 +1150,8 @@ func (m *jsiiProxy_MagicTransitSiteLan) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1177,8 +1176,8 @@ func (m *jsiiProxy_MagicTransitSiteLan) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLan) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MagicTransitSiteLan) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1189,4 +1188,3 @@ func (m *jsiiProxy_MagicTransitSiteLan) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
-		reflect.TypeOf((*MagicWanIpsecTunnel)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnel](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanIpsecTunnel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelConfig",
-		reflect.TypeOf((*MagicWanIpsecTunnelConfig)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheck",
-		reflect.TypeOf((*MagicWanIpsecTunnelHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTarget",
-		reflect.TypeOf((*MagicWanIpsecTunnelHealthCheckTarget)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelHealthCheckTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTargetOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelHealthCheckTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelHealthCheckTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanIpsecTunnelHealthCheckTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadata",
-		reflect.TypeOf((*MagicWanIpsecTunnelPskMetadata)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelPskMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelPskMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicWanIpsecTunnelPskMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

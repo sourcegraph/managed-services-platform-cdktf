@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
-		reflect.TypeOf((*Healthcheck)(nil)).Elem(),
+		reflect.TypeFor[Healthcheck](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Healthcheck{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig",
-		reflect.TypeOf((*HealthcheckConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcheckConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig",
-		reflect.TypeOf((*HealthcheckHttpConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcheckHttpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference",
-		reflect.TypeOf((*HealthcheckHttpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcheckHttpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecure", GoGetter: "AllowInsecure"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecureInput", GoGetter: "AllowInsecureInput"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcheckHttpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,11 +171,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig",
-		reflect.TypeOf((*HealthcheckTcpConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcheckTcpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
-		reflect.TypeOf((*HealthcheckTcpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcheckTcpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcheckTcpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

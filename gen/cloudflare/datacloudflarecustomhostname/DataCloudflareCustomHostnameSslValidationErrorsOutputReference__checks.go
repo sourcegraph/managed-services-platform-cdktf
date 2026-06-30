@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameSslValidationErrorsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationErrorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationErrorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareCustomHostnameSslValidationErrorsOutputReferencePa
 
 	return nil
 }
-

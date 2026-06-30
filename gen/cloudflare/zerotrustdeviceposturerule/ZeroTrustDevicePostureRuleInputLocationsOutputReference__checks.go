@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustDevicePostureRuleInputLocationsOutputReferenceParameter
 
 	return nil
 }
-

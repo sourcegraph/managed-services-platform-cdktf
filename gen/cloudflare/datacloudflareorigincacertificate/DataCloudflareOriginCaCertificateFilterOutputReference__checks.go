@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataCloudflareOriginCaCertificateFilterOutputReferenceParameters
 
 	return nil
 }
-

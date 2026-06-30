@@ -1,6 +1,5 @@
 package zerotrustgatewaypolicy
 
-
 type ZeroTrustGatewayPolicyRuleSettingsRedirect struct {
 	// URI to which the user will be redirected.
 	//
@@ -9,10 +8,9 @@ type ZeroTrustGatewayPolicyRuleSettingsRedirect struct {
 	// If true, context information will be passed as query parameters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
-	IncludeContext interface{} `field:"optional" json:"includeContext" yaml:"includeContext"`
+	IncludeContext any `field:"optional" json:"includeContext" yaml:"includeContext"`
 	// If true, the path and query parameters from the original request will be appended to target_uri.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_gateway_policy#preserve_path_and_query ZeroTrustGatewayPolicy#preserve_path_and_query}
-	PreservePathAndQuery interface{} `field:"optional" json:"preservePathAndQuery" yaml:"preservePathAndQuery"`
+	PreservePathAndQuery any `field:"optional" json:"preservePathAndQuery" yaml:"preservePathAndQuery"`
 }
-

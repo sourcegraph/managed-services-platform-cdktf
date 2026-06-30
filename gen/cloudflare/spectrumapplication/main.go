@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
-		reflect.TypeOf((*SpectrumApplication)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpectrumApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationConfig",
-		reflect.TypeOf((*SpectrumApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDns",
-		reflect.TypeOf((*SpectrumApplicationDns)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
-		reflect.TypeOf((*SpectrumApplicationDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpectrumApplicationDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIps",
-		reflect.TypeOf((*SpectrumApplicationEdgeIps)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationEdgeIps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
-		reflect.TypeOf((*SpectrumApplicationEdgeIpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationEdgeIpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpectrumApplicationEdgeIpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDns",
-		reflect.TypeOf((*SpectrumApplicationOriginDns)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationOriginDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference",
-		reflect.TypeOf((*SpectrumApplicationOriginDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpectrumApplicationOriginDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpectrumApplicationOriginDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -109,7 +109,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewZeroTrustDlpCustomProfileEntriesOutputReferenceParameters(terraf
 
 	return nil
 }
-

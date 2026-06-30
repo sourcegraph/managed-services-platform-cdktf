@@ -12,9 +12,9 @@ type FirewallRuleActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,13 +27,13 @@ type FirewallRuleActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	Response() FirewallRuleActionResponseOutputReference
-	ResponseInput() interface{}
+	ResponseInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type FirewallRuleActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type FirewallRuleActionOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_FirewallRuleActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRuleActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRuleActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference) Response() FirewallRuleAct
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference) ResponseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRuleActionOutputReference) ResponseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"responseInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference) TimeoutInput() *float64 {
 	return returns
 }
 
-
 func NewFirewallRuleActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirewallRuleActionOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewFirewallRuleActionOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewFirewallRuleActionOutputReference_Override(f FirewallRuleActionOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_FirewallRuleActionOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_FirewallRuleActionOutputReference)SetTimeout(val *float64) {
+func (j *jsiiProxy_FirewallRuleActionOutputReference) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirewallRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirewallRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) PutResponse(value *Firewal
 	_jsii_.InvokeVoid(
 		f,
 		"putResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) ResetTimeout() {
 	)
 }
 
-func (f *jsiiProxy_FirewallRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirewallRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (f *jsiiProxy_FirewallRuleActionOutputReference) ToString() *string {
 
 	return returns
 }
-

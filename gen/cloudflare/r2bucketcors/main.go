@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors",
-		reflect.TypeOf((*R2BucketCors)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCors](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketCors{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,19 +72,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsConfig",
-		reflect.TypeOf((*R2BucketCorsConfig)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRules",
-		reflect.TypeOf((*R2BucketCorsRules)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowed",
-		reflect.TypeOf((*R2BucketCorsRulesAllowed)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsRulesAllowed](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference",
-		reflect.TypeOf((*R2BucketCorsRulesAllowedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsRulesAllowedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketCorsRulesAllowedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesList",
-		reflect.TypeOf((*R2BucketCorsRulesList)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketCorsRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesOutputReference",
-		reflect.TypeOf((*R2BucketCorsRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[R2BucketCorsRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowed", GoGetter: "Allowed"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedInput", GoGetter: "AllowedInput"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_R2BucketCorsRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

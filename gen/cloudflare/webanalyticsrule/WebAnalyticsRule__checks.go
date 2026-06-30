@@ -19,7 +19,7 @@ func (w *jsiiProxy_WebAnalyticsRule) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WebAnalyticsRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WebAnalyticsRule) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WebAnalyticsRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWebAnalyticsRule_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateWebAnalyticsRule_IsConstructParameters(x interface{}) error {
+func validateWebAnalyticsRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWebAnalyticsRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWebAnalyticsRule_IsTerraformElementParameters(x interface{}) error {
+func validateWebAnalyticsRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWebAnalyticsRule_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateWebAnalyticsRule_IsTerraformResourceParameters(x interface{}) error {
+func validateWebAnalyticsRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetAccountIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WebAnalyticsRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WebAnalyticsRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetHostParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) validateSetInclusiveParameters(val interface{}) error {
+func (j *jsiiProxy_WebAnalyticsRule) validateSetInclusiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,7 +370,7 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetInclusiveParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) validateSetIsPausedParameters(val interface{}) error {
+func (j *jsiiProxy_WebAnalyticsRule) validateSetIsPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,7 +406,7 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetPathsParameters(val *[]*string) 
 	return nil
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WebAnalyticsRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewWebAnalyticsRuleParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

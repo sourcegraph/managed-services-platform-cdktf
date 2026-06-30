@@ -106,7 +106,7 @@ func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetBodyPar
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetContent
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirewallRuleActionResponseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewFirewallRuleActionResponseOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewZeroTrustOrganizationCustomPagesOutputReferenceParameters(terraf
 
 	return nil
 }
-

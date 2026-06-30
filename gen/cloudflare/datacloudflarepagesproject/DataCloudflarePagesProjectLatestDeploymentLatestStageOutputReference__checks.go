@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentLatestStageOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentLatestStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentLatestStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflarePagesProjectLatestDeploymentLatestStageOutputRefer
 
 	return nil
 }
-

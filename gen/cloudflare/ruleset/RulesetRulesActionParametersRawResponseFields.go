@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersRawResponseFields struct {
 	// The name of the field.
 	//
@@ -9,6 +8,5 @@ type RulesetRulesActionParametersRawResponseFields struct {
 	// Whether to log duplicate values of the same header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
-	PreserveDuplicates interface{} `field:"optional" json:"preserveDuplicates" yaml:"preserveDuplicates"`
+	PreserveDuplicates any `field:"optional" json:"preserveDuplicates" yaml:"preserveDuplicates"`
 }
-

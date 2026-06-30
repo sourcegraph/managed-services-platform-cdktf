@@ -12,9 +12,9 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,19 +30,19 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference interface 
 	FriendlyName() *string
 	SetFriendlyName(val *string)
 	FriendlyNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameFormat() *string
 	SetNameFormat(val *string)
 	NameFormatInput() *string
 	NameInput() *string
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	Source() ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference
-	SourceInput() interface{}
+	SourceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference interface 
 	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetFriendlyName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetFriendlyName(val *string) {
 	if err := j.validateSetFriendlyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetNameFormat(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetNameFormat(val *string) {
 	if err := j.validateSetNameFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	_jsii_.InvokeVoid(
 		z,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesOutputRefere
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,19 +27,19 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	Source() ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference
-	SourceInput() interface{}
+	SourceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference interface {
 	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference_Override(z 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	_jsii_.InvokeVoid(
 		z,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference)
 
 	return returns
 }
-

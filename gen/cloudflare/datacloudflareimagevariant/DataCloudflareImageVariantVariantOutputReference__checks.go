@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareImageVariantVariantOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariantVariantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareImageVariantVariantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareImageVariantVariantOutputReferenceParameters(terra
 
 	return nil
 }
-

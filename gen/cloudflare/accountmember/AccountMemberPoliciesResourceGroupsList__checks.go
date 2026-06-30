@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccountMemberPoliciesResourceGroupsListParameters(terraformResou
 
 	return nil
 }
-

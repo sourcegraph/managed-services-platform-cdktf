@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetOmitSourceParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetOmitSourceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetValidationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) validateSetValidationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewDataCloudflareSchemaValidationSchemasFilterOutputReferenceParame
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutCustomCertBundleParameters(value interface{}) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutCustomCertBundleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCertificateAutho
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCloudflareBrandingParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCloudflareBrandingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCloudflareBrandi
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -257,7 +257,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCustomKeyParamet
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -313,7 +313,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetTypeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetWildcardParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetWildcardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -344,4 +344,3 @@ func validateNewCustomHostnameSslOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

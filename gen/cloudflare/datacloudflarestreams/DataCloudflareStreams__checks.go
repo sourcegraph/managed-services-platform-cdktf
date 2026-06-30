@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareStreams) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareStreams) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareStreams_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataCloudflareStreams_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareStreams_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareStreams_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCloudflareStreams_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareStreams_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareStreams_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataCloudflareStreams_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareStreams_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreams) validateSetAscParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreams) validateSetAscParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetAscParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreams) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreams) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetEndParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreams) validateSetIncludeCountsParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreams) validateSetIncludeCountsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,4 +338,3 @@ func validateNewDataCloudflareStreamsParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

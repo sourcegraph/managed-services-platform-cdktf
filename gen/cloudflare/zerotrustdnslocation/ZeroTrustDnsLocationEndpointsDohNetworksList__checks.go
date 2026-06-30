@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDnsLocationEndpointsDohNetworksListParameters(terraform
 
 	return nil
 }
-

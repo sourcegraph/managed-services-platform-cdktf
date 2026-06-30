@@ -12,9 +12,9 @@ type CloudConnectorRulesRulesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,19 +28,19 @@ type CloudConnectorRulesRulesOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Parameters() CloudConnectorRulesRulesParametersOutputReference
-	ParametersInput() interface{}
+	ParametersInput() any
 	Provider() *string
 	SetProvider(val *string)
 	ProviderInput() *string
@@ -55,7 +55,7 @@ type CloudConnectorRulesRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type CloudConnectorRulesRulesOutputReference interface {
 	ResetProvider()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,8 +97,8 @@ type jsiiProxy_CloudConnectorRulesRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) DescriptionInput() *
 	return returns
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Enabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Parameters() CloudCo
 	return returns
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parametersInput",
@@ -277,7 +277,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewCloudConnectorRulesRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudConnectorRulesRulesOutputReference {
 	_init_.Initialize()
 
@@ -288,7 +287,7 @@ func NewCloudConnectorRulesRulesOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -300,12 +299,12 @@ func NewCloudConnectorRulesRulesOutputReference_Override(c CloudConnectorRulesRu
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetExpression(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetProvider(val *string) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetProvider(val *string) {
 	if err := j.validateSetProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetProvider(val *stri
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) PutParameters(value 
 	_jsii_.InvokeVoid(
 		c,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -641,16 +640,16 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetProvider() {
 	)
 }
 
-func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -669,4 +668,3 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ToString() *string {
 
 	return returns
 }
-

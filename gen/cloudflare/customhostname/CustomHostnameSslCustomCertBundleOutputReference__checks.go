@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCustomHostnameSslCustomCertBundleOutputReferenceParameters(terra
 
 	return nil
 }
-

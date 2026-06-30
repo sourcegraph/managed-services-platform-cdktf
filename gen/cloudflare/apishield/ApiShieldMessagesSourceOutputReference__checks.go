@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiShieldMessagesSourceOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldMessagesSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldMessagesSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewApiShieldMessagesSourceOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type WorkersDeploymentVersionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type WorkersDeploymentVersionsList interface {
 	Get(index *float64) WorkersDeploymentVersionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_WorkersDeploymentVersionsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersDeploymentVersionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_WorkersDeploymentVersionsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWorkersDeploymentVersionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkersDeploymentVersionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewWorkersDeploymentVersionsList(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewWorkersDeploymentVersionsList_Override(w WorkersDeploymentVersionsList, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkersDeploymentVersionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsList)SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkersDeploymentVersionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersDeploymentVersionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_WorkersDeploymentVersionsList)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_WorkersDeploymentVersionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkersDeploymentVersionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (w *jsiiProxy_WorkersDeploymentVersionsList) AllWithMapKey(mapKeyAttributeN
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (w *jsiiProxy_WorkersDeploymentVersionsList) Get(index *float64) WorkersDep
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersDeploymentVersionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersDeploymentVersionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (w *jsiiProxy_WorkersDeploymentVersionsList) ToString() *string {
 
 	return returns
 }
-

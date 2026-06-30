@@ -12,9 +12,9 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,19 +28,19 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	Currency() *string
 	SetCurrency(val *string)
 	CurrencyInput() *string
-	ExternallyManaged() interface{}
-	SetExternallyManaged(val interface{})
-	ExternallyManagedInput() interface{}
+	ExternallyManaged() any
+	SetExternallyManaged(val any)
+	ExternallyManagedInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsContract() interface{}
-	SetIsContract(val interface{})
-	IsContractInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsContract() any
+	SetIsContract(val any)
+	IsContractInput() any
 	PublicName() *string
 	SetPublicName(val *string)
 	PublicNameInput() *string
@@ -61,7 +61,7 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AccountSubscriptionRatePlanOutputReference interface {
 	ResetSets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_AccountSubscriptionRatePlanOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) CurrencyInput() *
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManaged() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManaged() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externallyManaged",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManaged
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManagedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ExternallyManagedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externallyManagedInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InternalValue() i
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContract() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContract() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isContract",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContract() inte
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContractInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) IsContractInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isContractInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewAccountSubscriptionRatePlanOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountSubscriptionRatePlanOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewAccountSubscriptionRatePlanOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewAccountSubscriptionRatePlanOutputReference_Override(a AccountSubscriptio
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetCurrency(val *string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetCurrency(val *string) {
 	if err := j.validateSetCurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetCurrency(val *s
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetExternallyManaged(val interface{}) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetExternallyManaged(val any) {
 	if err := j.validateSetExternallyManagedParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetExternallyManag
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetId(val *string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetIsContract(val interface{}) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetIsContract(val any) {
 	if err := j.validateSetIsContractParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetIsContract(val 
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetPublicName(val *string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetPublicName(val *string) {
 	if err := j.validateSetPublicNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetPublicName(val 
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetScope(val *stri
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetSets(val *[]*string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetSets(val *[]*string) {
 	if err := j.validateSetSetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetSets(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ResetSets() {
 	)
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) ToString() *strin
 
 	return returns
 }
-

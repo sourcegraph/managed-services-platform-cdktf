@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRuleFilterOutputReference) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewDataCloudflareUserAgentBlockingRuleFilterOutputReferenceParamete
 
 	return nil
 }
-

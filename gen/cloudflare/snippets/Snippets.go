@@ -15,15 +15,15 @@ type Snippets interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -45,7 +45,7 @@ type Snippets interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Metadata() SnippetsMetadataOutputReference
-	MetadataInput() interface{}
+	MetadataInput() any
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
@@ -54,18 +54,18 @@ type Snippets interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnippetName() *string
 	SetSnippetName(val *string)
 	SnippetNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -75,9 +75,9 @@ type Snippets interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type Snippets interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type Snippets interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type Snippets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Snippets
@@ -148,8 +148,8 @@ func (j *jsiiProxy_Snippets) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Snippets) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_Snippets) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Snippets) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Snippets) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Snippets) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_Snippets) Metadata() SnippetsMetadataOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) MetadataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Snippets) MetadataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"metadataInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_Snippets) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Snippets) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_Snippets) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Snippets) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Snippets) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Snippets) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_Snippets) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets} Resource.
 func NewSnippets(scope constructs.Construct, id *string, config *SnippetsConfig) Snippets {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewSnippets(scope constructs.Construct, id *string, config *SnippetsConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewSnippets_Override(s Snippets, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetConnection(val interface{}) {
+func (j *jsiiProxy_Snippets) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_Snippets)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetCount(val interface{}) {
+func (j *jsiiProxy_Snippets) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_Snippets)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Snippets) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_Snippets)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetFiles(val *string) {
+func (j *jsiiProxy_Snippets) SetFiles(val *string) {
 	if err := j.validateSetFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_Snippets)SetFiles(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Snippets) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_Snippets)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Snippets) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_Snippets)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Snippets) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_Snippets)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Snippets) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_Snippets)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetSnippetName(val *string) {
+func (j *jsiiProxy_Snippets) SetSnippetName(val *string) {
 	if err := j.validateSetSnippetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_Snippets)SetSnippetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetZoneId(val *string) {
+func (j *jsiiProxy_Snippets) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func Snippets_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func Snippets_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Snippets_IsConstruct(x interface{}) *bool {
+func Snippets_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnippets_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func Snippets_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func Snippets_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Snippets_IsTerraformElement(x interface{}) *bool {
+func Snippets_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnippets_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func Snippets_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func Snippets_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Snippets_IsTerraformResource(x interface{}) *bool {
+func Snippets_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnippets_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func Snippets_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.snippets.Snippets",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (s *jsiiProxy_Snippets) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Snippets) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Snippets) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Snippets) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Snippets) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (s *jsiiProxy_Snippets) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (s *jsiiProxy_Snippets) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (s *jsiiProxy_Snippets) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (s *jsiiProxy_Snippets) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (s *jsiiProxy_Snippets) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (s *jsiiProxy_Snippets) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (s *jsiiProxy_Snippets) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (s *jsiiProxy_Snippets) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Snippets) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Snippets) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -818,7 +817,7 @@ func (s *jsiiProxy_Snippets) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (s *jsiiProxy_Snippets) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (s *jsiiProxy_Snippets) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Snippets) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Snippets) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_Snippets) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (s *jsiiProxy_Snippets) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -889,7 +888,7 @@ func (s *jsiiProxy_Snippets) PutMetadata(value *SnippetsMetadata) {
 	_jsii_.InvokeVoid(
 		s,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -917,8 +916,8 @@ func (s *jsiiProxy_Snippets) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_Snippets) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Snippets) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -930,8 +929,8 @@ func (s *jsiiProxy_Snippets) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Snippets) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Snippets) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -943,8 +942,8 @@ func (s *jsiiProxy_Snippets) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Snippets) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Snippets) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -956,8 +955,8 @@ func (s *jsiiProxy_Snippets) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Snippets) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Snippets) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -982,8 +981,8 @@ func (s *jsiiProxy_Snippets) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Snippets) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Snippets) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -994,4 +993,3 @@ func (s *jsiiProxy_Snippets) ToTerraform() interface{} {
 
 	return returns
 }
-

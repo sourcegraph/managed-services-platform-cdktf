@@ -19,7 +19,7 @@ func (b *jsiiProxy_BotManagement) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (b *jsiiProxy_BotManagement) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BotManagement) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BotManagement) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (b *jsiiProxy_BotManagement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BotManagement) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBotManagement_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateBotManagement_IsConstructParameters(x interface{}) error {
+func validateBotManagement_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBotManagement_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBotManagement_IsTerraformElementParameters(x interface{}) error {
+func validateBotManagement_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBotManagement_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateBotManagement_IsTerraformResourceParameters(x interface{}) error {
+func validateBotManagement_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_BotManagement) validateSetAiBotsProtectionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -305,7 +305,7 @@ func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -370,7 +370,7 @@ func (j *jsiiProxy_BotManagement) validateSetCrawlerProtectionParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetEnableJsParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetEnableJsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (j *jsiiProxy_BotManagement) validateSetEnableJsParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,7 +418,7 @@ func (j *jsiiProxy_BotManagement) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetOptimizeWordpressParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetOptimizeWordpressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -438,7 +438,7 @@ func (j *jsiiProxy_BotManagement) validateSetOptimizeWordpressParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,7 +500,7 @@ func (j *jsiiProxy_BotManagement) validateSetSbfmLikelyAutomatedParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetSbfmStaticResourceProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetSbfmStaticResourceProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -528,7 +528,7 @@ func (j *jsiiProxy_BotManagement) validateSetSbfmVerifiedBotsParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetSuppressSessionScoreParameters(val interface{}) error {
+func (j *jsiiProxy_BotManagement) validateSetSuppressSessionScoreParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -574,4 +574,3 @@ func validateNewBotManagementParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

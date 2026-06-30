@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkersScriptMigrationsStepsRenamedClassesOutputReferenceParamet
 
 	return nil
 }
-

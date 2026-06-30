@@ -18,11 +18,11 @@ type DataCloudflareImageVariant interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,11 +46,11 @@ type DataCloudflareImageVariant interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Variant() DataCloudflareImageVariantVariantOutputReference
@@ -58,9 +58,9 @@ type DataCloudflareImageVariant interface {
 	SetVariantId(val *string)
 	VariantIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,18 +85,18 @@ type DataCloudflareImageVariant interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareImageVariant
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataCloudflareImageVariant) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareImageVariant) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataCloudflareImageVariant) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareImageVariant) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_DataCloudflareImageVariant) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareImageVariant) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataCloudflareImageVariant) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareImageVariant) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_DataCloudflareImageVariant) VariantIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
 func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, config *DataCloudflareImageVariantConfig) DataCloudflareImageVariant {
 	_init_.Initialize()
@@ -306,7 +305,7 @@ func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -319,12 +318,12 @@ func NewDataCloudflareImageVariant_Override(d DataCloudflareImageVariant, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -354,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImageVariant)SetVariantId(val *string) {
+func (j *jsiiProxy_DataCloudflareImageVariant) SetVariantId(val *string) {
 	if err := j.validateSetVariantIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func DataCloudflareImageVariant_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func DataCloudflareImageVariant_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareImageVariant_IsConstruct(x interface{}) *bool {
+func DataCloudflareImageVariant_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareImageVariant_IsConstructParameters(x); err != nil {
@@ -439,7 +438,7 @@ func DataCloudflareImageVariant_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func DataCloudflareImageVariant_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareImageVariant_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareImageVariant_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareImageVariant_IsTerraformDataSourceParameters(x); err != nil {
@@ -458,7 +457,7 @@ func DataCloudflareImageVariant_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func DataCloudflareImageVariant_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareImageVariant_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareImageVariant_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareImageVariant_IsTerraformElementParameters(x); err != nil {
@@ -477,7 +476,7 @@ func DataCloudflareImageVariant_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -495,27 +494,27 @@ func DataCloudflareImageVariant_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareImageVariant) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareImageVariant) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataCloudflareImageVariant) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -685,8 +684,8 @@ func (d *jsiiProxy_DataCloudflareImageVariant) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -698,8 +697,8 @@ func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -711,8 +710,8 @@ func (d *jsiiProxy_DataCloudflareImageVariant) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareImageVariant) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -724,8 +723,8 @@ func (d *jsiiProxy_DataCloudflareImageVariant) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareImageVariant) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataCloudflareImageVariant) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImageVariant) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareImageVariant) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -762,4 +761,3 @@ func (d *jsiiProxy_DataCloudflareImageVariant) ToTerraform() interface{} {
 
 	return returns
 }
-

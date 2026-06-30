@@ -34,7 +34,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsListParam
 
 	return nil
 }
-

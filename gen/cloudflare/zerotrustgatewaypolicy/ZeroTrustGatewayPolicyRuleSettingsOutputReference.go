@@ -13,31 +13,31 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	AddHeaders() *map[string]*string
 	SetAddHeaders(val *map[string]*string)
 	AddHeadersInput() *map[string]*string
-	AllowChildBypass() interface{}
-	SetAllowChildBypass(val interface{})
-	AllowChildBypassInput() interface{}
+	AllowChildBypass() any
+	SetAllowChildBypass(val any)
+	AllowChildBypassInput() any
 	AuditSsh() ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
-	AuditSshInput() interface{}
+	AuditSshInput() any
 	BisoAdminControls() ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
-	BisoAdminControlsInput() interface{}
+	BisoAdminControlsInput() any
 	BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
-	BlockPageEnabled() interface{}
-	SetBlockPageEnabled(val interface{})
-	BlockPageEnabledInput() interface{}
-	BlockPageInput() interface{}
+	BlockPageEnabled() any
+	SetBlockPageEnabled(val any)
+	BlockPageEnabledInput() any
+	BlockPageInput() any
 	BlockReason() *string
 	SetBlockReason(val *string)
 	BlockReasonInput() *string
-	BypassParentRule() interface{}
-	SetBypassParentRule(val interface{})
-	BypassParentRuleInput() interface{}
+	BypassParentRule() any
+	SetBypassParentRule(val any)
+	BypassParentRuleInput() any
 	CheckSession() ZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
-	CheckSessionInput() interface{}
+	CheckSessionInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,29 +49,29 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DnsResolvers() ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
-	DnsResolversInput() interface{}
+	DnsResolversInput() any
 	Egress() ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
-	EgressInput() interface{}
+	EgressInput() any
 	// Experimental.
 	Fqn() *string
-	IgnoreCnameCategoryMatches() interface{}
-	SetIgnoreCnameCategoryMatches(val interface{})
-	IgnoreCnameCategoryMatchesInput() interface{}
-	InsecureDisableDnssecValidation() interface{}
-	SetInsecureDisableDnssecValidation(val interface{})
-	InsecureDisableDnssecValidationInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IpCategories() interface{}
-	SetIpCategories(val interface{})
-	IpCategoriesInput() interface{}
-	IpIndicatorFeeds() interface{}
-	SetIpIndicatorFeeds(val interface{})
-	IpIndicatorFeedsInput() interface{}
+	IgnoreCnameCategoryMatches() any
+	SetIgnoreCnameCategoryMatches(val any)
+	IgnoreCnameCategoryMatchesInput() any
+	InsecureDisableDnssecValidation() any
+	SetInsecureDisableDnssecValidation(val any)
+	InsecureDisableDnssecValidationInput() any
+	InternalValue() any
+	SetInternalValue(val any)
+	IpCategories() any
+	SetIpCategories(val any)
+	IpCategoriesInput() any
+	IpIndicatorFeeds() any
+	SetIpIndicatorFeeds(val any)
+	IpIndicatorFeedsInput() any
 	L4Override() ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference
-	L4OverrideInput() interface{}
+	L4OverrideInput() any
 	NotificationSettings() ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference
-	NotificationSettingsInput() interface{}
+	NotificationSettingsInput() any
 	OverrideHost() *string
 	SetOverrideHost(val *string)
 	OverrideHostInput() *string
@@ -79,16 +79,16 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	SetOverrideIps(val *[]*string)
 	OverrideIpsInput() *[]*string
 	PayloadLog() ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference
-	PayloadLogInput() interface{}
+	PayloadLogInput() any
 	Quarantine() ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference
-	QuarantineInput() interface{}
+	QuarantineInput() any
 	Redirect() ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
-	RedirectInput() interface{}
+	RedirectInput() any
 	ResolveDnsInternally() ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
-	ResolveDnsInternallyInput() interface{}
-	ResolveDnsThroughCloudflare() interface{}
-	SetResolveDnsThroughCloudflare(val interface{})
-	ResolveDnsThroughCloudflareInput() interface{}
+	ResolveDnsInternallyInput() any
+	ResolveDnsThroughCloudflare() any
+	SetResolveDnsThroughCloudflare(val any)
+	ResolveDnsThroughCloudflareInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -98,11 +98,11 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UntrustedCert() ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference
-	UntrustedCertInput() interface{}
+	UntrustedCertInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -163,7 +163,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypass() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypass() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowChildBypass",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChild
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypassInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypassInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowChildBypassInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSsh()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSshInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSshInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"auditSshInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminC
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminControlsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminControlsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bisoAdminControlsInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPage(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPageEnabled",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageE
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPageEnabledInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageE
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPageInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockReaso
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRule() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRule() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassParentRule",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassPare
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassParentRuleInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"checkSessionInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CheckSessi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolve
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolversInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DnsResolversInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dnsResolversInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Egress() Z
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egressInput",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatches() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatches() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreCnameCategoryMatches",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnam
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatchesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatchesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreCnameCategoryMatchesInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnam
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureDisableDnssecValidation",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureDisableDnssecValidationInput",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDi
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategories() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategories() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipCategories",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategori
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipCategoriesInput",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategori
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeeds() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeeds() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipIndicatorFeeds",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicato
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeedsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeedsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipIndicatorFeedsInput",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4Override
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4OverrideInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) L4OverrideInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"l4OverrideInput",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Notificati
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) NotificationSettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) NotificationSettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationSettingsInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLog
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLogInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLogInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Quarantine
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) QuarantineInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) QuarantineInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"quarantineInput",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Redirect()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) RedirectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) RedirectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"redirectInput",
@@ -676,8 +676,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDns
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternallyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternallyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resolveDnsInternallyInput",
@@ -686,8 +686,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDns
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflare() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflare() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resolveDnsThroughCloudflare",
@@ -696,8 +696,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDns
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflareInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflareInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resolveDnsThroughCloudflareInput",
@@ -736,8 +736,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedC
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedCertInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedCertInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"untrustedCertInput",
@@ -745,7 +745,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedC
 	)
 	return returns
 }
-
 
 func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsOutputReference {
 	_init_.Initialize()
@@ -757,7 +756,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -769,12 +768,12 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(z ZeroTrustGa
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeaders(val *map[string]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetAddHeaders(val *map[string]*string) {
 	if err := j.validateSetAddHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeade
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAllowChildBypass(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetAllowChildBypass(val any) {
 	if err := j.validateSetAllowChildBypassParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAllowChi
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockPageEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetBlockPageEnabled(val any) {
 	if err := j.validateSetBlockPageEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockPag
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockReason(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetBlockReason(val *string) {
 	if err := j.validateSetBlockReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBlockRea
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBypassParentRule(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetBypassParentRule(val any) {
 	if err := j.validateSetBypassParentRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetBypassPa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIgnoreCnameCategoryMatches(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetIgnoreCnameCategoryMatches(val any) {
 	if err := j.validateSetIgnoreCnameCategoryMatchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIgnoreCn
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInsecureDisableDnssecValidation(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetInsecureDisableDnssecValidation(val any) {
 	if err := j.validateSetInsecureDisableDnssecValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInsecure
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpCategories(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetIpCategories(val any) {
 	if err := j.validateSetIpCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpCatego
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpIndicatorFeeds(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetIpIndicatorFeeds(val any) {
 	if err := j.validateSetIpIndicatorFeedsParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIpIndica
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetOverrideHost(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetOverrideHost(val *string) {
 	if err := j.validateSetOverrideHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,7 +916,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetOverride
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetOverrideIps(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetOverrideIps(val *[]*string) {
 	if err := j.validateSetOverrideIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetOverride
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetResolveDnsThroughCloudflare(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetResolveDnsThroughCloudflare(val any) {
 	if err := j.validateSetResolveDnsThroughCloudflareParameters(val); err != nil {
 		panic(err)
 	}
@@ -939,7 +938,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetResolveD
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -950,7 +949,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -974,16 +973,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ComputeFqn
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,7 +1078,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1095,7 +1094,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetStringA
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetStringM
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Interpolat
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1154,7 +1153,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutAuditSs
 	_jsii_.InvokeVoid(
 		z,
 		"putAuditSsh",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBisoAdm
 	_jsii_.InvokeVoid(
 		z,
 		"putBisoAdminControls",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1176,7 +1175,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBlockPa
 	_jsii_.InvokeVoid(
 		z,
 		"putBlockPage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1187,7 +1186,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutCheckSe
 	_jsii_.InvokeVoid(
 		z,
 		"putCheckSession",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1198,7 +1197,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutDnsReso
 	_jsii_.InvokeVoid(
 		z,
 		"putDnsResolvers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,7 +1208,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutEgress(
 	_jsii_.InvokeVoid(
 		z,
 		"putEgress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1220,7 +1219,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutL4Overr
 	_jsii_.InvokeVoid(
 		z,
 		"putL4Override",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1231,7 +1230,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutNotific
 	_jsii_.InvokeVoid(
 		z,
 		"putNotificationSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1242,7 +1241,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutPayload
 	_jsii_.InvokeVoid(
 		z,
 		"putPayloadLog",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1253,7 +1252,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutQuarant
 	_jsii_.InvokeVoid(
 		z,
 		"putQuarantine",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1264,7 +1263,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutRedirec
 	_jsii_.InvokeVoid(
 		z,
 		"putRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,7 +1274,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutResolve
 	_jsii_.InvokeVoid(
 		z,
 		"putResolveDnsInternally",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1286,7 +1285,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutUntrust
 	_jsii_.InvokeVoid(
 		z,
 		"putUntrustedCert",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1490,16 +1489,16 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetUntru
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1518,4 +1517,3 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ToString()
 
 	return returns
 }
-

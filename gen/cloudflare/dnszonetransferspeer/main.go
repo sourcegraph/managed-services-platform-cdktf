@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer",
-		reflect.TypeOf((*DnsZoneTransfersPeer)(nil)).Elem(),
+		reflect.TypeFor[DnsZoneTransfersPeer](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tsigId", GoGetter: "TsigId"},
 			_jsii_.MemberProperty{JsiiProperty: "tsigIdInput", GoGetter: "TsigIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsZoneTransfersPeer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeerConfig",
-		reflect.TypeOf((*DnsZoneTransfersPeerConfig)(nil)).Elem(),
+		reflect.TypeFor[DnsZoneTransfersPeerConfig](),
 	)
 }

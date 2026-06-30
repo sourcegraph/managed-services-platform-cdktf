@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareWorkersCronTriggerSchedulesOutputReferenceParamete
 
 	return nil
 }
-

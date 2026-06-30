@@ -12,9 +12,9 @@ type ZoneSubscriptionRatePlanOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,19 +28,19 @@ type ZoneSubscriptionRatePlanOutputReference interface {
 	Currency() *string
 	SetCurrency(val *string)
 	CurrencyInput() *string
-	ExternallyManaged() interface{}
-	SetExternallyManaged(val interface{})
-	ExternallyManagedInput() interface{}
+	ExternallyManaged() any
+	SetExternallyManaged(val any)
+	ExternallyManagedInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsContract() interface{}
-	SetIsContract(val interface{})
-	IsContractInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsContract() any
+	SetIsContract(val any)
+	IsContractInput() any
 	PublicName() *string
 	SetPublicName(val *string)
 	PublicNameInput() *string
@@ -61,7 +61,7 @@ type ZoneSubscriptionRatePlanOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ZoneSubscriptionRatePlanOutputReference interface {
 	ResetSets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_ZoneSubscriptionRatePlanOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) CurrencyInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ExternallyManaged() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ExternallyManaged() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externallyManaged",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ExternallyManaged() 
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ExternallyManagedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ExternallyManagedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externallyManagedInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) InternalValue() inte
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IsContract() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IsContract() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isContract",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IsContract() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IsContractInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) IsContractInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isContractInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewZoneSubscriptionRatePlanOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSubscriptionRatePlanOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewZoneSubscriptionRatePlanOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewZoneSubscriptionRatePlanOutputReference_Override(z ZoneSubscriptionRateP
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetCurrency(val *string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetCurrency(val *string) {
 	if err := j.validateSetCurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetCurrency(val *stri
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetExternallyManaged(val interface{}) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetExternallyManaged(val any) {
 	if err := j.validateSetExternallyManagedParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetExternallyManaged(
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetIsContract(val interface{}) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetIsContract(val any) {
 	if err := j.validateSetIsContractParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetIsContract(val int
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetPublicName(val *string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetPublicName(val *string) {
 	if err := j.validateSetPublicNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetPublicName(val *st
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetScope(val *string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetScope(val *string)
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetSets(val *[]*string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetSets(val *[]*string) {
 	if err := j.validateSetSetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetSets(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ResetSets() {
 	)
 }
 
-func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (z *jsiiProxy_ZoneSubscriptionRatePlanOutputReference) ToString() *string {
 
 	return returns
 }
-

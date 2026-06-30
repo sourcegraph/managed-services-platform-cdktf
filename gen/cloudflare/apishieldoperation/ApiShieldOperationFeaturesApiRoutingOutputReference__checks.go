@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiShieldOperationFeaturesApiRoutingOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldOperationFeaturesApiRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldOperationFeaturesApiRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewApiShieldOperationFeaturesApiRoutingOutputReferenceParameters(te
 
 	return nil
 }
-

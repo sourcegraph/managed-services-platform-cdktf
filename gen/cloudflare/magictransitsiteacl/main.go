@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAcl",
-		reflect.TypeOf((*MagicTransitSiteAcl)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAcl](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unidirectional", GoGetter: "Unidirectional"},
 			_jsii_.MemberProperty{JsiiProperty: "unidirectionalInput", GoGetter: "UnidirectionalInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicTransitSiteAcl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclConfig",
-		reflect.TypeOf((*MagicTransitSiteAclConfig)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAclConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan1",
-		reflect.TypeOf((*MagicTransitSiteAclLan1)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAclLan1](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan1OutputReference",
-		reflect.TypeOf((*MagicTransitSiteAclLan1OutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAclLan1OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicTransitSiteAclLan1OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan2",
-		reflect.TypeOf((*MagicTransitSiteAclLan2)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAclLan2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan2OutputReference",
-		reflect.TypeOf((*MagicTransitSiteAclLan2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[MagicTransitSiteAclLan2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MagicTransitSiteAclLan2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

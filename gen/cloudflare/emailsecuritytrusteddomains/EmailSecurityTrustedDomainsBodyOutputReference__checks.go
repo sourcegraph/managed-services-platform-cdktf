@@ -106,7 +106,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsRecentParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIs
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsRegexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIs
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsSimilarityParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateSetIsSimilarityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,4 +298,3 @@ func validateNewEmailSecurityTrustedDomainsBodyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareR2BucketSippySourceOutputReferenceParameters(terra
 
 	return nil
 }
-

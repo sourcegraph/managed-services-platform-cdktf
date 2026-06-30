@@ -1,6 +1,5 @@
 package datacloudflarezerotrusttunnelcloudflaredvirtualnetwork
 
-
 type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter struct {
 	// UUID of the virtual network.
 	//
@@ -14,16 +13,15 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter struct {
 	// If `false`, exclude the default virtual network. If empty, all virtual networks will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network#is_default DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork#is_default}
-	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
+	IsDefault any `field:"optional" json:"isDefault" yaml:"isDefault"`
 	// If `true`, only include deleted virtual networks.
 	//
 	// If `false`, exclude deleted virtual networks. If empty, all virtual networks will be included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network#is_deleted DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork#is_deleted}
-	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
+	IsDeleted any `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// A user-friendly name for the virtual network.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network#name DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

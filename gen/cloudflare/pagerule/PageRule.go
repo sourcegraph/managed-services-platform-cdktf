@@ -13,19 +13,19 @@ import (
 type PageRule interface {
 	cdktf.TerraformResource
 	Actions() PageRuleActionsOutputReference
-	ActionsInput() interface{}
+	ActionsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,11 +55,11 @@ type PageRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -69,7 +69,7 @@ type PageRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -79,9 +79,9 @@ type PageRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type PageRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type PageRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type PageRule interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PageRule
@@ -152,8 +152,8 @@ func (j *jsiiProxy_PageRule) Actions() PageRuleActionsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) ActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRule) ActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_PageRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PageRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_PageRule) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_PageRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PageRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_PageRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_PageRule) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -432,7 +432,6 @@ func (j *jsiiProxy_PageRule) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig) PageRule {
 	_init_.Initialize()
@@ -444,7 +443,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_PageRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_PageRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetCount(val interface{}) {
+func (j *jsiiProxy_PageRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_PageRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PageRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_PageRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PageRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +499,7 @@ func (j *jsiiProxy_PageRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PageRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_PageRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetPriority(val *float64) {
+func (j *jsiiProxy_PageRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_PageRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PageRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_PageRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PageRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_PageRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetStatus(val *string) {
+func (j *jsiiProxy_PageRule) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_PageRule)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetTarget(val *string) {
+func (j *jsiiProxy_PageRule) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_PageRule)SetTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRule)SetZoneId(val *string) {
+func (j *jsiiProxy_PageRule) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func PageRule_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func PageRule_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PageRule_IsConstruct(x interface{}) *bool {
+func PageRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageRule_IsConstructParameters(x); err != nil {
@@ -621,7 +620,7 @@ func PageRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func PageRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PageRule_IsTerraformElement(x interface{}) *bool {
+func PageRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageRule_IsTerraformElementParameters(x); err != nil {
@@ -640,7 +639,7 @@ func PageRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func PageRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PageRule_IsTerraformResource(x interface{}) *bool {
+func PageRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePageRule_IsTerraformResourceParameters(x); err != nil {
@@ -659,7 +658,7 @@ func PageRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,31 +683,31 @@ func (p *jsiiProxy_PageRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PageRule) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PageRule) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PageRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PageRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (p *jsiiProxy_PageRule) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (p *jsiiProxy_PageRule) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (p *jsiiProxy_PageRule) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (p *jsiiProxy_PageRule) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (p *jsiiProxy_PageRule) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (p *jsiiProxy_PageRule) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (p *jsiiProxy_PageRule) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,15 +835,15 @@ func (p *jsiiProxy_PageRule) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PageRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -863,7 +862,7 @@ func (p *jsiiProxy_PageRule) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -876,7 +875,7 @@ func (p *jsiiProxy_PageRule) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,18 +889,18 @@ func (p *jsiiProxy_PageRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PageRule) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PageRule) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -912,7 +911,7 @@ func (p *jsiiProxy_PageRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -923,7 +922,7 @@ func (p *jsiiProxy_PageRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -934,7 +933,7 @@ func (p *jsiiProxy_PageRule) PutActions(value *PageRuleActions) {
 	_jsii_.InvokeVoid(
 		p,
 		"putActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -962,8 +961,8 @@ func (p *jsiiProxy_PageRule) ResetStatus() {
 	)
 }
 
-func (p *jsiiProxy_PageRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PageRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -975,8 +974,8 @@ func (p *jsiiProxy_PageRule) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PageRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PageRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -988,8 +987,8 @@ func (p *jsiiProxy_PageRule) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PageRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1001,8 +1000,8 @@ func (p *jsiiProxy_PageRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PageRule) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1027,8 +1026,8 @@ func (p *jsiiProxy_PageRule) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PageRule) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PageRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1039,4 +1038,3 @@ func (p *jsiiProxy_PageRule) ToTerraform() interface{} {
 
 	return returns
 }
-

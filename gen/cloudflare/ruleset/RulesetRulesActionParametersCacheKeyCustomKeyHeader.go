@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersCacheKeyCustomKeyHeader struct {
 	// Checks for the presence of these header names.
 	//
@@ -13,16 +12,15 @@ type RulesetRulesActionParametersCacheKeyCustomKeyHeader struct {
 	// The presence of the request header and whether any of the values provided are contained in the request header value is used in building the cache key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#contains Ruleset#contains}
-	Contains interface{} `field:"optional" json:"contains" yaml:"contains"`
+	Contains any `field:"optional" json:"contains" yaml:"contains"`
 	// Whether or not to include the origin header.
 	//
 	// A value of true will exclude the origin header in the cache key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
-	ExcludeOrigin interface{} `field:"optional" json:"excludeOrigin" yaml:"excludeOrigin"`
+	ExcludeOrigin any `field:"optional" json:"excludeOrigin" yaml:"excludeOrigin"`
 	// Include these headers' names and their values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#include Ruleset#include}
 	Include *[]*string `field:"optional" json:"include" yaml:"include"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
-		reflect.TypeOf((*AuthenticatedOriginPulls)(nil)).Elem(),
+		reflect.TypeFor[AuthenticatedOriginPulls](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuthenticatedOriginPulls{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig",
-		reflect.TypeOf((*AuthenticatedOriginPullsConfig)(nil)).Elem(),
+		reflect.TypeFor[AuthenticatedOriginPullsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigA",
-		reflect.TypeOf((*AuthenticatedOriginPullsConfigA)(nil)).Elem(),
+		reflect.TypeFor[AuthenticatedOriginPullsConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAList",
-		reflect.TypeOf((*AuthenticatedOriginPullsConfigAList)(nil)).Elem(),
+		reflect.TypeFor[AuthenticatedOriginPullsConfigAList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuthenticatedOriginPullsConfigAList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAOutputReference",
-		reflect.TypeOf((*AuthenticatedOriginPullsConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuthenticatedOriginPullsConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certId", GoGetter: "CertId"},
 			_jsii_.MemberProperty{JsiiProperty: "certIdInput", GoGetter: "CertIdInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

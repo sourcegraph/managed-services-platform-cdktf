@@ -6,9 +6,9 @@ import (
 
 type RegistrarDomainConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type RegistrarDomainConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
@@ -30,14 +30,13 @@ type RegistrarDomainConfig struct {
 	// Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
-	AutoRenew interface{} `field:"optional" json:"autoRenew" yaml:"autoRenew"`
+	AutoRenew any `field:"optional" json:"autoRenew" yaml:"autoRenew"`
 	// Shows whether a registrar lock is in place for a domain.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/registrar_domain#locked RegistrarDomain#locked}
-	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
+	Locked any `field:"optional" json:"locked" yaml:"locked"`
 	// Privacy option controls redacting WHOIS information.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
-	Privacy interface{} `field:"optional" json:"privacy" yaml:"privacy"`
+	Privacy any `field:"optional" json:"privacy" yaml:"privacy"`
 }
-

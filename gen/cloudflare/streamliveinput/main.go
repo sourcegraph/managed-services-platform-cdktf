@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput",
-		reflect.TypeOf((*StreamLiveInput)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInput](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webRtc", GoGetter: "WebRtc"},
 			_jsii_.MemberProperty{JsiiProperty: "webRtcPlayback", GoGetter: "WebRtcPlayback"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInput{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputConfig",
-		reflect.TypeOf((*StreamLiveInputConfig)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecording",
-		reflect.TypeOf((*StreamLiveInputRecording)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRecording](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
-		reflect.TypeOf((*StreamLiveInputRecordingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRecordingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedOrigins", GoGetter: "AllowedOrigins"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedOriginsInput", GoGetter: "AllowedOriginsInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputRecordingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmps",
-		reflect.TypeOf((*StreamLiveInputRtmps)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRtmps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference",
-		reflect.TypeOf((*StreamLiveInputRtmpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRtmpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputRtmpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,11 +182,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlayback",
-		reflect.TypeOf((*StreamLiveInputRtmpsPlayback)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRtmpsPlayback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlaybackOutputReference",
-		reflect.TypeOf((*StreamLiveInputRtmpsPlaybackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputRtmpsPlaybackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputRtmpsPlaybackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrt",
-		reflect.TypeOf((*StreamLiveInputSrt)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputSrt](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
-		reflect.TypeOf((*StreamLiveInputSrtOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputSrtOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputSrtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,11 +259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlayback",
-		reflect.TypeOf((*StreamLiveInputSrtPlayback)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputSrtPlayback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlaybackOutputReference",
-		reflect.TypeOf((*StreamLiveInputSrtPlaybackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputSrtPlaybackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputSrtPlaybackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -298,11 +298,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtc",
-		reflect.TypeOf((*StreamLiveInputWebRtc)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputWebRtc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcOutputReference",
-		reflect.TypeOf((*StreamLiveInputWebRtcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputWebRtcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputWebRtcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlayback",
-		reflect.TypeOf((*StreamLiveInputWebRtcPlayback)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputWebRtcPlayback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlaybackOutputReference",
-		reflect.TypeOf((*StreamLiveInputWebRtcPlaybackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StreamLiveInputWebRtcPlaybackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

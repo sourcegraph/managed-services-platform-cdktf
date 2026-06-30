@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesRatelimit struct {
 	// Characteristics of the request on which the ratelimiter counter will be incremented.
 	//
@@ -27,7 +26,7 @@ type RulesetRulesRatelimit struct {
 	// Defines if ratelimit counting is only done when an origin is reached.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
-	RequestsToOrigin interface{} `field:"optional" json:"requestsToOrigin" yaml:"requestsToOrigin"`
+	RequestsToOrigin any `field:"optional" json:"requestsToOrigin" yaml:"requestsToOrigin"`
 	// The score threshold per period for which the action will be executed the first time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
@@ -37,4 +36,3 @@ type RulesetRulesRatelimit struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 	ScoreResponseHeaderName *string `field:"optional" json:"scoreResponseHeaderName" yaml:"scoreResponseHeaderName"`
 }
-

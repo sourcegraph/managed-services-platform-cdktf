@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountMemberUserOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountMemberUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAccountMemberUserOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

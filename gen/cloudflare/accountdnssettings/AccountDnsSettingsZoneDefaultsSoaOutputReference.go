@@ -12,9 +12,9 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	ExpireInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MinTtl() *float64
 	SetMinTtl(val *float64)
 	MinTtlInput() *float64
@@ -61,7 +61,7 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,8 +97,8 @@ type jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -307,7 +307,6 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) TtlInput() 
 	return returns
 }
 
-
 func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsSoaOutputReference {
 	_init_.Initialize()
 
@@ -318,7 +317,7 @@ func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -330,12 +329,12 @@ func NewAccountDnsSettingsZoneDefaultsSoaOutputReference_Override(a AccountDnsSe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetExpire(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetExpire(val *float64) {
 	if err := j.validateSetExpireParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetExpire(va
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,7 +378,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetMinTtl(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetMinTtl(val *float64) {
 	if err := j.validateSetMinTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetMinTtl(va
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetMname(val *string) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetMname(val *string) {
 	if err := j.validateSetMnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetMname(val
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRefresh(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetRefresh(val *float64) {
 	if err := j.validateSetRefreshParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRefresh(v
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRetry(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetRetry(val *float64) {
 	if err := j.validateSetRetryParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRetry(val
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRname(val *string) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetRname(val *string) {
 	if err := j.validateSetRnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetRname(val
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTtl(val *float64) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,16 +479,16 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ComputeFqn(
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetListAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetStringAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetStringMa
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,23 +645,23 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Interpolati
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -681,4 +680,3 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ToString() 
 
 	return returns
 }
-

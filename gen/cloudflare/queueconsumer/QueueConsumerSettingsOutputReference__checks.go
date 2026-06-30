@@ -106,7 +106,7 @@ func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetBatchSizePar
 	return nil
 }
 
-func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewQueueConsumerSettingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

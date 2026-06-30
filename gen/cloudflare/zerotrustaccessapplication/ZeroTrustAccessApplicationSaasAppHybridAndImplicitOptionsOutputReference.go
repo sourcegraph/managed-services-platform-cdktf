@@ -12,9 +12,9 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	ReturnAccessTokenFromAuthorizationEndpoint() interface{}
-	SetReturnAccessTokenFromAuthorizationEndpoint(val interface{})
-	ReturnAccessTokenFromAuthorizationEndpointInput() interface{}
-	ReturnIdTokenFromAuthorizationEndpoint() interface{}
-	SetReturnIdTokenFromAuthorizationEndpoint(val interface{})
-	ReturnIdTokenFromAuthorizationEndpointInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	ReturnAccessTokenFromAuthorizationEndpoint() any
+	SetReturnAccessTokenFromAuthorizationEndpoint(val any)
+	ReturnAccessTokenFromAuthorizationEndpointInput() any
+	ReturnIdTokenFromAuthorizationEndpoint() any
+	SetReturnIdTokenFromAuthorizationEndpoint(val any)
+	ReturnIdTokenFromAuthorizationEndpointInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	ResetReturnIdTokenFromAuthorizationEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnAccessTokenFromAuthorizationEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnAccessTokenFromAuthorizationEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnAccessTokenFromAuthorizationEndpoint",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnAccessTokenFromAuthorizationEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnAccessTokenFromAuthorizationEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnAccessTokenFromAuthorizationEndpointInput",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnIdTokenFromAuthorizationEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnIdTokenFromAuthorizationEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnIdTokenFromAuthorizationEndpoint",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnIdTokenFromAuthorizationEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) ReturnIdTokenFromAuthorizationEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnIdTokenFromAuthorizationEndpointInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-
 func NewZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetReturnAccessTokenFromAuthorizationEndpoint(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetReturnAccessTokenFromAuthorizationEndpoint(val any) {
 	if err := j.validateSetReturnAccessTokenFromAuthorizationEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetReturnIdTokenFromAuthorizationEndpoint(val interface{}) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetReturnIdTokenFromAuthorizationEndpoint(val any) {
 	if err := j.validateSetReturnIdTokenFromAuthorizationEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 
 	return returns
 }
-

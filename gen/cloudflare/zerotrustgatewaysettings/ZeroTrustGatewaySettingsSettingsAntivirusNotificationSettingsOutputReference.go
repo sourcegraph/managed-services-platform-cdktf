@@ -12,9 +12,9 @@ type ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReferenc
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,16 +25,16 @@ type ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	IncludeContext() interface{}
-	SetIncludeContext(val interface{})
-	IncludeContextInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IncludeContext() any
+	SetIncludeContext(val any)
+	IncludeContextInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Msg() *string
 	SetMsg(val *string)
 	MsgInput() *string
@@ -52,7 +52,7 @@ type ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReferenc
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReferenc
 	ResetSupportUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutp
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) IncludeContext() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) IncludeContext() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContext",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) IncludeContextInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) IncludeContextInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeContextInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-
 func NewZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetIncludeContext(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetIncludeContext(val any) {
 	if err := j.validateSetIncludeContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetMsg(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetMsg(val *string) {
 	if err := j.validateSetMsgParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetSupportUrl(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetSupportUrl(val *string) {
 	if err := j.validateSetSupportUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings
 
 	return returns
 }
-

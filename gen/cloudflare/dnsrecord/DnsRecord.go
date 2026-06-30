@@ -19,21 +19,21 @@ type DnsRecord interface {
 	CommentInput() *string
 	CommentModifiedOn() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	Data() DnsRecordDataOutputReference
-	DataInput() interface{}
+	DataInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,17 +66,17 @@ type DnsRecord interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Proxiable() cdktf.IResolvable
-	Proxied() interface{}
-	SetProxied(val interface{})
-	ProxiedInput() interface{}
+	Proxied() any
+	SetProxied(val any)
+	ProxiedInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Settings() DnsRecordSettingsOutputReference
-	SettingsInput() interface{}
+	SettingsInput() any
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -84,7 +84,7 @@ type DnsRecord interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Ttl() *float64
@@ -100,9 +100,9 @@ type DnsRecord interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type DnsRecord interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type DnsRecord interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type DnsRecord interface {
 	ResetProxied()
 	ResetSettings()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DnsRecord
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DnsRecord) CommentModifiedOn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DnsRecord) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsRecord) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DnsRecord) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DnsRecord) Data() DnsRecordDataOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) DataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) DataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataInput",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_DnsRecord) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DnsRecord) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_DnsRecord) Proxiable() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) Proxied() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) Proxied() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"proxied",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_DnsRecord) Proxied() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) ProxiedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) ProxiedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"proxiedInput",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_DnsRecord) ProxiedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_DnsRecord) Settings() DnsRecordSettingsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) SettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsRecord) SettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"settingsInput",
@@ -539,8 +539,8 @@ func (j *jsiiProxy_DnsRecord) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecord) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsRecord) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -619,7 +619,6 @@ func (j *jsiiProxy_DnsRecord) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfig) DnsRecord {
 	_init_.Initialize()
@@ -631,7 +630,7 @@ func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -644,12 +643,12 @@ func NewDnsRecord_Override(d DnsRecord, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetComment(val *string) {
+func (j *jsiiProxy_DnsRecord) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DnsRecord)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetConnection(val interface{}) {
+func (j *jsiiProxy_DnsRecord) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_DnsRecord)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetContent(val *string) {
+func (j *jsiiProxy_DnsRecord) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DnsRecord)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetCount(val interface{}) {
+func (j *jsiiProxy_DnsRecord) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DnsRecord)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DnsRecord) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -701,7 +700,7 @@ func (j *jsiiProxy_DnsRecord)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DnsRecord) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_DnsRecord)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DnsRecord) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_DnsRecord)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetName(val *string) {
+func (j *jsiiProxy_DnsRecord) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_DnsRecord)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetPriority(val *float64) {
+func (j *jsiiProxy_DnsRecord) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_DnsRecord)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DnsRecord) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -750,7 +749,7 @@ func (j *jsiiProxy_DnsRecord)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DnsRecord) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_DnsRecord)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetProxied(val interface{}) {
+func (j *jsiiProxy_DnsRecord) SetProxied(val any) {
 	if err := j.validateSetProxiedParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_DnsRecord)SetProxied(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetTags(val *[]*string) {
+func (j *jsiiProxy_DnsRecord) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_DnsRecord)SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetTtl(val *float64) {
+func (j *jsiiProxy_DnsRecord) SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_DnsRecord)SetTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetType(val *string) {
+func (j *jsiiProxy_DnsRecord) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_DnsRecord)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecord)SetZoneId(val *string) {
+func (j *jsiiProxy_DnsRecord) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func DnsRecord_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func DnsRecord_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DnsRecord_IsConstruct(x interface{}) *bool {
+func DnsRecord_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsRecord_IsConstructParameters(x); err != nil {
@@ -863,7 +862,7 @@ func DnsRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func DnsRecord_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsRecord_IsTerraformElement(x interface{}) *bool {
+func DnsRecord_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsRecord_IsTerraformElementParameters(x); err != nil {
@@ -882,7 +881,7 @@ func DnsRecord_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func DnsRecord_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsRecord_IsTerraformResource(x interface{}) *bool {
+func DnsRecord_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsRecord_IsTerraformResourceParameters(x); err != nil {
@@ -901,7 +900,7 @@ func DnsRecord_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dnsRecord.DnsRecord",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -926,31 +925,31 @@ func (d *jsiiProxy_DnsRecord) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DnsRecord) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DnsRecord) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DnsRecord) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsRecord) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DnsRecord) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DnsRecord) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (d *jsiiProxy_DnsRecord) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (d *jsiiProxy_DnsRecord) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DnsRecord) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1046,7 +1045,7 @@ func (d *jsiiProxy_DnsRecord) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,7 +1061,7 @@ func (d *jsiiProxy_DnsRecord) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,15 +1077,15 @@ func (d *jsiiProxy_DnsRecord) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecord) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsRecord) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1105,7 +1104,7 @@ func (d *jsiiProxy_DnsRecord) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1118,7 +1117,7 @@ func (d *jsiiProxy_DnsRecord) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,18 +1131,18 @@ func (d *jsiiProxy_DnsRecord) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DnsRecord) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DnsRecord) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (d *jsiiProxy_DnsRecord) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (d *jsiiProxy_DnsRecord) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1176,7 +1175,7 @@ func (d *jsiiProxy_DnsRecord) PutData(value *DnsRecordData) {
 	_jsii_.InvokeVoid(
 		d,
 		"putData",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1187,7 +1186,7 @@ func (d *jsiiProxy_DnsRecord) PutSettings(value *DnsRecordSettings) {
 	_jsii_.InvokeVoid(
 		d,
 		"putSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1255,8 +1254,8 @@ func (d *jsiiProxy_DnsRecord) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DnsRecord) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsRecord) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1268,8 +1267,8 @@ func (d *jsiiProxy_DnsRecord) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecord) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsRecord) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1281,8 +1280,8 @@ func (d *jsiiProxy_DnsRecord) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecord) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsRecord) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1294,8 +1293,8 @@ func (d *jsiiProxy_DnsRecord) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecord) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsRecord) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1320,8 +1319,8 @@ func (d *jsiiProxy_DnsRecord) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecord) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsRecord) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1332,4 +1331,3 @@ func (d *jsiiProxy_DnsRecord) ToTerraform() interface{} {
 
 	return returns
 }
-

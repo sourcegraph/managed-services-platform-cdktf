@@ -13,9 +13,9 @@ type QueueConsumersSettingsOutputReference interface {
 	BatchSize() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type QueueConsumersSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type QueueConsumersSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference) BatchSize() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,7 +212,6 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference) VisibilityTimeoutMs() 
 	return returns
 }
 
-
 func NewQueueConsumersSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QueueConsumersSettingsOutputReference {
 	_init_.Initialize()
 
@@ -223,7 +222,7 @@ func NewQueueConsumersSettingsOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueConsumersSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -235,12 +234,12 @@ func NewQueueConsumersSettingsOutputReference_Override(q QueueConsumersSettingsO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.queue.QueueConsumersSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetInternalValue(val *QueueConsumersSettings) {
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) SetInternalValue(val *QueueConsumersSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetInternalValue(val *Q
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_QueueConsumersSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -308,16 +307,16 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,23 +473,23 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QueueConsumersSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QueueConsumersSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -509,4 +508,3 @@ func (q *jsiiProxy_QueueConsumersSettingsOutputReference) ToString() *string {
 
 	return returns
 }
-

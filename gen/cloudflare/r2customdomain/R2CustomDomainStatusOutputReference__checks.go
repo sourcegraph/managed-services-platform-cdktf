@@ -98,7 +98,7 @@ func (r *jsiiProxy_R2CustomDomainStatusOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomainStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_R2CustomDomainStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewR2CustomDomainStatusOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

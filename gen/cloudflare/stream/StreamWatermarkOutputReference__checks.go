@@ -98,7 +98,7 @@ func (s *jsiiProxy_StreamWatermarkOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_StreamWatermarkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StreamWatermarkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewStreamWatermarkOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

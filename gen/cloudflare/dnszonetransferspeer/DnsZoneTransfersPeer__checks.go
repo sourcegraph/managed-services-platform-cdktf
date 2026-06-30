@@ -19,7 +19,7 @@ func (d *jsiiProxy_DnsZoneTransfersPeer) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (d *jsiiProxy_DnsZoneTransfersPeer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DnsZoneTransfersPeer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DnsZoneTransfersPeer) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (d *jsiiProxy_DnsZoneTransfersPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DnsZoneTransfersPeer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDnsZoneTransfersPeer_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDnsZoneTransfersPeer_IsConstructParameters(x interface{}) error {
+func validateDnsZoneTransfersPeer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDnsZoneTransfersPeer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDnsZoneTransfersPeer_IsTerraformElementParameters(x interface{}) error {
+func validateDnsZoneTransfersPeer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDnsZoneTransfersPeer_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateDnsZoneTransfersPeer_IsTerraformResourceParameters(x interface{}) error {
+func validateDnsZoneTransfersPeer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetAccountIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetIpParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetIxfrEnableParameters(val interface{}) error {
+func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetIxfrEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetPortParameters(val *float64)
 	return nil
 }
 
-func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DnsZoneTransfersPeer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewDnsZoneTransfersPeerParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

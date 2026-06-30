@@ -19,11 +19,11 @@ type DataCloudflareLoadBalancerPool interface {
 	CdktfStack() cdktf.TerraformStack
 	CheckRegions() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -33,7 +33,7 @@ type DataCloudflareLoadBalancerPool interface {
 	DisabledAt() *string
 	Enabled() cdktf.IResolvable
 	Filter() DataCloudflareLoadBalancerPoolFilterOutputReference
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,17 +69,17 @@ type DataCloudflareLoadBalancerPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,18 +107,18 @@ type DataCloudflareLoadBalancerPool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPoolId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareLoadBalancerPool
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) CheckRegions() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) Filter() DataCloudflareLoadBa
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source.
 func NewDataCloudflareLoadBalancerPool(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolConfig) DataCloudflareLoadBalancerPool {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewDataCloudflareLoadBalancerPool(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewDataCloudflareLoadBalancerPool_Override(d DataCloudflareLoadBalancerPool
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetAccountId(val *string) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetPoolId(val *string) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetPoolId(val *string) {
 	if err := j.validateSetPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -616,7 +615,7 @@ func DataCloudflareLoadBalancerPool_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func DataCloudflareLoadBalancerPool_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareLoadBalancerPool_IsConstruct(x interface{}) *bool {
+func DataCloudflareLoadBalancerPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLoadBalancerPool_IsConstructParameters(x); err != nil {
@@ -651,7 +650,7 @@ func DataCloudflareLoadBalancerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func DataCloudflareLoadBalancerPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareLoadBalancerPool_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareLoadBalancerPool_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLoadBalancerPool_IsTerraformDataSourceParameters(x); err != nil {
@@ -670,7 +669,7 @@ func DataCloudflareLoadBalancerPool_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func DataCloudflareLoadBalancerPool_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareLoadBalancerPool_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareLoadBalancerPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLoadBalancerPool_IsTerraformElementParameters(x); err != nil {
@@ -689,7 +688,7 @@ func DataCloudflareLoadBalancerPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,27 +706,27 @@ func DataCloudflareLoadBalancerPool_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) PutFilter(value *DataCloudfla
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -924,8 +923,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ResetPoolId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -937,8 +936,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -950,8 +949,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -963,8 +962,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -989,8 +988,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1001,4 +1000,3 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPool) ToTerraform() interface{} {
 
 	return returns
 }
-

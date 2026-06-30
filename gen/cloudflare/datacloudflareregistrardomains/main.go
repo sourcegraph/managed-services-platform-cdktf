@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomains",
-		reflect.TypeOf((*DataCloudflareRegistrarDomains)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomains](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRegistrarDomains{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsConfig",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResult",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResult)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultList",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRegistrarDomainsResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "available", GoGetter: "Available"},
 			_jsii_.MemberProperty{JsiiProperty: "canRegister", GoGetter: "CanRegister"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferIn", GoGetter: "TransferIn"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultRegistrantContact",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultRegistrantContact)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultRegistrantContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "address2", GoGetter: "Address2"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "zip", GoGetter: "Zip"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,11 +181,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultTransferIn",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultTransferIn)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultTransferIn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultTransferInOutputReference",
-		reflect.TypeOf((*DataCloudflareRegistrarDomainsResultTransferInOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRegistrarDomainsResultTransferInOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptFoa", GoGetter: "AcceptFoa"},
 			_jsii_.MemberProperty{JsiiProperty: "approveTransfer", GoGetter: "ApproveTransfer"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "unlockDomain", GoGetter: "UnlockDomain"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRegistrarDomainsResultTransferInOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflarePageShieldCookiesList_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataCloudflarePageShieldCookiesList_IsConstructParameters(x interface{}) error {
+func validateDataCloudflarePageShieldCookiesList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflarePageShieldCookiesList_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataCloudflarePageShieldCookiesList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflarePageShieldCookiesList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflarePageShieldCookiesList_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataCloudflarePageShieldCookiesList_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflarePageShieldCookiesList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflarePageShieldCookiesList_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetHostsParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetHttpOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetHttpOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetSameSiteParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetSecureParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) validateSetSecureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,4 +386,3 @@ func validateNewDataCloudflarePageShieldCookiesListParameters(scope constructs.C
 
 	return nil
 }
-

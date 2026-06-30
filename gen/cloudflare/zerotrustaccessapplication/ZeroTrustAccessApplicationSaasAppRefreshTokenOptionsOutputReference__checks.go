@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputRefere
 
 	return nil
 }
-

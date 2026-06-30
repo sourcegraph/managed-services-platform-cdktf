@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest",
-		reflect.TypeOf((*CloudforceOneRequest)(nil)).Elem(),
+		reflect.TypeFor[CloudforceOneRequest](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updated", GoGetter: "Updated"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudforceOneRequest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,6 +87,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig",
-		reflect.TypeOf((*CloudforceOneRequestConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudforceOneRequestConfig](),
 	)
 }

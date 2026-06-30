@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataCloudflareAccountDnsSettingsInternalViews_GenerateConfigForImpo
 	return nil
 }
 
-func validateDataCloudflareAccountDnsSettingsInternalViews_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareAccountDnsSettingsInternalViews_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataCloudflareAccountDnsSettingsInternalViews_IsConstructParameters
 	return nil
 }
 
-func validateDataCloudflareAccountDnsSettingsInternalViews_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareAccountDnsSettingsInternalViews_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataCloudflareAccountDnsSettingsInternalViews_IsTerraformDataSource
 	return nil
 }
 
-func validateDataCloudflareAccountDnsSettingsInternalViews_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareAccountDnsSettingsInternalViews_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) validateSetAcc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -301,4 +301,3 @@ func validateNewDataCloudflareAccountDnsSettingsInternalViewsParameters(scope co
 
 	return nil
 }
-

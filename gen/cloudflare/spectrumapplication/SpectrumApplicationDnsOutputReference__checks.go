@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSpectrumApplicationDnsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

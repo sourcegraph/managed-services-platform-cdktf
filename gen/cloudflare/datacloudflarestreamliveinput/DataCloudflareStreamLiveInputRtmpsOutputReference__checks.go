@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInputRtmpsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareStreamLiveInputRtmpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareStreamLiveInputRtmpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataCloudflareStreamLiveInputRtmpsOutputReferenceParameters(terr
 
 	return nil
 }
-

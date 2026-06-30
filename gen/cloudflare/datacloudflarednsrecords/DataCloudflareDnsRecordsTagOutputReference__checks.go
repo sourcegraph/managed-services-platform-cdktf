@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetAbsent
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetExactP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareDnsRecordsTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewDataCloudflareDnsRecordsTagOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

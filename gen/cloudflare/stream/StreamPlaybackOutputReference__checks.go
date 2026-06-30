@@ -98,7 +98,7 @@ func (s *jsiiProxy_StreamPlaybackOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_StreamPlaybackOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StreamPlaybackOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewStreamPlaybackOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRefer
 	AudTagInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRefer
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	TeamName() *string
 	SetTeamName(val *string)
 	TeamNameInput() *string
@@ -49,7 +49,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRefer
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRefer
 	ResetRequired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-
 func NewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetAudTag(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetAudTag(val *[]*string) {
 	if err := j.validateSetAudTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetTeamName(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetTeamName(val *string) {
 	if err := j.validateSetTeamNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 
 	return returns
 }
-

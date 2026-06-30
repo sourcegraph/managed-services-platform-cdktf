@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettingsList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareSchemaValidationOperationSettingsList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataCloudflareSchemaValidationOperationSettingsList_GenerateConfigF
 	return nil
 }
 
-func validateDataCloudflareSchemaValidationOperationSettingsList_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareSchemaValidationOperationSettingsList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataCloudflareSchemaValidationOperationSettingsList_IsConstructPara
 	return nil
 }
 
-func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformData
 	return nil
 }
 
-func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataCloudflareSchemaValidationOperationSettingsList_IsTerraformElem
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettingsList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettingsList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataCloudflareSchemaValidationOperationSettingsListParameters(sc
 
 	return nil
 }
-

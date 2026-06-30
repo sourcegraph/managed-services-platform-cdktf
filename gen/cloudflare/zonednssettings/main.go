@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
-		reflect.TypeOf((*ZoneDnsSettings)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneMode", GoGetter: "ZoneMode"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneModeInput", GoGetter: "ZoneModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneDnsSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsConfig",
-		reflect.TypeOf((*ZoneDnsSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDns",
-		reflect.TypeOf((*ZoneDnsSettingsInternalDns)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsInternalDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDnsOutputReference",
-		reflect.TypeOf((*ZoneDnsSettingsInternalDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsInternalDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers",
-		reflect.TypeOf((*ZoneDnsSettingsNameservers)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsNameservers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference",
-		reflect.TypeOf((*ZoneDnsSettingsNameserversOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsNameserversOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneDnsSettingsNameserversOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa",
-		reflect.TypeOf((*ZoneDnsSettingsSoa)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsSoa](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference",
-		reflect.TypeOf((*ZoneDnsSettingsSoaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ZoneDnsSettingsSoaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ZoneDnsSettingsSoaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package workersscript
 
-
 type WorkersScriptMigrations struct {
 	// A list of classes to delete Durable Object namespaces from.
 	//
@@ -27,14 +26,13 @@ type WorkersScriptMigrations struct {
 	// A list of classes with Durable Object namespaces that were renamed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
-	RenamedClasses interface{} `field:"optional" json:"renamedClasses" yaml:"renamedClasses"`
+	RenamedClasses any `field:"optional" json:"renamedClasses" yaml:"renamedClasses"`
 	// Migrations to apply in order.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script#steps WorkersScript#steps}
-	Steps interface{} `field:"optional" json:"steps" yaml:"steps"`
+	Steps any `field:"optional" json:"steps" yaml:"steps"`
 	// A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
-	TransferredClasses interface{} `field:"optional" json:"transferredClasses" yaml:"transferredClasses"`
+	TransferredClasses any `field:"optional" json:"transferredClasses" yaml:"transferredClasses"`
 }
-

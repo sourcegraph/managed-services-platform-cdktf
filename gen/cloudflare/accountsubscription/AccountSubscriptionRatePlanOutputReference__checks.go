@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetCurren
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetExternallyManagedParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetExternallyManagedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIntern
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIsContractParameters(val interface{}) error {
+func (j *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateSetIsContractParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewAccountSubscriptionRatePlanOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

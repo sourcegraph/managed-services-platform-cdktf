@@ -12,9 +12,9 @@ type MagicTransitSiteAclLan1OutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type MagicTransitSiteAclLan1OutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LanId() *string
 	SetLanId(val *string)
 	LanIdInput() *string
@@ -55,7 +55,7 @@ type MagicTransitSiteAclLan1OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type MagicTransitSiteAclLan1OutputReference interface {
 	ResetSubnets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_MagicTransitSiteAclLan1OutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewMagicTransitSiteAclLan1OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicTransitSiteAclLan1OutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewMagicTransitSiteAclLan1OutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan1OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewMagicTransitSiteAclLan1OutputReference_Override(m MagicTransitSiteAclLan
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.magicTransitSiteAcl.MagicTransitSiteAclLan1OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetLanId(val *string) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetLanId(val *string) {
 	if err := j.validateSetLanIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetLanId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetLanName(val *string) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetLanName(val *string) {
 	if err := j.validateSetLanNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetLanName(val *string
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetPortRanges(val *[]*string) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetPortRanges(val *[]*string) {
 	if err := j.validateSetPortRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetPortRanges(val *[]*
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetPorts(val *[]*float64) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetPorts(val *[]*float64) {
 	if err := j.validateSetPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetPorts(val *[]*float
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetSubnets(val *[]*string) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetSubnets(val *[]*string) {
 	if err := j.validateSetSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetSubnets(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) ResetSubnets() {
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateInterpol
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutEmailParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutEmailParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutEmail
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutPagerdutyParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutPagerdutyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutPager
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutWebhooksParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutWebhooksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -307,4 +307,3 @@ func validateNewNotificationPolicyMechanismsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

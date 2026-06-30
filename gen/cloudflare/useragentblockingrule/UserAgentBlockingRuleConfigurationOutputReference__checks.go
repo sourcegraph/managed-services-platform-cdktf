@@ -98,7 +98,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewUserAgentBlockingRuleConfigurationOutputReferenceParameters(terr
 
 	return nil
 }
-

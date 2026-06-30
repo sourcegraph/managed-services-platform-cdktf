@@ -19,11 +19,11 @@ type DataCloudflareSpectrumApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,11 +58,11 @@ type DataCloudflareSpectrumApplication interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProxyProtocol() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tls() *string
@@ -71,9 +71,9 @@ type DataCloudflareSpectrumApplication interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataCloudflareSpectrumApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareSpectrumApplication
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ProxyProtocol() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,7 +437,6 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) DataCloudflareSpectrumApplication {
 	_init_.Initialize()
@@ -449,7 +448,7 @@ func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -462,12 +461,12 @@ func NewDataCloudflareSpectrumApplication_Override(d DataCloudflareSpectrumAppli
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetAppId(val *string) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplication)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplication) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func DataCloudflareSpectrumApplication_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func DataCloudflareSpectrumApplication_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareSpectrumApplication_IsConstruct(x interface{}) *bool {
+func DataCloudflareSpectrumApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSpectrumApplication_IsConstructParameters(x); err != nil {
@@ -582,7 +581,7 @@ func DataCloudflareSpectrumApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func DataCloudflareSpectrumApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareSpectrumApplication_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareSpectrumApplication_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSpectrumApplication_IsTerraformDataSourceParameters(x); err != nil {
@@ -601,7 +600,7 @@ func DataCloudflareSpectrumApplication_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func DataCloudflareSpectrumApplication_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataCloudflareSpectrumApplication_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareSpectrumApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareSpectrumApplication_IsTerraformElementParameters(x); err != nil {
@@ -620,7 +619,7 @@ func DataCloudflareSpectrumApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,27 +637,27 @@ func DataCloudflareSpectrumApplication_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -841,8 +840,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -893,8 +892,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -905,4 +904,3 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplication) ToTerraform() interface{} 
 
 	return returns
 }
-

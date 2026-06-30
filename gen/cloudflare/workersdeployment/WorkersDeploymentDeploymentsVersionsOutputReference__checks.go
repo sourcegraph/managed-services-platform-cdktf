@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkersDeploymentDeploymentsVersionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_WorkersDeploymentDeploymentsVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersDeploymentDeploymentsVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkersDeploymentDeploymentsVersionsOutputReferenceParameters(te
 
 	return nil
 }
-

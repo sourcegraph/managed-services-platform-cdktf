@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema",
-		reflect.TypeOf((*ApiShieldSchema)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchema](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldSchema{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig",
-		reflect.TypeOf((*ApiShieldSchemaConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchema",
-		reflect.TypeOf((*ApiShieldSchemaSchema)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference",
-		reflect.TypeOf((*ApiShieldSchemaSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "validationEnabled", GoGetter: "ValidationEnabled"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldSchemaSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetails",
-		reflect.TypeOf((*ApiShieldSchemaUploadDetails)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaUploadDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsOutputReference",
-		reflect.TypeOf((*ApiShieldSchemaUploadDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaUploadDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "warnings", GoGetter: "Warnings"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,11 +163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarnings",
-		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarnings)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaUploadDetailsWarnings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsList",
-		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarningsList)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaUploadDetailsWarningsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsWarningsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -188,7 +188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
-		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarningsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldSchemaUploadDetailsWarningsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

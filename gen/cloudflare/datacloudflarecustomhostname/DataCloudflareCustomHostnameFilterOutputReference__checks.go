@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewDataCloudflareCustomHostnameFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

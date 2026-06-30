@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustList) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustList) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustList) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustList) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustList) validatePutItemsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustList) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateZeroTrustList_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateZeroTrustList_IsConstructParameters(x interface{}) error {
+func validateZeroTrustList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateZeroTrustList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustList_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateZeroTrustList_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateZeroTrustList_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustList_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ZeroTrustList) validateSetAccountIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustList) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustList) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_ZeroTrustList) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_ZeroTrustList) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustList) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustList) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewZeroTrustListParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DataCloudflarePageShieldScriptsListConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataCloudflarePageShieldScriptsListConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
@@ -30,7 +30,7 @@ type DataCloudflarePageShieldScriptsListConfig struct {
 	// When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
-	ExcludeCdnCgi interface{} `field:"optional" json:"excludeCdnCgi" yaml:"excludeCdnCgi"`
+	ExcludeCdnCgi any `field:"optional" json:"excludeCdnCgi" yaml:"excludeCdnCgi"`
 	// When true, excludes duplicate scripts.
 	//
 	// We consider a script duplicate of another if their javascript
@@ -38,7 +38,7 @@ type DataCloudflarePageShieldScriptsListConfig struct {
 	// recent script for the URL host and zone hostname combination.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
-	ExcludeDuplicates interface{} `field:"optional" json:"excludeDuplicates" yaml:"excludeDuplicates"`
+	ExcludeDuplicates any `field:"optional" json:"excludeDuplicates" yaml:"excludeDuplicates"`
 	// Excludes scripts whose URL contains one of the URL-encoded URLs separated by commas.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
@@ -84,7 +84,7 @@ type DataCloudflarePageShieldScriptsListConfig struct {
 	// When true, malicious scripts appear first in the returned scripts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
-	PrioritizeMalicious interface{} `field:"optional" json:"prioritizeMalicious" yaml:"prioritizeMalicious"`
+	PrioritizeMalicious any `field:"optional" json:"prioritizeMalicious" yaml:"prioritizeMalicious"`
 	// Filters the returned scripts using a comma-separated list of scripts statuses.
 	//
 	// Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
@@ -96,4 +96,3 @@ type DataCloudflarePageShieldScriptsListConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
 	Urls *string `field:"optional" json:"urls" yaml:"urls"`
 }
-

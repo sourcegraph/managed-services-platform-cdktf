@@ -19,7 +19,7 @@ func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateAddMoveTargetParameter
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateZeroTrustGatewayProxyEndpoint_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateZeroTrustGatewayProxyEndpoint_IsConstructParameters(x interface{}) error {
+func validateZeroTrustGatewayProxyEndpoint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateZeroTrustGatewayProxyEndpoint_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateZeroTrustGatewayProxyEndpoint_IsTerraformElementParameters(x interface{}) error {
+func validateZeroTrustGatewayProxyEndpoint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateZeroTrustGatewayProxyEndpoint_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateZeroTrustGatewayProxyEndpoint_IsTerraformResourceParameters(x interface{}) error {
+func validateZeroTrustGatewayProxyEndpoint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetAccountIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewZeroTrustGatewayProxyEndpointParameters(scope constructs.Constru
 
 	return nil
 }
-

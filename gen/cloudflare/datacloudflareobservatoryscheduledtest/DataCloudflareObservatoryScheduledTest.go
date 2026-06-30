@@ -15,11 +15,11 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,14 +44,14 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -61,9 +61,9 @@ type DataCloudflareObservatoryScheduledTest interface {
 	SetZoneId(val *string)
 	ZoneIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCloudflareObservatoryScheduledTest
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ZoneIdInput() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
 func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *string, config *DataCloudflareObservatoryScheduledTestConfig) DataCloudflareObservatoryScheduledTest {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataCloudflareObservatoryScheduledTest_Override(d DataCloudflareObservat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetRegion(val *string) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetRegion(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetUrl(val *string) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetZoneId(val *string) {
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func DataCloudflareObservatoryScheduledTest_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func DataCloudflareObservatoryScheduledTest_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCloudflareObservatoryScheduledTest_IsConstruct(x interface{}) *bool {
+func DataCloudflareObservatoryScheduledTest_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareObservatoryScheduledTest_IsConstructParameters(x); err != nil {
@@ -474,7 +473,7 @@ func DataCloudflareObservatoryScheduledTest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func DataCloudflareObservatoryScheduledTest_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCloudflareObservatoryScheduledTest_IsTerraformDataSource(x interface{}) *bool {
+func DataCloudflareObservatoryScheduledTest_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareObservatoryScheduledTest_IsTerraformDataSourceParameters(x); err != nil {
@@ -493,7 +492,7 @@ func DataCloudflareObservatoryScheduledTest_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func DataCloudflareObservatoryScheduledTest_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataCloudflareObservatoryScheduledTest_IsTerraformElement(x interface{}) *bool {
+func DataCloudflareObservatoryScheduledTest_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareObservatoryScheduledTest_IsTerraformElementParameters(x); err != nil {
@@ -512,7 +511,7 @@ func DataCloudflareObservatoryScheduledTest_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.dataCloudflareObservatoryScheduledTest.DataCloudflareObservatoryScheduledTest",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -530,27 +529,27 @@ func DataCloudflareObservatoryScheduledTest_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -728,8 +727,8 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -741,8 +740,8 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -754,8 +753,8 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -767,8 +766,8 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -805,4 +804,3 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ToTerraform() interfa
 
 	return returns
 }
-

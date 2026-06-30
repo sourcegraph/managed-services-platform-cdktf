@@ -142,7 +142,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetCountryPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetCountryPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetFallbac
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInterna
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetPopPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetPopPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetPopPool
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetRegionPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetRegionPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,4 +366,3 @@ func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

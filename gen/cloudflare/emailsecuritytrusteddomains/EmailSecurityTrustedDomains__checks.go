@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) validatePutBodyParameters(value interface{}) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) validatePutBodyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateEmailSecurityTrustedDomains_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateEmailSecurityTrustedDomains_IsConstructParameters(x interface{}) error {
+func validateEmailSecurityTrustedDomains_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateEmailSecurityTrustedDomains_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateEmailSecurityTrustedDomains_IsTerraformElementParameters(x interface{}) error {
+func validateEmailSecurityTrustedDomains_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateEmailSecurityTrustedDomains_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateEmailSecurityTrustedDomains_IsTerraformResourceParameters(x interface{}) error {
+func validateEmailSecurityTrustedDomains_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetCommentsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRecentParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRecentParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRegexParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsRegexParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsSimilarityParameters(val interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetIsSimilarityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetPatternParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomains) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -521,4 +521,3 @@ func validateNewEmailSecurityTrustedDomainsParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -30,7 +30,7 @@ type PagesProjectLatestDeploymentEnvVarsMap interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,6 @@ func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) TerraformResource() c
 	return returns
 }
 
-
 func NewPagesProjectLatestDeploymentEnvVarsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectLatestDeploymentEnvVarsMap {
 	_init_.Initialize()
 
@@ -94,7 +93,7 @@ func NewPagesProjectLatestDeploymentEnvVarsMap(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentEnvVarsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -106,12 +105,12 @@ func NewPagesProjectLatestDeploymentEnvVarsMap_Override(p PagesProjectLatestDepl
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentEnvVarsMap",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -122,7 +121,7 @@ func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -155,7 +154,7 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) Get(key *string) Page
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{key},
+		[]any{key},
 		&returns,
 	)
 
@@ -171,23 +170,23 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) InterpolationForAttri
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -206,4 +205,3 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) ToString() *string {
 
 	return returns
 }
-
