@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewTeamRoutingRuleNotifyOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

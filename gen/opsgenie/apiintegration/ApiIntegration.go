@@ -12,32 +12,32 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration opsgenie_api_integration}.
 type ApiIntegration interface {
 	cdktf.TerraformResource
-	AllowConfigurationAccess() interface{}
-	SetAllowConfigurationAccess(val interface{})
-	AllowConfigurationAccessInput() interface{}
-	AllowWriteAccess() interface{}
-	SetAllowWriteAccess(val interface{})
-	AllowWriteAccessInput() interface{}
+	AllowConfigurationAccess() any
+	SetAllowConfigurationAccess(val any)
+	AllowConfigurationAccessInput() any
+	AllowWriteAccess() any
+	SetAllowWriteAccess(val any)
+	AllowWriteAccessInput() any
 	ApiKey() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,9 +52,9 @@ type ApiIntegration interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreRespondersFromPayload() interface{}
-	SetIgnoreRespondersFromPayload(val interface{})
-	IgnoreRespondersFromPayloadInput() interface{}
+	IgnoreRespondersFromPayload() any
+	SetIgnoreRespondersFromPayload(val any)
+	IgnoreRespondersFromPayloadInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -72,20 +72,20 @@ type ApiIntegration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Responders() ApiIntegrationRespondersList
-	RespondersInput() interface{}
-	SuppressNotifications() interface{}
-	SetSuppressNotifications(val interface{})
-	SuppressNotificationsInput() interface{}
+	RespondersInput() any
+	SuppressNotifications() any
+	SetSuppressNotifications(val any)
+	SuppressNotificationsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -98,9 +98,9 @@ type ApiIntegration interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type ApiIntegration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,14 +130,14 @@ type ApiIntegration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutResponders(value interface{})
+	PutResponders(value any)
 	ResetAllowConfigurationAccess()
 	ResetAllowWriteAccess()
 	ResetEnabled()
@@ -152,17 +152,17 @@ type ApiIntegration interface {
 	ResetSuppressNotifications()
 	ResetType()
 	ResetWebhookUrl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiIntegration
@@ -170,8 +170,8 @@ type jsiiProxy_ApiIntegration struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowConfigurationAccess",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowConfigurationAccessInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ApiIntegration) AllowConfigurationAccessInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) AllowWriteAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) AllowWriteAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowWriteAccess",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ApiIntegration) AllowWriteAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) AllowWriteAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) AllowWriteAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowWriteAccessInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_ApiIntegration) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_ApiIntegration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiIntegration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_ApiIntegration) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_ApiIntegration) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_ApiIntegration) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_ApiIntegration) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) IgnoreRespondersFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) IgnoreRespondersFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreRespondersFromPayload",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_ApiIntegration) IgnoreRespondersFromPayload() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) IgnoreRespondersFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) IgnoreRespondersFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreRespondersFromPayloadInput",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_ApiIntegration) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiIntegration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_ApiIntegration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_ApiIntegration) Responders() ApiIntegrationRespondersList {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) RespondersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) RespondersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"respondersInput",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_ApiIntegration) RespondersInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) SuppressNotifications() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) SuppressNotifications() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressNotifications",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_ApiIntegration) SuppressNotifications() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) SuppressNotificationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiIntegration) SuppressNotificationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suppressNotificationsInput",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_ApiIntegration) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ApiIntegration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiIntegration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -580,7 +580,6 @@ func (j *jsiiProxy_ApiIntegration) WebhookUrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/api_integration opsgenie_api_integration} Resource.
 func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegrationConfig) ApiIntegration {
 	_init_.Initialize()
@@ -592,7 +591,7 @@ func NewApiIntegration(scope constructs.Construct, id *string, config *ApiIntegr
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -605,12 +604,12 @@ func NewApiIntegration_Override(a ApiIntegration, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetAllowConfigurationAccess(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetAllowConfigurationAccess(val any) {
 	if err := j.validateSetAllowConfigurationAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ApiIntegration)SetAllowConfigurationAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetAllowWriteAccess(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetAllowWriteAccess(val any) {
 	if err := j.validateSetAllowWriteAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_ApiIntegration)SetAllowWriteAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_ApiIntegration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_ApiIntegration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiIntegration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ApiIntegration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ApiIntegration)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiIntegration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_ApiIntegration)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetHeaders(val *map[string]*string) {
+func (j *jsiiProxy_ApiIntegration) SetHeaders(val *map[string]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_ApiIntegration)SetHeaders(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetId(val *string) {
+func (j *jsiiProxy_ApiIntegration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_ApiIntegration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetIgnoreRespondersFromPayload(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetIgnoreRespondersFromPayload(val any) {
 	if err := j.validateSetIgnoreRespondersFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_ApiIntegration)SetIgnoreRespondersFromPayload(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiIntegration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_ApiIntegration)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetName(val *string) {
+func (j *jsiiProxy_ApiIntegration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_ApiIntegration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetOwnerTeamId(val *string) {
+func (j *jsiiProxy_ApiIntegration) SetOwnerTeamId(val *string) {
 	if err := j.validateSetOwnerTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_ApiIntegration)SetOwnerTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiIntegration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -755,7 +754,7 @@ func (j *jsiiProxy_ApiIntegration)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_ApiIntegration)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetSuppressNotifications(val interface{}) {
+func (j *jsiiProxy_ApiIntegration) SetSuppressNotifications(val any) {
 	if err := j.validateSetSuppressNotificationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_ApiIntegration)SetSuppressNotifications(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetType(val *string) {
+func (j *jsiiProxy_ApiIntegration) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_ApiIntegration)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiIntegration)SetWebhookUrl(val *string) {
+func (j *jsiiProxy_ApiIntegration) SetWebhookUrl(val *string) {
 	if err := j.validateSetWebhookUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func ApiIntegration_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func ApiIntegration_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiIntegration_IsConstruct(x interface{}) *bool {
+func ApiIntegration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiIntegration_IsConstructParameters(x); err != nil {
@@ -846,7 +845,7 @@ func ApiIntegration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func ApiIntegration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiIntegration_IsTerraformElement(x interface{}) *bool {
+func ApiIntegration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiIntegration_IsTerraformElementParameters(x); err != nil {
@@ -865,7 +864,7 @@ func ApiIntegration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func ApiIntegration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiIntegration_IsTerraformResource(x interface{}) *bool {
+func ApiIntegration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiIntegration_IsTerraformResourceParameters(x); err != nil {
@@ -884,7 +883,7 @@ func ApiIntegration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.apiIntegration.ApiIntegration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,31 +908,31 @@ func (a *jsiiProxy_ApiIntegration) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiIntegration) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiIntegration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_ApiIntegration) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (a *jsiiProxy_ApiIntegration) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (a *jsiiProxy_ApiIntegration) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (a *jsiiProxy_ApiIntegration) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (a *jsiiProxy_ApiIntegration) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (a *jsiiProxy_ApiIntegration) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (a *jsiiProxy_ApiIntegration) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,15 +1060,15 @@ func (a *jsiiProxy_ApiIntegration) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiIntegration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1088,7 +1087,7 @@ func (a *jsiiProxy_ApiIntegration) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (a *jsiiProxy_ApiIntegration) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,18 +1114,18 @@ func (a *jsiiProxy_ApiIntegration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiIntegration) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (a *jsiiProxy_ApiIntegration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1148,18 +1147,18 @@ func (a *jsiiProxy_ApiIntegration) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) PutResponders(value interface{}) {
+func (a *jsiiProxy_ApiIntegration) PutResponders(value any) {
 	if err := a.validatePutRespondersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putResponders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,8 +1258,8 @@ func (a *jsiiProxy_ApiIntegration) ResetWebhookUrl() {
 	)
 }
 
-func (a *jsiiProxy_ApiIntegration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiIntegration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1272,8 +1271,8 @@ func (a *jsiiProxy_ApiIntegration) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiIntegration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1285,8 +1284,8 @@ func (a *jsiiProxy_ApiIntegration) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiIntegration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1298,8 +1297,8 @@ func (a *jsiiProxy_ApiIntegration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiIntegration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1324,8 +1323,8 @@ func (a *jsiiProxy_ApiIntegration) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiIntegration) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiIntegration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1336,4 +1335,3 @@ func (a *jsiiProxy_ApiIntegration) ToTerraform() interface{} {
 
 	return returns
 }
-

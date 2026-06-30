@@ -12,9 +12,9 @@ type IntegrationActionAddNoteFilterConditionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,14 +33,14 @@ type IntegrationActionAddNoteFilterConditionsOutputReference interface {
 	FieldInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
-	Not() interface{}
-	SetNot(val interface{})
-	NotInput() interface{}
+	Not() any
+	SetNot(val any)
+	NotInput() any
 	Operation() *string
 	SetOperation(val *string)
 	OperationInput() *string
@@ -58,7 +58,7 @@ type IntegrationActionAddNoteFilterConditionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type IntegrationActionAddNoteFilterConditionsOutputReference interface {
 	ResetOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) KeyI
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Not() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Not() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"not",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Not(
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) NotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) NotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Terr
 	return returns
 }
 
-
 func NewIntegrationActionAddNoteFilterConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IntegrationActionAddNoteFilterConditionsOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewIntegrationActionAddNoteFilterConditionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewIntegrationActionAddNoteFilterConditionsOutputReference_Override(i Integ
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetExpectedValue(val *string) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetExpectedValue(val *string) {
 	if err := j.validateSetExpectedValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetField(val *string) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetField(val *string) {
 	if err := j.validateSetFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetFi
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetKe
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetNot(val interface{}) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetNot(val any) {
 	if err := j.validateSetNotParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetNo
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetOperation(val *string) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetOperation(val *string) {
 	if err := j.validateSetOperationParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetOp
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetOrder(val *float64) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetOrder(val *float64) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetOr
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Comp
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetL
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Inte
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference) ToSt
 
 	return returns
 }
-

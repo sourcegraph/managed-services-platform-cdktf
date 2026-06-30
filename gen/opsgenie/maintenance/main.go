@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.Maintenance",
-		reflect.TypeOf((*Maintenance)(nil)).Elem(),
+		reflect.TypeFor[Maintenance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Maintenance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,19 +73,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceConfig",
-		reflect.TypeOf((*MaintenanceConfig)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRules",
-		reflect.TypeOf((*MaintenanceRules)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesEntity",
-		reflect.TypeOf((*MaintenanceRulesEntity)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRulesEntity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesEntityList",
-		reflect.TypeOf((*MaintenanceRulesEntityList)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRulesEntityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceRulesEntityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -107,7 +107,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesEntityOutputReference",
-		reflect.TypeOf((*MaintenanceRulesEntityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRulesEntityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceRulesEntityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesList",
-		reflect.TypeOf((*MaintenanceRulesList)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceRulesOutputReference",
-		reflect.TypeOf((*MaintenanceRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,11 +205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceTime",
-		reflect.TypeOf((*MaintenanceTime)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceTimeList",
-		reflect.TypeOf((*MaintenanceTimeList)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceTimeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceTimeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -231,7 +231,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.maintenance.MaintenanceTimeOutputReference",
-		reflect.TypeOf((*MaintenanceTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MaintenanceTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MaintenanceTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

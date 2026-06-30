@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationRuleStepsContactOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleStepsContactOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NotificationRuleStepsContactOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleStepsContactOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotificationRuleStepsContactOutputReferenceParameters(terraformR
 
 	return nil
 }
-

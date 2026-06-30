@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationAction",
-		reflect.TypeOf((*IntegrationAction)(nil)).Elem(),
+		reflect.TypeFor[IntegrationAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acknowledge", GoGetter: "Acknowledge"},
 			_jsii_.MemberProperty{JsiiProperty: "acknowledgeInput", GoGetter: "AcknowledgeInput"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,19 +86,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledge",
-		reflect.TypeOf((*IntegrationActionAcknowledge)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledge](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilter",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilter)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterConditions",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilterConditions)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilterConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterConditionsList",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilterConditionsList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilterConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeFilterConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterConditionsOutputReference",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilterConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilterConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeFilterConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterList",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilterList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterOutputReference",
-		reflect.TypeOf((*IntegrationActionAcknowledgeFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeList",
-		reflect.TypeOf((*IntegrationActionAcknowledgeList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -250,7 +250,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeOutputReference",
-		reflect.TypeOf((*IntegrationActionAcknowledgeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAcknowledgeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAcknowledgeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,19 +303,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNote",
-		reflect.TypeOf((*IntegrationActionAddNote)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNote](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilter",
-		reflect.TypeOf((*IntegrationActionAddNoteFilter)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterConditions",
-		reflect.TypeOf((*IntegrationActionAddNoteFilterConditions)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilterConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterConditionsList",
-		reflect.TypeOf((*IntegrationActionAddNoteFilterConditionsList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilterConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteFilterConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -337,7 +337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterConditionsOutputReference",
-		reflect.TypeOf((*IntegrationActionAddNoteFilterConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilterConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteFilterConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -385,7 +385,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterList",
-		reflect.TypeOf((*IntegrationActionAddNoteFilterList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -399,7 +399,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -407,7 +407,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteFilterOutputReference",
-		reflect.TypeOf((*IntegrationActionAddNoteFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -437,7 +437,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -445,7 +445,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteList",
-		reflect.TypeOf((*IntegrationActionAddNoteList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -467,7 +467,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAddNoteOutputReference",
-		reflect.TypeOf((*IntegrationActionAddNoteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionAddNoteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -512,7 +512,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionAddNoteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -520,19 +520,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionClose",
-		reflect.TypeOf((*IntegrationActionClose)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionClose](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilter",
-		reflect.TypeOf((*IntegrationActionCloseFilter)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterConditions",
-		reflect.TypeOf((*IntegrationActionCloseFilterConditions)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilterConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterConditionsList",
-		reflect.TypeOf((*IntegrationActionCloseFilterConditionsList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilterConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -546,7 +546,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseFilterConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -554,7 +554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterConditionsOutputReference",
-		reflect.TypeOf((*IntegrationActionCloseFilterConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilterConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -594,7 +594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseFilterConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -602,7 +602,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterList",
-		reflect.TypeOf((*IntegrationActionCloseFilterList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -616,7 +616,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -624,7 +624,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterOutputReference",
-		reflect.TypeOf((*IntegrationActionCloseFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -654,7 +654,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -662,7 +662,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseList",
-		reflect.TypeOf((*IntegrationActionCloseList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -676,7 +676,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -684,7 +684,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseOutputReference",
-		reflect.TypeOf((*IntegrationActionCloseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCloseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -729,7 +729,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCloseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -737,23 +737,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionConfig",
-		reflect.TypeOf((*IntegrationActionConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreate",
-		reflect.TypeOf((*IntegrationActionCreate)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilter",
-		reflect.TypeOf((*IntegrationActionCreateFilter)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilterConditions",
-		reflect.TypeOf((*IntegrationActionCreateFilterConditions)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilterConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilterConditionsList",
-		reflect.TypeOf((*IntegrationActionCreateFilterConditionsList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilterConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -767,7 +767,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateFilterConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -775,7 +775,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilterConditionsOutputReference",
-		reflect.TypeOf((*IntegrationActionCreateFilterConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilterConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -815,7 +815,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateFilterConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -823,7 +823,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilterList",
-		reflect.TypeOf((*IntegrationActionCreateFilterList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -837,7 +837,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -845,7 +845,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateFilterOutputReference",
-		reflect.TypeOf((*IntegrationActionCreateFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -875,7 +875,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -883,7 +883,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateList",
-		reflect.TypeOf((*IntegrationActionCreateList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -897,7 +897,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -905,7 +905,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateOutputReference",
-		reflect.TypeOf((*IntegrationActionCreateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertActions", GoGetter: "AlertActions"},
 			_jsii_.MemberProperty{JsiiProperty: "alertActionsInput", GoGetter: "AlertActionsInput"},
@@ -999,7 +999,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1007,11 +1007,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateResponders",
-		reflect.TypeOf((*IntegrationActionCreateResponders)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateResponders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateRespondersList",
-		reflect.TypeOf((*IntegrationActionCreateRespondersList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateRespondersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1025,7 +1025,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateRespondersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1033,7 +1033,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateRespondersOutputReference",
-		reflect.TypeOf((*IntegrationActionCreateRespondersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionCreateRespondersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1061,7 +1061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionCreateRespondersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1069,19 +1069,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnore",
-		reflect.TypeOf((*IntegrationActionIgnore)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilter",
-		reflect.TypeOf((*IntegrationActionIgnoreFilter)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilterConditions",
-		reflect.TypeOf((*IntegrationActionIgnoreFilterConditions)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilterConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilterConditionsList",
-		reflect.TypeOf((*IntegrationActionIgnoreFilterConditionsList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilterConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1095,7 +1095,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreFilterConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1103,7 +1103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilterConditionsOutputReference",
-		reflect.TypeOf((*IntegrationActionIgnoreFilterConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilterConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1143,7 +1143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreFilterConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1151,7 +1151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilterList",
-		reflect.TypeOf((*IntegrationActionIgnoreFilterList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1165,7 +1165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1173,7 +1173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreFilterOutputReference",
-		reflect.TypeOf((*IntegrationActionIgnoreFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1203,7 +1203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1211,7 +1211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreList",
-		reflect.TypeOf((*IntegrationActionIgnoreList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1225,7 +1225,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1233,7 +1233,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionIgnoreOutputReference",
-		reflect.TypeOf((*IntegrationActionIgnoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationActionIgnoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1269,7 +1269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationActionIgnoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

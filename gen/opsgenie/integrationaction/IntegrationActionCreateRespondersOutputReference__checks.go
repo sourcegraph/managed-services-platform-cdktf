@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateRespondersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIntegrationActionCreateRespondersOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -10,14 +10,14 @@ import (
 
 type EscalationRepeatOutputReference interface {
 	cdktf.ComplexObject
-	CloseAlertAfterAll() interface{}
-	SetCloseAlertAfterAll(val interface{})
-	CloseAlertAfterAllInput() interface{}
+	CloseAlertAfterAll() any
+	SetCloseAlertAfterAll(val any)
+	CloseAlertAfterAllInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type EscalationRepeatOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	ResetRecipientStates() interface{}
-	SetResetRecipientStates(val interface{})
-	ResetRecipientStatesInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	ResetRecipientStates() any
+	SetResetRecipientStates(val any)
+	ResetRecipientStatesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type EscalationRepeatOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type EscalationRepeatOutputReference interface {
 	ResetWaitInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_EscalationRepeatOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"closeAlertAfterAll",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAll() interfa
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"closeAlertAfterAllInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) CloseAlertAfterAllInput() in
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) InternalValue() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) ResetRecipientStates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) ResetRecipientStates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resetRecipientStates",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) ResetRecipientStates() inter
 	return returns
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) ResetRecipientStatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationRepeatOutputReference) ResetRecipientStatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resetRecipientStatesInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) WaitIntervalInput() *float64
 	return returns
 }
 
-
 func NewEscalationRepeatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EscalationRepeatOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewEscalationRepeatOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.escalation.EscalationRepeatOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewEscalationRepeatOutputReference_Override(e EscalationRepeatOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.escalation.EscalationRepeatOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetCloseAlertAfterAll(val interface{}) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetCloseAlertAfterAll(val any) {
 	if err := j.validateSetCloseAlertAfterAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetCloseAlertAfterAll(val int
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetCount(val *float64) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetCount(val *float64) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetResetRecipientStates(val interface{}) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetResetRecipientStates(val any) {
 	if err := j.validateSetResetRecipientStatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetResetRecipientStates(val i
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference)SetWaitInterval(val *float64) {
+func (j *jsiiProxy_EscalationRepeatOutputReference) SetWaitInterval(val *float64) {
 	if err := j.validateSetWaitIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EscalationRepeatOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EscalationRepeatOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) ResetWaitInterval() {
 	)
 }
 
-func (e *jsiiProxy_EscalationRepeatOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationRepeatOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) ToString() *string {
 
 	return returns
 }
-

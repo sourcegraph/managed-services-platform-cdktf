@@ -34,7 +34,7 @@ func (m *jsiiProxy_MaintenanceRulesEntityList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceRulesEntityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceRulesEntityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMaintenanceRulesEntityListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

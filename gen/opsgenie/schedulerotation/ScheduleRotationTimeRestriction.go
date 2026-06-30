@@ -1,6 +1,5 @@
 package schedulerotation
 
-
 type ScheduleRotationTimeRestriction struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#type ScheduleRotation#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -11,6 +10,5 @@ type ScheduleRotationTimeRestriction struct {
 	// restrictions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#restrictions ScheduleRotation#restrictions}
-	Restrictions interface{} `field:"optional" json:"restrictions" yaml:"restrictions"`
+	Restrictions any `field:"optional" json:"restrictions" yaml:"restrictions"`
 }
-

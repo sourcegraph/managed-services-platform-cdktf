@@ -1,6 +1,5 @@
 package notificationrule
 
-
 type NotificationRuleTimeRestriction struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#type NotificationRule#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -11,6 +10,5 @@ type NotificationRuleTimeRestriction struct {
 	// restrictions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#restrictions NotificationRule#restrictions}
-	Restrictions interface{} `field:"optional" json:"restrictions" yaml:"restrictions"`
+	Restrictions any `field:"optional" json:"restrictions" yaml:"restrictions"`
 }
-

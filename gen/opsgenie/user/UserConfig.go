@@ -6,9 +6,9 @@ import (
 
 type UserConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type UserConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user#full_name User#full_name}.
 	FullName *string `field:"required" json:"fullName" yaml:"fullName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user#role User#role}.
@@ -41,8 +41,7 @@ type UserConfig struct {
 	// user_address block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user#user_address User#user_address}
-	UserAddress interface{} `field:"optional" json:"userAddress" yaml:"userAddress"`
+	UserAddress any `field:"optional" json:"userAddress" yaml:"userAddress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/user#user_details User#user_details}.
 	UserDetails *map[string]*string `field:"optional" json:"userDetails" yaml:"userDetails"`
 }
-

@@ -12,9 +12,9 @@ type ScheduleRotationTimeRestrictionRestrictionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type ScheduleRotationTimeRestrictionRestrictionsOutputReference interface {
 	EndMinInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	StartDay() *string
 	SetStartDay(val *string)
 	StartDayInput() *string
@@ -58,7 +58,7 @@ type ScheduleRotationTimeRestrictionRestrictionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type ScheduleRotationTimeRestrictionRestrictionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -284,7 +284,6 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) T
 	return returns
 }
 
-
 func NewScheduleRotationTimeRestrictionRestrictionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ScheduleRotationTimeRestrictionRestrictionsOutputReference {
 	_init_.Initialize()
 
@@ -295,7 +294,7 @@ func NewScheduleRotationTimeRestrictionRestrictionsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -307,12 +306,12 @@ func NewScheduleRotationTimeRestrictionRestrictionsOutputReference_Override(s Sc
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetEndDay(val *string) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetEndDay(val *string) {
 	if err := j.validateSetEndDayParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetEndHour(val *float64) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetEndHour(val *float64) {
 	if err := j.validateSetEndHourParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetEndMin(val *float64) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetEndMin(val *float64) {
 	if err := j.validateSetEndMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetStartDay(val *string) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetStartDay(val *string) {
 	if err := j.validateSetStartDayParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetStartHour(val *float64) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetStartHour(val *float64) {
 	if err := j.validateSetStartHourParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetStartMin(val *float64) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetStartMin(val *float64) {
 	if err := j.validateSetStartMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,16 +445,16 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) C
 	return returns
 }
 
-func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) G
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,23 +611,23 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) I
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -647,4 +646,3 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference) T
 
 	return returns
 }
-

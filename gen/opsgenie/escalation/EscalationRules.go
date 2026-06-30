@@ -1,6 +1,5 @@
 package escalation
 
-
 type EscalationRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/escalation#condition Escalation#condition}.
 	Condition *string `field:"required" json:"condition" yaml:"condition"`
@@ -11,6 +10,5 @@ type EscalationRules struct {
 	// recipient block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/escalation#recipient Escalation#recipient}
-	Recipient interface{} `field:"required" json:"recipient" yaml:"recipient"`
+	Recipient any `field:"required" json:"recipient" yaml:"recipient"`
 }
-

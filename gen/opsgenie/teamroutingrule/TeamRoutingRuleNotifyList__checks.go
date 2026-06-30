@@ -34,7 +34,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleNotifyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTeamRoutingRuleNotifyListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

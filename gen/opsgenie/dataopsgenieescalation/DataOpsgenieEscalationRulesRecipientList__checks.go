@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataOpsgenieEscalationRulesRecipientList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalationRulesRecipientList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOpsgenieEscalationRulesRecipientList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataOpsgenieEscalationRulesRecipientListParameters(terraformReso
 
 	return nil
 }
-

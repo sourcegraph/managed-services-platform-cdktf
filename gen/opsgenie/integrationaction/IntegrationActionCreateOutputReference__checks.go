@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) validateInterpolation
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) validatePutFilterParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) validatePutFilterPara
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) validatePutRespondersParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) validatePutRespondersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetAliasParam
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetAppendAttachmentsParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetAppendAttachmentsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -196,7 +196,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetAppendAtta
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -293,7 +293,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetExtraPrope
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreAlertActionsFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreAlertActionsFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreAler
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreExtraPropertiesFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreExtraPropertiesFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreExtr
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreRespondersFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreRespondersFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreResp
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTagsFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTagsFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTags
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTeamsFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTeamsFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -393,7 +393,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetIgnoreTeam
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -524,4 +524,3 @@ func validateNewIntegrationActionCreateOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

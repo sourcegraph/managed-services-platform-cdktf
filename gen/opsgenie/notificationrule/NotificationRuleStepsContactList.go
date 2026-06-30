@@ -17,8 +17,8 @@ type NotificationRuleStepsContactList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NotificationRuleStepsContactList interface {
 	Get(index *float64) NotificationRuleStepsContactOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NotificationRuleStepsContactList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsContactList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NotificationRuleStepsContactList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNotificationRuleStepsContactList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationRuleStepsContactList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNotificationRuleStepsContactList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsContactList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNotificationRuleStepsContactList_Override(n NotificationRuleStepsContact
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsContactList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationRuleStepsContactList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NotificationRuleStepsContactList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationRuleStepsContactList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NotificationRuleStepsContactList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationRuleStepsContactList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NotificationRuleStepsContactList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsContactList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationRuleStepsContactList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NotificationRuleStepsContactList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NotificationRuleStepsContactList) Get(index *float64) Notific
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleStepsContactList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationRuleStepsContactList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NotificationRuleStepsContactList) ToString() *string {
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type CustomRole interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type CustomRole interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type CustomRole interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type CustomRole interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type CustomRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CustomRole
@@ -151,8 +151,8 @@ func (j *jsiiProxy_CustomRole) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomRole) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_CustomRole) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomRole) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_CustomRole) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomRole) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_CustomRole) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CustomRole) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_CustomRole) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomRole) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_CustomRole) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_CustomRole) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomRole) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,7 +401,6 @@ func (j *jsiiProxy_CustomRole) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role opsgenie_custom_role} Resource.
 func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleConfig) CustomRole {
 	_init_.Initialize()
@@ -413,7 +412,7 @@ func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleCon
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -426,12 +425,12 @@ func NewCustomRole_Override(c CustomRole, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomRole) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_CustomRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetCount(val interface{}) {
+func (j *jsiiProxy_CustomRole) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CustomRole)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomRole) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CustomRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetDisallowedRights(val *[]*string) {
+func (j *jsiiProxy_CustomRole) SetDisallowedRights(val *[]*string) {
 	if err := j.validateSetDisallowedRightsParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_CustomRole)SetDisallowedRights(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetExtendedRole(val *string) {
+func (j *jsiiProxy_CustomRole) SetExtendedRole(val *string) {
 	if err := j.validateSetExtendedRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_CustomRole)SetExtendedRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomRole) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -491,7 +490,7 @@ func (j *jsiiProxy_CustomRole)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetGrantedRights(val *[]*string) {
+func (j *jsiiProxy_CustomRole) SetGrantedRights(val *[]*string) {
 	if err := j.validateSetGrantedRightsParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_CustomRole)SetGrantedRights(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetId(val *string) {
+func (j *jsiiProxy_CustomRole) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_CustomRole)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_CustomRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomRole) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_CustomRole)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomRole) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_CustomRole)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomRole)SetRoleName(val *string) {
+func (j *jsiiProxy_CustomRole) SetRoleName(val *string) {
 	if err := j.validateSetRoleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func CustomRole_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func CustomRole_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CustomRole_IsConstruct(x interface{}) *bool {
+func CustomRole_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomRole_IsConstructParameters(x); err != nil {
@@ -601,7 +600,7 @@ func CustomRole_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func CustomRole_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomRole_IsTerraformElement(x interface{}) *bool {
+func CustomRole_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomRole_IsTerraformElementParameters(x); err != nil {
@@ -620,7 +619,7 @@ func CustomRole_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func CustomRole_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomRole_IsTerraformResource(x interface{}) *bool {
+func CustomRole_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomRole_IsTerraformResourceParameters(x); err != nil {
@@ -639,7 +638,7 @@ func CustomRole_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.customRole.CustomRole",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,31 +663,31 @@ func (c *jsiiProxy_CustomRole) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CustomRole) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CustomRole) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CustomRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CustomRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (c *jsiiProxy_CustomRole) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (c *jsiiProxy_CustomRole) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (c *jsiiProxy_CustomRole) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (c *jsiiProxy_CustomRole) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (c *jsiiProxy_CustomRole) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (c *jsiiProxy_CustomRole) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (c *jsiiProxy_CustomRole) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,15 +815,15 @@ func (c *jsiiProxy_CustomRole) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CustomRole) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomRole) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -843,7 +842,7 @@ func (c *jsiiProxy_CustomRole) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_CustomRole) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,18 +869,18 @@ func (c *jsiiProxy_CustomRole) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CustomRole) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CustomRole) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -892,7 +891,7 @@ func (c *jsiiProxy_CustomRole) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_CustomRole) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,8 +946,8 @@ func (c *jsiiProxy_CustomRole) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_CustomRole) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomRole) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_CustomRole) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomRole) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomRole) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -973,8 +972,8 @@ func (c *jsiiProxy_CustomRole) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_CustomRole) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomRole) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -986,8 +985,8 @@ func (c *jsiiProxy_CustomRole) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomRole) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomRole) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1012,8 +1011,8 @@ func (c *jsiiProxy_CustomRole) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CustomRole) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomRole) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1024,4 +1023,3 @@ func (c *jsiiProxy_CustomRole) ToTerraform() interface{} {
 
 	return returns
 }
-

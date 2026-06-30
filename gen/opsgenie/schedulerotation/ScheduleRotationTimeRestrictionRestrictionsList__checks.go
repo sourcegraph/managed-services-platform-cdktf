@@ -34,7 +34,7 @@ func (s *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewScheduleRotationTimeRestrictionRestrictionsListParameters(terraf
 
 	return nil
 }
-
