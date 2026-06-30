@@ -15,9 +15,9 @@ type RegistryModuleVcsRepoOutputReference interface {
 	BranchInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,9 +44,9 @@ type RegistryModuleVcsRepoOutputReference interface {
 	OauthTokenId() *string
 	SetOauthTokenId(val *string)
 	OauthTokenIdInput() *string
-	Tags() interface{}
-	SetTags(val interface{})
-	TagsInput() interface{}
+	Tags() any
+	SetTags(val any)
+	TagsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type RegistryModuleVcsRepoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type RegistryModuleVcsRepoOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) BranchInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) OauthTokenIdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) Tags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) Tags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tags",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) Tags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) TagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) TagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tagsInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewRegistryModuleVcsRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RegistryModuleVcsRepoOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewRegistryModuleVcsRepoOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewRegistryModuleVcsRepoOutputReference_Override(r RegistryModuleVcsRepoOut
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetDisplayIdentifier(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetDisplayIdentifier(val *string) {
 	if err := j.validateSetDisplayIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetDisplayIdentifier(val
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetGithubAppInstallationId(val *string) {
 	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetGithubAppInstallation
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetIdentifier(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetIdentifier(val *strin
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetInternalValue(val *RegistryModuleVcsRepo) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetInternalValue(val *RegistryModuleVcsRepo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetInternalValue(val *Re
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetOauthTokenId(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetOauthTokenId(val *string) {
 	if err := j.validateSetOauthTokenIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetOauthTokenId(val *str
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetTags(val interface{}) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetTags(val any) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetTags(val interface{})
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) ResetTags() {
 	)
 }
 
-func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) ToString() *string {
 
 	return returns
 }
-

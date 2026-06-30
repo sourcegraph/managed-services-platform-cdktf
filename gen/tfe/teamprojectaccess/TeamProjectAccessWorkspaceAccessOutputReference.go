@@ -12,41 +12,41 @@ type TeamProjectAccessWorkspaceAccessOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Create() interface{}
-	SetCreate(val interface{})
-	CreateInput() interface{}
+	Create() any
+	SetCreate(val any)
+	CreateInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Delete() interface{}
-	SetDelete(val interface{})
-	DeleteInput() interface{}
+	Delete() any
+	SetDelete(val any)
+	DeleteInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Locking() interface{}
-	SetLocking(val interface{})
-	LockingInput() interface{}
-	Move() interface{}
-	SetMove(val interface{})
-	MoveInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Locking() any
+	SetLocking(val any)
+	LockingInput() any
+	Move() any
+	SetMove(val any)
+	MoveInput() any
 	Runs() *string
 	SetRuns(val *string)
 	RunsInput() *string
-	RunTasks() interface{}
-	SetRunTasks(val interface{})
-	RunTasksInput() interface{}
+	RunTasks() any
+	SetRunTasks(val any)
+	RunTasksInput() any
 	SentinelMocks() *string
 	SetSentinelMocks(val *string)
 	SentinelMocksInput() *string
@@ -67,7 +67,7 @@ type TeamProjectAccessWorkspaceAccessOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type TeamProjectAccessWorkspaceAccessOutputReference interface {
 	ResetVariables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ComplexObjec
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Create() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Create() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"create",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Create() int
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) CreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) CreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) CreationStac
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Delete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Delete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"delete",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Delete() int
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) DeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) DeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Locking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Locking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locking",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Locking() in
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) LockingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) LockingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lockingInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) LockingInput
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Move() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Move() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"move",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Move() inter
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) MoveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) MoveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"moveInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunTasks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunTasks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runTasks",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunTasks() i
 	return returns
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunTasksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) RunTasksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runTasksInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) VariablesInp
 	return returns
 }
 
-
 func NewTeamProjectAccessWorkspaceAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TeamProjectAccessWorkspaceAccessOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewTeamProjectAccessWorkspaceAccessOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessWorkspaceAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewTeamProjectAccessWorkspaceAccessOutputReference_Override(t TeamProjectAc
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessWorkspaceAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetCreate(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetCreate(val any) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetCreate(val
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetDelete(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetDelete(val any) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetDelete(val
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetLocking(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetLocking(val any) {
 	if err := j.validateSetLockingParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetLocking(va
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetMove(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetMove(val any) {
 	if err := j.validateSetMoveParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetMove(val i
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetRuns(val *string) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetRuns(val *string) {
 	if err := j.validateSetRunsParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetRuns(val *
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetRunTasks(val interface{}) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetRunTasks(val any) {
 	if err := j.validateSetRunTasksParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetRunTasks(v
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetSentinelMocks(val *string) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetSentinelMocks(val *string) {
 	if err := j.validateSetSentinelMocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetSentinelMo
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetStateVersions(val *string) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetStateVersions(val *string) {
 	if err := j.validateSetStateVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetStateVersi
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference)SetVariables(val *string) {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) SetVariables(val *string) {
 	if err := j.validateSetVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ComputeFqn()
 	return returns
 }
 
-func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetListAttri
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) GetStringMap
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Interpolatio
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ResetVariabl
 	)
 }
 
-func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) ToString() *
 
 	return returns
 }
-

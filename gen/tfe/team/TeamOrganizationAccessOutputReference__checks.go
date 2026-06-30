@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetAccessSecretTeamsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetAccessSecretTeamsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetAccessSecre
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -191,7 +191,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetInternalVal
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageAgentPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageAgentPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageAgent
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembershipParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembershipParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageMembe
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageModulesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageModulesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageModul
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageOrganizationAccessParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageOrganizationAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageOrgan
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePoliciesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePoliciesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePolic
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePolicyOverridesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePolicyOverridesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManagePolic
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProjectsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProjectsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProje
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvidersParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvidersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageProvi
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageRunTasksParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageRunTasksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -371,7 +371,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageRunTa
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageTeamsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageTeamsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -391,7 +391,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageTeams
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageVcsSettingsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageVcsSettingsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageVcsSe
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageWorkspacesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageWorkspacesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetManageWorks
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadProjectsParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadProjectsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadProject
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadWorkspacesParameters(val interface{}) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetReadWorkspacesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -498,4 +498,3 @@ func validateNewTeamOrganizationAccessOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

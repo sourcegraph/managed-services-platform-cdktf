@@ -6,9 +6,9 @@ import (
 
 type TestVariableConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type TestVariableConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether this is a Terraform or environment variable. Valid values are "terraform" or "env".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#category TestVariable#category}
@@ -36,9 +36,9 @@ type TestVariableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#description TestVariable#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#hcl TestVariable#hcl}.
-	Hcl interface{} `field:"optional" json:"hcl" yaml:"hcl"`
+	Hcl any `field:"optional" json:"hcl" yaml:"hcl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#sensitive TestVariable#sensitive}.
-	Sensitive interface{} `field:"optional" json:"sensitive" yaml:"sensitive"`
+	Sensitive any `field:"optional" json:"sensitive" yaml:"sensitive"`
 	// Value of the variable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#value TestVariable#value}
@@ -48,4 +48,3 @@ type TestVariableConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/test_variable#value_wo TestVariable#value_wo}
 	ValueWo *string `field:"optional" json:"valueWo" yaml:"valueWo"`
 }
-

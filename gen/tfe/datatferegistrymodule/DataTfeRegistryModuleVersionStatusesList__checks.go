@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataTfeRegistryModuleVersionStatusesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModuleVersionStatusesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataTfeRegistryModuleVersionStatusesListParameters(terraformReso
 
 	return nil
 }
-

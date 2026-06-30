@@ -34,7 +34,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNoCodeModuleVariableOptionsListParameters(terraformResource cdkt
 
 	return nil
 }
-

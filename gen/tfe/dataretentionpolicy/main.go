@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
-		reflect.TypeOf((*DataRetentionPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataRetentionPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyConfig",
-		reflect.TypeOf((*DataRetentionPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThan",
-		reflect.TypeOf((*DataRetentionPolicyDeleteOlderThan)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicyDeleteOlderThan](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThanOutputReference",
-		reflect.TypeOf((*DataRetentionPolicyDeleteOlderThanOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicyDeleteOlderThanOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,11 +118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDontDelete",
-		reflect.TypeOf((*DataRetentionPolicyDontDelete)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicyDontDelete](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDontDeleteOutputReference",
-		reflect.TypeOf((*DataRetentionPolicyDontDeleteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataRetentionPolicyDontDeleteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataRetentionPolicyDontDeleteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

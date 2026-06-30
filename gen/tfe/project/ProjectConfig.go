@@ -6,9 +6,9 @@ import (
 
 type ProjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#name Project#name}
@@ -34,7 +34,7 @@ type ProjectConfig struct {
 	// Explicitly ignores tags created outside of Terraform so they will not be overwritten by tags defined in configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#ignore_additional_tags Project#ignore_additional_tags}
-	IgnoreAdditionalTags interface{} `field:"optional" json:"ignoreAdditionalTags" yaml:"ignoreAdditionalTags"`
+	IgnoreAdditionalTags any `field:"optional" json:"ignoreAdditionalTags" yaml:"ignoreAdditionalTags"`
 	// Name of the organization to which the project belongs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#organization Project#organization}
@@ -44,4 +44,3 @@ type ProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/project#tags Project#tags}
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

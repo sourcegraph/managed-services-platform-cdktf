@@ -15,15 +15,15 @@ type TeamNotificationConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,9 +37,9 @@ type TeamNotificationConfiguration interface {
 	EmailUserIds() *[]*string
 	SetEmailUserIds(val *[]*string)
 	EmailUserIdsInput() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,18 +63,18 @@ type TeamNotificationConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TeamId() *string
 	SetTeamId(val *string)
 	TeamIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Token() *string
@@ -93,9 +93,9 @@ type TeamNotificationConfiguration interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type TeamNotificationConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type TeamNotificationConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type TeamNotificationConfiguration interface {
 	ResetTokenWo()
 	ResetTriggers()
 	ResetUrl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TeamNotificationConfiguration
@@ -170,8 +170,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) EmailUserIdsInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_TeamNotificationConfiguration) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamNotificationConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_TeamNotificationConfiguration) UrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_notification_configuration tfe_team_notification_configuration} Resource.
 func NewTeamNotificationConfiguration(scope constructs.Construct, id *string, config *TeamNotificationConfigurationConfig) TeamNotificationConfiguration {
 	_init_.Initialize()
@@ -542,7 +541,7 @@ func NewTeamNotificationConfiguration(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewTeamNotificationConfiguration_Override(t TeamNotificationConfiguration, 
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetDestinationType(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetDestinationType(val *string) {
 	if err := j.validateSetDestinationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetDestinationType(val *string)
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetEmailAddresses(val *[]*string) {
 	if err := j.validateSetEmailAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetEmailAddresses(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetEmailUserIds(val *[]*string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetEmailUserIds(val *[]*string) {
 	if err := j.validateSetEmailUserIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetEmailUserIds(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetEnabled(val interface{}) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetName(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetTeamId(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetTeamId(val *string) {
 	if err := j.validateSetTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetToken(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetToken(val *string) {
 	if err := j.validateSetTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetTokenWo(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetTokenWo(val *string) {
 	if err := j.validateSetTokenWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetTokenWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetTriggers(val *[]*string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetTriggers(val *[]*string) {
 	if err := j.validateSetTriggersParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_TeamNotificationConfiguration)SetTriggers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamNotificationConfiguration)SetUrl(val *string) {
+func (j *jsiiProxy_TeamNotificationConfiguration) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func TeamNotificationConfiguration_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func TeamNotificationConfiguration_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TeamNotificationConfiguration_IsConstruct(x interface{}) *bool {
+func TeamNotificationConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamNotificationConfiguration_IsConstructParameters(x); err != nil {
@@ -785,7 +784,7 @@ func TeamNotificationConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func TeamNotificationConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamNotificationConfiguration_IsTerraformElement(x interface{}) *bool {
+func TeamNotificationConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamNotificationConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -804,7 +803,7 @@ func TeamNotificationConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func TeamNotificationConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamNotificationConfiguration_IsTerraformResource(x interface{}) *bool {
+func TeamNotificationConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamNotificationConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -823,7 +822,7 @@ func TeamNotificationConfiguration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.teamNotificationConfiguration.TeamNotificationConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,31 +847,31 @@ func (t *jsiiProxy_TeamNotificationConfiguration) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TeamNotificationConfiguration) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamNotificationConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,15 +999,15 @@ func (t *jsiiProxy_TeamNotificationConfiguration) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1027,7 +1026,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,18 +1053,18 @@ func (t *jsiiProxy_TeamNotificationConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TeamNotificationConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (t *jsiiProxy_TeamNotificationConfiguration) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1155,8 +1154,8 @@ func (t *jsiiProxy_TeamNotificationConfiguration) ResetUrl() {
 	)
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1168,8 +1167,8 @@ func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1181,8 +1180,8 @@ func (t *jsiiProxy_TeamNotificationConfiguration) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1194,8 +1193,8 @@ func (t *jsiiProxy_TeamNotificationConfiguration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1220,8 +1219,8 @@ func (t *jsiiProxy_TeamNotificationConfiguration) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamNotificationConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamNotificationConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1232,4 +1231,3 @@ func (t *jsiiProxy_TeamNotificationConfiguration) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeWorkspaceIdsTagFiltersOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceIdsTagFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeWorkspaceIdsTagFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataTfeWorkspaceIdsTagFiltersOutputReferenceParameters(terraform
 
 	return nil
 }
-

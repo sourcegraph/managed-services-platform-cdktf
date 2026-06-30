@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.testVariable.TestVariable",
-		reflect.TypeOf((*TestVariable)(nil)).Elem(),
+		reflect.TypeFor[TestVariable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueWo", GoGetter: "ValueWo"},
 			_jsii_.MemberProperty{JsiiProperty: "valueWoInput", GoGetter: "ValueWoInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TestVariable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,6 +88,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.testVariable.TestVariableConfig",
-		reflect.TypeOf((*TestVariableConfig)(nil)).Elem(),
+		reflect.TypeFor[TestVariableConfig](),
 	)
 }

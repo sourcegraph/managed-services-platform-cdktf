@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataTfeRegistryModulePermissionsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModulePermissionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModulePermissionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataTfeRegistryModulePermissionsListParameters(terraformResource
 
 	return nil
 }
-

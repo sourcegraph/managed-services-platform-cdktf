@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
-		reflect.TypeOf((*DataTfeTeamProjectAccess)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccess", GoGetter: "WorkspaceAccess"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,15 +63,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessConfig",
-		reflect.TypeOf((*DataTfeTeamProjectAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessProjectAccess",
-		reflect.TypeOf((*DataTfeTeamProjectAccessProjectAccess)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessProjectAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessProjectAccessList",
-		reflect.TypeOf((*DataTfeTeamProjectAccessProjectAccessList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessProjectAccessList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccessProjectAccessList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -92,7 +92,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessProjectAccessOutputReference",
-		reflect.TypeOf((*DataTfeTeamProjectAccessProjectAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessProjectAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "variableSets", GoGetter: "VariableSets"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccessProjectAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessWorkspaceAccess",
-		reflect.TypeOf((*DataTfeTeamProjectAccessWorkspaceAccess)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessWorkspaceAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessWorkspaceAccessList",
-		reflect.TypeOf((*DataTfeTeamProjectAccessWorkspaceAccessList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessWorkspaceAccessList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccessWorkspaceAccessList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccessWorkspaceAccessOutputReference",
-		reflect.TypeOf((*DataTfeTeamProjectAccessWorkspaceAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeTeamProjectAccessWorkspaceAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeTeamProjectAccessWorkspaceAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -15,11 +15,11 @@ type DataTfeRegistryProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -54,21 +54,21 @@ type DataTfeRegistryProvider interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistryName() *string
 	SetRegistryName(val *string)
 	RegistryNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataTfeRegistryProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegistryName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataTfeRegistryProvider
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataTfeRegistryProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeRegistryProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataTfeRegistryProvider) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeRegistryProvider) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_DataTfeRegistryProvider) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataTfeRegistryProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataTfeRegistryProvider) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataTfeRegistryProvider) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -365,7 +365,6 @@ func (j *jsiiProxy_DataTfeRegistryProvider) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/data-sources/registry_provider tfe_registry_provider} Data Source.
 func NewDataTfeRegistryProvider(scope constructs.Construct, id *string, config *DataTfeRegistryProviderConfig) DataTfeRegistryProvider {
 	_init_.Initialize()
@@ -377,7 +376,7 @@ func NewDataTfeRegistryProvider(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -390,12 +389,12 @@ func NewDataTfeRegistryProvider_Override(d DataTfeRegistryProvider, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetCount(val interface{}) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetName(val *string) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetNamespace(val *string) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetOrganization(val *string) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataTfeRegistryProvider)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataTfeRegistryProvider)SetRegistryName(val *string) {
+func (j *jsiiProxy_DataTfeRegistryProvider) SetRegistryName(val *string) {
 	if err := j.validateSetRegistryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func DataTfeRegistryProvider_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func DataTfeRegistryProvider_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTfeRegistryProvider_IsConstruct(x interface{}) *bool {
+func DataTfeRegistryProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeRegistryProvider_IsConstructParameters(x); err != nil {
@@ -532,7 +531,7 @@ func DataTfeRegistryProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func DataTfeRegistryProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeRegistryProvider_IsTerraformDataSource(x interface{}) *bool {
+func DataTfeRegistryProvider_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeRegistryProvider_IsTerraformDataSourceParameters(x); err != nil {
@@ -551,7 +550,7 @@ func DataTfeRegistryProvider_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func DataTfeRegistryProvider_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTfeRegistryProvider_IsTerraformElement(x interface{}) *bool {
+func DataTfeRegistryProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataTfeRegistryProvider_IsTerraformElementParameters(x); err != nil {
@@ -570,7 +569,7 @@ func DataTfeRegistryProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataTfeRegistryProvider.DataTfeRegistryProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -588,27 +587,27 @@ func DataTfeRegistryProvider_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataTfeRegistryProvider) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataTfeRegistryProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (d *jsiiProxy_DataTfeRegistryProvider) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataTfeRegistryProvider) ResetRegistryName() {
 	)
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataTfeRegistryProvider) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeRegistryProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -841,8 +840,8 @@ func (d *jsiiProxy_DataTfeRegistryProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeRegistryProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataTfeRegistryProvider) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeRegistryProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataTfeRegistryProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -879,4 +878,3 @@ func (d *jsiiProxy_DataTfeRegistryProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

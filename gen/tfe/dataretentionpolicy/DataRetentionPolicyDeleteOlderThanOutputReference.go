@@ -12,9 +12,9 @@ type DataRetentionPolicyDeleteOlderThanOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DataRetentionPolicyDeleteOlderThanOutputReference interface {
 	DaysInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type DataRetentionPolicyDeleteOlderThanOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DataRetentionPolicyDeleteOlderThanOutputReference interface {
 	ResetDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) TerraformR
 	return returns
 }
 
-
 func NewDataRetentionPolicyDeleteOlderThanOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataRetentionPolicyDeleteOlderThanOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDataRetentionPolicyDeleteOlderThanOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDataRetentionPolicyDeleteOlderThanOutputReference_Override(d DataRetenti
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicyDeleteOlderThanOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetDays(val *float64) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetDays(val *float64) {
 	if err := j.validateSetDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetDays(val
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetListAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetNumberA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetNumberL
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetNumberM
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetStringA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) GetStringM
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) ResetDays(
 	)
 }
 
-func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DataRetentionPolicyDeleteOlderThanOutputReference) ToString()
 
 	return returns
 }
-

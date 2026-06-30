@@ -15,15 +15,15 @@ type RegistryModule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,9 +55,9 @@ type RegistryModule interface {
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
-	NoCode() interface{}
-	SetNoCode(val interface{})
-	NoCodeInput() interface{}
+	NoCode() any
+	SetNoCode(val any)
+	NoCodeInput() any
 	// The tree node.
 	Node() constructs.Node
 	Organization() *string
@@ -68,32 +68,32 @@ type RegistryModule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublishingMechanism() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistryName() *string
 	SetRegistryName(val *string)
 	RegistryNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TestConfig() RegistryModuleTestConfigList
-	TestConfigInput() interface{}
+	TestConfigInput() any
 	VcsRepo() RegistryModuleVcsRepoOutputReference
 	VcsRepoInput() *RegistryModuleVcsRepo
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type RegistryModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type RegistryModule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTestConfig(value interface{})
+	PutTestConfig(value any)
 	PutVcsRepo(value *RegistryModuleVcsRepo)
 	ResetId()
 	ResetInitialVersion()
@@ -145,17 +145,17 @@ type RegistryModule interface {
 	ResetRegistryName()
 	ResetTestConfig()
 	ResetVcsRepo()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RegistryModule
@@ -173,8 +173,8 @@ func (j *jsiiProxy_RegistryModule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_RegistryModule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RegistryModule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_RegistryModule) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_RegistryModule) NamespaceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) NoCode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) NoCode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noCode",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_RegistryModule) NoCode() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) NoCodeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) NoCodeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noCodeInput",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_RegistryModule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RegistryModule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_RegistryModule) PublishingMechanism() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_RegistryModule) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RegistryModule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_RegistryModule) TestConfig() RegistryModuleTestConfigList {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModule) TestConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModule) TestConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"testConfigInput",
@@ -533,7 +533,6 @@ func (j *jsiiProxy_RegistryModule) VcsRepoInput() *RegistryModuleVcsRepo {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/registry_module tfe_registry_module} Resource.
 func NewRegistryModule(scope constructs.Construct, id *string, config *RegistryModuleConfig) RegistryModule {
 	_init_.Initialize()
@@ -545,7 +544,7 @@ func NewRegistryModule(scope constructs.Construct, id *string, config *RegistryM
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -558,12 +557,12 @@ func NewRegistryModule_Override(r RegistryModule, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetConnection(val interface{}) {
+func (j *jsiiProxy_RegistryModule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_RegistryModule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetCount(val interface{}) {
+func (j *jsiiProxy_RegistryModule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_RegistryModule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RegistryModule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_RegistryModule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RegistryModule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_RegistryModule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetId(val *string) {
+func (j *jsiiProxy_RegistryModule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_RegistryModule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetInitialVersion(val *string) {
+func (j *jsiiProxy_RegistryModule) SetInitialVersion(val *string) {
 	if err := j.validateSetInitialVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_RegistryModule)SetInitialVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RegistryModule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_RegistryModule)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetModuleProvider(val *string) {
+func (j *jsiiProxy_RegistryModule) SetModuleProvider(val *string) {
 	if err := j.validateSetModuleProviderParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_RegistryModule)SetModuleProvider(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetName(val *string) {
+func (j *jsiiProxy_RegistryModule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_RegistryModule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetNamespace(val *string) {
+func (j *jsiiProxy_RegistryModule) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_RegistryModule)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetNoCode(val interface{}) {
+func (j *jsiiProxy_RegistryModule) SetNoCode(val any) {
 	if err := j.validateSetNoCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_RegistryModule)SetNoCode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetOrganization(val *string) {
+func (j *jsiiProxy_RegistryModule) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_RegistryModule)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RegistryModule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_RegistryModule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RegistryModule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_RegistryModule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RegistryModule)SetRegistryName(val *string) {
+func (j *jsiiProxy_RegistryModule) SetRegistryName(val *string) {
 	if err := j.validateSetRegistryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func RegistryModule_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func RegistryModule_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RegistryModule_IsConstruct(x interface{}) *bool {
+func RegistryModule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegistryModule_IsConstructParameters(x); err != nil {
@@ -766,7 +765,7 @@ func RegistryModule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func RegistryModule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RegistryModule_IsTerraformElement(x interface{}) *bool {
+func RegistryModule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegistryModule_IsTerraformElementParameters(x); err != nil {
@@ -785,7 +784,7 @@ func RegistryModule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func RegistryModule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RegistryModule_IsTerraformResource(x interface{}) *bool {
+func RegistryModule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRegistryModule_IsTerraformResourceParameters(x); err != nil {
@@ -804,7 +803,7 @@ func RegistryModule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,31 +828,31 @@ func (r *jsiiProxy_RegistryModule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RegistryModule) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RegistryModule) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RegistryModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RegistryModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (r *jsiiProxy_RegistryModule) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (r *jsiiProxy_RegistryModule) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (r *jsiiProxy_RegistryModule) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (r *jsiiProxy_RegistryModule) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (r *jsiiProxy_RegistryModule) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (r *jsiiProxy_RegistryModule) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (r *jsiiProxy_RegistryModule) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,15 +980,15 @@ func (r *jsiiProxy_RegistryModule) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModule) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegistryModule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1008,7 +1007,7 @@ func (r *jsiiProxy_RegistryModule) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (r *jsiiProxy_RegistryModule) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,18 +1034,18 @@ func (r *jsiiProxy_RegistryModule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RegistryModule) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RegistryModule) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (r *jsiiProxy_RegistryModule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1068,18 +1067,18 @@ func (r *jsiiProxy_RegistryModule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_RegistryModule) PutTestConfig(value interface{}) {
+func (r *jsiiProxy_RegistryModule) PutTestConfig(value any) {
 	if err := r.validatePutTestConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putTestConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (r *jsiiProxy_RegistryModule) PutVcsRepo(value *RegistryModuleVcsRepo) {
 	_jsii_.InvokeVoid(
 		r,
 		"putVcsRepo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1182,8 +1181,8 @@ func (r *jsiiProxy_RegistryModule) ResetVcsRepo() {
 	)
 }
 
-func (r *jsiiProxy_RegistryModule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RegistryModule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1195,8 +1194,8 @@ func (r *jsiiProxy_RegistryModule) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RegistryModule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1208,8 +1207,8 @@ func (r *jsiiProxy_RegistryModule) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegistryModule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1221,8 +1220,8 @@ func (r *jsiiProxy_RegistryModule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModule) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegistryModule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1247,8 +1246,8 @@ func (r *jsiiProxy_RegistryModule) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModule) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RegistryModule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1259,4 +1258,3 @@ func (r *jsiiProxy_RegistryModule) ToTerraform() interface{} {
 
 	return returns
 }
-
