@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-slack.provider.SlackProvider",
-		reflect.TypeOf((*SlackProvider)(nil)).Elem(),
+		reflect.TypeFor[SlackProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -36,7 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SlackProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -44,6 +44,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-slack.provider.SlackProviderConfig",
-		reflect.TypeOf((*SlackProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[SlackProviderConfig](),
 	)
 }
