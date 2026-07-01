@@ -1,8 +1,6 @@
 module github.com/sourcegraph/managed-services-platform-cdktf
 
-go 1.22
-
-toolchain go1.24.2
+go 1.26.4
 
 require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20250729170248-aba02d8115c3
 
