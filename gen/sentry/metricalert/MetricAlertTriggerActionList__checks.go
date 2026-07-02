@@ -34,7 +34,7 @@ func (m *jsiiProxy_MetricAlertTriggerActionList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MetricAlertTriggerActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMetricAlertTriggerActionListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlert",
-		reflect.TypeOf((*DataSentryMetricAlert)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlert](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregate", GoGetter: "Aggregate"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryMetricAlert{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -73,19 +73,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertConfig",
-		reflect.TypeOf((*DataSentryMetricAlertConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTrigger",
-		reflect.TypeOf((*DataSentryMetricAlertTrigger)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTrigger](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTriggerAction",
-		reflect.TypeOf((*DataSentryMetricAlertTriggerAction)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTriggerAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTriggerActionList",
-		reflect.TypeOf((*DataSentryMetricAlertTriggerActionList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTriggerActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryMetricAlertTriggerActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTriggerActionOutputReference",
-		reflect.TypeOf((*DataSentryMetricAlertTriggerActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTriggerActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryMetricAlertTriggerActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,7 +144,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTriggerList",
-		reflect.TypeOf((*DataSentryMetricAlertTriggerList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTriggerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryMetricAlertTriggerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -165,7 +165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryMetricAlert.DataSentryMetricAlertTriggerOutputReference",
-		reflect.TypeOf((*DataSentryMetricAlertTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryMetricAlertTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "alertThreshold", GoGetter: "AlertThreshold"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdType", GoGetter: "ThresholdType"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryMetricAlertTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

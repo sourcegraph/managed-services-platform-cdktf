@@ -34,7 +34,7 @@ func (d *jsiiProxy_DashboardWidgetList) validateResolveParameters(_context cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDashboardWidgetListParameters(terraformResource cdktf.IInterpola
 
 	return nil
 }
-

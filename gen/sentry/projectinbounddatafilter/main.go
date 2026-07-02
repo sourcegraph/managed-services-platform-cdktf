@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilter",
-		reflect.TypeOf((*ProjectInboundDataFilter)(nil)).Elem(),
+		reflect.TypeFor[ProjectInboundDataFilter](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectInboundDataFilter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.projectInboundDataFilter.ProjectInboundDataFilterConfig",
-		reflect.TypeOf((*ProjectInboundDataFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[ProjectInboundDataFilterConfig](),
 	)
 }

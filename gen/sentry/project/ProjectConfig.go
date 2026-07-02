@@ -6,9 +6,9 @@ import (
 
 type ProjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name for the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project#name Project#name}
@@ -40,13 +40,13 @@ type ProjectConfig struct {
 	// By default, Sentry will create a key for you. If you wish to manage keys manually, set this to false and create keys using the `sentry_key` resource. Note that this only takes effect on project creation, not on project update.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project#default_key Project#default_key}
-	DefaultKey interface{} `field:"optional" json:"defaultKey" yaml:"defaultKey"`
+	DefaultKey any `field:"optional" json:"defaultKey" yaml:"defaultKey"`
 	// Whether to create a default issue alert.
 	//
 	// Defaults to true where the behavior is to alert the user on every new issue.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project#default_rules Project#default_rules}
-	DefaultRules interface{} `field:"optional" json:"defaultRules" yaml:"defaultRules"`
+	DefaultRules any `field:"optional" json:"defaultRules" yaml:"defaultRules"`
 	// The maximum amount of time (in seconds) to wait between scheduling digests for delivery.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project#digests_max_delay Project#digests_max_delay}
@@ -86,4 +86,3 @@ type ProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project#slug Project#slug}
 	Slug *string `field:"optional" json:"slug" yaml:"slug"`
 }
-

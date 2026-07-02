@@ -114,7 +114,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetColumnsParame
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetFieldsParamet
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetQueryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewDashboardWidgetQueryOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

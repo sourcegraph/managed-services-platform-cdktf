@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.metricAlert.MetricAlert",
-		reflect.TypeOf((*MetricAlert)(nil)).Elem(),
+		reflect.TypeFor[MetricAlert](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MetricAlert{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,19 +98,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertConfig",
-		reflect.TypeOf((*MetricAlertConfig)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTrigger",
-		reflect.TypeOf((*MetricAlertTrigger)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTrigger](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerAction",
-		reflect.TypeOf((*MetricAlertTriggerAction)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTriggerAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerActionList",
-		reflect.TypeOf((*MetricAlertTriggerActionList)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTriggerActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MetricAlertTriggerActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerActionOutputReference",
-		reflect.TypeOf((*MetricAlertTriggerActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTriggerActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MetricAlertTriggerActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,7 +178,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerList",
-		reflect.TypeOf((*MetricAlertTriggerList)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTriggerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MetricAlertTriggerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerOutputReference",
-		reflect.TypeOf((*MetricAlertTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MetricAlertTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdTypeInput", GoGetter: "ThresholdTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MetricAlertTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

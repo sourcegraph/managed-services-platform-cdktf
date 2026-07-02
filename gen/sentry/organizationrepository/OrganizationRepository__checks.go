@@ -19,7 +19,7 @@ func (o *jsiiProxy_OrganizationRepository) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRepository) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OrganizationRepository) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OrganizationRepository) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OrganizationRepository) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOrganizationRepository_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateOrganizationRepository_IsConstructParameters(x interface{}) error {
+func validateOrganizationRepository_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOrganizationRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOrganizationRepository_IsTerraformElementParameters(x interface{}) error {
+func validateOrganizationRepository_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOrganizationRepository_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateOrganizationRepository_IsTerraformResourceParameters(x interface{}) error {
+func validateOrganizationRepository_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOrganizationRepository_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationRepository) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationRepository) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OrganizationRepository) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationRepository) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationRepository) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_OrganizationRepository) validateSetOrganizationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationRepository) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OrganizationRepository) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewOrganizationRepositoryParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

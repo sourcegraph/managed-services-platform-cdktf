@@ -106,7 +106,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2OpsgenieNotifyTeamOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIssueAlertActionsV2OpsgenieNotifyTeamOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type OrganizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type OrganizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// You agree to the applicable terms of service and privacy policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization#agree_terms Organization#agree_terms}
-	AgreeTerms interface{} `field:"required" json:"agreeTerms" yaml:"agreeTerms"`
+	AgreeTerms any `field:"required" json:"agreeTerms" yaml:"agreeTerms"`
 	// The human readable name for the organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization#name Organization#name}
@@ -37,4 +37,3 @@ type OrganizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization#slug Organization#slug}
 	Slug *string `field:"optional" json:"slug" yaml:"slug"`
 }
-

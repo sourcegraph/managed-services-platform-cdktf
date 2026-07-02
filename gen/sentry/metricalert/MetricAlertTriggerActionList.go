@@ -17,8 +17,8 @@ type MetricAlertTriggerActionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MetricAlertTriggerActionList interface {
 	Get(index *float64) MetricAlertTriggerActionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MetricAlertTriggerActionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MetricAlertTriggerActionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MetricAlertTriggerActionList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMetricAlertTriggerActionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MetricAlertTriggerActionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMetricAlertTriggerActionList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMetricAlertTriggerActionList_Override(m MetricAlertTriggerActionList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerActionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MetricAlertTriggerActionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MetricAlertTriggerActionList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MetricAlertTriggerActionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MetricAlertTriggerActionList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MetricAlertTriggerActionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MetricAlertTriggerActionList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MetricAlertTriggerActionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MetricAlertTriggerActionList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MetricAlertTriggerActionList) Get(index *float64) MetricAlert
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MetricAlertTriggerActionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MetricAlertTriggerActionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MetricAlertTriggerActionList) ToString() *string {
 
 	return returns
 }
-

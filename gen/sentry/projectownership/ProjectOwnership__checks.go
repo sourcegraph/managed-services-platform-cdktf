@@ -19,7 +19,7 @@ func (p *jsiiProxy_ProjectOwnership) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOwnership) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProjectOwnership) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ProjectOwnership) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOwnership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ProjectOwnership) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateProjectOwnership_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateProjectOwnership_IsConstructParameters(x interface{}) error {
+func validateProjectOwnership_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateProjectOwnership_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateProjectOwnership_IsTerraformElementParameters(x interface{}) error {
+func validateProjectOwnership_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateProjectOwnership_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateProjectOwnership_IsTerraformResourceParameters(x interface{}) error {
+func validateProjectOwnership_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ProjectOwnership) validateSetAutoAssignmentParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOwnership) validateSetCodeownersAutoSyncParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOwnership) validateSetCodeownersAutoSyncParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_ProjectOwnership) validateSetCodeownersAutoSyncParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOwnership) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOwnership) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -305,7 +305,7 @@ func (j *jsiiProxy_ProjectOwnership) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOwnership) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOwnership) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ProjectOwnership) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOwnership) validateSetFallthroughParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOwnership) validateSetFallthroughParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,7 +406,7 @@ func (j *jsiiProxy_ProjectOwnership) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOwnership) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ProjectOwnership) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewProjectOwnershipParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

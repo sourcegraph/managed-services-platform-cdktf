@@ -6,9 +6,9 @@ import (
 
 type OrganizationRepositoryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OrganizationRepositoryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The identifier of the repository.
 	//
 	// For GitHub, GitLab and BitBucket, it is `{organization}/{repository}`. For VSTS, it is the [repository ID](https://learn.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get#get-a-repository-by-repositoryid).
@@ -38,4 +38,3 @@ type OrganizationRepositoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/organization_repository#organization OrganizationRepository#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertConditionsV2EventFrequencyPercentOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIssueAlertConditionsV2EventFrequencyPercentOutputReferenceParame
 
 	return nil
 }
-

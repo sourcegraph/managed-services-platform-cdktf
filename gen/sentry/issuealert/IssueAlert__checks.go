@@ -19,7 +19,7 @@ func (i *jsiiProxy_IssueAlert) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (i *jsiiProxy_IssueAlert) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IssueAlert) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IssueAlert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IssueAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IssueAlert) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IssueAlert) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (i *jsiiProxy_IssueAlert) validatePutActionsV2Parameters(value interface{}) error {
+func (i *jsiiProxy_IssueAlert) validatePutActionsV2Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (i *jsiiProxy_IssueAlert) validatePutActionsV2Parameters(value interface{})
 	return nil
 }
 
-func (i *jsiiProxy_IssueAlert) validatePutConditionsV2Parameters(value interface{}) error {
+func (i *jsiiProxy_IssueAlert) validatePutConditionsV2Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (i *jsiiProxy_IssueAlert) validatePutConditionsV2Parameters(value interface
 	return nil
 }
 
-func (i *jsiiProxy_IssueAlert) validatePutFiltersV2Parameters(value interface{}) error {
+func (i *jsiiProxy_IssueAlert) validatePutFiltersV2Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateIssueAlert_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateIssueAlert_IsConstructParameters(x interface{}) error {
+func validateIssueAlert_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateIssueAlert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIssueAlert_IsTerraformElementParameters(x interface{}) error {
+func validateIssueAlert_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateIssueAlert_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIssueAlert_IsTerraformResourceParameters(x interface{}) error {
+func validateIssueAlert_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_IssueAlert) validateSetConditionsParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlert) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlert) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -394,7 +394,7 @@ func (j *jsiiProxy_IssueAlert) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlert) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlert) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -523,7 +523,7 @@ func (j *jsiiProxy_IssueAlert) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlert) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IssueAlert) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -587,4 +587,3 @@ func validateNewIssueAlertParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

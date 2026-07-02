@@ -6,9 +6,9 @@ import (
 
 type ProjectInboundDataFilterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProjectInboundDataFilterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The type of filter toggle to update. See the [Sentry documentation](https://docs.sentry.io/api/projects/update-an-inbound-data-filter/) for a list of available filters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_inbound_data_filter#filter_id ProjectInboundDataFilter#filter_id}
@@ -34,7 +34,7 @@ type ProjectInboundDataFilterConfig struct {
 	// Toggle the browser-extensions, localhost, filtered-transaction, or web-crawlers filter on or off.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_inbound_data_filter#active ProjectInboundDataFilter#active}
-	Active interface{} `field:"optional" json:"active" yaml:"active"`
+	Active any `field:"optional" json:"active" yaml:"active"`
 	// Specifies which legacy browser filters should be active.
 	//
 	// Anything excluded from the list will be disabled. See the [Sentry documentation](https://docs.sentry.io/api/projects/update-an-inbound-data-filter/) for a list of available subfilters.
@@ -42,4 +42,3 @@ type ProjectInboundDataFilterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_inbound_data_filter#subfilters ProjectInboundDataFilter#subfilters}
 	Subfilters *[]*string `field:"optional" json:"subfilters" yaml:"subfilters"`
 }
-

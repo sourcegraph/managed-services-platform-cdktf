@@ -21,17 +21,17 @@ type SentryProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -42,7 +42,7 @@ type SentryProvider interface {
 	SetToken(val *string)
 	TokenInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -52,17 +52,17 @@ type SentryProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetToken()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SentryProvider
@@ -120,8 +120,8 @@ func (j *jsiiProxy_SentryProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SentryProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SentryProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_SentryProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SentryProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SentryProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SentryProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SentryProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentryProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -230,7 +230,6 @@ func (j *jsiiProxy_SentryProvider) TokenInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs sentry} Resource.
 func NewSentryProvider(scope constructs.Construct, id *string, config *SentryProviderConfig) SentryProvider {
 	_init_.Initialize()
@@ -242,7 +241,7 @@ func NewSentryProvider(scope constructs.Construct, id *string, config *SentryPro
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.provider.SentryProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -255,12 +254,12 @@ func NewSentryProvider_Override(s SentryProvider, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.provider.SentryProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SentryProvider)SetAlias(val *string) {
+func (j *jsiiProxy_SentryProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SentryProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentryProvider)SetBaseUrl(val *string) {
+func (j *jsiiProxy_SentryProvider) SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -276,7 +275,7 @@ func (j *jsiiProxy_SentryProvider)SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentryProvider)SetToken(val *string) {
+func (j *jsiiProxy_SentryProvider) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -296,7 +295,7 @@ func SentryProvider_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.provider.SentryProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -320,7 +319,7 @@ func SentryProvider_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SentryProvider_IsConstruct(x interface{}) *bool {
+func SentryProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentryProvider_IsConstructParameters(x); err != nil {
@@ -331,7 +330,7 @@ func SentryProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.provider.SentryProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func SentryProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SentryProvider_IsTerraformElement(x interface{}) *bool {
+func SentryProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentryProvider_IsTerraformElementParameters(x); err != nil {
@@ -350,7 +349,7 @@ func SentryProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.provider.SentryProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func SentryProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SentryProvider_IsTerraformProvider(x interface{}) *bool {
+func SentryProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentryProvider_IsTerraformProviderParameters(x); err != nil {
@@ -369,7 +368,7 @@ func SentryProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.provider.SentryProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -387,14 +386,14 @@ func SentryProvider_TfResourceType() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SentryProvider) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SentryProvider) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -405,7 +404,7 @@ func (s *jsiiProxy_SentryProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -441,8 +440,8 @@ func (s *jsiiProxy_SentryProvider) ResetToken() {
 	)
 }
 
-func (s *jsiiProxy_SentryProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SentryProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +453,8 @@ func (s *jsiiProxy_SentryProvider) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_SentryProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SentryProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -467,8 +466,8 @@ func (s *jsiiProxy_SentryProvider) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_SentryProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentryProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -480,8 +479,8 @@ func (s *jsiiProxy_SentryProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SentryProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentryProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -506,8 +505,8 @@ func (s *jsiiProxy_SentryProvider) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SentryProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentryProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -518,4 +517,3 @@ func (s *jsiiProxy_SentryProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

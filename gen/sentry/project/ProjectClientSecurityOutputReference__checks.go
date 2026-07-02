@@ -106,7 +106,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetAllowedDomai
 	return nil
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetScrapeJavascriptParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetScrapeJavascriptParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetVerifyTlsSslParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) validateSetVerifyTlsSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewProjectClientSecurityOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

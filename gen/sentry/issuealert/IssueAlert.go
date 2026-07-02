@@ -19,24 +19,24 @@ type IssueAlert interface {
 	SetActions(val *string)
 	ActionsInput() *string
 	ActionsV2() IssueAlertActionsV2List
-	ActionsV2Input() interface{}
+	ActionsV2Input() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Conditions() *string
 	SetConditions(val *string)
 	ConditionsInput() *string
 	ConditionsV2() IssueAlertConditionsV2List
-	ConditionsV2Input() interface{}
+	ConditionsV2Input() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,7 +51,7 @@ type IssueAlert interface {
 	SetFilters(val *string)
 	FiltersInput() *string
 	FiltersV2() IssueAlertFiltersV2List
-	FiltersV2Input() interface{}
+	FiltersV2Input() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,24 +87,24 @@ type IssueAlert interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type IssueAlert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,16 +134,16 @@ type IssueAlert interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutActionsV2(value interface{})
-	PutConditionsV2(value interface{})
-	PutFiltersV2(value interface{})
+	PutActionsV2(value any)
+	PutConditionsV2(value any)
+	PutFiltersV2(value any)
 	ResetActions()
 	ResetActionsV2()
 	ResetConditions()
@@ -156,17 +156,17 @@ type IssueAlert interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IssueAlert
@@ -224,8 +224,8 @@ func (j *jsiiProxy_IssueAlert) ActionsV2() IssueAlertActionsV2List {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) ActionsV2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) ActionsV2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsV2Input",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_IssueAlert) ConditionsV2() IssueAlertConditionsV2List {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) ConditionsV2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) ConditionsV2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsV2Input",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_IssueAlert) ConditionsV2Input() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_IssueAlert) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IssueAlert) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_IssueAlert) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IssueAlert) FiltersV2() IssueAlertFiltersV2List {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) FiltersV2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) FiltersV2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filtersV2Input",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_IssueAlert) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IssueAlert) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_IssueAlert) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlert) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_IssueAlert) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlert) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IssueAlert) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -624,7 +624,6 @@ func (j *jsiiProxy_IssueAlert) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/issue_alert sentry_issue_alert} Resource.
 func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertConfig) IssueAlert {
 	_init_.Initialize()
@@ -636,7 +635,7 @@ func NewIssueAlert(scope constructs.Construct, id *string, config *IssueAlertCon
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -649,12 +648,12 @@ func NewIssueAlert_Override(i IssueAlert, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetActionMatch(val *string) {
+func (j *jsiiProxy_IssueAlert) SetActionMatch(val *string) {
 	if err := j.validateSetActionMatchParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_IssueAlert)SetActionMatch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetActions(val *string) {
+func (j *jsiiProxy_IssueAlert) SetActions(val *string) {
 	if err := j.validateSetActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_IssueAlert)SetActions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetConditions(val *string) {
+func (j *jsiiProxy_IssueAlert) SetConditions(val *string) {
 	if err := j.validateSetConditionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_IssueAlert)SetConditions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetConnection(val interface{}) {
+func (j *jsiiProxy_IssueAlert) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_IssueAlert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetCount(val interface{}) {
+func (j *jsiiProxy_IssueAlert) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_IssueAlert)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IssueAlert) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_IssueAlert)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetEnvironment(val *string) {
+func (j *jsiiProxy_IssueAlert) SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_IssueAlert)SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetFilterMatch(val *string) {
+func (j *jsiiProxy_IssueAlert) SetFilterMatch(val *string) {
 	if err := j.validateSetFilterMatchParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_IssueAlert)SetFilterMatch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetFilters(val *string) {
+func (j *jsiiProxy_IssueAlert) SetFilters(val *string) {
 	if err := j.validateSetFiltersParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_IssueAlert)SetFilters(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IssueAlert) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -758,7 +757,7 @@ func (j *jsiiProxy_IssueAlert)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetFrequency(val *float64) {
+func (j *jsiiProxy_IssueAlert) SetFrequency(val *float64) {
 	if err := j.validateSetFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_IssueAlert)SetFrequency(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IssueAlert) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_IssueAlert)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetName(val *string) {
+func (j *jsiiProxy_IssueAlert) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_IssueAlert)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetOrganization(val *string) {
+func (j *jsiiProxy_IssueAlert) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_IssueAlert)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetOwner(val *string) {
+func (j *jsiiProxy_IssueAlert) SetOwner(val *string) {
 	if err := j.validateSetOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_IssueAlert)SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetProject(val *string) {
+func (j *jsiiProxy_IssueAlert) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_IssueAlert)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IssueAlert) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -832,7 +831,7 @@ func (j *jsiiProxy_IssueAlert)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IssueAlert)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IssueAlert) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func IssueAlert_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func IssueAlert_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IssueAlert_IsConstruct(x interface{}) *bool {
+func IssueAlert_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIssueAlert_IsConstructParameters(x); err != nil {
@@ -890,7 +889,7 @@ func IssueAlert_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func IssueAlert_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IssueAlert_IsTerraformElement(x interface{}) *bool {
+func IssueAlert_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIssueAlert_IsTerraformElementParameters(x); err != nil {
@@ -909,7 +908,7 @@ func IssueAlert_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func IssueAlert_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IssueAlert_IsTerraformResource(x interface{}) *bool {
+func IssueAlert_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIssueAlert_IsTerraformResourceParameters(x); err != nil {
@@ -928,7 +927,7 @@ func IssueAlert_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.issueAlert.IssueAlert",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -953,31 +952,31 @@ func (i *jsiiProxy_IssueAlert) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IssueAlert) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlert) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (i *jsiiProxy_IssueAlert) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (i *jsiiProxy_IssueAlert) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func (i *jsiiProxy_IssueAlert) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (i *jsiiProxy_IssueAlert) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,7 +1056,7 @@ func (i *jsiiProxy_IssueAlert) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (i *jsiiProxy_IssueAlert) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func (i *jsiiProxy_IssueAlert) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,15 +1104,15 @@ func (i *jsiiProxy_IssueAlert) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlert) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IssueAlert) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1132,7 +1131,7 @@ func (i *jsiiProxy_IssueAlert) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (i *jsiiProxy_IssueAlert) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,18 +1158,18 @@ func (i *jsiiProxy_IssueAlert) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IssueAlert) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (i *jsiiProxy_IssueAlert) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1192,40 +1191,40 @@ func (i *jsiiProxy_IssueAlert) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) PutActionsV2(value interface{}) {
+func (i *jsiiProxy_IssueAlert) PutActionsV2(value any) {
 	if err := i.validatePutActionsV2Parameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putActionsV2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) PutConditionsV2(value interface{}) {
+func (i *jsiiProxy_IssueAlert) PutConditionsV2(value any) {
 	if err := i.validatePutConditionsV2Parameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putConditionsV2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) PutFiltersV2(value interface{}) {
+func (i *jsiiProxy_IssueAlert) PutFiltersV2(value any) {
 	if err := i.validatePutFiltersV2Parameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putFiltersV2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,8 +1308,8 @@ func (i *jsiiProxy_IssueAlert) ResetOwner() {
 	)
 }
 
-func (i *jsiiProxy_IssueAlert) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IssueAlert) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1322,8 +1321,8 @@ func (i *jsiiProxy_IssueAlert) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlert) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IssueAlert) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1335,8 +1334,8 @@ func (i *jsiiProxy_IssueAlert) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlert) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IssueAlert) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1348,8 +1347,8 @@ func (i *jsiiProxy_IssueAlert) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlert) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IssueAlert) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1374,8 +1373,8 @@ func (i *jsiiProxy_IssueAlert) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlert) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IssueAlert) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1386,4 +1385,3 @@ func (i *jsiiProxy_IssueAlert) ToTerraform() interface{} {
 
 	return returns
 }
-

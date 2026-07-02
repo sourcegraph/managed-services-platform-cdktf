@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.key.Key",
-		reflect.TypeOf((*Key)(nil)).Elem(),
+		reflect.TypeFor[Key](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Key{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.key.KeyConfig",
-		reflect.TypeOf((*KeyConfig)(nil)).Elem(),
+		reflect.TypeFor[KeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.key.KeyJavascriptLoaderScript",
-		reflect.TypeOf((*KeyJavascriptLoaderScript)(nil)).Elem(),
+		reflect.TypeFor[KeyJavascriptLoaderScript](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.key.KeyJavascriptLoaderScriptOutputReference",
-		reflect.TypeOf((*KeyJavascriptLoaderScriptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KeyJavascriptLoaderScriptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browserSdkVersion", GoGetter: "BrowserSdkVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "browserSdkVersionInput", GoGetter: "BrowserSdkVersionInput"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KeyJavascriptLoaderScriptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

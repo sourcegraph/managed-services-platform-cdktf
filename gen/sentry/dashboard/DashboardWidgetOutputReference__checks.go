@@ -101,7 +101,7 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutLayoutParameters(v
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutQueryParameters(value interface{}) error {
+func (d *jsiiProxy_DashboardWidgetOutputReference) validatePutQueryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) validateSetDisplayTypeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DashboardWidgetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,4 +304,3 @@ func validateNewDashboardWidgetOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

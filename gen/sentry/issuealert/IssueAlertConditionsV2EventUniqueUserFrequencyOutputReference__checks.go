@@ -114,7 +114,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIssueAlertConditionsV2EventUniqueUserFrequencyOutputReferencePar
 
 	return nil
 }
-

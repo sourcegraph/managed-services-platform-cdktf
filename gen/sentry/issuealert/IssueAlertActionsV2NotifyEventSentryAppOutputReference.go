@@ -12,9 +12,9 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SentryAppInstallationUuid() *string
 	SetSentryAppInstallationUuid(val *string)
@@ -47,7 +47,7 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	ResetSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -204,7 +204,6 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Terra
 	return returns
 }
 
-
 func NewIssueAlertActionsV2NotifyEventSentryAppOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IssueAlertActionsV2NotifyEventSentryAppOutputReference {
 	_init_.Initialize()
 
@@ -215,7 +214,7 @@ func NewIssueAlertActionsV2NotifyEventSentryAppOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventSentryAppOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -227,12 +226,12 @@ func NewIssueAlertActionsV2NotifyEventSentryAppOutputReference_Override(i IssueA
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventSentryAppOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSentryAppInstallationUuid(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetSentryAppInstallationUuid(val *string) {
 	if err := j.validateSetSentryAppInstallationUuidParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSen
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSettings(val *map[string]*string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetSettings(val *map[string]*string) {
 	if err := j.validateSetSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSet
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,16 +321,16 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Compu
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetLi
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Inter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -503,16 +502,16 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Reset
 	)
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -531,4 +530,3 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) ToStr
 
 	return returns
 }
-
